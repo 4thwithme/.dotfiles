@@ -1,0 +1,17 @@
+import = ["/Users/andreyp/.config/alacritty/themes/themes/catppuccin.toml"]
+
+[font]
+size = 20
+
+[font.normal]
+family = "UbuntuMono Nerd Font"
+
+[window]
+decorations = "None"
+dynamic_padding = true
+startup_mode = "Maximized"
+option_as_alt = "Both"
+
+[window.padding]
+x = 0
+y = 0
