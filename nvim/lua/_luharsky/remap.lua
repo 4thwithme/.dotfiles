@@ -36,6 +36,8 @@ vim.keymap.set("n", "<leader>k", "<cmd>lnext<CR>zz");
 vim.keymap.set("n", "<leader>j", "<cmd>lprev<CR>zz");
 vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]], { desc = "Replace word to new" });
 vim.keymap.set("n", "<leader>nh", ":silent! nohls<cr>", opts, { desc = "No highlight" });
+-- show type definition on hover lspsaga
+vim.keymap.set("n", "L", ":Lspsaga peek_type_definition<CR>", opts, { desc = "Show type definition on hover" });
 
 -- harpoon keybindings
 vim.keymap.set('n', '<leader>a', mark.add_file, { desc = "Harpoon Add" });
