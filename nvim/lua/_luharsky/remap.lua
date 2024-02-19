@@ -2,22 +2,6 @@ local mark = require('harpoon.mark');
 local ui = require('harpoon.ui');
 local conf = require("telescope.config").values
 
-local function toggle_telescope(harpoon_files)
-  local file_paths = {}
-  for _, item in ipairs(harpoon_files.items) do
-    table.insert(file_paths, item.value)
-  end
-
-  require("telescope.pickers").new({}, {
-    prompt_title = "Harpoon",
-    finder = require("telescope.finders").new_table({
-      results = file_paths,
-    }),
-    previewer = conf.file_previewer({}),
-    sorter = conf.generic_sorter({}),
-  }):find()
-end
-
 local opts = { noremap = true, silent = true }
 
 -- common keybindings
@@ -55,6 +39,9 @@ vim.keymap.set('n', '<leader>fd', require('telescope.builtin').diagnostics, { de
 vim.keymap.set('n', '<leader>fb', require('telescope.builtin').git_branches, { desc = '[f]iles [b]ranches' })
 vim.keymap.set('n', '<leader>fc', require('telescope.builtin').git_commits, { desc = '[f]iles [c]ommits' })
 
+-- gitfugitive
+
+
 vim.keymap.set('n', '<leader>f/',
   function()
     require('telescope.builtin').current_buffer_fuzzy_find(require('telescope.themes').get_dropdown
@@ -70,8 +57,8 @@ vim.api.nvim_set_keymap("n", "|",
 -- clipboard history
 vim.keymap.set({ "n", "v" }, "<leader>fc", ":Telescope neoclip<CR>", { desc = '[F]ind [C]opy items' }, { noremap = true });
 -- diffvew
--- vim.keymap.set({ 'n', 'v' }, "<leader>G", ":DiffviewOpen<CR>", opts);
--- vim.keymap.set({ 'n', 'v' }, "<leader>CG", ":DiffviewClose<CR>", opts);
+vim.keymap.set({ 'n', 'v' }, "<leader>G", ":DiffviewOpen<CR>", opts);
+vim.keymap.set({ 'n', 'v' }, "<leader>CG", ":DiffviewClose<CR>", opts);
 -- diagnostics
 vim.keymap.set({ 'n', 'v' }, "<leader>D", ":TroubleToggle<CR>", opts, { desc = "[D]iagnostic toggle" })
 -- markdown
