@@ -8,6 +8,7 @@ return {
     'debugloop/telescope-undo.nvim',
     'nvim-telescope/telescope-file-browser.nvim',
     'MunifTanjim/nui.nvim',
+    'nvim-telescope/telescope-ui-select.nvim'
   },
 
   config = function()
@@ -20,6 +21,7 @@ return {
     telescope.load_extension("file_browser")
     telescope.load_extension('undo')
     telescope.load_extension('harpoon')
+    telescope.load_extension('ui-select')
 
     local _bad = { ".*%.csv", ".env", ".env.*%", '.*%.lock' }
     local bad_files = function(filepath)
@@ -56,9 +58,7 @@ return {
           n = { ["<c-t>"] = trouble.open_with_trouble },
         },
         layout_config = {
-          prompt_position = "bottom",
-          preview_width = 0.4,
-          width = 0.9,
+          width = 0.8,
         },
       },
       pickers = {
@@ -67,6 +67,9 @@ return {
         },
       },
       extensions = {
+        ['ui-select'] = {
+          require('telescope.themes').get_dropdown(),
+        }, --Block-comment keymap
         undo = {
           use_delta = true,
           side_by_side = true,

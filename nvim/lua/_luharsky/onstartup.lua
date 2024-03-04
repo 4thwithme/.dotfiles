@@ -11,3 +11,5 @@ vim.cmd([[colorscheme catppuccin]])
 vim.cmd([[set laststatus=0]])
 -- disable vim mode
 vim.cmd([[set noshowmode]])
+-- disable left side ~ on empty lines
+vim.cmd([[set fillchars=eob:\ ]])

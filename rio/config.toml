@@ -1,12 +1,14 @@
 cursor = '▇'
 blinking-cursor = false
 performance = "High"
+editor = "v"
 padding-x = 0
 option-as-alt = 'both'
 [window]
    width = 1200
    height = 1200
    mode = "Maximized"
+   decorations = "Disabled"
 
 [fonts]
    size = 20
@@ -32,7 +34,7 @@ option-as-alt = 'both'
    weight = 800
 
 [navigation]
-   mode = "CollapsedTab"
+   mode = "NativeTab"
    clickable = false
    use-current-path = true
    color-automation = []

@@ -1,6 +1,7 @@
 local mark = require('harpoon.mark');
 local ui = require('harpoon.ui');
 local conf = require("telescope.config").values
+local builtin = require('telescope.builtin')
 
 local opts = { noremap = true, silent = true }
 
@@ -19,7 +20,7 @@ vim.keymap.set("n", "<C-j>", "<cmd>cprev<CR>zz");
 vim.keymap.set("n", "<leader>k", "<cmd>lnext<CR>zz");
 vim.keymap.set("n", "<leader>j", "<cmd>lprev<CR>zz");
 vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]], { desc = "Replace word to new" });
-vim.keymap.set("n", "<leader>nh", ":silent! nohls<cr>", opts, { desc = "No highlight" });
+vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
 -- show type definition on hover lspsaga
 vim.keymap.set("n", "L", ":Lspsaga peek_type_definition<CR>", opts, { desc = "Show type definition on hover" });
 
@@ -41,18 +42,24 @@ vim.keymap.set('n', '<leader>fc', require('telescope.builtin').git_commits, { de
 
 -- gitfugitive
 
+vim.keymap.set('n', '/', function()
+  builtin.current_buffer_fuzzy_find(require('telescope.themes').get_dropdown {
+    winblend = 10,
+    previewer = false,
+  })
+end, opts, { desc = '[/] Fuzzily search in current buffer' })
 
-vim.keymap.set('n', '<leader>f/',
-  function()
-    require('telescope.builtin').current_buffer_fuzzy_find(require('telescope.themes').get_dropdown
-      { winblend = 10, previewer = false, })
-  end, { desc = '[F]uzzily [/] search in current buffer' })
-
+vim.keymap.set('n', '?', function()
+  builtin.current_buffer_fuzzy_find(require('telescope.themes').get_dropdown {
+    winblend = 10,
+    previewer = false,
+  })
+end, opts, { desc = '[/] Fuzzily search in current buffer' })
 -- undo
 vim.keymap.set("n", "<leader>fu", "<cmd>Telescope undo<cr>", { desc = '[F]iles [U]ndo' })
 -- file browser
 vim.api.nvim_set_keymap("n", "|",
-  ":Telescope file_browser path=%:p:h select_buffer=true prompt_path=true default_selection_index=2 grouped=true git_status=true hidden=true<CR>",
+  ":Telescope file_browser path=%:p:h select_buffer=true prompt_path=true grouped=true git_status=true hidden=true<CR>",
   { noremap = true })
 -- clipboard history
 vim.keymap.set({ "n", "v" }, "<leader>fc", ":Telescope neoclip<CR>", { desc = '[F]ind [C]opy items' }, { noremap = true });

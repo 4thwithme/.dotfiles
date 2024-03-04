@@ -1,13 +1,7 @@
 return {
   {
-    "4thwithme/black.nvim",
+    "4thwithme/narco-theme.nvim",
     lazy = false,
-    priority = 1000,
-  },
-  {
-    "catppuccin/nvim",
-    lazy = false,
-    name = "catppuccin",
     priority = 1000,
     config = function()
       require("catppuccin").setup({
@@ -33,9 +27,9 @@ return {
         },
         color_overrides = {
           mocha = {
-            base = "#191919",
-            mantle = "#191919",
-            crust = "#191919",
+            base = "#181922",
+            -- mantle = "#010101",
+            -- crust = "#010101" signs and line numbers,
           },
         },
         custom_highlights = function(C)
@@ -90,5 +84,18 @@ return {
         },
       })
     end
-  }
+
+
+  },
+  {
+    "4thwithme/black.nvim",
+    lazy = false,
+    priority = 1000,
+  },
+  --   {
+  --     "catppuccin/nvim",
+  --     lazy = false,
+  --     name = "catppuccin",
+  --     priority = 1000,
+  --  }
 }
