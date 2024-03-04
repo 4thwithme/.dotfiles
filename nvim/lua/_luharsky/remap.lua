@@ -35,7 +35,10 @@ vim.keymap.set('n', '<leader>fo', require('telescope.builtin').oldfiles, { desc 
 vim.keymap.set('n', '<leader>fh', ":Telescope harpoon marks<cr>", { desc = ' [f]ind recently [o]pened files' })
 vim.keymap.set('n', '<leader>ff', require('telescope.builtin').find_files, { desc = '[f]ind [f]ile' })
 vim.keymap.set('n', '<leader>fw', require('telescope.builtin').grep_string, { desc = '[f]ind current [w]ord' })
-vim.keymap.set('n', '<leader>fg', require('telescope.builtin').live_grep, { desc = 'search in [f]iles by [g]rep' })
+-- vim.keymap.set('n', '<leader>fg', require('telescope.builtin').live_grep, { desc = 'search in [f]iles by [g]rep' })
+vim.keymap.set("n", "<leader>fg", ":lua require('telescope').extensions.live_grep_args.live_grep_args()<CR>",
+  { desc = 'search in [f]iles by [g]rep with args' })
+
 vim.keymap.set('n', '<leader>fd', require('telescope.builtin').diagnostics, { desc = '[f]iles [d]iagnostics' })
 vim.keymap.set('n', '<leader>fb', require('telescope.builtin').git_branches, { desc = '[f]iles [b]ranches' })
 vim.keymap.set('n', '<leader>fc', require('telescope.builtin').git_commits, { desc = '[f]iles [c]ommits' })
@@ -49,12 +52,6 @@ vim.keymap.set('n', '/', function()
   })
 end, opts, { desc = '[/] Fuzzily search in current buffer' })
 
-vim.keymap.set('n', '?', function()
-  builtin.current_buffer_fuzzy_find(require('telescope.themes').get_dropdown {
-    winblend = 10,
-    previewer = false,
-  })
-end, opts, { desc = '[/] Fuzzily search in current buffer' })
 -- undo
 vim.keymap.set("n", "<leader>fu", "<cmd>Telescope undo<cr>", { desc = '[F]iles [U]ndo' })
 -- file browser

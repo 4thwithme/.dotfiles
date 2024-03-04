@@ -8,7 +8,12 @@ return {
     'debugloop/telescope-undo.nvim',
     'nvim-telescope/telescope-file-browser.nvim',
     'MunifTanjim/nui.nvim',
-    'nvim-telescope/telescope-ui-select.nvim'
+    'nvim-telescope/telescope-ui-select.nvim',
+    {
+      "nvim-telescope/telescope-live-grep-args.nvim",
+      version = "^1.0.0",
+    },
+
   },
 
   config = function()
@@ -22,6 +27,7 @@ return {
     telescope.load_extension('undo')
     telescope.load_extension('harpoon')
     telescope.load_extension('ui-select')
+    telescope.load_extension("live_grep_args")
 
     local _bad = { ".*%.csv", ".env", ".env.*%", '.*%.lock' }
     local bad_files = function(filepath)
@@ -132,7 +138,6 @@ return {
             },
           },
         },
-
       }
     });
   end,
