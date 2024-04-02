@@ -27,9 +27,9 @@ return {
         },
         color_overrides = {
           mocha = {
-            base = "#181922",
-            -- mantle = "#010101",
-            -- crust = "#010101" signs and line numbers,
+            base = "#0A0E14",   -- bg
+            mantle = "#0A0E14", -- top line (lualine)
+            crust = "#010101"   -- signs and line numbers,
           },
         },
         custom_highlights = function(C)

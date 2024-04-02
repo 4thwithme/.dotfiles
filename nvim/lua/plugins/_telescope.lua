@@ -75,7 +75,7 @@ return {
       extensions = {
         ['ui-select'] = {
           require('telescope.themes').get_dropdown(),
-        }, --Block-comment keymap
+        },
         undo = {
           use_delta = true,
           side_by_side = true,
@@ -95,13 +95,13 @@ return {
           },
         },
         file_browser = {
-          hijack_netrw = false,
+          hijack_netrw = true,
           use_fd = true,
           prompt_path = false,
           hidden = false,
           collapse_dirs = false,
           grouped = true,
-          display_stat = { date = true, size = true },
+          display_stat = {},
           git_status = true,
           mappings = {
             ["i"] = {

@@ -15,10 +15,6 @@ vim.keymap.set("n", "N", "Nzzzv")
 vim.keymap.set({ "n", "v" }, "<leader>y", [["+y]], { desc = "COPY to buffer" })
 vim.keymap.set("n", "<leader>Y", [["+Y]], { desc = "COPY to clipboard" })
 vim.keymap.set({ "n", "v" }, "<leader>d", [["_d]], { desc = "CUT to clipboard" })
-vim.keymap.set("n", "<C-k>", "<cmd>cnext<CR>zz");
-vim.keymap.set("n", "<C-j>", "<cmd>cprev<CR>zz");
-vim.keymap.set("n", "<leader>k", "<cmd>lnext<CR>zz");
-vim.keymap.set("n", "<leader>j", "<cmd>lprev<CR>zz");
 vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]], { desc = "Replace word to new" });
 vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
 -- show type definition on hover lspsaga
@@ -35,7 +31,6 @@ vim.keymap.set('n', '<leader>fo', require('telescope.builtin').oldfiles, { desc 
 vim.keymap.set('n', '<leader>fh', ":Telescope harpoon marks<cr>", { desc = ' [f]ind recently [o]pened files' })
 vim.keymap.set('n', '<leader>ff', require('telescope.builtin').find_files, { desc = '[f]ind [f]ile' })
 vim.keymap.set('n', '<leader>fw', require('telescope.builtin').grep_string, { desc = '[f]ind current [w]ord' })
--- vim.keymap.set('n', '<leader>fg', require('telescope.builtin').live_grep, { desc = 'search in [f]iles by [g]rep' })
 vim.keymap.set("n", "<leader>fg", ":lua require('telescope').extensions.live_grep_args.live_grep_args()<CR>",
   { desc = 'search in [f]iles by [g]rep with args' })
 
