@@ -1,9 +1,14 @@
 return {
-  'nvim-lualine/lualine.nvim',
+  "nvim-lualine/lualine.nvim",
+  dependencies = { "nvim-tree/nvim-web-devicons" },
   config = function()
-    require('lualine').setup({
-      options = {
-        icons_enabled = false,
+    local lualine = require("lualine")
+    local lazy_status = require("lazy.status") -- to configure lazy pending updates count
+
+    -- configure lualine with modified theme
+    lualine.setup({
+     options = { 
+        icons_enabled = true,
         theme = 'auto',
         component_separators = { left = '', right = '' },
         section_separators = { left = '', right = '' },
@@ -21,22 +26,6 @@ return {
         }
       },
       sections = {
-        lualine_a = {},
-        lualine_b = {},
-        lualine_c = {},
-        lualine_x = {},
-        lualine_y = {},
-        lualine_z = {}
-      },
-      inactive_sections = {
-        lualine_a = {},
-        lualine_b = {},
-        lualine_c = {},
-        lualine_x = {},
-        lualine_y = {},
-        lualine_z = {}
-      },
-      tabline = {
         lualine_a = { 'mode' },
         lualine_b = { 'branch', 'diff', 'diagnostics' },
         lualine_c = {
@@ -61,9 +50,12 @@ return {
         lualine_y = { 'filename' },
         lualine_z = { 'mode' }
       },
+      inactive_sections = {},
+      tabline = {},
       winbar = {},
       inactive_winbar = {},
       extensions = {}
-    });
+    
+    })
   end,
 }
