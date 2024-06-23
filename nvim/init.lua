@@ -1,2 +1,2 @@
-require("_luharsky_smoothie.core")
-require("_luharsky_smoothie.lazy")
+require("_luharsky.core")
+require("_luharsky.lazy")
