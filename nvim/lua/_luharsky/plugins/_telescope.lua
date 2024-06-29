@@ -10,12 +10,14 @@ return {
 	},
 	config = function()
 		local telescope = require("telescope")
-		local actions = require("telescope.actions")
 		local previewers = require("telescope.previewers")
 
 		telescope.load_extension("undo")
 
-		local _bad = { ".*%.csv", ".env", ".env.*%", ".*%.lock" }
+		local _bad = {
+			".*%.csv",
+			".*%.lock",
+		}
 		local bad_files = function(filepath)
 			for _, v in ipairs(_bad) do
 				if filepath:match(v) then
