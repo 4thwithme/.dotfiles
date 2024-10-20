@@ -10,7 +10,7 @@ return {
       enabled = true, -- enabling this will show WhichKey when pressing z= to select spelling suggestions
       suggestions = 30, -- how many suggestions should be shown in the list?
     },
-    window = {
+    win = {
       border = "double",      -- none, single, double, shadow
       position = "bottom",    -- bottom, top
       margin = { 0, 0, 0, 0 }, -- extra window margin [top, right, bottom, left]. When between 0 and 1, will be treated as a percentage of the screen size.
