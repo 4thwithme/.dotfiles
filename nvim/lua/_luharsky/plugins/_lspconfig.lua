@@ -114,6 +114,7 @@ return {
 						"scss",
 						"less",
 						"svelte",
+						"python",
 					},
 				})
 			end,

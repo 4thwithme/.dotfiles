@@ -44,6 +44,7 @@ return {
 				"gitignore",
 				"query",
 				"vimdoc",
+				"python",
 				"c",
 				"rust",
 			},

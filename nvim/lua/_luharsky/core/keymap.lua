@@ -27,7 +27,7 @@ keymap.set("n", "<leader>ft", "<cmd>TodoTelescope<cr>", { desc = "Find todos" })
 keymap.set("n", "<leader>fs", "<cmd>Telescope git_status<cr>", { desc = " Git [f]iles [s]tatus" })
 keymap.set("n", "<leader>fd", "<cmd>Telescope diagnostics<cr>", { desc = "[f]iles [d]iagnostics" })
 keymap.set("n", "<leader>fb", "<cmd>Telescope git_branches<cr>", { desc = "[f]iles [b]ranches" })
-keymap.set("n", "<leader>fc", "<cmd>Telescope git_commits<cr>", { desc = "[f]iles [c]ommits" })
+keymap.set("n", "<leader>fk", "<cmd>Telescope git_commits<cr>", { desc = "[f]iles [c]ommits" })
 
 -- harpoon
 keymap.set("n", "<leader>a", ":lua require('harpoon.mark').add_file()<CR>", { desc = "Harpoon Add" })
