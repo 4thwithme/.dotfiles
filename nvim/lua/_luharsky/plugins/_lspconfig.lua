@@ -92,6 +92,12 @@ return {
 					on_attach = on_attach,
 				})
 			end,
+			["astro"] = function()
+				lspconfig["astro"].setup({
+					capabilities = capabilities,
+					on_attach = on_attach,
+				})
+			end,
 			["graphql"] = function()
 				-- configure graphql language server
 				lspconfig["graphql"].setup({
