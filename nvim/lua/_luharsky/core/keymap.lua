@@ -20,14 +20,17 @@ keymap.set("n", "<Esc>", "<cmd>nohlsearch<CR>")
 
 -- telescope
 keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<cr>", { desc = "Fuzzy find files in cwd" })
+keymap.set("n", "<leader>b", "<cmd>Telescope buffers<cr>", { desc = "Fuzzy [f]ind [b]uffers" })
 keymap.set("n", "<leader>fo", "<cmd>Telescope oldfiles<cr>", { desc = "Fuzzy find recent files" })
 keymap.set("n", "<leader>fg", "<cmd>Telescope live_grep<cr>", { desc = "Find string in cwd" })
 keymap.set("n", "<leader>fw", "<cmd>Telescope grep_string<cr>", { desc = "Find string under cursor in cwd" })
 keymap.set("n", "<leader>ft", "<cmd>TodoTelescope<cr>", { desc = "Find todos" })
 keymap.set("n", "<leader>fs", "<cmd>Telescope git_status<cr>", { desc = " Git [f]iles [s]tatus" })
 keymap.set("n", "<leader>fd", "<cmd>Telescope diagnostics<cr>", { desc = "[f]iles [d]iagnostics" })
-keymap.set("n", "<leader>fb", "<cmd>Telescope git_branches<cr>", { desc = "[f]iles [b]ranches" })
-keymap.set("n", "<leader>fk", "<cmd>Telescope git_commits<cr>", { desc = "[f]iles [c]ommits" })
+keymap.set("n", "<leader>fc", "<cmd>Telescope git_commits<cr>", { desc = "[f]iles [c]ommits" })
+
+-- oil filesystem
+keymap.set("n", "<leader>o", "<cmd>Oil<CR>", { desc = "[O]il filesystem" })
 
 -- harpoon
 keymap.set("n", "<leader>a", ":lua require('harpoon.mark').add_file()<CR>", { desc = "Harpoon Add" })
@@ -46,17 +49,27 @@ keymap.set("n", "<leader>ef", "<cmd>NvimTreeFindFileToggle<CR>", { desc = "Toggl
 keymap.set("n", "<leader>ec", "<cmd>NvimTreeCollapse<CR>", { desc = "Collapse file explorer" }) -- collapse file explorer
 keymap.set("n", "<leader>er", "<cmd>NvimTreeRefresh<CR>", { desc = "Refresh file explorer" }) -- refresh file explorer
 
--- bufferline
+-- buffers lualine
 for i = 1, 9, 1 do
-	vim.keymap.set({ "n", "v" }, "<A-" .. i .. ">", ":BufferLineGoToBuffer " .. i .. "<CR>", opts)
+	vim.keymap.set({ "n", "v" }, "<A-" .. i .. ">", ":LualineBuffersJump!" .. i .. "<CR>", opts)
 end
 
-keymap.set({ "n", "v" }, "<A-.>", ":BufferLineCycleNext<CR>", opts)
-keymap.set({ "n", "v" }, "<A-,>", ":BufferLineCyclePrev<CR>", opts)
-keymap.set({ "n", "v" }, "<A->>", ":BufferLineMoveNext<CR>", opts)
-keymap.set({ "n", "v" }, "<A-<>", ":BufferLineMovePrev<CR>", opts)
-keymap.set({ "n", "v" }, "<A-c>", ":BufferLinePickClose<CR>", opts)
-keymap.set({ "n", "v" }, "<A-p>", ":BufferLineTogglePin<CR>", opts)
+-- need to close currennt buffer selected in lualine
+
+for i = 1, 9, 1 do
+	keymap.set(
+		{ "n", "v" },
+		"<A-c>" .. i,
+		":LualineBuffersDelete " .. i .. "<CR>",
+		opts,
+		{ desc = "Close buffer " .. i }
+	)
+end
+-- keymap.set({ "n", "v" }, "<A-.>", ":BufferLineCycleNext<CR>", opts)
+-- keymap.set({ "n", "v" }, "<A-,>", ":BufferLineCyclePrev<CR>", opts)
+-- keymap.set({ "n", "v" }, "<A->>", ":BufferLineMoveNext<CR>", opts)
+-- keymap.set({ "n", "v" }, "<A-<>", ":BufferLineMovePrev<CR>", opts)
+-- keymap.set({ "n", "v" }, "<A-p>", ":BufferLineTogglePin<CR>", opts)
 
 -- undo
 keymap.set("n", "<leader>fu", "<cmd>Telescope undo<cr>", { desc = "[F]iles [U]ndo" })

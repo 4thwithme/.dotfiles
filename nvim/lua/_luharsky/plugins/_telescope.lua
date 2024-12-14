@@ -12,6 +12,9 @@ return {
 		local telescope = require("telescope")
 		local previewers = require("telescope.previewers")
 
+		local actions = require("telescope.actions")
+		local action_state = require("telescope.actions.state")
+
 		telescope.load_extension("undo")
 
 		local _bad = {
@@ -52,9 +55,20 @@ return {
 					"--ignore-file",
 					".gitignore",
 				},
+				layout_config = {
+					width = 0.99,
+					preview_width = 0.25,
+				},
 				winblend = 0,
 				buffer_previewer_maker = new_maker,
-				mappings = {},
+				mappings = {
+					i = {
+						["<A-c>"] = actions.delete_buffer + actions.move_to_top,
+					},
+					n = {
+						["<A-c>"] = actions.delete_buffer + actions.move_to_top,
+					},
+				},
 				extensions = {
 					undo = {
 						use_delta = true,
