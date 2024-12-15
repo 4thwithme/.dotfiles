@@ -8,10 +8,10 @@ return {
 		-- configure lualine with modified theme
 		lualine.setup({
 			options = {
+				theme = "tokyonight",
 				icons_enabled = true,
-				theme = "auto",
-				component_separators = { left = "", right = "" },
-				section_separators = { left = "", right = "" },
+				component_separators = { left = "", right = "" },
+				section_separators = { left = "", right = "" },
 				disabled_filetypes = {
 					statusline = {},
 					winbar = {},
@@ -56,6 +56,12 @@ return {
 							alternate_file = "", -- Text to show to identify the alternate file
 							directory = "", -- Text to show when the buffer is a directory
 						},
+						fmt = function(name)
+							if #name > 20 then
+								return string.sub(name, 1, 17) .. "..."
+							end
+							return name
+						end,
 					},
 				},
 				lualine_z = { "location" },

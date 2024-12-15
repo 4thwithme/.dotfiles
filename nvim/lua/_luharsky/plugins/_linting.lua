@@ -10,7 +10,6 @@ return {
 			javascriptreact = { "eslint_d" },
 			typescriptreact = { "eslint_d" },
 			astro = { "eslint_d" },
-			python = { "pylint" },
 			css = { "cssls" },
 		}
 

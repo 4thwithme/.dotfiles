@@ -10,3 +10,5 @@ vim.api.nvim_create_autocmd({ "VimEnter" }, { callback = open_nvim_tree })
 
 -- disable left side ~ on empty lines
 vim.cmd([[set fillchars=eob:\ ]])
+
+vim.g.python3_host_prog = "/Users/andrii/miniconda3/envs/ml/bin/python"

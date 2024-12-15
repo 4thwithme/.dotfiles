@@ -14,7 +14,7 @@ return {
 				-- "mtime",
 			},
 			buf_options = {
-				buflisted = true,
+				buflisted = false,
 				bufhidden = "hide",
 			},
 			delete_to_trash = true,

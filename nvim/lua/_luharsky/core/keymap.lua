@@ -57,19 +57,8 @@ end
 -- need to close currennt buffer selected in lualine
 
 for i = 1, 9, 1 do
-	keymap.set(
-		{ "n", "v" },
-		"<A-c>" .. i,
-		":LualineBuffersDelete " .. i .. "<CR>",
-		opts,
-		{ desc = "Close buffer " .. i }
-	)
+	keymap.set({ "n", "v" }, "<A-c>" .. i, ":LualineBuffersDelete " .. i .. "<CR>", { desc = "Close buffer " .. i })
 end
--- keymap.set({ "n", "v" }, "<A-.>", ":BufferLineCycleNext<CR>", opts)
--- keymap.set({ "n", "v" }, "<A-,>", ":BufferLineCyclePrev<CR>", opts)
--- keymap.set({ "n", "v" }, "<A->>", ":BufferLineMoveNext<CR>", opts)
--- keymap.set({ "n", "v" }, "<A-<>", ":BufferLineMovePrev<CR>", opts)
--- keymap.set({ "n", "v" }, "<A-p>", ":BufferLineTogglePin<CR>", opts)
 
 -- undo
 keymap.set("n", "<leader>fu", "<cmd>Telescope undo<cr>", { desc = "[F]iles [U]ndo" })
