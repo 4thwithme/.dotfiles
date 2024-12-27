@@ -1,7 +1,0 @@
-# yabai -m signal --add event=dock_did_restart action="sudo yabai --load-sa"
-# sudo yabai --load-sa
-
-alt + ctrl - down : yabai -m window --focus south
-alt + ctrl - up : yabai -m window --focus north
-alt + ctrl - left : yabai -m window --focus west
-alt + ctrl - right : yabai -m window --focus east
