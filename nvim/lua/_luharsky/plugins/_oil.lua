@@ -17,6 +17,10 @@ return {
 				buflisted = false,
 				bufhidden = "hide",
 			},
+			float = {
+				padding = 4,
+				border = "double",
+			},
 			delete_to_trash = true,
 			watch_for_changes = true,
 			view_options = {

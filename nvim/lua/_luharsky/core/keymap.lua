@@ -30,7 +30,7 @@ keymap.set("n", "<leader>fd", "<cmd>Telescope diagnostics<cr>", { desc = "[f]ile
 keymap.set("n", "<leader>fc", "<cmd>Telescope git_commits<cr>", { desc = "[f]iles [c]ommits" })
 
 -- oil filesystem
-keymap.set("n", "<leader>o", "<cmd>Oil<CR>", { desc = "[O]il filesystem" })
+keymap.set("n", "|", "<cmd>Oil<CR>", { desc = "[O]il filesystem" })
 
 -- harpoon
 keymap.set("n", "<leader>a", ":lua require('harpoon.mark').add_file()<CR>", { desc = "Harpoon Add" })

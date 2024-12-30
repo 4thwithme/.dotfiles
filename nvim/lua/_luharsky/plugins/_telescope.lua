@@ -13,7 +13,6 @@ return {
 		local previewers = require("telescope.previewers")
 
 		local actions = require("telescope.actions")
-		local action_state = require("telescope.actions.state")
 
 		telescope.load_extension("undo")
 
@@ -42,6 +41,13 @@ return {
 
 		telescope.setup({
 			defaults = {
+				border = true,
+				borderchars = {
+					prompt = { "─", "│", "─", "│", "┌", "┐", "┘", "└" },
+					results = { "─", "│", "─", "│", "┌", "┐", "┘", "└" },
+					preview = { "─", "│", "─", "│", "┌", "┐", "┘", "└" },
+				},
+
 				path_display = { "smart" },
 				vimgrep_arguments = {
 					"rg",
@@ -55,7 +61,13 @@ return {
 					"--ignore-file",
 					".gitignore",
 				},
+				layout_strategy = "horizontal",
 				layout_config = {
+					horizontal = {
+						preview_cutoff = 120,
+						preview_width = 0.25,
+						results_width = 0.6,
+					},
 					width = 0.99,
 					preview_width = 0.25,
 				},
@@ -70,6 +82,7 @@ return {
 					},
 				},
 				extensions = {
+
 					undo = {
 						use_delta = true,
 						side_by_side = true,
