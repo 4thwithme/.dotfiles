@@ -6,10 +6,7 @@ return {
 		"windwp/nvim-ts-autotag",
 	},
 	config = function()
-		local treesitter = require("nvim-treesitter.configs")
-
-		-- configure treesitter
-		treesitter.setup({
+		require("nvim-treesitter.configs").setup({
 			highlight = {
 				enable = true,
 			},
@@ -19,6 +16,8 @@ return {
 			autotag = {
 				enable = true,
 			},
+			automatic_installation = true,
+
 			ensure_installed = {
 				"json",
 				"javascript",
@@ -47,15 +46,6 @@ return {
 				"python",
 				"c",
 				"rust",
-			},
-			incremental_selection = {
-				enable = true,
-				keymaps = {
-					init_selection = "<C-space>",
-					node_incremental = "<C-space>",
-					scope_incremental = false,
-					node_decremental = "<bs>",
-				},
 			},
 		})
 	end,

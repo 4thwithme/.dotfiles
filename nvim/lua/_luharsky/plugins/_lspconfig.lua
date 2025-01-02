@@ -93,9 +93,10 @@ return {
 				})
 			end,
 			["astro"] = function()
-				lspconfig["astro"].setup({
+				lspconfig.astro.setup({
 					capabilities = capabilities,
 					on_attach = on_attach,
+					filetypes = { "astro" },
 				})
 			end,
 			["graphql"] = function()

@@ -43,7 +43,7 @@ return {
 			},
 			filters = {
 				custom = {
-					"node_modules/.*",
+					-- "node_modules/.*",
 					".DS_Store",
 				},
 			},
