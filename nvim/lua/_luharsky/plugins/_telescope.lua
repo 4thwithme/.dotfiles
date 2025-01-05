@@ -19,6 +19,8 @@ return {
 		local _bad = {
 			".*%.csv",
 			".*%.lock",
+			".*%.env",
+			".log.*",
 		}
 		local bad_files = function(filepath)
 			for _, v in ipairs(_bad) do
