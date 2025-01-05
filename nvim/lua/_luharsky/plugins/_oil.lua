@@ -18,11 +18,23 @@ return {
 				bufhidden = "hide",
 			},
 			float = {
-				padding = 4,
-				border = "double",
+				padding = 2,
+				width = 0.8,
+				height = 80,
+				max_height = 80,
+				border = "single",
+				win_options = {
+					winblend = 0,
+				},
+				override = function(conf)
+					return conf
+				end,
 			},
 			delete_to_trash = true,
 			watch_for_changes = true,
+			keymaps = {
+				["|"] = { "<cmd>Oil --float<cr>", mode = "n" },
+			},
 			view_options = {
 				-- Show files and directories that start with "."
 				show_hidden = true,
