@@ -8,7 +8,7 @@ return {
 		-- configure lualine with modified theme
 		lualine.setup({
 			options = {
-				theme = "tokyonight",
+				-- theme = "tokyonight",
 				icons_enabled = true,
 				component_separators = { left = "", right = "" },
 				section_separators = { left = "", right = "" },
@@ -21,9 +21,7 @@ return {
 				globalstatus = true,
 				refresh = {},
 			},
-			sections = {},
-			inactive_sections = {},
-			tabline = {
+			sections = {
 				lualine_a = { "mode" },
 				lualine_b = { "branch", "diff", "diagnostics" },
 				lualine_c = {
@@ -46,26 +44,34 @@ return {
 				},
 				lualine_x = {},
 				lualine_y = {
+					-- {
+					-- 	"buffers",
+					-- 	mode = 2,
+					-- 	use_mode_colors = true,
+					-- 	buffer_max_length = 40,
+					-- 	symbols = {
+					-- 		modified = " ●", -- Text to show when the buffer is modified
+					-- 		alternate_file = "", -- Text to show to identify the alternate file
+					-- 		directory = "", -- Text to show when the buffer is a directory
+					-- 	},
+					-- 	fmt = function(name)
+					-- 		if #name > 20 then
+					-- 			return string.sub(name, 1, 17) .. "..."
+					-- 		end
+					-- 		return name
+					-- 	end,
+					-- },
 					{
-						"buffers",
-						mode = 2,
-						use_mode_colors = true,
-						buffer_max_length = 40,
-						symbols = {
-							modified = " ●", -- Text to show when the buffer is modified
-							alternate_file = "", -- Text to show to identify the alternate file
-							directory = "", -- Text to show when the buffer is a directory
-						},
-						fmt = function(name)
-							if #name > 20 then
-								return string.sub(name, 1, 17) .. "..."
-							end
-							return name
-						end,
+						"filename",
+						file_status = true,
+						path = 0,
+						symbols = { modified = " ●", readonly = "" },
 					},
 				},
 				lualine_z = { "location" },
 			},
+			inactive_sections = {},
+			tabline = {},
 			winbar = {},
 			inactive_winbar = {},
 			extensions = {},

@@ -63,12 +63,12 @@ end
 -- undo
 keymap.set("n", "<leader>fu", "<cmd>Telescope undo<cr>", { desc = "[F]iles [U]ndo" })
 -- clipboard history
-keymap.set({ "n", "v" }, "<leader>fc", ":Telescope neoclip<CR>", { desc = "[F]ind [C]opy items" }, { noremap = true })
+keymap.set({ "n", "v" }, "<leader>fc", ":Telescope neoclip<CR>", { desc = "[F]ind [C]opy items" })
 -- diffvew
 keymap.set({ "n", "v" }, "<leader>G", ":DiffviewOpen<CR>", opts)
 keymap.set({ "n", "v" }, "<leader>CG", ":DiffviewClose<CR>", opts)
 -- diagnostics
-keymap.set({ "n", "v" }, "<leader>D", ":Trouble diagnostics toggle<CR>", opts, { desc = "[D]iagnostic toggle" })
+keymap.set({ "n", "v" }, "<leader>D", ":Trouble diagnostics toggle<CR>", { desc = "[D]iagnostic toggle" })
 -- markdown
 keymap.set({ "n", "v" }, "<leader>mr", ":MarkdownPreview<CR>", opts, { desc = "[M]arkdown [R]un" })
 keymap.set({ "n", "v" }, "<leader>ms", ":MarkdownPreviewStop<CR>", opts, { desc = "[M]arkdown [S]top" })
@@ -81,4 +81,4 @@ keymap.set({ "n", "v" }, "<leader>cor", ":CopilotChatReview<CR>", opts, { desc =
 keymap.set({ "n", "v" }, "<leader>cogt", ":CopilotChatTests<CR>", opts, { desc = "[Co]pilot [G]enerate [T]ests" })
 
 -- cloak
-keymap.set({ "n", "v" }, "<leader>env", ":CloakToggle<CR>", opts, { desc = "[ENV]" })
+keymap.set({ "n", "v" }, "<leader>env", ":CloakToggle<CR>", { desc = "[ENV]" })

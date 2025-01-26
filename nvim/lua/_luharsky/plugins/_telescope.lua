@@ -20,8 +20,10 @@ return {
 			".*%.csv",
 			".*%.lock",
 			".*%.env",
+			".*%.env.*",
 			".log.*",
 		}
+
 		local bad_files = function(filepath)
 			for _, v in ipairs(_bad) do
 				if filepath:match(v) then
@@ -67,11 +69,11 @@ return {
 				layout_config = {
 					horizontal = {
 						preview_cutoff = 120,
-						preview_width = 0.25,
+						preview_width = 0.35,
 						results_width = 0.6,
 					},
 					width = 0.99,
-					preview_width = 0.25,
+					preview_width = 0.35,
 				},
 				winblend = 0,
 				buffer_previewer_maker = new_maker,
@@ -84,14 +86,13 @@ return {
 					},
 				},
 				extensions = {
-
 					undo = {
 						use_delta = true,
 						side_by_side = true,
 						diff_context_lines = vim.o.scrolloff,
 						entry_format = "state #$ID, $STAT, $TIME",
 						layout_strategy = "horizontal",
-						width = 0.9,
+						width = 0.99,
 						layout_config = {
 							preview_width = 0.8,
 						},
