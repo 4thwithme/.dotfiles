@@ -24,23 +24,13 @@ return {
 				prefix = ":",
 				always_show_folders = false, -- Turn into false from true by default
 			},
-			-- change folder arrow icons
+
 			renderer = {
+				indent_width = 1,
 				indent_markers = {
 					enable = true,
 				},
-				icons = {
-					glyphs = {
-						folder = {
-							arrow_closed = "", -- arrow when folder is closed
-							arrow_open = "", -- arrow when folder is open
-						},
-					},
-				},
 			},
-			-- disable window_picker for
-			-- explorer to work well with
-			-- window splits
 			actions = {
 				open_file = {
 					window_picker = {

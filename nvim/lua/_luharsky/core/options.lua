@@ -57,10 +57,6 @@ vim.opt.foldenable = false
 opt.updatetime = 250
 opt.timeoutlen = 300
 
--- split
-opt.splitright = true
-opt.splitbelow = true
-
 -- Highlight when yanking (copying) text
 vim.api.nvim_create_autocmd("TextYankPost", {
 	desc = "Highlight when yanking (copying) text",

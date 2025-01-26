@@ -49,16 +49,19 @@ keymap.set("n", "<leader>ef", "<cmd>NvimTreeFindFileToggle<CR>", { desc = "Toggl
 keymap.set("n", "<leader>ec", "<cmd>NvimTreeCollapse<CR>", { desc = "Collapse file explorer" }) -- collapse file explorer
 keymap.set("n", "<leader>er", "<cmd>NvimTreeRefresh<CR>", { desc = "Refresh file explorer" }) -- refresh file explorer
 
--- buffers lualine
+-- bufferline
 for i = 1, 9, 1 do
-	vim.keymap.set({ "n", "v" }, "<A-" .. i .. ">", ":LualineBuffersJump!" .. i .. "<CR>", opts)
+	vim.keymap.set({ "n", "v" }, "<A-" .. i .. ">", ":BufferLineGoToBuffer" .. i .. "<CR>", opts)
 end
+
+keymap.set({ "n", "v" }, "<A-.>", ":BufferLineCycleNext<CR>", opts)
+keymap.set({ "n", "v" }, "<A-,>", ":BufferLineCyclePrev<CR>", opts)
+keymap.set({ "n", "v" }, "<A->>", ":BufferLineMoveNext<CR>", opts)
+keymap.set({ "n", "v" }, "<A-<>", ":BufferLineMovePrev<CR>", opts)
+keymap.set({ "n", "v" }, "<A-c>", ":BufferLinePickClose<CR>", opts)
+keymap.set({ "n", "v" }, "<A-p>", ":BufferLineTogglePin<CR>", opts)
 
 -- need to close currennt buffer selected in lualine
-
-for i = 1, 9, 1 do
-	keymap.set({ "n", "v" }, "<A-c>" .. i, ":LualineBuffersDelete " .. i .. "<CR>", { desc = "Close buffer " .. i })
-end
 
 -- undo
 keymap.set("n", "<leader>fu", "<cmd>Telescope undo<cr>", { desc = "[F]iles [U]ndo" })
@@ -70,15 +73,15 @@ keymap.set({ "n", "v" }, "<leader>CG", ":DiffviewClose<CR>", opts)
 -- diagnostics
 keymap.set({ "n", "v" }, "<leader>D", ":Trouble diagnostics toggle<CR>", { desc = "[D]iagnostic toggle" })
 -- markdown
-keymap.set({ "n", "v" }, "<leader>mr", ":MarkdownPreview<CR>", opts, { desc = "[M]arkdown [R]un" })
-keymap.set({ "n", "v" }, "<leader>ms", ":MarkdownPreviewStop<CR>", opts, { desc = "[M]arkdown [S]top" })
+keymap.set({ "n", "v" }, "<leader>mr", ":MarkdownPreview<CR>", { desc = "[M]arkdown [R]un" })
+keymap.set({ "n", "v" }, "<leader>ms", ":MarkdownPreviewStop<CR>", { desc = "[M]arkdown [S]top" })
 -- copilot
-keymap.set({ "n", "v" }, "<leader>coe", ":Copilot enable<CR>", opts, { desc = "[Co]pilot [E]nable" })
-keymap.set({ "n", "v" }, "<leader>cod", ":Copilot disable<CR>", opts, { desc = "[Co]pilot [D]isable" })
+keymap.set({ "n", "v" }, "<leader>coe", ":Copilot enable<CR>", { desc = "[Co]pilot [E]nable" })
+keymap.set({ "n", "v" }, "<leader>cod", ":Copilot disable<CR>", { desc = "[Co]pilot [D]isable" })
 -- copilot chat
-keymap.set({ "n", "v" }, "<leader>cot", ":CopilotChatToggle<CR>", opts, { desc = "[Co]pilot [F]lip" })
-keymap.set({ "n", "v" }, "<leader>cor", ":CopilotChatReview<CR>", opts, { desc = "[Co]pilot [R]eview" })
-keymap.set({ "n", "v" }, "<leader>cogt", ":CopilotChatTests<CR>", opts, { desc = "[Co]pilot [G]enerate [T]ests" })
+keymap.set({ "n", "v" }, "<leader>cot", ":CopilotChatToggle<CR>", { desc = "[Co]pilot [F]lip" })
+keymap.set({ "n", "v" }, "<leader>cor", ":CopilotChatReview<CR>", { desc = "[Co]pilot [R]eview" })
+keymap.set({ "n", "v" }, "<leader>cogt", ":CopilotChatTests<CR>", { desc = "[Co]pilot [G]enerate [T]ests" })
 
 -- cloak
 keymap.set({ "n", "v" }, "<leader>env", ":CloakToggle<CR>", { desc = "[ENV]" })
