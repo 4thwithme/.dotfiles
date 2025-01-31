@@ -5,10 +5,10 @@ return {
 		config = function()
 			require("tokyonight").setup({
 				style = "night",
-				-- transparent = true,
+				transparent = true,
 				styles = {
-					-- sidebars = "transparent",
-					-- floats = "transparent",
+					sidebars = "transparent",
+					floats = "transparent",
 				},
 			})
 			vim.cmd([[colorscheme tokyonight]])
@@ -19,7 +19,12 @@ return {
 	-- 	lazy = false,
 	-- 	priority = 1000,
 	-- 	config = function()
-	-- 		require("nordic").setup({})
+	-- 		require("nordic").setup({
+	-- 			transparent = {
+	-- 				bg = true,
+	-- 				float = true,
+	-- 			},
+	-- 		})
 	--
 	-- 		vim.cmd([[colorscheme nordic]])
 	-- 	end,
