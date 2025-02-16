@@ -12,6 +12,7 @@ return {
 				typescriptreact = { "prettier" },
 				astro = { "prettier" },
 				css = { "prettier" },
+				ruby = { "rubocop" },
 				html = { "prettier" },
 				json = { "prettier" },
 				yaml = { "prettier" },

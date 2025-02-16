@@ -92,6 +92,20 @@ return {
 					on_attach = on_attach,
 				})
 			end,
+			["ruby_lsp"] = function()
+				lspconfig.ruby_lsp.setup({
+					capabilities = capabilities,
+					on_attach = on_attach,
+					settings = {
+						ruby_lsp = {
+							diagnostics = true,
+							suggest = true,
+							completion = true,
+							hover = true,
+						},
+					},
+				})
+			end,
 			["astro"] = function()
 				lspconfig.astro.setup({
 					capabilities = capabilities,
@@ -121,7 +135,6 @@ return {
 						"scss",
 						"less",
 						"svelte",
-						"python",
 					},
 				})
 			end,

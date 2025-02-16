@@ -4,7 +4,7 @@
             "complex_modifications": {
                 "rules": [
                     {
-                        "description": "Set English language with Control+E and Ukrainian language with Control+U",
+                        "description": "Switch to English input source with Control + E",
                         "manipulators": [
                             {
                                 "from": {
@@ -13,39 +13,18 @@
                                 },
                                 "to": [{ "select_input_source": { "language": "en" } }],
                                 "type": "basic"
-                            },
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Switch to Ukrainian input source with Control + U",
+                        "manipulators": [
                             {
                                 "from": {
                                     "key_code": "u",
                                     "modifiers": { "mandatory": ["control"] }
                                 },
                                 "to": [{ "select_input_source": { "language": "uk" } }],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Map left_shift + F11 to backslash and left_shift + F12 to vertical bar",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "f11",
-                                    "modifiers": { "mandatory": ["left_shift"] }
-                                },
-                                "to": [{ "key_code": "backslash" }],
-                                "type": "basic"
-                            },
-                            {
-                                "from": {
-                                    "key_code": "f12",
-                                    "modifiers": { "mandatory": ["left_shift"] }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "backslash",
-                                        "modifiers": ["left_shift"]
-                                    }
-                                ],
                                 "type": "basic"
                             }
                         ]
@@ -56,10 +35,6 @@
                 {
                     "identifiers": { "is_keyboard": true },
                     "simple_modifications": [
-                        {
-                            "from": { "key_code": "backslash" },
-                            "to": [{ "key_code": "return_or_enter" }]
-                        },
                         {
                             "from": { "key_code": "grave_accent_and_tilde" },
                             "to": [{ "key_code": "left_shift" }]

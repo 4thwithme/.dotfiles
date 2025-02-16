@@ -42,10 +42,12 @@ return {
 				"dockerfile",
 				"gitignore",
 				"query",
+				"ruby",
 				"vimdoc",
 				"python",
 				"c",
 				"rust",
+				"jsonc",
 			},
 		})
 	end,
