@@ -1,10 +1,13 @@
 background = 000000
 background-opacity = 0.89 
-font-feature = -liga
-font-size = 14
+font-feature = font-feature
+font-size = 144
 macos-option-as-alt = true
 macos-titlebar-style = hidden
 maximize = true
 window-decoration = none
 window-height = 100
 window-width = 10000000
+keybind = shift+right=adjust_selection:right
+keybind = shift+left=adjust_selection:left
+window-padding-y = 0
