@@ -79,9 +79,10 @@ keymap.set({ "n", "v" }, "<leader>ms", ":MarkdownPreviewStop<CR>", { desc = "[M]
 keymap.set({ "n", "v" }, "<leader>coe", ":Copilot enable<CR>", { desc = "[Co]pilot [E]nable" })
 keymap.set({ "n", "v" }, "<leader>cod", ":Copilot disable<CR>", { desc = "[Co]pilot [D]isable" })
 -- copilot chat
-keymap.set({ "n", "v" }, "<leader>cot", ":CopilotChatToggle<CR>", { desc = "[Co]pilot [F]lip" })
-keymap.set({ "n", "v" }, "<leader>cor", ":CopilotChatReview<CR>", { desc = "[Co]pilot [R]eview" })
-keymap.set({ "n", "v" }, "<leader>cogt", ":CopilotChatTests<CR>", { desc = "[Co]pilot [G]enerate [T]ests" })
+keymap.set({ "n", "v" }, "<leader>cct", ":CopilotChatToggle<CR>", { desc = "[Co]pilot [C]hat [T]oggle" })
+keymap.set({ "n", "v" }, "<leader>cce", ":CopilotChatExplain<CR>", { desc = "[Co]pilot [C]hat [E]xplain" })
+keymap.set({ "n", "v" }, "<leader>ccr", ":CopilotChatReview<CR>", { desc = "[Co]pilot [C]hat [R]eview" })
+keymap.set({ "n", "v" }, "<leader>ccf", ":CopilotChatFix<CR>", { desc = "[Co]pilot [C]hat [F]ix" })
 
 -- cloak
 keymap.set({ "n", "v" }, "<leader>env", ":CloakToggle<CR>", { desc = "[ENV]" })

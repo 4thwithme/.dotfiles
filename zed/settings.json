@@ -1,0 +1,53 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+  "assistant": {
+    "default_model": {
+      "provider": "copilot_chat",
+      "model": "claude-3-7-sonnet"
+    },
+    "version": "2"
+  },
+  "telemetry": {
+    "metrics": false,
+    "diagnostics": false
+  },
+  // "vim_mode": true,
+  "base_keymap": "VSCode",
+  "ui_font_size": 12,
+  "buffer_font_size": 12,
+  "buffer_font_features": {
+    "calt": false
+  },
+  "features": {
+    // "edit_prediction_provider": "zed",
+    "edit_prediction_provider": "copilot"
+  },
+  "buffer_font_family": "MesloLGM Nerd Font Mono",
+  "unnecessary_code_fade": 0.2,
+  "active_pane_modifiers": {
+    "magnification": 1.0,
+    "border_size": 0.0,
+    "inactive_opacity": 0.8
+  },
+  "theme": {
+    "mode": "system",
+    "light": "One Light",
+    "dark": "4thwithme"
+  },
+  "prettier": {
+    "trailingComma": "es5",
+    "tabWidth": 2,
+    "semi": true,
+    "singleQuote": true
+  },
+  "scrollbar": {
+    "show": "system"
+  }
+}
