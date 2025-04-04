@@ -61,8 +61,6 @@ keymap.set({ "n", "v" }, "<A-<>", ":BufferLineMovePrev<CR>", opts)
 keymap.set({ "n", "v" }, "<A-c>", ":BufferLinePickClose<CR>", opts)
 keymap.set({ "n", "v" }, "<A-p>", ":BufferLineTogglePin<CR>", opts)
 
--- need to close currennt buffer selected in lualine
-
 -- undo
 keymap.set("n", "<leader>fu", "<cmd>Telescope undo<cr>", { desc = "[F]iles [U]ndo" })
 -- clipboard history
@@ -86,3 +84,4 @@ keymap.set({ "n", "v" }, "<leader>ccf", ":CopilotChatFix<CR>", { desc = "[Co]pil
 
 -- cloak
 keymap.set({ "n", "v" }, "<leader>env", ":CloakToggle<CR>", { desc = "[ENV]" })
+

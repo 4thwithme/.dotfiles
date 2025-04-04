@@ -142,14 +142,14 @@ return {
 				lspconfig["pyright"].setup({
 					capabilities = capabilities,
 					on_attach = on_attach,
-					before_init = function(params, config)
-						local util = require("lspconfig.util")
-						local path = util.path
+					-- before_init = function(params, config)
+					-- local util = require("lspconfig.util")
+					-- local path = util.path
 
-						local default_venv_path = path.join(vim.env.HOME, "miniconda3", "envs", "ml", "bin", "python")
-						print("Setting python path to: " .. default_venv_path)
-						config.settings.python.pythonPath = default_venv_path
-					end,
+					-- local default_venv_path = path.join(vim.env.HOME, "miniconda3", "envs", "ml", "bin", "python")
+					-- print("Setting python path to: " .. default_venv_path)
+					-- config.settings.python.pythonPath = default_venv_path
+					-- end,
 				})
 			end,
 			["lua_ls"] = function()

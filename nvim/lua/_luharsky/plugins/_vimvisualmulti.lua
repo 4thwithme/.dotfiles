@@ -1,8 +1,8 @@
 return {
-  'mg979/vim-visual-multi',
-  config = function()
-    vim.g.VM_theme = 'neon';
-  end
+	"mg979/vim-visual-multi",
+	config = function()
+		vim.g.VM_theme = "neon"
+	end,
 }
 
 -- JUST A TIP DO NOT UNCOMMENT IT
