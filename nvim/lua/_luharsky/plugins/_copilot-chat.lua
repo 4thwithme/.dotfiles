@@ -18,7 +18,7 @@ return {
 				question_header = "=== User ===", -- Header to use for user questions
 				answer_header = "=== Github Copilot ===", -- Header to use for AI answers
 				error_header = "=== Error ===", -- Header to use for errors
-				separator = "───", -- Separator to use in chat
+				separator = "===", -- Separator to use in chat
 			})
 		end,
 	},
