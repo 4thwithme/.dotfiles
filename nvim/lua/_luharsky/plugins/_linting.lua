@@ -5,11 +5,11 @@ return {
 		local lint = require("lint")
 
 		lint.linters_by_ft = {
-			javascript = { "eslint_d" },
-			typescript = { "eslint_d" },
-			javascriptreact = { "eslint_d" },
-			typescriptreact = { "eslint_d" },
-			astro = { "eslint_d" },
+			javascript = { "eslint_d", "eslint" },
+			typescript = { "eslint_d", "eslint" },
+			javascriptreact = { "eslint_d", "eslint" },
+			typescriptreact = { "eslint_d", "eslint" },
+			astro = { "eslint_d", "eslint" },
 			css = { "cssls" },
 			ruby = { "rubocop" },
 		}
