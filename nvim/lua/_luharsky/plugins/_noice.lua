@@ -1,30 +1,28 @@
 return {
 	"folke/noice.nvim",
 	event = "VeryLazy",
-	opts = {
-		-- add any options here
-	},
 	dependencies = {
-		-- if you lazy-load any plugin below, make sure to add proper `module="..."` entries
 		"MunifTanjim/nui.nvim",
-		-- OPTIONAL:
-		--   `nvim-notify` is only needed, if you want to use the notification view.
-		--   If not available, we use `mini` as the fallback
 		"rcarriga/nvim-notify",
 	},
 	config = function()
 		require("noice").setup({
-			views = {
-				cmdline_popup = {
-					position = {
-						row = 5,
-						col = "50%",
-					},
-					size = {
-						width = 60,
-						height = "auto",
-					},
+			cmdline = {
+				enabled = true, -- enables the Noice cmdline UI
+				view = "cmdline",
+				opts = {}, -- global options for the cmdline. See section on views
+				---@type table<string, CmdlineFormat>
+				format = {
+					cmdline = { pattern = "^:", icon = "COMMAND: ", lang = "vim" },
+					search_down = { kind = "search", pattern = "^/", icon = " ", lang = "regex" },
+					search_up = { kind = "search", pattern = "^%?", icon = " ", lang = "regex" },
+					filter = { pattern = "^:%s*!", icon = "$", lang = "bash" },
+					lua = { pattern = { "^:%s*lua%s+", "^:%s*lua%s*=%s*", "^:%s*=%s*" }, icon = "", lang = "lua" },
+					help = { pattern = "^:%s*he?l?p?%s+", icon = "HELP: >" },
+					input = { view = "cmdline_input", icon = "󰥻 " }, -- Used by input()
 				},
+			},
+			views = {
 				popupmenu = {
 					relative = "editor",
 					position = {

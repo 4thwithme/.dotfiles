@@ -9,9 +9,12 @@ return {
 				styles = {
 					sidebars = "transparent",
 					floats = "transparent",
+					keywords = { bold = true },
+					functions = { bold = true },
+					constant = { bold = true },
 				},
 			})
-			vim.cmd([[colorscheme tokyonight]])
+			vim.cmd([[colorscheme tokyonight-night]])
 		end,
 	},
 	-- {
@@ -27,6 +30,22 @@ return {
 	-- 		})
 	--
 	-- 		vim.cmd([[colorscheme nordic]])
+	-- 	end,
+	-- },
+	-- {
+	-- 	"4thwithme/black.nvim",
+	-- 	lazy = false,
+	-- 	priority = 1000,
+	-- 	config = function()
+	-- 		require("black").setup({
+	-- 			-- style = "dark",
+	-- 			-- transparent = true,
+	-- 			-- styles = {
+	-- 			-- 	sidebars = "transparent",
+	-- 			-- 	floats = "transparent",
+	-- 			-- },
+	-- 		})
+	-- 		vim.cmd([[colorscheme black]])
 	-- 	end,
 	-- },
 }

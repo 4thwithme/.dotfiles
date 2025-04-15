@@ -85,3 +85,10 @@ keymap.set({ "n", "v" }, "<leader>ccl", ":CopilotChatLoad<CR>", { desc = "[Co]pi
 keymap.set({ "n", "v" }, "<leader>ccs", ":CopilotChatSave<CR>", { desc = "[Co]pilot [C]hat [S]ave" })
 -- cloak
 keymap.set({ "n", "v" }, "<leader>env", ":CloakToggle<CR>", { desc = "[ENV]" })
+-- replace all 
+keymap.set(
+	"v",
+	"<leader>ra",
+	":lua visual_find_replace()<CR>",
+	{ noremap = true, silent = true, desc = "Find and replace selected text" }
+)
