@@ -8,6 +8,7 @@ maximize = true
 window-decoration = none
 window-height = 100
 window-width = 10000000
-keybind = shift+right=adjust_selection:right
-keybind = shift+left=adjust_selection:left
+# keybind = shift+right=adjust_selection:right
+#  keybind = shift+left=adjust_selection:left
 window-padding-y = 0
+background-blur = true

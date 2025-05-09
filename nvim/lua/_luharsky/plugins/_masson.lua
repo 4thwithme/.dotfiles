@@ -3,6 +3,7 @@ return {
 	dependencies = {
 		"williamboman/mason-lspconfig.nvim",
 		"WhoIsSethDaniel/mason-tool-installer.nvim",
+		"neovim/nvim-lspconfig",
 	},
 	config = function()
 		local mason = require("mason")
@@ -20,14 +21,13 @@ return {
 		})
 
 		mason_lspconfig.setup({
-			ensure_installed = {
+			automatic_enable = {
 				"ts_ls",
 				"html",
 				"cssls",
 				"lua_ls",
 				"graphql",
 				"emmet_ls",
-				"prismals",
 				"rust_analyzer",
 				"astro",
 				"prismals",
@@ -36,7 +36,7 @@ return {
 		})
 
 		mason_tool_installer.setup({
-			ensure_installed = {
+			automatic_enable = {
 				"prettier", -- prettier formatter
 				"stylua", -- lua formatter
 				-- "eslint_d", -- js linter

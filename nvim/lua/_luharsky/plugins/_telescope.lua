@@ -3,7 +3,6 @@ return {
 	branch = "0.1.x",
 	dependencies = {
 		"nvim-lua/plenary.nvim",
-		{ "nvim-telescope/telescope-fzf-native.nvim", build = "make" },
 		"nvim-tree/nvim-web-devicons",
 		"folke/todo-comments.nvim",
 		"debugloop/telescope-undo.nvim",
@@ -107,7 +106,5 @@ return {
 				},
 			},
 		})
-
-		telescope.load_extension("fzf")
 	end,
 }
