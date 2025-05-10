@@ -1,6 +1,6 @@
 background = 000000
 background-opacity = 0.89 
-font-feature = font-feature
+font-feature = -calt, -liga, -dlig
 font-size = 14
 macos-option-as-alt = true
 macos-titlebar-style = hidden

@@ -23,7 +23,7 @@ return {
 			themable = true, -- allows highlight groups to be overriden i.e. sets highlights as default
 			numbers = "ordinal", -- "none" | "ordinal" | "buffer_id" | "both" | function({ ordinal, id, lower, raise }): string,
 			indicator = {
-				icon = "▎", -- this should be omitted if indicator style is not 'icon'
+				icon = "|", -- this should be omitted if indicator style is not 'icon'
 				style = "icon", --'icon' | 'underline' | 'none',
 			},
 			-- offsets = { { filetype = "NvimTree", text = "NVIM TREE", text_align = "center" } },

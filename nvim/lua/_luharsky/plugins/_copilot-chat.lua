@@ -15,10 +15,10 @@ return {
 					layout = "vertical", -- 'vertical', 'horizontal', 'float', 'replace'
 					width = 0.4, -- fractional width of parent, or absolute width in columns when > 1
 				},
-				question_header = "=== User ===", -- Header to use for user questions
-				answer_header = "=== Github Copilot ===", -- Header to use for AI answers
-				error_header = "=== Error ===", -- Header to use for errors
-				separator = "===", -- Separator to use in chat
+				question_header = "4thwithme", -- Header to use for user questions
+				answer_header = "Copilot", -- Header to use for AI answers
+				error_header = "Error",
+				separator = "-", -- Separator to use in chat
 			})
 		end,
 	},
