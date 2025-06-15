@@ -18,6 +18,25 @@ return {
 		end,
 	},
 	-- {
+	-- 	"rose-pine/neovim",
+	-- 	name = "rose-pine",
+	-- 	config = function()
+	-- 		require("rose-pine").setup({
+	-- 			styles = {
+	-- 				bold = true,
+	-- 				italic = true,
+	-- 				transparency = true,
+	-- 			},
+	-- 			highlight_groups = {
+	-- 				keyword = { bold = true },
+	-- 				functions = { bold = true },
+	-- 				constants = { bold = true },
+	-- 			},
+	-- 		})
+	-- 		vim.cmd([[colorscheme rose-pine]])
+	-- 	end,
+	-- },
+	-- {
 	-- 	"AlexvZyl/nordic.nvim",
 	-- 	lazy = false,
 	-- 	priority = 1000,

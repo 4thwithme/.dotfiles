@@ -52,18 +52,15 @@ return {
 				},
 
 				path_display = { "smart" },
-				vimgrep_arguments = {
-					"rg",
-					"--hidden",
-					"--color=never",
-					"--no-heading",
-					"--with-filename",
-					"--line-number",
-					"--column",
-					"--smart-case",
-					"--ignore-file",
-					".gitignore",
+				file_ignore_patterns = {
+					"node_modules/.*",
+					"build/.*",
+					"dist/.*",
+					".git/.*",
+					".cache/.*",
+					"%.lock",
 				},
+
 				layout_strategy = "horizontal",
 				layout_config = {
 					horizontal = {
@@ -72,7 +69,6 @@ return {
 						results_width = 0.6,
 					},
 					width = 0.99,
-					preview_width = 0.35,
 				},
 				winblend = 0,
 				buffer_previewer_maker = new_maker,
@@ -84,23 +80,54 @@ return {
 						["<A-c>"] = actions.delete_buffer + actions.move_to_top,
 					},
 				},
-				extensions = {
-					undo = {
-						use_delta = true,
-						side_by_side = true,
-						diff_context_lines = vim.o.scrolloff,
-						entry_format = "state #$ID, $STAT, $TIME",
-						layout_strategy = "horizontal",
-						width = 0.99,
-						layout_config = {
+			},
+			pickers = {
+				find_files = {
+					find_command = {
+						"rg",
+						"--files",
+						"--hidden",
+						"--glob=!node_modules/",
+						"--glob=!build/",
+						"--glob=!dist/",
+						"--glob=!.git/",
+						"--glob=!.cache/",
+					},
+				},
+				live_grep = {
+					additional_args = function()
+						return {
+							"--glob=!node_modules/",
+							"--glob=!build/",
+							"--glob=!dist/",
+							"--glob=!.git/",
+							"--glob=!.cache/",
+							"--glob=!.vscode/",
+							"--glob=!*.lock",
+							"--glob=!*.csv",
+							"--glob=!*-lock.json",
+						}
+					end,
+				},
+			},
+			extensions = {
+				undo = {
+					use_delta = true,
+					side_by_side = true,
+					diff_context_lines = vim.o.scrolloff,
+					entry_format = "state #$ID, $STAT, $TIME",
+					layout_strategy = "horizontal",
+					layout_config = {
+						horizontal = {
 							preview_width = 0.8,
 						},
-						mappings = {
-							n = {
-								["a"] = require("telescope-undo.actions").yank_additions,
-								["d"] = require("telescope-undo.actions").yank_deletions,
-								["<cr>"] = require("telescope-undo.actions").restore,
-							},
+						width = 0.99,
+					},
+					mappings = {
+						n = {
+							["a"] = require("telescope-undo.actions").yank_additions,
+							["d"] = require("telescope-undo.actions").yank_deletions,
+							["<cr>"] = require("telescope-undo.actions").restore,
 						},
 					},
 				},

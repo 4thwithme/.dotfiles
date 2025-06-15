@@ -16,11 +16,15 @@ return {
 				html = { "prettier" },
 				json = { "prettier" },
 				yaml = { "prettier" },
+				yml = { "prettier" },
 				markdown = { "prettier" },
 				graphql = { "prettier" },
 				liquid = { "prettier" },
 				lua = { "stylua" },
 				python = { "isort", "black" },
+				-- Configuration files
+				conf = { "prettier" },
+				cnf = { "prettier" },
 			},
 			format_on_save = {
 				lsp_fallback = true,

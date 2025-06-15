@@ -1,0 +1,5 @@
+checked_for_update_at: 2025-06-14T19:30:44.654299+02:00
+latest_release:
+    version: v1.7.0
+    url: https://github.com/algolia/cli/releases/tag/v1.7.0
+    publishedat: 2025-06-11T08:01:02Z

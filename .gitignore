@@ -6,3 +6,6 @@
 /tmux/plugins
 /configstore
 /AWS*
+.aider*
+uv
+

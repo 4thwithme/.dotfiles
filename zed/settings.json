@@ -7,47 +7,39 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  // "theme": "Catppuccin Espresso (Blur)",
+  // "theme": "Tokyo Night",
+  // "theme": "Catppuccin Latte - No Italics",
+  "theme": {
+    "mode": "system",
+    "light": "One Light",
+    "dark": "4thwithme Light"
+  },
+  "notification_panel": {
+    "dock": "right"
+  },
   "icon_theme": "Colored Zed Icons Theme Dark",
-  "assistant": {
+  "agent": {
+    "single_file_review": true,
+    "default_profile": "ask",
+    "always_allow_tool_actions": false,
     "default_model": {
-      "provider": "copilot_chat",
-      "model": "claude-3-7-sonnet"
+      "provider": "zed.dev",
+      "model": "claude-sonnet-4-thinking"
     },
     "version": "2"
   },
-  "telemetry": {
-    "metrics": false,
-    "diagnostics": false
-  },
-  // "vim_mode": true,
+  "telemetry": { "metrics": false, "diagnostics": false },
   "base_keymap": "VSCode",
   "ui_font_size": 14,
-  "buffer_font_size": 12,
+  "buffer_font_size": 14,
   "buffer_font_features": {
     "calt": false
   },
   "features": {
-    // "edit_prediction_provider": "zed",
     "edit_prediction_provider": "copilot"
   },
   "buffer_font_family": "MesloLGM Nerd Font Mono",
-  "unnecessary_code_fade": 0.2,
-  "active_pane_modifiers": {
-    "magnification": 1.0,
-    "border_size": 0.0,
-    "inactive_opacity": 0.8
-  },
-  "theme": {
-    "mode": "system",
-    "light": "One Light",
-    "dark": "4thwithme"
-  },
-  "prettier": {
-    "trailingComma": "es5",
-    "tabWidth": 2,
-    "semi": true,
-    "singleQuote": true
-  },
   "scrollbar": {
     "show": "system"
   }

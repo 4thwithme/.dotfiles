@@ -1,5 +1,5 @@
 background = 000000
-background-opacity = 0.89 
+background-opacity = 0.8 
 font-feature = -calt, -liga, -dlig
 font-size = 14
 macos-option-as-alt = true
@@ -8,7 +8,5 @@ maximize = true
 window-decoration = none
 window-height = 100
 window-width = 10000000
-# keybind = shift+right=adjust_selection:right
-#  keybind = shift+left=adjust_selection:left
 window-padding-y = 0
 background-blur = true

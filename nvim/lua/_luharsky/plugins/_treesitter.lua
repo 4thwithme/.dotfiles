@@ -28,7 +28,6 @@ return {
 				"astro",
 				"toml",
 				"yaml",
-				"yaml",
 				"html",
 				"css",
 				"prisma",
@@ -48,6 +47,8 @@ return {
 				"c",
 				"rust",
 				"jsonc",
+				-- Configuration file formats for .cnf files
+				"ini",
 			},
 		})
 	end,

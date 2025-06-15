@@ -1,0 +1,69 @@
+// Zed keymap
+//
+// For information on binding keys, see the Zed
+// documentation: https://zed.dev/docs/key-bindings
+//
+// To see the default key bindings run `zed: open default keymap`
+// from the command palette.
+[
+  {
+    // "context": "Pane",
+    "bindings": {
+      "alt-1": ["pane::ActivateItem", 0],
+      "alt-2": ["pane::ActivateItem", 1],
+      "alt-3": ["pane::ActivateItem", 2],
+      "alt-4": ["pane::ActivateItem", 3],
+      "alt-5": ["pane::ActivateItem", 4],
+      "alt-6": ["pane::ActivateItem", 5],
+      "alt-7": ["pane::ActivateItem", 6],
+      "alt-8": ["pane::ActivateItem", 7],
+      "alt-9": ["pane::ActivateItem", 8]
+    }
+  },
+  {
+    "bindings": {
+      "cmd-n": "search::SelectNextMatch",
+      "cmd-N": "search::SelectPreviousMatch"
+    }
+  },
+  {
+    "bindings": {
+      "cmd-e": "project_panel::ToggleFocus",
+      "cmd-g": "git_panel::ToggleFocus",
+      "cmd-o": "outline_panel::ToggleFocus",
+      "enter": "outline_panel::OpenSelectedEntry"
+    }
+  },
+  {
+    "bindings": {
+      "cmd-0": "workspace::ActivateNextPane",
+      "cmd-d left": "workspace::ActivatePaneLeft",
+      "cmd-d right": "workspace::ActivatePaneRight",
+      "cmd-d up": "workspace::ActivatePaneUp",
+      "cmd-d down": "workspace::ActivatePaneDown"
+    }
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "cmd-ctrl-up": "editor::MovePageUp",
+      "cmd-ctrl-down": "editor::MovePageDown"
+    }
+  },
+
+  // unbind ----------------------------------------------
+  {
+    "context": "Workspace && !Terminal",
+    "use_key_equivalents": true,
+    "bindings": {
+      "cmd-n": null
+    }
+  },
+  {
+    "context": "Workspace",
+    "use_key_equivalents": true,
+    "bindings": {
+      "cmd-shift-n": null
+    }
+  }
+]
