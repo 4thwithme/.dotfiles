@@ -5,6 +5,10 @@ return {
 	opts = {
 		options = {
 			separator_style = "thin",
+			custom_filter = function(buf_number, buf_numbers)
+				local buf_name = vim.fn.bufname(buf_number)
+				return not string.match(buf_name, "claude")
+			end,
 			diagnostics_indicator = function(count, level)
 				local icon = ""
 				if level == "error" then
