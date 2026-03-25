@@ -24,7 +24,7 @@ return {
 	-- 		require("rose-pine").setup({
 	-- 			styles = {
 	-- 				bold = true,
-	-- 				italic = true,
+	-- 				-- italic = true,
 	-- 				transparency = true,
 	-- 			},
 	-- 			highlight_groups = {
@@ -57,12 +57,12 @@ return {
 	-- 	priority = 1000,
 	-- 	config = function()
 	-- 		require("black").setup({
-	-- 			-- style = "dark",
-	-- 			-- transparent = true,
-	-- 			-- styles = {
-	-- 			-- 	sidebars = "transparent",
-	-- 			-- 	floats = "transparent",
-	-- 			-- },
+	-- 			style = "dark",
+	-- 			transparent = true,
+	-- 			styles = {
+	-- 				sidebars = "transparent",
+	-- 				floats = "transparent",
+	-- 			},
 	-- 		})
 	-- 		vim.cmd([[colorscheme black]])
 	-- 	end,

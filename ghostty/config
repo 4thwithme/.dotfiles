@@ -11,3 +11,4 @@ window-height = 100
 window-width = 10000000
 window-padding-y = 0
 background-blur = true
+keybind = cmd+k=text:\x0b

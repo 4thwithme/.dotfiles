@@ -1,0 +1,15 @@
+themes {
+  rose-pine-moon {
+    fg 224 222 244
+    bg 28 30 42
+    black 35 33 54
+    red 235 111 146
+    green 62 143 176
+    yellow 246 193 119
+    blue 196 167 231
+    magenta 234 154 151
+    cyan 156 207 216
+    white 224 222 244
+    orange 246 193 119
+  }
+}
