@@ -1,0 +1,37 @@
+  ERROR  stdin.ref is not a function
+
+ node_modules/ink/build/components/App.js:127:23
+
+ 124:         if (isEnabled) {
+ 125:             // Ensure raw mode is enabled only once
+ 126:             if (rawModeEnabledCount.current === 0) {
+ 127:                 stdin.ref();
+ 128:                 stdin.setRawMode(true);
+ 129:                 // Store the listener reference to avoid stale closure when removing
+ 130:                 readableListenerRef.current = handleReadable;
+
+ -  (node_modules/ink/build/components/App.js:127:23)
+ -  (node_modules/ink/build/hooks/use-input.js:33:9)
+ - Object.react_stack_bottom_frame (node_modules/react-reconciler/cjs/react-reconciler.development.js:17681:20)
+ - runWithFiberInDEV (node_modules/react-reconciler/cjs/react-reconciler.development.js:2505:30)
+ - commitHookEffectListMount (node_modules/react-reconciler/cjs/react-reconciler.development.js:10861:29)
+ - commitHookPassiveMountEffects (node_modules/react-reconciler/cjs/react-reconciler.development.js:10948:11)
+ - commitPassiveMountOnFiber (node_modules/react-reconciler/cjs/react-reconciler.development.js:12979:13)
+ - recursivelyTraversePassiveMountEffects (node_modules/react-reconciler/cjs/react-reconciler.development.js:12934:11)
+ - commitPassiveMountOnFiber (node_modules/react-reconciler/cjs/react-reconciler.development.js:12999:11)
+ - recursivelyTraversePassiveMountEffects (node_modules/react-reconciler/cjs/react-reconciler.development.js:12934:11)
+file:///Users/4thwithme/Documents/repo/clui/node_modules/ink/build/components/App.js:127
+                stdin.ref();
+                      ^
+
+TypeError: stdin.ref is not a function
+    at file:///Users/4thwithme/Documents/repo/clui/node_modules/ink/build/components/App.js:127:23
+    at file:///Users/4thwithme/Documents/repo/clui/node_modules/ink/build/hooks/use-input.js:33:9
+    at Object.react_stack_bottom_frame (/Users/4thwithme/Documents/repo/clui/node_modules/react-reconciler/cjs/react-reconciler.development.js:17681:20)
+    at runWithFiberInDEV (/Users/4thwithme/Documents/repo/clui/node_modules/react-reconciler/cjs/react-reconciler.development.js:2505:30)
+    at commitHookEffectListMount (/Users/4thwithme/Documents/repo/clui/node_modules/react-reconciler/cjs/react-reconciler.development.js:10861:29)
+    at commitHookPassiveMountEffects (/Users/4thwithme/Documents/repo/clui/node_modules/react-reconciler/cjs/react-reconciler.development.js:10948:11)
+    at commitPassiveMountOnFiber (/Users/4thwithme/Documents/repo/clui/node_modules/react-reconciler/cjs/react-reconciler.development.js:12979:13)
+    at recursivelyTraversePassiveMountEffects (/Users/4thwithme/Documents/repo/clui/node_modules/react-reconciler/cjs/react-reconciler.development.js:12934:11)
+    at commitPassiveMountOnFiber (/Users/4thwithme/Documents/repo/clui/node_modules/react-reconciler/cjs/react-reconciler.development.js:13213:11)
+    at recursivelyTraversePassiveMountEffects (/Users/4thwithme/Documents/repo/clui/node_modules/react-reconciler/cjs/react-reconciler.development.js:12934:11)

@@ -1,0 +1,9 @@
+{
+  "id": "4",
+  "subject": "Run 5 parallel code review agents",
+  "description": "CLAUDE.md audit, bug scan, git history, prior PRs, code comments",
+  "activeForm": "Running code review agents",
+  "status": "pending",
+  "blocks": [],
+  "blockedBy": []
+}

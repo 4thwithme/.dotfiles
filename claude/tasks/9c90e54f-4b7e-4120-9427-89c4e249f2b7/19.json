@@ -1,0 +1,8 @@
+{
+  "id": "19",
+  "subject": "Plan 3 Task 6: Full ZHCopilotModel",
+  "description": "zh_model.py, update __init__.py + integration tests",
+  "status": "pending",
+  "blocks": [],
+  "blockedBy": []
+}

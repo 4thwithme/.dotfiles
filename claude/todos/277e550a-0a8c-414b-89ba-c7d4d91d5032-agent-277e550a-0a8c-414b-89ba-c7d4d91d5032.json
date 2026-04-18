@@ -1,0 +1,26 @@
+[
+  {
+    "content": "Examine current deployment configuration and infrastructure",
+    "status": "completed",
+    "priority": "high",
+    "id": "1"
+  },
+  {
+    "content": "Create GitHub Actions workflow for automated deployment with migrations",
+    "status": "pending",
+    "priority": "high",
+    "id": "2"
+  },
+  {
+    "content": "Add migration automation to Docker container setup",
+    "status": "in_progress",
+    "priority": "medium",
+    "id": "3"
+  },
+  {
+    "content": "Create deployment scripts with migration integration",
+    "status": "pending",
+    "priority": "medium",
+    "id": "4"
+  }
+]

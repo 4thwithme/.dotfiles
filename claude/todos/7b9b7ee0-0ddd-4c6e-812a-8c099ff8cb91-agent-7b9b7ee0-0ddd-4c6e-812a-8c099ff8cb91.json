@@ -1,0 +1,44 @@
+[
+  {
+    "content": "Examine current stepper component to understand step 3 implementation",
+    "status": "completed",
+    "priority": "high",
+    "id": "1"
+  },
+  {
+    "content": "Review existing GitHub module structure and service",
+    "status": "completed",
+    "priority": "high",
+    "id": "2"
+  },
+  {
+    "content": "Check dashboard controller/service for existing endpoints",
+    "status": "completed",
+    "priority": "high",
+    "id": "3"
+  },
+  {
+    "content": "Create GitHub repository fetching logic in backend",
+    "status": "completed",
+    "priority": "medium",
+    "id": "4"
+  },
+  {
+    "content": "Add dashboard endpoint for repository selection",
+    "status": "completed",
+    "priority": "medium",
+    "id": "5"
+  },
+  {
+    "content": "Update client-side step 3 to fetch and render real data",
+    "status": "completed",
+    "priority": "medium",
+    "id": "6"
+  },
+  {
+    "content": "Fix pagination limit to fetch all 1400+ repositories",
+    "status": "in_progress",
+    "priority": "high",
+    "id": "7"
+  }
+]

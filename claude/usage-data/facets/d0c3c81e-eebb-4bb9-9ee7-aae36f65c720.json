@@ -1,0 +1,15 @@
+{
+  "underlying_goal": "Query the database to find counts of active styles and active products with non-empty condensed features",
+  "goal_categories": {
+    "database_query": 1
+  },
+  "outcome": "fully_achieved",
+  "user_satisfaction_counts": {},
+  "claude_helpfulness": "very_helpful",
+  "session_type": "quick_question",
+  "friction_counts": {},
+  "friction_detail": "",
+  "primary_success": "fast_accurate_search",
+  "brief_summary": "User asked for database counts of active styles and products with non-empty condensed features, and Claude provided the results quickly in a clear table.",
+  "session_id": "d0c3c81e-eebb-4bb9-9ee7-aae36f65c720"
+}

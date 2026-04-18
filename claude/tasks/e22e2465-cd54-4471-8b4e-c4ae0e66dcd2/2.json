@@ -1,0 +1,9 @@
+{
+  "id": "2",
+  "subject": "Run code quality check and fix all issues",
+  "description": "Run npm run code-quality-check in the project directory to identify lint, format, and type-check issues. Then fix all found issues and verify they pass.",
+  "activeForm": "Running code quality checks",
+  "status": "in_progress",
+  "blocks": [],
+  "blockedBy": []
+}

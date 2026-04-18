@@ -1,0 +1,32 @@
+[
+  {
+    "content": "Run npm test:cover to see current test status and coverage",
+    "status": "completed",
+    "priority": "high",
+    "id": "1"
+  },
+  {
+    "content": "Fix any broken tests one by one",
+    "status": "completed",
+    "priority": "high",
+    "id": "2"
+  },
+  {
+    "content": "Add new tests to cover low coverage areas",
+    "status": "completed",
+    "priority": "medium",
+    "id": "3"
+  },
+  {
+    "content": "Create unit tests for AlgoliaService",
+    "status": "completed",
+    "priority": "high",
+    "id": "4"
+  },
+  {
+    "content": "Run full test coverage to verify all thresholds are met",
+    "status": "in_progress",
+    "priority": "high",
+    "id": "5"
+  }
+]

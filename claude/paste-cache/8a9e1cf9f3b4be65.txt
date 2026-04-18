@@ -1,0 +1,76 @@
+🎯 Business Context / Goal
+
+What is the user problem or opportunity? Why is this being built?
+Example:
+Introduce a feature that improves product discovery for users by surfacing relevant alternatives with lower barriers (e.g., lower order minimums).
+
+🔧 Technical Summary
+
+What needs to be built/changed from a technical standpoint?
+Example:
+Update the [component/module/service] to support [feature]. Integrate with [API, service, data source] as needed. Must support dynamic rendering based on [condition or flag].
+
+✅ Acceptance Criteria / Rendering Conditions
+
+List clear, testable conditions for this feature to be considered complete.
+
+Developers should add data-testid attributes to all new frontend components to ease further automated testing
+
+Condition 2
+
+Condition 3
+
+Edge cases handled
+
+🚦 Release Timeline & Expectations
+
+Target Release Date: [yyyy-mm-dd]  
+
+Milestones / Deadlines: [list if applicable]  
+
+Dependencies: [e.g., Backend API readiness, Design sign-off, QA slot availability]  
+
+Coordination Needs: [cross-team testing, marketing alignment, etc.]  
+
+Impact of Delay: [briefly explain, e.g., affects product launch, seasonal campaign, etc.]
+
+🏁 Feature Flag
+
+List feature flags controlling rollout (if applicable)
+Example: your_feature_flag_here
+
+📊 Analytics & Tracking
+
+What events should be tracked? Where should they be logged (Amplitude, GA, etc.)?
+
+event_name.triggered
+
+Include metadata: product ID, user state, session info, etc.
+
+🧪 QA / Testing Requirements
+
+What needs to be tested? How should QA validate behavior?
+
+Test combinations of [states/toggles]
+
+Validate fallback behavior
+
+Cross-platform: [Desktop, Mobile, etc.]
+
+⚠️ Risks & Considerations
+
+List known technical or UX risks, edge cases, or dependencies
+
+UI flicker from dynamic rendering
+
+API dependency delays/failures
+
+Confusing UX if behavior changes unexpectedly
+
+📎 Linked Designs / Specs / Tickets
+
+(Optional) link to Figma, tech specs, backend tasks, etc.
+
+[Figma link]
+
+[Backend task link]

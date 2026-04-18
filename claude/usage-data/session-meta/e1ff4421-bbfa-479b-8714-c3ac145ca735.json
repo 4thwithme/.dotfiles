@@ -1,0 +1,45 @@
+{
+  "session_id": "e1ff4421-bbfa-479b-8714-c3ac145ca735",
+  "project_path": "/Users/4thwithme/Documents/repo/recommendations-service",
+  "start_time": "2026-02-14T10:03:03.552Z",
+  "duration_minutes": 3,
+  "user_message_count": 5,
+  "assistant_message_count": 4,
+  "tool_counts": {},
+  "languages": {},
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 40,
+  "output_tokens": 22,
+  "first_prompt": "hey bro do youu have figma connection ?",
+  "user_interruptions": 0,
+  "user_response_times": [
+    84.128,
+    84.128,
+    84.128,
+    157.463
+  ],
+  "tool_errors": 0,
+  "tool_error_categories": {},
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 0,
+  "lines_removed": 0,
+  "files_modified": 0,
+  "message_hours": [
+    11,
+    11,
+    11,
+    11,
+    11
+  ],
+  "user_message_timestamps": [
+    "2026-02-14T10:03:03.552Z",
+    "2026-02-14T10:04:31.902Z",
+    "2026-02-14T10:04:31.902Z",
+    "2026-02-14T10:04:31.902Z",
+    "2026-02-14T10:05:45.237Z"
+  ]
+}

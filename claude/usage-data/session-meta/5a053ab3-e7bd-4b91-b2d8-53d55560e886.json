@@ -1,0 +1,77 @@
+{
+  "session_id": "5a053ab3-e7bd-4b91-b2d8-53d55560e886",
+  "project_path": "/Users/4thwithme/Documents/repo/recommendations-service",
+  "start_time": "2026-02-14T01:50:33.620Z",
+  "duration_minutes": 16,
+  "user_message_count": 13,
+  "assistant_message_count": 40,
+  "tool_counts": {
+    "Read": 5,
+    "Edit": 2,
+    "Grep": 3,
+    "Bash": 6,
+    "Write": 2
+  },
+  "languages": {
+    "TypeScript": 9
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 76,
+  "output_tokens": 12146,
+  "first_prompt": "bro i ran migration  @src/migrations/20260214120000_add_embedding_text_to_styles_mv.ts but i got error when i tried to run @src/modules/cli/commands/sync-source-styles.command.ts   { level: 'error', p…",
+  "user_interruptions": 3,
+  "user_response_times": [
+    120.234,
+    4.359,
+    18.96,
+    30.34,
+    78.14,
+    92.798,
+    17.642,
+    99.568,
+    65.598
+  ],
+  "tool_errors": 4,
+  "tool_error_categories": {
+    "User Rejected": 1,
+    "Command Failed": 3
+  },
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 435,
+  "lines_removed": 4,
+  "files_modified": 2,
+  "message_hours": [
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    3,
+    3,
+    3,
+    3
+  ],
+  "user_message_timestamps": [
+    "2026-02-14T01:50:33.620Z",
+    "2026-02-14T01:50:33.617Z",
+    "2026-02-14T01:50:33.620Z",
+    "2026-02-14T01:51:35.222Z",
+    "2026-02-14T01:53:47.407Z",
+    "2026-02-14T01:56:38.360Z",
+    "2026-02-14T01:56:52.961Z",
+    "2026-02-14T01:57:56.603Z",
+    "2026-02-14T01:59:20.367Z",
+    "2026-02-14T02:02:26.545Z",
+    "2026-02-14T02:02:47.591Z",
+    "2026-02-14T02:04:09.517Z",
+    "2026-02-14T02:06:18.677Z"
+  ]
+}

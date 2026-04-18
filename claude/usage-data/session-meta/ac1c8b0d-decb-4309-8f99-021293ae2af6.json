@@ -1,0 +1,62 @@
+{
+  "session_id": "ac1c8b0d-decb-4309-8f99-021293ae2af6",
+  "project_path": "/Users/4thwithme/Documents/repo/recommendations-service",
+  "start_time": "2026-02-14T11:00:25.405Z",
+  "duration_minutes": 39,
+  "user_message_count": 7,
+  "assistant_message_count": 154,
+  "tool_counts": {
+    "Skill": 1,
+    "Read": 13,
+    "Glob": 3,
+    "Write": 2,
+    "Bash": 24,
+    "Edit": 23
+  },
+  "languages": {
+    "TypeScript": 37
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 1250,
+  "output_tokens": 13179,
+  "first_prompt": "opensearch.service.ts                     |   83.58 |    75.67 |     100 |   83.07 | 44-45,58-59,144-145,163-164,187-188,220-221,233-235,281,291,325-329,368-372,445-449,466-470,501-502,521-522,533,547…",
+  "user_interruptions": 1,
+  "user_response_times": [
+    793.094,
+    3.269
+  ],
+  "tool_errors": 7,
+  "tool_error_categories": {
+    "Other": 1,
+    "Edit Failed": 1,
+    "Command Failed": 3,
+    "File Changed": 1,
+    "User Rejected": 1
+  },
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 1616,
+  "lines_removed": 15,
+  "files_modified": 4,
+  "message_hours": [
+    12,
+    12,
+    12,
+    12,
+    12,
+    12,
+    12
+  ],
+  "user_message_timestamps": [
+    "2026-02-14T11:00:25.405Z",
+    "2026-02-14T11:00:25.401Z",
+    "2026-02-14T11:00:25.405Z",
+    "2026-02-14T11:00:38.168Z",
+    "2026-02-14T11:00:44.626Z",
+    "2026-02-14T11:28:13.241Z",
+    "2026-02-14T11:39:02.416Z"
+  ]
+}

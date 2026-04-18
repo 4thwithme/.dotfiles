@@ -1,0 +1,9 @@
+{
+  "id": "2",
+  "subject": "Create newrelic-client.ts",
+  "description": "src/scripts/rollbar-monitor/newrelic-client.ts with appName filter",
+  "activeForm": "Creating New Relic client",
+  "status": "completed",
+  "blocks": [],
+  "blockedBy": []
+}

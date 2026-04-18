@@ -1,0 +1,54 @@
+{
+  "session_id": "97b9b656-828d-486a-b1df-f12c96e7381f",
+  "project_path": "/Users/4thwithme/Documents/repo/recommendations-service",
+  "start_time": "2026-02-17T22:15:18.020Z",
+  "duration_minutes": 5,
+  "user_message_count": 6,
+  "assistant_message_count": 30,
+  "tool_counts": {
+    "Read": 8,
+    "Edit": 2,
+    "Bash": 8
+  },
+  "languages": {
+    "TypeScript": 10
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 40,
+  "output_tokens": 2090,
+  "first_prompt": "Summary of all failing tests  FAIL  src/unit-tests/decorators/log-execution.decorator.unit-spec.ts   ● LogExecution Decorator › Long Execution Time Warnings › should log warning when execution time ex…",
+  "user_interruptions": 1,
+  "user_response_times": [
+    3.242,
+    19.253
+  ],
+  "tool_errors": 2,
+  "tool_error_categories": {
+    "Edit Failed": 1,
+    "User Rejected": 1
+  },
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 13,
+  "lines_removed": 30,
+  "files_modified": 2,
+  "message_hours": [
+    23,
+    23,
+    23,
+    23,
+    23,
+    23
+  ],
+  "user_message_timestamps": [
+    "2026-02-17T22:15:18.020Z",
+    "2026-02-17T22:15:18.016Z",
+    "2026-02-17T22:15:18.020Z",
+    "2026-02-17T22:15:20.459Z",
+    "2026-02-17T22:15:46.909Z",
+    "2026-02-17T22:16:02.920Z"
+  ]
+}

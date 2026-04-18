@@ -1,0 +1,32 @@
+[
+  {
+    "content": "Examine current step 2 implementation",
+    "status": "completed",
+    "priority": "high",
+    "id": "1"
+  },
+  {
+    "content": "Design GitHub token input component",
+    "status": "completed",
+    "priority": "high",
+    "id": "2"
+  },
+  {
+    "content": "Implement organization names input for each token",
+    "status": "completed",
+    "priority": "high",
+    "id": "3"
+  },
+  {
+    "content": "Add support for multiple tokens with at least 1 required",
+    "status": "completed",
+    "priority": "high",
+    "id": "4"
+  },
+  {
+    "content": "Add validation for tokens and organizations",
+    "status": "completed",
+    "priority": "medium",
+    "id": "5"
+  }
+]

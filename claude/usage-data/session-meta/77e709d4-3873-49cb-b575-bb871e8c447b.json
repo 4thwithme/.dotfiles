@@ -1,0 +1,43 @@
+{
+  "session_id": "77e709d4-3873-49cb-b575-bb871e8c447b",
+  "project_path": "/Users/4thwithme/Documents/repo/recommendations-service",
+  "start_time": "2026-02-10T11:11:30.229Z",
+  "duration_minutes": 66,
+  "user_message_count": 3,
+  "assistant_message_count": 27,
+  "tool_counts": {
+    "Bash": 3,
+    "Skill": 2,
+    "Edit": 6,
+    "Read": 1
+  },
+  "languages": {
+    "Markdown": 7
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 203,
+  "output_tokens": 1574,
+  "first_prompt": "check @rfc/10-widget-distribution-strategy.md check git diff   I decided to change RFC about our widgets.. we decided to get rid of web components, and built just react widgets in the new repo...updat…",
+  "user_interruptions": 0,
+  "user_response_times": [],
+  "tool_errors": 0,
+  "tool_error_categories": {},
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 333,
+  "lines_removed": 321,
+  "files_modified": 1,
+  "message_hours": [
+    12,
+    12,
+    13
+  ],
+  "user_message_timestamps": [
+    "2026-02-10T11:11:30.229Z",
+    "2026-02-10T11:11:52.462Z",
+    "2026-02-10T12:14:16.249Z"
+  ]
+}

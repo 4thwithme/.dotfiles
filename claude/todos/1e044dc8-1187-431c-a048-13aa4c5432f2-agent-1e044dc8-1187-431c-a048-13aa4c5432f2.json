@@ -1,0 +1,52 @@
+[
+  {
+    "content": "Analyze current event handlers and data models",
+    "status": "completed",
+    "activeForm": "Analyzing handlers and models"
+  },
+  {
+    "content": "Create MongoDB collection schemas with validation",
+    "status": "completed",
+    "activeForm": "Creating MongoDB schemas"
+  },
+  {
+    "content": "Create folder repository with native MongoDB driver",
+    "status": "completed",
+    "activeForm": "Creating folder repository"
+  },
+  {
+    "content": "Create note repository with native MongoDB driver",
+    "status": "completed",
+    "activeForm": "Creating note repository"
+  },
+  {
+    "content": "Update database connection to initialize models",
+    "status": "completed",
+    "activeForm": "Updating database connection"
+  },
+  {
+    "content": "Update folder service to use MongoDB repository",
+    "status": "completed",
+    "activeForm": "Updating folder service"
+  },
+  {
+    "content": "Update note service to use MongoDB repository",
+    "status": "completed",
+    "activeForm": "Updating note service"
+  },
+  {
+    "content": "Update event handlers for async database operations",
+    "status": "completed",
+    "activeForm": "Updating event handlers"
+  },
+  {
+    "content": "Run linter and fix errors",
+    "status": "completed",
+    "activeForm": "Running linter"
+  },
+  {
+    "content": "Test MongoDB integration",
+    "status": "in_progress",
+    "activeForm": "Testing MongoDB integration"
+  }
+]

@@ -1,0 +1,42 @@
+{
+  "session_id": "706a8b2c-782f-4b7d-bfc1-b348177570d7",
+  "project_path": "/Users/4thwithme/Documents/repo/recommendations-service",
+  "start_time": "2026-02-20T15:06:13.584Z",
+  "duration_minutes": 2,
+  "user_message_count": 2,
+  "assistant_message_count": 19,
+  "tool_counts": {
+    "Glob": 1,
+    "Read": 8,
+    "Grep": 2
+  },
+  "languages": {
+    "TypeScript": 8
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 497,
+  "output_tokens": 554,
+  "first_prompt": "check @docs/features/neural-search/embedding-text-analysis.md and lets make these changes  generateEmbeddingText({ product }: { product: ProductEmbeddingInput }): EmbeddingTextResponse {   const parts…",
+  "user_interruptions": 1,
+  "user_response_times": [
+    36.549
+  ],
+  "tool_errors": 0,
+  "tool_error_categories": {},
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 0,
+  "lines_removed": 0,
+  "files_modified": 0,
+  "message_hours": [
+    16,
+    16
+  ],
+  "user_message_timestamps": [
+    "2026-02-20T15:06:13.584Z",
+    "2026-02-20T15:08:02.720Z"
+  ]
+}

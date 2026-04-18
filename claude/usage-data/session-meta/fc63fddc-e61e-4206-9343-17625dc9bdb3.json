@@ -1,0 +1,57 @@
+{
+  "session_id": "fc63fddc-e61e-4206-9343-17625dc9bdb3",
+  "project_path": "/Users/4thwithme/Documents/repo/recommendations-service",
+  "start_time": "2026-02-23T21:02:42.024Z",
+  "duration_minutes": 6,
+  "user_message_count": 8,
+  "assistant_message_count": 40,
+  "tool_counts": {
+    "Read": 11,
+    "Glob": 2,
+    "Bash": 13
+  },
+  "languages": {
+    "TypeScript": 11
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 362,
+  "output_tokens": 5843,
+  "first_prompt": "FAIL  test/db/styles-mv.e2e-spec.ts (19.354 s)   ● StylesMv DB Integration Tests › StylesMvService Integration › refreshForStyle › should refresh materialized view for a style      expect(received).to…",
+  "user_interruptions": 2,
+  "user_response_times": [
+    19.98,
+    29.227,
+    45.651,
+    58.567
+  ],
+  "tool_errors": 0,
+  "tool_error_categories": {},
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 0,
+  "lines_removed": 0,
+  "files_modified": 0,
+  "message_hours": [
+    22,
+    22,
+    22,
+    22,
+    22,
+    22,
+    22,
+    22
+  ],
+  "user_message_timestamps": [
+    "2026-02-23T21:02:42.024Z",
+    "2026-02-23T21:02:42.014Z",
+    "2026-02-23T21:02:42.024Z",
+    "2026-02-23T21:02:43.474Z",
+    "2026-02-23T21:07:34.778Z",
+    "2026-02-23T21:07:44.025Z",
+    "2026-02-23T21:08:00.449Z",
+    "2026-02-23T21:08:13.365Z"
+  ]
+}

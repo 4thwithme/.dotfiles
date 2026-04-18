@@ -1,0 +1,20 @@
+[
+  {
+    "content": "Re-implement fade in animation for register page content",
+    "status": "completed",
+    "priority": "high",
+    "id": "1"
+  },
+  {
+    "content": "Add page-level CSSTransition wrapper to register page",
+    "status": "completed",
+    "priority": "high",
+    "id": "2"
+  },
+  {
+    "content": "Import animation constants and useEffect",
+    "status": "completed",
+    "priority": "medium",
+    "id": "3"
+  }
+]

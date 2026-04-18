@@ -1,0 +1,8 @@
+{
+  "id": "27",
+  "subject": "Task 21: Rate Limiting",
+  "description": "Add throttle decorators to auth and invitation endpoints",
+  "status": "completed",
+  "blocks": [],
+  "blockedBy": []
+}

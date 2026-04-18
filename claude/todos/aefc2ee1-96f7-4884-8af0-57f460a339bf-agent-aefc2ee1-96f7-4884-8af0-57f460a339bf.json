@@ -1,0 +1,32 @@
+[
+  {
+    "content": "Check existing backend endpoints for password setting",
+    "status": "completed",
+    "priority": "high",
+    "id": "1"
+  },
+  {
+    "content": "Examine current client-side API structure and RTK setup",
+    "status": "completed",
+    "priority": "high",
+    "id": "2"
+  },
+  {
+    "content": "Add set-password endpoint to client RTK auth API",
+    "status": "completed",
+    "priority": "high",
+    "id": "3"
+  },
+  {
+    "content": "Update create-password page to use RTK mutation",
+    "status": "completed",
+    "priority": "high",
+    "id": "4"
+  },
+  {
+    "content": "Add proper error handling and loading states",
+    "status": "completed",
+    "priority": "medium",
+    "id": "5"
+  }
+]

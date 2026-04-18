@@ -1,0 +1,72 @@
+{
+  "session_id": "3ad21782-2f48-471d-88fe-9a592b34e56f",
+  "project_path": "/Users/4thwithme/Documents/repo/recommendations-service",
+  "start_time": "2026-02-12T17:49:54.883Z",
+  "duration_minutes": 13,
+  "user_message_count": 10,
+  "assistant_message_count": 115,
+  "tool_counts": {
+    "Read": 6,
+    "Bash": 36,
+    "Glob": 2,
+    "TaskOutput": 1,
+    "Edit": 1
+  },
+  "languages": {
+    "TypeScript": 1,
+    "YAML": 2
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 958,
+  "output_tokens": 1594,
+  "first_prompt": "i have problem with db connection  npm run migrate  > recommendations-service@0.0.1 migrate > ts-node -r dotenv/config -r tsconfig-paths/register ./node_modules/.bin/knex migrate:latest --knexfile ./s…",
+  "user_interruptions": 4,
+  "user_response_times": [
+    334.473,
+    4.411,
+    52.719,
+    41.95,
+    7.698,
+    11.961,
+    15.361,
+    2.462
+  ],
+  "tool_errors": 6,
+  "tool_error_categories": {
+    "Command Failed": 3,
+    "Other": 1,
+    "User Rejected": 2
+  },
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 2,
+  "lines_removed": 2,
+  "files_modified": 1,
+  "message_hours": [
+    18,
+    18,
+    18,
+    18,
+    19,
+    19,
+    19,
+    19,
+    19,
+    19
+  ],
+  "user_message_timestamps": [
+    "2026-02-12T17:49:54.883Z",
+    "2026-02-12T17:57:38.762Z",
+    "2026-02-12T17:58:20.427Z",
+    "2026-02-12T17:59:08.735Z",
+    "2026-02-12T18:00:18.774Z",
+    "2026-02-12T18:00:33.952Z",
+    "2026-02-12T18:00:38.215Z",
+    "2026-02-12T18:02:04.294Z",
+    "2026-02-12T18:02:18.017Z",
+    "2026-02-12T18:02:54.168Z"
+  ]
+}

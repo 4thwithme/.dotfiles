@@ -1,0 +1,13 @@
+{ level: 'error', pid: 9008, timestamp: 1776365425035, correlationId: '67b639b1-e65e-4f5f-9613-3abb2854ce33', message: { FastifyError: Content type parser 'application/json' already present.
+       at ContentTypeParser.add (/Users/4thwithme/Documents/repo/no-name-proj/backend/node_modules/fastify/lib/content-type-parser.js:59:11)
+       at Object.addContentTypeParser (/Users/4thwithme/Documents/repo/no-name-proj/backend/node_modules/fastify/lib/content-type-parser.js:360:30)
+       at FastifyAdapter.useBodyParser (/Users/4thwithme/Documents/repo/no-name-proj/backend/node_modules/@nestjs/platform-fastify/adapters/fastify-adapter.js:359:28)
+       at FastifyAdapter.registerJsonContentParser (/Users/4thwithme/Documents/repo/no-name-proj/backend/node_modules/@nestjs/platform-fastify/adapters/fastify-adapter.js:439:14)
+       at FastifyAdapter.registerParserMiddleware (/Users/4thwithme/Documents/repo/no-name-proj/backend/node_modules/@nestjs/platform-fastify/adapters/fastify-adapter.js:346:14)
+       at NestApplication.registerParserMiddleware (/Users/4thwithme/Documents/repo/no-name-proj/backend/node_modules/@nestjs/core/nest-application.js:113:26)
+       at NestApplication.init (/Users/4thwithme/Documents/repo/no-name-proj/backend/node_modules/@nestjs/core/nest-application.js:100:31)
+       at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+       at async NestApplication.listen (/Users/4thwithme/Documents/repo/no-name-proj/backend/node_modules/@nestjs/core/nest-application.js:175:13)
+       at async bootstrap (/Users/4thwithme/Documents/repo/no-name-proj/backend/dist/main.js:249:5)
+     code: 'FST_ERR_CTP_ALREADY_PRESENT',
+     statusCode: 500 }, context: 'Bootstrap' }

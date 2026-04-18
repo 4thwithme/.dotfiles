@@ -1,0 +1,32 @@
+[
+  {
+    "content": "Examine related-products DTOs and validation",
+    "status": "completed",
+    "priority": "high",
+    "id": "1"
+  },
+  {
+    "content": "Find brands endpoint controller and error handling",
+    "status": "completed",
+    "priority": "high",
+    "id": "2"
+  },
+  {
+    "content": "Check exception filter and middleware for proper error responses",
+    "status": "completed",
+    "priority": "high",
+    "id": "3"
+  },
+  {
+    "content": "Test the endpoint behavior and identify root cause",
+    "status": "completed",
+    "priority": "high",
+    "id": "4"
+  },
+  {
+    "content": "Analyze why NotFoundException isn't reaching client",
+    "status": "in_progress",
+    "priority": "high",
+    "id": "5"
+  }
+]

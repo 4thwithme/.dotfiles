@@ -1,0 +1,4 @@
+- [project_auth_system.md](project_auth_system.md) — Auth architecture decisions (OAuth, JWT, Redis sessions, multi-tenant roles)
+- [project_product.md](project_product.md) — Product purpose: B2B engineer performance tracking via Jira + Git data
+- [user_preferences.md](user_preferences.md) — User's preferred tools, patterns, timezone, communication style
+- [project_naming.md](project_naming.md) — Shortlisted product names (Apogee, Quasar, Nova, Pulsar, Aurora, Commit) — using no-name-proj until decided

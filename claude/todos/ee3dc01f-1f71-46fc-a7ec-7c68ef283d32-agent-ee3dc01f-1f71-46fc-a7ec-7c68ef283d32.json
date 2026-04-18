@@ -1,0 +1,38 @@
+[
+  {
+    "content": "Research fastify/csrf-protection and session setup",
+    "status": "completed",
+    "priority": "high",
+    "id": "1"
+  },
+  {
+    "content": "Add session environment variables to env validation",
+    "status": "completed",
+    "priority": "high",
+    "id": "2"
+  },
+  {
+    "content": "Install required packages for CSRF and sessions",
+    "status": "completed",
+    "priority": "high",
+    "id": "3"
+  },
+  {
+    "content": "Create CSRF configuration module",
+    "status": "completed",
+    "priority": "high",
+    "id": "4"
+  },
+  {
+    "content": "Set up session middleware and CSRF protection",
+    "status": "completed",
+    "priority": "high",
+    "id": "5"
+  },
+  {
+    "content": "Update frontend to handle CSRF tokens",
+    "status": "completed",
+    "priority": "medium",
+    "id": "6"
+  }
+]

@@ -1,0 +1,20 @@
+{
+  "underlying_goal": "Fix a failing e2e test for materialized view refresh in styles-mv and learn how to run a specific Jest test file",
+  "goal_categories": {
+    "fix_bug": 1,
+    "knowledge_question": 1
+  },
+  "outcome": "partially_achieved",
+  "user_satisfaction_counts": {
+    "likely_satisfied": 1
+  },
+  "claude_helpfulness": "slightly_helpful",
+  "session_type": "multi_task",
+  "friction_counts": {
+    "wrong_approach": 1
+  },
+  "friction_detail": "Claude spent extensive time exploring the codebase autonomously before being interrupted twice; the test fix was never completed.",
+  "primary_success": "good_explanations",
+  "brief_summary": "User wanted to fix a failing e2e test and learn how to run a specific Jest file; the test fix was never delivered but the Jest command question was answered.",
+  "session_id": "fc63fddc-e61e-4206-9343-17625dc9bdb3"
+}

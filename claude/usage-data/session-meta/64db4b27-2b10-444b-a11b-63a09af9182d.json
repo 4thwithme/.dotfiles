@@ -1,0 +1,77 @@
+{
+  "session_id": "64db4b27-2b10-444b-a11b-63a09af9182d",
+  "project_path": "/Users/4thwithme/Documents/repo/catalog",
+  "start_time": "2026-02-11T15:06:10.054Z",
+  "duration_minutes": 84,
+  "user_message_count": 13,
+  "assistant_message_count": 109,
+  "tool_counts": {
+    "Read": 10,
+    "Bash": 27,
+    "Grep": 13,
+    "Edit": 5
+  },
+  "languages": {
+    "Ruby": 13,
+    "JavaScript": 1
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 739,
+  "output_tokens": 2245,
+  "first_prompt": "can you check this branch and analyze tests...on circle CI i have a broken functional test  == Running functional tests == DEPRECATION WARNING: ActiveSupport::ProxyObject is deprecated and will be rem…",
+  "user_interruptions": 1,
+  "user_response_times": [
+    96.303,
+    110.922,
+    305.144,
+    660.121,
+    402.327,
+    228.043,
+    50.161,
+    656.101,
+    1699.543
+  ],
+  "tool_errors": 2,
+  "tool_error_categories": {
+    "User Rejected": 1,
+    "Command Failed": 1
+  },
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 7,
+  "lines_removed": 7,
+  "files_modified": 2,
+  "message_hours": [
+    16,
+    16,
+    16,
+    16,
+    16,
+    16,
+    16,
+    16,
+    16,
+    16,
+    16,
+    17,
+    17
+  ],
+  "user_message_timestamps": [
+    "2026-02-11T15:06:10.054Z",
+    "2026-02-11T15:06:10.049Z",
+    "2026-02-11T15:06:10.054Z",
+    "2026-02-11T15:07:07.857Z",
+    "2026-02-11T15:19:07.488Z",
+    "2026-02-11T15:19:22.107Z",
+    "2026-02-11T15:24:47.901Z",
+    "2026-02-11T15:36:40.699Z",
+    "2026-02-11T15:43:38.690Z",
+    "2026-02-11T15:48:51.132Z",
+    "2026-02-11T15:50:04.136Z",
+    "2026-02-11T16:01:48.517Z",
+    "2026-02-11T16:30:17.552Z"
+  ]
+}

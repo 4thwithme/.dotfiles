@@ -1,0 +1,13 @@
+wasm://wasm/000460e2:1
+
+
+RuntimeError: memory access out of bounds    at wasm://wasm/000460e2:wasm-function[215]:0xd5ef
+    at wasm://wasm/000460e2:wasm-function[185]:0xcf8c
+    at X.getComputedWidth (file:///Users/4thwithme/Documents/repo/clui/node_modules/yoga-layout/dist/binaries/yoga-wasm-base64-esm.js:33:52)
+    at renderer (file:///Users/4thwithme/Documents/repo/clui/node_modules/ink/build/renderer.js:32:49)
+    at onRender (file:///Users/4thwithme/Documents/repo/clui/node_modules/ink/build/ink.js:251:56)
+    at debounced (file:///Users/4thwithme/Documents/repo/clui/node_modules/es-toolkit/dist/compat/function/debounce.mjs:27:31)
+    at Ink.rootNode.onRender (file:///Users/4thwithme/Documents/repo/clui/node_modules/ink/build/ink.js:136:17)
+    at resetAfterCommit (file:///Users/4thwithme/Documents/repo/clui/node_modules/ink/build/reconciler.js:95:22)
+    at flushMutationEffects (/Users/4thwithme/Documents/repo/clui/node_modules/react-reconciler/cjs/react-reconciler.development.js:15613:15)
+    at commitRoot (/Users/4thwithme/Documents/repo/clui/node_modules/react-reconciler/cjs/react-reconciler.development.js:15585:9)

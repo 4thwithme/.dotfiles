@@ -1,0 +1,50 @@
+{
+  "session_id": "a0fc7274-fd89-480f-ad25-6c3394b65edd",
+  "project_path": "/Users/4thwithme/Documents/repo/ci-header-footer",
+  "start_time": "2026-03-04T16:30:59.081Z",
+  "duration_minutes": 8,
+  "user_message_count": 4,
+  "assistant_message_count": 28,
+  "tool_counts": {
+    "Glob": 3,
+    "Read": 6,
+    "Bash": 8
+  },
+  "languages": {
+    "HTML": 1,
+    "TypeScript": 3,
+    "YAML": 2
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 48,
+  "output_tokens": 4877,
+  "first_prompt": "what html do we use to build ci-header-prerender",
+  "user_interruptions": 0,
+  "user_response_times": [
+    85.531,
+    82.052,
+    214.914
+  ],
+  "tool_errors": 0,
+  "tool_error_categories": {},
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 0,
+  "lines_removed": 0,
+  "files_modified": 0,
+  "message_hours": [
+    17,
+    17,
+    17,
+    17
+  ],
+  "user_message_timestamps": [
+    "2026-03-04T16:30:59.081Z",
+    "2026-03-04T16:32:36.065Z",
+    "2026-03-04T16:34:09.168Z",
+    "2026-03-04T16:38:29.870Z"
+  ]
+}

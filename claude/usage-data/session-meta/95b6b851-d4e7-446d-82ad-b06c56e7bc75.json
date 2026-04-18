@@ -1,0 +1,52 @@
+{
+  "session_id": "95b6b851-d4e7-446d-82ad-b06c56e7bc75",
+  "project_path": "/Users/4thwithme/Documents/repo/recommendations-service",
+  "start_time": "2026-02-04T14:17:21.928Z",
+  "duration_minutes": 14,
+  "user_message_count": 5,
+  "assistant_message_count": 47,
+  "tool_counts": {
+    "Glob": 1,
+    "Bash": 11,
+    "Read": 2,
+    "Edit": 4
+  },
+  "languages": {
+    "TypeScript": 6
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 390,
+  "output_tokens": 3409,
+  "first_prompt": "check @src/modules/rest/addons/addons.service.ts we are caching products as is, then we shuffle them right before return.. we need to run tests, and adjust them to handle it, and need to write new tes…",
+  "user_interruptions": 0,
+  "user_response_times": [
+    299.55
+  ],
+  "tool_errors": 6,
+  "tool_error_categories": {
+    "Command Failed": 5,
+    "Edit Failed": 1
+  },
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 79,
+  "lines_removed": 28,
+  "files_modified": 1,
+  "message_hours": [
+    15,
+    15,
+    15,
+    15,
+    15
+  ],
+  "user_message_timestamps": [
+    "2026-02-04T14:17:21.928Z",
+    "2026-02-04T14:17:21.925Z",
+    "2026-02-04T14:17:21.928Z",
+    "2026-02-04T14:18:10.363Z",
+    "2026-02-04T14:27:56.885Z"
+  ]
+}

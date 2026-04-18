@@ -1,0 +1,8 @@
+{
+  "id": "25",
+  "subject": "Task 19: Company Controller",
+  "description": "GET /companies/:id with membership scoping",
+  "status": "completed",
+  "blocks": [],
+  "blockedBy": []
+}

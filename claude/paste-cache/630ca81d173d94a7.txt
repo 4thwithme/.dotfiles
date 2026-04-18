@@ -1,0 +1,46 @@
+ FAIL  test/rest/process-style.service.e2e-spec.ts
+  ● ProcessStyleService › generateLLMFeatures error handling › should fallback to reduced fields when token limit is exceeded
+
+    expect(jest.fn()).toHaveBeenCalledWith(...expected)
+
+    Expected: "Successfully generated features for style 2352352 using reduced fields"
+    Received
+           1: "No stored hash found for style 2352352"
+           2: "Style 2352352: no hash, no features. Creating new features"
+
+    Number of calls: 2
+
+      1597 |                 `Token limit exceeded for style ${testStyle.id}, retrying with reduced fields`,
+      1598 |             );
+    > 1599 |             expect(loggerDebugSpy).toHaveBeenCalledWith(
+           |                                    ^
+      1600 |                 `Successfully generated features for style ${testStyle.id} using reduced fields`,
+      1601 |             );
+      1602 |             expect(openAIService.generateProductFeatures).toHaveBeenCalledTimes(2);
+
+      at Object.<anonymous> (test/rest/process-style.service.e2e-spec.ts:1599:27)
+
+  ● ProcessStyleService › generateLLMFeatures error handling › should fallback to reduced fields and return empty array when description is null
+
+    expect(jest.fn()).toHaveBeenCalledWith(...expected)
+
+    Expected: "Successfully generated features for style 2352352 using reduced fields"
+    Received
+           1: "No stored hash found for style 2352352"
+           2: "Style 2352352: no hash, no features. Creating new features"
+
+    Number of calls: 2
+
+      1677 |                 `Token limit exceeded for style ${testStyle.id}, retrying with reduced fields`,
+      1678 |             );
+    > 1679 |             expect(loggerDebugSpy).toHaveBeenCalledWith(
+           |                                    ^
+      1680 |                 `Successfully generated features for style ${testStyle.id} using reduced fields`,
+      1681 |             );
+      1682 |             expect(openAIService.generateProductFeatures).toHaveBeenCalledTimes(2);
+
+      at Object.<anonymous> (test/rest/process-style.service.e2e-spec.ts:1679:27)
+
+
+Test Suites: 1 failed, 45 passed, 46 total
+Tests:       2 failed, 1191 passed, 1193 total

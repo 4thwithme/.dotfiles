@@ -1,0 +1,22 @@
+[
+  {
+    "content": "Analyze existing TypeScript patterns in scripts directory",
+    "status": "completed",
+    "activeForm": "Analyzing existing TypeScript patterns"
+  },
+  {
+    "content": "Convert JavaScript script to TypeScript following project conventions",
+    "status": "completed",
+    "activeForm": "Converting JavaScript to TypeScript"
+  },
+  {
+    "content": "Run code quality checks and fix any issues",
+    "status": "in_progress",
+    "activeForm": "Running code quality checks"
+  },
+  {
+    "content": "Test the converted script",
+    "status": "pending",
+    "activeForm": "Testing converted script"
+  }
+]

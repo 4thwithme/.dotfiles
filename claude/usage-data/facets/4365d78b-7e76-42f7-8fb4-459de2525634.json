@@ -1,0 +1,15 @@
+{
+  "underlying_goal": "Unassign themselves (Andrii Popenko) from all Jira tasks in the range RECO-631 to RECO-697, without touching tasks assigned to other people",
+  "goal_categories": {
+    "jira_bulk_operation": 1
+  },
+  "outcome": "fully_achieved",
+  "user_satisfaction_counts": {},
+  "claude_helpfulness": "essential",
+  "session_type": "single_task",
+  "friction_counts": {},
+  "friction_detail": "",
+  "primary_success": "proactive_help",
+  "brief_summary": "User asked to be unassigned from ~63 Jira tasks in a specific range, and Claude successfully bulk-unassigned them all while respecting tasks assigned to others.",
+  "session_id": "4365d78b-7e76-42f7-8fb4-459de2525634"
+}

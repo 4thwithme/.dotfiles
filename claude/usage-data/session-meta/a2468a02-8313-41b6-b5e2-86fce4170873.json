@@ -1,0 +1,66 @@
+{
+  "session_id": "a2468a02-8313-41b6-b5e2-86fce4170873",
+  "project_path": "/Users/4thwithme/Documents/repo/recommendations-service",
+  "start_time": "2026-02-14T10:21:27.930Z",
+  "duration_minutes": 18,
+  "user_message_count": 11,
+  "assistant_message_count": 72,
+  "tool_counts": {
+    "Read": 2,
+    "Edit": 14,
+    "Bash": 11,
+    "TaskOutput": 1
+  },
+  "languages": {
+    "TypeScript": 16
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 604,
+  "output_tokens": 2792,
+  "first_prompt": "[Nest] 93072  - 02/14/2026, 11:23:05 AM   ERROR [OpensearchService] Failed to delete index _invalid: Response Error ResponseError: Response Error     at onBody (/Users/4thwithme/Documents/repo/recomme…",
+  "user_interruptions": 1,
+  "user_response_times": [
+    88.046,
+    143.317,
+    47.582,
+    215.859
+  ],
+  "tool_errors": 3,
+  "tool_error_categories": {
+    "Command Failed": 3
+  },
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 73,
+  "lines_removed": 12,
+  "files_modified": 3,
+  "message_hours": [
+    11,
+    11,
+    11,
+    11,
+    11,
+    11,
+    11,
+    11,
+    11,
+    11,
+    11
+  ],
+  "user_message_timestamps": [
+    "2026-02-14T10:21:27.931Z",
+    "2026-02-14T10:19:55.492Z",
+    "2026-02-14T10:19:55.492Z",
+    "2026-02-14T10:21:28.031Z",
+    "2026-02-14T10:23:53.961Z",
+    "2026-02-14T10:25:32.042Z",
+    "2026-02-14T10:30:37.797Z",
+    "2026-02-14T10:30:37.834Z",
+    "2026-02-14T10:33:08.896Z",
+    "2026-02-14T10:34:05.786Z",
+    "2026-02-14T10:37:49.106Z"
+  ]
+}

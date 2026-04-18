@@ -1,0 +1,43 @@
+{
+  "session_id": "2339e5eb-4bd5-4c8e-bf35-f09d09c1176e",
+  "project_path": "/Users/4thwithme/Documents/repo/recommendations-service",
+  "start_time": "2026-02-18T15:14:48.050Z",
+  "duration_minutes": 7,
+  "user_message_count": 2,
+  "assistant_message_count": 36,
+  "tool_counts": {
+    "mcp__newrelic__get_entity": 1,
+    "mcp__newrelic__convert_time_period_to_epoch_ms": 1,
+    "mcp__newrelic__analyze_golden_metrics": 1,
+    "mcp__newrelic__execute_nrql_query": 16,
+    "mcp__newrelic__analyze_transactions": 1,
+    "mcp__newrelic__list_change_events": 1
+  },
+  "languages": {},
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 4628,
+  "output_tokens": 3018,
+  "first_prompt": "using mcp new relic check recommendation service production and analyze  web transaction time data from last 30 minutes, why request queing is increasing?",
+  "user_interruptions": 0,
+  "user_response_times": [
+    98.272
+  ],
+  "tool_errors": 0,
+  "tool_error_categories": {},
+  "uses_task_agent": false,
+  "uses_mcp": true,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 0,
+  "lines_removed": 0,
+  "files_modified": 0,
+  "message_hours": [
+    16,
+    16
+  ],
+  "user_message_timestamps": [
+    "2026-02-18T15:15:56.503Z",
+    "2026-02-18T15:21:27.756Z"
+  ]
+}

@@ -1,0 +1,164 @@
+> webapp-backend@0.0.1 code-quality-check
+> npm run lint && npm run format && npm run type-check
+
+
+> webapp-backend@0.0.1 lint
+> eslint "{src,apps,libs,test}/**/*.ts"
+
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/migrations/20260322120000_create_users_table.ts
+   9:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+  42:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/migrations/20260322120001_create_companies_table.ts
+   9:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+  37:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/migrations/20260322120002_create_company_members_table.ts
+  13:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+  64:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/migrations/20260322120003_create_oauth_accounts_table.ts
+   9:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+  55:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/migrations/20260322120004_create_invitations_table.ts
+  13:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+  68:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/migrations/20260414120000_create_github_installations_table.ts
+   9:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+  48:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/migrations/20260414120001_create_github_repos_table.ts
+  12:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+  51:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/migrations/20260416000000_create_github_contributors_table.ts
+  12:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+  52:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/migrations/20260416000001_create_github_commits_table.ts
+  13:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+  64:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/migrations/20260416000002_create_github_pull_requests_table.ts
+  13:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+  69:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/migrations/20260416000003_create_github_reviews_table.ts
+  13:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+  60:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/migrations/20260416000004_create_github_review_comments_table.ts
+  13:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+  60:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/migrations/20260416100000_create_jira_installations_table.ts
+   9:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+  47:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/migrations/20260416100001_create_jira_projects_table.ts
+  12:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+  52:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/migrations/20260416100002_create_jira_issues_table.ts
+  13:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+  62:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/migrations/20260416100003_create_jira_changelog_table.ts
+  13:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+  55:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/migrations/20260416100004_create_jira_worklogs_table.ts
+  13:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+  57:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/migrations/20260416100005_create_jira_sprints_table.ts
+  12:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+  53:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/modules/auth/guards/fastify-throttler.guard.ts
+  15:29  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/modules/github/db/github-contributor.model.ts
+  86:14  error  Replace `·platform_user_id:·platformUserId,·updated_at:·this.knexWrite.fn.now()·` with `⏎↹↹↹↹↹platform_user_id:·platformUserId,⏎↹↹↹↹↹updated_at:·this.knexWrite.fn.now(),⏎↹↹↹↹`  prettier/prettier
+  88:22  error  Replace ``Linked·contributor·${contributorId}·to·platform·user·${platformUserId}`` with `⏎↹↹↹↹`Linked·contributor·${contributorId}·to·platform·user·${platformUserId}`,⏎↹↹↹`     prettier/prettier
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/modules/github/github-event.processor.ts
+   61:15  warning  Custom functions must use a single object destructuring parameter                                   custom-rules/require-object-params
+  332:8   warning  Unnecessary conditional, expected left-hand side of `??` operator to be possibly null or undefined  @typescript-eslint/no-unnecessary-condition
+  332:34  warning  Unnecessary optional chain on a non-nullish value                                                   @typescript-eslint/no-unnecessary-condition
+  339:8   warning  Unnecessary conditional, expected left-hand side of `??` operator to be possibly null or undefined  @typescript-eslint/no-unnecessary-condition
+  339:36  warning  Unnecessary optional chain on a non-nullish value                                                   @typescript-eslint/no-unnecessary-condition
+  390:10  warning  Unnecessary conditional, value is always truthy                                                     @typescript-eslint/no-unnecessary-condition
+  441:10  warning  Unnecessary conditional, value is always truthy                                                     @typescript-eslint/no-unnecessary-condition
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/modules/github/github-identity.service.ts
+  20:89  error  Insert `⏎↹↹↹`              prettier/prettier
+  21:1   error  Insert `↹`                 prettier/prettier
+  22:1   error  Insert `↹`                 prettier/prettier
+  23:3   error  Replace `}` with `↹},⏎↹↹`  prettier/prettier
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/modules/github/github-install.controller.ts
+  14:1  error  `@nestjs/swagger` import should occur before import of `class-validator`      import/order
+  31:2  error  Type string trivially inferred from a string literal, remove type annotation  @typescript-eslint/no-inferrable-types
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/modules/github/github-webhook.controller.ts
+  50:33  warning  Unnecessary optional chain on a non-nullish value  @typescript-eslint/no-unnecessary-condition
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/modules/github/github.module.ts
+  16:1  error  `@modules/github/github-identity.service` import should occur after import of `@modules/github/github-event.processor`  import/order
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/modules/jira/jira-api.service.ts
+  113:10  warning  Unnecessary conditional, value is always truthy  @typescript-eslint/no-unnecessary-condition
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/modules/jira/jira-processor.service.ts
+  23:12  error  Replace `IDiscoverProjectsJob·|·ISyncProjectJob·|·IPollInstallationsJob·|·IProcessWebhookEventJob` with `⏎↹↹↹|·IDiscoverProjectsJob⏎↹↹↹|·ISyncProjectJob⏎↹↹↹|·IPollInstallationsJob⏎↹↹↹|·IProcessWebhookEventJob⏎↹↹`  prettier/prettier
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/modules/jira/jira-sync.service.ts
+   12:9   error    Replace `·IJiraApiIssue,·IJiraWebhookIssuePayload·` with `⏎↹IJiraApiIssue,⏎↹IJiraWebhookIssuePayload,⏎`                                                                   prettier/prettier
+  164:21  error    Replace ``Project·${projectKey}·not·found·for·installation·${installationDbId}`` with `⏎↹↹↹↹`Project·${projectKey}·not·found·for·installation·${installationDbId}`,⏎↹↹↹`  prettier/prettier
+  196:23  error    Forbidden non-null assertion                                                                                                                                              @typescript-eslint/no-non-null-assertion
+  224:10  warning  Unnecessary conditional, value is always truthy                                                                                                                           @typescript-eslint/no-unnecessary-condition
+  377:12  warning  Unnecessary conditional, value is always truthy                                                                                                                           @typescript-eslint/no-unnecessary-condition
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/modules/jira/jira-webhook.controller.ts
+   1:9   error  Replace `·Body,·Controller,·HttpCode,·HttpStatus,·Param,·Post,·Query·` with `⏎↹Body,⏎↹Controller,⏎↹HttpCode,⏎↹HttpStatus,⏎↹Param,⏎↹Post,⏎↹Query,⏎`  prettier/prettier
+  25:20  error  Type string trivially inferred from a string literal, remove type annotation                                                                        @typescript-eslint/no-inferrable-types
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/modules/oauth-account/oauth-account.model.ts
+  137:35  warning  Unnecessary conditional, the types have no overlap  @typescript-eslint/no-unnecessary-condition
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/unit-tests/github-install.controller.unit-spec.ts
+   6:10  error  'GithubIdentityService' is defined but never used. Allowed unused vars must match /^_/u         @typescript-eslint/no-unused-vars
+  47:7   error  'mockIdentityService' is assigned a value but never used. Allowed unused vars must match /^_/u  @typescript-eslint/no-unused-vars
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/unit-tests/github-webhook.controller.unit-spec.ts
+  41:30  error  Replace `⏎↹↹↹↹↹{·rawBody:·'{"ref":"refs/heads/main"}'·}·as·never,⏎↹↹↹↹↹` with `{·rawBody:·'{"ref":"refs/heads/main"}'·}·as·never,·`  prettier/prettier
+  44:1   error  Delete `↹`                                                                                                                           prettier/prettier
+  45:6   error  Delete `↹`                                                                                                                           prettier/prettier
+  46:1   error  Delete `↹`                                                                                                                           prettier/prettier
+  47:1   error  Replace `↹↹↹↹↹},⏎↹↹↹↹` with `↹↹↹↹}`                                                                                                  prettier/prettier
+  56:35  error  Replace `⏎↹↹↹↹{·rawBody:·'{"ref":"refs/heads/main"}'·}·as·never,⏎↹↹↹↹` with `{·rawBody:·'{"ref":"refs/heads/main"}'·}·as·never,·`    prettier/prettier
+  59:1   error  Delete `↹`                                                                                                                           prettier/prettier
+  60:1   error  Delete `↹`                                                                                                                           prettier/prettier
+  61:5   error  Delete `↹`                                                                                                                           prettier/prettier
+  62:1   error  Replace `↹↹↹↹},⏎↹↹↹` with `↹↹↹}`                                                                                                     prettier/prettier
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/unit-tests/jira-processor.service.unit-spec.ts
+  86:16  error  Replace `·name:·'process_webhook_event',·id:·'3',·data:·{·installationDbId:·'install-1',·payload:·mockPayload·}·` with `⏎↹↹↹name:·'process_webhook_event',⏎↹↹↹id:·'3',⏎↹↹↹data:·{·installationDbId:·'install-1',·payload:·mockPayload·},⏎↹↹`  prettier/prettier
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/unit-tests/jira-projects.model.unit-spec.ts
+  230:37  error  Replace `·installationId:·'install-uuid-1',·projectKey:·'ENG'·` with `⏎↹↹↹↹↹installationId:·'install-uuid-1',⏎↹↹↹↹↹projectKey:·'ENG',⏎↹↹↹↹`  prettier/prettier
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/unit-tests/jira-sync.service.unit-spec.ts
+  446:29  error    Replace `·issues:·page1Issues,·isLast:·false,·nextPageToken:·'page-2-token'·` with `⏎↹↹↹↹↹issues:·page1Issues,⏎↹↹↹↹↹isLast:·false,⏎↹↹↹↹↹nextPageToken:·'page-2-token',⏎↹↹↹↹`  prettier/prettier
+  489:39  warning  Unnecessary optional chain on a non-nullish value                                                                                                                             @typescript-eslint/no-unnecessary-condition
+  499:69  error    Delete `⏎`                                                                                                                                                                    prettier/prettier
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/unit-tests/jira-webhook.service.unit-spec.ts
+  87:32  error  Replace `·...mockPayload,·webhookEvent:·'jira:version_created'·as·never·` with `⏎↹↹↹↹...mockPayload,⏎↹↹↹↹webhookEvent:·'jira:version_created'·as·never,⏎↹↹↹`  prettier/prettier
+
+✖ 82 problems (32 errors, 50 warnings)
+  29 errors and 0 warnings potentially fixable with the `--fix` option.

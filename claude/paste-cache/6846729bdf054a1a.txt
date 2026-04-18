@@ -1,0 +1,20 @@
+  ~/Documents/repo/zh-copilot   main !5 ?6 ❯ .venv/bin/python3 scripts/collect_replay_ids.py --cdp-url http://localhost:9222 --start-offset 12390                                                        15:26:53
+/Users/4thwithme/Documents/repo/zh-copilot/scripts/collect_replay_ids.py:3: SyntaxWarning: invalid escape sequence '\ '
+  """Collect all replay IDs from GameReplays.org listing pages and save to a file.
+[collect_ids] existing IDs loaded: 12366
+(node:28507) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[collect_ids] CDP connect failed (BrowserType.connect_over_cdp: connect ECONNREFUSED 127.0.0.1:9222
+Call log:
+  - <ws preparing> retrieving websocket url from http://localhost:9222
+), falling back to Playwright browser
+[collect_ids] 1/787 offset=12390 +0 new (12366 total)
+[collect_ids] 2/787 offset=12420 +0 new (12366 total)
+[collect_ids] 3/787 offset=12450 +0 new (12366 total)
+[collect_ids] 4/787 offset=12480 +0 new (12366 total)
+[collect_ids] 5/787 offset=12510 +0 new (12366 total)
+[collect_ids] 6/787 offset=12540 +0 new (12366 total)
+[collect_ids] 7/787 offset=12570 +0 new (12366 total)
+[collect_ids] 8/787 offset=12600 +0 new (12366 total)
+[collect_ids] 9/787 offset=12630 +0 new (12366 total)
+[collect_ids] offset=12660 FAILED: Page.goto: Target page, context or browser has been closed

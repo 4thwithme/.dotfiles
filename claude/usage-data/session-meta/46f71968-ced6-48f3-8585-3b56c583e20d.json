@@ -1,0 +1,57 @@
+{
+  "session_id": "46f71968-ced6-48f3-8585-3b56c583e20d",
+  "project_path": "/Users/4thwithme/Documents/repo/recommendations-service",
+  "start_time": "2026-03-05T13:14:48.813Z",
+  "duration_minutes": 14,
+  "user_message_count": 5,
+  "assistant_message_count": 71,
+  "tool_counts": {
+    "Skill": 1,
+    "Bash": 14,
+    "mcp__plugin_atlassian_atlassian__getAccessibleAtlassianResources": 1,
+    "mcp__plugin_atlassian_atlassian__getJiraIssue": 1,
+    "Read": 7,
+    "Glob": 1,
+    "Grep": 2,
+    "Edit": 19
+  },
+  "languages": {
+    "TypeScript": 25,
+    "JavaScript": 1
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 83,
+  "output_tokens": 23378,
+  "first_prompt": "using /fix-eslint-workflow need to fix https://customink.atlassian.net/browse/RECO-621 and usages who imports   brach not from main but from current branch",
+  "user_interruptions": 0,
+  "user_response_times": [
+    405.957
+  ],
+  "tool_errors": 4,
+  "tool_error_categories": {
+    "Edit Failed": 2,
+    "Command Failed": 2
+  },
+  "uses_task_agent": false,
+  "uses_mcp": true,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 56,
+  "lines_removed": 45,
+  "files_modified": 2,
+  "message_hours": [
+    14,
+    14,
+    14,
+    14,
+    14
+  ],
+  "user_message_timestamps": [
+    "2026-03-05T13:14:48.813Z",
+    "2026-03-05T13:14:48.809Z",
+    "2026-03-05T13:15:28.940Z",
+    "2026-03-05T13:15:32.778Z",
+    "2026-03-05T13:28:17.650Z"
+  ]
+}

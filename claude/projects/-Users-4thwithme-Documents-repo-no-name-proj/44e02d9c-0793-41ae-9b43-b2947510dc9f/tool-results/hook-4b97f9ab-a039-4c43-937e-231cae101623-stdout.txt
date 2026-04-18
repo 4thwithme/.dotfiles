@@ -1,0 +1,150 @@
+> webapp-backend@0.0.1 code-quality-check
+> npm run lint && npm run format && npm run type-check
+
+
+> webapp-backend@0.0.1 lint
+> eslint "{src,apps,libs,test}/**/*.ts"
+
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/migrations/20260322120000_create_users_table.ts
+   9:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+  42:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/migrations/20260322120001_create_companies_table.ts
+   9:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+  37:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/migrations/20260322120002_create_company_members_table.ts
+  13:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+  64:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/migrations/20260322120003_create_oauth_accounts_table.ts
+   9:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+  55:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/migrations/20260322120004_create_invitations_table.ts
+  13:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+  68:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/migrations/20260414120000_create_github_installations_table.ts
+   9:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+  48:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/migrations/20260414120001_create_github_repos_table.ts
+  12:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+  51:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/modules/app/app.module.ts
+  2:1  error  `@nestjs/bullmq` import should occur before import of `@nestjs/common`  import/order
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/modules/auth/guards/fastify-throttler.guard.ts
+  15:29  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/modules/github/db/github-installations.model.ts
+  26:16  error  Replace `·data·}:·{·data:·IGithubInstallationCreate·` with `⏎↹↹data,⏎↹}:·{⏎↹↹data:·IGithubInstallationCreate;⏎↹`                                                    prettier/prettier
+  47:22  error  Replace ``Failed·to·create·github·installation:·${(error·as·Error).message}`` with `⏎↹↹↹↹`Failed·to·create·github·installation:·${(error·as·Error).message}`,⏎↹↹↹`  prettier/prettier
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/modules/github/db/github-repos.model.ts
+  57:22  error  Replace ``Upserted·${repos.length}·repos·for·installation·${installationId}`` with `⏎↹↹↹↹`Upserted·${repos.length}·repos·for·installation·${installationId}`,⏎↹↹↹`  prettier/prettier
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/modules/github/github-app.service.ts
+  51:30  error  Replace `·installationId·}:·{·installationId:·number·` with `⏎↹↹installationId,⏎↹}:·{⏎↹↹installationId:·number;⏎↹`  prettier/prettier
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/modules/github/github-install.service.ts
+  106:21  error  Replace ``Disconnected·installation·${installationDbId}·for·company·${companyId}`` with `⏎↹↹↹`Disconnected·installation·${installationDbId}·for·company·${companyId}`,⏎↹↹`  prettier/prettier
+  119:22  error  Replace ``Synced·${repos.length}·repos·for·installation·${installationDbId}`` with `⏎↹↹↹↹`Synced·${repos.length}·repos·for·installation·${installationDbId}`,⏎↹↹↹`          prettier/prettier
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/modules/github/github-webhook.service.ts
+  60:21  error  Replace ``Webhook·received·for·uninstalled·installation:·${installationId}`` with `⏎↹↹↹↹`Webhook·received·for·uninstalled·installation:·${installationId}`,⏎↹↹↹`  prettier/prettier
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/modules/github/github.module.ts
+  3:1  error  `@nestjs/bullmq` import should occur before import of `@nestjs/common`  import/order
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/modules/oauth-account/oauth-account.model.ts
+  137:35  warning  Unnecessary conditional, the types have no overlap  @typescript-eslint/no-unnecessary-condition
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/unit-tests/github-app.service.unit-spec.ts
+  111:17  error  Replace `service.getInstallationToken({·installationId:·12345·})).rejects.toThrow(⏎↹↹↹↹'GitHub·API·error',⏎↹↹↹` with `⏎↹↹↹↹service.getInstallationToken({·installationId:·12345·}),⏎↹↹↹).rejects.toThrow('GitHub·API·error'`  prettier/prettier
+  184:17  error  Replace `service.listInstallationRepos({·installationId:·12345·})).rejects.toThrow(⏎↹↹↹↹'repos·error',⏎↹↹↹` with `⏎↹↹↹↹service.listInstallationRepos({·installationId:·12345·}),⏎↹↹↹).rejects.toThrow('repos·error'`          prettier/prettier
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/unit-tests/github-install.service.unit-spec.ts
+   32:31  error  Replace `·getInstallation:·jest.fn(),·listInstallationRepos:·jest.fn()·` with `⏎↹getInstallation:·jest.fn(),⏎↹listInstallationRepos:·jest.fn(),⏎`  prettier/prettier
+  103:44  error  Replace `·companyId:·'company-uuid-1',·userId:·'user-1'·` with `⏎↹↹↹↹companyId:·'company-uuid-1',⏎↹↹↹↹userId:·'user-1',⏎↹↹↹`                       prettier/prettier
+  126:44  error  Replace `·companyId:·'company-uuid-1',·userId:·'user-1'·` with `⏎↹↹↹↹companyId:·'company-uuid-1',⏎↹↹↹↹userId:·'user-1',⏎↹↹↹`                       prettier/prettier
+  128:59  error  Replace `new·Error('GitHub·API·down')` with `⏎↹↹↹↹new·Error('GitHub·API·down'),⏎↹↹↹`                                                               prettier/prettier
+  152:66  error  Replace `new·Error('db·error')` with `⏎↹↹↹↹new·Error('db·error'),⏎↹↹↹`                                                                             prettier/prettier
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/unit-tests/github-installations.model.unit-spec.ts
+  106:25  error  Replace `.spyOn(Logger.prototype,·'error')` with `⏎↹↹↹↹.spyOn(Logger.prototype,·'error')⏎↹↹↹↹`  prettier/prettier
+  146:25  error  Replace `.spyOn(Logger.prototype,·'error')` with `⏎↹↹↹↹.spyOn(Logger.prototype,·'error')⏎↹↹↹↹`  prettier/prettier
+  169:25  error  Replace `.spyOn(Logger.prototype,·'error')` with `⏎↹↹↹↹.spyOn(Logger.prototype,·'error')⏎↹↹↹↹`  prettier/prettier
+  192:25  error  Replace `.spyOn(Logger.prototype,·'error')` with `⏎↹↹↹↹.spyOn(Logger.prototype,·'error')⏎↹↹↹↹`  prettier/prettier
+  215:25  error  Replace `.spyOn(Logger.prototype,·'error')` with `⏎↹↹↹↹.spyOn(Logger.prototype,·'error')⏎↹↹↹↹`  prettier/prettier
+  242:25  error  Replace `.spyOn(Logger.prototype,·'error')` with `⏎↹↹↹↹.spyOn(Logger.prototype,·'error')⏎↹↹↹↹`  prettier/prettier
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/unit-tests/github-repos.model.unit-spec.ts
+  114:17  error  Replace `model.upsertMany({·installationId:·'install-uuid-1',·repos·})).rejects.toThrow(⏎↹↹↹↹'DB·error',⏎↹↹↹` with `⏎↹↹↹↹model.upsertMany({·installationId:·'install-uuid-1',·repos·}),⏎↹↹↹).rejects.toThrow('DB·error'`  prettier/prettier
+  124:53  error  Replace `·installationId:·mockRepo.installation_id·` with `⏎↹↹↹↹installationId:·mockRepo.installation_id,⏎↹↹↹`                                                                                                            prettier/prettier
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/unit-tests/github-webhook.service.unit-spec.ts
+    2:1   error  `@nestjs/bullmq` import should occur before import of `@nestjs/common`                                                                                                                                                     import/order
+   71:27  error  A `require()` style import is forbidden                                                                                                                                                                                    @typescript-eslint/no-require-imports
+  116:25  error  Replace `·...mockInstallation,·status:·GithubInstallationStatus.UNINSTALLED·` with `⏎↹↹↹↹...mockInstallation,⏎↹↹↹↹status:·GithubInstallationStatus.UNINSTALLED,⏎↹↹↹`                                                       prettier/prettier
+  144:30  error  Replace `·...mockInstallation,·status:·GithubInstallationStatus.SUSPENDED·` with `⏎↹↹↹↹...mockInstallation,⏎↹↹↹↹status:·GithubInstallationStatus.SUSPENDED,⏎↹↹↹`                                                           prettier/prettier
+  159:15  error  Replace `·action:·'deleted',·installation:·{·id:·mockInstallation.installation_id·}·` with `⏎↹↹↹↹↹action:·'deleted',⏎↹↹↹↹↹installation:·{·id:·mockInstallation.installation_id·},⏎↹↹↹↹`                                    prettier/prettier
+  175:15  error  Replace `·action:·'suspend',·installation:·{·id:·mockInstallation.installation_id·}·` with `⏎↹↹↹↹↹action:·'suspend',⏎↹↹↹↹↹installation:·{·id:·mockInstallation.installation_id·},⏎↹↹↹↹`                                    prettier/prettier
+  190:15  error  Replace `·action:·'unsuspend',·installation:·{·id:·mockInstallation.installation_id·}·` with `⏎↹↹↹↹↹action:·'unsuspend',⏎↹↹↹↹↹installation:·{·id:·mockInstallation.installation_id·},⏎↹↹↹↹`                                prettier/prettier
+  204:15  error  Replace `·action:·'new_permissions_accepted',·installation:·{·id:·mockInstallation.installation_id·}·` with `⏎↹↹↹↹↹action:·'new_permissions_accepted',⏎↹↹↹↹↹installation:·{·id:·mockInstallation.installation_id·},⏎↹↹↹↹`  prettier/prettier
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/test/cache.module.e2e-spec.ts
+   45:51  error  Replace `·namespace:·Namespaces.AUTH_CODE,·key·` with `⏎↹↹↹↹namespace:·Namespaces.AUTH_CODE,⏎↹↹↹↹key,⏎↹↹↹`                                                                  prettier/prettier
+   55:57  error  Replace `·namespace:·Namespaces.SESSION,·key·` with `⏎↹↹↹↹namespace:·Namespaces.SESSION,⏎↹↹↹↹key,⏎↹↹↹`                                                                      prettier/prettier
+   61:43  error  Replace `·namespace:·Namespaces.AUTH_CODE,·key:·randomUUID()·` with `⏎↹↹↹↹namespace:·Namespaces.AUTH_CODE,⏎↹↹↹↹key:·randomUUID(),⏎↹↹↹`                                      prettier/prettier
+   69:28  error  Replace `·namespace:·Namespaces.AUTH_CODE,·key,·value:·'expires',·ttl:·100·` with `⏎↹↹↹↹namespace:·Namespaces.AUTH_CODE,⏎↹↹↹↹key,⏎↹↹↹↹value:·'expires',⏎↹↹↹↹ttl:·100,⏎↹↹↹`  prettier/prettier
+  103:43  error  Replace `·namespace:·Namespaces.AUTH_CODE,·key:·randomUUID()·` with `⏎↹↹↹↹namespace:·Namespaces.AUTH_CODE,⏎↹↹↹↹key:·randomUUID(),⏎↹↹↹`                                      prettier/prettier
+  113:28  error  Replace `·namespace:·Namespaces.AUTH_CODE,·key,·value:·'to-delete'·` with `⏎↹↹↹↹namespace:·Namespaces.AUTH_CODE,⏎↹↹↹↹key,⏎↹↹↹↹value:·'to-delete',⏎↹↹↹`                      prettier/prettier
+  135:28  error  Replace `·namespace:·Namespaces.AUTH_CODE,·key:·key1,·value:·'val1'·` with `⏎↹↹↹↹namespace:·Namespaces.AUTH_CODE,⏎↹↹↹↹key:·key1,⏎↹↹↹↹value:·'val1',⏎↹↹↹`                    prettier/prettier
+  140:44  error  Replace `·namespace:·Namespaces.AUTH_CODE,·key:·key1·` with `⏎↹↹↹↹namespace:·Namespaces.AUTH_CODE,⏎↹↹↹↹key:·key1,⏎↹↹↹`                                                      prettier/prettier
+  141:44  error  Replace `·namespace:·Namespaces.SESSION,·key:·key2·` with `⏎↹↹↹↹namespace:·Namespaces.SESSION,⏎↹↹↹↹key:·key2,⏎↹↹↹`                                                          prettier/prettier
+  169:5   error  Async method 'operation' has no 'await' expression                                                                                                                          @typescript-eslint/require-await
+  184:5   error  Async method 'operation' has no 'await' expression                                                                                                                          @typescript-eslint/require-await
+  195:5   error  Async method 'operation' has no 'await' expression                                                                                                                          @typescript-eslint/require-await
+  200:5   error  Async method 'operation' has no 'await' expression                                                                                                                          @typescript-eslint/require-await
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/test/db.module.e2e-spec.ts
+  81:29  error  Replace `'users',·'companies',·'company_members',·'oauth_accounts',·'invitations'` with `⏎↹↹↹↹↹'users',⏎↹↹↹↹↹'companies',⏎↹↹↹↹↹'company_members',⏎↹↹↹↹↹'oauth_accounts',⏎↹↹↹↹↹'invitations',⏎↹↹↹↹`  prettier/prettier
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/test/env-config.module.e2e-spec.ts
+  80:56  error  Replace `envConfig[GITHUB_APP_WEBHOOK_SECRET]` with `⏎↹↹↹envConfig[GITHUB_APP_WEBHOOK_SECRET],⏎↹↹`  prettier/prettier
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/test/github-install.e2e-spec.ts
+   54:69  error  Replace `new·FastifyAdapter()` with `⏎↹↹↹new·FastifyAdapter(),⏎↹↹`                                      prettier/prettier
+   58:6   error  Replace `.getHttpAdapter().getInstance()` with `⏎↹↹↹.getHttpAdapter()⏎↹↹↹.getInstance()⏎↹↹↹`            prettier/prettier
+   59:4   error  Insert `↹`                                                                                              prettier/prettier
+   60:1   error  Insert `↹`                                                                                              prettier/prettier
+   61:5   error  Insert `↹`                                                                                              prettier/prettier
+   62:1   error  Insert `↹`                                                                                              prettier/prettier
+   63:6   error  Insert `↹`                                                                                              prettier/prettier
+   64:1   error  Insert `↹`                                                                                              prettier/prettier
+   65:6   error  Insert `↹`                                                                                              prettier/prettier
+   66:5   error  Insert `↹`                                                                                              prettier/prettier
+   67:1   error  Insert `↹`                                                                                              prettier/prettier
+   68:4   error  Insert `↹`                                                                                              prettier/prettier
+   69:1   error  Insert `↹`                                                                                              prettier/prettier
+   87:41  error  Replace `⏎↹↹↹↹.post('/integrations/github/connect')⏎↹↹↹↹` with `.post('/integrations/github/connect')`  prettier/prettier
+  102:41  error  Replace `⏎↹↹↹↹.post('/integrations/github/connect')⏎↹↹↹↹` with `.post('/integrations/github/connect')`  prettier/prettier
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/test/github-webhook.e2e-spec.ts
+  26:69  error  Replace `new·FastifyAdapter()` with `⏎↹↹↹new·FastifyAdapter(),⏎↹↹`  prettier/prettier
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/test/github.module.e2e-spec.ts
+    9:1   error  There should be no empty line within import group                                                                                                                                                   import/order
+   11:1   error  `@nestjs/axios` import should occur before import of `@nestjs/common`                                                                                                                               import/order
+   16:1   error  `@modules/github/db/github-installations.model` import should occur before import of `@modules/github/github-app.service`                                                                           import/order
+   51:69  error  Replace `new·FastifyAdapter()` with `⏎↹↹↹new·FastifyAdapter(),⏎↹↹`                                                                                                                                  prettier/prettier
+   55:24  error  Replace `·transform:·true,·whitelist:·true,·forbidNonWhitelisted:·true·` with `⏎↹↹↹↹transform:·true,⏎↹↹↹↹whitelist:·true,⏎↹↹↹↹forbidNonWhitelisted:·true,⏎↹↹↹`                                      prettier/prettier
+  312:13  error  Replace `·installation_id:·'12345678',·state:·'invalid-state',·setup_action:·'install'·` with `⏎↹↹↹↹↹installation_id:·'12345678',⏎↹↹↹↹↹state:·'invalid-state',⏎↹↹↹↹↹setup_action:·'install',⏎↹↹↹↹`  prettier/prettier
+  324:41  error  Replace `·knex,·name:·`Webhook·Test·Company·${randomUUID()}`·` with `⏎↹↹↹↹knex,⏎↹↹↹↹name:·`Webhook·Test·Company·${randomUUID()}`,⏎↹↹↹`                                                              prettier/prettier
+
+✖ 86 problems (70 errors, 16 warnings)
+  65 errors and 0 warnings potentially fixable with the `--fix` option.

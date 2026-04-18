@@ -1,0 +1,7 @@
+[
+  {
+    "content": "Simplify extendResidualsComponent to use calculateTrend on last 20% of data",
+    "status": "completed",
+    "id": "1"
+  }
+]

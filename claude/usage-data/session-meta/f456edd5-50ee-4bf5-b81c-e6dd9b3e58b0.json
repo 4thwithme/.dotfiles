@@ -1,0 +1,67 @@
+{
+  "session_id": "f456edd5-50ee-4bf5-b81c-e6dd9b3e58b0",
+  "project_path": "/Users/4thwithme/Documents/repo/ci-header-footer",
+  "start_time": "2026-03-01T00:19:22.287Z",
+  "duration_minutes": 29,
+  "user_message_count": 11,
+  "assistant_message_count": 80,
+  "tool_counts": {
+    "Read": 6,
+    "Edit": 35
+  },
+  "languages": {
+    "TypeScript": 36
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 110,
+  "output_tokens": 15724,
+  "first_prompt": "why when i add this.messagesRef.scrollTop = this.messagesRef.scrollHeight + 600 + 2000; it doest change scrolltop?   mb this is conflict between them?    private scrollToLastUserMessage() {     reques…",
+  "user_interruptions": 0,
+  "user_response_times": [
+    199.7,
+    68.154,
+    62.266,
+    140.538,
+    146.456,
+    190.02,
+    429.471
+  ],
+  "tool_errors": 1,
+  "tool_error_categories": {
+    "Other": 1
+  },
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 127,
+  "lines_removed": 80,
+  "files_modified": 2,
+  "message_hours": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+  ],
+  "user_message_timestamps": [
+    "2026-03-01T00:19:22.287Z",
+    "2026-03-01T00:19:22.285Z",
+    "2026-03-01T00:19:22.287Z",
+    "2026-03-01T00:22:18.056Z",
+    "2026-03-01T00:25:48.043Z",
+    "2026-03-01T00:27:41.069Z",
+    "2026-03-01T00:31:09.543Z",
+    "2026-03-01T00:33:39.802Z",
+    "2026-03-01T00:37:10.847Z",
+    "2026-03-01T00:40:39.671Z",
+    "2026-03-01T00:48:03.762Z"
+  ]
+}

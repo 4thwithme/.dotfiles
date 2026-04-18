@@ -1,0 +1,8 @@
+{
+  "id": "15",
+  "subject": "Task 12: Auth Decorators",
+  "description": "Public, Roles, CurrentUser decorators + auth interfaces",
+  "status": "completed",
+  "blocks": [],
+  "blockedBy": []
+}

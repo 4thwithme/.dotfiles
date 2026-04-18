@@ -1,0 +1,60 @@
+{
+  "session_id": "21099519-a7a5-40cc-901f-8262f5fe4242",
+  "project_path": "/Users/4thwithme/Documents/repo/recommendations-service",
+  "start_time": "2026-02-06T18:42:00.165Z",
+  "duration_minutes": 282,
+  "user_message_count": 8,
+  "assistant_message_count": 154,
+  "tool_counts": {
+    "Bash": 32,
+    "Read": 24,
+    "Skill": 2,
+    "Edit": 46,
+    "Grep": 3,
+    "Write": 1
+  },
+  "languages": {
+    "TypeScript": 71
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 375,
+  "output_tokens": 15419,
+  "first_prompt": "using /test-skill and /nestjs-skill we need to fix tests in the repo, then we need to get coverage 95%+..coz we have added new logic (check git diff)",
+  "user_interruptions": 1,
+  "user_response_times": [
+    28.28
+  ],
+  "tool_errors": 6,
+  "tool_error_categories": {
+    "Edit Failed": 4,
+    "Other": 2
+  },
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 802,
+  "lines_removed": 102,
+  "files_modified": 5,
+  "message_hours": [
+    19,
+    19,
+    19,
+    21,
+    21,
+    0,
+    0,
+    0
+  ],
+  "user_message_timestamps": [
+    "2026-02-06T18:42:00.165Z",
+    "2026-02-06T18:42:00.163Z",
+    "2026-02-06T18:42:00.165Z",
+    "2026-02-06T20:41:32.790Z",
+    "2026-02-06T20:42:08.443Z",
+    "2026-02-06T23:12:23.527Z",
+    "2026-02-06T23:12:35.352Z",
+    "2026-02-06T23:24:20.479Z"
+  ]
+}

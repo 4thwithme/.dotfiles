@@ -1,0 +1,141 @@
+> webapp-backend@0.0.1 code-quality-check
+> npm run lint && npm run format && npm run type-check
+
+
+> webapp-backend@0.0.1 lint
+> eslint "{src,apps,libs,test}/**/*.ts"
+
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/migrations/20260322120000_create_users_table.ts
+   9:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+  42:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/migrations/20260322120001_create_companies_table.ts
+   9:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+  37:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/migrations/20260322120002_create_company_members_table.ts
+  13:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+  64:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/migrations/20260322120003_create_oauth_accounts_table.ts
+   9:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+  55:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/migrations/20260322120004_create_invitations_table.ts
+  13:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+  68:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/migrations/20260414120000_create_github_installations_table.ts
+   9:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+  48:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/migrations/20260414120001_create_github_repos_table.ts
+  12:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+  51:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/migrations/20260416000000_create_github_contributors_table.ts
+  12:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+  52:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/migrations/20260416000001_create_github_commits_table.ts
+  13:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+  64:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/migrations/20260416000002_create_github_pull_requests_table.ts
+  13:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+  69:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/migrations/20260416000003_create_github_reviews_table.ts
+  13:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+  60:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/migrations/20260416000004_create_github_review_comments_table.ts
+  13:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+  60:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/migrations/20260416100000_create_jira_installations_table.ts
+   9:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+  47:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/migrations/20260416100001_create_jira_projects_table.ts
+   3:9  error    Replace `·TABLE_NAME_JIRA_INSTALLATIONS,·TABLE_NAME_JIRA_PROJECTS·` with `⏎↹TABLE_NAME_JIRA_INSTALLATIONS,⏎↹TABLE_NAME_JIRA_PROJECTS,⏎`  prettier/prettier
+   9:8  warning  Custom functions must use a single object destructuring parameter                                                                        custom-rules/require-object-params
+  49:8  warning  Custom functions must use a single object destructuring parameter                                                                        custom-rules/require-object-params
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/migrations/20260416100002_create_jira_issues_table.ts
+  13:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+  28:6  error    Delete `↹`                                                         prettier/prettier
+  29:1  error    Delete `↹`                                                         prettier/prettier
+  30:6  error    Delete `↹`                                                         prettier/prettier
+  31:1  error    Delete `↹`                                                         prettier/prettier
+  62:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/migrations/20260416100003_create_jira_changelog_table.ts
+  13:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+  28:6  error    Delete `↹`                                                         prettier/prettier
+  29:1  error    Delete `↹`                                                         prettier/prettier
+  30:6  error    Delete `↹`                                                         prettier/prettier
+  31:1  error    Delete `↹`                                                         prettier/prettier
+  55:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/migrations/20260416100004_create_jira_worklogs_table.ts
+  13:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+  28:6  error    Delete `↹`                                                         prettier/prettier
+  29:1  error    Delete `↹`                                                         prettier/prettier
+  30:6  error    Delete `↹`                                                         prettier/prettier
+  31:1  error    Delete `↹`                                                         prettier/prettier
+  57:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/migrations/20260416100005_create_jira_sprints_table.ts
+   3:9  error    Replace `·TABLE_NAME_JIRA_INSTALLATIONS,·TABLE_NAME_JIRA_SPRINTS·` with `⏎↹TABLE_NAME_JIRA_INSTALLATIONS,⏎↹TABLE_NAME_JIRA_SPRINTS,⏎`  prettier/prettier
+   9:8  warning  Custom functions must use a single object destructuring parameter                                                                      custom-rules/require-object-params
+  50:8  warning  Custom functions must use a single object destructuring parameter                                                                      custom-rules/require-object-params
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/modules/auth/guards/fastify-throttler.guard.ts
+  15:29  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/modules/github/github-event.processor.ts
+   61:15  warning  Custom functions must use a single object destructuring parameter                                   custom-rules/require-object-params
+  332:8   warning  Unnecessary conditional, expected left-hand side of `??` operator to be possibly null or undefined  @typescript-eslint/no-unnecessary-condition
+  332:34  warning  Unnecessary optional chain on a non-nullish value                                                   @typescript-eslint/no-unnecessary-condition
+  339:8   warning  Unnecessary conditional, expected left-hand side of `??` operator to be possibly null or undefined  @typescript-eslint/no-unnecessary-condition
+  339:36  warning  Unnecessary optional chain on a non-nullish value                                                   @typescript-eslint/no-unnecessary-condition
+  390:10  warning  Unnecessary conditional, value is always truthy                                                     @typescript-eslint/no-unnecessary-condition
+  441:10  warning  Unnecessary conditional, value is always truthy                                                     @typescript-eslint/no-unnecessary-condition
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/modules/jira/db/jira-changelog.model.ts
+  47:22  error  Replace ``Failed·to·upsert·changelog·entries:·${(error·as·Error).message}`` with `⏎↹↹↹↹`Failed·to·upsert·changelog·entries:·${(error·as·Error).message}`,⏎↹↹↹`  prettier/prettier
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/modules/jira/db/jira-installations.model.ts
+   26:16  error  Replace `·data·}:·{·data:·IJiraInstallationCreate·` with `⏎↹↹data,⏎↹}:·{⏎↹↹data:·IJiraInstallationCreate;⏎↹`                                                          prettier/prettier
+   44:22  error  Replace ``Failed·to·create·jira·installation:·${(error·as·Error).message}`` with `⏎↹↹↹↹`Failed·to·create·jira·installation:·${(error·as·Error).message}`,⏎↹↹↹`        prettier/prettier
+   55:22  error  Replace ``Failed·to·find·active·installations:·${(error·as·Error).message}`` with `⏎↹↹↹↹`Failed·to·find·active·installations:·${(error·as·Error).message}`,⏎↹↹↹`      prettier/prettier
+  107:22  error  Replace ``Failed·to·mark·needs_reauth·for·${id}:·${(error·as·Error).message}`` with `⏎↹↹↹↹`Failed·to·mark·needs_reauth·for·${id}:·${(error·as·Error).message}`,⏎↹↹↹`  prettier/prettier
+  128:22  error  Replace ``Failed·to·mark·uninstalled·for·${id}:·${(error·as·Error).message}`` with `⏎↹↹↹↹`Failed·to·mark·uninstalled·for·${id}:·${(error·as·Error).message}`,⏎↹↹↹`    prettier/prettier
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/modules/jira/db/jira-issues.model.ts
+  36:20  error  Replace `·issues·}:·{·issues:·IJiraIssueUpsert[]·` with `⏎↹↹issues,⏎↹}:·{⏎↹↹issues:·IJiraIssueUpsert[];⏎↹`  prettier/prettier
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/modules/jira/db/jira-projects.model.ts
+  49:22  error  Replace ``Upserted·${projects.length}·projects·for·installation·${installationId}`` with `⏎↹↹↹↹`Upserted·${projects.length}·projects·for·installation·${installationId}`,⏎↹↹↹`                                  prettier/prettier
+  66:22  error  Replace ``Failed·to·find·projects·for·installation·${installationId}:·${(error·as·Error).message}`` with `⏎↹↹↹↹`Failed·to·find·projects·for·installation·${installationId}:·${(error·as·Error).message}`,⏎↹↹↹`  prettier/prettier
+  73:58  error  Replace `⏎↹↹↹↹.where({·_id:·id·})⏎↹↹↹↹` with `.where({·_id:·id·})`                                                                                                                                              prettier/prettier
+  76:1   error  Delete `↹`                                                                                                                                                                                                      prettier/prettier
+  77:5   error  Delete `↹`                                                                                                                                                                                                      prettier/prettier
+  78:1   error  Delete `↹`                                                                                                                                                                                                      prettier/prettier
+  80:22  error  Replace ``Failed·to·update·last_synced_at·for·project·${id}:·${(error·as·Error).message}`` with `⏎↹↹↹↹`Failed·to·update·last_synced_at·for·project·${id}:·${(error·as·Error).message}`,⏎↹↹↹`                    prettier/prettier
+  97:22  error  Replace ``Failed·to·delete·project·${projectId}:·${(error·as·Error).message}`` with `⏎↹↹↹↹`Failed·to·delete·project·${projectId}:·${(error·as·Error).message}`,⏎↹↹↹`                                            prettier/prettier
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/modules/jira/db/jira-sprints.model.ts
+  52:13  error  Replace `'name',·'state',·'start_date',·'end_date',·'complete_date',·'updated_at'` with `⏎↹↹↹↹↹'name',⏎↹↹↹↹↹'state',⏎↹↹↹↹↹'start_date',⏎↹↹↹↹↹'end_date',⏎↹↹↹↹↹'complete_date',⏎↹↹↹↹↹'updated_at',⏎↹↹↹↹`  prettier/prettier
+  56:22  error  Replace ``Failed·to·upsert·sprints·for·board·${boardId}:·${(error·as·Error).message}`` with `⏎↹↹↹↹`Failed·to·upsert·sprints·for·board·${boardId}:·${(error·as·Error).message}`,⏎↹↹↹`                     prettier/prettier
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/modules/jira/types/jira-api.interface.ts
+  77:10  error  Array type using 'Array<T>' is forbidden. Use 'T[]' instead  @typescript-eslint/array-type
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/modules/oauth-account/oauth-account.model.ts
+  137:35  warning  Unnecessary conditional, the types have no overlap  @typescript-eslint/no-unnecessary-condition
+
+✖ 77 problems (32 errors, 45 warnings)
+  32 errors and 0 warnings potentially fixable with the `--fix` option.

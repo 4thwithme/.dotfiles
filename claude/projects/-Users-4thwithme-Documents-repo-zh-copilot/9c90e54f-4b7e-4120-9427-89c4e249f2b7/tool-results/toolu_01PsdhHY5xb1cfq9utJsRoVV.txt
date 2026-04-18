@@ -1,0 +1,252 @@
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/GameLogic/ScriptEngine/ScriptConditions.cpp:1908:	Int nextFrame = TheGameLogic->getFrame() + 10*LOGICFRAMES_PER_SECOND;
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/GameLogic/ScriptEngine/ScriptConditions.cpp:2573:	// Trigger every 2*LOGICFRAMES_PER_SECOND. jba.
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/GameLogic/ScriptEngine/ScriptConditions.cpp:2579:	pCondition->setCustomFrame(TheGameLogic->getFrame()+2*LOGICFRAMES_PER_SECOND);
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/GameLogic/AI/AIDock.cpp:282:	if (m_enterFrame + 30*LOGICFRAMES_PER_SECOND < TheGameLogic->getFrame()) {
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/GameLogic/AI/AIStates.cpp:535:	Real MAX_RAPPEL_RATE = fabs(TheGlobalData->m_gravity) * LOGICFRAMES_PER_SECOND * 2.5f;
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/GameLogic/AI/AIStates.cpp:964:		enum {FRAME_COUNT_MAX = 60*LOGICFRAMES_PER_SECOND};
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/GameLogic/AI/AIStates.cpp:1270:const UnsignedInt IDLE_COUNTDOWN_DELAY = (LOGICFRAMES_PER_SECOND * 2);
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/GameLogic/AI/AIStates.cpp:1821:	if (ai->isBlockedAndStuck() || ai->getNumFramesBlocked()>2*LOGICFRAMES_PER_SECOND) {
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/GameLogic/AI/AIStates.cpp:1848:	if (ai->getNumFramesBlocked()>LOGICFRAMES_PER_SECOND/4) 
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/GameLogic/AI/AIStates.cpp:3680:		m_frameToSleepUntil = TheGameLogic->getFrame() + 3*LOGICFRAMES_PER_SECOND;
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/GameLogic/AI/AIPlayer.cpp:777:				if (info->getObjectTimestamp()+TheAI->getAiData()->m_rebuildDelaySeconds*LOGICFRAMES_PER_SECOND > TheGameLogic->getFrame()) {
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/GameLogic/AI/AIPlayer.cpp:803:						m_structureTimer = TheAI->getAiData()->m_structureSeconds*LOGICFRAMES_PER_SECOND;
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/GameLogic/AI/AIPlayer.cpp:838:								m_structureTimer = TheAI->getAiData()->m_structureSeconds*LOGICFRAMES_PER_SECOND;
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/GameLogic/AI/AIPlayer.cpp:1726:		m_teamTimer = m_teamSeconds*LOGICFRAMES_PER_SECOND;
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/GameLogic/AI/AIPlayer.cpp:2326:	m_bridgeTimer = LOGICFRAMES_PER_SECOND;
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/GameLogic/AI/AIPlayer.cpp:2742:				m_buildDelay = 2*LOGICFRAMES_PER_SECOND; // check again in 2 seconds.
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/GameLogic/AI/AIPlayer.cpp:2761:			Bool timeExpired = team->m_frameStarted+60*LOGICFRAMES_PER_SECOND < TheGameLogic->getFrame();
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/GameLogic/AI/AIPlayer.cpp:2922:			m_teamDelay = 5*LOGICFRAMES_PER_SECOND; // check again in 5 seconds.
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/GameLogic/ScriptEngine/ScriptEngine.cpp:5320:	m_breezeInfo.m_breezePeriod = LOGICFRAMES_PER_SECOND * 5;
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/GameLogic/ScriptEngine/ScriptEngine.cpp:6898:		pScript->setFrameToEvaluate(GameLogicRandomValue(0,2*LOGICFRAMES_PER_SECOND));
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/GameLogic/ScriptEngine/ScriptEngine.cpp:6975:		pScript->setFrameToEvaluate(TheGameLogic->getFrame()+delaySeconds*LOGICFRAMES_PER_SECOND);
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/GameLogic/AI/AISkirmishPlayer.cpp:190:				if (info->getObjectTimestamp()+TheAI->getAiData()->m_rebuildDelaySeconds*LOGICFRAMES_PER_SECOND > TheGameLogic->getFrame()) {
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/GameLogic/AI/AISkirmishPlayer.cpp:265:				m_structureTimer = TheAI->getAiData()->m_structureSeconds*LOGICFRAMES_PER_SECOND;
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/GameLogic/AI/AISkirmishPlayer.cpp:299:						m_structureTimer = TheAI->getAiData()->m_structureSeconds*LOGICFRAMES_PER_SECOND;
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/GameLogic/AI/AISkirmishPlayer.cpp:557:		m_frameToCheckEnemy = TheGameLogic->getFrame() + 5*LOGICFRAMES_PER_SECOND;
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/GameLogic/AI/AISkirmishPlayer.cpp:881:			if (m_structureTimer > 3*LOGICFRAMES_PER_SECOND) {
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/GameLogic/AI/AISkirmishPlayer.cpp:882:				m_structureTimer = 3*LOGICFRAMES_PER_SECOND;
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/GameLogic/AI/AISkirmishPlayer.cpp:893:				m_buildDelay = 2*LOGICFRAMES_PER_SECOND; // check again in 2 seconds.
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/GameLogic/AI/AISkirmishPlayer.cpp:933:			if (m_teamTimer > 3*LOGICFRAMES_PER_SECOND) {
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/GameLogic/AI/AISkirmishPlayer.cpp:934:				m_teamTimer = 3*LOGICFRAMES_PER_SECOND;
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/GameLogic/AI/AISkirmishPlayer.cpp:946:			m_teamDelay = 2*LOGICFRAMES_PER_SECOND; // check again in 5 seconds.
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/GameLogic/ScriptEngine/ScriptActions.cpp:2615:	Int frames = LOGICFRAMES_PER_SECOND * timeInSeconds;
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/GameLogic/ScriptEngine/ScriptActions.cpp:2632:	Int frames = LOGICFRAMES_PER_SECOND * timeInSeconds;
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/GameLogic/ScriptEngine/ScriptActions.cpp:2685:		Int frames = LOGICFRAMES_PER_SECOND * timeInSeconds;
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/GameLogic/ScriptEngine/ScriptActions.cpp:2717:		Int frames = LOGICFRAMES_PER_SECOND * timeInSeconds;
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/GameLogic/ScriptEngine/ScriptActions.cpp:4118:			Int frames = LOGICFRAMES_PER_SECOND * seconds;
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/GameLogic/ScriptEngine/ScriptActions.cpp:4136:			Int frames = LOGICFRAMES_PER_SECOND * seconds;
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/GameLogic/ScriptEngine/ScriptActions.cpp:5986:	Int frames = (Int)( duration * LOGICFRAMES_PER_SECOND );
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/GameLogic/ScriptEngine/ScriptActions.cpp:5999:			Int frames = (Int)( duration * LOGICFRAMES_PER_SECOND );
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/GameLogic/ScriptEngine/ScriptActions.cpp:6063:		Int frames = (Int)(seconds * LOGICFRAMES_PER_SECOND);
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/GameLogic/AI/AI.cpp:917:m_guardEnemyScanRate(LOGICFRAMES_PER_SECOND/2),
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/GameLogic/AI/AI.cpp:918:m_guardEnemyReturnScanRate(LOGICFRAMES_PER_SECOND),
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/GameLogic/AI/TurretAI.cpp:200:	m_recenterTime = 2*LOGICFRAMES_PER_SECOND;
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/GameLogic/AI/AIGroup.cpp:1737:						UnsignedInt randomFrames = GameLogicRandomValue( 0, LOGICFRAMES_PER_SECOND );
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/GameLogic/AI/AIGroup.cpp:2083:							UnsignedInt randomFrames = GameLogicRandomValue( 0, LOGICFRAMES_PER_SECOND );
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/GameLogic/AI/AIGroup.cpp:2784:		object->setSpecialModelConditionState( MODELCONDITION_SPECIAL_CHEERING, LOGICFRAMES_PER_SECOND * 3 );
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/GameLogic/Map/TerrainLogic.cpp:1042:				 doDamageThisFrame = (TheGameLogic->getFrame() % LOGICFRAMES_PER_SECOND) == 0;
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/GameLogic/Map/TerrainLogic.cpp:2466:																												 (LOGICFRAMES_PER_SECOND * transitionTimeInSeconds);
+/tmp/CnC_Generals_Zero_Hour/Generals/Code/GameEngineDevice/Source/W3DDevice/GameClient/W3DView.cpp:104:Int TheW3DFrameLengthInMsec = 1000/LOGICFRAMES_PER_SECOND; // default is 33msec/frame == 30fps. but we may change it depending on sys config.
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngineDevice/Source/W3DDevice/GameClient/W3DView.cpp:108:Int TheW3DFrameLengthInMsec = 1000/LOGICFRAMES_PER_SECOND; // default is 33msec/frame == 30fps. but we may change it depending on sys config.
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/GameLogic/Object/Locomotor.cpp:674:	m_donutTimer = TheGameLogic->getFrame()+DONUT_TIME_DELAY_SECONDS*LOGICFRAMES_PER_SECOND;
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/GameLogic/Object/Locomotor.cpp:788:	m_donutTimer = TheGameLogic->getFrame()+DONUT_TIME_DELAY_SECONDS*LOGICFRAMES_PER_SECOND;
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/GameLogic/Object/Locomotor.cpp:1118:	#define MIN_VEL (PATHFIND_CELL_SIZE_F/(LOGICFRAMES_PER_SECOND))
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/GameLogic/Object/Locomotor.cpp:1365:	const Real PROJECT_FRAMES = LOGICFRAMES_PER_SECOND/2; // Project out 1/2 second.
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/GameLogic/Object/Locomotor.cpp:1430:		m_donutTimer = TheGameLogic->getFrame()+DONUT_TIME_DELAY_SECONDS*LOGICFRAMES_PER_SECOND;
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/GameLogic/Object/Locomotor.cpp:2444:	m_donutTimer = TheGameLogic->getFrame()+DONUT_TIME_DELAY_SECONDS*LOGICFRAMES_PER_SECOND;
+/tmp/CnC_Generals_Zero_Hour/Generals/Code/GameEngineDevice/Source/W3DDevice/GameClient/W3DDisplay.cpp:803:const UnsignedInt START_CUMU_FRAME = LOGICFRAMES_PER_SECOND / 2;	// skip first half-sec
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/Common/System/BuildAssistant.cpp:176:static const Real FRAMES_TO_ALLOW_SCAFFOLD = LOGICFRAMES_PER_SECOND * 1.5f;
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/Common/System/BuildAssistant.cpp:177:static const Real TOTAL_FRAMES_TO_SELL_OBJECT = LOGICFRAMES_PER_SECOND * 3.0f;
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/GameClient/GUI/ControlBar/ControlBar.cpp:1436:		if((TheGameLogic->getFrame() % (LOGICFRAMES_PER_SECOND/2)) == 0)
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/GameClient/GUI/ControlBar/ControlBar.cpp:1661:	if(TheGameLogic->getFrame()% LOGICFRAMES_PER_SECOND > LOGICFRAMES_PER_SECOND/2)
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngineDevice/Source/W3DDevice/GameClient/W3DDisplay.cpp:869:const UnsignedInt START_CUMU_FRAME = LOGICFRAMES_PER_SECOND / 2;	// skip first half-sec
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/GameClient/GUI/ControlBar/ControlBarOCLTimer.cpp:148:	UnsignedInt seconds = frames / LOGICFRAMES_PER_SECOND;
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/GameLogic/Object/Object.cpp:993:			m_repulsorHelper->sleepUntil(TheGameLogic->getFrame() + 2*LOGICFRAMES_PER_SECOND);
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/Common/System/Radar.cpp:66:#define RADAR_QUEUE_TERRAIN_REFRESH_DELAY (LOGICFRAMES_PER_SECOND * 3.0f)
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/Common/System/Radar.cpp:1121:	m_event[ m_nextFreeRadarEvent ].dieFrame = TheGameLogic->getFrame() + LOGICFRAMES_PER_SECOND * secondsToLive;
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/Common/System/Radar.cpp:1122:	m_event[ m_nextFreeRadarEvent ].fadeFrame = m_event[ m_nextFreeRadarEvent ].dieFrame - LOGICFRAMES_PER_SECOND * secondsBeforeDieToFade;
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/Common/System/Radar.cpp:1303:	const UnsignedInt framesBetweenEvents = LOGICFRAMES_PER_SECOND * 10;
+/tmp/CnC_Generals_Zero_Hour/Generals/Code/GameEngineDevice/Source/W3DDevice/GameClient/W3DScene.cpp:601:				UnsignedInt limit = 2*LOGICFRAMES_PER_SECOND;
+/tmp/CnC_Generals_Zero_Hour/Generals/Code/GameEngineDevice/Source/W3DDevice/GameClient/W3DScene.cpp:603:					limit += 3*LOGICFRAMES_PER_SECOND;
+/tmp/CnC_Generals_Zero_Hour/Generals/Code/GameEngineDevice/Source/W3DDevice/Common/System/W3DRadar.cpp:386:	const Real TIME_FROM_FULL_SIZE_TO_SMALL_SIZE = LOGICFRAMES_PER_SECOND * 1.5;
+/tmp/CnC_Generals_Zero_Hour/Generals/Code/GameEngineDevice/Source/W3DDevice/Common/System/W3DRadar.cpp:485:	const Real TIME_FROM_FULL_SIZE_TO_SMALL_SIZE = LOGICFRAMES_PER_SECOND * 1.5;
+/tmp/CnC_Generals_Zero_Hour/Generals/Code/GameEngineDevice/Source/W3DDevice/Common/System/W3DRadar.cpp:713:			const UnsignedInt framesForTransition = LOGICFRAMES_PER_SECOND;
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/ChallengeMenu.cpp:694:        msg->appendIntegerArgument(LOGICFRAMES_PER_SECOND);	// FPS limit
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/ScoreScreen.cpp:1191:	if (/*TheGameInfo->isSkirmish() &&*/ (TheGameLogic->getFrame() / LOGICFRAMES_PER_SECOND / 60) < 5)
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/ScoreScreen.cpp:1196:	if (/*TheGameInfo->isSkirmish() &&*/ (TheGameLogic->getFrame() / LOGICFRAMES_PER_SECOND / 60) < 10)
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/ScoreScreen.cpp:1293:	if (/*TheGameInfo->isSkirmish() &&*/ (TheGameLogic->getFrame() / LOGICFRAMES_PER_SECOND / 60) < 5)
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/ScoreScreen.cpp:1299:	if (/*TheGameInfo->isSkirmish() &&*/ (TheGameLogic->getFrame() / LOGICFRAMES_PER_SECOND / 60) < 10)
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/ScoreScreen.cpp:1785:					if (TheVictoryConditions->getEndFrame() < LOGICFRAMES_PER_SECOND * 25 && TheVictoryConditions->getEndFrame())
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/ScoreScreen.cpp:1909:					stats.duration[ptIdx] += TheGameLogic->getFrame() / LOGICFRAMES_PER_SECOND / 60; // in minutes
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngineDevice/Source/W3DDevice/GameClient/Drawable/Draw/W3DTreeDraw.cpp:70:	m_sinkFrames = 10*LOGICFRAMES_PER_SECOND;
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/Common/System/Upgrade.cpp:167:	return m_buildTime * LOGICFRAMES_PER_SECOND;
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/Common/Thing/ThingTemplate.cpp:1550:	Int buildTime = getBuildTime() * LOGICFRAMES_PER_SECOND;
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/Common/GlobalData.cpp:564:	m_debugVisibilityTileDuration = LOGICFRAMES_PER_SECOND;
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/Common/GlobalData.cpp:567:	m_debugProjectileTileDuration = LOGICFRAMES_PER_SECOND;  // Changed By Sadullah Nader
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/Common/GlobalData.cpp:570:	m_debugThreatMapTileDuration = LOGICFRAMES_PER_SECOND;  // Changed By Sadullah Nader
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/Common/GlobalData.cpp:573:	m_debugCashValueMapTileDuration = LOGICFRAMES_PER_SECOND; // Changed By Sadullah Nader
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/Common/GlobalData.cpp:836:	m_defaultOcclusionDelay = LOGICFRAMES_PER_SECOND * 3;	//default to 3 seconds
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/GameLogic/Object/Update/PhysicsUpdate.cpp:70:const Int MOTIVE_FRAMES = LOGICFRAMES_PER_SECOND / 3;
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/GameLogic/Object/Update/PhysicsUpdate.cpp:1372:			const Real MINBOUNCESPEED = 1.0f/(LOGICFRAMES_PER_SECOND*5.0f);
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/GameLogic/Object/Update/BaseRenerateUpdate.cpp:141:														 LOGICFRAMES_PER_SECOND;
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/Common/RTS/Team.cpp:1142:			m_productionConditionScript->setFrameToEvaluate(TheGameLogic->getFrame()+delaySeconds*LOGICFRAMES_PER_SECOND);
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/GameLogic/Object/Update/HordeUpdate.cpp:118:const Int DEFAULT_UPDATE_RATE = LOGICFRAMES_PER_SECOND;
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/GameLogic/Object/Update/FireOCLAfterWeaponCooldownUpdate.cpp:202:	UnsignedInt oclFrames = (UnsignedInt)(seconds * LOGICFRAMES_PER_SECOND);
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/GameLogic/Object/Update/ParticleUplinkCannonUpdate.cpp:565:				speed /= LOGICFRAMES_PER_SECOND;
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/GameLogic/Object/Update/ParticleUplinkCannonUpdate.cpp:652:				Real totalFiringSeconds = data->m_totalFiringFrames / LOGICFRAMES_PER_SECOND;
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/Common/RTS/TunnelTracker.cpp:132:	if (m_nemesisTimestamp + 4*LOGICFRAMES_PER_SECOND < TheGameLogic->getFrame()) {
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/GameLogic/Object/Update/AIUpdate.cpp:89:	m_moodAttackCheckRate = LOGICFRAMES_PER_SECOND * 2;
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/GameLogic/Object/Update/AIUpdate.cpp:91:	m_surrenderDuration = LOGICFRAMES_PER_SECOND * 120;
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/GameLogic/Object/Update/AIUpdate.cpp:509:		setQueueForPathTime(LOGICFRAMES_PER_SECOND);
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/GameLogic/Object/Update/AIUpdate.cpp:514:			setIgnoreCollisionTime(2*LOGICFRAMES_PER_SECOND);
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/GameLogic/Object/Update/AIUpdate.cpp:541:		setQueueForPathTime(2*LOGICFRAMES_PER_SECOND);
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/GameLogic/Object/Update/AIUpdate.cpp:565:		setQueueForPathTime(2*LOGICFRAMES_PER_SECOND);
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/GameLogic/Object/Update/AIUpdate.cpp:589:		setQueueForPathTime(2*LOGICFRAMES_PER_SECOND);
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/GameLogic/Object/Update/AIUpdate.cpp:1360:	if (getNumFramesBlocked()>LOGICFRAMES_PER_SECOND) {
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/GameLogic/Object/Update/AIUpdate.cpp:1761:			setQueueForPathTime(LOGICFRAMES_PER_SECOND);
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/GameLogic/Object/Update/AIUpdate.cpp:1799:			setIgnoreCollisionTime(2*LOGICFRAMES_PER_SECOND);
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/GameLogic/Object/Update/AIUpdate.cpp:2281:								pos.x += 2*PATHFIND_CELL_SIZE_F*dx/(dist*LOGICFRAMES_PER_SECOND);
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/GameLogic/Object/Update/AIUpdate.cpp:2282:								pos.y += 2*PATHFIND_CELL_SIZE_F*dy/(dist*LOGICFRAMES_PER_SECOND);
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/GameLogic/Object/Update/AIUpdate.cpp:2908:		getStateMachine()->setTemporaryState(AI_MOVE_TO, LOGICFRAMES_PER_SECOND * 20);
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/GameLogic/Object/Update/AIUpdate.cpp:3222:				setIgnoreCollisionTime(LOGICFRAMES_PER_SECOND*2); // cheat for 2 seconds.
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/GameLogic/Object/Update/AIUpdate.cpp:3228:				setIgnoreCollisionTime(LOGICFRAMES_PER_SECOND*2); // cheat for 2 seconds.
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/GameLogic/Object/Update/AIUpdate.cpp:3256:		m_stateMachine->setTemporaryState(AI_MOVE_OUT_OF_THE_WAY, 10*LOGICFRAMES_PER_SECOND);
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/GameLogic/Object/Update/AIUpdate.cpp:3884:	getStateMachine()->setTemporaryState( AI_FOLLOW_EXITPRODUCTION_PATH, 10*LOGICFRAMES_PER_SECOND);
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/GameLogic/Object/Update/SlavedUpdate.cpp:511:			Real repairAmount = data->m_repairRatePerSecond / LOGICFRAMES_PER_SECOND;
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/GameLogic/Object/Update/SlavedUpdate.cpp:646:							Real time = (Real)(m_framesToWait * LOGICFRAMES_PER_SECOND);
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/Common/RTS/SpecialPower.cpp:49:#define DEFAULT_DEFECTION_DETECTION_PROTECTION_TIME_LIMIT (LOGICFRAMES_PER_SECOND * 10) 
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/Common/RTS/AcademyStats.cpp:435:		if( TheGameLogic->getFrame() <= 300 * LOGICFRAMES_PER_SECOND )
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/Common/RTS/AcademyStats.cpp:444:		if( TheGameLogic->getFrame() <= 600 * LOGICFRAMES_PER_SECOND )
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/Common/RTS/AcademyStats.cpp:453:		if( TheGameLogic->getFrame() <= 900 * LOGICFRAMES_PER_SECOND )
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/Common/RTS/AcademyStats.cpp:630:	if( m_idleBuildingUnitsMaxFrames > 300 * LOGICFRAMES_PER_SECOND || !m_lastUnitBuiltFrame )
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/Common/RTS/AcademyStats.cpp:681:	if( m_powerOutMaxFrames > 600 * LOGICFRAMES_PER_SECOND )
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/Common/RTS/AcademyStats.cpp:971:	if( m_maxFramesBetweenIncome > LOGICFRAMES_PER_SECOND * 120 || !m_lastIncomeFrame )
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/Common/RTS/Player.cpp:744:		if( now % LOGICFRAMES_PER_SECOND == 0 )
+/tmp/CnC_Generals_Zero_Hour/Generals/Code/GameEngine/Source/GameLogic/AI/AIDock.cpp:282:	if (m_enterFrame + 30*LOGICFRAMES_PER_SECOND < TheGameLogic->getFrame()) {
+/tmp/CnC_Generals_Zero_Hour/Generals/Code/GameEngine/Source/GameLogic/AI/AIStates.cpp:532:	Real MAX_RAPPEL_RATE = fabs(TheGlobalData->m_gravity) * LOGICFRAMES_PER_SECOND * 2.5f;
+/tmp/CnC_Generals_Zero_Hour/Generals/Code/GameEngine/Source/GameLogic/AI/AIStates.cpp:915:		enum {FRAME_COUNT_MAX = 60*LOGICFRAMES_PER_SECOND};
+/tmp/CnC_Generals_Zero_Hour/Generals/Code/GameEngine/Source/GameLogic/AI/AIStates.cpp:1221:const UnsignedInt IDLE_COUNTDOWN_DELAY = (LOGICFRAMES_PER_SECOND * 2);
+/tmp/CnC_Generals_Zero_Hour/Generals/Code/GameEngine/Source/GameLogic/AI/AIStates.cpp:1747:	if (ai->isBlockedAndStuck() || ai->getNumFramesBlocked()>2*LOGICFRAMES_PER_SECOND) {
+/tmp/CnC_Generals_Zero_Hour/Generals/Code/GameEngine/Source/GameLogic/AI/AIStates.cpp:1774:	if (ai->getNumFramesBlocked()>LOGICFRAMES_PER_SECOND/4) 
+/tmp/CnC_Generals_Zero_Hour/Generals/Code/GameEngine/Source/GameLogic/AI/AIStates.cpp:3532:		m_frameToSleepUntil = TheGameLogic->getFrame() + 3*LOGICFRAMES_PER_SECOND;
+/tmp/CnC_Generals_Zero_Hour/Generals/Code/GameEngine/Source/GameLogic/AI/AISkirmishPlayer.cpp:184:				if (info->getObjectTimestamp()+TheAI->getAiData()->m_rebuildDelaySeconds*LOGICFRAMES_PER_SECOND > TheGameLogic->getFrame()) {
+/tmp/CnC_Generals_Zero_Hour/Generals/Code/GameEngine/Source/GameLogic/AI/AISkirmishPlayer.cpp:259:				m_structureTimer = TheAI->getAiData()->m_structureSeconds*LOGICFRAMES_PER_SECOND;
+/tmp/CnC_Generals_Zero_Hour/Generals/Code/GameEngine/Source/GameLogic/AI/AISkirmishPlayer.cpp:293:						m_structureTimer = TheAI->getAiData()->m_structureSeconds*LOGICFRAMES_PER_SECOND;
+/tmp/CnC_Generals_Zero_Hour/Generals/Code/GameEngine/Source/GameLogic/AI/AISkirmishPlayer.cpp:551:		m_frameToCheckEnemy = TheGameLogic->getFrame() + 5*LOGICFRAMES_PER_SECOND;
+/tmp/CnC_Generals_Zero_Hour/Generals/Code/GameEngine/Source/GameLogic/AI/AISkirmishPlayer.cpp:873:			if (m_structureTimer > 3*LOGICFRAMES_PER_SECOND) {
+/tmp/CnC_Generals_Zero_Hour/Generals/Code/GameEngine/Source/GameLogic/AI/AISkirmishPlayer.cpp:874:				m_structureTimer = 3*LOGICFRAMES_PER_SECOND;
+/tmp/CnC_Generals_Zero_Hour/Generals/Code/GameEngine/Source/GameLogic/AI/AISkirmishPlayer.cpp:885:				m_buildDelay = 2*LOGICFRAMES_PER_SECOND; // check again in 2 seconds.
+/tmp/CnC_Generals_Zero_Hour/Generals/Code/GameEngine/Source/GameLogic/AI/AISkirmishPlayer.cpp:925:			if (m_teamTimer > 3*LOGICFRAMES_PER_SECOND) {
+/tmp/CnC_Generals_Zero_Hour/Generals/Code/GameEngine/Source/GameLogic/AI/AISkirmishPlayer.cpp:926:				m_teamTimer = 3*LOGICFRAMES_PER_SECOND;
+/tmp/CnC_Generals_Zero_Hour/Generals/Code/GameEngine/Source/GameLogic/AI/AISkirmishPlayer.cpp:938:			m_teamDelay = 2*LOGICFRAMES_PER_SECOND; // check again in 5 seconds.
+/tmp/CnC_Generals_Zero_Hour/Generals/Code/GameEngine/Source/GameLogic/AI/TurretAI.cpp:200:	m_recenterTime = 2*LOGICFRAMES_PER_SECOND;
+/tmp/CnC_Generals_Zero_Hour/Generals/Code/GameEngine/Source/GameLogic/AI/AIPlayer.cpp:772:				if (info->getObjectTimestamp()+TheAI->getAiData()->m_rebuildDelaySeconds*LOGICFRAMES_PER_SECOND > TheGameLogic->getFrame()) {
+/tmp/CnC_Generals_Zero_Hour/Generals/Code/GameEngine/Source/GameLogic/AI/AIPlayer.cpp:798:						m_structureTimer = TheAI->getAiData()->m_structureSeconds*LOGICFRAMES_PER_SECOND;
+/tmp/CnC_Generals_Zero_Hour/Generals/Code/GameEngine/Source/GameLogic/AI/AIPlayer.cpp:833:								m_structureTimer = TheAI->getAiData()->m_structureSeconds*LOGICFRAMES_PER_SECOND;
+/tmp/CnC_Generals_Zero_Hour/Generals/Code/GameEngine/Source/GameLogic/AI/AIPlayer.cpp:1607:		m_teamTimer = m_teamSeconds*LOGICFRAMES_PER_SECOND;
+/tmp/CnC_Generals_Zero_Hour/Generals/Code/GameEngine/Source/GameLogic/AI/AIPlayer.cpp:1978:	m_bridgeTimer = LOGICFRAMES_PER_SECOND;
+/tmp/CnC_Generals_Zero_Hour/Generals/Code/GameEngine/Source/GameLogic/AI/AIPlayer.cpp:2394:				m_buildDelay = 2*LOGICFRAMES_PER_SECOND; // check again in 2 seconds.
+/tmp/CnC_Generals_Zero_Hour/Generals/Code/GameEngine/Source/GameLogic/AI/AIPlayer.cpp:2413:			Bool timeExpired = team->m_frameStarted+60*LOGICFRAMES_PER_SECOND < TheGameLogic->getFrame();
+/tmp/CnC_Generals_Zero_Hour/Generals/Code/GameEngine/Source/GameLogic/AI/AIPlayer.cpp:2574:			m_teamDelay = 5*LOGICFRAMES_PER_SECOND; // check again in 5 seconds.
+/tmp/CnC_Generals_Zero_Hour/Generals/Code/GameEngine/Source/GameLogic/AI/AI.cpp:913:m_guardEnemyScanRate(LOGICFRAMES_PER_SECOND/2),
+/tmp/CnC_Generals_Zero_Hour/Generals/Code/GameEngine/Source/GameLogic/AI/AI.cpp:914:m_guardEnemyReturnScanRate(LOGICFRAMES_PER_SECOND),
+/tmp/CnC_Generals_Zero_Hour/Generals/Code/GameEngine/Source/GameLogic/AI/AIGroup.cpp:1630:						UnsignedInt randomFrames = GameLogicRandomValue( 0, LOGICFRAMES_PER_SECOND );
+/tmp/CnC_Generals_Zero_Hour/Generals/Code/GameEngine/Source/GameLogic/AI/AIGroup.cpp:1925:							UnsignedInt randomFrames = GameLogicRandomValue( 0, LOGICFRAMES_PER_SECOND );
+/tmp/CnC_Generals_Zero_Hour/Generals/Code/GameEngine/Source/GameLogic/AI/AIGroup.cpp:2616:		object->setSpecialModelConditionState( MODELCONDITION_SPECIAL_CHEERING, LOGICFRAMES_PER_SECOND * 3 );
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/GameLogic/Object/Update/AIUpdate/POWTruckAIUpdate.cpp:381:static const UnsignedInt FIND_DELAY = LOGICFRAMES_PER_SECOND * 1;
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngineDevice/Source/W3DDevice/GameClient/W3DScene.cpp:628:				UnsignedInt limit = 2*LOGICFRAMES_PER_SECOND;
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngineDevice/Source/W3DDevice/GameClient/W3DScene.cpp:630:					limit += 3*LOGICFRAMES_PER_SECOND;
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngineDevice/Source/W3DDevice/Common/System/W3DRadar.cpp:384:	const Real TIME_FROM_FULL_SIZE_TO_SMALL_SIZE = LOGICFRAMES_PER_SECOND * 1.5;
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngineDevice/Source/W3DDevice/Common/System/W3DRadar.cpp:483:	const Real TIME_FROM_FULL_SIZE_TO_SMALL_SIZE = LOGICFRAMES_PER_SECOND * 1.5;
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngineDevice/Source/W3DDevice/Common/System/W3DRadar.cpp:705:			const UnsignedInt framesForTransition = LOGICFRAMES_PER_SECOND;
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngineDevice/Source/W3DDevice/Common/System/W3DRadar.cpp:1539:		const UnsignedInt framesForTransition = LOGICFRAMES_PER_SECOND;
+/tmp/CnC_Generals_Zero_Hour/Generals/Code/GameEngine/Source/GameLogic/Object/Locomotor.cpp:662:	m_donutTimer = TheGameLogic->getFrame()+DONUT_TIME_DELAY_SECONDS*LOGICFRAMES_PER_SECOND;
+/tmp/CnC_Generals_Zero_Hour/Generals/Code/GameEngine/Source/GameLogic/Object/Locomotor.cpp:776:	m_donutTimer = TheGameLogic->getFrame()+DONUT_TIME_DELAY_SECONDS*LOGICFRAMES_PER_SECOND;
+/tmp/CnC_Generals_Zero_Hour/Generals/Code/GameEngine/Source/GameLogic/Object/Locomotor.cpp:1088:	#define MIN_VEL (PATHFIND_CELL_SIZE_F/(LOGICFRAMES_PER_SECOND))
+/tmp/CnC_Generals_Zero_Hour/Generals/Code/GameEngine/Source/GameLogic/Object/Locomotor.cpp:1335:	const Real PROJECT_FRAMES = LOGICFRAMES_PER_SECOND/2; // Project out 1/2 second.
+/tmp/CnC_Generals_Zero_Hour/Generals/Code/GameEngine/Source/GameLogic/Object/Locomotor.cpp:1400:		m_donutTimer = TheGameLogic->getFrame()+DONUT_TIME_DELAY_SECONDS*LOGICFRAMES_PER_SECOND;
+/tmp/CnC_Generals_Zero_Hour/Generals/Code/GameEngine/Source/GameLogic/Object/Locomotor.cpp:2413:	m_donutTimer = TheGameLogic->getFrame()+DONUT_TIME_DELAY_SECONDS*LOGICFRAMES_PER_SECOND;
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/Common/StatsCollector.cpp:183:	if(m_lastUpdate + (TheGlobalData->m_playStats * LOGICFRAMES_PER_SECOND) > TheGameLogic->getFrame())
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/Common/StatsCollector.cpp:232:	m_timeCount += (TheGameLogic->getFrame() - m_lastUpdate) / LOGICFRAMES_PER_SECOND;
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/Common/StatsCollector.cpp:255:	fprintf(f, "* Times are in Game Seconds which are based off of frames. Current fps is set to %d\n", LOGICFRAMES_PER_SECOND);
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/Common/StatsCollector.cpp:419:					m_scrollMapCommands, m_scrollTime / LOGICFRAMES_PER_SECOND, /*other commands*/0,m->countMoney() , 
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/GameLogic/Object/Update/AIUpdate/JetAIUpdate.cpp:331:		HOW_OFTEN_TO_CHECK = LOGICFRAMES_PER_SECOND
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/GameLogic/Object/Update/AIUpdate/JetAIUpdate.cpp:1081:			pos.x += PATHFIND_CELL_SIZE_F*dx/(dist*LOGICFRAMES_PER_SECOND);
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/GameLogic/Object/Update/AIUpdate/JetAIUpdate.cpp:1082:			pos.y += PATHFIND_CELL_SIZE_F*dy/(dist*LOGICFRAMES_PER_SECOND);
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/GameLogic/Object/Update/AIUpdate/DozerAIUpdate.cpp:485://	const UnsignedInt ACTION_TIME = LOGICFRAMES_PER_SECOND * 4 ; // frames to spend here in this state doing the action
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/GameLogic/Object/Update/AIUpdate/DozerAIUpdate.cpp:720:												LOGICFRAMES_PER_SECOND;
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/GameLogic/Object/Update/AIUpdate/ChinookAIUpdate.cpp:664:				const UnsignedInt ROPE_EXPIRATION_TIME = LOGICFRAMES_PER_SECOND * 5;
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/GameLogic/Object/Update/AIUpdate/ChinookAIUpdate.cpp:884:	m_rappelSpeed = fabs(TheGlobalData->m_gravity) * LOGICFRAMES_PER_SECOND * 0.5f;
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/GameLogic/Object/Update/FlammableUpdate.cpp:55:	m_flameDamageExpirationDelay = LOGICFRAMES_PER_SECOND * 2;
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/GameLogic/Object/Update/HelicopterSlowDeathUpdate.cpp:329:				m_selfSpin += modData->m_selfSpinUpdateAmount / LOGICFRAMES_PER_SECOND;
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/GameLogic/Object/Update/HelicopterSlowDeathUpdate.cpp:343:				m_selfSpin -= modData->m_selfSpinUpdateAmount / LOGICFRAMES_PER_SECOND;
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/GameLogic/Object/Update/StickyBombUpdate.cpp:115:		UnsignedInt pings = (m_dieFrame - now) / LOGICFRAMES_PER_SECOND;
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/GameLogic/Object/Update/StickyBombUpdate.cpp:117:		m_nextPingFrame = m_dieFrame - (pings * LOGICFRAMES_PER_SECOND);
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/GameLogic/Object/Update/StickyBombUpdate.cpp:125:		m_nextPingFrame = now + LOGICFRAMES_PER_SECOND;
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/GameLogic/Object/Update/StickyBombUpdate.cpp:207:		m_nextPingFrame += LOGICFRAMES_PER_SECOND;
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/GameLogic/Object/Update/WaveGuideUpdate.cpp:808:	if( TheGameLogic->getFrame() - m_splashSoundFrame > LOGICFRAMES_PER_SECOND / 2.0f )
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/GameLogic/Object/Update/CommandButtonHuntUpdate.cpp:65:	m_scanFrames				= LOGICFRAMES_PER_SECOND;
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/GameLogic/Object/FiringTracker.cpp:215:		m_frameToStartCooldown = now + LOGICFRAMES_PER_SECOND;
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/GameLogic/Object/FiringTracker.cpp:217:		return UPDATE_SLEEP(LOGICFRAMES_PER_SECOND);
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/GameLogic/Object/Contain/TunnelContain.cpp:490:				if (body->getLastDamageTimestamp() + LOGICFRAMES_PER_SECOND > TheGameLogic->getFrame()) {
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Include/GameLogic/AIStateMachine.h:1277:	enum { ENEMY_SCAN_RATE = LOGICFRAMES_PER_SECOND };
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Include/GameLogic/AIStateMachine.h:1308:	enum { ENEMY_SCAN_RATE = LOGICFRAMES_PER_SECOND };
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/GameLogic/Object/Contain/OpenContain.cpp:1021:			ai->setIgnoreCollisionTime(LOGICFRAMES_PER_SECOND);
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/GameLogic/Object/Contain/OpenContain.cpp:1126:			ai->setIgnoreCollisionTime(LOGICFRAMES_PER_SECOND);
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/GameClient/Drawable.cpp:247:const UnsignedInt HEALING_ICON_DISPLAY_TIME	= LOGICFRAMES_PER_SECOND * 3;
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/GameClient/InGameUI.cpp:1657:	const int messageTimeout = m_messageDelayMS / LOGICFRAMES_PER_SECOND / 1000;
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/GameClient/InGameUI.cpp:1748:						m_militarySubtitle->incrementOnFrame = currLogicFrame + (Int)(((Real)LOGICFRAMES_PER_SECOND * TheGlobalLanguageData->m_militaryCaptionDelayMS)/1000.0f);
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/GameClient/InGameUI.cpp:3574: 									readySecs = (module->getReadyFrame() - TheGameLogic->getFrame()) / LOGICFRAMES_PER_SECOND;
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/GameClient/InGameUI.cpp:4082:	const int messageTimeout = currLogicFrame + (Int)(((Real)LOGICFRAMES_PER_SECOND * duration)/1000.0f);
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/GameClient/InGameUI.cpp:4101:	m_militarySubtitle->incrementOnFrame = currLogicFrame + (Int)(((Real)LOGICFRAMES_PER_SECOND * TheGlobalLanguageData->m_militaryCaptionDelayMS)/1000.0f);
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/GameClient/InGameUI.cpp:5303:	wad->m_expireFrame = TheGameLogic->getFrame() + (durationInSeconds * LOGICFRAMES_PER_SECOND);
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/GameClient/InGameUI.cpp:5343:static const UnsignedInt FRAMES_BEFORE_EXPIRE_TO_FADE = LOGICFRAMES_PER_SECOND * 1;
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/GameClient/InGameUI.cpp:5382:				wad->m_worldPos.z += wad->m_zRisePerSecond / LOGICFRAMES_PER_SECOND;
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/GameClient/MessageStream/LookAtXlat.cpp:146:	if (m_lastMouseMoveFrame + LOGICFRAMES_PER_SECOND < TheGameLogic->getFrame())
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/GameLogic/Object/Contain/GarrisonContain.cpp:63:enum { MUZZLE_FLASH_LIFETIME = LOGICFRAMES_PER_SECOND / 7 };
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/GameLogic/Object/Contain/GarrisonContain.cpp:936:			#define HUGE_FRAME_IN_FUTURE (LOGICFRAMES_PER_SECOND * 1000)
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/GameLogic/Object/Behavior/RebuildHoleBehavior.cpp:313:		healingInfo.in.m_amount = (modData->m_holeHealthRegenPercentPerSecond / LOGICFRAMES_PER_SECOND) * 
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/GameLogic/Object/Behavior/OverchargeBehavior.cpp:120:		damageInfo.in.m_amount = (body->getMaxHealth() * modData->m_healthPercentToDrainPerSecond) / LOGICFRAMES_PER_SECOND;
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/GameLogic/Object/Behavior/PropagandaTowerBehavior.cpp:329:			Real amount = healthPercent / LOGICFRAMES_PER_SECOND * body->getMaxHealth();
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/GameLogic/Object/Behavior/FlightDeckBehavior.cpp:955:const Int HEAL_RATE_FRAMES = LOGICFRAMES_PER_SECOND / 5;
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/GameLogic/Object/Behavior/ParkingPlaceBehavior.cpp:550:const Int HEAL_RATE_FRAMES = LOGICFRAMES_PER_SECOND / 5;
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/GameLogic/Object/Behavior/MinefieldBehavior.cpp:66:	m_creatorDeathCheckRate = LOGICFRAMES_PER_SECOND;
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/GameLogic/Object/Behavior/MinefieldBehavior.cpp:263:		damageInfo.in.m_amount = (obj->getBodyModule()->getMaxHealth() * d->m_healthPercentToDrainPerSecond) / LOGICFRAMES_PER_SECOND;
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/GameLogic/Object/Behavior/SlowDeathBehavior.cpp:256:				m_midpointFrame = (LOGICFRAMES_PER_SECOND/2) + 1;
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/GameLogic/Object/Behavior/SlowDeathBehavior.cpp:257:				m_destructionFrame = LOGICFRAMES_PER_SECOND + 1;
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/GameLogic/Object/Behavior/DumbProjectileBehavior.cpp:60:const Int DEFAULT_MAX_LIFESPAN = 10 * LOGICFRAMES_PER_SECOND;
+/tmp/CnC_Generals_Zero_Hour/Generals/Code/GameEngine/Source/GameLogic/Object/Object.cpp:877:			m_repulsorHelper->sleepUntil(TheGameLogic->getFrame() + 2*LOGICFRAMES_PER_SECOND);
+/tmp/CnC_Generals_Zero_Hour/Generals/Code/GameEngine/Source/GameLogic/Object/Update/PhysicsUpdate.cpp:62:const Int MOTIVE_FRAMES = LOGICFRAMES_PER_SECOND / 3;
+/tmp/CnC_Generals_Zero_Hour/Generals/Code/GameEngine/Source/GameLogic/Object/Update/PhysicsUpdate.cpp:1247:			const Real MINBOUNCESPEED = 1.0f/(LOGICFRAMES_PER_SECOND*5.0f);
+/tmp/CnC_Generals_Zero_Hour/Generals/Code/GameEngine/Source/GameLogic/Object/Update/BaseRenerateUpdate.cpp:141:														 LOGICFRAMES_PER_SECOND;
+/tmp/CnC_Generals_Zero_Hour/Generals/Code/GameEngine/Source/GameLogic/Object/Update/HordeUpdate.cpp:118:const Int DEFAULT_UPDATE_RATE = LOGICFRAMES_PER_SECOND;
+/tmp/CnC_Generals_Zero_Hour/Generals/Code/GameEngine/Source/GameLogic/Object/Update/FireOCLAfterWeaponCooldownUpdate.cpp:195:	UnsignedInt oclFrames = (UnsignedInt)(seconds * LOGICFRAMES_PER_SECOND);
+/tmp/CnC_Generals_Zero_Hour/Generals/Code/GameEngine/Source/GameLogic/Object/Update/ParticleUplinkCannonUpdate.cpp:518:				speed /= LOGICFRAMES_PER_SECOND;
+/tmp/CnC_Generals_Zero_Hour/Generals/Code/GameEngine/Source/GameLogic/Object/Update/ParticleUplinkCannonUpdate.cpp:590:				Real totalFiringSeconds = data->m_totalFiringFrames / LOGICFRAMES_PER_SECOND;
+/tmp/CnC_Generals_Zero_Hour/Generals/Code/GameEngine/Source/GameLogic/Object/Update/AIUpdate.cpp:89:	m_moodAttackCheckRate = LOGICFRAMES_PER_SECOND * 2;
+/tmp/CnC_Generals_Zero_Hour/Generals/Code/GameEngine/Source/GameLogic/Object/Update/AIUpdate.cpp:91:	m_surrenderDuration = LOGICFRAMES_PER_SECOND * 120;
+/tmp/CnC_Generals_Zero_Hour/Generals/Code/GameEngine/Source/GameLogic/Object/Update/AIUpdate.cpp:504:		setQueueForPathTime(LOGICFRAMES_PER_SECOND);
+/tmp/CnC_Generals_Zero_Hour/Generals/Code/GameEngine/Source/GameLogic/Object/Update/AIUpdate.cpp:509:			setIgnoreCollisionTime(2*LOGICFRAMES_PER_SECOND);
+/tmp/CnC_Generals_Zero_Hour/Generals/Code/GameEngine/Source/GameLogic/Object/Update/AIUpdate.cpp:536:		setQueueForPathTime(2*LOGICFRAMES_PER_SECOND);
+/tmp/CnC_Generals_Zero_Hour/Generals/Code/GameEngine/Source/GameLogic/Object/Update/AIUpdate.cpp:559:		setQueueForPathTime(2*LOGICFRAMES_PER_SECOND);
+/tmp/CnC_Generals_Zero_Hour/Generals/Code/GameEngine/Source/GameLogic/Object/Update/AIUpdate.cpp:583:		setQueueForPathTime(2*LOGICFRAMES_PER_SECOND);
+/tmp/CnC_Generals_Zero_Hour/Generals/Code/GameEngine/Source/GameLogic/Object/Update/AIUpdate.cpp:1346:	if (getNumFramesBlocked()>LOGICFRAMES_PER_SECOND) {
+/tmp/CnC_Generals_Zero_Hour/Generals/Code/GameEngine/Source/GameLogic/Object/Update/AIUpdate.cpp:1740:			setQueueForPathTime(LOGICFRAMES_PER_SECOND);
+/tmp/CnC_Generals_Zero_Hour/Generals/Code/GameEngine/Source/GameLogic/Object/Update/AIUpdate.cpp:1778:			setIgnoreCollisionTime(2*LOGICFRAMES_PER_SECOND);
+/tmp/CnC_Generals_Zero_Hour/Generals/Code/GameEngine/Source/GameLogic/Object/Update/AIUpdate.cpp:2239:								pos.x += 2*PATHFIND_CELL_SIZE_F*dx/(dist*LOGICFRAMES_PER_SECOND);
+/tmp/CnC_Generals_Zero_Hour/Generals/Code/GameEngine/Source/GameLogic/Object/Update/AIUpdate.cpp:2240:								pos.y += 2*PATHFIND_CELL_SIZE_F*dy/(dist*LOGICFRAMES_PER_SECOND);
+/tmp/CnC_Generals_Zero_Hour/Generals/Code/GameEngine/Source/GameLogic/Object/Update/AIUpdate.cpp:3081:				setIgnoreCollisionTime(LOGICFRAMES_PER_SECOND*2); // cheat for 2 seconds.
+/tmp/CnC_Generals_Zero_Hour/Generals/Code/GameEngine/Source/GameLogic/Object/Update/AIUpdate.cpp:3087:				setIgnoreCollisionTime(LOGICFRAMES_PER_SECOND*2); // cheat for 2 seconds.
+/tmp/CnC_Generals_Zero_Hour/Generals/Code/GameEngine/Source/GameLogic/Object/Update/AIUpdate.cpp:3115:		m_stateMachine->setTemporaryState(AI_MOVE_OUT_OF_THE_WAY, 10*LOGICFRAMES_PER_SECOND);
+/tmp/CnC_Generals_Zero_Hour/Generals/Code/GameEngine/Source/GameLogic/Object/Update/AIUpdate.cpp:3692:	getStateMachine()->setTemporaryState( AI_FOLLOW_EXITPRODUCTION_PATH, 10*LOGICFRAMES_PER_SECOND);
+/tmp/CnC_Generals_Zero_Hour/Generals/Code/GameEngine/Source/GameLogic/Object/Update/SlavedUpdate.cpp:506:			Real repairAmount = data->m_repairRatePerSecond / LOGICFRAMES_PER_SECOND;
+/tmp/CnC_Generals_Zero_Hour/Generals/Code/GameEngine/Source/GameLogic/Object/Update/SlavedUpdate.cpp:641:							Real time = (Real)(m_framesToWait * LOGICFRAMES_PER_SECOND);
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/GameClient/GameClient.cpp:708:						UnsignedInt limit = 2*LOGICFRAMES_PER_SECOND;
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/GameClient/GameClient.cpp:711:							limit += 3*LOGICFRAMES_PER_SECOND;
+/tmp/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source/GameClient/RadiusDecal.cpp:50:	m_opacityThrobTime(LOGICFRAMES_PER_SECOND),
+/tmp/CnC_Generals_Zero_Hour/Generals/Code/GameEngine/Source/GameLogic/Object/Update/AIUpdate/POWTruckAIUpdate.cpp:381:static const UnsignedInt FIND_DELAY = LOGICFRAMES_PER_SECOND * 1;
+/tmp/CnC_Generals_Zero_Hour/Generals/Code/GameEngine/Source/GameLogic/Object/Update/AIUpdate/JetAIUpdate.cpp:282:		HOW_OFTEN_TO_CHECK = LOGICFRAMES_PER_SECOND
+/tmp/CnC_Generals_Zero_Hour/Generals/Code/GameEngine/Source/GameLogic/Object/Update/AIUpdate/JetAIUpdate.cpp:894:			pos.x += PATHFIND_CELL_SIZE_F*dx/(dist*LOGICFRAMES_PER_SECOND);
+/tmp/CnC_Generals_Zero_Hour/Generals/Code/GameEngine/Source/GameLogic/Object/Update/AIUpdate/JetAIUpdate.cpp:895:			pos.y += PATHFIND_CELL_SIZE_F*dy/(dist*LOGICFRAMES_PER_SECOND);
+
+[Showing results with pagination = limit: 250]

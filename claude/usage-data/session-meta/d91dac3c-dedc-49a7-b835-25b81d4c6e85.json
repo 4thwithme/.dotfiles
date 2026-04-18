@@ -1,0 +1,38 @@
+{
+  "session_id": "d91dac3c-dedc-49a7-b835-25b81d4c6e85",
+  "project_path": "/Users/4thwithme/Documents/repo/recommendations-service",
+  "start_time": "2026-02-27T14:39:01.747Z",
+  "duration_minutes": 1,
+  "user_message_count": 4,
+  "assistant_message_count": 1,
+  "tool_counts": {},
+  "languages": {},
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 3,
+  "output_tokens": 16,
+  "first_prompt": "give me raw sql query to get all possible varations of values for column a in the table n",
+  "user_interruptions": 0,
+  "user_response_times": [],
+  "tool_errors": 0,
+  "tool_error_categories": {},
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 0,
+  "lines_removed": 0,
+  "files_modified": 0,
+  "message_hours": [
+    15,
+    15,
+    15,
+    15
+  ],
+  "user_message_timestamps": [
+    "2026-02-27T14:39:01.747Z",
+    "2026-02-27T14:39:01.744Z",
+    "2026-02-27T14:39:01.747Z",
+    "2026-02-27T14:39:39.468Z"
+  ]
+}

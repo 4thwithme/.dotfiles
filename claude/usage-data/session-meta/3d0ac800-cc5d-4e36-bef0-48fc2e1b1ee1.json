@@ -1,0 +1,49 @@
+{
+  "session_id": "3d0ac800-cc5d-4e36-bef0-48fc2e1b1ee1",
+  "project_path": "/Users/4thwithme/Documents/repo/recommendations-service",
+  "start_time": "2026-02-14T02:06:27.019Z",
+  "duration_minutes": 11,
+  "user_message_count": 4,
+  "assistant_message_count": 22,
+  "tool_counts": {
+    "Task": 2,
+    "EnterPlanMode": 1,
+    "Read": 8,
+    "Write": 1,
+    "ExitPlanMode": 1
+  },
+  "languages": {
+    "TypeScript": 8,
+    "Markdown": 1
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 30,
+  "output_tokens": 4091,
+  "first_prompt": "we made mistake in @src/modules/cli/commands/sync-source-styles.command.ts we are creating embedings and trying to save them to the @src/modules/db/styles-mv/models/styles-mv.model.ts  but we need to…",
+  "user_interruptions": 0,
+  "user_response_times": [],
+  "tool_errors": 1,
+  "tool_error_categories": {
+    "User Rejected": 1
+  },
+  "uses_task_agent": true,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 82,
+  "lines_removed": 0,
+  "files_modified": 1,
+  "message_hours": [
+    3,
+    3,
+    3,
+    3
+  ],
+  "user_message_timestamps": [
+    "2026-02-14T02:06:27.019Z",
+    "2026-02-14T02:06:27.017Z",
+    "2026-02-14T02:06:27.019Z",
+    "2026-02-14T02:10:47.392Z"
+  ]
+}

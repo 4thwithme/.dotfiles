@@ -1,0 +1,8 @@
+{
+  "id": "28",
+  "subject": "Task 22: E2E Tests",
+  "description": "E2E tests for auth, user, company, invitation modules",
+  "status": "pending",
+  "blocks": [],
+  "blockedBy": []
+}

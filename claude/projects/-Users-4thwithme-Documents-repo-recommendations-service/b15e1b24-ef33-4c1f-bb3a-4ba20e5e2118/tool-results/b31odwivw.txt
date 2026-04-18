@@ -1,0 +1,3194 @@
+diff --git a/src/constants/neural-search.constant.ts b/src/constants/neural-search.constant.ts
+new file mode 100644
+index 0000000..57df6c1
+--- /dev/null
++++ b/src/constants/neural-search.constant.ts
+@@ -0,0 +1,1122 @@
++export const NEURAL_SEARCH_TAG_CATEGORY_NAMES: Record<string, Record<string, string>[]> =
++	{
++		Onboarding: [
++			{ "Women's Short Sleeve T-shirts": 't-shirts for office wear' },
++			{ 'Polo Shirts': 'mid-range polo shirts for onboarding events' },
++			{ 'Pens & Writing': 'pen laser engraved logo' },
++			{ Notebooks: 'high-quality notebooks for onboarding events' },
++			{ Backpacks: 'gray classic backpacks from $40 to $60' },
++			{ 'Water Bottles': 'rambler bottles for office from $20 to $40' },
++		],
++		'Trade Shows': [
++			{ 'Business Cards': 'Horizontal business card' },
++			{ 'Tote Bags': 'Midweight Cotton tote bag' },
++			{ Sunglasses: 'Solid Promotional Sunglasses' },
++			{ 'Lanyards & Badge Holders': 'Lanyard with Lobster Clip' },
++			{ Signs: 'color banner kit' },
++			{ Tablecloths: 'Full color tablecloths' },
++		],
++		Events: [
++			{ 'T-Shirts': '' },
++			{ 'Tote Bags': 'Midweight Cotton tote bag' },
++			{ Drinkware: '' },
++			{ Sunglasses: '' },
++		],
++		Gifting: [
++			{ Technology: '' },
++			{ Drinkware: '' },
++			{ Bags: '' },
++			{ Gifts: '' },
++			{ Coolers: '' },
++			{ 'Featured Brands': '' },
++		],
++		Uniforming: [
++			{ Polos: 'premium polo' },
++			{ 'T-Shirts': '' },
++			{ Sweatshirts: '' },
++			{ 'Quarter Zips': '' },
++			{ 'Business Apparel': '' },
++			{ 'Long Sleeve T-Shirts': 'high quality t-shirts' },
++			{ 'Workwear & Uniforms': '' },
++		],
++		'Spirit Wear': [
++			{ Sweatshirts: '' },
++			{ Sweatpants: '' },
++			{ 'T-Shirts': '' },
++			{ Kids: '' },
++			{ 'School Spirit': '' },
++		],
++		'Team & Club Gear': [{ Activewear: '' }, { Sweatpants: '' }, { Sweatshirts: '' }],
++		Reselling: [
++			{ 'T-Shirts': '' },
++			{ Hoodies: '' },
++			{ 'Tote Bags': 'Midweight Cotton tote bag' },
++		],
++	};
++
++export const NEURAL_SEARCH_CONTRACTIONS: string[] = [
++	"i'm",
++	"i'd",
++	"i'll",
++	"i've",
++	"it's",
++	"he's",
++	"he'd",
++	"he'll",
++	"she's",
++	"she'd",
++	"she'll",
++	"we're",
++	"we'd",
++	"we'll",
++	"we've",
++	"they're",
++	"they'd",
++	"they'll",
++	"they've",
++	"you're",
++	"you'd",
++	"you'll",
++	"you've",
++	"that's",
++	"what's",
++	"who's",
++	"there's",
++	"here's",
++	"where's",
++	"when's",
++	"how's",
++	"let's",
++	"can't",
++	"won't",
++	"don't",
++	"doesn't",
++	"didn't",
++	"isn't",
++	"aren't",
++	"wasn't",
++	"weren't",
++	"hasn't",
++	"haven't",
++	"hadn't",
++	"couldn't",
++	"wouldn't",
++	"shouldn't",
++	"ain't",
++];
++
++export const NEURAL_SEARCH_KNOWN_BRANDS: string[] = [
++	'3M',
++	'47 Brand',
++	'A+ Apparel',
++	'A4',
++	'AS Colour',
++	'Aakron',
++	'Adams',
++	'Adar',
++	'Adidas',
++	'Ahead',
++	'All Good',
++	'AllPro',
++	'Allmade',
++	'Alpha Industries',
++	'Alternative Apparel',
++	'American Apparel',
++	'American Giant',
++	'American Tourister',
++	'Anker',
++	'Anvil',
++	'Apple',
++	'Arctic Zone',
++	'Artisan Collection',
++	'Asobu',
++	'Atlantis Headwear',
++	'Augusta',
++	'BIC',
++	'Badger',
++	'Badger Sport',
++	'Bagboy',
++	'Bagito',
++	'Barco',
++	'Baronfig',
++	'Basecamp',
++	'Bayside',
++	'Bella + Canvas',
++	'Bellroy',
++	'Berne',
++	'Big Accessories',
++	'BioLite',
++	'Blue Generation',
++	'Bodum',
++	'Bose',
++	'Boxercraft',
++	'BrandCharger',
++	'Branded Bills',
++	'Bridgestone',
++	'Brooks Brothers',
++	'Brookstone',
++	'BruMate',
++	'Bulwark',
++	'Burnside',
++	"Burt's Bees",
++	'Bushnell',
++	'Callaway',
++	'Calvin Klein',
++	'CamelBak',
++	'Cap America',
++	'Carhartt',
++	'Case Logic',
++	'Champion',
++	'Charles River',
++	'Chef Designs',
++	'Cherokee',
++	'ChicoBag',
++	'Chipolo',
++	'Classic Caps',
++	'Cleer',
++	'Code Five',
++	'Coleman',
++	'Colortone',
++	'Columbia',
++	'Comfort Colors',
++	'Contigo',
++	'Cordova',
++	'Core 365',
++	'Corkcicle',
++	'CornerStone',
++	'Cotopaxi',
++	'Cross',
++	'Cuisinart',
++	'Cutter & Buck',
++	'Day Owl',
++	'Delta',
++	'Devon & Jones',
++	'Dickies',
++	'District',
++	'Dri Duck',
++	'Dyenomite',
++	'Econscious',
++	'Eddie Bauer',
++	'Edwards',
++	'Elevate',
++	'Ember',
++	'Engel',
++	'FEED',
++	'Fairway & Greene',
++	'Field & Co.',
++	'FinalStraw',
++	'Flexfit',
++	'FootJoy',
++	'Fossa Apparel',
++	'Fruit of the Loom',
++	'GAP',
++	'GCI Outdoor',
++	'Gemline',
++	'Gildan',
++	'Govino',
++	'Greg Norman',
++	'Gund',
++	'HUK',
++	'Hanes',
++	'Harriton',
++	'Hartmann',
++	'Helly Hansen',
++	'Herschel',
++	'High Five',
++	'High Sierra',
++	'Holloway',
++	'Hydro Flask',
++	'Hydrojug',
++	'ISlide',
++	'Igloo',
++	'Imperial',
++	'Independent Trading',
++	'Infinity Her',
++	'Izod',
++	'J. America',
++	'JBL',
++	'Jaanuu',
++	'Jack Nicklaus',
++	'JanSport',
++	'Jerzees',
++	'Joola',
++	'JournalBooks',
++	'Kanga Coolers',
++	'Kapston',
++	'Karst',
++	'Kati',
++	'Kenneth Cole',
++	'Kishigo',
++	'Klean Kanteen',
++	'LAT',
++	'Lane Seven',
++	'LapGear',
++	'Leatherman',
++	'Legacy',
++	'Leuchtturm1917',
++	"Levi's",
++	'Liberty Bags',
++	'Life is Good',
++	'Logitech',
++	'London Fog',
++	'MOVA',
++	'Maglite',
++	'Marine Layer',
++	'Marmot',
++	'Mega Cap',
++	'Mercer+Mettle',
++	'Merchant & Craft',
++	'MiiR',
++	'Moleskine',
++	'Moop',
++	'MopToppers',
++	'Nalgene',
++	'Native Union',
++	'Nautica',
++	'New Balance',
++	'New Era',
++	'Next Level',
++	'Nike',
++	'Nimble',
++	'Nomadix',
++	'North End',
++	'Nutribullet',
++	'OGIO',
++	'OXO',
++	'Oakley',
++	'Old Navy',
++	'Original Penguin',
++	'Osprey',
++	'Otterbox',
++	'Otto Cap',
++	'Outdoor Cap',
++	'Outdoor Research',
++	'Owala',
++	'Pacific Headwear',
++	'Paper Mate',
++	'Paragon',
++	'Parker',
++	'Parkland',
++	'Perry Ellis',
++	'Peter Millar',
++	'Phoozy',
++	'Pilot',
++	'Pinnacle',
++	'Port & Company',
++	'Port Authority',
++	'PowerStick',
++	'Puma',
++	'Quikflip',
++	'Rabbit Skins',
++	'Rawlings',
++	'Red Kap',
++	'Reduce',
++	'Reebok',
++	'Richardson',
++	'RocketBook',
++	'Roots',
++	'Royal Apparel',
++	'Russell Athletic',
++	'Russell Outdoors',
++	"S'well",
++	'Samsonite',
++	'Scripto',
++	'Shaka Wear',
++	'Sharpie',
++	'Sheaffer',
++	'Shed Rain',
++	'Shokz',
++	'Silipint',
++	'Skullcandy',
++	'Slowtide',
++	'Soffe',
++	'Sony',
++	'Souvenir',
++	'Sport-Tek',
++	'Sportsman',
++	'Spyder',
++	'Stanley',
++	'Stanley/Stella',
++	'Stio',
++	'Storm Creek',
++	'Stormtech',
++	'Strideline',
++	'Sun Bum',
++	'Swig',
++	'Swig Life',
++	'Takeya',
++	'Targus',
++	'TaylorMade',
++	'Team 365',
++	'TenTree',
++	'Terra Thread',
++	'Tervis',
++	'The Game',
++	'The North Face',
++	'Thermos',
++	'Threadfast',
++	'Thule',
++	'Timbuk2',
++	'Titleist',
++	'Tommy Bahama',
++	'Tommy Hilfiger',
++	'Topo Designs',
++	'Totes',
++	'Travis Mathew',
++	'TriDri',
++	'Tultex',
++	'Tumi',
++	'UNTUCKit',
++	'UltraClub',
++	'Under Armour',
++	'Valucap',
++	'Van Heusen',
++	'Vansport',
++	'Vantage',
++	'Vineyard Vines',
++	'Volunteer Knitwear',
++	'Weatherproof',
++	'Wenger',
++	'Wilson',
++	'Wolverine',
++	'WonderWink',
++	'YETI',
++	'Yupoong',
++	'ZAGG',
++	'elleven',
++	'h2go',
++	'mophie',
++	'patagonia',
++	'tentree',
++];
++
++export const NEURAL_SEARCH_KNOWN_COLORS: string[] = [
++	'Acid Green',
++	'Almond',
++	'Aluminum',
++	'Amethyst',
++	'Anthracite',
++	'Apple Green',
++	'Aqua',
++	'Aqua Blue',
++	'Aquamarine',
++	'Arctic White',
++	'Army Green',
++	'Ash',
++	'Ash Grey',
++	'Azure',
++	'Azure Blue',
++	'Baby Blue',
++	'Baby Pink',
++	'Banana',
++	'Battleship Grey',
++	'Beige',
++	'Berry',
++	'Black',
++	'Black Heather',
++	'Blackberry',
++	'Blacktop',
++	'Blossom',
++	'Blue',
++	'Blueberry',
++	'Blush',
++	'Bone',
++	'Bordeaux',
++	'Brick',
++	'Bright Green',
++	'Bright Orange',
++	'Bright Pink',
++	'Bright Red',
++	'Bright White',
++	'Bright Yellow',
++	'Brilliant Blue',
++	'Brown',
++	'Burgundy',
++	'Burnt Orange',
++	'Butter',
++	'Camel',
++	'Candy Pink',
++	'Cantaloupe',
++	'Carbon',
++	'Cardinal',
++	'Cardinal Red',
++	'Caribbean Blue',
++	'Carnation',
++	'Carolina Blue',
++	'Cayenne',
++	'Celadon',
++	'Cement',
++	'Chambray',
++	'Champagne',
++	'Charcoal',
++	'Charcoal Grey',
++	'Charcoal Heather',
++	'Cherry',
++	'Cherry Red',
++	'Chestnut',
++	'Chocolate',
++	'Cinder',
++	'Citrus',
++	'Clay',
++	'Clear',
++	'Cloud Blue',
++	'Clover',
++	'Clover Green',
++	'Coal',
++	'Coastal Blue',
++	'Cobalt',
++	'Cobalt Blue',
++	'Cocoa',
++	'Columbia Blue',
++	'Cool Grey',
++	'Copper',
++	'Coral',
++	'Cornsilk',
++	'Cranberry',
++	'Cream',
++	'Crimson',
++	'Cyan',
++	'Daffodil Yellow',
++	'Daisy',
++	'Dark Blue',
++	'Dark Charcoal',
++	'Dark Chocolate',
++	'Dark Gray',
++	'Dark Green',
++	'Dark Grey',
++	'Dark Navy',
++	'Deep Black',
++	'Deep Forest',
++	'Deep Navy',
++	'Deep Orange',
++	'Deep Purple',
++	'Deep Red',
++	'Deep Royal',
++	'Denim',
++	'Denim Blue',
++	'Desert Pink',
++	'Dusty Blue',
++	'Dusty Rose',
++	'Ebony',
++	'Eggplant',
++	'Electric Blue',
++	'Emerald',
++	'Espresso',
++	'Evergreen',
++	'Flamingo',
++	'Fog',
++	'Forest',
++	'Forest Green',
++	'French Blue',
++	'French Navy',
++	'Frost',
++	'Frost Blue',
++	'Fuchsia',
++	'Garnet',
++	'Gold',
++	'Granite',
++	'Grape',
++	'Graphite',
++	'Graphite Heather',
++	'Grass',
++	'Gravel',
++	'Gray',
++	'Green',
++	'Grey',
++	'Grey Heather',
++	'Gunmetal',
++	'Heather Blue',
++	'Heather Charcoal',
++	'Heather Gray',
++	'Heather Green',
++	'Heather Grey',
++	'Heather Navy',
++	'Heather Purple',
++	'Heather Red',
++	'Heather Royal',
++	'Honey',
++	'Hot Pink',
++	'Hunter',
++	'Hunter Green',
++	'Ice Blue',
++	'Indigo',
++	'Indigo Blue',
++	'Irish Green',
++	'Iron Grey',
++	'Ivory',
++	'Jade',
++	'Jet Black',
++	'Kelly',
++	'Kelly Green',
++	'Key Lime',
++	'Khaki',
++	'Kiwi',
++	'Lagoon',
++	'Lapis',
++	'Latte',
++	'Lavender',
++	'Lemon',
++	'Light Blue',
++	'Light Gray',
++	'Light Green',
++	'Light Grey',
++	'Light Pink',
++	'Light Steel',
++	'Lilac',
++	'Lime',
++	'Lime Green',
++	'Loden',
++	'Magenta',
++	'Maize',
++	'Mango',
++	'Marble',
++	'Maroon',
++	'Marshmallow',
++	'Matte Black',
++	'Matte White',
++	'Mauve',
++	'Medium Grey',
++	'Melon',
++	'Merlot',
++	'Metallic Blue',
++	'Metallic Green',
++	'Metallic Red',
++	'Metallic Silver',
++	'Midnight',
++	'Midnight Blue',
++	'Midnight Navy',
++	'Military Green',
++	'Mint',
++	'Mint Green',
++	'Mocha',
++	'Moss',
++	'Moss Green',
++	'Mulberry',
++	'Mustard',
++	'Natural',
++	'Nautical Blue',
++	'Navy',
++	'Navy Blazer',
++	'Navy Blue',
++	'Navy Heather',
++	'Neon Blue',
++	'Neon Green',
++	'Neon Orange',
++	'Neon Pink',
++	'Neon Yellow',
++	'Nickel',
++	'Nude',
++	'Oatmeal',
++	'Ocean',
++	'Ocean Blue',
++	'Off White',
++	'Olive',
++	'Olive Green',
++	'Olympic Blue',
++	'Onyx',
++	'Orange',
++	'Orchid',
++	'Oxford',
++	'Oyster',
++	'Pacific Blue',
++	'Pale Pink',
++	'Paprika',
++	'Parchment',
++	'Peach',
++	'Peacoat',
++	'Pebble',
++	'Pepper',
++	'Periwinkle',
++	'Pewter',
++	'Pine',
++	'Pink',
++	'Pink Raspberry',
++	'Pistachio',
++	'Platinum',
++	'Plum',
++	'Pomegranate',
++	'Poppy',
++	'Purple',
++	'Putty',
++	'Raspberry',
++	'Red',
++	'Rose',
++	'Rose Gold',
++	'Rose Quartz',
++	'Rosewood',
++	'Royal',
++	'Royal Blue',
++	'Royal Purple',
++	'Rust',
++	'Saffron',
++	'Sage',
++	'Sahara',
++	'Salmon',
++	'Sand',
++	'Sandstone',
++	'Sangria',
++	'Sapphire',
++	'Sapphire Blue',
++	'Scarlet',
++	'Scarlet Red',
++	'Scuba Blue',
++	'Sea Green',
++	'Seafoam',
++	'Silver',
++	'Silver Grey',
++	'Sky',
++	'Sky Blue',
++	'Slate',
++	'Slate Blue',
++	'Slate Grey',
++	'Smoke',
++	'Smoke Gray',
++	'Smoke Grey',
++	'Soft Pink',
++	'Spearmint',
++	'Spruce',
++	'Stainless Steel',
++	'Steel',
++	'Steel Blue',
++	'Steel Grey',
++	'Stone',
++	'Storm',
++	'Storm Grey',
++	'Sunset',
++	'Sunshine',
++	'Tan',
++	'Tangerine',
++	'Taupe',
++	'Teal',
++	'Teal Blue',
++	'Teal Green',
++	'Tennessee Orange',
++	'Terracotta',
++	'Texas Orange',
++	'Titanium',
++	'True Navy',
++	'True Red',
++	'True Royal',
++	'Turquoise',
++	'Ultramarine Blue',
++	'Vanilla',
++	'Vegas Gold',
++	'Vintage Black',
++	'Vintage Navy',
++	'Vintage Red',
++	'Vintage White',
++	'Violet',
++	'Walnut',
++	'Warm Grey',
++	'Watermelon',
++	'Wheat',
++	'White',
++	'Wine',
++	'Yellow',
++	'Yellow Haze',
++	'Amber',
++	'Apricot',
++	'Auburn',
++	'Bisque',
++	'Bronze',
++	'Buff',
++	'Buff Yellow',
++	'Cadet Blue',
++	'Carmine',
++	'Cerulean',
++	'Chartreuse',
++	'Cinnamon',
++	'Claret',
++	'Cobalt Green',
++	'Coral Pink',
++	'Coral Red',
++	'Cornflower',
++	'Cornflower Blue',
++	'Dark Cyan',
++	'Dark Khaki',
++	'Dark Lavender',
++	'Dark Magenta',
++	'Dark Olive',
++	'Dark Orange',
++	'Dark Red',
++	'Dark Salmon',
++	'Dark Turquoise',
++	'Dark Violet',
++	'Deep Pink',
++	'Deep Sky Blue',
++	'Dim Grey',
++	'Dodger Blue',
++	'Drab',
++	'Dusty Pink',
++	'Ecru',
++	'Fawn',
++	'Firebrick',
++	'Flax',
++	'Flint',
++	'Gamboge',
++	'Ghost White',
++	'Ginger',
++	'Goldenrod',
++	'Hot Chocolate',
++	'Hot Magenta',
++	'Ice Green',
++	'Ivory White',
++	'Jasmine',
++	'Jasper',
++	'Lava',
++	'Lemon Yellow',
++	'Light Coral',
++	'Light Cyan',
++	'Light Salmon',
++	'Light Yellow',
++	'Lilac Grey',
++	'Lime Yellow',
++	'Linen',
++	'Mahogany',
++	'Marigold',
++	'Maroon Red',
++	'Mauve Pink',
++	'Mint Cream',
++	'Misty Rose',
++	'Moss Grey',
++	'Moss Rose',
++	'Navajo White',
++	'Ochre',
++	'Old Gold',
++	'Old Rose',
++	'Olive Drab',
++	'Orange Red',
++	'Pale Blue',
++	'Pale Green',
++	'Pale Lavender',
++	'Pale Yellow',
++	'Papaya',
++	'Pear',
++	'Pearl',
++	'Pearl White',
++	'Petal Pink',
++	'Pigeon Blue',
++	'Plum Purple',
++	'Powder Blue',
++	'Powder Pink',
++	'Prussian Blue',
++	'Puce',
++	'Pumpkin',
++	'Raw Sienna',
++	'Robin Egg Blue',
++	'Rose Pink',
++	'Rosewater',
++	'Royal Gold',
++	'Ruby',
++	'Ruby Red',
++	'Russet',
++	'Sand Beige',
++	'Sandstorm',
++	'Seal Brown',
++	'Seashell',
++	'Shadow Green',
++	'Shell Pink',
++	'Sienna',
++	'Slate Green',
++	'Smokey Blue',
++	'Snow',
++	'Spring Green',
++	'Steel Rose',
++	'Tan Brown',
++	'Tangerine Yellow',
++	'Tawny',
++	'Thistle',
++	'Tiffany Blue',
++	'Tomato',
++	'Tomato Red',
++	'Turquoise Blue',
++	'Turquoise Green',
++	'Tuscan',
++	'Umber',
++	'Umber Brown',
++	'Vermilion',
++	'Viridian',
++	'Warm Beige',
++	'Warm Pink',
++	'Washed Blue',
++	'Washed Green',
++	'Winter White',
++	'Wisteria',
++	'Zaffre',
++	'Zinnia',
++];
++
++export const NEURAL_SEARCH_KNOWN_SIZES: string[] = [
++	'One Size',
++	'XS/S',
++	'M/L',
++	'XL/XXL',
++	'XXXL/XXXXL',
++	'XLT',
++	'XXLT',
++	'XXXLT',
++	'XS',
++	'S',
++	'M',
++	'L',
++	'XL',
++	'YS',
++	'YM',
++	'YL',
++	'YXL',
++	'XXL',
++	'XXXL',
++	'XXXXL',
++	'XXXXXL',
++	'YS/YM',
++	'YL/YXL',
++	'YXS',
++	'S/M',
++	'L/XL',
++	'3',
++	'4',
++	'5',
++	'6',
++	'7',
++	'8',
++	'10',
++	'12',
++	'14',
++	'16',
++	'18',
++	'20',
++	'6M',
++	'12M',
++	'18M',
++	'XXXXXXL',
++	'2XL',
++	'3XL',
++	'4XL',
++	'5XL',
++	'XXS',
++	'XXXXLT',
++	'XXXXXLT',
++	'One Size (24 Pint Glasses)',
++	'XXXXXXXL',
++	'30',
++	'32',
++	'33',
++	'34',
++	'35',
++	'36',
++	'38',
++	'40',
++	'42',
++	'LT',
++	'2T',
++	'3T',
++	'4T',
++	'5/6',
++	'50 sheets/pad',
++	'Youth',
++	'Adult',
++	'3/6M',
++	'6/12M',
++	'12/18M',
++	'18/24M',
++	'0',
++	'2',
++	'YXXL',
++	'XXL/XXXL',
++	'XXXXL/XXXXXL',
++	'LG',
++	'SM',
++	'Shop more styles',
++	'2XL/3XL',
++	'Quantity (Dozens)',
++	'4XL/5XL',
++	'0/3M',
++	'One size',
++	'6X',
++	'15 lbs',
++	'20 lbs',
++	'28',
++	'29',
++	'31',
++	'37',
++	'Quantity (Packs of 10)',
++	'Newborn',
++	's',
++	'6/7',
++	'8/9',
++	'1X',
++	'2X',
++	'3X',
++	'4X',
++	'5X',
++	'Shop Notebook Designs',
++	'1 Box (24 Mugs)',
++	'24M',
++	'5T',
++	'6T',
++	'Youth Pack (5 Masks)',
++	'XXS/XS',
++	'7XL',
++	'XXXXXXXXL',
++	'MT',
++	'YXS - 4XL',
++	'15 32/33',
++	'15 34/35',
++	'15 1/2 32/33',
++	'15 1/2 34/35',
++	'16 32/33',
++	'16 34/35',
++	'16 1/2 32/33',
++	'16 1/2 34/35',
++	'17 34/35',
++	'17 36/37',
++	'17 1/2 34/35',
++	'18 34/35',
++	'22',
++	'One Size Fits All',
++	'24 x 60',
++	'Multiple Pack Sizes',
++	'one size',
++	'1',
++	'YXXS',
++	'XXXXXXXXXL',
++	'XL/2XL',
++	'Lots (100 pads per lot)',
++	'LS',
++	'LM',
++	'ML',
++	'MXL',
++	'9',
++	'6XL',
++	'3XL/4XL',
++	'One Size (S-M)',
++	'Shop Planner Designs',
++	'1(S)',
++	'2(M)',
++	'3(L)',
++	'XXSP',
++	'XSP',
++	'SP',
++	'MP',
++	'LP',
++	'XLP',
++	'39',
++	'44',
++	'46',
++	'48',
++	'LL',
++	'LXL',
++	'MM',
++	'MXXL',
++	'XXXXXXLT',
++	'Lots of 1000',
++	'11',
++	'13',
++	'14/15',
++	'24',
++	'YM/YL',
++	'1 Set (24 Tumblers)',
++	'Tabletop',
++	'Window',
++	'Standing',
++	'12/13',
++	'1/2',
++	'40x30',
++	'40x32',
++	'42x30',
++	'42x32',
++	'44x30',
++	'44x32',
++	'46x30',
++	'46x32',
++	'14-16',
++	'18-20',
++	'22-24',
++	'26-28',
++	'50',
++	'52',
++	'54',
++	'56',
++	'One Size (1 box of 2,000 mints)',
++	'1 Box (72 Shot Glasses)',
++	'1 (S)',
++	'2 (M)',
++	'3 (L)',
++	'100 sheets/pad',
++	'W30',
++	'W32',
++	'W34',
++	'W36',
++	'W38',
++	'W40',
++	'W42',
++	'W44',
++	'W46',
++	'W48',
++	'W50',
++	'3/4',
++	'7/8',
++	'9/10',
++	'11/12',
++	'13/14',
++	'QTY',
++	'25 sheets/per pad',
++	'Lots of 100 pads',
++	'6.5',
++	'Regular',
++	'XXXL/XXXL',
++	'3" x 2.18',
++	'8.5" X 11"',
++	'30X30',
++	'30X32',
++	'32x30',
++	'32x32',
++	'33x30',
++	'33x32',
++	'34x30',
++	'34x32',
++	'36x30',
++	'36x32',
++	'38x30',
++	'38x32',
++	'28x30',
++	'30x30',
++	'48x30',
++	'50x30',
++	'28x32',
++	'30x32',
++	'48x32',
++	'50x32',
++	'3X3 MAX',
++	'1 Box (24 Pint Glasses)',
++	'2/3XL',
++	'4/5XL',
++	'One SIze',
++	'NB',
++	'1 Box (24 Wine Glasses)',
++	'Qty',
++	'28x12',
++	'30x12',
++	'32x12',
++	'34x12',
++	'36x12',
++	'38x12',
++	'40x12',
++	'42x12',
++	'44x12',
++	'46x12',
++	'48x12',
++	'50x12',
++	'YS/M',
++	'YL/XL',
++	'15',
++	'17',
++	'19',
++	'21',
++	'23',
++	'25',
++	'Front',
++	'XLL',
++	'XXLL',
++	'XXXLL',
++];
+diff --git a/src/interfaces/opensearch-product.interface.ts b/src/interfaces/opensearch-product.interface.ts
+new file mode 100644
+index 0000000..50680b5
+--- /dev/null
++++ b/src/interfaces/opensearch-product.interface.ts
+@@ -0,0 +1,56 @@
++export interface IOpensearchProduct {
++	[key: string]: unknown;
++	_id: string;
++	style_id: number;
++	product_id: number;
++	name: string;
++	features: string | null;
++	general_comments: string | null;
++	decoration_method: string | null;
++	manufacturer: string | null;
++	primary_category_id: number | null;
++	primary_category_name: string | null;
++	product_type: string | null;
++	style_type: string | null;
++	broad_category_names: string[] | null;
++	sub_category_names: string[] | null;
++	minimum_quantity: number | null;
++	min_qty: number | null;
++	default_quote_qty: number | null;
++	sizes: string[] | null;
++	turn_time: number | null;
++	rush_turn_time: number | null;
++	no_minimum: number;
++	price_level: number | null;
++	rating_score: number | null;
++	rating_count: number | null;
++	default_unit_prices: IOpensearchProductPrice[] | null;
++	price: number | null;
++	colors: IOpensearchProductColor[] | null;
++	style_card_image_url: string | null;
++	link: string | null;
++	brand: string[] | null;
++	condensed_features: string[] | null;
++	material: string | null;
++	status: string;
++	created_at: string;
++	updated_at: string;
++	deleted_at: string | null;
++	combined_text_for_embedding: string;
++	product_embedding?: number[];
++	confidenceScore?: number;
++}
++
++export interface IOpensearchProductPrice {
++	quantity: number;
++	price: string;
++	regular_unit_price?: string | null;
++	algorithm: string | null;
++}
++
++export interface IOpensearchProductColor {
++	name: string;
++	id: number;
++	rbgs: { R: number; G: number; B: number }[];
++	image_url: string | null;
++}
+diff --git a/src/modules/cli/commands/bootstrap-neural-search.command.ts b/src/modules/cli/commands/bootstrap-neural-search.command.ts
+new file mode 100644
+index 0000000..9623564
+--- /dev/null
++++ b/src/modules/cli/commands/bootstrap-neural-search.command.ts
+@@ -0,0 +1,398 @@
++import { Logger } from '@nestjs/common';
++import { Command, CommandRunner, Option } from 'nest-commander';
++
++import { StylesMvModel } from '@modules/db/styles-mv/models/styles-mv.model';
++import { EnvConfigService } from '@modules/env-config/env-config.service';
++import { OpensearchNeuralService } from '@modules/opensearch/opensearch-neural.service';
++import { OpensearchService } from '@modules/opensearch/opensearch.service';
++
++import { runWithConcurrencyLimit } from '@utils/concurrency-pool.util';
++import { ProgressBar } from '@utils/progress-bar.util';
++
++import { OPENSEARCH_INDEX_NAME } from '@constants/env-variables.constant';
++
++import { CronJobExecution } from '@decorators/cron-job-execution.decorator';
++
++const MODEL_NAME = 'huggingface/sentence-transformers/all-distilroberta-v1';
++const MODEL_VERSION = '1.0.1';
++const MODEL_GROUP_NAME = 'neural-search-model-group';
++const INGEST_PIPELINE_ID = 'products-neural-pipeline';
++const SEARCH_PIPELINE_ID = 'hybrid-search-pipeline';
++
++interface BootstrapNeuralSearchOptions {
++	modelFormat?: string;
++	batchSize?: number;
++	concurrency?: number;
++	cleanup?: boolean;
++}
++
++@Command({
++	name: 'bootstrap-neural-search',
++	description:
++		'Full neural search bootstrap: configure cluster, train model, create index, sync products',
++})
++export class BootstrapNeuralSearchCommand extends CommandRunner {
++	private readonly logger = new Logger(BootstrapNeuralSearchCommand.name);
++	private isShuttingDown = false;
++	private currentOperation: Promise<void> | null = null;
++	private isCancelled = false;
++
++	constructor(
++		private readonly opensearchService: OpensearchService,
++		private readonly opensearchNeuralService: OpensearchNeuralService,
++		private readonly stylesMvModel: StylesMvModel,
++		private readonly configService: EnvConfigService,
++	) {
++		super();
++		this.setupGracefulShutdown();
++	}
++
++	@CronJobExecution({ jobName: 'bootstrap-neural-search' })
++	async run(
++		_passedParams: string[],
++		options: BootstrapNeuralSearchOptions,
++	): Promise<void> {
++		if (this.isShuttingDown) {
++			this.logger.warn('Command cancelled due to shutdown signal');
++			return;
++		}
++
++		const modelFormat = options.modelFormat ?? 'TORCH_SCRIPT';
++		const batchSize = options.batchSize ?? 60;
++		const concurrency = options.concurrency ?? 2;
++		const cleanup = options.cleanup ?? false;
++		const totalSteps = cleanup ? 9 : 8;
++		const startTime = Date.now();
++
++		try {
++			const indexName = this.configService.get<string>({ key: OPENSEARCH_INDEX_NAME });
++
++			let step = 1;
++
++			if (cleanup) {
++				this.logger.log(
++					`=== Step ${step++}/${totalSteps}: Cleaning up existing resources ===`,
++				);
++				await this.cleanupExistingResources({ indexName });
++			}
++
++			this.logger.log(
++				`=== Step ${step++}/${totalSteps}: Configuring cluster ML settings ===`,
++			);
++			await this.opensearchService.configureClusterMLSettings();
++
++			this.logger.log(`=== Step ${step++}/${totalSteps}: Registering model group ===`);
++			const modelGroupId = await this.opensearchService.registerModelGroup({
++				name: MODEL_GROUP_NAME,
++				description: 'Model group for neural search embeddings',
++			});
++
++			this.logger.log(
++				`=== Step ${step++}/${totalSteps}: Registering model (this may take several minutes) ===`,
++			);
++			const registerTaskId = await this.opensearchService.registerModel({
++				name: MODEL_NAME,
++				version: MODEL_VERSION,
++				modelGroupId,
++				modelFormat,
++			});
++
++			this.logger.log('Waiting for model registration to complete...');
++			const registerResult = await this.opensearchService.waitForTask({
++				taskId: registerTaskId,
++				intervalMs: 10000,
++				maxAttempts: 120,
++			});
++			const modelId = registerResult.model_id;
++
++			if (!modelId) {
++				throw new Error('Model registration completed but no model_id returned');
++			}
++
++			this.logger.log(`Model registered: ${modelId}`);
++
++			this.logger.log(
++				`=== Step ${step++}/${totalSteps}: Deploying model (this may take several minutes) ===`,
++			);
++			const deployTaskId = await this.opensearchService.deployModel({ modelId });
++
++			this.logger.log('Waiting for model deployment to complete...');
++			await this.opensearchService.waitForTask({
++				taskId: deployTaskId,
++				intervalMs: 10000,
++				maxAttempts: 120,
++			});
++			this.logger.log('Model deployed successfully');
++
++			this.logger.log(`=== Step ${step++}/${totalSteps}: Creating ingest pipeline ===`);
++			await this.opensearchService.createIngestPipeline({
++				pipelineId: INGEST_PIPELINE_ID,
++				modelId,
++				sourceField: 'combined_text_for_embedding',
++				targetField: 'product_embedding',
++			});
++
++			this.logger.log(`=== Step ${step++}/${totalSteps}: Creating search pipeline ===`);
++			await this.opensearchService.createSearchPipeline({
++				pipelineId: SEARCH_PIPELINE_ID,
++				normalizationTechnique: 'min_max',
++				combinationTechnique: 'arithmetic_mean',
++				weights: [0.1, 0.9],
++			});
++
++			this.logger.log(
++				`=== Step ${step++}/${totalSteps}: Creating index ${indexName} ===`,
++			);
++			await this.opensearchNeuralService.createProductsIndex({ indexName });
++
++			if (this.isCancelled) {
++				this.logger.warn('Bootstrap cancelled before product sync');
++				return;
++			}
++
++			this.logger.log(
++				`=== Step ${step}/${totalSteps}: Syncing products (embedding generation on ingest) ===`,
++			);
++			this.logger.log(`Batch size: ${batchSize}, Concurrency: ${concurrency}`);
++
++			const totalCount = await this.stylesMvModel.count();
++			this.logger.log(`Total products to index: ${totalCount}`);
++
++			if (totalCount === 0) {
++				this.logger.warn('No products found to index');
++				return;
++			}
++
++			const totalBatches = Math.ceil(totalCount / batchSize);
++			const batches = Array.from({ length: totalBatches }, (_, i) => ({
++				offset: i * batchSize,
++				limit: batchSize,
++			}));
++
++			const progressBar = new ProgressBar({ total: totalCount });
++			let totalIndexed = 0;
++			let totalErrors = 0;
++
++			this.currentOperation = this.processBatches({
++				batches,
++				concurrency,
++				indexName,
++				progressBar,
++				onBatchComplete: (indexed, errors) => {
++					totalIndexed += indexed;
++					totalErrors += errors;
++				},
++			});
++
++			await this.currentOperation;
++
++			// eslint-disable-next-line @typescript-eslint/no-unnecessary-condition
++			if (!this.isCancelled) {
++				progressBar.finish();
++			}
++
++			const duration = ((Date.now() - startTime) / 1000).toFixed(1);
++
++			this.logger.log('=== Bootstrap complete ===');
++			this.logger.log(`Duration: ${duration}s`);
++			this.logger.log(`Products indexed: ${totalIndexed}, Errors: ${totalErrors}`);
++			this.logger.log(`Model ID: ${modelId} (resolved dynamically at app startup)`);
++		} catch (error) {
++			// eslint-disable-next-line @typescript-eslint/no-unnecessary-condition
++			if (this.isShuttingDown || this.isCancelled) {
++				this.logger.warn('Command interrupted during shutdown');
++				return;
++			}
++			this.logger.error(`Bootstrap failed: ${(error as Error).message}`);
++			process.exit(1);
++		} finally {
++			this.currentOperation = null;
++		}
++	}
++
++	private async cleanupExistingResources({
++		indexName,
++	}: {
++		indexName: string;
++	}): Promise<void> {
++		this.logger.log('Deleting index...');
++		await this.opensearchService.deleteIndex({ indexName });
++
++		this.logger.log('Deleting pipelines...');
++		await this.opensearchService.deleteSearchPipeline({ pipelineId: SEARCH_PIPELINE_ID });
++		await this.opensearchService.deleteIngestPipeline({ pipelineId: INGEST_PIPELINE_ID });
++
++		this.logger.log('Looking for existing model group...');
++		const modelGroupId = await this.opensearchService.searchModelGroupByName({
++			name: MODEL_GROUP_NAME,
++		});
++
++		if (modelGroupId) {
++			this.logger.log(`Found model group: ${modelGroupId}, cleaning up models...`);
++			const models = await this.opensearchService.searchModelsByGroup({ modelGroupId });
++
++			for (const model of models) {
++				if (model.model_state === 'DEPLOYED' || model.model_state === 'DEPLOYING') {
++					this.logger.log(`Undeploying model: ${model.model_id}`);
++					await this.opensearchService.undeployModel({ modelId: model.model_id });
++					await new Promise((resolve) => setTimeout(resolve, 3000));
++				}
++
++				this.logger.log(`Deleting model: ${model.model_id}`);
++				await this.opensearchService.deleteModel({ modelId: model.model_id });
++			}
++
++			this.logger.log('Deleting model group...');
++			await this.opensearchService.deleteModelGroup({ modelGroupId });
++			this.logger.log('Waiting for ML index refresh...');
++			await new Promise((resolve) => setTimeout(resolve, 10000));
++		} else {
++			this.logger.log('No existing model group found');
++		}
++
++		this.logger.log('Cleanup complete');
++	}
++
++	private async processBatches({
++		batches,
++		concurrency,
++		indexName,
++		progressBar,
++		onBatchComplete,
++	}: {
++		batches: { offset: number; limit: number }[];
++		concurrency: number;
++		indexName: string;
++		progressBar: ProgressBar;
++		onBatchComplete: (indexed: number, errors: number) => void;
++	}): Promise<void> {
++		await runWithConcurrencyLimit({
++			items: batches,
++			concurrency,
++			handler: async (batch) => {
++				if (this.isCancelled) {
++					return { indexed: 0, errors: 0 };
++				}
++
++				const styles = await this.stylesMvModel.findAll({
++					limit: batch.limit,
++					offset: batch.offset,
++				});
++
++				if (styles.length === 0) {
++					return { indexed: 0, errors: 0 };
++				}
++
++				return this.opensearchNeuralService.bulkIndexProducts({
++					indexName,
++					styles,
++				});
++			},
++			onItemComplete: (result) => {
++				progressBar.increment(result.indexed + result.errors);
++				onBatchComplete(result.indexed, result.errors);
++			},
++			onItemError: (error) => {
++				this.logger.error(`Batch processing error: ${(error as Error).message}`);
++			},
++		});
++	}
++
++	@Option({
++		flags: '-f, --model-format <modelFormat>',
++		description: 'Model format: TORCH_SCRIPT or ONNX (default: TORCH_SCRIPT)',
++	})
++	parseModelFormat(value: string): string {
++		const valid = ['TORCH_SCRIPT', 'ONNX'];
++		if (!valid.includes(value)) {
++			throw new Error(`Model format must be one of: ${valid.join(', ')}`);
++		}
++		return value;
++	}
++
++	@Option({
++		flags: '-b, --batch-size <batchSize>',
++		description: 'Products per batch (default: 150)',
++	})
++	parseBatchSize(value: string): number {
++		const size = parseInt(value, 10);
++		if (isNaN(size) || size < 1 || size > 1000) {
++			throw new Error('Batch size must be between 1 and 1000');
++		}
++		return size;
++	}
++
++	@Option({
++		flags: '-c, --concurrency <concurrency>',
++		description: 'Concurrent batch operations (default: 5)',
++	})
++	parseConcurrency(value: string): number {
++		const conc = parseInt(value, 10);
++		if (isNaN(conc) || conc < 1 || conc > 20) {
++			throw new Error('Concurrency must be between 1 and 20');
++		}
++		return conc;
++	}
++
++	@Option({
++		flags: '--cleanup',
++		description: 'Delete existing index, pipelines, and models before bootstrapping',
++	})
++	parseCleanup(): boolean {
++		return true;
++	}
++
++	private setupGracefulShutdown(): void {
++		const signals: NodeJS.Signals[] = ['SIGTERM', 'SIGINT', 'SIGHUP', 'SIGQUIT'];
++
++		signals.forEach((signal) => {
++			process.on(signal, () => {
++				void this.handleShutdown(signal);
++			});
++		});
++
++		process.on('uncaughtException', (error) => {
++			this.logger.error(`Uncaught exception: ${error.message}`);
++			void this.handleShutdown('SIGTERM');
++		});
++
++		process.on('unhandledRejection', (reason) => {
++			this.logger.error(`Unhandled rejection: ${String(reason)}`);
++			void this.handleShutdown('SIGTERM');
++		});
++	}
++
++	private async handleShutdown(signal: string): Promise<void> {
++		if (this.isShuttingDown) {
++			this.logger.warn('Force shutdown requested, exiting immediately');
++			process.exit(1);
++		}
++
++		this.logger.warn(`Received ${signal} signal, initiating graceful shutdown...`);
++		this.isShuttingDown = true;
++		this.isCancelled = true;
++
++		try {
++			if (this.currentOperation) {
++				this.logger.log('Waiting for current operation to complete...');
++
++				const shutdownTimeout = setTimeout(() => {
++					this.logger.error('Graceful shutdown timeout, forcing exit');
++					process.exit(1);
++				}, 30000);
++
++				try {
++					await this.currentOperation;
++				} finally {
++					clearTimeout(shutdownTimeout);
++				}
++			}
++
++			this.logger.log('Graceful shutdown completed');
++			process.exit(0);
++		} catch (error) {
++			this.logger.error(`Error during shutdown: ${(error as Error).message}`);
++			process.exit(1);
++		}
++	}
++}
+diff --git a/src/modules/cli/commands/setup-neural-search.command.ts b/src/modules/cli/commands/setup-neural-search.command.ts
+new file mode 100644
+index 0000000..2568072
+--- /dev/null
++++ b/src/modules/cli/commands/setup-neural-search.command.ts
+@@ -0,0 +1,159 @@
++import { Logger } from '@nestjs/common';
++import { Command, CommandRunner, Option } from 'nest-commander';
++
++import { OpensearchService } from '@modules/opensearch/opensearch.service';
++
++import { CronJobExecution } from '@decorators/cron-job-execution.decorator';
++
++const MODEL_NAME = 'huggingface/sentence-transformers/all-distilroberta-v1';
++const MODEL_VERSION = '1.0.1';
++const MODEL_GROUP_NAME = 'neural-search-model-group';
++const INGEST_PIPELINE_ID = 'products-neural-pipeline';
++const SEARCH_PIPELINE_ID = 'hybrid-search-pipeline';
++
++interface SetupNeuralSearchOptions {
++	modelFormat?: string;
++	skipClusterSettings?: boolean;
++	skipModelSetup?: boolean;
++	skipPipelines?: boolean;
++}
++
++@Command({
++	name: 'setup-neural-search',
++	description:
++		'Bootstrap ML pipeline for neural search: register model, deploy, create pipelines',
++})
++export class SetupNeuralSearchCommand extends CommandRunner {
++	private readonly logger = new Logger(SetupNeuralSearchCommand.name);
++
++	constructor(private readonly opensearchService: OpensearchService) {
++		super();
++	}
++
++	@CronJobExecution({ jobName: 'setup-neural-search' })
++	async run(_passedParams: string[], options: SetupNeuralSearchOptions): Promise<void> {
++		const modelFormat = options.modelFormat ?? 'TORCH_SCRIPT';
++		const skipClusterSettings = options.skipClusterSettings ?? false;
++		const skipModelSetup = options.skipModelSetup ?? false;
++		const skipPipelines = options.skipPipelines ?? false;
++
++		try {
++			if (!skipClusterSettings) {
++				this.logger.log('Step 1: Configuring cluster ML settings...');
++				await this.opensearchService.configureClusterMLSettings();
++			}
++
++			let modelId: string | undefined;
++
++			if (!skipModelSetup) {
++				this.logger.log('Step 2: Registering model group...');
++				const modelGroupId = await this.opensearchService.registerModelGroup({
++					name: MODEL_GROUP_NAME,
++					description: 'Model group for neural search embeddings',
++				});
++
++				this.logger.log('Step 3: Registering model...');
++				const registerTaskId = await this.opensearchService.registerModel({
++					name: MODEL_NAME,
++					version: MODEL_VERSION,
++					modelGroupId,
++					modelFormat,
++				});
++
++				this.logger.log('Step 4: Waiting for model registration...');
++				const registerResult = await this.opensearchService.waitForTask({
++					taskId: registerTaskId,
++				});
++				modelId = registerResult.model_id;
++
++				if (!modelId) {
++					throw new Error('Model registration completed but no model_id returned');
++				}
++
++				this.logger.log(`Model registered: ${modelId}`);
++
++				this.logger.log('Step 5: Deploying model...');
++				const deployTaskId = await this.opensearchService.deployModel({ modelId });
++
++				this.logger.log('Step 6: Waiting for model deployment...');
++				await this.opensearchService.waitForTask({ taskId: deployTaskId });
++				this.logger.log('Model deployed successfully');
++			}
++
++			if (!skipPipelines) {
++				modelId ??=
++					(await this.opensearchService.findDeployedModelId({
++						modelGroupName: MODEL_GROUP_NAME,
++					})) ?? undefined;
++
++				if (!modelId) {
++					this.logger.error(
++						'Cannot create pipelines without model_id. Run without --skip-model-setup first.',
++					);
++					process.exit(1);
++				}
++
++				this.logger.log('Step 7: Creating ingest pipeline...');
++				await this.opensearchService.createIngestPipeline({
++					pipelineId: INGEST_PIPELINE_ID,
++					modelId,
++					sourceField: 'combined_text_for_embedding',
++					targetField: 'product_embedding',
++				});
++
++				this.logger.log('Step 8: Creating search pipeline...');
++				await this.opensearchService.createSearchPipeline({
++					pipelineId: SEARCH_PIPELINE_ID,
++					normalizationTechnique: 'min_max',
++					combinationTechnique: 'arithmetic_mean',
++					weights: [0.2, 0.8],
++				});
++			}
++
++			this.logger.log('Neural search setup completed successfully');
++
++			if (modelId) {
++				this.logger.log(`Model ID: ${modelId} (resolved dynamically at app startup)`);
++			}
++		} catch (error) {
++			this.logger.error(`Setup failed: ${(error as Error).message}`);
++			process.exit(1);
++		}
++	}
++
++	@Option({
++		flags: '-f, --model-format <modelFormat>',
++		description: 'Model format: TORCH_SCRIPT or ONNX (default: TORCH_SCRIPT)',
++	})
++	parseModelFormat(value: string): string {
++		const valid = ['TORCH_SCRIPT', 'ONNX'];
++		if (!valid.includes(value)) {
++			throw new Error(`Model format must be one of: ${valid.join(', ')}`);
++		}
++		return value;
++	}
++
++	@Option({
++		flags: '--skip-cluster-settings',
++		description: 'Skip configuring cluster ML settings',
++	})
++	parseSkipClusterSettings(): boolean {
++		return true;
++	}
++
++	@Option({
++		flags: '--skip-model-setup',
++		description: 'Skip model registration and deployment',
++	})
++	parseSkipModelSetup(): boolean {
++		return true;
++	}
++
++	@Option({
++		flags: '--skip-pipelines',
++		description: 'Skip creating ingest and search pipelines',
++	})
++	parseSkipPipelines(): boolean {
++		return true;
++	}
++}
+diff --git a/src/modules/opensearch/opensearch-neural.service.ts b/src/modules/opensearch/opensearch-neural.service.ts
+new file mode 100644
+index 0000000..516474c
+--- /dev/null
++++ b/src/modules/opensearch/opensearch-neural.service.ts
+@@ -0,0 +1,812 @@
++import { Injectable, Logger, OnModuleInit } from '@nestjs/common';
++import { Interval } from '@nestjs/schedule';
++
++import { IStylesMvBase } from '@modules/db/styles-mv/types/styles-mv.base.interface';
++import { EnvConfigService } from '@modules/env-config/env-config.service';
++import { OpensearchService } from '@modules/opensearch/opensearch.service';
++
++import {
++	NEURAL_SEARCH_LIMIT,
++	NEURAL_SEARCH_MAX_QUERY_LENGTH,
++} from '@constants/common.constant';
++import { OPENSEARCH_INDEX_NAME } from '@constants/env-variables.constant';
++import {
++	NEURAL_SEARCH_CONTRACTIONS,
++	NEURAL_SEARCH_KNOWN_BRANDS,
++	NEURAL_SEARCH_KNOWN_COLORS,
++	NEURAL_SEARCH_KNOWN_SIZES,
++} from '@constants/neural-search.constant';
++
++import { IOpensearchProduct } from '@interfaces/opensearch-product.interface';
++
++import { LogExecution } from '@decorators/log-execution.decorator';
++
++const MODEL_REFRESH_INTERVAL_MS = 5 * 60 * 1000;
++
++const MODEL_GROUP_NAME = 'neural-search-model-group';
++
++@Injectable()
++export class OpensearchNeuralService implements OnModuleInit {
++	private readonly logger = new Logger(OpensearchNeuralService.name);
++	private indexName: string;
++	private modelId: string | null = null;
++
++	constructor(
++		private readonly opensearchService: OpensearchService,
++		private readonly configService: EnvConfigService,
++	) {}
++
++	async onModuleInit(): Promise<void> {
++		this.indexName = this.configService.get<string>({ key: OPENSEARCH_INDEX_NAME });
++		await this.resolveModelId();
++	}
++
++	@Interval(MODEL_REFRESH_INTERVAL_MS)
++	async refreshModelId(): Promise<void> {
++		await this.resolveModelId();
++	}
++
++	private async resolveModelId(): Promise<void> {
++		try {
++			const modelId = await this.opensearchService.findDeployedModelId({
++				modelGroupName: MODEL_GROUP_NAME,
++			});
++
++			if (modelId && modelId !== this.modelId) {
++				const previousModelId = this.modelId;
++				this.modelId = modelId;
++				this.logger.log(`Model ID updated: ${previousModelId ?? 'none'} -> ${modelId}`);
++			} else if (!modelId) {
++				this.logger.warn(
++					'No deployed model found. Neural search will not work until bootstrap is run.',
++				);
++			}
++		} catch {
++			this.logger.warn('Failed to resolve model ID. OpenSearch may not be available.');
++		}
++	}
++
++	private getModelId(): string {
++		if (!this.modelId) {
++			throw new Error(
++				'Neural search model not available. Run: npm run cli:dev -- bootstrap-neural-search',
++			);
++		}
++		return this.modelId;
++	}
++
++	private detectBrand({ text }: { text: string }): string | null {
++		const sorted = [...NEURAL_SEARCH_KNOWN_BRANDS].sort((a, b) => b.length - a.length);
++		for (const brand of sorted) {
++			const escaped = brand.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
++			if (new RegExp(`\\b${escaped}\\b`, 'i').test(text)) {
++				return brand;
++			}
++		}
++		return null;
++	}
++
++	private detectColor({ text }: { text: string }): string | null {
++		const sorted = [...NEURAL_SEARCH_KNOWN_COLORS].sort((a, b) => b.length - a.length);
++		for (const color of sorted) {
++			const escaped = color.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
++			if (new RegExp(`\\b${escaped}\\b`, 'i').test(text)) {
++				return color;
++			}
++		}
++		return null;
++	}
++
++	private readonly MEASUREMENT_UNITS_PATTERN =
++		/\b\d+\s*(?:oz|ounce|ml|liter|litre|gal|gallon|inch|in|cm|mm|ft|foot|feet)\b/i;
++
++	private readonly PRICE_RANGE_PATTERNS: {
++		pattern: RegExp;
++		extract: ({
++			match,
++		}: {
++			match: RegExpExecArray;
++		}) => { min: number | null; max: number | null } | null;
++	}[] = [
++		{
++			pattern: /\b(?:under|below|less\s+than|up\s+to)\s+\$(\d+(?:\.\d{1,2})?)/i,
++			extract: ({ match }) => {
++				const max = parseFloat(match[1] ?? '');
++				return isNaN(max) ? null : { min: null, max };
++			},
++		},
++		{
++			pattern: /\bfrom\s+\$(\d+(?:\.\d{1,2})?)\s+to\s+\$(\d+(?:\.\d{1,2})?)/i,
++			extract: ({ match }) => {
++				const min = parseFloat(match[1] ?? '');
++				const max = parseFloat(match[2] ?? '');
++				return isNaN(min) || isNaN(max) ? null : { min, max };
++			},
++		},
++		{
++			pattern: /\$(\d+(?:\.\d{1,2})?)\s*[-–]\s*\$(\d+(?:\.\d{1,2})?)/i,
++			extract: ({ match }) => {
++				const min = parseFloat(match[1] ?? '');
++				const max = parseFloat(match[2] ?? '');
++				return isNaN(min) || isNaN(max) ? null : { min, max };
++			},
++		},
++		{
++			pattern: /\$(\d+(?:\.\d{1,2})?)\s+to\s+\$(\d+(?:\.\d{1,2})?)/i,
++			extract: ({ match }) => {
++				const min = parseFloat(match[1] ?? '');
++				const max = parseFloat(match[2] ?? '');
++				return isNaN(min) || isNaN(max) ? null : { min, max };
++			},
++		},
++		{
++			pattern: /\bto\s+\$(\d+(?:\.\d{1,2})?)/i,
++			extract: ({ match }) => {
++				const max = parseFloat(match[1] ?? '');
++				return isNaN(max) ? null : { min: null, max };
++			},
++		},
++		{
++			pattern: /\b(?:over|above|more\s+than|from)\s+\$(\d+(?:\.\d{1,2})?)/i,
++			extract: ({ match }) => {
++				const min = parseFloat(match[1] ?? '');
++				return isNaN(min) ? null : { min, max: null };
++			},
++		},
++		{
++			pattern: /\b(?:around|about|~)\s*\$(\d+(?:\.\d{1,2})?)/i,
++			extract: ({ match }) => {
++				const price = parseFloat(match[1] ?? '');
++				return isNaN(price)
++					? null
++					: { min: Math.round(price * 0.8), max: Math.round(price * 1.2) };
++			},
++		},
++		{
++			pattern: /\$(\d+(?:\.\d{1,2})?)/,
++			extract: ({ match }) => {
++				const price = parseFloat(match[1] ?? '');
++				return isNaN(price)
++					? null
++					: { min: Math.round(price * 0.8), max: Math.round(price * 1.2) };
++			},
++		},
++	];
++
++	private detectPriceRange({
++		text,
++	}: {
++		text: string;
++	}): { min: number | null; max: number | null } | null {
++		for (const { pattern, extract } of this.PRICE_RANGE_PATTERNS) {
++			const match = pattern.exec(text);
++			if (match) {
++				return extract({ match });
++			}
++		}
++		return null;
++	}
++
++	private stripContractions({ text }: { text: string }): string {
++		let result = text;
++		for (const contraction of NEURAL_SEARCH_CONTRACTIONS) {
++			result = result.replace(new RegExp(`\\b${contraction}\\b`, 'gi'), '');
++		}
++		return result;
++	}
++
++	private readonly PRICE_STRIP_PATTERN =
++		/\b(?:under|below|less\s+than|up\s+to|over|above|more\s+than|from|around|about|~)?\s*\$\d+(?:\.\d{1,2})?\s*(?:[-–]\s*\$\d+(?:\.\d{1,2})?)?\b/gi;
++
++	private detectSize({ text }: { text: string }): string | null {
++		const cleanedText = this.stripContractions({
++			text: text
++				.replace(this.MEASUREMENT_UNITS_PATTERN, '')
++				.replace(this.PRICE_STRIP_PATTERN, ''),
++		});
++		const sorted = [...NEURAL_SEARCH_KNOWN_SIZES].sort((a, b) => b.length - a.length);
++		for (const size of sorted) {
++			const escaped = size.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
++			if (new RegExp(`\\b${escaped}\\b`, 'i').test(cleanedText)) {
++				return size;
++			}
++		}
++		return null;
++	}
++
++	private readonly GENDER_PRODUCT_TYPE_MAP: {
++		pattern: RegExp;
++		productTypes: string[];
++	}[] = [
++		{
++			pattern: /\b(women|woman|womens|women's|female|ladies|lady|girls|girl's)\b/i,
++			productTypes: ["Women's"],
++		},
++		{
++			pattern: /\b(men|man|mens|men's|male|guys|guy)\b/i,
++			productTypes: ['Unisex'],
++		},
++		{
++			pattern: /\b(youth|kids|kid|children|child|toddler|infant|baby|juvenile)\b/i,
++			productTypes: ['Youth'],
++		},
++	];
++
++	private detectGenderProductTypes({ text }: { text: string }): string[] | null {
++		const productTypes: string[] = [];
++
++		for (const { pattern, productTypes: types } of this.GENDER_PRODUCT_TYPE_MAP) {
++			if (pattern.test(text)) {
++				productTypes.push(...types);
++			}
++		}
++
++		return productTypes.length > 0 ? productTypes : null;
++	}
++
++	private readonly PRICE_LEVEL_MAP: { pattern: RegExp; levels: number[] }[] = [
++		{
++			pattern:
++				/\b(cheap|budget|affordable|inexpensive|low[\s-]cost|economical|bargain|value|discount|basic|entry[\s-]level)\b/i,
++			levels: [1],
++		},
++		{
++			pattern:
++				/\b(mid[\s-]range|midrange|moderate|average|standard|medium|middle|reasonable|fair price|mid price)\b/i,
++			levels: [2],
++		},
++		{
++			pattern:
++				/\b(premium|luxury|high[\s-]end|expensive|upscale|top[\s-]tier|deluxe|elite|designer|exclusive|finest|high[\s-]quality)\b/i,
++			levels: [3],
++		},
++	];
++
++	private detectPriceLevels({ text }: { text: string }): number[] | null {
++		const levels: number[] = [];
++
++		for (const { pattern, levels: priceLevels } of this.PRICE_LEVEL_MAP) {
++			if (pattern.test(text)) {
++				levels.push(...priceLevels);
++			}
++		}
++
++		return levels.length > 0 ? levels : null;
++	}
++
++	private sanitizeQuery({ text }: { text: string }): string {
++		return text
++			.trim()
++			.replace(/<[^>]*>/g, ' ')
++			.replace(/[\x00-\x1F\x7F]/g, ' ')
++			.replace(/[^a-zA-Z0-9\s\-'&]/g, ' ')
++			.replace(/\s{2,}/g, ' ')
++			.substring(0, NEURAL_SEARCH_MAX_QUERY_LENGTH)
++			.trim();
++	}
++
++	private readonly QUERY_SYNONYMS: [RegExp, string][] = [
++		[/\btshirt(s)?\b/gi, 't-shirt$1'],
++		[/\bt shirt(s)?\b/gi, 't-shirt$1'],
++		[/\bv[\s-]?neck\b/gi, 'v-neck'],
++		[/\bcrew[\s-]?neck\b/gi, 'crewneck'],
++		[/\blong[\s-]?sleeve(s)?\b/gi, 'long-sleeve$1'],
++		[/\bshort[\s-]?sleeve(s)?\b/gi, 'short-sleeve$1'],
++		[/\bpolo[\s-]?shirt(s)?\b/gi, 'polo t-shirt$1'],
++		[/\bsweat[\s-]?shirt(s)?\b/gi, 'sweatshirt$1'],
++		[/\bsweat[\s-]?pant(s)?\b/gi, 'sweatpant$1'],
++		[/\bzip[\s-]?up(s)?\b/gi, 'zip-up$1'],
++		[/\bhalf[\s-]?zip(s)?\b/gi, 'half-zip$1'],
++		[/\btote[\s-]?bag(s)?\b/gi, 'tote bag$1'],
++		[/\bdri[\s-]?fit\b/gi, 'dri-fit'],
++		[/\bslim[\s-]?fit\b/gi, 'slim fit'],
++		[/\btank[\s-]?top(s)?\b/gi, 'tank top$1'],
++	];
++
++	private normalizeQuery({ text }: { text: string }): string {
++		let normalized = text.toLowerCase().trim();
++
++		for (const [pattern, replacement] of this.QUERY_SYNONYMS) {
++			normalized = normalized.replace(pattern, replacement);
++		}
++
++		return normalized;
++	}
++
++	@LogExecution()
++	async createProductsIndex({ indexName }: { indexName: string }): Promise<void> {
++		const settings = {
++			number_of_shards: 3,
++			number_of_replicas: 1,
++			'index.knn': true,
++			'index.knn.algo_param.ef_search': 512,
++			default_pipeline: 'products-neural-pipeline',
++		};
++
++		const mappings = {
++			properties: {
++				style_id: { type: 'long' },
++				product_id: { type: 'long' },
++				name: { type: 'text' },
++				features: { type: 'text' },
++				general_comments: { type: 'text' },
++				decoration_method: { type: 'text' },
++				manufacturer: { type: 'text' },
++				primary_category_id: { type: 'integer' },
++				primary_category_name: { type: 'keyword' },
++				product_type: { type: 'keyword' },
++				style_type: { type: 'keyword' },
++				broad_category_names: { type: 'keyword' },
++				sub_category_names: { type: 'keyword' },
++				minimum_quantity: { type: 'integer' },
++				min_qty: { type: 'integer' },
++				default_quote_qty: { type: 'integer' },
++				sizes: { type: 'keyword' },
++				turn_time: { type: 'integer' },
++				rush_turn_time: { type: 'integer' },
++				no_minimum: { type: 'byte' },
++				price_level: { type: 'short' },
++				rating_score: { type: 'float' },
++				rating_count: { type: 'integer' },
++				default_unit_prices: {
++					type: 'nested',
++					properties: {
++						quantity: { type: 'integer' },
++						price: { type: 'keyword' },
++						regular_unit_price: { type: 'keyword' },
++						algorithm: { type: 'keyword' },
++					},
++				},
++				colors: {
++					type: 'nested',
++					properties: {
++						name: { type: 'keyword' },
++						id: { type: 'integer' },
++						rbgs: {
++							type: 'nested',
++							properties: {
++								R: { type: 'short' },
++								G: { type: 'short' },
++								B: { type: 'short' },
++							},
++						},
++						image_url: { type: 'keyword' },
++					},
++				},
++				price: { type: 'float' },
++				style_card_image_url: { type: 'keyword' },
++				link: { type: 'keyword' },
++				brand: { type: 'keyword' },
++				condensed_features: { type: 'keyword' },
++				material: { type: 'keyword' },
++				status: { type: 'keyword' },
++				created_at: { type: 'date' },
++				updated_at: { type: 'date' },
++				deleted_at: { type: 'date' },
++				combined_text_for_embedding: { type: 'text' },
++				product_embedding: {
++					type: 'knn_vector',
++					dimension: 768,
++					method: {
++						name: 'hnsw',
++						space_type: 'l2',
++						engine: 'faiss',
++						parameters: { ef_construction: 512, m: 48 },
++					},
++				},
++			},
++		};
++
++		await this.opensearchService.createIndex({ indexName, mappings, settings });
++	}
++
++	@LogExecution({ logParams: false, logResponse: false })
++	async bulkIndexProducts({
++		indexName,
++		styles,
++	}: {
++		indexName: string;
++		styles: IStylesMvBase[];
++	}): Promise<{ indexed: number; errors: number }> {
++		if (styles.length === 0) {
++			return { indexed: 0, errors: 0 };
++		}
++
++		const documents = styles.map((style) =>
++			this.transformStyleToOpensearchProduct({ style }),
++		);
++
++		return this.opensearchService.bulkIndex({ indexName, documents });
++	}
++
++	@LogExecution({
++		paramFormatter: (
++			params: [{ queryText: string; size: number; categoryFilter?: string }],
++		) => ({
++			queryText: params[0].queryText,
++			size: params[0].size,
++			categoryFilter: params[0].categoryFilter,
++		}),
++		responseFormatter: (response: IOpensearchProduct[]) => ({
++			totalResults: response.length,
++		}),
++	})
++	async searchProducts({
++		queryText,
++		size = NEURAL_SEARCH_LIMIT,
++		categoryFilter,
++	}: {
++		queryText: string;
++		size?: number;
++		categoryFilter?: string;
++	}): Promise<IOpensearchProduct[]> {
++		const sanitizedQuery = this.sanitizeQuery({ text: queryText });
++		const normalizedQuery = this.normalizeQuery({ text: sanitizedQuery });
++		const genderProductTypes = this.detectGenderProductTypes({ text: sanitizedQuery });
++		const priceLevels = this.detectPriceLevels({ text: sanitizedQuery });
++		const brand = this.detectBrand({ text: sanitizedQuery });
++		const detectedColor = this.detectColor({ text: sanitizedQuery });
++		const detectedSize = this.detectSize({ text: sanitizedQuery });
++		const detectedPriceRange = this.detectPriceRange({ text: queryText });
++
++		const baseFilters: object[] = [
++			{ term: { status: 'active' } },
++			...(categoryFilter
++				? [
++						{
++							bool: {
++								should: [
++									{ term: { broad_category_names: categoryFilter } },
++									{ term: { sub_category_names: categoryFilter } },
++								],
++								minimum_should_match: 1,
++							},
++						},
++					]
++				: []),
++		];
++
++		const genderBoosts: object[] = genderProductTypes
++			? [{ terms: { product_type: genderProductTypes } }]
++			: [];
++
++		const priceBoosts: object[] =
++			priceLevels?.map((level) => ({
++				term: { price_level: { value: level } },
++			})) ?? [];
++
++		const brandBoosts: object[] = brand ? [{ terms: { brand: [brand] } }] : [];
++
++		const colorBoosts: object[] = detectedColor
++			? [
++					{
++						nested: {
++							path: 'colors',
++							query: {
++								wildcard: {
++									'colors.name': {
++										value: `*${detectedColor.toLowerCase()}*`,
++										case_insensitive: true,
++									},
++								},
++							},
++						},
++					},
++				]
++			: [];
++
++		const unitPriceBoosts: object[] = detectedPriceRange
++			? [
++					{
++						range: {
++							price: {
++								...(detectedPriceRange.min !== null && { gte: detectedPriceRange.min }),
++								...(detectedPriceRange.max !== null && { lte: detectedPriceRange.max }),
++							},
++						},
++					},
++				]
++			: [];
++
++		const sizeBoosts: object[] = detectedSize
++			? [
++					{
++						wildcard: {
++							sizes: { value: `*${detectedSize.toLowerCase()}*`, case_insensitive: true },
++						},
++					},
++				]
++			: [];
++
++		const hits = await this.opensearchService.search({
++			indexName: this.indexName,
++			searchPipeline: 'hybrid-search-pipeline',
++			body: {
++				size,
++				min_score: 0.4,
++				query: {
++					hybrid: {
++						queries: [
++							{
++								bool: {
++									should: [
++										{ match: { name: { query: normalizedQuery, boost: 0.1 } } },
++										{
++											match: {
++												condensed_features: { query: normalizedQuery, boost: 0.3 },
++											},
++										},
++										...priceBoosts,
++										...brandBoosts,
++										...genderBoosts,
++										...colorBoosts,
++										...sizeBoosts,
++										...unitPriceBoosts,
++									],
++									filter: baseFilters,
++								},
++							},
++							{
++								neural: {
++									product_embedding: {
++										query_text: normalizedQuery,
++										model_id: this.getModelId(),
++										k: size * 5,
++										filter: { bool: { filter: baseFilters } },
++									},
++								},
++							},
++						],
++					},
++				},
++				collapse: { field: 'product_id' },
++				_source: { excludes: ['product_embedding', 'combined_text_for_embedding'] },
++			},
++		});
++
++		const maxScore = Math.max(...hits.map((hit) => hit._score), 1);
++
++		return hits.map((hit) => {
++			const product = hit._source as IOpensearchProduct;
++			const imageUrl = detectedColor
++				? this.resolveColorImageUrl({ product, colorName: detectedColor })
++				: null;
++			const normalizedScore = hit._score / maxScore;
++
++			return {
++				...product,
++				_id: hit._id,
++				confidenceScore: Math.min(Math.round(Math.pow(normalizedScore, 2) * 100), 100),
++				...(imageUrl !== null && { style_card_image_url: imageUrl }),
++			};
++		});
++	}
++
++	@LogExecution({
++		paramFormatter: (
++			params: [{ categories: Record<string, string>[]; size?: number }],
++		) => ({
++			categories: params[0].categories.map((c) => Object.keys(c)[0]),
++			size: params[0].size,
++		}),
++		responseFormatter: (response: IOpensearchProduct[]) => ({
++			total: response.length,
++		}),
++	})
++	async searchProductsByCategories({
++		categories,
++		size,
++	}: {
++		categories: Record<string, string>[];
++		size?: number;
++	}): Promise<IOpensearchProduct[]> {
++		const effectiveSize = size ?? NEURAL_SEARCH_LIMIT;
++		const perCategory = Math.ceil(effectiveSize / categories.length);
++
++		const categoryResults = await Promise.all(
++			categories.map((categoryEntry) => {
++				const categoryName = Object.keys(categoryEntry)[0] ?? '';
++				const categoryQueryText = Object.values(categoryEntry)[0] ?? '';
++
++				return this.searchProducts({
++					queryText: categoryQueryText || categoryName,
++					size: perCategory,
++					categoryFilter: categoryName,
++				});
++			}),
++		);
++
++		const interleaved: IOpensearchProduct[] = [];
++		const maxLen = Math.max(...categoryResults.map((r) => r.length));
++		for (let i = 0; i < maxLen; i++) {
++			for (const results of categoryResults) {
++				const item = results[i];
++				if (item !== undefined) {
++					interleaved.push(item);
++				}
++			}
++		}
++
++		return interleaved.slice(0, effectiveSize);
++	}
++
++	private resolveColorImageUrl({
++		product,
++		colorName,
++	}: {
++		product: IOpensearchProduct;
++		colorName: string;
++	}): string | null {
++		if (!product.colors?.length) return null;
++
++		const lowerColor = colorName.toLowerCase();
++		const match = product.colors.find((c) => c.name.toLowerCase() === lowerColor);
++
++		if (match?.image_url) return match.image_url;
++
++		const partialMatch = product.colors.find((c) =>
++			c.name.toLowerCase().includes(lowerColor),
++		);
++
++		return partialMatch?.image_url ?? null;
++	}
++
++	private normalizeCondensedFeatures({
++		condensedFeatures,
++	}: {
++		condensedFeatures: unknown;
++	}): string[] | null {
++		if (condensedFeatures === null || condensedFeatures === undefined) {
++			return null;
++		}
++
++		if (typeof condensedFeatures === 'string') {
++			return [condensedFeatures];
++		}
++
++		if (Array.isArray(condensedFeatures)) {
++			return condensedFeatures.map(String);
++		}
++
++		if (typeof condensedFeatures === 'object') {
++			return Object.values(condensedFeatures).flatMap((value: unknown) =>
++				Array.isArray(value) ? value.map(String) : [String(value)],
++			);
++		}
++
++		return [JSON.stringify(condensedFeatures)];
++	}
++
++	private buildCombinedTextForEmbedding({ style }: { style: IStylesMvBase }): string {
++		const normalizedCondensedFeatures = this.normalizeCondensedFeatures({
++			condensedFeatures: style.condensed_features,
++		});
++		const priceLvlMap: Record<string, string> = {
++			1: 'Budget',
++			2: 'Mid-range',
++			3: 'Premium',
++		};
++		const mappedPriceLevel: string | null =
++			style.price_level && priceLvlMap[String(style.price_level)]
++				? (priceLvlMap[String(style.price_level)] ?? null)
++				: (priceLvlMap['2'] ?? null);
++
++		const parts: string[] = [
++			...(style.name ? [this.cleanText({ text: style.name })] : []),
++			...(style.product_type ? [this.cleanText({ text: style.product_type })] : []),
++			...(mappedPriceLevel ? [`Price lvl: ${mappedPriceLevel}`] : []),
++			...(style.brand?.length
++				? [`Brand: ${this.cleanText({ text: style.brand[0] })}`]
++				: []),
++			...(normalizedCondensedFeatures?.length
++				? [this.cleanText({ text: normalizedCondensedFeatures.join(', ') })]
++				: []),
++			...(style.style_type ? [this.cleanText({ text: style.style_type })] : []),
++			...(style.primary_category_name
++				? [`Category: ${this.cleanText({ text: style.primary_category_name })}`]
++				: []),
++			...(style.manufacturer
++				? [`From: ${this.cleanText({ text: style.manufacturer })}`]
++				: []),
++			...(style.sub_category_names?.length
++				? [
++						`Subcategories: ${this.cleanText({ text: style.sub_category_names.join(', ') })}`,
++					]
++				: []),
++			...(style.decoration_method
++				? [`Decoration: ${this.cleanText({ text: style.decoration_method })}`]
++				: []),
++			...(style.features
++				? [`Features: ${this.cleanText({ text: style.features })}`]
++				: []),
++		];
++
++		const combinedText = parts.filter(Boolean).join('. ');
++
++		this.logger.debug(
++			`Combined text length for style_id ${style.style_id}: ${combinedText.length} characters`,
++		);
++
++		return combinedText;
++	}
++
++	private extractPrice({
++		prices,
++	}: {
++		prices: IOpensearchProduct['default_unit_prices'];
++	}): number | null {
++		if (!prices?.length) return null;
++		const first = prices[0];
++		if (!first) return null;
++		const parsed = parseFloat(first.price);
++		return isNaN(parsed) ? null : parsed;
++	}
++
++	private cleanText({ text }: { text: string | null | undefined }): string {
++		if (!text) return '';
++		return text
++			.replace(/\r\n|\r|\n/g, ' ')
++			.replace(/[*#]+\s?/g, '')
++			.replace(/<[^>]*>/g, '')
++			.replace(/\s{2,}/g, ' ')
++			.trim();
++	}
++
++	private transformStyleToOpensearchProduct({
++		style,
++	}: {
++		style: IStylesMvBase;
++	}): IOpensearchProduct {
++		return {
++			_id: style._id,
++			style_id: style.style_id,
++			product_id: style.product_id,
++			name: style.name ?? '',
++			features: style.features,
++			general_comments: style.general_comments,
++			decoration_method: style.decoration_method,
++			manufacturer: style.manufacturer,
++			primary_category_id: style.primary_category_id,
++			primary_category_name: style.primary_category_name,
++			product_type: style.product_type,
++			style_type: style.style_type,
++			broad_category_names: style.broad_category_names,
++			sub_category_names: style.sub_category_names,
++			minimum_quantity: style.minimum_quantity,
++			min_qty: style.min_qty,
++			default_quote_qty: style.default_quote_qty,
++			sizes: style.sizes,
++			turn_time: style.turn_time,
++			rush_turn_time: style.rush_turn_time,
++			no_minimum: style.no_minimum ? 1 : 0,
++			price_level: style.price_level,
++			rating_score: style.rating_score !== null ? Number(style.rating_score) : null,
++			rating_count: style.rating_count,
++			default_unit_prices: style.default_unit_prices,
++			price: this.extractPrice({ prices: style.default_unit_prices }),
++			colors: style.colors,
++			style_card_image_url: style.style_card_image_url,
++			link: style.link,
++			brand: style.brand,
++			condensed_features: this.normalizeCondensedFeatures({
++				condensedFeatures: style.condensed_features,
++			}),
++			material: style.material,
++			status: style.status,
++			created_at:
++				style.created_at instanceof Date
++					? style.created_at.toISOString()
++					: String(style.created_at),
++			updated_at:
++				style.updated_at instanceof Date
++					? style.updated_at.toISOString()
++					: String(style.updated_at),
++			deleted_at: style.deleted_at
++				? style.deleted_at instanceof Date
++					? style.deleted_at.toISOString()
++					: String(style.deleted_at)
++				: null,
++			combined_text_for_embedding: this.buildCombinedTextForEmbedding({ style }),
++		};
++	}
++}
+diff --git a/src/modules/opensearch/opensearch.module.ts b/src/modules/opensearch/opensearch.module.ts
+new file mode 100644
+index 0000000..2a98139
+--- /dev/null
++++ b/src/modules/opensearch/opensearch.module.ts
+@@ -0,0 +1,13 @@
++import { Module } from '@nestjs/common';
++import { ScheduleModule } from '@nestjs/schedule';
++
++import { EnvConfigModule } from '@modules/env-config/env-config.module';
++import { OpensearchNeuralService } from '@modules/opensearch/opensearch-neural.service';
++import { OpensearchService } from '@modules/opensearch/opensearch.service';
++
++@Module({
++	imports: [EnvConfigModule, ScheduleModule.forRoot()],
++	providers: [OpensearchService, OpensearchNeuralService],
++	exports: [OpensearchService, OpensearchNeuralService],
++})
++export class OpensearchModule {}
+diff --git a/src/modules/opensearch/opensearch.service.ts b/src/modules/opensearch/opensearch.service.ts
+new file mode 100644
+index 0000000..666298a
+--- /dev/null
++++ b/src/modules/opensearch/opensearch.service.ts
+@@ -0,0 +1,592 @@
++import { Injectable, Logger, OnModuleInit } from '@nestjs/common';
++import { Client } from '@opensearch-project/opensearch';
++
++import { EnvConfigService } from '@modules/env-config/env-config.service';
++
++import {
++	OPENSEARCH_HOST,
++	OPENSEARCH_PASSWORD,
++	OPENSEARCH_USERNAME,
++} from '@constants/env-variables.constant';
++
++import { LogExecution } from '@decorators/log-execution.decorator';
++
++@Injectable()
++export class OpensearchService implements OnModuleInit {
++	private readonly logger = new Logger(OpensearchService.name);
++	private client: Client;
++	private host: string;
++	private username: string;
++	private password: string;
++
++	constructor(private readonly configService: EnvConfigService) {}
++
++	onModuleInit(): void {
++		this.initializeOpensearchClient();
++	}
++
++	private initializeOpensearchClient(): void {
++		try {
++			this.host = this.configService.get<string>({ key: OPENSEARCH_HOST });
++			this.username = this.configService.get<string>({ key: OPENSEARCH_USERNAME });
++			this.password = this.configService.get<string>({ key: OPENSEARCH_PASSWORD });
++
++			this.client = new Client({
++				node: this.host,
++				auth: {
++					username: this.username,
++					password: this.password,
++				},
++			});
++
++			this.logger.log(`OpenSearch client initialized successfully. Host: ${this.host}`);
++		} catch (error: unknown) {
++			this.handleError({ context: 'Failed to initialize OpenSearch client', error });
++			throw error;
++		}
++	}
++
++	@LogExecution()
++	async healthCheck(): Promise<{ status: string; cluster_name: string }> {
++		try {
++			const response = await this.client.cluster.health();
++			return {
++				status: response.body.status,
++				cluster_name: response.body.cluster_name,
++			};
++		} catch (error: unknown) {
++			this.handleError({ context: 'OpenSearch health check failed', error });
++			throw error;
++		}
++	}
++
++	getClient(): Client {
++		return this.client;
++	}
++
++	@LogExecution()
++	async createIndex({
++		indexName,
++		mappings,
++		settings,
++	}: {
++		indexName: string;
++		mappings: Record<string, unknown>;
++		settings: Record<string, unknown>;
++	}): Promise<void> {
++		try {
++			const exists = await this.client.indices.exists({ index: indexName });
++
++			if (exists.body) {
++				this.logger.log(`Index ${indexName} already exists`);
++				return;
++			}
++
++			await this.client.indices.create({
++				index: indexName,
++				body: {
++					settings,
++					mappings,
++				},
++			});
++
++			this.logger.log(`Created OpenSearch index: ${indexName}`);
++		} catch (error: unknown) {
++			this.handleError({ context: `Failed to create index ${indexName}`, error });
++			throw error;
++		}
++	}
++
++	@LogExecution({ logParams: false, logResponse: false })
++	async bulkIndex({
++		indexName,
++		documents,
++	}: {
++		indexName: string;
++		documents: { _id: string; [key: string]: unknown }[];
++	}): Promise<{ indexed: number; errors: number }> {
++		try {
++			if (documents.length === 0) {
++				return { indexed: 0, errors: 0 };
++			}
++
++			const body = documents.flatMap((doc) => {
++				const { _id, ...docWithoutId } = doc;
++				return [{ index: { _index: indexName, _id } }, docWithoutId];
++			});
++
++			const response = await this.client.bulk({ body });
++
++			const errorItems = response.body.items.filter(
++				(item: { index?: { error?: unknown } }) => item.index?.error,
++			);
++
++			const errors = errorItems.length;
++			const indexed = documents.length - errors;
++
++			if (errors > 0) {
++				this.logger.warn(
++					`Bulk index completed with ${errors} errors out of ${documents.length} documents`,
++				);
++
++				const sampleErrors = errorItems
++					.slice(0, 3)
++					.map((item: { index?: { error?: { type?: string; reason?: string } } }) => ({
++						type: item.index?.error?.type,
++						reason: item.index?.error?.reason,
++					}));
++
++				this.logger.error(`Sample errors: ${JSON.stringify(sampleErrors, null, 2)}`);
++			}
++
++			return { indexed, errors };
++		} catch (error: unknown) {
++			this.handleError({ context: 'Bulk index failed', error });
++			throw error;
++		}
++	}
++
++	@LogExecution()
++	async configureClusterMLSettings(): Promise<void> {
++		try {
++			await this.client.cluster.putSettings({
++				body: {
++					persistent: {
++						'plugins.ml_commons.only_run_on_ml_node': false,
++						'plugins.ml_commons.model_access_control_enabled': true,
++						'plugins.ml_commons.native_memory_threshold': 99,
++					},
++				},
++			});
++			this.logger.log('Configured ML cluster settings');
++		} catch (error: unknown) {
++			this.handleError({ context: 'Failed to configure ML cluster settings', error });
++			throw error;
++		}
++	}
++
++	@LogExecution()
++	async registerModelGroup({
++		name,
++		description,
++	}: {
++		name: string;
++		description: string;
++	}): Promise<string> {
++		try {
++			const response = await this.client.transport.request({
++				method: 'POST',
++				path: '/_plugins/_ml/model_groups/_register',
++				body: { name, description },
++			});
++
++			const modelGroupId = (response.body as { model_group_id: string }).model_group_id;
++			this.logger.log(`Registered model group: ${modelGroupId}`);
++			return modelGroupId;
++		} catch (error: unknown) {
++			this.handleError({ context: 'Failed to register model group', error });
++			throw error;
++		}
++	}
++
++	@LogExecution()
++	async registerModel({
++		name,
++		version,
++		modelGroupId,
++		modelFormat,
++	}: {
++		name: string;
++		version: string;
++		modelGroupId: string;
++		modelFormat: string;
++	}): Promise<string> {
++		try {
++			const response = await this.client.transport.request({
++				method: 'POST',
++				path: '/_plugins/_ml/models/_register',
++				body: {
++					name,
++					version,
++					model_group_id: modelGroupId,
++					model_format: modelFormat,
++				},
++			});
++
++			const taskId = (response.body as { task_id: string }).task_id;
++			this.logger.log(`Model registration started, taskId: ${taskId}`);
++			return taskId;
++		} catch (error: unknown) {
++			this.handleError({ context: 'Failed to register model', error });
++			throw error;
++		}
++	}
++
++	@LogExecution()
++	async deployModel({ modelId }: { modelId: string }): Promise<string> {
++		try {
++			const response = await this.client.transport.request({
++				method: 'POST',
++				path: `/_plugins/_ml/models/${modelId}/_deploy`,
++			});
++
++			const taskId = (response.body as { task_id: string }).task_id;
++			this.logger.log(`Model deployment started, taskId: ${taskId}`);
++			return taskId;
++		} catch (error: unknown) {
++			this.handleError({ context: `Failed to deploy model ${modelId}`, error });
++			throw error;
++		}
++	}
++
++	@LogExecution()
++	async getTask({ taskId }: { taskId: string }): Promise<{
++		state: string;
++		model_id?: string;
++	}> {
++		try {
++			const response = await this.client.transport.request({
++				method: 'GET',
++				path: `/_plugins/_ml/tasks/${taskId}`,
++			});
++
++			const body = response.body as { state: string; model_id?: string };
++			return {
++				state: body.state,
++				...(body.model_id !== undefined && { model_id: body.model_id }),
++			};
++		} catch (error: unknown) {
++			this.handleError({ context: `Failed to get task ${taskId}`, error });
++			throw error;
++		}
++	}
++
++	@LogExecution()
++	async waitForTask({
++		taskId,
++		intervalMs = 5000,
++		maxAttempts = 60,
++	}: {
++		taskId: string;
++		intervalMs?: number;
++		maxAttempts?: number;
++	}): Promise<{ state: string; model_id?: string }> {
++		for (let attempt = 1; attempt <= maxAttempts; attempt++) {
++			const task = await this.getTask({ taskId });
++			this.logger.log(
++				`Task ${taskId} — attempt ${attempt}/${maxAttempts}, state: ${task.state}`,
++			);
++
++			if (task.state === 'COMPLETED') {
++				return task;
++			}
++
++			if (task.state === 'FAILED') {
++				throw new Error(`Task ${taskId} failed`);
++			}
++
++			await new Promise((resolve) => setTimeout(resolve, intervalMs));
++		}
++
++		throw new Error(`Task ${taskId} timed out after ${maxAttempts} attempts`);
++	}
++
++	@LogExecution()
++	async createIngestPipeline({
++		pipelineId,
++		modelId,
++		sourceField,
++		targetField,
++	}: {
++		pipelineId: string;
++		modelId: string;
++		sourceField: string;
++		targetField: string;
++	}): Promise<void> {
++		try {
++			await this.client.ingest.putPipeline({
++				id: pipelineId,
++				body: {
++					description: `Neural search ingest pipeline: ${sourceField} -> ${targetField}`,
++					processors: [
++						{
++							text_embedding: {
++								model_id: modelId,
++								field_map: {
++									[sourceField]: targetField,
++								},
++							},
++						},
++					],
++				},
++			});
++			this.logger.log(`Created ingest pipeline: ${pipelineId}`);
++		} catch (error: unknown) {
++			this.handleError({
++				context: `Failed to create ingest pipeline ${pipelineId}`,
++				error,
++			});
++			throw error;
++		}
++	}
++
++	@LogExecution()
++	async createSearchPipeline({
++		pipelineId,
++		normalizationTechnique = 'min_max',
++		combinationTechnique = 'arithmetic_mean',
++		weights = [0.2, 0.8],
++	}: {
++		pipelineId: string;
++		normalizationTechnique?: string;
++		combinationTechnique?: string;
++		weights?: number[];
++	}): Promise<void> {
++		try {
++			await this.client.transport.request({
++				method: 'PUT',
++				path: `/_search/pipeline/${pipelineId}`,
++				body: {
++					description: `Hybrid search pipeline: ${normalizationTechnique} + ${combinationTechnique}`,
++					phase_results_processors: [
++						{
++							'normalization-processor': {
++								normalization: { technique: normalizationTechnique },
++								combination: { technique: combinationTechnique, parameters: { weights } },
++							},
++						},
++					],
++				},
++			});
++			this.logger.log(`Created search pipeline: ${pipelineId}`);
++		} catch (error: unknown) {
++			this.handleError({
++				context: `Failed to create search pipeline ${pipelineId}`,
++				error,
++			});
++			throw error;
++		}
++	}
++
++	@LogExecution({
++		paramFormatter: (params: [{ indexName: string; searchPipeline?: string }]) => ({
++			indexName: params[0].indexName,
++			searchPipeline: params[0].searchPipeline,
++		}),
++	})
++	async search({
++		indexName,
++		body,
++		searchPipeline,
++	}: {
++		indexName: string;
++		body: Record<string, unknown>;
++		searchPipeline?: string;
++	}): Promise<{ _id: string; _score: number; _source: Record<string, unknown> }[]> {
++		try {
++			const searchParams: Record<string, unknown> = { index: indexName, body };
++
++			if (searchPipeline) {
++				searchParams['search_pipeline'] = searchPipeline;
++			}
++
++			const response = await this.client.search(searchParams);
++
++			return (
++				response.body.hits.hits as {
++					_id: string;
++					_score: number;
++					_source: Record<string, unknown>;
++				}[]
++			).map((hit) => ({
++				_id: hit._id,
++				_score: hit._score,
++				_source: hit._source,
++			}));
++		} catch (error: unknown) {
++			this.handleError({ context: `Search failed on index ${indexName}`, error });
++			throw error;
++		}
++	}
++
++	@LogExecution()
++	async deleteIndex({ indexName }: { indexName: string }): Promise<void> {
++		try {
++			const exists = await this.client.indices.exists({ index: indexName });
++
++			if (!exists.body) {
++				this.logger.log(`Index ${indexName} does not exist`);
++				return;
++			}
++
++			await this.client.indices.delete({ index: indexName });
++			this.logger.log(`Deleted OpenSearch index: ${indexName}`);
++		} catch (error: unknown) {
++			this.handleError({ context: `Failed to delete index ${indexName}`, error });
++			throw error;
++		}
++	}
++
++	@LogExecution()
++	async deleteIngestPipeline({ pipelineId }: { pipelineId: string }): Promise<void> {
++		try {
++			await this.client.ingest.deletePipeline({ id: pipelineId });
++			this.logger.log(`Deleted ingest pipeline: ${pipelineId}`);
++		} catch (error: unknown) {
++			if (this.isNotFoundError({ error })) {
++				this.logger.log(`Ingest pipeline ${pipelineId} does not exist`);
++				return;
++			}
++			this.handleError({
++				context: `Failed to delete ingest pipeline ${pipelineId}`,
++				error,
++			});
++			throw error;
++		}
++	}
++
++	@LogExecution()
++	async deleteSearchPipeline({ pipelineId }: { pipelineId: string }): Promise<void> {
++		try {
++			await this.client.transport.request({
++				method: 'DELETE',
++				path: `/_search/pipeline/${pipelineId}`,
++			});
++			this.logger.log(`Deleted search pipeline: ${pipelineId}`);
++		} catch (error: unknown) {
++			if (this.isNotFoundError({ error })) {
++				this.logger.log(`Search pipeline ${pipelineId} does not exist`);
++				return;
++			}
++			this.handleError({
++				context: `Failed to delete search pipeline ${pipelineId}`,
++				error,
++			});
++			throw error;
++		}
++	}
++
++	@LogExecution()
++	async searchModelsByGroup({
++		modelGroupId,
++	}: {
++		modelGroupId: string;
++	}): Promise<{ model_id: string; model_state: string }[]> {
++		try {
++			const response = await this.client.transport.request({
++				method: 'POST',
++				path: '/_plugins/_ml/models/_search',
++				body: {
++					query: { term: { model_group_id: modelGroupId } },
++					size: 100,
++				},
++			});
++
++			const hits = (
++				response.body as {
++					hits: { hits: { _id: string; _source: { model_state: string } }[] };
++				}
++			).hits.hits;
++
++			return hits.map((hit) => ({
++				model_id: hit._id,
++				model_state: hit._source.model_state,
++			}));
++		} catch (error: unknown) {
++			this.handleError({ context: 'Failed to search models', error });
++			throw error;
++		}
++	}
++
++	@LogExecution()
++	async searchModelGroupByName({ name }: { name: string }): Promise<string | null> {
++		try {
++			const response = await this.client.transport.request({
++				method: 'POST',
++				path: '/_plugins/_ml/model_groups/_search',
++				body: {
++					query: { term: { 'name.keyword': name } },
++					size: 1,
++				},
++			});
++
++			const hits = (response.body as { hits: { hits: { _id: string }[] } }).hits.hits;
++			return hits[0]?._id ?? null;
++		} catch (error: unknown) {
++			this.handleError({ context: `Failed to search model group: ${name}`, error });
++			throw error;
++		}
++	}
++
++	@LogExecution()
++	async undeployModel({ modelId }: { modelId: string }): Promise<void> {
++		try {
++			await this.client.transport.request({
++				method: 'POST',
++				path: `/_plugins/_ml/models/${modelId}/_undeploy`,
++			});
++			this.logger.log(`Undeployed model: ${modelId}`);
++		} catch (error: unknown) {
++			this.handleError({ context: `Failed to undeploy model ${modelId}`, error });
++			throw error;
++		}
++	}
++
++	@LogExecution()
++	async deleteModel({ modelId }: { modelId: string }): Promise<void> {
++		try {
++			await this.client.transport.request({
++				method: 'DELETE',
++				path: `/_plugins/_ml/models/${modelId}`,
++			});
++			this.logger.log(`Deleted model: ${modelId}`);
++		} catch (error: unknown) {
++			this.handleError({ context: `Failed to delete model ${modelId}`, error });
++			throw error;
++		}
++	}
++
++	@LogExecution()
++	async deleteModelGroup({ modelGroupId }: { modelGroupId: string }): Promise<void> {
++		try {
++			await this.client.transport.request({
++				method: 'DELETE',
++				path: `/_plugins/_ml/model_groups/${modelGroupId}`,
++			});
++			this.logger.log(`Deleted model group: ${modelGroupId}`);
++		} catch (error: unknown) {
++			this.handleError({
++				context: `Failed to delete model group ${modelGroupId}`,
++				error,
++			});
++			throw error;
++		}
++	}
++
++	@LogExecution()
++	async findDeployedModelId({
++		modelGroupName,
++	}: {
++		modelGroupName: string;
++	}): Promise<string | null> {
++		const modelGroupId = await this.searchModelGroupByName({ name: modelGroupName });
++
++		if (!modelGroupId) {
++			return null;
++		}
++
++		const models = await this.searchModelsByGroup({ modelGroupId });
++		const deployed = models.find((m) => m.model_state === 'DEPLOYED');
++		return deployed?.model_id ?? null;
++	}
++
++	private isNotFoundError({ error }: { error: unknown }): boolean {
++		const message = error instanceof Error ? error.message : String(error);
++		return message.includes('resource_not_found') || message.includes('404');
++	}
++
++	private handleError({ context, error }: { context: string; error: unknown }): void {
++		const err = error instanceof Error ? error : new Error(String(error));
++		this.logger.error(`${context}: ${err.message}`, err.stack);
++	}
++}

@@ -1,0 +1,3 @@
+- [ADE Roadmap](ade_roadmap.md) — prioritized feature backlog for clui ADE
+- [UI Preferences](ui_preferences.md) — user's UI/UX preferences and feedback patterns
+- [Rust Rewrite](rust_rewrite.md) — decision to rewrite from Ink to Rust/Ratatui, rationale and plan

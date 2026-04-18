@@ -1,0 +1,110 @@
+{
+  "version": 1,
+  "entries": [
+    {
+      "sessionId": "5f0cacd4-c7fb-420c-af15-e07cd8805086",
+      "fullPath": "/Users/4thwithme/.claude/projects/-Users-4thwithme-Documents-repo-rails-frontend/5f0cacd4-c7fb-420c-af15-e07cd8805086.jsonl",
+      "fileMtime": 1769018595265,
+      "firstPrompt": "@4thwithme ➜ /workspaces/rails-frontend (master) $ yarn install ! Corepack is about to download https://registry.yarnpkg.com/yarn/-/yarn-1.22.22.tgz ? Do you want to continue? [Y/n] Y  yarn install v1…",
+      "summary": "Rails frontend setup: gem version, auth, dependencies",
+      "messageCount": 19,
+      "created": "2026-01-21T17:29:00.565Z",
+      "modified": "2026-01-21T17:45:31.879Z",
+      "gitBranch": "",
+      "projectPath": "/Users/4thwithme/Documents/repo/rails-frontend",
+      "isSidechain": false
+    },
+    {
+      "sessionId": "ccb99ead-3a49-4265-9dd4-8ddeae542de8",
+      "fullPath": "/Users/4thwithme/.claude/projects/-Users-4thwithme-Documents-repo-rails-frontend/ccb99ead-3a49-4265-9dd4-8ddeae542de8.jsonl",
+      "fileMtime": 1769018596164,
+      "firstPrompt": "bro analyze what i needto do to run it locally in devcntainer  dev-exec Starting /bin/zsh @4thwithme ➜ /workspaces/rails-frontend (master) $ bin/bootstrap == All done == @4thwithme ➜ /workspaces/rails…",
+      "summary": "Devcontainer Setup: Bundler & Yarn Issues",
+      "messageCount": 31,
+      "created": "2026-01-21T14:12:48.792Z",
+      "modified": "2026-01-21T17:19:10.027Z",
+      "gitBranch": "master",
+      "projectPath": "/Users/4thwithme/Documents/repo/rails-frontend",
+      "isSidechain": false
+    },
+    {
+      "sessionId": "0b3ce72e-7da7-421e-8063-63f616372777",
+      "fullPath": "/Users/4thwithme/.claude/projects/-Users-4thwithme-Documents-repo-rails-frontend/0b3ce72e-7da7-421e-8063-63f616372777.jsonl",
+      "fileMtime": 1769018642611,
+      "firstPrompt": "No prompt",
+      "summary": "Session Cleared",
+      "messageCount": 2,
+      "created": "2026-01-21T18:03:44.767Z",
+      "modified": "2026-01-21T18:03:44.767Z",
+      "gitBranch": "master",
+      "projectPath": "/Users/4thwithme/Documents/repo/rails-frontend",
+      "isSidechain": false
+    },
+    {
+      "sessionId": "d7fcf674-7c70-4583-a9f3-50f6f936ceb2",
+      "fullPath": "/Users/4thwithme/.claude/projects/-Users-4thwithme-Documents-repo-rails-frontend/d7fcf674-7c70-4583-a9f3-50f6f936ceb2.jsonl",
+      "fileMtime": 1769124273542,
+      "firstPrompt": "@4thwithme ➜ /workspaces/rails-frontend (master) $ bin/setup     == Installing dependencies ==  A new release of RubyGems is available: 4.0.3 → 4.0.4! Run `gem update --system 4.0.4` to update your in…",
+      "summary": "**Setup devcontainer, analyze codebase, fix bundle & Node dependencies**",
+      "messageCount": 42,
+      "created": "2026-01-21T18:06:43.143Z",
+      "modified": "2026-01-21T19:15:22.546Z",
+      "gitBranch": "",
+      "projectPath": "/Users/4thwithme/Documents/repo/rails-frontend",
+      "isSidechain": false
+    },
+    {
+      "sessionId": "7e7763ec-9913-41de-a47d-cb049f972bc6",
+      "fullPath": "/Users/4thwithme/.claude/projects/-Users-4thwithme-Documents-repo-rails-frontend/7e7763ec-9913-41de-a47d-cb049f972bc6.jsonl",
+      "fileMtime": 1769176875326,
+      "firstPrompt": "i need to know how to open order confirmation page locally",
+      "summary": "Order confirmation page local setup",
+      "messageCount": 92,
+      "created": "2026-01-21T19:24:04.091Z",
+      "modified": "2026-01-23T01:33:34.453Z",
+      "gitBranch": "RECO-471-ui",
+      "projectPath": "/Users/4thwithme/Documents/repo/rails-frontend",
+      "isSidechain": false
+    },
+    {
+      "sessionId": "bb860be2-b433-43cf-aceb-bc78f227dcab",
+      "fullPath": "/Users/4thwithme/.claude/projects/-Users-4thwithme-Documents-repo-rails-frontend/bb860be2-b433-43cf-aceb-bc78f227dcab.jsonl",
+      "fileMtime": 1769791894557,
+      "firstPrompt": "i'll share you design how bloks should looks like in terms of css grid  and i did it in the browser using css grids and i put some code in the @app/assets/stylesheets/sb_checkout/_receipt.scss your jo…",
+      "summary": "CSS Grid Receipt Layout & Browser Compatibility Fix",
+      "messageCount": 21,
+      "created": "2026-01-22T17:10:07.867Z",
+      "modified": "2026-01-23T14:05:31.504Z",
+      "gitBranch": "RECO-471-ui",
+      "projectPath": "/Users/4thwithme/Documents/repo/rails-frontend",
+      "isSidechain": false
+    },
+    {
+      "sessionId": "677b0e79-c135-44f4-a379-3915bc385c09",
+      "fullPath": "/Users/4thwithme/.claude/projects/-Users-4thwithme-Documents-repo-rails-frontend/677b0e79-c135-44f4-a379-3915bc385c09.jsonl",
+      "fileMtime": 1770049168085,
+      "firstPrompt": "No prompt",
+      "summary": "Session Cleared",
+      "messageCount": 2,
+      "created": "2026-02-02T15:32:32.835Z",
+      "modified": "2026-02-02T15:32:32.835Z",
+      "gitBranch": "RECO-0-master-copy-test",
+      "projectPath": "/Users/4thwithme/Documents/repo/rails-frontend",
+      "isSidechain": false
+    },
+    {
+      "sessionId": "036bc79b-3429-4199-b376-f4fd36b4e940",
+      "fullPath": "/Users/4thwithme/.claude/projects/-Users-4thwithme-Documents-repo-rails-frontend/036bc79b-3429-4199-b376-f4fd36b4e940.jsonl",
+      "fileMtime": 1770049168959,
+      "firstPrompt": "hello! on order confirmation page @app/views/checkout/receipt.html.erb we have widget \"Create your Custom Ink account in one easy step.\" and on master staging (before my changes) we have image 1 - ok…",
+      "summary": "Iframe Sign-Up Modal Shows Login Instead",
+      "messageCount": 7,
+      "created": "2026-01-30T16:51:34.646Z",
+      "modified": "2026-01-30T18:05:17.044Z",
+      "gitBranch": "RECO-471-ui",
+      "projectPath": "/Users/4thwithme/Documents/repo/rails-frontend",
+      "isSidechain": false
+    }
+  ],
+  "originalPath": "/Users/4thwithme/Documents/repo/rails-frontend"
+}

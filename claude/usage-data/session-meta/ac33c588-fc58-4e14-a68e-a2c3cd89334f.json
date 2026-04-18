@@ -1,0 +1,57 @@
+{
+  "session_id": "ac33c588-fc58-4e14-a68e-a2c3cd89334f",
+  "project_path": "/Users/4thwithme/Documents/repo/recommendations-service",
+  "start_time": "2026-02-22T01:47:02.342Z",
+  "duration_minutes": 1243,
+  "user_message_count": 6,
+  "assistant_message_count": 69,
+  "tool_counts": {
+    "Read": 9,
+    "Glob": 3,
+    "Edit": 17,
+    "Bash": 14,
+    "TaskUpdate": 1
+  },
+  "languages": {
+    "TypeScript": 26
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 77,
+  "output_tokens": 3319,
+  "first_prompt": "/Users/4thwithme/Documents/repo/recommendations-service/test/cli/bootstrap-neural-search.command.e2e-spec.ts    19:6   warning  Use an `interface` instead of a `type`          @typescript-eslint/consi…",
+  "user_interruptions": 2,
+  "user_response_times": [
+    789.639,
+    800.714,
+    804.381,
+    896.438
+  ],
+  "tool_errors": 1,
+  "tool_error_categories": {
+    "User Rejected": 1
+  },
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 67,
+  "lines_removed": 34,
+  "files_modified": 1,
+  "message_hours": [
+    2,
+    23,
+    23,
+    23,
+    23,
+    23
+  ],
+  "user_message_timestamps": [
+    "2026-02-22T01:47:02.342Z",
+    "2026-02-22T22:14:00.580Z",
+    "2026-02-22T22:28:33.739Z",
+    "2026-02-22T22:28:44.814Z",
+    "2026-02-22T22:28:48.481Z",
+    "2026-02-22T22:30:20.538Z"
+  ]
+}

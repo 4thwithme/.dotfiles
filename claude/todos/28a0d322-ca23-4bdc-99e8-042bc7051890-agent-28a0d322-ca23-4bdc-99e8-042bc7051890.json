@@ -1,0 +1,20 @@
+[
+  {
+    "content": "Read current README file to understand what needs to be changed",
+    "status": "completed",
+    "priority": "high",
+    "id": "1"
+  },
+  {
+    "content": "Update README file with new project purpose and details",
+    "status": "completed",
+    "priority": "high",
+    "id": "2"
+  },
+  {
+    "content": "Check docs directory and update files to match new purpose",
+    "status": "completed",
+    "priority": "medium",
+    "id": "3"
+  }
+]

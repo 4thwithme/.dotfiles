@@ -1,0 +1,9 @@
+{
+  "id": "4",
+  "subject": "Fix primitive params in utils and scripts",
+  "description": "Refactor utility files and script files to use object parameters",
+  "activeForm": "Fixing primitive params in utils",
+  "status": "pending",
+  "blocks": [],
+  "blockedBy": []
+}

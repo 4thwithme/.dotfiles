@@ -1,0 +1,78 @@
+{
+  "session_id": "4b5813dc-beec-4450-b99c-8367b68c863a",
+  "project_path": "/Users/4thwithme/Documents/repo/recommendations-service",
+  "start_time": "2026-02-13T12:26:18.017Z",
+  "duration_minutes": 47,
+  "user_message_count": 13,
+  "assistant_message_count": 117,
+  "tool_counts": {
+    "Read": 21,
+    "Task": 2,
+    "Edit": 22,
+    "Grep": 1,
+    "Bash": 16,
+    "TaskOutput": 2,
+    "Write": 1
+  },
+  "languages": {
+    "TypeScript": 38,
+    "Markdown": 2
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 189,
+  "output_tokens": 10079,
+  "first_prompt": "@.claude/plans/neural-search.md check @src/modules/opensearch/ check files...  tight now we dont need to anythink regarding emebbings or models in the opensearch..we only need to have right mapping th…",
+  "user_interruptions": 0,
+  "user_response_times": [
+    1022.649,
+    181.73,
+    45.32,
+    11.488,
+    34.315,
+    329.618,
+    198.713,
+    71.447
+  ],
+  "tool_errors": 2,
+  "tool_error_categories": {
+    "Command Failed": 2
+  },
+  "uses_task_agent": true,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 584,
+  "lines_removed": 149,
+  "files_modified": 11,
+  "message_hours": [
+    13,
+    13,
+    13,
+    13,
+    13,
+    13,
+    13,
+    13,
+    13,
+    13,
+    14,
+    14,
+    14
+  ],
+  "user_message_timestamps": [
+    "2026-02-13T12:26:18.017Z",
+    "2026-02-13T12:26:18.015Z",
+    "2026-02-13T12:26:18.017Z",
+    "2026-02-13T12:28:37.705Z",
+    "2026-02-13T12:35:31.603Z",
+    "2026-02-13T12:52:38.073Z",
+    "2026-02-13T12:56:05.336Z",
+    "2026-02-13T12:57:07.716Z",
+    "2026-02-13T12:57:22.330Z",
+    "2026-02-13T12:58:34.779Z",
+    "2026-02-13T13:05:29.651Z",
+    "2026-02-13T13:09:58.029Z",
+    "2026-02-13T13:11:23.836Z"
+  ]
+}

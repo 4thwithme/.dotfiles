@@ -1,0 +1,8 @@
+{
+  "id": "19",
+  "subject": "Task 13: Auth Guards",
+  "description": "AuthGuard, RolesGuard, FastifyThrottlerGuard",
+  "status": "completed",
+  "blocks": [],
+  "blockedBy": []
+}

@@ -1,0 +1,52 @@
+{
+  "session_id": "e0cfc082-378e-4803-8b0d-f2b9064e2a7a",
+  "project_path": "/Users/4thwithme/Documents/repo/recommendations-service",
+  "start_time": "2026-02-13T11:50:41.605Z",
+  "duration_minutes": 2,
+  "user_message_count": 8,
+  "assistant_message_count": 27,
+  "tool_counts": {
+    "Read": 4,
+    "Edit": 7,
+    "Bash": 1
+  },
+  "languages": {
+    "TypeScript": 11
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 226,
+  "output_tokens": 688,
+  "first_prompt": "! npm run cli:dev reindex-products-neural",
+  "user_interruptions": 1,
+  "user_response_times": [],
+  "tool_errors": 0,
+  "tool_error_categories": {},
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 17,
+  "lines_removed": 30,
+  "files_modified": 3,
+  "message_hours": [
+    12,
+    12,
+    12,
+    12,
+    12,
+    12,
+    12,
+    12
+  ],
+  "user_message_timestamps": [
+    "2026-02-13T11:50:41.605Z",
+    "2026-02-13T11:50:41.601Z",
+    "2026-02-13T11:50:41.605Z",
+    "2026-02-13T11:50:50.790Z",
+    "2026-02-13T11:50:45.147Z",
+    "2026-02-13T11:50:50.790Z",
+    "2026-02-13T11:51:20.921Z",
+    "2026-02-13T11:52:36.559Z"
+  ]
+}

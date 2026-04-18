@@ -1,0 +1,27 @@
+[
+  {
+    "content": "Analyze remaining uncovered branches to reach 95% target",
+    "status": "in_progress",
+    "id": "1"
+  },
+  {
+    "content": "Add tests for uncovered conditional branches",
+    "status": "pending",
+    "id": "2"
+  },
+  {
+    "content": "Add tests for error handling branches",
+    "status": "pending",
+    "id": "3"
+  },
+  {
+    "content": "Add tests for edge cases in private methods",
+    "status": "pending",
+    "id": "4"
+  },
+  {
+    "content": "Verify 95% branch coverage achieved",
+    "status": "pending",
+    "id": "5"
+  }
+]

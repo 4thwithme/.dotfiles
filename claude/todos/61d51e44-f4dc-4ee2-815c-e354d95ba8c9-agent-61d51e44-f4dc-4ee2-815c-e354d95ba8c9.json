@@ -1,0 +1,7 @@
+[
+  {
+    "content": "Run code quality fixer agent to check linting, formatting, and TypeScript errors",
+    "status": "in_progress",
+    "activeForm": "Running code quality fixer agent"
+  }
+]

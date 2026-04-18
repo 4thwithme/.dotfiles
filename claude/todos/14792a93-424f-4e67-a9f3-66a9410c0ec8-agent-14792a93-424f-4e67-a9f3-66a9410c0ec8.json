@@ -1,0 +1,27 @@
+[
+  {
+    "content": "Delete Forecast Confidence display",
+    "status": "completed",
+    "id": "1"
+  },
+  {
+    "content": "Make forecasted plot non-dashed and smaller green points",
+    "status": "completed",
+    "id": "2"
+  },
+  {
+    "content": "Fix NaN for Historical Max calculation",
+    "status": "completed",
+    "id": "3"
+  },
+  {
+    "content": "Delete Years Analyzed row",
+    "status": "completed",
+    "id": "4"
+  },
+  {
+    "content": "Remove plot card hover animation",
+    "status": "completed",
+    "id": "5"
+  }
+]

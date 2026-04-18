@@ -1,0 +1,22 @@
+[
+  {
+    "content": "Examine the problematic SCSS files to understand the mixed declarations issue",
+    "status": "completed",
+    "id": "1"
+  },
+  {
+    "content": "Fix mixed declarations in github-sync-widget.module.scss",
+    "status": "completed",
+    "id": "2"
+  },
+  {
+    "content": "Fix mixed declarations in _gradients.scss",
+    "status": "completed",
+    "id": "3"
+  },
+  {
+    "content": "Verify the fixes resolve all CSS warnings",
+    "status": "completed",
+    "id": "4"
+  }
+]

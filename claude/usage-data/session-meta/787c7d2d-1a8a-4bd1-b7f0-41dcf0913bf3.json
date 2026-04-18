@@ -1,0 +1,54 @@
+{
+  "session_id": "787c7d2d-1a8a-4bd1-b7f0-41dcf0913bf3",
+  "project_path": "/Users/4thwithme/Documents/repo/recommendations-service",
+  "start_time": "2026-02-28T13:51:36.530Z",
+  "duration_minutes": 36,
+  "user_message_count": 7,
+  "assistant_message_count": 37,
+  "tool_counts": {
+    "Read": 8,
+    "Edit": 8,
+    "Task": 1,
+    "Bash": 2
+  },
+  "languages": {
+    "TypeScript": 16
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 51,
+  "output_tokens": 12491,
+  "first_prompt": "lets delete     private readonly CATEGORY_QUERY_TEXTS: Record<string, string> = {         'T-shirts': ' premium polo t-shirt for corporate events',     }; and modify NEURAL_SEARCH_TAG_CATEGORY_NAMES t…",
+  "user_interruptions": 0,
+  "user_response_times": [
+    797.431,
+    786.446
+  ],
+  "tool_errors": 0,
+  "tool_error_categories": {},
+  "uses_task_agent": true,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 104,
+  "lines_removed": 104,
+  "files_modified": 4,
+  "message_hours": [
+    14,
+    14,
+    14,
+    14,
+    14,
+    15,
+    15
+  ],
+  "user_message_timestamps": [
+    "2026-02-28T13:51:36.530Z",
+    "2026-02-28T13:49:58.777Z",
+    "2026-02-28T13:49:58.777Z",
+    "2026-02-28T13:51:36.631Z",
+    "2026-02-28T13:56:50.120Z",
+    "2026-02-28T14:12:23.429Z",
+    "2026-02-28T14:27:04.285Z"
+  ]
+}

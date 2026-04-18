@@ -1,0 +1,111 @@
+> webapp-backend@0.0.1 code-quality-check
+> npm run lint && npm run format && npm run type-check
+
+
+> webapp-backend@0.0.1 lint
+> eslint "{src,apps,libs,test}/**/*.ts"
+
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/migrations/20260322120000_create_users_table.ts
+   9:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+  42:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/migrations/20260322120001_create_companies_table.ts
+   9:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+  37:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/migrations/20260322120002_create_company_members_table.ts
+  13:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+  64:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/migrations/20260322120003_create_oauth_accounts_table.ts
+   9:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+  55:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/migrations/20260322120004_create_invitations_table.ts
+  13:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+  68:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/migrations/20260414120000_create_github_installations_table.ts
+   9:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+  48:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/migrations/20260414120001_create_github_repos_table.ts
+  12:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+  51:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/migrations/20260416000000_create_github_contributors_table.ts
+  12:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+  52:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/migrations/20260416000001_create_github_commits_table.ts
+  13:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+  64:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/migrations/20260416000002_create_github_pull_requests_table.ts
+  13:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+  69:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/migrations/20260416000003_create_github_reviews_table.ts
+  13:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+  60:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/migrations/20260416000004_create_github_review_comments_table.ts
+  13:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+  60:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/modules/auth/guards/fastify-throttler.guard.ts
+  15:29  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/modules/github/db/github-pull-request.model.ts
+  25:16  error  Replace `·data·}:·{·data:·IGithubPullRequestUpsert·` with `⏎↹↹data,⏎↹}:·{⏎↹↹data:·IGithubPullRequestUpsert;⏎↹`  prettier/prettier
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/modules/github/github-backfill.service.ts
+  24:61  error  Replace `·installationId:·installationDbId·` with `⏎↹↹↹↹installationId:·installationDbId,⏎↹↹↹`                                                                                                                            prettier/prettier
+  37:22  error  Replace ``Enqueued·backfill·for·${repos.length}·repos·in·installation·${installationDbId}`` with `⏎↹↹↹↹`Enqueued·backfill·for·${repos.length}·repos·in·installation·${installationDbId}`,⏎↹↹↹`                            prettier/prettier
+  39:22  error  Replace ``Failed·to·trigger·backfill·for·installation·${installationDbId}:·${(error·as·Error).message}`` with `⏎↹↹↹↹`Failed·to·trigger·backfill·for·installation·${installationDbId}:·${(error·as·Error).message}`,⏎↹↹↹`  prettier/prettier
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/modules/github/github-event.processor.ts
+    2:1   error    `@nestjs/bullmq` import should occur before import of `@nestjs/common`                                                                                                                                             import/order
+    3:1   error    `@nestjs/axios` import should occur before import of `@nestjs/common`                                                                                                                                              import/order
+   61:15  warning  Custom functions must use a single object destructuring parameter                                                                                                                                                  custom-rules/require-object-params
+  332:8   warning  Unnecessary conditional, expected left-hand side of `??` operator to be possibly null or undefined                                                                                                                 @typescript-eslint/no-unnecessary-condition
+  332:34  warning  Unnecessary optional chain on a non-nullish value                                                                                                                                                                  @typescript-eslint/no-unnecessary-condition
+  339:8   warning  Unnecessary conditional, expected left-hand side of `??` operator to be possibly null or undefined                                                                                                                 @typescript-eslint/no-unnecessary-condition
+  339:36  warning  Unnecessary optional chain on a non-nullish value                                                                                                                                                                  @typescript-eslint/no-unnecessary-condition
+  354:31  error    Replace `·installationDbId,·repoDbId,·repoFullName,·owner,·repo,·token·` with `⏎↹↹↹installationDbId,⏎↹↹↹repoDbId,⏎↹↹↹repoFullName,⏎↹↹↹owner,⏎↹↹↹repo,⏎↹↹↹token,⏎↹↹`                                                prettier/prettier
+  355:36  error    Replace `·installationDbId,·repoDbId,·repoFullName,·owner,·repo,·token·` with `⏎↹↹↹installationDbId,⏎↹↹↹repoDbId,⏎↹↹↹repoFullName,⏎↹↹↹owner,⏎↹↹↹repo,⏎↹↹↹token,⏎↹↹`                                                prettier/prettier
+  376:10  warning  Unnecessary conditional, value is always truthy                                                                                                                                                                    @typescript-eslint/no-unnecessary-condition
+  427:10  warning  Unnecessary conditional, value is always truthy                                                                                                                                                                    @typescript-eslint/no-unnecessary-condition
+  468:35  error    Replace `·installationDbId,·prDbId:·saved._id,·owner,·repo,·prNumber:·pr.number,·token·` with `⏎↹↹↹↹↹installationDbId,⏎↹↹↹↹↹prDbId:·saved._id,⏎↹↹↹↹↹owner,⏎↹↹↹↹↹repo,⏎↹↹↹↹↹prNumber:·pr.number,⏎↹↹↹↹↹token,⏎↹↹↹↹`  prettier/prettier
+  469:42  error    Replace `·installationDbId,·prDbId:·saved._id,·owner,·repo,·prNumber:·pr.number,·token·` with `⏎↹↹↹↹↹installationDbId,⏎↹↹↹↹↹prDbId:·saved._id,⏎↹↹↹↹↹owner,⏎↹↹↹↹↹repo,⏎↹↹↹↹↹prNumber:·pr.number,⏎↹↹↹↹↹token,⏎↹↹↹↹`  prettier/prettier
+  542:66  error    Replace `IGithubApiReviewComment[]>(` with `⏎↹↹↹IGithubApiReviewComment[]`                                                                                                                                         prettier/prettier
+  543:3   error    Replace `↹`https://api.github.com/repos/${owner}/${repo}/pulls/${prNumber}/comments`,⏎↹↹↹` with `>(`https://api.github.com/repos/${owner}/${repo}/pulls/${prNumber}/comments`,·`                                   prettier/prettier
+  545:1   error    Delete `↹`                                                                                                                                                                                                         prettier/prettier
+  546:1   error    Delete `↹`                                                                                                                                                                                                         prettier/prettier
+  547:5   error    Delete `↹`                                                                                                                                                                                                         prettier/prettier
+  548:5   error    Delete `↹`                                                                                                                                                                                                         prettier/prettier
+  549:1   error    Delete `↹`                                                                                                                                                                                                         prettier/prettier
+  550:4   error    Delete `↹`                                                                                                                                                                                                         prettier/prettier
+  551:3   error    Replace `↹},⏎↹↹` with `}`                                                                                                                                                                                          prettier/prettier
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/modules/github/github-install.service.ts
+  11:10  error  'GithubBackfillService' is defined but never used  @typescript-eslint/no-unused-vars
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/modules/github/types/github-api.interface.ts
+  138:11  error  Array type using 'Array<T>' is forbidden. Use 'T[]' instead  @typescript-eslint/array-type
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/modules/oauth-account/oauth-account.model.ts
+  137:35  warning  Unnecessary conditional, the types have no overlap  @typescript-eslint/no-unnecessary-condition
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/unit-tests/github-webhook.service.unit-spec.ts
+  71:27  error  A `require()` style import is forbidden  @typescript-eslint/no-require-imports
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/test/cache.module.e2e-spec.ts
+  200:5  error  Async method 'operation' has no 'await' expression  @typescript-eslint/require-await
+  215:5  error  Async method 'operation' has no 'await' expression  @typescript-eslint/require-await
+  226:5  error  Async method 'operation' has no 'await' expression  @typescript-eslint/require-await
+  231:5  error  Async method 'operation' has no 'await' expression  @typescript-eslint/require-await
+
+✖ 59 problems (26 errors, 33 warnings)
+  20 errors and 0 warnings potentially fixable with the `--fix` option.

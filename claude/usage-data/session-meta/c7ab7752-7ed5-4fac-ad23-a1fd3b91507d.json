@@ -1,0 +1,67 @@
+{
+  "session_id": "c7ab7752-7ed5-4fac-ad23-a1fd3b91507d",
+  "project_path": "/Users/4thwithme/Documents/repo/recommendations-service",
+  "start_time": "2026-02-13T22:41:50.174Z",
+  "duration_minutes": 98,
+  "user_message_count": 6,
+  "assistant_message_count": 63,
+  "tool_counts": {
+    "WebFetch": 6,
+    "Read": 8,
+    "Edit": 6,
+    "WebSearch": 3,
+    "Bash": 6,
+    "Write": 2,
+    "Task": 1,
+    "EnterPlanMode": 1,
+    "AskUserQuestion": 1,
+    "Glob": 1,
+    "Grep": 1,
+    "ExitPlanMode": 1
+  },
+  "languages": {
+    "TypeScript": 11,
+    "Markdown": 3
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 11213,
+  "output_tokens": 3905,
+  "first_prompt": "hey bro check our @.claude/plans/neural-search.md and @src/modules/opensearch/ @src/modules/rest/neural-search/   we have roberta model, and we concatenated all text fields from the product and we use…",
+  "user_interruptions": 1,
+  "user_response_times": [
+    186.12,
+    2.129,
+    281.898,
+    313.807
+  ],
+  "tool_errors": 6,
+  "tool_error_categories": {
+    "Other": 3,
+    "User Rejected": 2,
+    "Command Failed": 1
+  },
+  "uses_task_agent": true,
+  "uses_mcp": false,
+  "uses_web_search": true,
+  "uses_web_fetch": true,
+  "lines_added": 266,
+  "lines_removed": 6,
+  "files_modified": 3,
+  "message_hours": [
+    23,
+    0,
+    1,
+    1,
+    1,
+    1
+  ],
+  "user_message_timestamps": [
+    "2026-02-13T22:41:50.174Z",
+    "2026-02-13T23:57:36.248Z",
+    "2026-02-14T00:01:45.519Z",
+    "2026-02-14T00:03:29.142Z",
+    "2026-02-14T00:08:08.911Z",
+    "2026-02-14T00:15:24.852Z"
+  ]
+}

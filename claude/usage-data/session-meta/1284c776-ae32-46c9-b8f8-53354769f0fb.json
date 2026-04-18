@@ -1,0 +1,65 @@
+{
+  "session_id": "1284c776-ae32-46c9-b8f8-53354769f0fb",
+  "project_path": "/Users/4thwithme/Documents/repo/recommendations-service",
+  "start_time": "2026-02-25T21:39:10.221Z",
+  "duration_minutes": 83,
+  "user_message_count": 7,
+  "assistant_message_count": 108,
+  "tool_counts": {
+    "Read": 18,
+    "Glob": 5,
+    "Bash": 2,
+    "TaskCreate": 6,
+    "TaskUpdate": 12,
+    "Edit": 19,
+    "Write": 8,
+    "Task": 2,
+    "Grep": 1
+  },
+  "languages": {
+    "Markdown": 1,
+    "TypeScript": 37,
+    "YAML": 3
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 3486,
+  "output_tokens": 7861,
+  "first_prompt": "you created a plan of implementation for feature conversationl search..where customers can input their prompts using natural language, nad our model can clarify customer intensions using auxiliary que…",
+  "user_interruptions": 0,
+  "user_response_times": [
+    264.457,
+    35.998,
+    844.514
+  ],
+  "tool_errors": 2,
+  "tool_error_categories": {
+    "File Not Found": 1,
+    "Other": 1
+  },
+  "uses_task_agent": true,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 1948,
+  "lines_removed": 14,
+  "files_modified": 21,
+  "message_hours": [
+    22,
+    22,
+    22,
+    22,
+    23,
+    23,
+    0
+  ],
+  "user_message_timestamps": [
+    "2026-02-25T21:39:10.221Z",
+    "2026-02-25T21:39:10.216Z",
+    "2026-02-25T21:39:10.221Z",
+    "2026-02-25T21:45:29.642Z",
+    "2026-02-25T22:36:54.305Z",
+    "2026-02-25T22:37:42.564Z",
+    "2026-02-25T23:01:53.785Z"
+  ]
+}

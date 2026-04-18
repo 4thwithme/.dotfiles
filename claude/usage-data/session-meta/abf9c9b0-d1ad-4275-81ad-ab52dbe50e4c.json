@@ -1,0 +1,57 @@
+{
+  "session_id": "abf9c9b0-d1ad-4275-81ad-ab52dbe50e4c",
+  "project_path": "/Users/4thwithme/Documents/repo/recommendations-service",
+  "start_time": "2026-02-07T10:22:30.635Z",
+  "duration_minutes": 51,
+  "user_message_count": 7,
+  "assistant_message_count": 87,
+  "tool_counts": {
+    "Read": 10,
+    "Edit": 11,
+    "Bash": 12,
+    "Grep": 1
+  },
+  "languages": {
+    "TypeScript": 20
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 716,
+  "output_tokens": 2810,
+  "first_prompt": "--------------------------------------------|---------|----------|---------|---------|--------------------------------- File                                        | % Stmts | % Branch | % Funcs | % L…",
+  "user_interruptions": 1,
+  "user_response_times": [
+    1881.974,
+    6.742
+  ],
+  "tool_errors": 6,
+  "tool_error_categories": {
+    "Command Failed": 1,
+    "Edit Failed": 5
+  },
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 494,
+  "lines_removed": 6,
+  "files_modified": 2,
+  "message_hours": [
+    11,
+    11,
+    11,
+    11,
+    12,
+    12,
+    12
+  ],
+  "user_message_timestamps": [
+    "2026-02-07T10:22:30.635Z",
+    "2026-02-07T10:22:30.633Z",
+    "2026-02-07T10:22:30.635Z",
+    "2026-02-07T10:27:25.571Z",
+    "2026-02-07T11:05:05.608Z",
+    "2026-02-07T11:05:11.743Z",
+    "2026-02-07T11:05:17.652Z"
+  ]
+}

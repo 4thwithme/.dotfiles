@@ -1,0 +1,385 @@
+monitor	Analyze and act with Claude	﻿2026-04-09T15:37:02.8723202Z ##[group]Run anthropics/claude-code-action@35a9e0292d36f1186f5d842b14eb575074e8b450
+monitor	Analyze and act with Claude	2026-04-09T15:37:02.8723649Z with:
+monitor	Analyze and act with Claude	2026-04-09T15:37:02.8724289Z   anthropic_api_key: ***
+monitor	Analyze and act with Claude	2026-04-09T15:37:02.8724980Z   claude_args: --allowed-tools "Bash(cat:*),Bash(jq:*),Bash(git checkout:*),Bash(git add:*),Bash(git commit:*),Bash(git push:*),Bash(gh pr create:*),Bash(curl:*),Read,Glob,Grep,Edit,Write"
+monitor	Analyze and act with Claude	2026-04-09T15:37:02.8732733Z   prompt: DATE: 2026-04-09
+monitor	Analyze and act with Claude	REPO: customink/recommendations-service
+monitor	Analyze and act with Claude	TOTAL_ERRORS_24H: 0
+monitor	Analyze and act with Claude	CHANGE_PERCENT: 0
+monitor	Analyze and act with Claude	ERROR_GROUPS: 0
+monitor	Analyze and act with Claude	
+monitor	Analyze and act with Claude	## TASK 1: Read the digest
+monitor	Analyze and act with Claude	
+monitor	Analyze and act with Claude	Run: cat rollbar-digest.json
+monitor	Analyze and act with Claude	
+monitor	Analyze and act with Claude	The digest contains:
+monitor	Analyze and act with Claude	- `newrelic`: overall error counts and % change vs prior 24h
+monitor	Analyze and act with Claude	- `errors`: top error groups. Each has count, changePercent (null means no prior data), transactionName, requestUri.
+monitor	Analyze and act with Claude	  Top 5 also have `rollbar` enrichment with stack trace and correlationId.
+monitor	Analyze and act with Claude	
+monitor	Analyze and act with Claude	## TASK 2: Classify each error
+monitor	Analyze and act with Claude	
+monitor	Analyze and act with Claude	For each entry in `errors`, classify as:
+monitor	Analyze and act with Claude	- **NEW**: changePercent is null — no occurrences in the prior 24h window, brand new error
+monitor	Analyze and act with Claude	- **SPIKE**: changePercent > +50% and count > 10 — significant regression
+monitor	Analyze and act with Claude	- **STEADY**: present before, no significant change — known issue, no action
+monitor	Analyze and act with Claude	- **FIXABLE**: you can see a clear, low-risk code fix from the stack trace
+monitor	Analyze and act with Claude	
+monitor	Analyze and act with Claude	Skip / mark STEADY automatically:
+monitor	Analyze and act with Claude	- 4xx HTTP errors (400, 401, 403, 404, 422, 429) in errorMessage or errorClass
+monitor	Analyze and act with Claude	- Errors from external services (timeouts, third-party API failures)
+monitor	Analyze and act with Claude	
+monitor	Analyze and act with Claude	## TASK 3: Attempt code fix (ONLY for FIXABLE, HIGH confidence)
+monitor	Analyze and act with Claude	
+monitor	Analyze and act with Claude	Only attempt if:
+monitor	Analyze and act with Claude	- Classification is FIXABLE
+monitor	Analyze and act with Claude	- Stack trace points to a specific file in `src/`
+monitor	Analyze and act with Claude	- Fix is a null check, missing guard, or obvious defensive code
+monitor	Analyze and act with Claude	
+monitor	Analyze and act with Claude	If those conditions are met:
+monitor	Analyze and act with Claude	1. Read the relevant file(s) with Read/Grep tools
+monitor	Analyze and act with Claude	2. Write the minimal fix (no refactoring, no scope creep)
+monitor	Analyze and act with Claude	3. `git checkout -b RECO-812-rollbar-autofix-2026-04-09`
+monitor	Analyze and act with Claude	4. `git add <files> && git commit -m "RECO-812: fix <description> (auto-fix from rollbar monitor 2026-04-09)"`
+monitor	Analyze and act with Claude	5. `git push origin HEAD`
+monitor	Analyze and act with Claude	6. `gh pr create --title "RECO-812: fix <description> (rollbar auto-fix 2026-04-09)" --base main --body "<error details, stack trace, confidence level>"`
+monitor	Analyze and act with Claude	
+monitor	Analyze and act with Claude	If no FIXABLE items → skip entirely.
+monitor	Analyze and act with Claude	
+monitor	Analyze and act with Claude	## TASK 4: Post Slack report
+monitor	Analyze and act with Claude	
+monitor	Analyze and act with Claude	Always post, regardless of whether a fix was created.
+monitor	Analyze and act with Claude	
+monitor	Analyze and act with Claude	Build and POST the following JSON to $SLACK_WEBHOOK_URL using curl:
+monitor	Analyze and act with Claude	- Header: "Rollbar Monitor — 2026-04-09"
+monitor	Analyze and act with Claude	- Fields: total errors (24h) with change %, number of error groups
+monitor	Analyze and act with Claude	- Summary: list NEW and SPIKE errors with their counts, or "All clear — no new or spiking errors"
+monitor	Analyze and act with Claude	- Footer: PR link if one was created, otherwise "No auto-fix generated"
+monitor	Analyze and act with Claude	
+monitor	Analyze and act with Claude	Use this curl command:
+monitor	Analyze and act with Claude	curl -sf -X POST "$SLACK_WEBHOOK_URL" \
+monitor	Analyze and act with Claude	  -H "Content-Type: application/json" \
+monitor	Analyze and act with Claude	  -d '<your JSON payload>'
+monitor	Analyze and act with Claude	
+monitor	Analyze and act with Claude	2026-04-09T15:37:02.8740282Z   trigger_phrase: @claude
+monitor	Analyze and act with Claude	2026-04-09T15:37:02.8740514Z   label_trigger: claude
+monitor	Analyze and act with Claude	2026-04-09T15:37:02.8740728Z   branch_prefix: claude/
+monitor	Analyze and act with Claude	2026-04-09T15:37:02.8740948Z   use_bedrock: false
+monitor	Analyze and act with Claude	2026-04-09T15:37:02.8741148Z   use_vertex: false
+monitor	Analyze and act with Claude	2026-04-09T15:37:02.8741341Z   use_foundry: false
+monitor	Analyze and act with Claude	2026-04-09T15:37:02.8741553Z   use_sticky_comment: false
+monitor	Analyze and act with Claude	2026-04-09T15:37:02.8741778Z   use_commit_signing: false
+monitor	Analyze and act with Claude	2026-04-09T15:37:02.8741986Z   bot_id: 41898282
+monitor	Analyze and act with Claude	2026-04-09T15:37:02.8742177Z   bot_name: claude[bot]
+monitor	Analyze and act with Claude	2026-04-09T15:37:02.8742397Z   track_progress: false
+monitor	Analyze and act with Claude	2026-04-09T15:37:02.8742616Z   include_fix_links: true
+monitor	Analyze and act with Claude	2026-04-09T15:37:02.8742840Z   display_report: true
+monitor	Analyze and act with Claude	2026-04-09T15:37:02.8743052Z   show_full_output: false
+monitor	Analyze and act with Claude	2026-04-09T15:37:02.8743260Z env:
+monitor	Analyze and act with Claude	2026-04-09T15:37:02.8743684Z   SLACK_WEBHOOK_URL: ***
+monitor	Analyze and act with Claude	2026-04-09T15:37:02.8744055Z   GH_TOKEN: ***
+monitor	Analyze and act with Claude	2026-04-09T15:37:02.8744264Z ##[endgroup]
+monitor	Analyze and act with Claude	2026-04-09T15:37:02.8842723Z ##[group]Run oven-sh/setup-bun@3d267786b128fe76c2f16a390aa2448b815359f3
+monitor	Analyze and act with Claude	2026-04-09T15:37:02.8843092Z with:
+monitor	Analyze and act with Claude	2026-04-09T15:37:02.8843283Z   bun-version: 1.3.6
+monitor	Analyze and act with Claude	2026-04-09T15:37:02.8843671Z   token: ***
+monitor	Analyze and act with Claude	2026-04-09T15:37:02.8843875Z   no-cache: false
+monitor	Analyze and act with Claude	2026-04-09T15:37:02.8844073Z env:
+monitor	Analyze and act with Claude	2026-04-09T15:37:02.8844492Z   SLACK_WEBHOOK_URL: ***
+monitor	Analyze and act with Claude	2026-04-09T15:37:02.8844785Z   GH_TOKEN: ***
+monitor	Analyze and act with Claude	2026-04-09T15:37:02.8845204Z ##[endgroup]
+monitor	Analyze and act with Claude	2026-04-09T15:37:03.5013127Z Cache hit for: swrvKXH4hkDYFKcrNV+Kct676IY=
+monitor	Analyze and act with Claude	2026-04-09T15:37:04.1577054Z Received 35242132 of 35242132 (100.0%), 60.0 MBs/sec
+monitor	Analyze and act with Claude	2026-04-09T15:37:04.1579431Z Cache Size: ~34 MB (35242132 B)
+monitor	Analyze and act with Claude	2026-04-09T15:37:04.1614348Z [command]/usr/bin/tar -xf /home/runner/work/_temp/4edd8976-d53a-4243-85e1-9249c60bade6/cache.tzst -P -C /home/runner/work/recommendations-service/recommendations-service --use-compress-program unzstd
+monitor	Analyze and act with Claude	2026-04-09T15:37:04.3589320Z Cache restored successfully
+monitor	Analyze and act with Claude	2026-04-09T15:37:04.3625434Z [command]/home/runner/.bun/bin/bun --revision
+monitor	Analyze and act with Claude	2026-04-09T15:37:04.3674402Z 1.3.6+d530ed993
+monitor	Analyze and act with Claude	2026-04-09T15:37:04.3685715Z Using a cached version of Bun: 1.3.6+d530ed993
+monitor	Analyze and act with Claude	2026-04-09T15:37:04.3818690Z ##[group]Run cd ${GITHUB_ACTION_PATH}
+monitor	Analyze and act with Claude	2026-04-09T15:37:04.3819017Z [36;1mcd ${GITHUB_ACTION_PATH}[0m
+monitor	Analyze and act with Claude	2026-04-09T15:37:04.3819304Z [36;1mbun install --production[0m
+monitor	Analyze and act with Claude	2026-04-09T15:37:04.3849090Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+monitor	Analyze and act with Claude	2026-04-09T15:37:04.3849466Z env:
+monitor	Analyze and act with Claude	2026-04-09T15:37:04.3850020Z   SLACK_WEBHOOK_URL: ***
+monitor	Analyze and act with Claude	2026-04-09T15:37:04.3850393Z   GH_TOKEN: ***
+monitor	Analyze and act with Claude	2026-04-09T15:37:04.3850607Z ##[endgroup]
+monitor	Analyze and act with Claude	2026-04-09T15:37:04.3934538Z bun install v1.3.6 (d530ed99)
+monitor	Analyze and act with Claude	2026-04-09T15:37:05.3120000Z 
+monitor	Analyze and act with Claude	2026-04-09T15:37:05.3121372Z + @actions/core@1.11.1
+monitor	Analyze and act with Claude	2026-04-09T15:37:05.3122251Z + @actions/github@6.0.1
+monitor	Analyze and act with Claude	2026-04-09T15:37:05.3124631Z + @anthropic-ai/claude-agent-sdk@0.2.52
+monitor	Analyze and act with Claude	2026-04-09T15:37:05.3125564Z + @modelcontextprotocol/sdk@1.16.0
+monitor	Analyze and act with Claude	2026-04-09T15:37:05.3126891Z + @octokit/graphql@8.2.2
+monitor	Analyze and act with Claude	2026-04-09T15:37:05.3127628Z + @octokit/rest@21.1.1
+monitor	Analyze and act with Claude	2026-04-09T15:37:05.3128736Z + @octokit/webhooks-types@7.6.1
+monitor	Analyze and act with Claude	2026-04-09T15:37:05.3130371Z + node-fetch@3.3.2
+monitor	Analyze and act with Claude	2026-04-09T15:37:05.3130918Z + shell-quote@1.8.3
+monitor	Analyze and act with Claude	2026-04-09T15:37:05.3131499Z + zod@3.25.76
+monitor	Analyze and act with Claude	2026-04-09T15:37:05.3131876Z 
+monitor	Analyze and act with Claude	2026-04-09T15:37:05.3132180Z 138 packages installed [920.00ms]
+monitor	Analyze and act with Claude	2026-04-09T15:37:05.3324229Z ##[group]Run bun run ${GITHUB_ACTION_PATH}/src/entrypoints/run.ts
+monitor	Analyze and act with Claude	2026-04-09T15:37:05.3324964Z [36;1mbun run ${GITHUB_ACTION_PATH}/src/entrypoints/run.ts[0m
+monitor	Analyze and act with Claude	2026-04-09T15:37:05.3359632Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+monitor	Analyze and act with Claude	2026-04-09T15:37:05.3359991Z env:
+monitor	Analyze and act with Claude	2026-04-09T15:37:05.3360502Z   SLACK_WEBHOOK_URL: ***
+monitor	Analyze and act with Claude	2026-04-09T15:37:05.3360887Z   GH_TOKEN: ***
+monitor	Analyze and act with Claude	2026-04-09T15:37:05.3361097Z   MODE: 
+monitor	Analyze and act with Claude	2026-04-09T15:37:05.3368401Z   PROMPT: DATE: 2026-04-09
+monitor	Analyze and act with Claude	REPO: customink/recommendations-service
+monitor	Analyze and act with Claude	TOTAL_ERRORS_24H: 0
+monitor	Analyze and act with Claude	CHANGE_PERCENT: 0
+monitor	Analyze and act with Claude	ERROR_GROUPS: 0
+monitor	Analyze and act with Claude	
+monitor	Analyze and act with Claude	## TASK 1: Read the digest
+monitor	Analyze and act with Claude	
+monitor	Analyze and act with Claude	Run: cat rollbar-digest.json
+monitor	Analyze and act with Claude	
+monitor	Analyze and act with Claude	The digest contains:
+monitor	Analyze and act with Claude	- `newrelic`: overall error counts and % change vs prior 24h
+monitor	Analyze and act with Claude	- `errors`: top error groups. Each has count, changePercent (null means no prior data), transactionName, requestUri.
+monitor	Analyze and act with Claude	  Top 5 also have `rollbar` enrichment with stack trace and correlationId.
+monitor	Analyze and act with Claude	
+monitor	Analyze and act with Claude	## TASK 2: Classify each error
+monitor	Analyze and act with Claude	
+monitor	Analyze and act with Claude	For each entry in `errors`, classify as:
+monitor	Analyze and act with Claude	- **NEW**: changePercent is null — no occurrences in the prior 24h window, brand new error
+monitor	Analyze and act with Claude	- **SPIKE**: changePercent > +50% and count > 10 — significant regression
+monitor	Analyze and act with Claude	- **STEADY**: present before, no significant change — known issue, no action
+monitor	Analyze and act with Claude	- **FIXABLE**: you can see a clear, low-risk code fix from the stack trace
+monitor	Analyze and act with Claude	
+monitor	Analyze and act with Claude	Skip / mark STEADY automatically:
+monitor	Analyze and act with Claude	- 4xx HTTP errors (400, 401, 403, 404, 422, 429) in errorMessage or errorClass
+monitor	Analyze and act with Claude	- Errors from external services (timeouts, third-party API failures)
+monitor	Analyze and act with Claude	
+monitor	Analyze and act with Claude	## TASK 3: Attempt code fix (ONLY for FIXABLE, HIGH confidence)
+monitor	Analyze and act with Claude	
+monitor	Analyze and act with Claude	Only attempt if:
+monitor	Analyze and act with Claude	- Classification is FIXABLE
+monitor	Analyze and act with Claude	- Stack trace points to a specific file in `src/`
+monitor	Analyze and act with Claude	- Fix is a null check, missing guard, or obvious defensive code
+monitor	Analyze and act with Claude	
+monitor	Analyze and act with Claude	If those conditions are met:
+monitor	Analyze and act with Claude	1. Read the relevant file(s) with Read/Grep tools
+monitor	Analyze and act with Claude	2. Write the minimal fix (no refactoring, no scope creep)
+monitor	Analyze and act with Claude	3. `git checkout -b RECO-812-rollbar-autofix-2026-04-09`
+monitor	Analyze and act with Claude	4. `git add <files> && git commit -m "RECO-812: fix <description> (auto-fix from rollbar monitor 2026-04-09)"`
+monitor	Analyze and act with Claude	5. `git push origin HEAD`
+monitor	Analyze and act with Claude	6. `gh pr create --title "RECO-812: fix <description> (rollbar auto-fix 2026-04-09)" --base main --body "<error details, stack trace, confidence level>"`
+monitor	Analyze and act with Claude	
+monitor	Analyze and act with Claude	If no FIXABLE items → skip entirely.
+monitor	Analyze and act with Claude	
+monitor	Analyze and act with Claude	## TASK 4: Post Slack report
+monitor	Analyze and act with Claude	
+monitor	Analyze and act with Claude	Always post, regardless of whether a fix was created.
+monitor	Analyze and act with Claude	
+monitor	Analyze and act with Claude	Build and POST the following JSON to $SLACK_WEBHOOK_URL using curl:
+monitor	Analyze and act with Claude	- Header: "Rollbar Monitor — 2026-04-09"
+monitor	Analyze and act with Claude	- Fields: total errors (24h) with change %, number of error groups
+monitor	Analyze and act with Claude	- Summary: list NEW and SPIKE errors with their counts, or "All clear — no new or spiking errors"
+monitor	Analyze and act with Claude	- Footer: PR link if one was created, otherwise "No auto-fix generated"
+monitor	Analyze and act with Claude	
+monitor	Analyze and act with Claude	Use this curl command:
+monitor	Analyze and act with Claude	curl -sf -X POST "$SLACK_WEBHOOK_URL" \
+monitor	Analyze and act with Claude	  -H "Content-Type: application/json" \
+monitor	Analyze and act with Claude	  -d '<your JSON payload>'
+monitor	Analyze and act with Claude	
+monitor	Analyze and act with Claude	2026-04-09T15:37:05.3376391Z   TRIGGER_PHRASE: @claude
+monitor	Analyze and act with Claude	2026-04-09T15:37:05.3376635Z   ASSIGNEE_TRIGGER: 
+monitor	Analyze and act with Claude	2026-04-09T15:37:05.3376854Z   LABEL_TRIGGER: claude
+monitor	Analyze and act with Claude	2026-04-09T15:37:05.3377068Z   BASE_BRANCH: 
+monitor	Analyze and act with Claude	2026-04-09T15:37:05.3377268Z   BRANCH_PREFIX: claude/
+monitor	Analyze and act with Claude	2026-04-09T15:37:05.3377494Z   BRANCH_NAME_TEMPLATE: 
+monitor	Analyze and act with Claude	2026-04-09T15:37:05.3377706Z   OVERRIDE_GITHUB_TOKEN: 
+monitor	Analyze and act with Claude	2026-04-09T15:37:05.3377932Z   ALLOWED_BOTS: 
+monitor	Analyze and act with Claude	2026-04-09T15:37:05.3378132Z   ALLOWED_NON_WRITE_USERS: 
+monitor	Analyze and act with Claude	2026-04-09T15:37:05.3378363Z   INCLUDE_COMMENTS_BY_ACTOR: 
+monitor	Analyze and act with Claude	2026-04-09T15:37:05.3378599Z   EXCLUDE_COMMENTS_BY_ACTOR: 
+monitor	Analyze and act with Claude	2026-04-09T15:37:05.3378821Z   GITHUB_RUN_ID: 24198934142
+monitor	Analyze and act with Claude	2026-04-09T15:37:05.3379053Z   USE_STICKY_COMMENT: false
+monitor	Analyze and act with Claude	2026-04-09T15:37:05.3379424Z   DEFAULT_WORKFLOW_TOKEN: ***
+monitor	Analyze and act with Claude	2026-04-09T15:37:05.3379670Z   USE_COMMIT_SIGNING: false
+monitor	Analyze and act with Claude	2026-04-09T15:37:05.3379894Z   SSH_SIGNING_KEY: 
+monitor	Analyze and act with Claude	2026-04-09T15:37:05.3380097Z   BOT_ID: 41898282
+monitor	Analyze and act with Claude	2026-04-09T15:37:05.3380296Z   BOT_NAME: claude[bot]
+monitor	Analyze and act with Claude	2026-04-09T15:37:05.3380519Z   TRACK_PROGRESS: false
+monitor	Analyze and act with Claude	2026-04-09T15:37:05.3380729Z   INCLUDE_FIX_LINKS: true
+monitor	Analyze and act with Claude	2026-04-09T15:37:05.3380957Z   ADDITIONAL_PERMISSIONS: 
+monitor	Analyze and act with Claude	2026-04-09T15:37:05.3381607Z   CLAUDE_ARGS: --allowed-tools "Bash(cat:*),Bash(jq:*),Bash(git checkout:*),Bash(git add:*),Bash(git commit:*),Bash(git push:*),Bash(gh pr create:*),Bash(curl:*),Read,Glob,Grep,Edit,Write"
+monitor	Analyze and act with Claude	2026-04-09T15:37:05.3392789Z   ALL_INPUTS: {
+monitor	Analyze and act with Claude	  "anthropic_api_key": "***",
+monitor	Analyze and act with Claude	  "claude_args": "--allowed-tools \"Bash(cat:*),Bash(jq:*),Bash(git checkout:*),Bash(git add:*),Bash(git commit:*),Bash(git push:*),Bash(gh pr create:*),Bash(curl:*),Read,Glob,Grep,Edit,Write\"",
+monitor	Analyze and act with Claude	  "prompt": "DATE: 2026-04-09\nREPO: customink/recommendations-service\nTOTAL_ERRORS_24H: 0\nCHANGE_PERCENT: 0\nERROR_GROUPS: 0\n\n## TASK 1: Read the digest\n\nRun: cat rollbar-digest.json\n\nThe digest contains:\n- `newrelic`: overall error counts and % change vs prior 24h\n- `errors`: top error groups. Each has count, changePercent (null means no prior data), transactionName, requestUri.\n  Top 5 also have `rollbar` enrichment with stack trace and correlationId.\n\n## TASK 2: Classify each error\n\nFor each entry in `errors`, classify as:\n- **NEW**: changePercent is null — no occurrences in the prior 24h window, brand new error\n- **SPIKE**: changePercent > +50% and count > 10 — significant regression\n- **STEADY**: present before, no significant change — known issue, no action\n- **FIXABLE**: you can see a clear, low-risk code fix from the stack trace\n\nSkip / mark STEADY automatically:\n- 4xx HTTP errors (400, 401, 403, 404, 422, 429) in errorMessage or errorClass\n- Errors from external services (timeouts, third-party API failures)\n\n## TASK 3: Attempt code fix (ONLY for FIXABLE, HIGH confidence)\n\nOnly attempt if:\n- Classification is FIXABLE\n- Stack trace points to a specific file in `src/`\n- Fix is a null check, missing guard, or obvious defensive code\n\nIf those conditions are met:\n1. Read the relevant file(s) with Read/Grep tools\n2. Write the minimal fix (no refactoring, no scope creep)\n3. `git checkout -b RECO-812-rollbar-autofix-2026-04-09`\n4. `git add <files> && git commit -m \"RECO-812: fix <description> (auto-fix from rollbar monitor 2026-04-09)\"`\n5. `git push origin HEAD`\n6. `gh pr create --title \"RECO-812: fix <description> (rollbar auto-fix 2026-04-09)\" --base main --body \"<error details, stack trace, confidence level>\"`\n\nIf no FIXABLE items → skip entirely.\n\n## TASK 4: Post Slack report\n\nAlways post, regardless of whether a fix was created.\n\nBuild and POST the following JSON to $SLACK_WEBHOOK_URL using curl:\n- Header: \"Rollbar Monitor — 2026-04-09\"\n- Fields: total errors (24h) with change %, number of error groups\n- Summary: list NEW and SPIKE errors with their counts, or \"All clear — no new or spiking errors\"\n- Footer: PR link if one was created, otherwise \"No auto-fix generated\"\n\nUse this curl command:\ncurl -sf -X POST \"$SLACK_WEBHOOK_URL\" \\\n  -H \"Content-Type: application/json\" \\\n  -d '<your JSON payload>'\n",
+monitor	Analyze and act with Claude	  "trigger_phrase": "@claude",
+monitor	Analyze and act with Claude	  "assignee_trigger": "",
+monitor	Analyze and act with Claude	  "label_trigger": "claude",
+monitor	Analyze and act with Claude	  "base_branch": "",
+monitor	Analyze and act with Claude	  "branch_prefix": "claude/",
+monitor	Analyze and act with Claude	  "branch_name_template": "",
+monitor	Analyze and act with Claude	  "allowed_bots": "",
+monitor	Analyze and act with Claude	  "allowed_non_write_users": "",
+monitor	Analyze and act with Claude	  "include_comments_by_actor": "",
+monitor	Analyze and act with Claude	  "exclude_comments_by_actor": "",
+monitor	Analyze and act with Claude	  "settings": "",
+monitor	Analyze and act with Claude	  "claude_code_oauth_token": "",
+monitor	Analyze and act with Claude	  "github_token": "",
+monitor	Analyze and act with Claude	  "use_bedrock": "false",
+monitor	Analyze and act with Claude	  "use_vertex": "false",
+monitor	Analyze and act with Claude	  "use_foundry": "false",
+monitor	Analyze and act with Claude	  "additional_permissions": "",
+monitor	Analyze and act with Claude	  "use_sticky_comment": "false",
+monitor	Analyze and act with Claude	  "use_commit_signing": "false",
+monitor	Analyze and act with Claude	  "ssh_signing_key": "",
+monitor	Analyze and act with Claude	  "bot_id": "41898282",
+monitor	Analyze and act with Claude	  "bot_name": "claude[bot]",
+monitor	Analyze and act with Claude	  "track_progress": "false",
+monitor	Analyze and act with Claude	  "include_fix_links": "true",
+monitor	Analyze and act with Claude	  "path_to_claude_code_executable": "",
+monitor	Analyze and act with Claude	  "path_to_bun_executable": "",
+monitor	Analyze and act with Claude	  "display_report": "true",
+monitor	Analyze and act with Claude	  "show_full_output": "false",
+monitor	Analyze and act with Claude	  "plugins": "",
+monitor	Analyze and act with Claude	  "plugin_marketplaces": ""
+monitor	Analyze and act with Claude	}
+monitor	Analyze and act with Claude	2026-04-09T15:37:05.3404117Z   INPUT_PROMPT_FILE: /home/runner/work/_temp/claude-prompts/claude-prompt.txt
+monitor	Analyze and act with Claude	2026-04-09T15:37:05.3404512Z   INPUT_SETTINGS: 
+monitor	Analyze and act with Claude	2026-04-09T15:37:05.3405119Z   INPUT_EXPERIMENTAL_SLASH_COMMANDS_DIR: /home/runner/work/_actions/anthropics/claude-code-action/35a9e0292d36f1186f5d842b14eb575074e8b450/slash-commands
+monitor	Analyze and act with Claude	2026-04-09T15:37:05.3405763Z   INPUT_PATH_TO_CLAUDE_CODE_EXECUTABLE: 
+monitor	Analyze and act with Claude	2026-04-09T15:37:05.3406039Z   INPUT_PATH_TO_BUN_EXECUTABLE: 
+monitor	Analyze and act with Claude	2026-04-09T15:37:05.3406406Z   INPUT_SHOW_FULL_OUTPUT: false
+monitor	Analyze and act with Claude	2026-04-09T15:37:05.3406653Z   DISPLAY_REPORT: true
+monitor	Analyze and act with Claude	2026-04-09T15:37:05.3406875Z   INPUT_PLUGINS: 
+monitor	Analyze and act with Claude	2026-04-09T15:37:05.3407088Z   INPUT_PLUGIN_MARKETPLACES: 
+monitor	Analyze and act with Claude	2026-04-09T15:37:05.3407337Z   PATH_TO_CLAUDE_CODE_EXECUTABLE: 
+monitor	Analyze and act with Claude	2026-04-09T15:37:05.3407579Z   NODE_VERSION: 
+monitor	Analyze and act with Claude	2026-04-09T15:37:05.3408175Z   ANTHROPIC_API_KEY: ***
+monitor	Analyze and act with Claude	2026-04-09T15:37:05.3408408Z   CLAUDE_CODE_OAUTH_TOKEN: 
+monitor	Analyze and act with Claude	2026-04-09T15:37:05.3408637Z   ANTHROPIC_BASE_URL: 
+monitor	Analyze and act with Claude	2026-04-09T15:37:05.3408858Z   ANTHROPIC_CUSTOM_HEADERS: 
+monitor	Analyze and act with Claude	2026-04-09T15:37:05.3409091Z   CLAUDE_CODE_USE_BEDROCK: 
+monitor	Analyze and act with Claude	2026-04-09T15:37:05.3409311Z   CLAUDE_CODE_USE_VERTEX: 
+monitor	Analyze and act with Claude	2026-04-09T15:37:05.3409531Z   CLAUDE_CODE_USE_FOUNDRY: 
+monitor	Analyze and act with Claude	2026-04-09T15:37:05.3409927Z   AWS_REGION: 
+monitor	Analyze and act with Claude	2026-04-09T15:37:05.3410121Z   AWS_ACCESS_KEY_ID: 
+monitor	Analyze and act with Claude	2026-04-09T15:37:05.3410331Z   AWS_SECRET_ACCESS_KEY: 
+monitor	Analyze and act with Claude	2026-04-09T15:37:05.3410547Z   AWS_SESSION_TOKEN: 
+monitor	Analyze and act with Claude	2026-04-09T15:37:05.3410753Z   AWS_BEARER_TOKEN_BEDROCK: 
+monitor	Analyze and act with Claude	2026-04-09T15:37:05.3410985Z   ANTHROPIC_BEDROCK_BASE_URL: 
+monitor	Analyze and act with Claude	2026-04-09T15:37:05.3411240Z   ANTHROPIC_VERTEX_PROJECT_ID: 
+monitor	Analyze and act with Claude	2026-04-09T15:37:05.3411488Z   CLOUD_ML_REGION: 
+monitor	Analyze and act with Claude	2026-04-09T15:37:05.3411718Z   GOOGLE_APPLICATION_CREDENTIALS: 
+monitor	Analyze and act with Claude	2026-04-09T15:37:05.3411988Z   ANTHROPIC_VERTEX_BASE_URL: 
+monitor	Analyze and act with Claude	2026-04-09T15:37:05.3412233Z   VERTEX_REGION_CLAUDE_3_5_HAIKU: 
+monitor	Analyze and act with Claude	2026-04-09T15:37:05.3412479Z   VERTEX_REGION_CLAUDE_3_5_SONNET: 
+monitor	Analyze and act with Claude	2026-04-09T15:37:05.3412732Z   VERTEX_REGION_CLAUDE_3_7_SONNET: 
+monitor	Analyze and act with Claude	2026-04-09T15:37:05.3412975Z   ANTHROPIC_FOUNDRY_RESOURCE: 
+monitor	Analyze and act with Claude	2026-04-09T15:37:05.3413211Z   ANTHROPIC_FOUNDRY_BASE_URL: 
+monitor	Analyze and act with Claude	2026-04-09T15:37:05.3413444Z   ANTHROPIC_DEFAULT_SONNET_MODEL: 
+monitor	Analyze and act with Claude	2026-04-09T15:37:05.3413705Z   ANTHROPIC_DEFAULT_HAIKU_MODEL: 
+monitor	Analyze and act with Claude	2026-04-09T15:37:05.3413974Z   ANTHROPIC_DEFAULT_OPUS_MODEL: 
+monitor	Analyze and act with Claude	2026-04-09T15:37:05.3414228Z   CLAUDE_CODE_ENABLE_TELEMETRY: 
+monitor	Analyze and act with Claude	2026-04-09T15:37:05.3414465Z   OTEL_METRICS_EXPORTER: 
+monitor	Analyze and act with Claude	2026-04-09T15:37:05.3414694Z   OTEL_LOGS_EXPORTER: 
+monitor	Analyze and act with Claude	2026-04-09T15:37:05.3414920Z   OTEL_EXPORTER_OTLP_PROTOCOL: 
+monitor	Analyze and act with Claude	2026-04-09T15:37:05.3415162Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+monitor	Analyze and act with Claude	2026-04-09T15:37:05.3415398Z   OTEL_EXPORTER_OTLP_HEADERS: 
+monitor	Analyze and act with Claude	2026-04-09T15:37:05.3415637Z   OTEL_METRIC_EXPORT_INTERVAL: 
+monitor	Analyze and act with Claude	2026-04-09T15:37:05.3416001Z   OTEL_LOGS_EXPORT_INTERVAL: 
+monitor	Analyze and act with Claude	2026-04-09T15:37:05.3416356Z   OTEL_RESOURCE_ATTRIBUTES: 
+monitor	Analyze and act with Claude	2026-04-09T15:37:05.3416587Z ##[endgroup]
+monitor	Analyze and act with Claude	2026-04-09T15:37:05.5239750Z Auto-detected mode: agent for event: workflow_dispatch
+monitor	Analyze and act with Claude	2026-04-09T15:37:05.5242158Z Requesting OIDC token...
+monitor	Analyze and act with Claude	2026-04-09T15:37:05.5244036Z Attempt 1 of 3...
+monitor	Analyze and act with Claude	2026-04-09T15:37:05.5252556Z Failed to get OIDC token: 66 |                 const id_token = yield OidcClient.getCall(id_token_url);
+monitor	Analyze and act with Claude	2026-04-09T15:37:05.5254916Z Retrying in 5 seconds...
+monitor	Analyze and act with Claude	2026-04-09T15:37:05.5257015Z 67 |                 (0, core_1.setSecret)(id_token);
+monitor	Analyze and act with Claude	2026-04-09T15:37:05.5258778Z 68 |                 return id_token;
+monitor	Analyze and act with Claude	2026-04-09T15:37:05.5260305Z 69 |             }
+monitor	Analyze and act with Claude	2026-04-09T15:37:05.5261813Z 70 |             catch (error) {
+monitor	Analyze and act with Claude	2026-04-09T15:37:05.5263568Z 71 |                 throw new Error(`Error message: ${error.message}`);
+monitor	Analyze and act with Claude	2026-04-09T15:37:05.5265288Z                                ^
+monitor	Analyze and act with Claude	2026-04-09T15:37:05.5267349Z error: Error message: Unable to get ACTIONS_ID_TOKEN_REQUEST_URL env variable
+monitor	Analyze and act with Claude	2026-04-09T15:37:05.5270043Z       at <anonymous> (/home/runner/work/_actions/anthropics/claude-code-action/35a9e0292d36f1186f5d842b14eb575074e8b450/node_modules/@actions/core/lib/oidc-utils.js:71:27)
+monitor	Analyze and act with Claude	2026-04-09T15:37:05.5274268Z       at <anonymous> (/home/runner/work/_actions/anthropics/claude-code-action/35a9e0292d36f1186f5d842b14eb575074e8b450/node_modules/@actions/core/lib/oidc-utils.js:8:71)
+monitor	Analyze and act with Claude	2026-04-09T15:37:05.5277605Z       at new Promise (1:11)
+monitor	Analyze and act with Claude	2026-04-09T15:37:05.5278918Z       at <anonymous> (/home/runner/work/_actions/anthropics/claude-code-action/35a9e0292d36f1186f5d842b14eb575074e8b450/node_modules/@actions/core/lib/oidc-utils.js:4:12)
+monitor	Analyze and act with Claude	2026-04-09T15:37:05.5280991Z       at <anonymous> (/home/runner/work/_actions/anthropics/claude-code-action/35a9e0292d36f1186f5d842b14eb575074e8b450/node_modules/@actions/core/lib/core.js:319:46)
+monitor	Analyze and act with Claude	2026-04-09T15:37:05.5282931Z       at <anonymous> (/home/runner/work/_actions/anthropics/claude-code-action/35a9e0292d36f1186f5d842b14eb575074e8b450/node_modules/@actions/core/lib/core.js:31:71)
+monitor	Analyze and act with Claude	2026-04-09T15:37:05.5284026Z       at new Promise (1:11)
+monitor	Analyze and act with Claude	2026-04-09T15:37:05.5285209Z       at <anonymous> (/home/runner/work/_actions/anthropics/claude-code-action/35a9e0292d36f1186f5d842b14eb575074e8b450/node_modules/@actions/core/lib/core.js:27:12)
+monitor	Analyze and act with Claude	2026-04-09T15:37:05.5287222Z       at getOidcToken (/home/runner/work/_actions/anthropics/claude-code-action/35a9e0292d36f1186f5d842b14eb575074e8b450/src/github/token.ts:15:34)
+monitor	Analyze and act with Claude	2026-04-09T15:37:05.5288884Z       at getOidcToken (/home/runner/work/_actions/anthropics/claude-code-action/35a9e0292d36f1186f5d842b14eb575074e8b450/src/github/token.ts:13:28)
+monitor	Analyze and act with Claude	2026-04-09T15:37:05.5290191Z 
+monitor	Analyze and act with Claude	2026-04-09T15:37:05.5299692Z Attempt 1 failed: Could not fetch an OIDC token. Did you remember to add `id-token: write` to your workflow permissions?
+monitor	Analyze and act with Claude	2026-04-09T15:37:10.5255730Z Attempt 2 of 3...
+monitor	Analyze and act with Claude	2026-04-09T15:37:10.5259905Z Failed to get OIDC token: 66 |                 const id_token = yield OidcClient.getCall(id_token_url);
+monitor	Analyze and act with Claude	2026-04-09T15:37:10.5260827Z 67 |                 (0, core_1.setSecret)(id_token);
+monitor	Analyze and act with Claude	2026-04-09T15:37:10.5261363Z 68 |                 return id_token;
+monitor	Analyze and act with Claude	2026-04-09T15:37:10.5261765Z 69 |             }
+monitor	Analyze and act with Claude	2026-04-09T15:37:10.5262140Z 70 |             catch (error) {
+monitor	Analyze and act with Claude	2026-04-09T15:37:10.5262744Z 71 |                 throw new Error(`Error message: ${error.message}`);
+monitor	Analyze and act with Claude	2026-04-09T15:37:10.5263303Z                                ^
+monitor	Analyze and act with Claude	2026-04-09T15:37:10.5263943Z error: Error message: Unable to get ACTIONS_ID_TOKEN_REQUEST_URL env variable
+monitor	Analyze and act with Claude	2026-04-09T15:37:10.5264881Z       at <anonymous> (/home/runner/work/_actions/anthropics/claude-code-action/35a9e0292d36f1186f5d842b14eb575074e8b450/node_modules/@actions/core/lib/oidc-utils.js:71:27)
+monitor	Analyze and act with Claude	2026-04-09T15:37:10.5266324Z       at <anonymous> (/home/runner/work/_actions/anthropics/claude-code-action/35a9e0292d36f1186f5d842b14eb575074e8b450/node_modules/@actions/core/lib/oidc-utils.js:8:71)
+monitor	Analyze and act with Claude	2026-04-09T15:37:10.5267041Z       at new Promise (1:11)
+monitor	Analyze and act with Claude	2026-04-09T15:37:10.5267781Z       at <anonymous> (/home/runner/work/_actions/anthropics/claude-code-action/35a9e0292d36f1186f5d842b14eb575074e8b450/node_modules/@actions/core/lib/oidc-utils.js:4:12)
+monitor	Analyze and act with Claude	2026-04-09T15:37:10.5269375Z       at <anonymous> (/home/runner/work/_actions/anthropics/claude-code-action/35a9e0292d36f1186f5d842b14eb575074e8b450/node_modules/@actions/core/lib/core.js:319:46)
+monitor	Analyze and act with Claude	2026-04-09T15:37:10.5270520Z       at <anonymous> (/home/runner/work/_actions/anthropics/claude-code-action/35a9e0292d36f1186f5d842b14eb575074e8b450/node_modules/@actions/core/lib/core.js:31:71)
+monitor	Analyze and act with Claude	2026-04-09T15:37:10.5271191Z       at new Promise (1:11)
+monitor	Analyze and act with Claude	2026-04-09T15:37:10.5271889Z       at <anonymous> (/home/runner/work/_actions/anthropics/claude-code-action/35a9e0292d36f1186f5d842b14eb575074e8b450/node_modules/@actions/core/lib/core.js:27:12)
+monitor	Analyze and act with Claude	2026-04-09T15:37:10.5272963Z       at getOidcToken (/home/runner/work/_actions/anthropics/claude-code-action/35a9e0292d36f1186f5d842b14eb575074e8b450/src/github/token.ts:15:34)
+monitor	Analyze and act with Claude	2026-04-09T15:37:10.5273998Z       at getOidcToken (/home/runner/work/_actions/anthropics/claude-code-action/35a9e0292d36f1186f5d842b14eb575074e8b450/src/github/token.ts:13:28)
+monitor	Analyze and act with Claude	2026-04-09T15:37:10.5275055Z       at async setupGitHubToken (/home/runner/work/_actions/anthropics/claude-code-action/35a9e0292d36f1186f5d842b14eb575074e8b450/src/github/token.ts:138:27)
+monitor	Analyze and act with Claude	2026-04-09T15:37:10.5276310Z       at async run (/home/runner/work/_actions/anthropics/claude-code-action/35a9e0292d36f1186f5d842b14eb575074e8b450/src/entrypoints/run.ts:149:27)
+monitor	Analyze and act with Claude	2026-04-09T15:37:10.5276885Z 
+monitor	Analyze and act with Claude	2026-04-09T15:37:10.5277370Z Attempt 2 failed: Could not fetch an OIDC token. Did you remember to add `id-token: write` to your workflow permissions?
+monitor	Analyze and act with Claude	2026-04-09T15:37:10.5277903Z Retrying in 10 seconds...
+monitor	Analyze and act with Claude	2026-04-09T15:37:20.5264177Z Attempt 3 of 3...
+monitor	Analyze and act with Claude	2026-04-09T15:37:20.5268087Z Failed to get OIDC token: 66 |                 const id_token = yield OidcClient.getCall(id_token_url);
+monitor	Analyze and act with Claude	2026-04-09T15:37:20.5269491Z 67 |                 (0, core_1.setSecret)(id_token);
+monitor	Analyze and act with Claude	2026-04-09T15:37:20.5270567Z 68 |                 return id_token;
+monitor	Analyze and act with Claude	2026-04-09T15:37:20.5271958Z 69 |             }
+monitor	Analyze and act with Claude	2026-04-09T15:37:20.5272310Z 70 |             catch (error) {
+monitor	Analyze and act with Claude	2026-04-09T15:37:20.5272872Z 71 |                 throw new Error(`Error message: ${error.message}`);
+monitor	Analyze and act with Claude	2026-04-09T15:37:20.5273396Z                                ^
+monitor	Analyze and act with Claude	2026-04-09T15:37:20.5274066Z error: Error message: Unable to get ACTIONS_ID_TOKEN_REQUEST_URL env variable
+monitor	Analyze and act with Claude	2026-04-09T15:37:20.5275517Z       at <anonymous> (/home/runner/work/_actions/anthropics/claude-code-action/35a9e0292d36f1186f5d842b14eb575074e8b450/node_modules/@actions/core/lib/oidc-utils.js:71:27)
+monitor	Analyze and act with Claude	2026-04-09T15:37:20.5278241Z       at <anonymous> (/home/runner/work/_actions/anthropics/claude-code-action/35a9e0292d36f1186f5d842b14eb575074e8b450/node_modules/@actions/core/lib/oidc-utils.js:8:71)
+monitor	Analyze and act with Claude	2026-04-09T15:37:20.5279358Z       at new Promise (1:11)
+monitor	Analyze and act with Claude	2026-04-09T15:37:20.5280547Z       at <anonymous> (/home/runner/work/_actions/anthropics/claude-code-action/35a9e0292d36f1186f5d842b14eb575074e8b450/node_modules/@actions/core/lib/oidc-utils.js:4:12)
+monitor	Analyze and act with Claude	2026-04-09T15:37:20.5282505Z       at <anonymous> (/home/runner/work/_actions/anthropics/claude-code-action/35a9e0292d36f1186f5d842b14eb575074e8b450/node_modules/@actions/core/lib/core.js:319:46)
+monitor	Analyze and act with Claude	2026-04-09T15:37:20.5284367Z       at <anonymous> (/home/runner/work/_actions/anthropics/claude-code-action/35a9e0292d36f1186f5d842b14eb575074e8b450/node_modules/@actions/core/lib/core.js:31:71)
+monitor	Analyze and act with Claude	2026-04-09T15:37:20.5287306Z       at new Promise (1:11)
+monitor	Analyze and act with Claude	2026-04-09T15:37:20.5288475Z       at <anonymous> (/home/runner/work/_actions/anthropics/claude-code-action/35a9e0292d36f1186f5d842b14eb575074e8b450/node_modules/@actions/core/lib/core.js:27:12)
+monitor	Analyze and act with Claude	2026-04-09T15:37:20.5290195Z       at getOidcToken (/home/runner/work/_actions/anthropics/claude-code-action/35a9e0292d36f1186f5d842b14eb575074e8b450/src/github/token.ts:15:34)
+monitor	Analyze and act with Claude	2026-04-09T15:37:20.5291788Z       at getOidcToken (/home/runner/work/_actions/anthropics/claude-code-action/35a9e0292d36f1186f5d842b14eb575074e8b450/src/github/token.ts:13:28)
+monitor	Analyze and act with Claude	2026-04-09T15:37:20.5293700Z       at async setupGitHubToken (/home/runner/work/_actions/anthropics/claude-code-action/35a9e0292d36f1186f5d842b14eb575074e8b450/src/github/token.ts:138:27)
+monitor	Analyze and act with Claude	2026-04-09T15:37:20.5295332Z       at async run (/home/runner/work/_actions/anthropics/claude-code-action/35a9e0292d36f1186f5d842b14eb575074e8b450/src/entrypoints/run.ts:149:27)
+monitor	Analyze and act with Claude	2026-04-09T15:37:20.5296324Z 
+monitor	Analyze and act with Claude	2026-04-09T15:37:20.5297091Z Attempt 3 failed: Could not fetch an OIDC token. Did you remember to add `id-token: write` to your workflow permissions?
+monitor	Analyze and act with Claude	2026-04-09T15:37:20.5297998Z Operation failed after 3 attempts
+monitor	Analyze and act with Claude	2026-04-09T15:37:20.5323182Z ##[error]Action failed with error: Could not fetch an OIDC token. Did you remember to add `id-token: write` to your workflow permissions?
+monitor	Analyze and act with Claude	2026-04-09T15:37:20.5356446Z ##[error]Process completed with exit code 1.
+monitor	Analyze and act with Claude	2026-04-09T15:37:20.5414553Z ##[group]Run curl -L \
+monitor	Analyze and act with Claude	2026-04-09T15:37:20.5414811Z [36;1mcurl -L \[0m
+monitor	Analyze and act with Claude	2026-04-09T15:37:20.5415039Z [36;1m  -X DELETE \[0m
+monitor	Analyze and act with Claude	2026-04-09T15:37:20.5415335Z [36;1m  -H "Accept: application/vnd.github+json" \[0m
+monitor	Analyze and act with Claude	2026-04-09T15:37:20.5415712Z [36;1m  -H "Authorization: Bearer " \[0m
+monitor	Analyze and act with Claude	2026-04-09T15:37:20.5416032Z [36;1m  -H "X-GitHub-Api-Version: 2022-11-28" \[0m
+monitor	Analyze and act with Claude	2026-04-09T15:37:20.5416730Z [36;1m  ${GITHUB_API_URL:-https://api.github.com}/installation/token[0m
+monitor	Analyze and act with Claude	2026-04-09T15:37:20.5444818Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+monitor	Analyze and act with Claude	2026-04-09T15:37:20.5445152Z env:
+monitor	Analyze and act with Claude	2026-04-09T15:37:20.5445627Z   SLACK_WEBHOOK_URL: ***
+monitor	Analyze and act with Claude	2026-04-09T15:37:20.5446006Z   GH_TOKEN: ***
+monitor	Analyze and act with Claude	2026-04-09T15:37:20.5446468Z ##[endgroup]
+monitor	Analyze and act with Claude	2026-04-09T15:37:20.5558185Z   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+monitor	Analyze and act with Claude	2026-04-09T15:37:20.5559436Z                                  Dload  Upload   Total   Spent    Left  Speed
+monitor	Analyze and act with Claude	2026-04-09T15:37:20.5560367Z 
+monitor	Analyze and act with Claude	2026-04-09T15:37:20.6228539Z   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+monitor	Analyze and act with Claude	2026-04-09T15:37:20.6231787Z 100   112    0   112    0     0   1652      0 --:--:-- --:--:-- --:--:--  1671
+monitor	Analyze and act with Claude	2026-04-09T15:37:20.6235535Z {
+monitor	Analyze and act with Claude	2026-04-09T15:37:20.6237157Z   "message": "Bad credentials",
+monitor	Analyze and act with Claude	2026-04-09T15:37:20.6238253Z   "documentation_url": "https://docs.github.com/rest",
+monitor	Analyze and act with Claude	2026-04-09T15:37:20.6239133Z   "status": "401"
+monitor	Analyze and act with Claude	2026-04-09T15:37:20.6254124Z }

@@ -1,0 +1,26 @@
+[
+  {
+    "content": "Update root.loader.ts to properly return CSRF token",
+    "status": "completed",
+    "priority": "high",
+    "id": "1"
+  },
+  {
+    "content": "Migrate app.tsx to use createBrowserRouter for proper loader support",
+    "status": "completed",
+    "priority": "high",
+    "id": "2"
+  },
+  {
+    "content": "Update API helper to use CSRF token from loader data",
+    "status": "completed",
+    "priority": "medium",
+    "id": "3"
+  },
+  {
+    "content": "Create utility hook for accessing CSRF token",
+    "status": "completed",
+    "priority": "medium",
+    "id": "4"
+  }
+]

@@ -1,0 +1,25 @@
+npm run start:backend:dev
+
+> no-name-proj@1.0.0 start:backend:dev
+> npm --prefix backend run start:dev
+
+
+> webapp-backend@0.0.1 start:dev
+> nest start --watch --webpack --webpackPath webpack.config.js
+
+
+ Info  Webpack is building your sources...
+
+webpack 5.104.1 compiled successfully in 1218 ms
+[Nest] 73457  - 03/21/2026, 11:20:36 AM     LOG [EnvConfigService] Fetching env var: PORT
+[Nest] 73457  - 03/21/2026, 11:20:36 AM     LOG [EnvConfigService] Fetching env var: GLOBAL_PREFIX
+[Nest] 73457  - 03/21/2026, 11:20:36 AM     LOG [EnvConfigService] Fetching env var: NODE_ENV
+[Nest] 73457  - 03/21/2026, 11:20:36 AM     LOG [NestFactory] Starting Nest application... +38ms
+[Nest] 73457  - 03/21/2026, 11:20:36 AM     LOG [InstanceLoader] AppModule dependencies initialized +4ms
+[Nest] 73457  - 03/21/2026, 11:20:36 AM     LOG [InstanceLoader] ConfigHostModule dependencies initialized +0ms
+[Nest] 73457  - 03/21/2026, 11:20:36 AM     LOG [InstanceLoader] HttpModule dependencies initialized +0ms
+[Nest] 73457  - 03/21/2026, 11:20:36 AM     LOG [InstanceLoader] ConfigModule dependencies initialized +0ms
+[Nest] 73457  - 03/21/2026, 11:20:36 AM     LOG [InstanceLoader] TerminusModule dependencies initialized +0ms
+[Nest] 73457  - 03/21/2026, 11:20:36 AM     LOG [InstanceLoader] EnvConfigModule dependencies initialized +0ms
+[Nest] 73457  - 03/21/2026, 11:20:36 AM     LOG [InstanceLoader] HealthModule dependencies initialized +0ms
+[Nest] 73457  - 03/21/2026, 11:20:36 AM   ERROR [PackageLoader] The "@fastify/static" package is missing. Please, make sure to install it to take advantage of FastifyAdapter.useStaticAssets().

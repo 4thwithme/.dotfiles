@@ -1,0 +1,22 @@
+  ~/Documents/repo/recommendations-service   RECO-0-improve-CC-v2 *1 !1 ❯ cat /tmp/claude-notify-debug.log                                                                                               01:06:35
+Wed Mar 25 01:03:38 CET 2026 socket=/private/tmp/tmux-501/default target=reco:2 session=reco
+client=/dev/ttys000
+switch-client result=
+Wed Mar 25 01:05:02 CET 2026 socket=/private/tmp/tmux-501/default target=reco:2 session=reco
+client=/dev/ttys000
+switch-client result=
+Wed Mar 25 01:05:15 CET 2026 socket=/private/tmp/tmux-501/default target=reco:1 session=reco
+client=/dev/ttys000
+switch-client result=
+Wed Mar 25 01:05:49 CET 2026 socket=/private/tmp/tmux-501/default target=reco:1 session=reco
+client=/dev/ttys000
+switch-client result=
+Wed Mar 25 01:06:08 CET 2026 socket=/private/tmp/tmux-501/default target=reco:2 session=reco
+client=/dev/ttys000
+switch-client result=
+Wed Mar 25 01:06:56 CET 2026 socket=/private/tmp/tmux-501/default target=reco:2 session=reco
+client=/dev/ttys000
+switch-client result=
+Wed Mar 25 01:07:04 CET 2026 socket=/private/tmp/tmux-501/default target=reco:1 session=reco
+client=/dev/ttys000
+switch-client result=

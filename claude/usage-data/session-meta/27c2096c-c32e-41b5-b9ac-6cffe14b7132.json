@@ -1,0 +1,55 @@
+{
+  "session_id": "27c2096c-c32e-41b5-b9ac-6cffe14b7132",
+  "project_path": "/Users/4thwithme/Documents/repo/recommendations-service",
+  "start_time": "2026-02-18T10:22:41.217Z",
+  "duration_minutes": 33,
+  "user_message_count": 4,
+  "assistant_message_count": 61,
+  "tool_counts": {
+    "Read": 17,
+    "Glob": 5,
+    "Grep": 1,
+    "Bash": 4,
+    "Write": 1,
+    "Edit": 8
+  },
+  "languages": {
+    "TypeScript": 25
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 83,
+  "output_tokens": 4008,
+  "first_prompt": "hey bro we need to analyze @src/modules/rest/related-products/ endpoint  that returns recommendations  we need to measure real performance of  DB queries...take real product from our DB and make sxrip…",
+  "user_interruptions": 0,
+  "user_response_times": [
+    1314.096,
+    242.574,
+    37.932
+  ],
+  "tool_errors": 3,
+  "tool_error_categories": {
+    "Command Failed": 1,
+    "Edit Failed": 1,
+    "File Changed": 1
+  },
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 275,
+  "lines_removed": 28,
+  "files_modified": 1,
+  "message_hours": [
+    11,
+    11,
+    11,
+    11
+  ],
+  "user_message_timestamps": [
+    "2026-02-18T10:22:41.217Z",
+    "2026-02-18T10:49:28.340Z",
+    "2026-02-18T10:54:05.376Z",
+    "2026-02-18T10:54:56.199Z"
+  ]
+}

@@ -1,0 +1,38 @@
+[
+  {
+    "content": "Create Redis metrics service for daily counters",
+    "status": "in_progress",
+    "priority": "high",
+    "id": "1"
+  },
+  {
+    "content": "Define Redis key patterns for metrics",
+    "status": "pending",
+    "priority": "high",
+    "id": "2"
+  },
+  {
+    "content": "Update related-products controller to use Redis metrics",
+    "status": "pending",
+    "priority": "high",
+    "id": "3"
+  },
+  {
+    "content": "Update performance monitor to track data sources",
+    "status": "pending",
+    "priority": "medium",
+    "id": "4"
+  },
+  {
+    "content": "Update algolia service to track source metrics",
+    "status": "pending",
+    "priority": "medium",
+    "id": "5"
+  },
+  {
+    "content": "Remove excessive Rollbar logging",
+    "status": "pending",
+    "priority": "high",
+    "id": "6"
+  }
+]

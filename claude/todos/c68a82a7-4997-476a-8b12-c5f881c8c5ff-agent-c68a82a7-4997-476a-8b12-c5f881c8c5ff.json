@@ -1,0 +1,26 @@
+[
+  {
+    "content": "Check app.module.ts to see how CSRF middleware is applied",
+    "status": "completed",
+    "priority": "high",
+    "id": "1"
+  },
+  {
+    "content": "Identify the double response issue in CSRF middleware",
+    "status": "completed",
+    "priority": "high",
+    "id": "2"
+  },
+  {
+    "content": "Fix the middleware to prevent double responses",
+    "status": "in_progress",
+    "priority": "high",
+    "id": "3"
+  },
+  {
+    "content": "Test both regular and hard reload",
+    "status": "pending",
+    "priority": "medium",
+    "id": "4"
+  }
+]

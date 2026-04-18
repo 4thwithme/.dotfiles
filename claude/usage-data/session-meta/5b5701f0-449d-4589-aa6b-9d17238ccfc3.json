@@ -1,0 +1,40 @@
+{
+  "session_id": "5b5701f0-449d-4589-aa6b-9d17238ccfc3",
+  "project_path": "/Users/4thwithme/Documents/repo/recommendations-service",
+  "start_time": "2026-02-13T17:27:26.254Z",
+  "duration_minutes": 3,
+  "user_message_count": 2,
+  "assistant_message_count": 6,
+  "tool_counts": {
+    "Edit": 1
+  },
+  "languages": {
+    "YAML": 1
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 16,
+  "output_tokens": 39,
+  "first_prompt": "hey..check @.claude/plans/neural-search.md and @Dockerfile and @.devcontainer/local/docker-compose.yml we need to add kibana for local development to be able to work with opensearch",
+  "user_interruptions": 0,
+  "user_response_times": [
+    22.037
+  ],
+  "tool_errors": 0,
+  "tool_error_categories": {},
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 13,
+  "lines_removed": 0,
+  "files_modified": 1,
+  "message_hours": [
+    18,
+    18
+  ],
+  "user_message_timestamps": [
+    "2026-02-13T17:27:26.254Z",
+    "2026-02-13T17:30:19.844Z"
+  ]
+}

@@ -1,0 +1,12 @@
+[
+  {
+    "content": "Verify category ID is in allowed list for trending widget",
+    "status": "completed",
+    "activeForm": "Verifying category ID is in allowed list"
+  },
+  {
+    "content": "Check if assets need compilation",
+    "status": "in_progress",
+    "activeForm": "Checking if assets need compilation"
+  }
+]

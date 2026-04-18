@@ -1,0 +1,27 @@
+[
+  {
+    "content": "Search for confidence calculations in the codebase",
+    "status": "completed",
+    "id": "1"
+  },
+  {
+    "content": "Remove confidence calculation logic",
+    "status": "completed",
+    "id": "2"
+  },
+  {
+    "content": "Remove confidence-related plots",
+    "status": "completed",
+    "id": "3"
+  },
+  {
+    "content": "Update interfaces and types to remove confidence fields",
+    "status": "completed",
+    "id": "4"
+  },
+  {
+    "content": "Test the changes",
+    "status": "completed",
+    "id": "5"
+  }
+]

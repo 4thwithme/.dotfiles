@@ -1,0 +1,42 @@
+[
+  {
+    "content": "Check PR eligibility (closed/draft/automated/already reviewed)",
+    "status": "completed",
+    "activeForm": "Checking PR eligibility"
+  },
+  {
+    "content": "Get CLAUDE.md file paths from modified directories",
+    "status": "completed",
+    "activeForm": "Getting CLAUDE.md file paths"
+  },
+  {
+    "content": "Get PR summary",
+    "status": "completed",
+    "activeForm": "Getting PR summary"
+  },
+  {
+    "content": "Launch 5 parallel Sonnet agents for code review",
+    "status": "completed",
+    "activeForm": "Launching 5 parallel Sonnet agents"
+  },
+  {
+    "content": "Score each issue with Haiku agents",
+    "status": "in_progress",
+    "activeForm": "Scoring issues"
+  },
+  {
+    "content": "Filter issues with score >= 80",
+    "status": "pending",
+    "activeForm": "Filtering issues"
+  },
+  {
+    "content": "Re-check PR eligibility",
+    "status": "pending",
+    "activeForm": "Re-checking PR eligibility"
+  },
+  {
+    "content": "Post code review comment on PR",
+    "status": "pending",
+    "activeForm": "Posting code review comment"
+  }
+]

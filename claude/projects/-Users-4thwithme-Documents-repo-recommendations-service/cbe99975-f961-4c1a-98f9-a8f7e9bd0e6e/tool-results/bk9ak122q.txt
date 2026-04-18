@@ -1,0 +1,863 @@
+diff --git a/apps/catalog/src/app/products/[category]/[subcategory]/[productSlug]/[id]/page.tsx b/apps/catalog/src/app/products/[category]/[subcategory]/[productSlug]/[id]/page.tsx
+index 262e5764b..265ba6112 100644
+--- a/apps/catalog/src/app/products/[category]/[subcategory]/[productSlug]/[id]/page.tsx
++++ b/apps/catalog/src/app/products/[category]/[subcategory]/[productSlug]/[id]/page.tsx
+@@ -10,6 +10,7 @@ import ProductDetailsDeliveryServer from "@/components/features/product-details-
+ import { getCategoryData } from "@/lib/mms/server";
+ import { getStyleSeoDataCached } from "@/lib/legacy-catalog/server";
+ import CustomerPhotosServer from "@/components/features/product-details-page/customer-photos/customer-photos-server";
++import RelatedProductsServer from "@/components/features/product-details-page/related-products/related-products-server";
+ import { buildProductBreadcrumbs } from "@/components/features/product-details-page/utils/breadcrumbs";
+ import { JsonLd } from "@/components/seo/json-ld";
+ import { buildBreadcrumbJsonLd } from "@/lib/seo/structured-data";
+@@ -314,6 +315,13 @@ async function CachedProductContent({
+     />
+   );
+   const customerPhotosSlot = <CustomerPhotosServer styleId={parseInt(id, 10)} />;
++  const relatedProductsSlot = (
++    <RelatedProductsServer
++      styleId={id}
++      colorId={resolvedColorId}
++      brand={productData.productProps.brand}
++    />
++  );
+ 
+   const isPreview = productData.productProps.status === "preview";
+   const heroImageUrl = isPreview
+@@ -351,6 +359,7 @@ async function CachedProductContent({
+         initialData={productData}
+         trustpilotReviewCount={trustpilotReviewCount}
+         customerPhotosSlot={customerPhotosSlot}
++        relatedProductsSlot={relatedProductsSlot}
+         badgesSlot={badgesSlot}
+         seoInformation={seoData?.seo_information}
+         heroDeliverySlot={heroDeliverySlot}
+diff --git a/apps/catalog/src/components/features/product-details-page/hooks/use-reco-brands.ts b/apps/catalog/src/components/features/product-details-page/hooks/use-reco-brands.ts
+index a136e8ede..333448d75 100644
+--- a/apps/catalog/src/components/features/product-details-page/hooks/use-reco-brands.ts
++++ b/apps/catalog/src/components/features/product-details-page/hooks/use-reco-brands.ts
+@@ -2,15 +2,12 @@
+ 
+ import { useQuery } from "@tanstack/react-query";
+ import { config } from "@/config";
+-import type { RelatedProduct } from "@/types/related-products";
+-
+-interface RecoBrandsResponse {
+-  brand_products: RelatedProduct[];
+-}
++import type { RecoBrandsResponse } from "@/lib/related-products/client";
+ 
+ interface UseRecoBrandsOptions {
+   enabled?: boolean;
+   placeholderData?: RecoBrandsResponse;
++  initialData?: RecoBrandsResponse;
+   queryParams?: {
+     brand?: string;
+     colorId?: string | number;
+@@ -61,6 +58,8 @@ const useRecoBrands = (options: UseRecoBrandsOptions = {}) => {
+     queryFn: () => fetchRecoBrands(brand, colorId, limit, sortBy, styleId),
+     enabled: options.enabled,
+     placeholderData: options.placeholderData,
++    initialData: options.initialData ?? undefined,
++    initialDataUpdatedAt: options.initialData ? Date.now() : undefined,
+     staleTime: 5 * 60 * 1000, // 5 minutes
+   });
+ };
+diff --git a/apps/catalog/src/components/features/product-details-page/hooks/use-recommended-styles.ts b/apps/catalog/src/components/features/product-details-page/hooks/use-recommended-styles.ts
+index cb18a25e0..818b4a929 100644
+--- a/apps/catalog/src/components/features/product-details-page/hooks/use-recommended-styles.ts
++++ b/apps/catalog/src/components/features/product-details-page/hooks/use-recommended-styles.ts
+@@ -2,15 +2,12 @@
+ 
+ import { useQuery } from "@tanstack/react-query";
+ import { config } from "@/config";
+-import type { RelatedProduct } from "@/types/related-products";
+-
+-interface RecommendationsResponse {
+-  related_products: RelatedProduct[];
+-}
++import type { RecommendationsResponse } from "@/lib/related-products/client";
+ 
+ interface UseRecommendedStylesOptions {
+   enabled?: boolean;
+   placeholderData?: RecommendationsResponse;
++  initialData?: RecommendationsResponse;
+   queryParams?: {
+     colorId?: string | number;
+     limit?: number;
+@@ -55,6 +52,8 @@ const useRecommendedStyles = (
+     queryFn: () => fetchRecommendedStyles(styleId, colorId, limit),
+     enabled: options.enabled,
+     placeholderData: options.placeholderData,
++    initialData: options.initialData ?? undefined,
++    initialDataUpdatedAt: options.initialData ? Date.now() : undefined,
+     staleTime: 5 * 60 * 1000, // 5 minutes
+   });
+ };
+diff --git a/apps/catalog/src/components/features/product-details-page/hooks/use-related-products.ts b/apps/catalog/src/components/features/product-details-page/hooks/use-related-products.ts
+index 60a07372c..346d788f7 100644
+--- a/apps/catalog/src/components/features/product-details-page/hooks/use-related-products.ts
++++ b/apps/catalog/src/components/features/product-details-page/hooks/use-related-products.ts
+@@ -7,6 +7,7 @@ import useRecoBrands from "./use-reco-brands";
+ import isAlgoliaRecommendations, {
+   getAlgoliaRecoOverride,
+ } from "../utils/is-algolia-recommendations";
++import type { RelatedProductsInitialData } from "@/lib/related-products/client";
+ import isCanadianStyle from "../utils/is-canadian-style";
+ import {
+   RELATED_PRODUCTS_TAB_KEY_BUDGET_FRIENDLY,
+@@ -40,6 +41,7 @@ interface UseRelatedProductsParams {
+   brand: string | undefined;
+   name: string | undefined;
+   isNoMinimumSelected: boolean;
++  initialData?: RelatedProductsInitialData;
+ }
+ 
+ const filterByCategory = (
+@@ -68,6 +70,7 @@ export default function useRelatedProducts({
+   brand,
+   name,
+   isNoMinimumSelected,
++  initialData,
+ }: UseRelatedProductsParams) {
+   const [activeTab, setActiveTab] = useState(RELATED_PRODUCTS_TAB_KEY_YOU_MAY_ALSO_LIKE);
+   const [isMounted, setIsMounted] = useState(false);
+@@ -86,6 +89,7 @@ export default function useRelatedProducts({
+   } = useRelatedStyles(styleId, colorId || "", {
+     enabled: !!colorId,
+     placeholderData: { alternatives: [], complements: [] },
++    initialData: initialData?.relatedStyles ?? undefined,
+   });
+ 
+   const {
+@@ -97,6 +101,7 @@ export default function useRelatedProducts({
+     enabled: !!colorId,
+     placeholderData: { related_products: [] },
+     queryParams: { colorId, limit: 30 },
++    initialData: initialData?.recommendations ?? undefined,
+   });
+ 
+   const isCanadian = isCanadianStyle(name || "");
+@@ -104,6 +109,7 @@ export default function useRelatedProducts({
+     enabled: !!colorId && !!brand && !isCanadian,
+     placeholderData: { brand_products: [] },
+     queryParams: { brand, colorId, limit: 30, sortBy: "rating", styleId },
++    initialData: initialData?.recoBrands ?? undefined,
+   });
+ 
+   // Determine if tabbed view should render (Algolia enabled + client mounted)
+@@ -190,11 +196,14 @@ export default function useRelatedProducts({
+     }
+   };
+ 
+-  // Compute loading states
++  // Compute loading states.
++  // Use isSuccess (not isFetched) because isFetched is false when only
++  // initialData is provided — initialData sets status to 'success' but
++  // does not increment dataUpdateCount, so isFetched stays false.
+   const isLoading =
+     validActiveTab === RELATED_PRODUCTS_TAB_KEY_MORE_FITS_AND_SIZES
+-      ? !isRelatedProductsFetched || isRelatedProductsRefetching
+-      : !isRecommendationsFetched || isRecommendationsRefetching;
++      ? !isRelatedProductsSuccess || isRelatedProductsRefetching
++      : !isRecommendationsSuccess || isRecommendationsRefetching;
+ 
+   const hasAnyData =
+     sortedTabs.length > 0 ||
+diff --git a/apps/catalog/src/components/features/product-details-page/hooks/use-related-styles.ts b/apps/catalog/src/components/features/product-details-page/hooks/use-related-styles.ts
+index 98fb9d73f..ab701ac60 100644
+--- a/apps/catalog/src/components/features/product-details-page/hooks/use-related-styles.ts
++++ b/apps/catalog/src/components/features/product-details-page/hooks/use-related-styles.ts
+@@ -3,16 +3,12 @@
+ import { useQuery } from "@tanstack/react-query";
+ import { config } from "@/config";
+ import { getQueryParam, IFRAMER_PARAM } from "@/lib/utils/url";
+-import type { RelatedProduct } from "@/types/related-products";
+-
+-interface RelatedProductsResponse {
+-  alternatives: RelatedProduct[];
+-  complements: RelatedProduct[];
+-}
++import type { RelatedProductsResponse } from "@/lib/related-products/client";
+ 
+ interface UseRelatedStylesOptions {
+   enabled?: boolean;
+   placeholderData?: RelatedProductsResponse;
++  initialData?: RelatedProductsResponse;
+ }
+ 
+ const fetchRelatedStyles = async (
+@@ -46,6 +42,8 @@ const useRelatedStyles = (
+     queryFn: () => fetchRelatedStyles(styleId, colorId),
+     enabled: options.enabled,
+     placeholderData: options.placeholderData,
++    initialData: options.initialData ?? undefined,
++    initialDataUpdatedAt: options.initialData ? Date.now() : undefined,
+     staleTime: 5 * 60 * 1000, // 5 minutes
+   });
+ };
+diff --git a/apps/catalog/src/components/features/product-details-page/product-details-page-client.tsx b/apps/catalog/src/components/features/product-details-page/product-details-page-client.tsx
+index adf79bb55..023cf4e36 100644
+--- a/apps/catalog/src/components/features/product-details-page/product-details-page-client.tsx
++++ b/apps/catalog/src/components/features/product-details-page/product-details-page-client.tsx
+@@ -45,6 +45,7 @@ interface ProductDetailsPageClientProps {
+   heroImageUrl?: string;
+   heroImageAlt?: string;
+   plaSampleSlot?: ReactNode;
++  relatedProductsSlot?: ReactNode;
+   isPla: boolean;
+   isSampleForm: boolean;
+   isPrintedSample: boolean;
+@@ -67,6 +68,7 @@ export default function ProductDetailsPageClient({
+   heroImageUrl,
+   heroImageAlt,
+   plaSampleSlot,
++  relatedProductsSlot,
+   isPla,
+   isSampleForm,
+   isPrintedSample,
+@@ -249,7 +251,7 @@ export default function ProductDetailsPageClient({
+           {customerPhotosSlot}
+ 
+           {/* Related products - loads via dynamic import with its own loading state */}
+-          <RelatedProducts />
++          {relatedProductsSlot || <RelatedProducts />}
+ 
+           {/* Desktop reviews - external API (Trustpilot) */}
+           <ProductReviews ref={desktopReviewsRef} trustpilotReviewCount={trustpilotReviewCount} />
+diff --git a/apps/catalog/src/components/features/product-details-page/related-products/product-card-price-details.module.css b/apps/catalog/src/components/features/product-details-page/related-products/product-card-price-details.module.css
+index 04e1f28e2..d498ce029 100644
+--- a/apps/catalog/src/components/features/product-details-page/related-products/product-card-price-details.module.css
++++ b/apps/catalog/src/components/features/product-details-page/related-products/product-card-price-details.module.css
+@@ -15,5 +15,6 @@
+ .pricingDetailsLink {
+   font-size: 12px;
+   font-weight: 500;
++  margin-left: 8px;
+ }
+ 
+diff --git a/apps/catalog/src/components/features/product-details-page/related-products/related-products-client.tsx b/apps/catalog/src/components/features/product-details-page/related-products/related-products-client.tsx
+new file mode 100644
+index 000000000..0f883f906
+--- /dev/null
++++ b/apps/catalog/src/components/features/product-details-page/related-products/related-products-client.tsx
+@@ -0,0 +1,16 @@
++"use client";
++
++import dynamic from "next/dynamic";
++import type { RelatedProductsInitialData } from "@/lib/related-products/client";
++
++const RelatedProducts = dynamic(() => import("./related-products"), { ssr: false });
++
++interface RelatedProductsClientProps {
++  initialData: RelatedProductsInitialData;
++}
++
++export default function RelatedProductsClient({
++  initialData,
++}: RelatedProductsClientProps): React.JSX.Element {
++  return <RelatedProducts initialData={initialData} />;
++}
+diff --git a/apps/catalog/src/components/features/product-details-page/related-products/related-products-server.tsx b/apps/catalog/src/components/features/product-details-page/related-products/related-products-server.tsx
+new file mode 100644
+index 000000000..aff5fcfee
+--- /dev/null
++++ b/apps/catalog/src/components/features/product-details-page/related-products/related-products-server.tsx
+@@ -0,0 +1,45 @@
++import { Suspense } from "react";
++import {
++  getRelatedStyles,
++  getRecommendedStyles,
++  getRecoBrands,
++} from "@/lib/related-products/server";
++import type { RelatedProductsInitialData } from "@/lib/related-products/client";
++import Loader from "./tabbed-view/loader";
++import RelatedProductsClient from "./related-products-client";
++
++interface RelatedProductsServerProps {
++  styleId: string;
++  colorId: string;
++  brand?: string;
++}
++
++async function RelatedProductsContent({
++  styleId,
++  colorId,
++  brand,
++}: RelatedProductsServerProps): Promise<React.JSX.Element> {
++  const [relatedStyles, recommendations, recoBrands] = await Promise.all([
++    getRelatedStyles(styleId, colorId),
++    getRecommendedStyles(styleId, colorId, 30),
++    brand ? getRecoBrands(styleId, colorId, brand, 30) : null,
++  ]);
++
++  const initialData: RelatedProductsInitialData = {
++    relatedStyles,
++    recommendations,
++    recoBrands,
++  };
++
++  return <RelatedProductsClient initialData={initialData} />;
++}
++
++export default function RelatedProductsServer(
++  props: RelatedProductsServerProps,
++): React.JSX.Element {
++  return (
++    <Suspense fallback={<Loader />}>
++      <RelatedProductsContent {...props} />
++    </Suspense>
++  );
++}
+diff --git a/apps/catalog/src/components/features/product-details-page/related-products/related-products.tsx b/apps/catalog/src/components/features/product-details-page/related-products/related-products.tsx
+index e3bc5b5bb..66fe1e030 100644
+--- a/apps/catalog/src/components/features/product-details-page/related-products/related-products.tsx
++++ b/apps/catalog/src/components/features/product-details-page/related-products/related-products.tsx
+@@ -4,6 +4,7 @@ import { ErrorBoundary } from "@rollbar/react";
+ import { useEffect, useRef } from "react";
+ import { useSearchParams } from "next/navigation";
+ 
++import type { RelatedProductsInitialData } from "@/lib/related-products/client";
+ import useRelatedProducts from "../hooks/use-related-products";
+ import { useProductId } from "@/contexts/product-id-context";
+ import { useProduct } from "../hooks/use-product-query";
+@@ -14,11 +15,15 @@ import ComplementProducts from "./complement-products";
+ import RelatedProductsTabbedView from "./tabbed-view/related-products-tabbed-view";
+ import styles from "./related-products.module.css";
+ 
++interface RelatedProductsProps {
++  initialData?: RelatedProductsInitialData;
++}
++
+ function ErrorFallback() {
+   return <Typography>Something went wrong!</Typography>;
+ }
+ 
+-export default function RelatedProducts() {
++export default function RelatedProducts({ initialData }: RelatedProductsProps) {
+   const searchParams = useSearchParams();
+   const singles = searchParams.get("quote_qty") === "min";
+   const { productId, colorId } = useProductId();
+@@ -54,6 +59,7 @@ export default function RelatedProducts() {
+     brand: product?.brand,
+     name: product?.name,
+     isNoMinimumSelected: singles,
++    initialData,
+   });
+ 
+   useEffect(() => {
+diff --git a/apps/catalog/src/components/features/product-details-page/related-products/tabbed-view/carousel-cards-view.module.css b/apps/catalog/src/components/features/product-details-page/related-products/tabbed-view/carousel-cards-view.module.css
+index 6ed8ebde2..3d73aea78 100644
+--- a/apps/catalog/src/components/features/product-details-page/related-products/tabbed-view/carousel-cards-view.module.css
++++ b/apps/catalog/src/components/features/product-details-page/related-products/tabbed-view/carousel-cards-view.module.css
+@@ -1,38 +1,13 @@
+-.grid {
+-  display: grid;
+-  gap: 8px;
+-  grid-template-columns: repeat(4, 1fr);
+-}
+-
+-@media (min-width: 700px) {
+-  .grid {
+-    gap: 16px;
+-  }
+-}
+-
+-
+ .carouselWrapper {
+   position: relative;
+   margin-top: 16px;
+ }
+ 
+-.viewport {
+-  overflow: hidden;
+-  margin: 0 -8px;
+-}
+-
+-.track {
+-  display: flex;
+-}
+-
+-.slide {
+-  flex: 0 0 25%;
+-  min-width: 0;
+-  padding: 0 8px;
+-  box-sizing: border-box;
++.slider {
++  outline: none;
+ }
+ 
+-.slide :global(.MuiCard-root:hover) {
++.slider :global(.keen-slider__slide .MuiCard-root:hover) {
+   box-shadow: none;
+ }
+ 
+diff --git a/apps/catalog/src/components/features/product-details-page/related-products/tabbed-view/carousel-cards-view.tsx b/apps/catalog/src/components/features/product-details-page/related-products/tabbed-view/carousel-cards-view.tsx
+index 51244947b..1c4b8ae4e 100644
+--- a/apps/catalog/src/components/features/product-details-page/related-products/tabbed-view/carousel-cards-view.tsx
++++ b/apps/catalog/src/components/features/product-details-page/related-products/tabbed-view/carousel-cards-view.tsx
+@@ -1,94 +1,78 @@
+ "use client";
+ 
+-import { Box } from "@customink/pigment-react";
++import { ReactNode, useState, useEffect, useCallback } from "react";
++import { useKeenSlider } from "keen-slider/react";
++import "keen-slider/keen-slider.min.css";
+ import IconButton from "@/components/ui/icon-button/icon-button";
+ import ArrowDownIcon from "@/components/ui/icons/arrow-down-icon";
+-import { ReactNode, useState, useEffect, useCallback, useMemo } from "react";
+-import styles from "./carousel-cards-view.module.css";
+ import { pdpRecommendations } from "@/lib/analytics/events/pdp";
+-
+-const SLIDES_PER_VIEW = 4;
+-const SLIDE_WIDTH = 100 / SLIDES_PER_VIEW; // 25%
++import styles from "./carousel-cards-view.module.css";
+ 
+ interface CarouselCardsViewProps {
+   children: ReactNode[];
+ }
+ 
+-export default function CarouselCardsView({ children }: CarouselCardsViewProps) {
+-  const total = children.length;
+-  const [index, setIndex] = useState(0);
+-  const [animate, setAnimate] = useState(true);
+-  const [isAnimating, setIsAnimating] = useState(false);
++export default function CarouselCardsView({
++  children,
++}: CarouselCardsViewProps): React.JSX.Element | null {
++  const [loaded, setLoaded] = useState(false);
+ 
+-  // Reset position when content changes (tab switch)
+-  useEffect(() => {
+-    setAnimate(false);
+-    setIndex(0);
+-  }, [total]);
++  const [sliderRef, instanceRef] = useKeenSlider({
++    loop: true,
++    mode: "snap",
++    slides: {
++      perView: 2.25,
++      spacing: 8,
++    },
++    breakpoints: {
++      "(min-width: 700px)": {
++        slides: { perView: 3.5, spacing: 16 },
++      },
++      "(min-width: 1024px)": {
++        slides: { perView: 4, spacing: 16 },
++      },
++    },
++    created() {
++      setLoaded(true);
++    },
++  });
+ 
+-  // Re-enable transitions after an instant jump
++  // Reset to first slide when content changes (tab switch).
++  // Depend on children.length (stable primitive) rather than children array reference.
++  const childCount = children.length;
+   useEffect(() => {
+-    if (!animate) {
+-      requestAnimationFrame(() => {
+-        requestAnimationFrame(() => {
+-          setAnimate(true);
+-          setIsAnimating(false);
+-        });
+-      });
++    if (instanceRef.current) {
++      instanceRef.current.update();
++      instanceRef.current.moveToIdx(0, true);
+     }
+-  }, [animate]);
++  }, [childCount, instanceRef]);
+ 
+-  // Clone slides at edges for seamless looping:
+-  // [last N clones] [real slides] [first N clones]
+-  const slides = useMemo(
+-    () => [
+-      ...children.slice(-SLIDES_PER_VIEW).map((child, i) => ({ child, key: `clone-end-${i}` })),
+-      ...children.map((child, i) => ({ child, key: `real-${i}` })),
+-      ...children.slice(0, SLIDES_PER_VIEW).map((child, i) => ({ child, key: `clone-start-${i}` })),
+-    ],
+-    [children],
++  const handlePrev = useCallback(
++    (e: React.MouseEvent) => {
++      e.stopPropagation();
++      pdpRecommendations.tabbedViewArrowClick("prev");
++      instanceRef.current?.prev();
++    },
++    [instanceRef],
+   );
+ 
+-  // Offset accounts for the prepended clones
+-  const trackOffset = (index + SLIDES_PER_VIEW) * SLIDE_WIDTH;
+-
+-  const handleTransitionEnd = useCallback(
+-    (e: React.TransitionEvent) => {
+-      if (e.target !== e.currentTarget) return;
+-      setIsAnimating(false);
+-      if (index >= total) {
+-        setAnimate(false);
+-        setIndex(index % total);
+-      } else if (index < 0) {
+-        setAnimate(false);
+-        setIndex(((index % total) + total) % total);
+-      }
++  const handleNext = useCallback(
++    (e: React.MouseEvent) => {
++      e.stopPropagation();
++      pdpRecommendations.tabbedViewArrowClick("next");
++      instanceRef.current?.next();
+     },
+-    [index, total],
++    [instanceRef],
+   );
+ 
+-  const handlePrev = (e: React.MouseEvent): void => {
+-    if (isAnimating) return;
+-    e.stopPropagation();
+-    setIsAnimating(true);
+-    pdpRecommendations.tabbedViewArrowClick("prev");
+-    setIndex((prev) => prev - 1);
+-  };
+-
+-  const handleNext = (e: React.MouseEvent): void => {
+-    if (isAnimating) return;
+-    e.stopPropagation();
+-    setIsAnimating(true);
+-    pdpRecommendations.tabbedViewArrowClick("next");
+-    setIndex((prev) => prev + 1);
+-  };
++  const showArrows = loaded && children.length > 1;
+ 
+-  const showArrows = total > SLIDES_PER_VIEW;
++  if (children.length === 0) return null;
+ 
+   return (
+-    <Box className={styles.carouselWrapper} data-testid="pdp-reco-carousel">
++    <div className={styles.carouselWrapper} data-testid="pdp-reco-carousel">
+       {showArrows && (
+-        <Box display="flex" className={styles.arrowOverlay}>
++        <div className={styles.arrowOverlay}>
+           <IconButton
+             aria-label="Previous slide"
+             onClick={handlePrev}
+@@ -106,32 +90,16 @@ export default function CarouselCardsView({ children }: CarouselCardsViewProps)
+           >
+             <ArrowDownIcon className={styles.arrowNext} />
+           </IconButton>
+-        </Box>
++        </div>
+       )}
+ 
+-      <Box className={styles.viewport}>
+-        <Box
+-          className={styles.track}
+-          style={{
+-            transform: `translateX(-${trackOffset}%)`,
+-            transition: animate ? "transform 0.6s ease" : "none",
+-          }}
+-          onTransitionEnd={handleTransitionEnd}
+-        >
+-          {slides.map(({ child, key }) => {
+-            const isClone = key.startsWith("clone-");
+-            return (
+-              <Box
+-                key={key}
+-                className={styles.slide}
+-                {...(isClone ? { "aria-hidden": true, tabIndex: -1 } : {})}
+-              >
+-                {child}
+-              </Box>
+-            );
+-          })}
+-        </Box>
+-      </Box>
+-    </Box>
++      <div ref={sliderRef} className={`keen-slider ${styles.slider}`}>
++        {children.map((child, i) => (
++          <div key={i} className="keen-slider__slide">
++            {child}
++          </div>
++        ))}
++      </div>
++    </div>
+   );
+ }
+diff --git a/apps/catalog/src/components/ui/tabs/tabs.module.css b/apps/catalog/src/components/ui/tabs/tabs.module.css
+index d414d1596..3a98c9c03 100644
+--- a/apps/catalog/src/components/ui/tabs/tabs.module.css
++++ b/apps/catalog/src/components/ui/tabs/tabs.module.css
+@@ -15,17 +15,48 @@
+   font-family: "Sharp Sans", sans-serif;
+   font-size: 16px;
+   font-weight: 500;
+-  border-bottom: 3px solid transparent;
+   margin-bottom: -2px;
+-  transition: color 0.15s, border-color 0.15s;
++  transition: color 0.15s, background-color 0.15s;
+ }
+ 
+ .tab[aria-selected="true"] {
+   color: var(--interactive-text-default);
+-  border-bottom-color: currentColor;
++}
++
++.tab:hover {
++  background-color: var(--interactive-background-weak);
++  border-radius: 6px;
++}
++
++.tab:active {
++  animation: tabActiveFlash 1s ease-out forwards;
++  border-radius: 6px;
++}
++
++@keyframes tabActiveFlash {
++  0% {
++    background-color: var(--interactive-background-weakHover);
++  }
++  100% {
++    background-color: transparent;
++  }
+ }
+ 
+ .tab:focus-visible {
+   outline: 2px solid var(--interactive-border-focused);
+   outline-offset: -2px;
+ }
++
++.indicator {
++  position: absolute;
++  bottom: -1px;
++  height: 3px;
++  background-color: var(--interactive-text-default);
++  transition: transform 0.3s ease, width 0.3s ease;
++  z-index: 1;
++  pointer-events: none;
++}
++
++.indicatorHidden {
++  opacity: 0;
++}
+diff --git a/apps/catalog/src/components/ui/tabs/tabs.test.tsx b/apps/catalog/src/components/ui/tabs/tabs.test.tsx
+index 04bc8832d..8cf93d7fd 100644
+--- a/apps/catalog/src/components/ui/tabs/tabs.test.tsx
++++ b/apps/catalog/src/components/ui/tabs/tabs.test.tsx
+@@ -2,6 +2,14 @@ import { render, screen, fireEvent } from "@testing-library/react";
+ import userEvent from "@testing-library/user-event";
+ import Tabs from "./tabs";
+ 
++beforeAll(() => {
++  global.ResizeObserver = class {
++    observe(): void {}
++    unobserve(): void {}
++    disconnect(): void {}
++  };
++});
++
+ const tabs = [
+   { label: "Tab A", value: "a" },
+   { label: "Tab B", value: "b" },
+@@ -116,4 +124,12 @@ describe("Tabs", () => {
+       expect(button).not.toHaveAttribute("data-testid");
+     });
+   });
++
++  it("renders a decorative indicator element", () => {
++    render(<Tabs tabs={tabs} activeTab="a" />);
++
++    const indicator = screen.getByTestId("tab-indicator");
++    expect(indicator).toBeInTheDocument();
++    expect(indicator).toHaveAttribute("aria-hidden", "true");
++  });
+ });
+diff --git a/apps/catalog/src/components/ui/tabs/tabs.tsx b/apps/catalog/src/components/ui/tabs/tabs.tsx
+index c436d70c6..fc23b1d8a 100644
+--- a/apps/catalog/src/components/ui/tabs/tabs.tsx
++++ b/apps/catalog/src/components/ui/tabs/tabs.tsx
+@@ -1,6 +1,6 @@
+ "use client";
+ 
+-import { memo, useCallback } from "react";
++import { memo, useCallback, useRef, useState, useEffect } from "react";
+ import styles from "./tabs.module.css";
+ 
+ export interface TabItem {
+@@ -17,6 +17,11 @@ interface TabsProps {
+   tabTestIdPrefix?: string;
+ }
+ 
++interface IndicatorStyle {
++  left: number;
++  width: number;
++}
++
+ const Tabs = memo(function Tabs({
+   tabs,
+   activeTab,
+@@ -25,6 +30,33 @@ const Tabs = memo(function Tabs({
+   "data-testid": dataTestId,
+   tabTestIdPrefix,
+ }: TabsProps) {
++  const tabListRef = useRef<HTMLDivElement>(null);
++  const [indicator, setIndicator] = useState<IndicatorStyle | null>(null);
++
++  useEffect(() => {
++    const tabList = tabListRef.current;
++    if (!tabList) return;
++
++    function measure(): void {
++      const list = tabListRef.current;
++      if (!list) return;
++      const activeButton = list.querySelector<HTMLButtonElement>('[aria-selected="true"]');
++      if (activeButton) {
++        setIndicator({
++          left: activeButton.offsetLeft,
++          width: activeButton.offsetWidth,
++        });
++      }
++    }
++
++    measure();
++
++    const observer = new ResizeObserver(measure);
++    observer.observe(tabList);
++
++    return () => observer.disconnect();
++  }, [activeTab, tabs]);
++
+   const handleKeyDown = useCallback(
+     (event: React.KeyboardEvent<HTMLDivElement>) => {
+       const currentIndex = tabs.findIndex((tab) => tab.value === activeTab);
+@@ -53,6 +85,7 @@ const Tabs = memo(function Tabs({
+ 
+   return (
+     <div
++      ref={tabListRef}
+       role="tablist"
+       className={`${styles.tabList}${className ? ` ${className}` : ""}`}
+       onKeyDown={handleKeyDown}
+@@ -73,6 +106,16 @@ const Tabs = memo(function Tabs({
+           {tab.label}
+         </button>
+       ))}
++      <span
++        aria-hidden="true"
++        className={`${styles.indicator}${indicator === null ? ` ${styles.indicatorHidden}` : ""}`}
++        style={
++          indicator
++            ? { transform: `translateX(${indicator.left}px)`, width: `${indicator.width}px` }
++            : undefined
++        }
++        data-testid="tab-indicator"
++      />
+     </div>
+   );
+ });
+diff --git a/apps/catalog/src/lib/related-products/client.ts b/apps/catalog/src/lib/related-products/client.ts
+new file mode 100644
+index 000000000..4d6fdc7bc
+--- /dev/null
++++ b/apps/catalog/src/lib/related-products/client.ts
+@@ -0,0 +1,13 @@
++import type {
++  RelatedProductsResponse,
++  RecommendationsResponse,
++  RecoBrandsResponse,
++} from "@/types/related-products";
++
++export type { RelatedProductsResponse, RecommendationsResponse, RecoBrandsResponse };
++
++export interface RelatedProductsInitialData {
++  relatedStyles: RelatedProductsResponse | null;
++  recommendations: RecommendationsResponse | null;
++  recoBrands: RecoBrandsResponse | null;
++}
+diff --git a/apps/catalog/src/lib/related-products/server.ts b/apps/catalog/src/lib/related-products/server.ts
+new file mode 100644
+index 000000000..c0fb03f87
+--- /dev/null
++++ b/apps/catalog/src/lib/related-products/server.ts
+@@ -0,0 +1,81 @@
++import "server-only";
++
++import { cacheLife, cacheTag } from "next/cache";
++import { config } from "@/config";
++import type {
++  RelatedProductsResponse,
++  RecommendationsResponse,
++  RecoBrandsResponse,
++} from "./client";
++
++export async function getRelatedStyles(
++  styleId: string,
++  colorId: string,
++): Promise<RelatedProductsResponse | null> {
++  "use cache: remote";
++  cacheLife("hours");
++  cacheTag(`related-styles-${styleId}-${colorId}`);
++
++  try {
++    const params = new URLSearchParams({ PK: colorId });
++    const res = await fetch(
++      `${config.server.CATALOG_BASE_URL}/products/styles/${styleId}/related_styles.json?${params}`,
++    );
++    if (!res.ok) return null;
++    return await res.json();
++  } catch {
++    return null;
++  }
++}
++
++export async function getRecommendedStyles(
++  styleId: string,
++  colorId: string,
++  limit: number = 30,
++): Promise<RecommendationsResponse | null> {
++  "use cache: remote";
++  cacheLife("hours");
++  cacheTag(`recommended-styles-${styleId}`);
++
++  try {
++    const params = new URLSearchParams({
++      colorId,
++      limit: String(limit),
++    });
++    const res = await fetch(
++      `${config.server.RECO_API_URL}/api/v1/related-products/${styleId}?${params}`,
++    );
++    if (!res.ok) return null;
++    return await res.json();
++  } catch {
++    return null;
++  }
++}
++
++export async function getRecoBrands(
++  styleId: string,
++  colorId: string,
++  brand: string,
++  limit: number = 30,
++): Promise<RecoBrandsResponse | null> {
++  "use cache: remote";
++  cacheLife("hours");
++  cacheTag(`reco-brands-${styleId}-${brand}`);
++
++  try {
++    const params = new URLSearchParams({
++      brand,
++      colorId,
++      limit: String(limit),
++      styleId,
++      sortBy: "rating",
++    });
++    const res = await fetch(
++      `${config.server.RECO_API_URL}/api/v1/related-products/brand?${params}`,
++    );
++    if (!res.ok) return null;
++    return await res.json();
++  } catch {
++    return null;
++  }
++}

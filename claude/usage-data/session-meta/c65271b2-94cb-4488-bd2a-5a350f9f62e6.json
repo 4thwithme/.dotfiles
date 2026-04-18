@@ -1,0 +1,62 @@
+{
+  "session_id": "c65271b2-94cb-4488-bd2a-5a350f9f62e6",
+  "project_path": "/Users/4thwithme/Documents/repo/catalog",
+  "start_time": "2026-02-10T20:39:41.244Z",
+  "duration_minutes": 1067,
+  "user_message_count": 6,
+  "assistant_message_count": 128,
+  "tool_counts": {
+    "WebFetch": 1,
+    "Bash": 15,
+    "Read": 20,
+    "Glob": 13,
+    "Grep": 5,
+    "Edit": 12
+  },
+  "languages": {
+    "TypeScript": 5,
+    "JavaScript": 21,
+    "JSON": 1,
+    "Ruby": 1,
+    "Markdown": 2
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 1132,
+  "output_tokens": 4010,
+  "first_prompt": "read task https://customink.atlassian.net/browse/RECO-557 and PR on server side https://github.com/customink/recommendations-service/pull/393/changes  we need to create new a/b test first lets have on…",
+  "user_interruptions": 0,
+  "user_response_times": [
+    79.075,
+    132.962,
+    60.422,
+    712.857
+  ],
+  "tool_errors": 1,
+  "tool_error_categories": {
+    "Command Failed": 1
+  },
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": true,
+  "lines_added": 183,
+  "lines_removed": 51,
+  "files_modified": 4,
+  "message_hours": [
+    21,
+    15,
+    15,
+    15,
+    15,
+    15
+  ],
+  "user_message_timestamps": [
+    "2026-02-10T20:39:41.244Z",
+    "2026-02-11T14:05:59.118Z",
+    "2026-02-11T14:07:42.545Z",
+    "2026-02-11T14:12:39.916Z",
+    "2026-02-11T14:14:54.332Z",
+    "2026-02-11T14:26:56.255Z"
+  ]
+}

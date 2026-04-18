@@ -1,0 +1,46 @@
+{
+  "session_id": "92c5c174-4070-4afb-98b0-67f01706501d",
+  "project_path": "/Users/4thwithme/Documents/repo/recommendations-service",
+  "start_time": "2026-02-17T19:43:59.165Z",
+  "duration_minutes": 18,
+  "user_message_count": 3,
+  "assistant_message_count": 14,
+  "tool_counts": {
+    "Task": 1,
+    "Glob": 2,
+    "Grep": 1,
+    "Read": 3
+  },
+  "languages": {
+    "TypeScript": 3
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 120,
+  "output_tokens": 268,
+  "first_prompt": "hey analyze our knex connection to the db, and tell me how many connections to db do we keep during server running, and what will happen if we have throughput 1600 requests per minute, does it handle…",
+  "user_interruptions": 0,
+  "user_response_times": [
+    750.724,
+    227.843
+  ],
+  "tool_errors": 0,
+  "tool_error_categories": {},
+  "uses_task_agent": true,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 0,
+  "lines_removed": 0,
+  "files_modified": 0,
+  "message_hours": [
+    20,
+    20,
+    21
+  ],
+  "user_message_timestamps": [
+    "2026-02-17T19:43:59.165Z",
+    "2026-02-17T19:57:21.580Z",
+    "2026-02-17T20:01:33.369Z"
+  ]
+}

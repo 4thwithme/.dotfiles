@@ -1,0 +1,9 @@
+{
+  "id": "1",
+  "subject": "Fix primitive params in core files (cli, main, config)",
+  "description": "Refactor src/cli.ts, src/main.ts, src/configs/rollbar.config.ts to use object parameters",
+  "activeForm": "Fixing primitive params in core files",
+  "status": "in_progress",
+  "blocks": [],
+  "blockedBy": []
+}

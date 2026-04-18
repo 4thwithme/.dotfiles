@@ -1,0 +1,15 @@
+{
+  "underlying_goal": "Condense an RFC document about self-serve promotions into a shorter, 3-minute read while preserving the high-level structure",
+  "goal_categories": {
+    "document_editing": 1
+  },
+  "outcome": "mostly_achieved",
+  "user_satisfaction_counts": {},
+  "claude_helpfulness": "very_helpful",
+  "session_type": "single_task",
+  "friction_counts": {},
+  "friction_detail": "",
+  "primary_success": "good_explanations",
+  "brief_summary": "User asked Claude to shorten an RFC document to a 3-minute read while keeping the high-level structure, and Claude produced a condensed version.",
+  "session_id": "63f22bd5-9c9e-4a51-a13d-8e2e704539fb"
+}

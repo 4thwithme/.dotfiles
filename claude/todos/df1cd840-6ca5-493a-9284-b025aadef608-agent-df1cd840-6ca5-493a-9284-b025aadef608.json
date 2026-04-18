@@ -1,0 +1,56 @@
+[
+  {
+    "content": "Create setup data persistence utility",
+    "status": "completed",
+    "priority": "high",
+    "id": "1"
+  },
+  {
+    "content": "Add session storage for setup progress",
+    "status": "completed",
+    "priority": "high",
+    "id": "2"
+  },
+  {
+    "content": "Update Step 0 to save platform selection",
+    "status": "completed",
+    "priority": "high",
+    "id": "3"
+  },
+  {
+    "content": "Update Step 1 to load/save dashboard name",
+    "status": "completed",
+    "priority": "high",
+    "id": "4"
+  },
+  {
+    "content": "Update Step 2 to load/save authentication token",
+    "status": "completed",
+    "priority": "high",
+    "id": "5"
+  },
+  {
+    "content": "Update Step 3 to load/save selected organizations",
+    "status": "completed",
+    "priority": "high",
+    "id": "6"
+  },
+  {
+    "content": "Update Step 4 to load/save selected repositories",
+    "status": "completed",
+    "priority": "high",
+    "id": "7"
+  },
+  {
+    "content": "Update Step 5 to load/save selected developers",
+    "status": "completed",
+    "priority": "high",
+    "id": "8"
+  },
+  {
+    "content": "Add form pre-population from saved data",
+    "status": "completed",
+    "priority": "medium",
+    "id": "9"
+  }
+]

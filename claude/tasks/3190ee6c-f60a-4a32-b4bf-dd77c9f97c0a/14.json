@@ -1,0 +1,8 @@
+{
+  "id": "14",
+  "subject": "Task 11: Session Module",
+  "description": "Redis session CRUD, refresh tokens with tombstone-based theft detection",
+  "status": "completed",
+  "blocks": [],
+  "blockedBy": []
+}

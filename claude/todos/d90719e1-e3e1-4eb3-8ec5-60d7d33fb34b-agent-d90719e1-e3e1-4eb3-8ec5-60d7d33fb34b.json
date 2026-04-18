@@ -1,0 +1,8 @@
+[
+  {
+    "content": "Fix type safety issues in changePointDetection without using type casting",
+    "status": "completed",
+    "priority": "high",
+    "id": "1"
+  }
+]

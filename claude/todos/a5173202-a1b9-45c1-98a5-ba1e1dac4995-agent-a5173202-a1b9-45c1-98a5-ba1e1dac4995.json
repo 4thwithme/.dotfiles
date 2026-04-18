@@ -1,0 +1,32 @@
+[
+  {
+    "content": "Examine current layout structure and dashboard styling",
+    "status": "completed",
+    "priority": "high",
+    "id": "1"
+  },
+  {
+    "content": "Move common styling logic to root-layout wrapper",
+    "status": "completed",
+    "priority": "high",
+    "id": "2"
+  },
+  {
+    "content": "Create index page component",
+    "status": "completed",
+    "priority": "medium",
+    "id": "3"
+  },
+  {
+    "content": "Create dashboard page component",
+    "status": "completed",
+    "priority": "medium",
+    "id": "4"
+  },
+  {
+    "content": "Apply consistent content styling to all routes",
+    "status": "in_progress",
+    "priority": "high",
+    "id": "5"
+  }
+]

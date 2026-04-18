@@ -1,0 +1,63 @@
+{
+  "session_id": "26fe6ee9-3e33-40bb-9d26-641e0cf7eced",
+  "project_path": "/Users/4thwithme/Documents/repo/recommendations-service",
+  "start_time": "2026-02-23T16:23:21.254Z",
+  "duration_minutes": 272,
+  "user_message_count": 8,
+  "assistant_message_count": 25,
+  "tool_counts": {
+    "Read": 2,
+    "Edit": 4,
+    "Skill": 1,
+    "Task": 2,
+    "Glob": 1,
+    "Bash": 1
+  },
+  "languages": {
+    "TypeScript": 6
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 51,
+  "output_tokens": 1488,
+  "first_prompt": "got an error on production ducring consuming update event from the queue  Error insert into `condensed_features` (`_id`, `condensed_features`, `style_id`) values ('80c1ff75-74d2-4a60-a81f-a24fcfb78e8b…",
+  "user_interruptions": 1,
+  "user_response_times": [
+    306.528,
+    17.824,
+    235.453,
+    649.622
+  ],
+  "tool_errors": 2,
+  "tool_error_categories": {
+    "Edit Failed": 1,
+    "User Rejected": 1
+  },
+  "uses_task_agent": true,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 38,
+  "lines_removed": 26,
+  "files_modified": 2,
+  "message_hours": [
+    17,
+    17,
+    17,
+    19,
+    19,
+    19,
+    21,
+    21
+  ],
+  "user_message_timestamps": [
+    "2026-02-23T16:23:21.254Z",
+    "2026-02-23T16:28:40.787Z",
+    "2026-02-23T16:29:00.819Z",
+    "2026-02-23T18:04:20.094Z",
+    "2026-02-23T18:09:03.600Z",
+    "2026-02-23T18:09:09.182Z",
+    "2026-02-23T20:44:10.141Z",
+    "2026-02-23T20:55:44.016Z"
+  ]
+}

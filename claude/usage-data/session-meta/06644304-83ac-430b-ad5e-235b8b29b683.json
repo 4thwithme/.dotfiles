@@ -1,0 +1,44 @@
+{
+  "session_id": "06644304-83ac-430b-ad5e-235b8b29b683",
+  "project_path": "/Users/4thwithme/Documents/repo/recommendations-service",
+  "start_time": "2026-02-13T14:36:57.663Z",
+  "duration_minutes": 15,
+  "user_message_count": 3,
+  "assistant_message_count": 10,
+  "tool_counts": {
+    "Grep": 1,
+    "Bash": 4
+  },
+  "languages": {},
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 22,
+  "output_tokens": 431,
+  "first_prompt": "bro I need dump of my mysql db, save it to the file int the /tmp folder in the repo",
+  "user_interruptions": 1,
+  "user_response_times": [
+    834.178,
+    860.701
+  ],
+  "tool_errors": 1,
+  "tool_error_categories": {
+    "User Rejected": 1
+  },
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 0,
+  "lines_removed": 0,
+  "files_modified": 0,
+  "message_hours": [
+    15,
+    15,
+    15
+  ],
+  "user_message_timestamps": [
+    "2026-02-13T14:36:57.663Z",
+    "2026-02-13T14:51:02.290Z",
+    "2026-02-13T14:51:28.813Z"
+  ]
+}

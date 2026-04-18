@@ -1,0 +1,8 @@
+{
+  "id": "24",
+  "subject": "Task 18: User Controller",
+  "description": "GET /users/me, POST /users/me/company",
+  "status": "completed",
+  "blocks": [],
+  "blockedBy": []
+}

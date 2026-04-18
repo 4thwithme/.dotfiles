@@ -1,0 +1,9 @@
+{
+  "id": "1",
+  "subject": "Check PR eligibility",
+  "description": "Verify PR is open, not a draft, needs review, and hasn't been reviewed already",
+  "activeForm": "Checking PR eligibility",
+  "status": "pending",
+  "blocks": [],
+  "blockedBy": []
+}

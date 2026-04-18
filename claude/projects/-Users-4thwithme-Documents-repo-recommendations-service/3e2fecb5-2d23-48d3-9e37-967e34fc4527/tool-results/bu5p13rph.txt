@@ -1,0 +1,680 @@
+
+> recommendations-service@0.0.1 code-quality-check
+> npm run lint && npm run format && npm run type-check
+
+
+> recommendations-service@0.0.1 lint
+> eslint "{src,apps,libs,test}/**/*.ts"
+
+
+/Users/4thwithme/Documents/repo/recommendations-service/src/modules/cli/commands/populate-style-copurchases.command.ts
+  100:30  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+
+/Users/4thwithme/Documents/repo/recommendations-service/src/modules/color-match-worker/color-match-worker.service.ts
+  42:20  warning  Unnecessary conditional, expected left-hand side of `??` operator to be possibly null or undefined  @typescript-eslint/no-unnecessary-condition
+  42:43  warning  Unnecessary optional chain on a non-nullish value                                                   @typescript-eslint/no-unnecessary-condition
+  65:7   warning  Unnecessary conditional, value is always truthy                                                     @typescript-eslint/no-unnecessary-condition
+  77:26  warning  Custom functions must use a single object destructuring parameter                                   custom-rules/require-object-params
+
+/Users/4thwithme/Documents/repo/recommendations-service/src/modules/db/condensed-features/models/condensed-feature.model.ts
+  322:32  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+
+/Users/4thwithme/Documents/repo/recommendations-service/src/modules/db/default-unit-prices/default-unit-prices.service.ts
+  50:23  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+
+/Users/4thwithme/Documents/repo/recommendations-service/src/modules/db/default-unit-prices/models/default-unit-price.model.ts
+  227:14  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+
+/Users/4thwithme/Documents/repo/recommendations-service/src/modules/db/forecasted-trending-products/forecasted-trending-products.service.ts
+   24:16  warning  Unnecessary conditional, expected left-hand side of `??` operator to be possibly null or undefined  @typescript-eslint/no-unnecessary-condition
+   24:19  warning  Unnecessary optional chain on a non-nullish value                                                   @typescript-eslint/no-unnecessary-condition
+   37:17  warning  Unnecessary optional chain on a non-nullish value                                                   @typescript-eslint/no-unnecessary-condition
+   38:18  warning  Unnecessary optional chain on a non-nullish value                                                   @typescript-eslint/no-unnecessary-condition
+   40:66  warning  Unnecessary conditional, expected left-hand side of `??` operator to be possibly null or undefined  @typescript-eslint/no-unnecessary-condition
+   40:69  warning  Unnecessary optional chain on a non-nullish value                                                   @typescript-eslint/no-unnecessary-condition
+   82:66  warning  Unnecessary conditional, expected left-hand side of `??` operator to be possibly null or undefined  @typescript-eslint/no-unnecessary-condition
+   82:69  warning  Unnecessary optional chain on a non-nullish value                                                   @typescript-eslint/no-unnecessary-condition
+  125:66  warning  Unnecessary conditional, expected left-hand side of `??` operator to be possibly null or undefined  @typescript-eslint/no-unnecessary-condition
+  125:69  warning  Unnecessary optional chain on a non-nullish value                                                   @typescript-eslint/no-unnecessary-condition
+  166:66  warning  Unnecessary conditional, expected left-hand side of `??` operator to be possibly null or undefined  @typescript-eslint/no-unnecessary-condition
+  166:69  warning  Unnecessary optional chain on a non-nullish value                                                   @typescript-eslint/no-unnecessary-condition
+
+/Users/4thwithme/Documents/repo/recommendations-service/src/modules/db/forecasted-trending-products/models/forecasted-trending-products.model.ts
+  202:8   warning  Unnecessary conditional, the types have no overlap                 @typescript-eslint/no-unnecessary-condition
+  203:8   warning  Unnecessary conditional, the types have no overlap                 @typescript-eslint/no-unnecessary-condition
+  254:7   warning  Unnecessary conditional, value is always falsy                     @typescript-eslint/no-unnecessary-condition
+  263:7   warning  Unnecessary conditional, value is always falsy                     @typescript-eslint/no-unnecessary-condition
+  418:31  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+  440:32  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+
+/Users/4thwithme/Documents/repo/recommendations-service/src/modules/db/product-annual-sales/models/product-annual-sales.model.ts
+  185:32  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+
+/Users/4thwithme/Documents/repo/recommendations-service/src/modules/db/product-annual-sales/product-annual-sales.service.ts
+  14:68  warning  Unnecessary conditional, expected left-hand side of `??` operator to be possibly null or undefined  @typescript-eslint/no-unnecessary-condition
+  14:71  warning  Unnecessary optional chain on a non-nullish value                                                   @typescript-eslint/no-unnecessary-condition
+  31:51  warning  Unnecessary conditional, expected left-hand side of `??` operator to be possibly null or undefined  @typescript-eslint/no-unnecessary-condition
+  31:54  warning  Unnecessary optional chain on a non-nullish value                                                   @typescript-eslint/no-unnecessary-condition
+  54:68  warning  Unnecessary conditional, expected left-hand side of `??` operator to be possibly null or undefined  @typescript-eslint/no-unnecessary-condition
+  54:71  warning  Unnecessary optional chain on a non-nullish value                                                   @typescript-eslint/no-unnecessary-condition
+  79:68  warning  Unnecessary conditional, expected left-hand side of `??` operator to be possibly null or undefined  @typescript-eslint/no-unnecessary-condition
+  79:71  warning  Unnecessary optional chain on a non-nullish value                                                   @typescript-eslint/no-unnecessary-condition
+
+/Users/4thwithme/Documents/repo/recommendations-service/src/modules/db/promotional-products/promotional-products.service.ts
+  28:68  warning  Unnecessary conditional, expected left-hand side of `??` operator to be possibly null or undefined  @typescript-eslint/no-unnecessary-condition
+  28:71  warning  Unnecessary optional chain on a non-nullish value                                                   @typescript-eslint/no-unnecessary-condition
+  70:68  warning  Unnecessary conditional, expected left-hand side of `??` operator to be possibly null or undefined  @typescript-eslint/no-unnecessary-condition
+  70:71  warning  Unnecessary optional chain on a non-nullish value                                                   @typescript-eslint/no-unnecessary-condition
+  93:68  warning  Unnecessary conditional, expected left-hand side of `??` operator to be possibly null or undefined  @typescript-eslint/no-unnecessary-condition
+  93:71  warning  Unnecessary optional chain on a non-nullish value                                                   @typescript-eslint/no-unnecessary-condition
+  95:22  warning  Custom functions must use a single object destructuring parameter                                   custom-rules/require-object-params
+
+/Users/4thwithme/Documents/repo/recommendations-service/src/modules/db/root-categories-correlations/models/root-category-correlation.model.ts
+  68:32  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+
+/Users/4thwithme/Documents/repo/recommendations-service/src/modules/db/root-categories-correlations/root-categories-correlations.service.ts
+  23:11  warning  Unnecessary conditional, expected left-hand side of `??` operator to be possibly null or undefined  @typescript-eslint/no-unnecessary-condition
+  23:14  warning  Unnecessary optional chain on a non-nullish value                                                   @typescript-eslint/no-unnecessary-condition
+
+/Users/4thwithme/Documents/repo/recommendations-service/src/modules/db/style-alternatives/style-alternatives.service.ts
+  53:66  warning  Unnecessary conditional, expected left-hand side of `??` operator to be possibly null or undefined  @typescript-eslint/no-unnecessary-condition
+  53:69  warning  Unnecessary optional chain on a non-nullish value                                                   @typescript-eslint/no-unnecessary-condition
+  65:51  warning  Unnecessary conditional, expected left-hand side of `??` operator to be possibly null or undefined  @typescript-eslint/no-unnecessary-condition
+  65:54  warning  Unnecessary optional chain on a non-nullish value                                                   @typescript-eslint/no-unnecessary-condition
+
+/Users/4thwithme/Documents/repo/recommendations-service/src/modules/db/style-copurchases/models/style-copurchase.model.ts
+  212:18  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+  282:32  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+
+/Users/4thwithme/Documents/repo/recommendations-service/src/modules/db/style-copurchases/style-copurchases.service.ts
+   26:11  warning  Unnecessary conditional, expected left-hand side of `??` operator to be possibly null or undefined  @typescript-eslint/no-unnecessary-condition
+   26:14  warning  Unnecessary optional chain on a non-nullish value                                                   @typescript-eslint/no-unnecessary-condition
+   72:11  warning  Unnecessary conditional, expected left-hand side of `??` operator to be possibly null or undefined  @typescript-eslint/no-unnecessary-condition
+   72:14  warning  Unnecessary optional chain on a non-nullish value                                                   @typescript-eslint/no-unnecessary-condition
+  115:18  warning  Custom functions must use a single object destructuring parameter                                   custom-rules/require-object-params
+
+/Users/4thwithme/Documents/repo/recommendations-service/src/modules/db/styles-mv/styles-mv.service.ts
+  42:58  warning  Unnecessary conditional, expected left-hand side of `??` operator to be possibly null or undefined  @typescript-eslint/no-unnecessary-condition
+  42:61  warning  Unnecessary optional chain on a non-nullish value                                                   @typescript-eslint/no-unnecessary-condition
+  63:58  warning  Unnecessary conditional, expected left-hand side of `??` operator to be possibly null or undefined  @typescript-eslint/no-unnecessary-condition
+  63:61  warning  Unnecessary optional chain on a non-nullish value                                                   @typescript-eslint/no-unnecessary-condition
+  86:58  warning  Unnecessary conditional, expected left-hand side of `??` operator to be possibly null or undefined  @typescript-eslint/no-unnecessary-condition
+  86:61  warning  Unnecessary optional chain on a non-nullish value                                                   @typescript-eslint/no-unnecessary-condition
+
+/Users/4thwithme/Documents/repo/recommendations-service/src/modules/db/trending-items/trending-items.service.ts
+  166:41  warning  Custom functions must use a single object destructuring parameter                                   custom-rules/require-object-params
+  192:4   warning  Unnecessary conditional, expected left-hand side of `??` operator to be possibly null or undefined  @typescript-eslint/no-unnecessary-condition
+  230:31  warning  Custom functions must use a single object destructuring parameter                                   custom-rules/require-object-params
+  266:33  warning  Custom functions must use a single object destructuring parameter                                   custom-rules/require-object-params
+  275:5   warning  Unnecessary conditional, the types have no overlap                                                  @typescript-eslint/no-unnecessary-condition
+  276:5   warning  Unnecessary conditional, the types have no overlap                                                  @typescript-eslint/no-unnecessary-condition
+  352:22  warning  Custom functions must use a single object destructuring parameter                                   custom-rules/require-object-params
+  359:19  warning  Custom functions must use a single object destructuring parameter                                   custom-rules/require-object-params
+  363:20  warning  Custom functions must use a single object destructuring parameter                                   custom-rules/require-object-params
+  367:29  warning  Custom functions must use a single object destructuring parameter                                   custom-rules/require-object-params
+  380:35  warning  Custom functions must use a single object destructuring parameter                                   custom-rules/require-object-params
+  389:37  warning  Custom functions must use a single object destructuring parameter                                   custom-rules/require-object-params
+  398:30  warning  Custom functions must use a single object destructuring parameter                                   custom-rules/require-object-params
+  417:37  warning  Custom functions must use a single object destructuring parameter                                   custom-rules/require-object-params
+
+/Users/4thwithme/Documents/repo/recommendations-service/src/modules/rest/frequently-bought-together/frequently-bought-together.controller.ts
+  80:11  warning  Unnecessary conditional, expected left-hand side of `??` operator to be possibly null or undefined  @typescript-eslint/no-unnecessary-condition
+  80:14  warning  Unnecessary optional chain on a non-nullish value                                                   @typescript-eslint/no-unnecessary-condition
+  80:42  warning  Unnecessary optional chain on a non-nullish value                                                   @typescript-eslint/no-unnecessary-condition
+  81:18  warning  Unnecessary conditional, expected left-hand side of `??` operator to be possibly null or undefined  @typescript-eslint/no-unnecessary-condition
+  81:21  warning  Unnecessary optional chain on a non-nullish value                                                   @typescript-eslint/no-unnecessary-condition
+
+/Users/4thwithme/Documents/repo/recommendations-service/src/modules/rest/frequently-bought-together/frequently-bought-together.service.ts
+   38:36  warning  Custom functions must use a single object destructuring parameter                                   custom-rules/require-object-params
+   63:11  warning  Unnecessary conditional, expected left-hand side of `??` operator to be possibly null or undefined  @typescript-eslint/no-unnecessary-condition
+   63:14  warning  Unnecessary optional chain on a non-nullish value                                                   @typescript-eslint/no-unnecessary-condition
+   63:42  warning  Unnecessary optional chain on a non-nullish value                                                   @typescript-eslint/no-unnecessary-condition
+   64:18  warning  Unnecessary conditional, expected left-hand side of `??` operator to be possibly null or undefined  @typescript-eslint/no-unnecessary-condition
+   64:21  warning  Unnecessary optional chain on a non-nullish value                                                   @typescript-eslint/no-unnecessary-condition
+   67:35  warning  Custom functions must use a single object destructuring parameter                                   custom-rules/require-object-params
+   97:50  warning  Unnecessary conditional, the types have no overlap                                                  @typescript-eslint/no-unnecessary-condition
+  220:42  warning  Custom functions must use a single object destructuring parameter                                   custom-rules/require-object-params
+  232:46  warning  Custom functions must use a single object destructuring parameter                                   custom-rules/require-object-params
+  244:49  warning  Custom functions must use a single object destructuring parameter                                   custom-rules/require-object-params
+  245:3   warning  Type parameter T is used only once in the function signature                                        @typescript-eslint/no-unnecessary-type-parameters
+  299:11  warning  Unnecessary conditional, expected left-hand side of `??` operator to be possibly null or undefined  @typescript-eslint/no-unnecessary-condition
+  299:14  warning  Unnecessary optional chain on a non-nullish value                                                   @typescript-eslint/no-unnecessary-condition
+  299:42  warning  Unnecessary optional chain on a non-nullish value                                                   @typescript-eslint/no-unnecessary-condition
+  300:18  warning  Unnecessary conditional, expected left-hand side of `??` operator to be possibly null or undefined  @typescript-eslint/no-unnecessary-condition
+  300:21  warning  Unnecessary optional chain on a non-nullish value                                                   @typescript-eslint/no-unnecessary-condition
+  303:51  warning  Custom functions must use a single object destructuring parameter                                   custom-rules/require-object-params
+  442:11  warning  Unnecessary conditional, expected left-hand side of `??` operator to be possibly null or undefined  @typescript-eslint/no-unnecessary-condition
+  442:14  warning  Unnecessary optional chain on a non-nullish value                                                   @typescript-eslint/no-unnecessary-condition
+  442:42  warning  Unnecessary optional chain on a non-nullish value                                                   @typescript-eslint/no-unnecessary-condition
+  443:18  warning  Unnecessary conditional, expected left-hand side of `??` operator to be possibly null or undefined  @typescript-eslint/no-unnecessary-condition
+  443:21  warning  Unnecessary optional chain on a non-nullish value                                                   @typescript-eslint/no-unnecessary-condition
+  446:37  warning  Custom functions must use a single object destructuring parameter                                   custom-rules/require-object-params
+
+/Users/4thwithme/Documents/repo/recommendations-service/src/modules/rest/load-test/load-test.service.ts
+   20:20  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+   63:19  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+  115:30  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+  168:22  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+  173:32  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+  220:25  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+  266:25  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+  279:22  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+
+/Users/4thwithme/Documents/repo/recommendations-service/src/modules/rest/process-style/process-style.service.ts
+  216:35  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+  650:18  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+  661:3   warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+
+/Users/4thwithme/Documents/repo/recommendations-service/src/modules/rest/related-products/related-products.service.ts
+   45:36  warning  Custom functions must use a single object destructuring parameter                                   custom-rules/require-object-params
+   66:34  warning  Custom functions must use a single object destructuring parameter                                   custom-rules/require-object-params
+  112:11  warning  Unnecessary conditional, expected left-hand side of `??` operator to be possibly null or undefined  @typescript-eslint/no-unnecessary-condition
+  112:14  warning  Unnecessary optional chain on a non-nullish value                                                   @typescript-eslint/no-unnecessary-condition
+  112:32  warning  Unnecessary optional chain on a non-nullish value                                                   @typescript-eslint/no-unnecessary-condition
+  113:20  warning  Unnecessary optional chain on a non-nullish value                                                   @typescript-eslint/no-unnecessary-condition
+  116:26  warning  Custom functions must use a single object destructuring parameter                                   custom-rules/require-object-params
+  234:11  warning  Unnecessary conditional, expected left-hand side of `??` operator to be possibly null or undefined  @typescript-eslint/no-unnecessary-condition
+  234:14  warning  Unnecessary optional chain on a non-nullish value                                                   @typescript-eslint/no-unnecessary-condition
+  234:30  warning  Unnecessary optional chain on a non-nullish value                                                   @typescript-eslint/no-unnecessary-condition
+  237:24  warning  Custom functions must use a single object destructuring parameter                                   custom-rules/require-object-params
+  293:34  warning  Unnecessary conditional, value is always truthy                                                     @typescript-eslint/no-unnecessary-condition
+
+/Users/4thwithme/Documents/repo/recommendations-service/src/modules/rest/trending-products/render-trending-results.service.ts
+  58:54  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+  90:34  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+
+/Users/4thwithme/Documents/repo/recommendations-service/src/modules/rest/trending-products/trending-products.service.ts
+   48:11  warning  Unnecessary conditional, expected left-hand side of `??` operator to be possibly null or undefined  @typescript-eslint/no-unnecessary-condition
+   48:14  warning  Unnecessary optional chain on a non-nullish value                                                   @typescript-eslint/no-unnecessary-condition
+   48:32  warning  Unnecessary optional chain on a non-nullish value                                                   @typescript-eslint/no-unnecessary-condition
+  388:31  warning  Custom functions must use a single object destructuring parameter                                   custom-rules/require-object-params
+  529:27  warning  Custom functions must use a single object destructuring parameter                                   custom-rules/require-object-params
+  661:33  warning  Custom functions must use a single object destructuring parameter                                   custom-rules/require-object-params
+  723:30  warning  Custom functions must use a single object destructuring parameter                                   custom-rules/require-object-params
+  797:29  warning  Custom functions must use a single object destructuring parameter                                   custom-rules/require-object-params
+  860:29  warning  Custom functions must use a single object destructuring parameter                                   custom-rules/require-object-params
+
+/Users/4thwithme/Documents/repo/recommendations-service/src/scripts/algolia-add-alt-description.script.ts
+  26:1  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+
+/Users/4thwithme/Documents/repo/recommendations-service/src/scripts/algolia-style-to-nlp-v2.script.ts
+   32:26  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+   41:29  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+   59:1   warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+  104:22  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+
+/Users/4thwithme/Documents/repo/recommendations-service/src/scripts/algolia-style-to-nlp.script.ts
+  35:19  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+  42:1   warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+  83:22  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+
+/Users/4thwithme/Documents/repo/recommendations-service/src/scripts/evaluator-fbt/1-fetch-styles-and-recos.script.ts
+  53:1  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+
+/Users/4thwithme/Documents/repo/recommendations-service/src/scripts/evaluator-fbt/3-evaluate-model.script.ts
+  260:19  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+
+/Users/4thwithme/Documents/repo/recommendations-service/src/scripts/evaluator-related-products/1-fetch-styles-and-recos.script.ts
+  63:1  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+
+/Users/4thwithme/Documents/repo/recommendations-service/src/scripts/evaluator-related-products/3-evaluate-model.script.ts
+  306:19  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+
+/Users/4thwithme/Documents/repo/recommendations-service/src/scripts/extract-metrics-to-csv.script.ts
+   21:18  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+   47:1   warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+   61:1   warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+  168:1   warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+
+/Users/4thwithme/Documents/repo/recommendations-service/src/scripts/generate-db-uml.script.ts
+   73:1  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+  101:1  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+  116:1  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+  178:1  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+
+/Users/4thwithme/Documents/repo/recommendations-service/src/scripts/generate-simplified-annual-sales-csv.ts
+   28:1  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+   73:1  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+   77:1  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+   81:1  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+   99:1  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+  105:1  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+  112:1  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+  121:1  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+  152:1  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+  166:1  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+  253:1  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+  389:1  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+
+/Users/4thwithme/Documents/repo/recommendations-service/src/scripts/product-parity-report.script.ts
+  40:1  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+  49:1  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+  78:1  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+
+/Users/4thwithme/Documents/repo/recommendations-service/src/unit-tests/decorators/log-execution.decorator.unit-spec.ts
+  875:8  warning  Unnecessary conditional, value is always truthy  @typescript-eslint/no-unnecessary-condition
+
+/Users/4thwithme/Documents/repo/recommendations-service/src/utils/concurrency-pool.util.ts
+  107:9   warning  Unnecessary conditional, value is always truthy  @typescript-eslint/no-unnecessary-condition
+  108:29  warning  Unnecessary conditional, value is always truthy  @typescript-eslint/no-unnecessary-condition
+
+/Users/4thwithme/Documents/repo/recommendations-service/src/utils/mathematical-functions.util.ts
+  629:28  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+  662:37  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+  695:41  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+  729:30  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+  764:33  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+  778:30  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+
+/Users/4thwithme/Documents/repo/recommendations-service/test/db/styles-mv.e2e-spec.ts
+  196:28  warning  Unnecessary optional chain on a non-nullish value  @typescript-eslint/no-unnecessary-condition
+  197:28  warning  Unnecessary optional chain on a non-nullish value  @typescript-eslint/no-unnecessary-condition
+  198:28  warning  Unnecessary optional chain on a non-nullish value  @typescript-eslint/no-unnecessary-condition
+
+✖ 186 problems (0 errors, 186 warnings)
+
+
+> recommendations-service@0.0.1 format
+> prettier --write "src/**/*.ts" "test/**/*.ts"
+
+src/cli.ts 25ms (unchanged)
+src/configs/custom-logger.config.ts 35ms (unchanged)
+src/configs/env-validations.config.ts 4ms (unchanged)
+src/configs/rollbar-buffer.config.ts 6ms (unchanged)
+src/configs/rollbar.config.ts 4ms (unchanged)
+src/constants/bigquery.constant.ts 0ms (unchanged)
+src/constants/common.constant.ts 2ms (unchanged)
+src/constants/db.constant.ts 1ms (unchanged)
+src/constants/env-variables.constant.ts 1ms (unchanged)
+src/constants/recommendations.constants.ts 1ms (unchanged)
+src/constants/req.constants.ts 0ms (unchanged)
+src/decorators/cron-job-execution.decorator.ts 4ms (unchanged)
+src/decorators/log-execution.decorator.ts 6ms (unchanged)
+src/dto/addons/addons-curated-response.dto.ts 1ms (unchanged)
+src/dto/brand-products/brand-products-query.dto.ts 1ms (unchanged)
+src/dto/brand-products/brand-products-response.dto.ts 1ms (unchanged)
+src/dto/email-recommendations/email-recommendations-query.dto.ts 3ms (unchanged)
+src/dto/email-recommendations/email-recommendations-response.dto.ts 1ms (unchanged)
+src/dto/frequently-bought-together/frequently-bought-together-query.dto.ts 1ms (unchanged)
+src/dto/frequently-bought-together/frequently-bought-together-response.dto.ts 1ms (unchanged)
+src/dto/frequently-bought-together/frequently-bought-together-root-categories-query.dto.ts 1ms (unchanged)
+src/dto/frequently-bought-together/frequently-bought-together-root-categories-response.dto.ts 1ms (unchanged)
+src/dto/frequently-bought-together/frequently-bought-together-v2-query.dto.ts 2ms (unchanged)
+src/dto/frequently-bought-together/frequently-bought-together-v2-response.dto.ts 1ms (unchanged)
+src/dto/load-test/load-test.dto.ts 2ms (unchanged)
+src/dto/mms-style-validation.dto.ts 3ms (unchanged)
+src/dto/nlp-features/nlp-features.dto.ts 1ms (unchanged)
+src/dto/related-products/related-products-query.dto.ts 1ms (unchanged)
+src/dto/related-products/related-products-response.dto.ts 2ms (unchanged)
+src/dto/similar-to-favorites/similar-to-favorites-query.dto.ts 2ms (unchanged)
+src/dto/similar-to-favorites/similar-to-favorites-response.dto.ts 1ms (unchanged)
+src/dto/trending-products/trending-products-by-category-query.dto.ts 1ms (unchanged)
+src/dto/trending-products/trending-products-by-category-response.dto.ts 1ms (unchanged)
+src/dto/trending-products/trending-products-site-wide-query.dto.ts 1ms (unchanged)
+src/dto/trending-products/trending-products-site-wide-response.dto.ts 1ms (unchanged)
+src/guards/internal-vpn-access.guard.ts 1ms (unchanged)
+src/interceptors/newrelic.interceptor.ts 2ms (unchanged)
+src/interfaces/algolia-hits.interface.ts 1ms (unchanged)
+src/interfaces/cache.interface.ts 0ms (unchanged)
+src/interfaces/env-variables.interface.ts 0ms (unchanged)
+src/interfaces/mms-complements.interface.ts 1ms (unchanged)
+src/interfaces/mms-related-products.interface.ts 0ms (unchanged)
+src/interfaces/mms-style-to-process.interface.ts 2ms (unchanged)
+src/interfaces/related-product.interface.ts 1ms (unchanged)
+src/interfaces/style-copurchase.interface.ts 0ms (unchanged)
+src/interfaces/trending-products.interface.ts 1ms (unchanged)
+src/knexfile.prod.ts 1ms (unchanged)
+src/knexfile.ts 0ms (unchanged)
+src/main.ts 3ms (unchanged)
+src/middlewares/bad-request-exception.filter.ts 1ms (unchanged)
+src/middlewares/correlation-id.middleware.ts 1ms (unchanged)
+src/middlewares/exceptions.filter.ts 1ms (unchanged)
+src/middlewares/initialize-request-store.middleware.ts 1ms (unchanged)
+src/middlewares/logger.middleware.ts 3ms (unchanged)
+src/migrations/20250526153636_create_styles_hash_table.ts 1ms (unchanged)
+src/migrations/20250529125937_add_condensed_features_table.ts 1ms (unchanged)
+src/migrations/20250609221918_add_condensed_features_content.ts 3ms (unchanged)
+src/migrations/20250620124930_create_categories_correlations.ts 2ms (unchanged)
+src/migrations/20250620125209_create_styles_table.ts 2ms (unchanged)
+src/migrations/20250625101248_create_root_categories_correlations.ts 2ms (unchanged)
+src/migrations/20250625171800_create_styles_table.ts 1ms (unchanged)
+src/migrations/20250807000000_create_product_annual_sales_table.ts 1ms (unchanged)
+src/migrations/20250809211549_create_trending_products_predictions_table.ts 1ms (unchanged)
+src/migrations/20250811130211_cleanup_test_tables.ts 1ms (unchanged)
+src/migrations/20250821130322_add_categories_ids_to_styles.ts 1ms (unchanged)
+src/migrations/20250826094648_create_promotional_products_table.ts 1ms (unchanged)
+src/migrations/20250903085657_add_categories_with_parents_ids_to_styles.ts 1ms (unchanged)
+src/migrations/20250903091741_add_category_218_to_promotional_products.ts 2ms (unchanged)
+src/migrations/20250918142356_add_is_active_to_trending_products.ts 1ms (unchanged)
+src/migrations/20251008143015_add_is_active_flag_to_colors_and_styles.ts 1ms (unchanged)
+src/migrations/20251014110420_fix_null_category_arrays.ts 1ms (unchanged)
+src/migrations/20251021114007_add_total_predicted_orders_to_trending_products.ts 2ms (unchanged)
+src/migrations/20251021115141_add_multi_valued_index_to_categories_with_parents_ids.ts 1ms (unchanged)
+src/migrations/20251103120000_extend_styles_with_algolia_fields.ts 3ms (unchanged)
+src/migrations/20251103120100_create_default_unit_prices_table.ts 2ms (unchanged)
+src/migrations/20251103120200_add_image_url_to_styles_colors.ts 1ms (unchanged)
+src/migrations/20251103120300_add_foreign_keys_and_indexes.ts 7ms (unchanged)
+src/migrations/20251125120000_create_styles_mv_table.ts 2ms (unchanged)
+src/migrations/20251125120100_create_refresh_styles_mv_procedure.ts 1ms (unchanged)
+src/migrations/20260115134218_create_style_alternatives_table.ts 1ms (unchanged)
+src/migrations/20260120120000_add_regular_unit_price_to_default_unit_prices.ts 1ms (unchanged)
+src/migrations/20260120120100_update_refresh_styles_mv_add_regular_unit_price.ts 1ms (unchanged)
+src/migrations/20260216120000_create_style_copurchases_table.ts 1ms (unchanged)
+src/migrations/20260218120000_brand_json_to_varchar.ts 1ms (unchanged)
+src/migrations/20260218120100_update_refresh_styles_mv_brand.ts 2ms (unchanged)
+src/migrations/20260220100000_create_promotional_product_categories.ts 2ms (unchanged)
+src/migrations/20260220100100_create_style_categories.ts 2ms (unchanged)
+src/migrations/20260302120000_seed_style_copurchases.ts 3ms (unchanged)
+src/migrations/20260311120000_add_is_parent_to_style_categories.ts 2ms (unchanged)
+src/modules/algolia/algolia.module.ts 1ms (unchanged)
+src/modules/algolia/algolia.service.ts 7ms (unchanged)
+src/modules/app/app.module.ts 1ms (unchanged)
+src/modules/app/rollbar.integration-spec.ts 1ms (unchanged)
+src/modules/bigquery/bigquery.module.ts 1ms (unchanged)
+src/modules/bigquery/bigquery.service.ts 5ms (unchanged)
+src/modules/cache/cache.module.ts 3ms (unchanged)
+src/modules/cache/cache.service.ts 6ms (unchanged)
+src/modules/cli/cli.module.ts 1ms (unchanged)
+src/modules/cli/commands/forecast-trending-products.command.ts 6ms (unchanged)
+src/modules/cli/commands/migrate-down.command.ts 1ms (unchanged)
+src/modules/cli/commands/migrate-rollback.command.ts 1ms (unchanged)
+src/modules/cli/commands/migrate-up.command.ts 1ms (unchanged)
+src/modules/cli/commands/migrate.command.ts 1ms (unchanged)
+src/modules/cli/commands/populate-category-correlations.command.ts 5ms (unchanged)
+src/modules/cli/commands/populate-style-copurchases.command.ts 3ms (unchanged)
+src/modules/cli/commands/populate-trending-items.command.ts 4ms (unchanged)
+src/modules/cli/commands/prepare-promo-seed.command.ts 4ms (unchanged)
+src/modules/cli/commands/sync-source-styles.command.ts 3ms (unchanged)
+src/modules/cli/workers/forecast-worker.ts 11ms (unchanged)
+src/modules/color-match-worker/color-match-worker.module.ts 1ms (unchanged)
+src/modules/color-match-worker/color-match-worker.service.ts 3ms (unchanged)
+src/modules/color-match-worker/color-match.worker.ts 1ms (unchanged)
+src/modules/db/category-correlations/category-correlations.service.ts 2ms (unchanged)
+src/modules/db/category-correlations/dto/category-correlation.base.dto.ts 1ms (unchanged)
+src/modules/db/category-correlations/models/category-correlation.model.ts 4ms (unchanged)
+src/modules/db/category-correlations/types/category-correlation.base.interface.ts 0ms (unchanged)
+src/modules/db/condensed-features/condensed-features.service.ts 2ms (unchanged)
+src/modules/db/condensed-features/dto/condensed-features.base.dto.ts 1ms (unchanged)
+src/modules/db/condensed-features/dto/condensed-features.create.dto.ts 0ms (unchanged)
+src/modules/db/condensed-features/dto/condensed-features.update.dto.ts 0ms (unchanged)
+src/modules/db/condensed-features/models/condensed-feature.model.ts 6ms (unchanged)
+src/modules/db/condensed-features/types/condensed-features.base.interface.ts 0ms (unchanged)
+src/modules/db/condensed-features/types/condensed-features.create.interface.ts 0ms (unchanged)
+src/modules/db/condensed-features/types/condensed-features.update.interface.ts 0ms (unchanged)
+src/modules/db/db.module.ts 1ms (unchanged)
+src/modules/db/default-unit-prices/default-unit-prices.module.ts 0ms (unchanged)
+src/modules/db/default-unit-prices/default-unit-prices.service.ts 1ms (unchanged)
+src/modules/db/default-unit-prices/dto/default-unit-price.base.dto.ts 1ms (unchanged)
+src/modules/db/default-unit-prices/dto/default-unit-price.create.dto.ts 0ms (unchanged)
+src/modules/db/default-unit-prices/dto/default-unit-price.delete.dto.ts 0ms (unchanged)
+src/modules/db/default-unit-prices/dto/default-unit-price.find.dto.ts 0ms (unchanged)
+src/modules/db/default-unit-prices/dto/default-unit-price.update.dto.ts 0ms (unchanged)
+src/modules/db/default-unit-prices/models/default-unit-price.model.ts 8ms (unchanged)
+src/modules/db/default-unit-prices/types/default-unit-price.base.interface.ts 0ms (unchanged)
+src/modules/db/default-unit-prices/types/default-unit-price.create.interface.ts 0ms (unchanged)
+src/modules/db/default-unit-prices/types/default-unit-price.update.interface.ts 0ms (unchanged)
+src/modules/db/forecasted-trending-products/dto/forecasted-trending-products.base.dto.ts 2ms (unchanged)
+src/modules/db/forecasted-trending-products/forecasted-trending-products.service.ts 3ms (unchanged)
+src/modules/db/forecasted-trending-products/models/forecasted-trending-products.model.ts 8ms (unchanged)
+src/modules/db/forecasted-trending-products/types/forecasted-trending-products.base.interface.ts 1ms (unchanged)
+src/modules/db/product-annual-sales/dto/product-annual-sales.base.dto.ts 2ms (unchanged)
+src/modules/db/product-annual-sales/models/product-annual-sales.model.ts 3ms (unchanged)
+src/modules/db/product-annual-sales/product-annual-sales.service.ts 2ms (unchanged)
+src/modules/db/product-annual-sales/types/product-annual-sales.base.interface.ts 0ms (unchanged)
+src/modules/db/promotional-products/dto/promotional-product.base.dto.ts 0ms (unchanged)
+src/modules/db/promotional-products/models/promotional-product.model.ts 1ms (unchanged)
+src/modules/db/promotional-products/promotional-products.service.ts 2ms (unchanged)
+src/modules/db/promotional-products/types/promotional-product.base.interface.ts 0ms (unchanged)
+src/modules/db/root-categories-correlations/dto/root-category-correlation.base.dto.ts 1ms (unchanged)
+src/modules/db/root-categories-correlations/models/root-category-correlation.model.ts 2ms (unchanged)
+src/modules/db/root-categories-correlations/root-categories-correlations.service.ts 1ms (unchanged)
+src/modules/db/root-categories-correlations/types/root-category-correlation.base.interface.ts 0ms (unchanged)
+src/modules/db/style-alternatives/dto/style-alternative.base.dto.ts 0ms (unchanged)
+src/modules/db/style-alternatives/dto/style-alternative.create.dto.ts 0ms (unchanged)
+src/modules/db/style-alternatives/models/style-alternative.model.ts 5ms (unchanged)
+src/modules/db/style-alternatives/style-alternatives.service.ts 2ms (unchanged)
+src/modules/db/style-alternatives/types/style-alternative.base.interface.ts 0ms (unchanged)
+src/modules/db/style-alternatives/types/style-alternative.create.interface.ts 0ms (unchanged)
+src/modules/db/style-colors/dto/style-color.base.dto.ts 1ms (unchanged)
+src/modules/db/style-colors/dto/style-color.create.dto.ts 0ms (unchanged)
+src/modules/db/style-colors/dto/style-color.update.dto.ts 0ms (unchanged)
+src/modules/db/style-colors/models/style-color.model.ts 8ms (unchanged)
+src/modules/db/style-colors/style-colors.service.ts 1ms (unchanged)
+src/modules/db/style-colors/types/style-color.base.interface.ts 0ms (unchanged)
+src/modules/db/style-colors/types/style-color.create.interface.ts 0ms (unchanged)
+src/modules/db/style-colors/types/style-color.update.interface.ts 0ms (unchanged)
+src/modules/db/style-copurchases/dto/find-top-copurchases.dto.ts 1ms (unchanged)
+src/modules/db/style-copurchases/dto/style-copurchase.base.dto.ts 1ms (unchanged)
+src/modules/db/style-copurchases/dto/style-copurchase.create.dto.ts 0ms (unchanged)
+src/modules/db/style-copurchases/models/style-copurchase.model.ts 6ms (unchanged)
+src/modules/db/style-copurchases/style-copurchases.service.ts 2ms (unchanged)
+src/modules/db/style-copurchases/types/copurchase-row.interface.ts 0ms (unchanged)
+src/modules/db/style-copurchases/types/style-copurchase.base.interface.ts 0ms (unchanged)
+src/modules/db/style-copurchases/types/style-copurchase.create.interface.ts 0ms (unchanged)
+src/modules/db/styles-hash/dto/styles-hash.base.dto.ts 1ms (unchanged)
+src/modules/db/styles-hash/dto/styles-hash.create.dto.ts 0ms (unchanged)
+src/modules/db/styles-hash/dto/styles-hash.update.dto.ts 0ms (unchanged)
+src/modules/db/styles-hash/models/styles-hash.model.ts 4ms (unchanged)
+src/modules/db/styles-hash/styles-hash.service.ts 2ms (unchanged)
+src/modules/db/styles-hash/types/styles-hash.base.interface.ts 0ms (unchanged)
+src/modules/db/styles-hash/types/styles-hash.create.interface.ts 0ms (unchanged)
+src/modules/db/styles-hash/types/styles-hash.update.interface.ts 0ms (unchanged)
+src/modules/db/styles-mv/dto/find-by-brands.dto.ts 0ms (unchanged)
+src/modules/db/styles-mv/dto/find-by-style-ids.dto.ts 0ms (unchanged)
+src/modules/db/styles-mv/dto/styles-mv.base.dto.ts 2ms (unchanged)
+src/modules/db/styles-mv/models/styles-mv.model.ts 5ms (unchanged)
+src/modules/db/styles-mv/styles-mv.service.ts 2ms (unchanged)
+src/modules/db/styles-mv/types/styles-mv.base.interface.ts 1ms (unchanged)
+src/modules/db/styles/dto/style.base.dto.ts 2ms (unchanged)
+src/modules/db/styles/dto/style.create.dto.ts 0ms (unchanged)
+src/modules/db/styles/dto/style.find.dto.ts 0ms (unchanged)
+src/modules/db/styles/dto/style.update.dto.ts 0ms (unchanged)
+src/modules/db/styles/models/style.model.ts 12ms (unchanged)
+src/modules/db/styles/styles.service.ts 2ms (unchanged)
+src/modules/db/styles/types/style.base.interface.ts 1ms (unchanged)
+src/modules/db/styles/types/style.create.interface.ts 0ms (unchanged)
+src/modules/db/styles/types/style.update.interface.ts 0ms (unchanged)
+src/modules/db/trending-items/dto/trending-item-order-data.dto.ts 1ms (unchanged)
+src/modules/db/trending-items/trending-items.service.ts 9ms (unchanged)
+src/modules/env-config/env-config.module.ts 0ms (unchanged)
+src/modules/env-config/env-config.service.ts 1ms (unchanged)
+src/modules/health/health.controller.ts 2ms (unchanged)
+src/modules/health/health.module.ts 1ms (unchanged)
+src/modules/health/health.service.ts 3ms (unchanged)
+src/modules/metrics/metrics.module.ts 1ms (unchanged)
+src/modules/metrics/metrics.service.ts 1ms (unchanged)
+src/modules/mms-styles-sync/mms-styles-sync.module.ts 0ms (unchanged)
+src/modules/mms-styles-sync/mms-styles-sync.service.ts 8ms (unchanged)
+src/modules/mms/mms.module.ts 1ms (unchanged)
+src/modules/mms/mms.service.ts 7ms (unchanged)
+src/modules/newrelic/newrelic.module.ts 1ms (unchanged)
+src/modules/newrelic/newrelic.service.ts 1ms (unchanged)
+src/modules/product-hydration/product-hydration.module.ts 0ms (unchanged)
+src/modules/product-hydration/product-hydration.service.ts 4ms (unchanged)
+src/modules/rest/addons/addons.controller.ts 1ms (unchanged)
+src/modules/rest/addons/addons.module.ts 1ms (unchanged)
+src/modules/rest/addons/addons.service.ts 2ms (unchanged)
+src/modules/rest/email-recommendations/email-recommendations.controller.ts 2ms (unchanged)
+src/modules/rest/email-recommendations/email-recommendations.module.ts 1ms (unchanged)
+src/modules/rest/email-recommendations/email-recommendations.service.ts 10ms (unchanged)
+src/modules/rest/frequently-bought-together/frequently-bought-together.controller.ts 2ms (unchanged)
+src/modules/rest/frequently-bought-together/frequently-bought-together.module.ts 1ms (unchanged)
+src/modules/rest/frequently-bought-together/frequently-bought-together.service.ts 9ms (unchanged)
+src/modules/rest/load-test/load-test.controller.ts 2ms (unchanged)
+src/modules/rest/load-test/load-test.module.ts 1ms (unchanged)
+src/modules/rest/load-test/load-test.service.ts 7ms (unchanged)
+src/modules/rest/open-ai/open-ai.module.ts 0ms (unchanged)
+src/modules/rest/open-ai/open-ai.service.ts 2ms (unchanged)
+src/modules/rest/process-style/process-style.module.ts 1ms (unchanged)
+src/modules/rest/process-style/process-style.service.ts 12ms (unchanged)
+src/modules/rest/promos/dto/march-promo-query.dto.ts 1ms (unchanged)
+src/modules/rest/promos/dto/promo-query.dto.ts 0ms (unchanged)
+src/modules/rest/promos/dto/promo-response.dto.ts 1ms (unchanged)
+src/modules/rest/promos/promos.controller.ts 1ms (unchanged)
+src/modules/rest/promos/promos.module.ts 1ms (unchanged)
+src/modules/rest/promos/promos.service.ts 4ms (unchanged)
+src/modules/rest/promotional-products/dto/promotional-products-query.dto.ts 1ms (unchanged)
+src/modules/rest/promotional-products/dto/promotional-products-response.dto.ts 1ms (unchanged)
+src/modules/rest/promotional-products/promotional-products.controller.ts 1ms (unchanged)
+src/modules/rest/promotional-products/promotional-products.module.ts 1ms (unchanged)
+src/modules/rest/promotional-products/promotional-products.service.ts 2ms (unchanged)
+src/modules/rest/related-products/related-products.controller.ts 1ms (unchanged)
+src/modules/rest/related-products/related-products.module.ts 1ms (unchanged)
+src/modules/rest/related-products/related-products.service.ts 5ms (unchanged)
+src/modules/rest/robots/robots.controller.ts 1ms (unchanged)
+src/modules/rest/robots/robots.module.ts 0ms (unchanged)
+src/modules/rest/similar-to-favorites/similar-to-favorites.controller.ts 1ms (unchanged)
+src/modules/rest/similar-to-favorites/similar-to-favorites.module.ts 1ms (unchanged)
+src/modules/rest/similar-to-favorites/similar-to-favorites.service.ts 4ms (unchanged)
+src/modules/rest/trending-products/render-trending-results.service.ts 7ms (unchanged)
+src/modules/rest/trending-products/trending-products-dashboard.controller.ts 2ms (unchanged)
+src/modules/rest/trending-products/trending-products.module.ts 0ms (unchanged)
+src/modules/rest/trending-products/trending-products.service.ts 14ms (unchanged)
+src/scripts/algolia-add-alt-description.script.ts 2ms (unchanged)
+src/scripts/algolia-push-between-indices.script.ts 2ms (unchanged)
+src/scripts/algolia-push-events.script.ts 3ms (unchanged)
+src/scripts/algolia-style-to-nlp-v2.script.ts 3ms (unchanged)
+src/scripts/algolia-style-to-nlp.script.ts 3ms (unchanged)
+src/scripts/evaluator-fbt/0-get-all-styles-ids.script.ts 2ms (unchanged)
+src/scripts/evaluator-fbt/1-fetch-styles-and-recos.script.ts 5ms (unchanged)
+src/scripts/evaluator-fbt/2-merge-all-fetched-styles.script.ts 2ms (unchanged)
+src/scripts/evaluator-fbt/3-evaluate-model.script.ts 11ms (unchanged)
+src/scripts/evaluator-related-products/0-get-all-styles-ids.script.ts 3ms (unchanged)
+src/scripts/evaluator-related-products/1-fetch-styles-and-recos.script.ts 5ms (unchanged)
+src/scripts/evaluator-related-products/2-merge-all-fetched-styles.script.ts 1ms (unchanged)
+src/scripts/evaluator-related-products/3-evaluate-model.script.ts 14ms (unchanged)
+src/scripts/extract-metrics-to-csv.script.ts 3ms (unchanged)
+src/scripts/generate-db-uml.script.ts 4ms (unchanged)
+src/scripts/generate-simplified-annual-sales-csv.ts 7ms (unchanged)
+src/scripts/get-gh-stats-1.script.ts 2ms (unchanged)
+src/scripts/get-gh-stats-2.script.ts 2ms (unchanged)
+src/scripts/get-gh-stats-3.script.ts 1ms (unchanged)
+src/scripts/get-gh-stats-4.script.ts 2ms (unchanged)
+src/scripts/load-testing/artillery-data-generator.ts 5ms (unchanged)
+src/scripts/mms-to-algolia-update.script.ts 3ms (unchanged)
+src/scripts/product-parity-report.script.ts 3ms (unchanged)
+src/scripts/push-new-fields-to-algolia-styles.script.ts 1ms (unchanged)
+src/seeds/algolia-nlp-results-2025-04-30T11-55-49-prod.ts 520ms (unchanged)
+src/seeds/base-promo-data.ts 3ms (unchanged)
+src/seeds/category-correlations-09-2025.ts 410ms (unchanged)
+src/seeds/category-correlations.ts 417ms (unchanged)
+src/seeds/fake-category-correlations.ts 42ms (unchanged)
+src/seeds/promo-seed-data.ts 6ms (unchanged)
+src/seeds/root-category-correlations.ts 9ms (unchanged)
+src/seeds/styles-popularity.ts 249ms (unchanged)
+src/unit-tests/algolia.service.unit-spec.ts 11ms (unchanged)
+src/unit-tests/array.util.unit-spec.ts 3ms (unchanged)
+src/unit-tests/bigquery.service.unit-spec.ts 5ms (unchanged)
+src/unit-tests/cache.service.unit-spec.ts 9ms (unchanged)
+src/unit-tests/check-internal-access.util.unit-spec.ts 3ms (unchanged)
+src/unit-tests/color-match-worker.service.unit-spec.ts 3ms (unchanged)
+src/unit-tests/color-match.util.unit-spec.ts 1ms (unchanged)
+src/unit-tests/common.util.unit-spec.ts 2ms (unchanged)
+src/unit-tests/compare-hashes.unit-spec.ts 2ms (unchanged)
+src/unit-tests/cron-job-execution.decorator.unit-spec.ts 3ms (unchanged)
+src/unit-tests/date-helpers.util.unit-spec.ts 6ms (unchanged)
+src/unit-tests/decorators/log-execution.decorator.unit-spec.ts 14ms (unchanged)
+src/unit-tests/env-config.service.unit-spec.ts 2ms (unchanged)
+src/unit-tests/env-validations.config.unit-spec.ts 3ms (unchanged)
+src/unit-tests/formatting.util.unit-spec.ts 1ms (unchanged)
+src/unit-tests/get-env-file.util.unit-spec.ts 2ms (unchanged)
+src/unit-tests/hash-from-object.unit-spec.ts 2ms (unchanged)
+src/unit-tests/holiday-helpers.util.unit-spec.ts 13ms (unchanged)
+src/unit-tests/log-execution.decorator.unit-spec.ts 10ms (unchanged)
+src/unit-tests/mathematical-functions.util.unit-spec.ts 34ms (unchanged)
+src/unit-tests/metrics.service.unit-spec.ts 2ms (unchanged)
+src/unit-tests/mms.service.unit-spec.ts 12ms (unchanged)
+src/unit-tests/populate-style-copurchases.command.unit-spec.ts 4ms (unchanged)
+src/unit-tests/product-hydration.service.unit-spec.ts 7ms (unchanged)
+src/unit-tests/random-color-picker.util.unit-spec.ts 5ms (unchanged)
+src/unit-tests/request-store.util.unit-spec.ts 4ms (unchanged)
+src/unit-tests/retry.unit-spec.ts 8ms (unchanged)
+src/unit-tests/rollbar-buffer.config.unit-spec.ts 4ms (unchanged)
+src/unit-tests/rollbar.config.unit-spec.ts 3ms (unchanged)
+src/unit-tests/setup-swagger.util.unit-spec.ts 3ms (unchanged)
+src/unit-tests/similar-to-favorites.service.unit-spec.ts 8ms (unchanged)
+src/unit-tests/sort-styles.util.unit-spec.ts 5ms (unchanged)
+src/unit-tests/style.model.unit-spec.ts 9ms (unchanged)
+src/unit-tests/styles-mv.model.unit-spec.ts 8ms (unchanged)
+src/unit-tests/styles-mv.service.unit-spec.ts 3ms (unchanged)
+src/unit-tests/trending-items.service.unit-spec.ts 6ms (unchanged)
+src/unit-tests/trending-score-calculator.util.unit-spec.ts 32ms (unchanged)
+src/utils/array.util.ts 2ms (unchanged)
+src/utils/check-internal-access.util.ts 1ms (unchanged)
+src/utils/color-match.util.ts 1ms (unchanged)
+src/utils/common.util.ts 1ms (unchanged)
+src/utils/compare-hashes.util.ts 0ms (unchanged)
+src/utils/concurrency-pool.util.ts 2ms (unchanged)
+src/utils/date-helpers.util.ts 4ms (unchanged)
+src/utils/formatting.util.ts 1ms (unchanged)
+src/utils/get-env-file.util.ts 1ms (unchanged)
+src/utils/get-env-variable.util.ts 1ms (unchanged)
+src/utils/hash-from-object.unit.ts 1ms (unchanged)
+src/utils/holiday-helpers.util.ts 4ms (unchanged)
+src/utils/klaviyo-html-renderer.util.ts 3ms (unchanged)
+src/utils/mathematical-functions.util.ts 13ms (unchanged)
+src/utils/progress-bar.util.ts 2ms (unchanged)
+src/utils/random-color-picker.util.ts 2ms (unchanged)
+src/utils/request-store.util.ts 3ms (unchanged)
+src/utils/retry.util.ts 2ms (unchanged)
+src/utils/setup-swagger.util.ts 1ms (unchanged)
+src/utils/sort-styles.utils.ts 1ms (unchanged)
+src/utils/trending-score-calculator.util.ts 6ms (unchanged)
+test/addons.e2e-spec.ts 11ms (unchanged)
+test/algolia/algolia.module.e2e-spec.ts 2ms (unchanged)
+test/algolia/algolia.service.e2e-spec.ts 15ms (unchanged)
+test/algolia/algolia.service.integration.e2e-spec.ts 7ms (unchanged)
+test/algolia/algolia.service.mapping.e2e-spec.ts 3ms (unchanged)
+test/app.module.e2e-spec.ts 2ms (unchanged)
+test/cache.module.e2e-spec.ts 7ms (unchanged)
+test/db/category-correlations.e2e-spec.ts 2ms (unchanged)
+test/db/condensed-features.e2e-spec.ts 10ms (unchanged)
+test/db/default-unit-prices.service.e2e-spec.ts 5ms (unchanged)
+test/db/forecasted-trending-products.e2e-spec.ts 7ms (unchanged)
+test/db/product-annual-sales.service.e2e-spec.ts 18ms (unchanged)
+test/db/promotional-products.e2e-spec.ts 11ms (unchanged)
+test/db/root-categories-correlations.e2e-spec.ts 2ms (unchanged)
+test/db/style-alternatives.e2e-spec.ts 8ms (unchanged)
+test/db/style-colors.e2e-spec.ts 8ms (unchanged)
+test/db/styles-hash.e2e-spec.ts 7ms (unchanged)
+test/db/styles-mv.e2e-spec.ts 13ms (unchanged)
+test/db/styles.e2e-spec.ts 7ms (unchanged)
+test/env-config.module.e2e-spec.ts 3ms (unchanged)
+test/forecasted-trending-products-validation.e2e-spec.ts 8ms (unchanged)
+test/frequently-bought-together-root-categories.e2e-spec.ts 7ms (unchanged)
+test/frequently-bought-together.e2e-spec.ts 19ms (unchanged)
+test/health.module.e2e-spec.ts 8ms (unchanged)
+test/jest-e2e.config.ts 1ms (unchanged)
+test/jest-e2e.coverage.config.ts 0ms (unchanged)
+test/jest-unit.config.ts 1ms (unchanged)
+test/jest-unit.coverage.config.ts 0ms (unchanged)
+test/jest.config.ts 0ms (unchanged)
+test/jest.coverage.config.ts 0ms (unchanged)
+test/metrics.e2e-spec.ts 3ms (unchanged)
+test/mms-styles-sync.service.e2e-spec.ts 11ms (unchanged)
+test/mms.service.e2e-spec.ts 24ms (unchanged)
+test/new-relic.e2e-spec.ts 1ms (unchanged)
+test/open-ai/open-ai.module.e2e-spec.ts 1ms (unchanged)
+test/open-ai/open-ai.service.e2e-spec.ts 4ms (unchanged)
+test/product-hydration.service.e2e-spec.ts 16ms (unchanged)
+test/related-products.e2e-spec.ts 25ms (unchanged)
+test/rest/email-recommendations.controller.e2e-spec.ts 7ms (unchanged)
+test/rest/email-recommendations.service.e2e-spec.ts 16ms (unchanged)
+test/rest/process-style.service.e2e-spec.ts 30ms (unchanged)
+test/rest/promos.controller.e2e-spec.ts 4ms (unchanged)
+test/rest/promos.service.e2e-spec.ts 9ms (unchanged)
+test/rest/promotional-products.controller.e2e-spec.ts 4ms (unchanged)
+test/rest/promotional-products.service.e2e-spec.ts 26ms (unchanged)
+test/rest/render-trending-results.service.e2e-spec.ts 11ms (unchanged)
+test/rest/trending-products-dashboard.controller.e2e-spec.ts 9ms (unchanged)
+test/rest/trending-products.service.e2e-spec.ts 53ms (unchanged)
+test/robots.e2e-spec.ts 6ms (unchanged)
+test/similar-to-favorites.e2e-spec.ts 8ms (unchanged)
+test/style-validation.e2e-spec.ts 5ms (unchanged)
+test/test-helpers/mock-factories.ts 2ms (unchanged)
+test/trending-products-categories-integration.e2e-spec.ts 6ms (unchanged)
+
+> recommendations-service@0.0.1 type-check
+> tsc --noEmit
+
+Exit code: 0

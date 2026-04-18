@@ -1,0 +1,38 @@
+[
+  {
+    "content": "Find MongoDB transaction usage in auth service",
+    "status": "completed",
+    "priority": "high",
+    "id": "1"
+  },
+  {
+    "content": "Remove transaction usage from company model operations",
+    "status": "completed",
+    "priority": "high",
+    "id": "2"
+  },
+  {
+    "content": "Test the fix by running the auth operations",
+    "status": "completed",
+    "priority": "medium",
+    "id": "3"
+  },
+  {
+    "content": "Review SCSS files to identify reusable variables",
+    "status": "completed",
+    "priority": "medium",
+    "id": "4"
+  },
+  {
+    "content": "Add error gradients to global gradients file",
+    "status": "completed",
+    "priority": "medium",
+    "id": "5"
+  },
+  {
+    "content": "Refactor verify-email-error styles to use global variables",
+    "status": "completed",
+    "priority": "medium",
+    "id": "6"
+  }
+]

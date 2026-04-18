@@ -1,0 +1,9 @@
+{
+  "id": "14",
+  "subject": "Phase 1: Update IMPLEMENTATION.md checkboxes",
+  "description": "Add new checkboxes to plans/IMPLEMENTATION.md for: (Phase 2) faction/phase metadata in HDF5, (Phase 4) StratifiedBatchSampler implementation and ILTrainer integration.",
+  "activeForm": "Updating IMPLEMENTATION.md",
+  "status": "completed",
+  "blocks": [],
+  "blockedBy": []
+}

@@ -1,0 +1,2335 @@
+
+> recommendations-service@0.0.1 test:unit
+> dotenv -e .env.test -- npx jest --config ./test/jest-unit.config.ts
+
+[33m[Nest] 23934  - [39m03/19/2026, 3:55:23 PM [33m   WARN[39m [38;5;3m[RetryUtil] [39m[33mAttempt 1 failed: Error: fail[39m
+[33m[Nest] 23934  - [39m03/19/2026, 3:55:23 PM [33m   WARN[39m [38;5;3m[RetryUtil] [39m[33mAttempt 1 failed: Error: fail 1[39m
+[32m[Nest] 23942  - [39m03/19/2026, 3:55:23 PM [32m    LOG[39m [38;5;3m[EnvConfigService] [39m[32mFetching environment variable: NODE_ENV, converter: none[39m
+PASS src/unit-tests/algolia.service.unit-spec.ts (5.602 s)
+  AlgoliaService
+    ✓ should be defined (10 ms)
+    onModuleInit
+      ✓ should initialize Algolia client successfully (2 ms)
+      ✓ should throw error when environment variables are missing (17 ms)
+    handleError
+      ✓ should handle Error objects (2 ms)
+      ✓ should handle non-Error objects (1 ms)
+    upsertObject
+      ✓ should successfully upsert an object (71 ms)
+      ✓ should handle upsert errors properly (5 ms)
+    deleteObject
+      ✓ should successfully delete an object (4 ms)
+      ✓ should handle delete errors properly (6 ms)
+    saveObjects
+      ✓ should successfully save multiple objects (2 ms)
+      ✓ should handle save objects errors properly (3 ms)
+    deleteObjects
+      ✓ should successfully delete multiple objects (3 ms)
+      ✓ should handle delete objects errors properly (2 ms)
+    generateAlgoliaRelatedProductKey
+      ✓ should generate a properly formatted key for Algolia related products (1 ms)
+    searchProducts
+      ✓ should search products with default parameters (3 ms)
+      ✓ should search products with custom parameters (3 ms)
+      ✓ should return empty hits when no results (2 ms)
+      ✓ should handle search errors gracefully (2 ms)
+    getMultipleObjects
+      ✓ should get multiple objects by IDs (2 ms)
+      ✓ should return empty array when no object IDs provided (3 ms)
+      ✓ should handle getObjects errors gracefully (4 ms)
+    getRelatedProductIds
+      ✓ should return cached IDs when available (2 ms)
+      ✓ should fetch IDs from Algolia when not cached (1 ms)
+      ✓ should filter out NaN product IDs (2 ms)
+      ✓ should return empty array when no hits (2 ms)
+      ✓ should return empty array when results is empty (1 ms)
+      ✓ should handle ObjectID does not exist error without rollbar error (1 ms)
+      ✓ should handle other errors with rollbar error (2 ms)
+    getProductsByMultipleBrands
+      ✓ should return empty array when brands array is empty (2 ms)
+      ✓ should fetch products for multiple brands successfully (2 ms)
+      ✓ should fetch products with custom limit (2 ms)
+      ✓ should fetch products with categoryId filter (2 ms)
+      ✓ should fetch products with categoryId and custom limit (1 ms)
+      ✓ should handle empty results from Algolia
+      ✓ should handle missing results array (1 ms)
+      ✓ should handle errors and throw properly
+
+[32m[Nest] 23937  - [39m03/19/2026, 3:55:23 PM [32m    LOG[39m [38;5;3m[EnvConfigService] [39m[32mFetching environment variable: NODE_ENV, converter: none[39m
+[31m[Nest] 23933  - [39m03/19/2026, 3:55:23 PM [31m  ERROR[39m [38;5;3m[BigQueryService] [39m[31mFailed to initialize BigQuery client: Unexpected token '�', "��~��bw�ڱ�" is not valid JSON[39m
+[31m[Nest] 23933  - [39m03/19/2026, 3:55:23 PM [31m  ERROR[39m [38;5;3m[BigQueryService] [39m[31mFailed to initialize BigQuery client: Unexpected token 'o', "not json" is not valid JSON[39m
+[31m[Nest] 23933  - [39m03/19/2026, 3:55:23 PM [31m  ERROR[39m [38;5;3m[BigQueryService.fetchStyleCopurchases] [39m[31m[LogExecution]: Method failed after 0.17ms: BigQuery connection failed, errorLogContext: {"className":"BigQueryService","methodName":"fetchStyleCopurchases","timestamp":"2026-03-19T14:55:23.959Z","executionTimeMs":0.17179200000009587,"error":{"message":"BigQuery connection failed","stack":"Error: BigQuery connection failed\n    at Object.<anonymous> (/Users/4thwithme/Documents/repo/recommendations-service/src/unit-tests/bigquery.service.unit-spec.ts:133:36)\n    at Promise.finally.completed (/Users/4thwithme/Documents/repo/recommendations-service/node_modules/jest-circus/build/jestAdapterInit.js:1557:28)\n    at new Promise (<anonymous>)\n    at callAsyncCircusFn (/Users/4thwithme/Documents/repo/recommendations-service/node_modules/jest-circus/build/jestAdapterInit.js:1497:10)\n    at _callCircusTest (/Users/4thwithme/Documents/repo/recommendations-service/node_modules/jest-circus/build/jestAdapterInit.js:1007:40)\n    at processTicksAndRejections (node:internal/process/task_queues:103:5)\n    at _runTest (/Users/4thwithme/Documents/repo/recommendations-service/node_modules/jest-circus/build/jestAdapterInit.js:947:3)\n    at /Users/4thwithme/Documents/repo/recommendations-service/node_modules/jest-circus/build/jestAdapterInit.js:849:7\n    at _runTestsForDescribeBlock (/Users/4thwithme/Documents/repo/recommendations-service/node_modules/jest-circus/build/jestAdapterInit.js:862:11)\n    at _runTestsForDescribeBlock (/Users/4thwithme/Documents/repo/recommendations-service/node_modules/jest-circus/build/jestAdapterInit.js:857:11)\n    at _runTestsForDescribeBlock (/Users/4thwithme/Documents/repo/recommendations-service/node_modules/jest-circus/build/jestAdapterInit.js:857:11)\n    at run (/Users/4thwithme/Documents/repo/recommendations-service/node_modules/jest-circus/build/jestAdapterInit.js:761:3)\n    at runAndTransformResultsToJestFormat (/Users/4thwithme/Documents/repo/recommendations-service/node_modules/jest-circus/build/jestAdapterInit.js:1918:21)\n    at jestAdapter (/Users/4thwithme/Documents/repo/recommendations-service/node_modules/jest-circus/build/runner.js:101:19)\n    at runTestInternal (/Users/4thwithme/Documents/repo/recommendations-service/node_modules/jest-runner/build/testWorker.js:275:16)\n    at runTest (/Users/4thwithme/Documents/repo/recommendations-service/node_modules/jest-runner/build/testWorker.js:343:7)\n    at Object.worker (/Users/4thwithme/Documents/repo/recommendations-service/node_modules/jest-runner/build/testWorker.js:497:12)","name":"Error"}}[39m
+  console.log
+    [dotenv@17.2.3] injecting env (0) from .env.test -- tip: 🔄 add secrets lifecycle management: https://dotenvx.com/ops
+
+      at _log (node_modules/dotenv/lib/main.js:142:11)
+
+[31m[Nest] 23933  - [39m03/19/2026, 3:55:23 PM [31m  ERROR[39m [38;5;3m[BigQueryService.fetchTrendingItemsOrderData] [39m[31m[LogExecution]: Method failed after 0.17ms: BigQuery error, errorLogContext: {"className":"BigQueryService","methodName":"fetchTrendingItemsOrderData","timestamp":"2026-03-19T14:55:23.976Z","executionTimeMs":0.16779200000019046,"error":{"message":"BigQuery error","stack":"Error: BigQuery error\n    at Object.<anonymous> (/Users/4thwithme/Documents/repo/recommendations-service/src/unit-tests/bigquery.service.unit-spec.ts:235:36)\n    at Promise.finally.completed (/Users/4thwithme/Documents/repo/recommendations-service/node_modules/jest-circus/build/jestAdapterInit.js:1557:28)\n    at new Promise (<anonymous>)\n    at callAsyncCircusFn (/Users/4thwithme/Documents/repo/recommendations-service/node_modules/jest-circus/build/jestAdapterInit.js:1497:10)\n    at _callCircusTest (/Users/4thwithme/Documents/repo/recommendations-service/node_modules/jest-circus/build/jestAdapterInit.js:1007:40)\n    at processTicksAndRejections (node:internal/process/task_queues:103:5)\n    at _runTest (/Users/4thwithme/Documents/repo/recommendations-service/node_modules/jest-circus/build/jestAdapterInit.js:947:3)\n    at /Users/4thwithme/Documents/repo/recommendations-service/node_modules/jest-circus/build/jestAdapterInit.js:849:7\n    at _runTestsForDescribeBlock (/Users/4thwithme/Documents/repo/recommendations-service/node_modules/jest-circus/build/jestAdapterInit.js:862:11)\n    at _runTestsForDescribeBlock (/Users/4thwithme/Documents/repo/recommendations-service/node_modules/jest-circus/build/jestAdapterInit.js:857:11)\n    at _runTestsForDescribeBlock (/Users/4thwithme/Documents/repo/recommendations-service/node_modules/jest-circus/build/jestAdapterInit.js:857:11)\n    at run (/Users/4thwithme/Documents/repo/recommendations-service/node_modules/jest-circus/build/jestAdapterInit.js:761:3)\n    at runAndTransformResultsToJestFormat (/Users/4thwithme/Documents/repo/recommendations-service/node_modules/jest-circus/build/jestAdapterInit.js:1918:21)\n    at jestAdapter (/Users/4thwithme/Documents/repo/recommendations-service/node_modules/jest-circus/build/runner.js:101:19)\n    at runTestInternal (/Users/4thwithme/Documents/repo/recommendations-service/node_modules/jest-runner/build/testWorker.js:275:16)\n    at runTest (/Users/4thwithme/Documents/repo/recommendations-service/node_modules/jest-runner/build/testWorker.js:343:7)\n    at Object.worker (/Users/4thwithme/Documents/repo/recommendations-service/node_modules/jest-runner/build/testWorker.js:497:12)","name":"Error"}}[39m
+[33m[Nest] 23934  - [39m03/19/2026, 3:55:24 PM [33m   WARN[39m [38;5;3m[RetryUtil] [39m[33mAttempt 2 failed: Error: fail 2[39m
+  console.log
+    [dotenv@17.2.3] injecting env (0) from .env.test -- tip: ⚙️  enable debug logging with { debug: true }
+
+      at _log (node_modules/dotenv/lib/main.js:142:11)
+
+PASS src/unit-tests/cache.service.unit-spec.ts (5.762 s)
+  CacheService
+    ✓ should be defined (9 ms)
+    get
+      ✓ should return cached value on cache hit (2 ms)
+      ✓ should return null on cache miss (2 ms)
+      ✓ should handle errors and return null (7 ms)
+    set
+      ✓ should successfully set a value in cache (1 ms)
+      ✓ should set a value without TTL (1 ms)
+      ✓ should throw error when setting cache fails (5 ms)
+    has
+      ✓ should return true when key exists (2 ms)
+      ✓ should return false when key does not exist
+    deleteOne
+      ✓ should successfully delete a cache entry (1 ms)
+      ✓ should handle errors when deleting a cache entry (1 ms)
+    deleteAll
+      ✓ should successfully clear all cache entries (23 ms)
+      ✓ should handle errors when clearing all cache entries (2 ms)
+    incrementByOne
+      ✓ should successfully increment a cache value (2 ms)
+      ✓ should handle errors when incrementing cache value (2 ms)
+    withLock
+      ✓ should acquire lock, execute operation, and release lock (1 ms)
+      ✓ should release lock even if operation throws error (1 ms)
+    acquireLock
+      ✓ should successfully acquire a lock (2 ms)
+      ✓ should handle errors when acquiring lock (1 ms)
+    releaseLock
+      ✓ should successfully release a lock (2 ms)
+      ✓ should handle errors when releasing lock (3 ms)
+    consistency levels
+      ✓ should read from write manager when using strong consistency (2 ms)
+      ✓ should read from read manager when using eventual consistency (1 ms)
+      ✓ should fallback to master when read replica fails and is healthy (1 ms)
+      ✓ should read from master when replica is unhealthy (1 ms)
+      ✓ should read from master for recently written keys (2 ms)
+      ✓ should read from replica after consistency window expires (1 ms)
+    health checks and event handlers
+      ✓ should mark read replica as unhealthy on error (2 ms)
+      ✓ should mark read replica as healthy on ready event (1 ms)
+      ✓ should log write client errors (1 ms)
+    recent writes cleanup
+      ✓ should clean up old entries from recentWrites map (1 ms)
+    error handling
+      ✓ should throw CONNECTION_FAILED error when master fails after replica fallback attempt (1 ms)
+      ✓ should throw CONNECTION_FAILED error when replica fails and is already unhealthy (1 ms)
+      ✓ should create cache error with original error (1 ms)
+      ✓ should create cache error without original error (1 ms)
+
+[32m[Nest] 23938  - [39m03/19/2026, 3:55:24 PM [32m    LOG[39m [38;5;3m[EnvConfigService] [39m[32mFetching environment variable: NODE_ENV, converter: none[39m
+[31m[Nest] 23941  - [39m03/19/2026, 3:55:24 PM [31m  ERROR[39m [38;5;3m[PopulateStyleCopurchasesCommand] [39m[31mFailed to populate style copurchases: BQ error[39m
+PASS src/unit-tests/styles-mv.model.unit-spec.ts (5.89 s)
+  StylesMvModel
+    refreshForStyle
+      ✓ should call stored procedure with correct style_id (15 ms)
+      ✓ should throw and log error on database failure (15 ms)
+    findByStyleId
+      ✓ should return parsed record when found (6 ms)
+      ✓ should return null when record not found (2 ms)
+      ✓ should parse JSON string fields correctly (1 ms)
+      ✓ should throw and log error on database failure (1 ms)
+    findByStyleIds
+      ✓ should return empty array for empty input (2 ms)
+      ✓ should return array of parsed records (3 ms)
+      ✓ should throw and log error on database failure (1 ms)
+    findAll
+      ✓ should return paginated records (1 ms)
+      ✓ should throw and log error on database failure (1 ms)
+    count
+      ✓ should return count of records
+      ✓ should return 0 when no records found (1 ms)
+      ✓ should throw and log error on database failure (2 ms)
+    parseJsonField edge cases
+      ✓ should handle null JSON fields (3 ms)
+      ✓ should handle invalid JSON strings by returning null (12 ms)
+      ✓ should handle undefined JSON fields
+      ✓ should preserve already parsed object fields (1 ms)
+    error handling edge cases
+      ✓ should handle non-Error thrown in refreshForStyle (6 ms)
+      ✓ should handle non-Error thrown in findByStyleId (2 ms)
+      ✓ should handle non-Error thrown in findByStyleIds (2 ms)
+      ✓ should handle non-Error thrown in findAll (1 ms)
+      ✓ should handle non-Error thrown in count (2 ms)
+
+  console.log
+    [dotenv@17.2.3] injecting env (0) from .env.test -- tip: ⚙️  suppress all logs with { quiet: true }
+
+      at _log (node_modules/dotenv/lib/main.js:142:11)
+
+[32m[Nest] 23943  - [39m03/19/2026, 3:55:24 PM [32m    LOG[39m [38;5;3m[EnvConfigService] [39m[32mFetching environment variable: NODE_ENV, converter: none[39m
+  console.log
+    [dotenv@17.2.3] injecting env (0) from .env.test -- tip: 🔑 add access controls to secrets: https://dotenvx.com/ops
+
+      at _log (node_modules/dotenv/lib/main.js:142:11)
+
+[31m[Nest] 23941  - [39m03/19/2026, 3:55:24 PM [31m  ERROR[39m [38;5;3m[PopulateStyleCopurchasesCommand] [39m[31mError during shutdown: operation failed[39m
+PASS src/unit-tests/product-hydration.service.unit-spec.ts (5.908 s)
+  ProductHydrationService
+    hydrateProducts
+      ✓ should return empty array when styleIds is empty (9 ms)
+      ✓ should fetch products from MV and map to IRelatedProduct (2 ms)
+      ✓ should apply closest color matching when currentStyleColor is provided (1 ms)
+      ✓ should use first color when no currentStyleColor is provided (1 ms)
+    hydrateProductsWithColors
+      ✓ should return empty results when styleIds is empty (2 ms)
+      ✓ should return products and mvRecords map (3 ms)
+      ✓ should allow random color assignment using mvRecords (1 ms)
+    mapStyleMvToRelatedProduct
+      ✓ should map all IStylesMvBase fields to IRelatedProduct (1 ms)
+      ✓ should use min_qty=1 when no_minimum is true (2 ms)
+      ✓ should use min_qty value when no_minimum is false (3 ms)
+      ✓ should fallback to minimum_quantity when min_qty is null (4 ms)
+      ✓ should handle null fields gracefully (6 ms)
+      ✓ should fallback to style_card_image_url when color image_url is null (3 ms)
+      ✓ should handle empty colors array (16 ms)
+      ✓ should handle null colors (3 ms)
+      ✓ should handle algorithm being null in default_unit_prices
+    getProductsByBrands
+      ✓ should return empty results when brands array is empty (2 ms)
+      ✓ should return products and mvRecords map for given brands (1 ms)
+      ✓ should map products correctly without color matching (1 ms)
+    convertMvColorsToProductColors
+      ✓ should return empty array when colors is null
+      ✓ should convert MV colors to product colors format (1 ms)
+      ✓ should not include image_url when it is null (24 ms)
+      ✓ should handle empty colors array (3 ms)
+
+[33m[Nest] 23934  - [39m03/19/2026, 3:55:24 PM [33m   WARN[39m [38;5;3m[RetryUtil] [39m[33mAttempt 3 failed: Error: fail 3[39m
+[31m[Nest] 23941  - [39m03/19/2026, 3:55:54 PM [31m  ERROR[39m [38;5;3m[PopulateStyleCopurchasesCommand] [39m[31mGraceful shutdown timeout, forcing exit[39m
+[31m[Nest] 23941  - [39m03/19/2026, 3:55:24 PM [31m  ERROR[39m [38;5;3m[PopulateStyleCopurchasesCommand] [39m[31mError during shutdown: operation failed[39m
+[31m[Nest] 23941  - [39m03/19/2026, 3:55:24 PM [31m  ERROR[39m [38;5;3m[PopulateStyleCopurchasesCommand] [39m[31mUncaught exception: test uncaught[39m
+[31m[Nest] 23941  - [39m03/19/2026, 3:55:24 PM [31m  ERROR[39m [38;5;3m[PopulateStyleCopurchasesCommand] [39m[31mUncaught exception: test uncaught[39m
+[31m[Nest] 23941  - [39m03/19/2026, 3:55:24 PM [31m  ERROR[39m [38;5;3m[PopulateStyleCopurchasesCommand] [39m[31mUncaught exception: test uncaught[39m
+[31m[Nest] 23941  - [39m03/19/2026, 3:55:24 PM [31m  ERROR[39m [38;5;3m[PopulateStyleCopurchasesCommand] [39m[31mUncaught exception: test uncaught[39m
+[31m[Nest] 23941  - [39m03/19/2026, 3:55:24 PM [31m  ERROR[39m [38;5;3m[PopulateStyleCopurchasesCommand] [39m[31mUncaught exception: test uncaught[39m
+[31m[Nest] 23941  - [39m03/19/2026, 3:55:24 PM [31m  ERROR[39m [38;5;3m[PopulateStyleCopurchasesCommand] [39m[31mUncaught exception: test uncaught[39m
+[31m[Nest] 23941  - [39m03/19/2026, 3:55:24 PM [31m  ERROR[39m [38;5;3m[PopulateStyleCopurchasesCommand] [39m[31mUncaught exception: test uncaught[39m
+[31m[Nest] 23941  - [39m03/19/2026, 3:55:24 PM [31m  ERROR[39m [38;5;3m[PopulateStyleCopurchasesCommand] [39m[31mUncaught exception: test uncaught[39m
+[31m[Nest] 23941  - [39m03/19/2026, 3:55:24 PM [31m  ERROR[39m [38;5;3m[PopulateStyleCopurchasesCommand] [39m[31mUncaught exception: test uncaught[39m
+[31m[Nest] 23941  - [39m03/19/2026, 3:55:24 PM [31m  ERROR[39m [38;5;3m[PopulateStyleCopurchasesCommand] [39m[31mUncaught exception: test uncaught[39m
+[31m[Nest] 23941  - [39m03/19/2026, 3:55:24 PM [31m  ERROR[39m [38;5;3m[PopulateStyleCopurchasesCommand] [39m[31mUncaught exception: test uncaught[39m
+[31m[Nest] 23941  - [39m03/19/2026, 3:55:24 PM [31m  ERROR[39m [38;5;3m[PopulateStyleCopurchasesCommand] [39m[31mUncaught exception: test uncaught[39m
+[31m[Nest] 23941  - [39m03/19/2026, 3:55:24 PM [31m  ERROR[39m [38;5;3m[PopulateStyleCopurchasesCommand] [39m[31mUncaught exception: test uncaught[39m
+[31m[Nest] 23941  - [39m03/19/2026, 3:55:24 PM [31m  ERROR[39m [38;5;3m[PopulateStyleCopurchasesCommand] [39m[31mError during shutdown: operation failed[39m
+[31m[Nest] 23941  - [39m03/19/2026, 3:55:24 PM [31m  ERROR[39m [38;5;3m[PopulateStyleCopurchasesCommand] [39m[31mUnhandled rejection: test rejection[39m
+[31m[Nest] 23941  - [39m03/19/2026, 3:55:24 PM [31m  ERROR[39m [38;5;3m[PopulateStyleCopurchasesCommand] [39m[31mUnhandled rejection: test rejection[39m
+[31m[Nest] 23941  - [39m03/19/2026, 3:55:24 PM [31m  ERROR[39m [38;5;3m[PopulateStyleCopurchasesCommand] [39m[31mUnhandled rejection: test rejection[39m
+[31m[Nest] 23941  - [39m03/19/2026, 3:55:24 PM [31m  ERROR[39m [38;5;3m[PopulateStyleCopurchasesCommand] [39m[31mUnhandled rejection: test rejection[39m
+[31m[Nest] 23941  - [39m03/19/2026, 3:55:24 PM [31m  ERROR[39m [38;5;3m[PopulateStyleCopurchasesCommand] [39m[31mUnhandled rejection: test rejection[39m
+[31m[Nest] 23941  - [39m03/19/2026, 3:55:24 PM [31m  ERROR[39m [38;5;3m[PopulateStyleCopurchasesCommand] [39m[31mUnhandled rejection: test rejection[39m
+[31m[Nest] 23941  - [39m03/19/2026, 3:55:24 PM [31m  ERROR[39m [38;5;3m[PopulateStyleCopurchasesCommand] [39m[31mUnhandled rejection: test rejection[39m
+[31m[Nest] 23941  - [39m03/19/2026, 3:55:24 PM [31m  ERROR[39m [38;5;3m[PopulateStyleCopurchasesCommand] [39m[31mUnhandled rejection: test rejection[39m
+[31m[Nest] 23941  - [39m03/19/2026, 3:55:24 PM [31m  ERROR[39m [38;5;3m[PopulateStyleCopurchasesCommand] [39m[31mUnhandled rejection: test rejection[39m
+[31m[Nest] 23941  - [39m03/19/2026, 3:55:24 PM [31m  ERROR[39m [38;5;3m[PopulateStyleCopurchasesCommand] [39m[31mUnhandled rejection: test rejection[39m
+[31m[Nest] 23941  - [39m03/19/2026, 3:55:24 PM [31m  ERROR[39m [38;5;3m[PopulateStyleCopurchasesCommand] [39m[31mUnhandled rejection: test rejection[39m
+[31m[Nest] 23941  - [39m03/19/2026, 3:55:24 PM [31m  ERROR[39m [38;5;3m[PopulateStyleCopurchasesCommand] [39m[31mUnhandled rejection: test rejection[39m
+[31m[Nest] 23941  - [39m03/19/2026, 3:55:24 PM [31m  ERROR[39m [38;5;3m[PopulateStyleCopurchasesCommand] [39m[31mUnhandled rejection: test rejection[39m
+[31m[Nest] 23941  - [39m03/19/2026, 3:55:24 PM [31m  ERROR[39m [38;5;3m[PopulateStyleCopurchasesCommand] [39m[31mUnhandled rejection: test rejection[39m
+[31m[Nest] 23941  - [39m03/19/2026, 3:55:24 PM [31m  ERROR[39m [38;5;3m[PopulateStyleCopurchasesCommand] [39m[31mError during shutdown: operation failed[39m
+PASS src/unit-tests/trending-items.service.unit-spec.ts
+  TrendingItemsService
+    saveProcessedData
+      ✓ should skip record when style_id is string "null" (2 ms)
+      ✓ should skip record when style_id is null (1 ms)
+      ✓ should skip record when style_id is undefined (1 ms)
+      ✓ should skip record when style_id is NaN
+      ✓ should skip record when style does not exist in styles table (1 ms)
+      ✓ should insert new record when style exists and no existing record (1 ms)
+      ✓ should update existing record when style exists and record exists
+    updateExistingRecords
+      ✓ should skip record when style does not exist in styles table (1 ms)
+      ✓ should merge daily orders and update when style exists and record exists (1 ms)
+      ✓ should insert new record when style exists but no existing record
+
+[33m[Nest] 23934  - [39m03/19/2026, 3:55:24 PM [33m   WARN[39m [38;5;3m[RetryUtil] [39m[33mAttempt 1 failed: Error: fail 1[39m
+PASS src/unit-tests/similar-to-favorites.service.unit-spec.ts (6.119 s)
+  SimilarToFavoritesService
+    getSimilarToFavorites
+      Algolia happy path
+        ✓ should return similar products for given styleIds (25 ms)
+        ✓ should interleave results from each favorite in round-robin order (9 ms)
+        ✓ should deduplicate across favorites in round-robin (first favorite wins) (1 ms)
+        ✓ should exclude favorited styleIds from results (5 ms)
+        ✓ should exclude cart items (excludeIds) from results (155 ms)
+        ✓ should respect the limit parameter and slice hydrated products (1 ms)
+        ✓ should request up to limit ids for hydration (1 ms)
+        ✓ should pass activeOnly: true to hydrateProducts (1 ms)
+      Algolia rejection handling
+        ✓ should handle a rejected Algolia promise gracefully and still return results from fulfilled ones (2 ms)
+        ✓ should handle all Algolia promises rejecting and fall back to style alternatives (2 ms)
+      Fallback to styleAlternatives
+        ✓ should fall back to styleAlternativesService when Algolia returns empty arrays (1 ms)
+        ✓ should interleave fallback results in round-robin order (1 ms)
+        ✓ should deduplicate fallback ids across multiple styleIds (1 ms)
+        ✓ should exclude styleIds and excludeIds from fallback results (1 ms)
+        ✓ should handle a rejected fallback promise gracefully (1 ms)
+      Empty results
+        ✓ should return empty similar_products when both Algolia and fallback return nothing (1 ms)
+        ✓ should log a warning when no Algolia results are found before falling back
+        ✓ should log a warning when no results are found at all (2 ms)
+      Default parameter values
+        ✓ should default limit to 30 when not provided (2 ms)
+        ✓ should treat excludeIds as empty array when not provided (1 ms)
+      buildEqualRoundRobin (private) via public interface
+        ✓ should filter out ids that are in excludeSet (2 ms)
+        ✓ should stop collecting when candidateCount is reached (1 ms)
+      sortBySelectedIds (private) via public interface
+        ✓ should sort hydrated products that have a style_id not in selectedIds to the end (2 ms)
+
+[32m[Nest] 23937  - [39m03/19/2026, 3:55:24 PM [32m    LOG[39m [38;5;3m[EnvConfigService] [39m[32mFetching environment variable: NODE_ENV, converter: none[39m
+  console.log
+    [dotenv@17.2.3] injecting env (0) from .env.test -- tip: ⚙️  load multiple .env files with { path: ['.env.local', '.env'] }
+
+      at _log (node_modules/dotenv/lib/main.js:142:11)
+
+(node:23941) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 SIGTERM listeners added to [process]. MaxListeners is 10. Use emitter.setMaxListeners() to increase limit
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:23941) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 SIGINT listeners added to [process]. MaxListeners is 10. Use emitter.setMaxListeners() to increase limit
+(node:23941) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 SIGHUP listeners added to [process]. MaxListeners is 10. Use emitter.setMaxListeners() to increase limit
+(node:23941) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 SIGQUIT listeners added to [process]. MaxListeners is 10. Use emitter.setMaxListeners() to increase limit
+(node:23941) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 uncaughtException listeners added to [process]. MaxListeners is 10. Use emitter.setMaxListeners() to increase limit
+(node:23941) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 unhandledRejection listeners added to [process]. MaxListeners is 10. Use emitter.setMaxListeners() to increase limit
+PASS src/unit-tests/env-validations.config.unit-spec.ts
+  Environment Configuration Validation
+    Basic Configuration
+      ✓ should accept a valid configuration (2 ms)
+      ✓ should return validated config object
+    PORT validation
+      ✓ should accept valid port numbers (1 ms)
+      ✓ should reject invalid port numbers (9 ms)
+      ✓ should reject non-numeric ports
+      ✓ should reject port numbers above 65535 (1 ms)
+    GLOBAL_PREFIX validation
+      ✓ should accept valid prefix
+      ✓ should reject empty prefix (1 ms)
+      ✓ should accept and coerce non-string prefix
+    SERVER_NAME validation
+      ✓ should accept valid server name (4 ms)
+      ✓ should reject empty server name
+      ✓ should accept and coerce non-string server name
+    NODE_ENV validation
+      ✓ should accept valid environments (1 ms)
+      ✓ should reject invalid environment
+      ✓ should reject non-string environment (1 ms)
+    Required Fields
+      ✓ should require NODE_ENV (1 ms)
+      ✓ should require PORT
+      ✓ should require GLOBAL_PREFIX (1 ms)
+      ✓ should require SERVER_NAME (1 ms)
+      ✓ should require GRACEFUL_SHUTDOWN_DELAY (2 ms)
+      ✓ should require IS_COMPACT_LOGS
+      ✓ should require IS_JSON_LIKE_LOGS (1 ms)
+      ✓ should require MMS_INTERNAL_BASE_URL
+
+[31m[Nest] 23942  - [39m03/19/2026, 3:55:24 PM [31m  ERROR[39m [31mConfig validation error[39m
+[31m[Nest] 23942  - [39m03/19/2026, 3:55:24 PM [31m  ERROR[39m Array(1) [
+  ValidationError {
+    target: EnvironmentVariables {
+      IS_COMPACT_LOGS: [33mtrue[39m,
+      IS_JSON_LIKE_LOGS: [33mfalse[39m,
+      NODE_ENV: [32m'test'[39m,
+      PORT: [33m-1[39m,
+      GLOBAL_PREFIX: [32m'api'[39m,
+      SERVER_NAME: [32m'test-server'[39m,
+      GRACEFUL_SHUTDOWN_DELAY: [33m5000[39m,
+      OPENAI_API_KEY: [32m'qweeeee'[39m,
+      ALG_APP_ID: [32m'aaaa'[39m,
+      ALG_API_KEY: [32m'bbbb'[39m,
+      ALG_INDEX_NAME: [32m'ccccc'[39m,
+      REDIS_URL: [32m'redis://localhost:6379'[39m,
+      REDIS_READ_URL: [32m'redis://localhost:6380'[39m,
+      ROLLBAR_ACCESS_TOKEN: [32m'rollbar-token'[39m,
+      NEWRELIC_KEY: [32m'newrelic-key'[39m,
+      AWS_REGION: [32m'us-east-1'[39m,
+      MMS_INTERNAL_BASE_URL: [32m'http://mms-internal-url'[39m,
+      ARTILLERY_KEY: [32m'artillery-key'[39m,
+      RELATED_PRODUCTS_CACHE_TTL: [32m'3600'[39m,
+      CURATED_ADDONS_CACHE_TTL: [32m'18000000'[39m,
+      CI_BASE_URL: [32m'https://mms-base-url'[39m,
+      DATABASE_URL_READ_REPLICA: [32m'postgres://read-replica-url'[39m,
+      DATABASE_URL: [32m'postgres://main-database-url'[39m,
+      MMS_IMAGES_LAMBDA_HOST: [32m'http://mms-images-lambda'[39m,
+      ALG_FBT_INDEX_NAME: [32m'fbt-index'[39m,
+      EXECUTION_TIME_THRESHOLD_MS: [33m1500[39m,
+      BIGQUERY_SERVICE_ACCOUNT_KEY: [32m'base64-encoded-service-account-json'[39m
+    },
+    value: [33m-1[39m,
+    property: [32m'PORT'[39m,
+    children: [],
+    constraints: {
+      min: [32m'PORT must not be less than 0'[39m
+    }
+  }
+]
+[31m[Nest] 23942  - [39m03/19/2026, 3:55:24 PM [31m  ERROR[39m [31mConfig validation error[39m
+[31m[Nest] 23942  - [39m03/19/2026, 3:55:24 PM [31m  ERROR[39m Array(1) [
+  ValidationError {
+    target: EnvironmentVariables {
+      IS_COMPACT_LOGS: [33mtrue[39m,
+      IS_JSON_LIKE_LOGS: [33mfalse[39m,
+      NODE_ENV: [32m'test'[39m,
+      PORT: [33mNaN[39m,
+      GLOBAL_PREFIX: [32m'api'[39m,
+      SERVER_NAME: [32m'test-server'[39m,
+      GRACEFUL_SHUTDOWN_DELAY: [33m5000[39m,
+      OPENAI_API_KEY: [32m'qweeeee'[39m,
+      ALG_APP_ID: [32m'aaaa'[39m,
+      ALG_API_KEY: [32m'bbbb'[39m,
+      ALG_INDEX_NAME: [32m'ccccc'[39m,
+      REDIS_URL: [32m'redis://localhost:6379'[39m,
+      REDIS_READ_URL: [32m'redis://localhost:6380'[39m,
+      ROLLBAR_ACCESS_TOKEN: [32m'rollbar-token'[39m,
+      NEWRELIC_KEY: [32m'newrelic-key'[39m,
+      AWS_REGION: [32m'us-east-1'[39m,
+      MMS_INTERNAL_BASE_URL: [32m'http://mms-internal-url'[39m,
+      ARTILLERY_KEY: [32m'artillery-key'[39m,
+      RELATED_PRODUCTS_CACHE_TTL: [32m'3600'[39m,
+      CURATED_ADDONS_CACHE_TTL: [32m'18000000'[39m,
+      CI_BASE_URL: [32m'https://mms-base-url'[39m,
+      DATABASE_URL_READ_REPLICA: [32m'postgres://read-replica-url'[39m,
+      DATABASE_URL: [32m'postgres://main-database-url'[39m,
+      MMS_IMAGES_LAMBDA_HOST: [32m'http://mms-images-lambda'[39m,
+      ALG_FBT_INDEX_NAME: [32m'fbt-index'[39m,
+      EXECUTION_TIME_THRESHOLD_MS: [33m1500[39m,
+      BIGQUERY_SERVICE_ACCOUNT_KEY: [32m'base64-encoded-service-account-json'[39m
+    },
+    value: [33mNaN[39m,
+    property: [32m'PORT'[39m,
+    children: [],
+    constraints: {
+      max: [32m'PORT must not be greater than 65535'[39m
+    }
+  }
+]
+[31m[Nest] 23942  - [39m03/19/2026, 3:55:24 PM [31m  ERROR[39m [31mConfig validation error[39m
+[31m[Nest] 23942  - [39m03/19/2026, 3:55:24 PM [31m  ERROR[39m Array(1) [
+  ValidationError {
+    target: EnvironmentVariables {
+      IS_COMPACT_LOGS: [33mtrue[39m,
+      IS_JSON_LIKE_LOGS: [33mfalse[39m,
+      NODE_ENV: [32m'test'[39m,
+      PORT: [33m65536[39m,
+      GLOBAL_PREFIX: [32m'api'[39m,
+      SERVER_NAME: [32m'test-server'[39m,
+      GRACEFUL_SHUTDOWN_DELAY: [33m5000[39m,
+      OPENAI_API_KEY: [32m'qweeeee'[39m,
+      ALG_APP_ID: [32m'aaaa'[39m,
+      ALG_API_KEY: [32m'bbbb'[39m,
+      ALG_INDEX_NAME: [32m'ccccc'[39m,
+      REDIS_URL: [32m'redis://localhost:6379'[39m,
+      REDIS_READ_URL: [32m'redis://localhost:6380'[39m,
+      ROLLBAR_ACCESS_TOKEN: [32m'rollbar-token'[39m,
+      NEWRELIC_KEY: [32m'newrelic-key'[39m,
+      AWS_REGION: [32m'us-east-1'[39m,
+      MMS_INTERNAL_BASE_URL: [32m'http://mms-internal-url'[39m,
+      ARTILLERY_KEY: [32m'artillery-key'[39m,
+      RELATED_PRODUCTS_CACHE_TTL: [32m'3600'[39m,
+      CURATED_ADDONS_CACHE_TTL: [32m'18000000'[39m,
+      CI_BASE_URL: [32m'https://mms-base-url'[39m,
+      DATABASE_URL_READ_REPLICA: [32m'postgres://read-replica-url'[39m,
+      DATABASE_URL: [32m'postgres://main-database-url'[39m,
+      MMS_IMAGES_LAMBDA_HOST: [32m'http://mms-images-lambda'[39m,
+      ALG_FBT_INDEX_NAME: [32m'fbt-index'[39m,
+      EXECUTION_TIME_THRESHOLD_MS: [33m1500[39m,
+      BIGQUERY_SERVICE_ACCOUNT_KEY: [32m'base64-encoded-service-account-json'[39m
+    },
+    value: [33m65536[39m,
+    property: [32m'PORT'[39m,
+    children: [],
+    constraints: {
+      max: [32m'PORT must not be greater than 65535'[39m
+    }
+  }
+]
+[31m[Nest] 23942  - [39m03/19/2026, 3:55:24 PM [31m  ERROR[39m [31mConfig validation error[39m
+[31m[Nest] 23942  - [39m03/19/2026, 3:55:24 PM [31m  ERROR[39m Array(1) [
+  ValidationError {
+    target: EnvironmentVariables {
+      IS_COMPACT_LOGS: [33mtrue[39m,
+      IS_JSON_LIKE_LOGS: [33mfalse[39m,
+      NODE_ENV: [32m'test'[39m,
+      PORT: [33m3000[39m,
+      GLOBAL_PREFIX: [32m''[39m,
+      SERVER_NAME: [32m'test-server'[39m,
+      GRACEFUL_SHUTDOWN_DELAY: [33m5000[39m,
+      OPENAI_API_KEY: [32m'qweeeee'[39m,
+      ALG_APP_ID: [32m'aaaa'[39m,
+      ALG_API_KEY: [32m'bbbb'[39m,
+      ALG_INDEX_NAME: [32m'ccccc'[39m,
+      REDIS_URL: [32m'redis://localhost:6379'[39m,
+      REDIS_READ_URL: [32m'redis://localhost:6380'[39m,
+      ROLLBAR_ACCESS_TOKEN: [32m'rollbar-token'[39m,
+      NEWRELIC_KEY: [32m'newrelic-key'[39m,
+      AWS_REGION: [32m'us-east-1'[39m,
+      MMS_INTERNAL_BASE_URL: [32m'http://mms-internal-url'[39m,
+      ARTILLERY_KEY: [32m'artillery-key'[39m,
+      RELATED_PRODUCTS_CACHE_TTL: [32m'3600'[39m,
+      CURATED_ADDONS_CACHE_TTL: [32m'18000000'[39m,
+      CI_BASE_URL: [32m'https://mms-base-url'[39m,
+      DATABASE_URL_READ_REPLICA: [32m'postgres://read-replica-url'[39m,
+      DATABASE_URL: [32m'postgres://main-database-url'[39m,
+      MMS_IMAGES_LAMBDA_HOST: [32m'http://mms-images-lambda'[39m,
+      ALG_FBT_INDEX_NAME: [32m'fbt-index'[39m,
+      EXECUTION_TIME_THRESHOLD_MS: [33m1500[39m,
+      BIGQUERY_SERVICE_ACCOUNT_KEY: [32m'base64-encoded-service-account-json'[39m
+    },
+    value: [32m''[39m,
+    property: [32m'GLOBAL_PREFIX'[39m,
+    children: [],
+    constraints: {
+      isNotEmpty: [32m'GLOBAL_PREFIX should not be empty'[39m
+    }
+  }
+]
+[31m[Nest] 23942  - [39m03/19/2026, 3:55:24 PM [31m  ERROR[39m [31mConfig validation error[39m
+[31m[Nest] 23942  - [39m03/19/2026, 3:55:24 PM [31m  ERROR[39m Array(1) [
+  ValidationError {
+    target: EnvironmentVariables {
+      IS_COMPACT_LOGS: [33mtrue[39m,
+      IS_JSON_LIKE_LOGS: [33mfalse[39m,
+      NODE_ENV: [32m'test'[39m,
+      PORT: [33m3000[39m,
+      GLOBAL_PREFIX: [32m'api'[39m,
+      SERVER_NAME: [32m''[39m,
+      GRACEFUL_SHUTDOWN_DELAY: [33m5000[39m,
+      OPENAI_API_KEY: [32m'qweeeee'[39m,
+      ALG_APP_ID: [32m'aaaa'[39m,
+      ALG_API_KEY: [32m'bbbb'[39m,
+      ALG_INDEX_NAME: [32m'ccccc'[39m,
+      REDIS_URL: [32m'redis://localhost:6379'[39m,
+      REDIS_READ_URL: [32m'redis://localhost:6380'[39m,
+      ROLLBAR_ACCESS_TOKEN: [32m'rollbar-token'[39m,
+      NEWRELIC_KEY: [32m'newrelic-key'[39m,
+      AWS_REGION: [32m'us-east-1'[39m,
+      MMS_INTERNAL_BASE_URL: [32m'http://mms-internal-url'[39m,
+      ARTILLERY_KEY: [32m'artillery-key'[39m,
+      RELATED_PRODUCTS_CACHE_TTL: [32m'3600'[39m,
+      CURATED_ADDONS_CACHE_TTL: [32m'18000000'[39m,
+      CI_BASE_URL: [32m'https://mms-base-url'[39m,
+      DATABASE_URL_READ_REPLICA: [32m'postgres://read-replica-url'[39m,
+      DATABASE_URL: [32m'postgres://main-database-url'[39m,
+      MMS_IMAGES_LAMBDA_HOST: [32m'http://mms-images-lambda'[39m,
+      ALG_FBT_INDEX_NAME: [32m'fbt-index'[39m,
+      EXECUTION_TIME_THRESHOLD_MS: [33m1500[39m,
+      BIGQUERY_SERVICE_ACCOUNT_KEY: [32m'base64-encoded-service-account-json'[39m
+    },
+    value: [32m''[39m,
+    property: [32m'SERVER_NAME'[39m,
+    children: [],
+    constraints: {
+      isNotEmpty: [32m'SERVER_NAME should not be empty'[39m
+    }
+  }
+]
+[31m[Nest] 23942  - [39m03/19/2026, 3:55:24 PM [31m  ERROR[39m [31mConfig validation error[39m
+[31m[Nest] 23942  - [39m03/19/2026, 3:55:24 PM [31m  ERROR[39m Array(1) [
+  ValidationError {
+    target: EnvironmentVariables {
+      IS_COMPACT_LOGS: [33mtrue[39m,
+      IS_JSON_LIKE_LOGS: [33mfalse[39m,
+      NODE_ENV: [32m'invalid'[39m,
+      PORT: [33m3000[39m,
+      GLOBAL_PREFIX: [32m'api'[39m,
+      SERVER_NAME: [32m'test-server'[39m,
+      GRACEFUL_SHUTDOWN_DELAY: [33m5000[39m,
+      OPENAI_API_KEY: [32m'qweeeee'[39m,
+      ALG_APP_ID: [32m'aaaa'[39m,
+      ALG_API_KEY: [32m'bbbb'[39m,
+      ALG_INDEX_NAME: [32m'ccccc'[39m,
+      REDIS_URL: [32m'redis://localhost:6379'[39m,
+      REDIS_READ_URL: [32m'redis://localhost:6380'[39m,
+      ROLLBAR_ACCESS_TOKEN: [32m'rollbar-token'[39m,
+      NEWRELIC_KEY: [32m'newrelic-key'[39m,
+      AWS_REGION: [32m'us-east-1'[39m,
+      MMS_INTERNAL_BASE_URL: [32m'http://mms-internal-url'[39m,
+      ARTILLERY_KEY: [32m'artillery-key'[39m,
+      RELATED_PRODUCTS_CACHE_TTL: [32m'3600'[39m,
+      CURATED_ADDONS_CACHE_TTL: [32m'18000000'[39m,
+      CI_BASE_URL: [32m'https://mms-base-url'[39m,
+      DATABASE_URL_READ_REPLICA: [32m'postgres://read-replica-url'[39m,
+      DATABASE_URL: [32m'postgres://main-database-url'[39m,
+      MMS_IMAGES_LAMBDA_HOST: [32m'http://mms-images-lambda'[39m,
+      ALG_FBT_INDEX_NAME: [32m'fbt-index'[39m,
+      EXECUTION_TIME_THRESHOLD_MS: [33m1500[39m,
+      BIGQUERY_SERVICE_ACCOUNT_KEY: [32m'base64-encoded-service-account-json'[39m
+    },
+    value: [32m'invalid'[39m,
+    property: [32m'NODE_ENV'[39m,
+    children: [],
+    constraints: {
+      isEnum: [32m'NODE_ENV must be one of the following values: development, production, test, staging'[39m
+    }
+  }
+]
+[31m[Nest] 23942  - [39m03/19/2026, 3:55:24 PM [31m  ERROR[39m [31mConfig validation error[39m
+[31m[Nest] 23942  - [39m03/19/2026, 3:55:24 PM [31m  ERROR[39m Array(1) [
+  ValidationError {
+    target: EnvironmentVariables {
+      IS_COMPACT_LOGS: [33mtrue[39m,
+      IS_JSON_LIKE_LOGS: [33mfalse[39m,
+      NODE_ENV: [32m'123'[39m,
+      PORT: [33m3000[39m,
+      GLOBAL_PREFIX: [32m'api'[39m,
+      SERVER_NAME: [32m'test-server'[39m,
+      GRACEFUL_SHUTDOWN_DELAY: [33m5000[39m,
+      OPENAI_API_KEY: [32m'qweeeee'[39m,
+      ALG_APP_ID: [32m'aaaa'[39m,
+      ALG_API_KEY: [32m'bbbb'[39m,
+      ALG_INDEX_NAME: [32m'ccccc'[39m,
+      REDIS_URL: [32m'redis://localhost:6379'[39m,
+      REDIS_READ_URL: [32m'redis://localhost:6380'[39m,
+      ROLLBAR_ACCESS_TOKEN: [32m'rollbar-token'[39m,
+      NEWRELIC_KEY: [32m'newrelic-key'[39m,
+      AWS_REGION: [32m'us-east-1'[39m,
+      MMS_INTERNAL_BASE_URL: [32m'http://mms-internal-url'[39m,
+      ARTILLERY_KEY: [32m'artillery-key'[39m,
+      RELATED_PRODUCTS_CACHE_TTL: [32m'3600'[39m,
+      CURATED_ADDONS_CACHE_TTL: [32m'18000000'[39m,
+      CI_BASE_URL: [32m'https://mms-base-url'[39m,
+      DATABASE_URL_READ_REPLICA: [32m'postgres://read-replica-url'[39m,
+      DATABASE_URL: [32m'postgres://main-database-url'[39m,
+      MMS_IMAGES_LAMBDA_HOST: [32m'http://mms-images-lambda'[39m,
+      ALG_FBT_INDEX_NAME: [32m'fbt-index'[39m,
+      EXECUTION_TIME_THRESHOLD_MS: [33m1500[39m,
+      BIGQUERY_SERVICE_ACCOUNT_KEY: [32m'base64-encoded-service-account-json'[39m
+    },
+    value: [32m'123'[39m,
+    property: [32m'NODE_ENV'[39m,
+    children: [],
+    constraints: {
+      isEnum: [32m'NODE_ENV must be one of the following values: development, production, test, staging'[39m
+    }
+  }
+]
+[31m[Nest] 23942  - [39m03/19/2026, 3:55:24 PM [31m  ERROR[39m [31mConfig validation error[39m
+[31m[Nest] 23942  - [39m03/19/2026, 3:55:24 PM [31m  ERROR[39m Array(1) [
+  ValidationError {
+    target: EnvironmentVariables {
+      IS_COMPACT_LOGS: [33mtrue[39m,
+      IS_JSON_LIKE_LOGS: [33mfalse[39m,
+      NODE_ENV: [90mundefined[39m,
+      PORT: [33m3000[39m,
+      GLOBAL_PREFIX: [32m'api'[39m,
+      SERVER_NAME: [32m'test-server'[39m,
+      GRACEFUL_SHUTDOWN_DELAY: [33m5000[39m,
+      OPENAI_API_KEY: [32m'qweeeee'[39m,
+      ALG_APP_ID: [32m'aaaa'[39m,
+      ALG_API_KEY: [32m'bbbb'[39m,
+      ALG_INDEX_NAME: [32m'ccccc'[39m,
+      REDIS_URL: [32m'redis://localhost:6379'[39m,
+      REDIS_READ_URL: [32m'redis://localhost:6380'[39m,
+      ROLLBAR_ACCESS_TOKEN: [32m'rollbar-token'[39m,
+      NEWRELIC_KEY: [32m'newrelic-key'[39m,
+      AWS_REGION: [32m'us-east-1'[39m,
+      MMS_INTERNAL_BASE_URL: [32m'http://mms-internal-url'[39m,
+      ARTILLERY_KEY: [32m'artillery-key'[39m,
+      RELATED_PRODUCTS_CACHE_TTL: [32m'3600'[39m,
+      CURATED_ADDONS_CACHE_TTL: [32m'18000000'[39m,
+      CI_BASE_URL: [32m'https://mms-base-url'[39m,
+      DATABASE_URL_READ_REPLICA: [32m'postgres://read-replica-url'[39m,
+      DATABASE_URL: [32m'postgres://main-database-url'[39m,
+      MMS_IMAGES_LAMBDA_HOST: [32m'http://mms-images-lambda'[39m,
+      ALG_FBT_INDEX_NAME: [32m'fbt-index'[39m,
+      EXECUTION_TIME_THRESHOLD_MS: [33m1500[39m,
+      BIGQUERY_SERVICE_ACCOUNT_KEY: [32m'base64-encoded-service-account-json'[39m
+    },
+    value: [90mundefined[39m,
+    property: [32m'NODE_ENV'[39m,
+    children: [],
+    constraints: {
+      isEnum: [32m'NODE_ENV must be one of the following values: development, production, test, staging'[39m
+    }
+  }
+]
+[31m[Nest] 23942  - [39m03/19/2026, 3:55:24 PM [31m  ERROR[39m [31mConfig validation error[39m
+[31m[Nest] 23942  - [39m03/19/2026, 3:55:24 PM [31m  ERROR[39m Array(1) [
+  ValidationError {
+    target: EnvironmentVariables {
+      IS_COMPACT_LOGS: [33mtrue[39m,
+      IS_JSON_LIKE_LOGS: [33mfalse[39m,
+      NODE_ENV: [32m'test'[39m,
+      PORT: [90mundefined[39m,
+      GLOBAL_PREFIX: [32m'api'[39m,
+      SERVER_NAME: [32m'test-server'[39m,
+      GRACEFUL_SHUTDOWN_DELAY: [33m5000[39m,
+      OPENAI_API_KEY: [32m'qweeeee'[39m,
+      ALG_APP_ID: [32m'aaaa'[39m,
+      ALG_API_KEY: [32m'bbbb'[39m,
+      ALG_INDEX_NAME: [32m'ccccc'[39m,
+      REDIS_URL: [32m'redis://localhost:6379'[39m,
+      REDIS_READ_URL: [32m'redis://localhost:6380'[39m,
+      ROLLBAR_ACCESS_TOKEN: [32m'rollbar-token'[39m,
+      NEWRELIC_KEY: [32m'newrelic-key'[39m,
+      AWS_REGION: [32m'us-east-1'[39m,
+      MMS_INTERNAL_BASE_URL: [32m'http://mms-internal-url'[39m,
+      ARTILLERY_KEY: [32m'artillery-key'[39m,
+      RELATED_PRODUCTS_CACHE_TTL: [32m'3600'[39m,
+      CURATED_ADDONS_CACHE_TTL: [32m'18000000'[39m,
+      CI_BASE_URL: [32m'https://mms-base-url'[39m,
+      DATABASE_URL_READ_REPLICA: [32m'postgres://read-replica-url'[39m,
+      DATABASE_URL: [32m'postgres://main-database-url'[39m,
+      MMS_IMAGES_LAMBDA_HOST: [32m'http://mms-images-lambda'[39m,
+      ALG_FBT_INDEX_NAME: [32m'fbt-index'[39m,
+      EXECUTION_TIME_THRESHOLD_MS: [33m1500[39m,
+      BIGQUERY_SERVICE_ACCOUNT_KEY: [32m'base64-encoded-service-account-json'[39m
+    },
+    value: [90mundefined[39m,
+    property: [32m'PORT'[39m,
+    children: [],
+    constraints: {
+      max: [32m'PORT must not be greater than 65535'[39m
+    }
+  }
+]
+[31m[Nest] 23942  - [39m03/19/2026, 3:55:24 PM [31m  ERROR[39m [31mConfig validation error[39m
+[31m[Nest] 23942  - [39m03/19/2026, 3:55:24 PM [31m  ERROR[39m Array(1) [
+  ValidationError {
+    target: EnvironmentVariables {
+      IS_COMPACT_LOGS: [33mtrue[39m,
+      IS_JSON_LIKE_LOGS: [33mfalse[39m,
+      NODE_ENV: [32m'test'[39m,
+      PORT: [33m3000[39m,
+      GLOBAL_PREFIX: [90mundefined[39m,
+      SERVER_NAME: [32m'test-server'[39m,
+      GRACEFUL_SHUTDOWN_DELAY: [33m5000[39m,
+      OPENAI_API_KEY: [32m'qweeeee'[39m,
+      ALG_APP_ID: [32m'aaaa'[39m,
+      ALG_API_KEY: [32m'bbbb'[39m,
+      ALG_INDEX_NAME: [32m'ccccc'[39m,
+      REDIS_URL: [32m'redis://localhost:6379'[39m,
+      REDIS_READ_URL: [32m'redis://localhost:6380'[39m,
+      ROLLBAR_ACCESS_TOKEN: [32m'rollbar-token'[39m,
+      NEWRELIC_KEY: [32m'newrelic-key'[39m,
+      AWS_REGION: [32m'us-east-1'[39m,
+      MMS_INTERNAL_BASE_URL: [32m'http://mms-internal-url'[39m,
+      ARTILLERY_KEY: [32m'artillery-key'[39m,
+      RELATED_PRODUCTS_CACHE_TTL: [32m'3600'[39m,
+      CURATED_ADDONS_CACHE_TTL: [32m'18000000'[39m,
+      CI_BASE_URL: [32m'https://mms-base-url'[39m,
+      DATABASE_URL_READ_REPLICA: [32m'postgres://read-replica-url'[39m,
+      DATABASE_URL: [32m'postgres://main-database-url'[39m,
+      MMS_IMAGES_LAMBDA_HOST: [32m'http://mms-images-lambda'[39m,
+      ALG_FBT_INDEX_NAME: [32m'fbt-index'[39m,
+      EXECUTION_TIME_THRESHOLD_MS: [33m1500[39m,
+      BIGQUERY_SERVICE_ACCOUNT_KEY: [32m'base64-encoded-service-account-json'[39m
+    },
+    value: [90mundefined[39m,
+    property: [32m'GLOBAL_PREFIX'[39m,
+    children: [],
+    constraints: {
+      isNotEmpty: [32m'GLOBAL_PREFIX should not be empty'[39m
+    }
+  }
+]
+[31m[Nest] 23942  - [39m03/19/2026, 3:55:24 PM [31m  ERROR[39m [31mConfig validation error[39m
+[31m[Nest] 23942  - [39m03/19/2026, 3:55:24 PM [31m  ERROR[39m Array(1) [
+  ValidationError {
+    target: EnvironmentVariables {
+      IS_COMPACT_LOGS: [33mtrue[39m,
+      IS_JSON_LIKE_LOGS: [33mfalse[39m,
+      NODE_ENV: [32m'test'[39m,
+      PORT: [33m3000[39m,
+      GLOBAL_PREFIX: [32m'api'[39m,
+      SERVER_NAME: [90mundefined[39m,
+      GRACEFUL_SHUTDOWN_DELAY: [33m5000[39m,
+      OPENAI_API_KEY: [32m'qweeeee'[39m,
+      ALG_APP_ID: [32m'aaaa'[39m,
+      ALG_API_KEY: [32m'bbbb'[39m,
+      ALG_INDEX_NAME: [32m'ccccc'[39m,
+      REDIS_URL: [32m'redis://localhost:6379'[39m,
+      REDIS_READ_URL: [32m'redis://localhost:6380'[39m,
+      ROLLBAR_ACCESS_TOKEN: [32m'rollbar-token'[39m,
+      NEWRELIC_KEY: [32m'newrelic-key'[39m,
+      AWS_REGION: [32m'us-east-1'[39m,
+      MMS_INTERNAL_BASE_URL: [32m'http://mms-internal-url'[39m,
+      ARTILLERY_KEY: [32m'artillery-key'[39m,
+      RELATED_PRODUCTS_CACHE_TTL: [32m'3600'[39m,
+      CURATED_ADDONS_CACHE_TTL: [32m'18000000'[39m,
+      CI_BASE_URL: [32m'https://mms-base-url'[39m,
+      DATABASE_URL_READ_REPLICA: [32m'postgres://read-replica-url'[39m,
+      DATABASE_URL: [32m'postgres://main-database-url'[39m,
+      MMS_IMAGES_LAMBDA_HOST: [32m'http://mms-images-lambda'[39m,
+      ALG_FBT_INDEX_NAME: [32m'fbt-index'[39m,
+      EXECUTION_TIME_THRESHOLD_MS: [33m1500[39m,
+      BIGQUERY_SERVICE_ACCOUNT_KEY: [32m'base64-encoded-service-account-json'[39m
+    },
+    value: [90mundefined[39m,
+    property: [32m'SERVER_NAME'[39m,
+    children: [],
+    constraints: {
+      isNotEmpty: [32m'SERVER_NAME should not be empty'[39m
+    }
+  }
+]
+[31m[Nest] 23942  - [39m03/19/2026, 3:55:24 PM [31m  ERROR[39m [31mConfig validation error[39m
+[31m[Nest] 23942  - [39m03/19/2026, 3:55:24 PM [31m  ERROR[39m Array(1) [
+  ValidationError {
+    target: EnvironmentVariables {
+      IS_COMPACT_LOGS: [33mtrue[39m,
+      IS_JSON_LIKE_LOGS: [33mfalse[39m,
+      NODE_ENV: [32m'test'[39m,
+      PORT: [33m3000[39m,
+      GLOBAL_PREFIX: [32m'api'[39m,
+      SERVER_NAME: [32m'test-server'[39m,
+      GRACEFUL_SHUTDOWN_DELAY: [90mundefined[39m,
+      OPENAI_API_KEY: [32m'qweeeee'[39m,
+      ALG_APP_ID: [32m'aaaa'[39m,
+      ALG_API_KEY: [32m'bbbb'[39m,
+      ALG_INDEX_NAME: [32m'ccccc'[39m,
+      REDIS_URL: [32m'redis://localhost:6379'[39m,
+      REDIS_READ_URL: [32m'redis://localhost:6380'[39m,
+      ROLLBAR_ACCESS_TOKEN: [32m'rollbar-token'[39m,
+      NEWRELIC_KEY: [32m'newrelic-key'[39m,
+      AWS_REGION: [32m'us-east-1'[39m,
+      MMS_INTERNAL_BASE_URL: [32m'http://mms-internal-url'[39m,
+      ARTILLERY_KEY: [32m'artillery-key'[39m,
+      RELATED_PRODUCTS_CACHE_TTL: [32m'3600'[39m,
+      CURATED_ADDONS_CACHE_TTL: [32m'18000000'[39m,
+      CI_BASE_URL: [32m'https://mms-base-url'[39m,
+      DATABASE_URL_READ_REPLICA: [32m'postgres://read-replica-url'[39m,
+      DATABASE_URL: [32m'postgres://main-database-url'[39m,
+      MMS_IMAGES_LAMBDA_HOST: [32m'http://mms-images-lambda'[39m,
+      ALG_FBT_INDEX_NAME: [32m'fbt-index'[39m,
+      EXECUTION_TIME_THRESHOLD_MS: [33m1500[39m,
+      BIGQUERY_SERVICE_ACCOUNT_KEY: [32m'base64-encoded-service-account-json'[39m
+    },
+    value: [90mundefined[39m,
+    property: [32m'GRACEFUL_SHUTDOWN_DELAY'[39m,
+    children: [],
+    constraints: {
+      max: [32m'GRACEFUL_SHUTDOWN_DELAY must not be greater than 60000'[39m
+    }
+  }
+]
+[31m[Nest] 23942  - [39m03/19/2026, 3:55:24 PM [31m  ERROR[39m [31mConfig validation error[39m
+[31m[Nest] 23942  - [39m03/19/2026, 3:55:24 PM [31m  ERROR[39m Array(1) [
+  ValidationError {
+    target: EnvironmentVariables {
+      IS_COMPACT_LOGS: [90mundefined[39m,
+      IS_JSON_LIKE_LOGS: [33mfalse[39m,
+      NODE_ENV: [32m'test'[39m,
+      PORT: [33m3000[39m,
+      GLOBAL_PREFIX: [32m'api'[39m,
+      SERVER_NAME: [32m'test-server'[39m,
+      GRACEFUL_SHUTDOWN_DELAY: [33m5000[39m,
+      OPENAI_API_KEY: [32m'qweeeee'[39m,
+      ALG_APP_ID: [32m'aaaa'[39m,
+      ALG_API_KEY: [32m'bbbb'[39m,
+      ALG_INDEX_NAME: [32m'ccccc'[39m,
+      REDIS_URL: [32m'redis://localhost:6379'[39m,
+      REDIS_READ_URL: [32m'redis://localhost:6380'[39m,
+      ROLLBAR_ACCESS_TOKEN: [32m'rollbar-token'[39m,
+      NEWRELIC_KEY: [32m'newrelic-key'[39m,
+      AWS_REGION: [32m'us-east-1'[39m,
+      MMS_INTERNAL_BASE_URL: [32m'http://mms-internal-url'[39m,
+      ARTILLERY_KEY: [32m'artillery-key'[39m,
+      RELATED_PRODUCTS_CACHE_TTL: [32m'3600'[39m,
+      CURATED_ADDONS_CACHE_TTL: [32m'18000000'[39m,
+      CI_BASE_URL: [32m'https://mms-base-url'[39m,
+      DATABASE_URL_READ_REPLICA: [32m'postgres://read-replica-url'[39m,
+      DATABASE_URL: [32m'postgres://main-database-url'[39m,
+      MMS_IMAGES_LAMBDA_HOST: [32m'http://mms-images-lambda'[39m,
+      ALG_FBT_INDEX_NAME: [32m'fbt-index'[39m,
+      EXECUTION_TIME_THRESHOLD_MS: [33m1500[39m,
+      BIGQUERY_SERVICE_ACCOUNT_KEY: [32m'base64-encoded-service-account-json'[39m
+    },
+    value: [90mundefined[39m,
+    property: [32m'IS_COMPACT_LOGS'[39m,
+    children: [],
+    constraints: {
+      isBoolean: [32m'IS_COMPACT_LOGS must be a boolean value'[39m
+    }
+  }
+]
+[31m[Nest] 23942  - [39m03/19/2026, 3:55:24 PM [31m  ERROR[39m [31mConfig validation error[39m
+[31m[Nest] 23942  - [39m03/19/2026, 3:55:24 PM [31m  ERROR[39m Array(1) [
+  ValidationError {
+    target: EnvironmentVariables {
+      IS_COMPACT_LOGS: [33mtrue[39m,
+      IS_JSON_LIKE_LOGS: [90mundefined[39m,
+      NODE_ENV: [32m'test'[39m,
+      PORT: [33m3000[39m,
+      GLOBAL_PREFIX: [32m'api'[39m,
+      SERVER_NAME: [32m'test-server'[39m,
+      GRACEFUL_SHUTDOWN_DELAY: [33m5000[39m,
+      OPENAI_API_KEY: [32m'qweeeee'[39m,
+      ALG_APP_ID: [32m'aaaa'[39m,
+      ALG_API_KEY: [32m'bbbb'[39m,
+      ALG_INDEX_NAME: [32m'ccccc'[39m,
+      REDIS_URL: [32m'redis://localhost:6379'[39m,
+      REDIS_READ_URL: [32m'redis://localhost:6380'[39m,
+      ROLLBAR_ACCESS_TOKEN: [32m'rollbar-token'[39m,
+      NEWRELIC_KEY: [32m'newrelic-key'[39m,
+      AWS_REGION: [32m'us-east-1'[39m,
+      MMS_INTERNAL_BASE_URL: [32m'http://mms-internal-url'[39m,
+      ARTILLERY_KEY: [32m'artillery-key'[39m,
+      RELATED_PRODUCTS_CACHE_TTL: [32m'3600'[39m,
+      CURATED_ADDONS_CACHE_TTL: [32m'18000000'[39m,
+      CI_BASE_URL: [32m'https://mms-base-url'[39m,
+      DATABASE_URL_READ_REPLICA: [32m'postgres://read-replica-url'[39m,
+      DATABASE_URL: [32m'postgres://main-database-url'[39m,
+      MMS_IMAGES_LAMBDA_HOST: [32m'http://mms-images-lambda'[39m,
+      ALG_FBT_INDEX_NAME: [32m'fbt-index'[39m,
+      EXECUTION_TIME_THRESHOLD_MS: [33m1500[39m,
+      BIGQUERY_SERVICE_ACCOUNT_KEY: [32m'base64-encoded-service-account-json'[39m
+    },
+    value: [90mundefined[39m,
+    property: [32m'IS_JSON_LIKE_LOGS'[39m,
+    children: [],
+    constraints: {
+      isBoolean: [32m'IS_JSON_LIKE_LOGS must be a boolean value'[39m
+    }
+  }
+]
+[31m[Nest] 23942  - [39m03/19/2026, 3:55:24 PM [31m  ERROR[39m [31mConfig validation error[39m
+[31m[Nest] 23942  - [39m03/19/2026, 3:55:24 PM [31m  ERROR[39m Array(1) [
+  ValidationError {
+    target: EnvironmentVariables {
+      IS_COMPACT_LOGS: [33mtrue[39m,
+      IS_JSON_LIKE_LOGS: [33mfalse[39m,
+      NODE_ENV: [32m'test'[39m,
+      PORT: [33m3000[39m,
+      GLOBAL_PREFIX: [32m'api'[39m,
+      SERVER_NAME: [32m'test-server'[39m,
+      GRACEFUL_SHUTDOWN_DELAY: [33m5000[39m,
+      OPENAI_API_KEY: [32m'qweeeee'[39m,
+      ALG_APP_ID: [32m'aaaa'[39m,
+      ALG_API_KEY: [32m'bbbb'[39m,
+      ALG_INDEX_NAME: [32m'ccccc'[39m,
+      REDIS_URL: [32m'redis://localhost:6379'[39m,
+      REDIS_READ_URL: [32m'redis://localhost:6380'[39m,
+      ROLLBAR_ACCESS_TOKEN: [32m'rollbar-token'[39m,
+      NEWRELIC_KEY: [32m'newrelic-key'[39m,
+      AWS_REGION: [32m'us-east-1'[39m,
+      MMS_INTERNAL_BASE_URL: [90mundefined[39m,
+      ARTILLERY_KEY: [32m'artillery-key'[39m,
+      RELATED_PRODUCTS_CACHE_TTL: [32m'3600'[39m,
+      CURATED_ADDONS_CACHE_TTL: [32m'18000000'[39m,
+      CI_BASE_URL: [32m'https://mms-base-url'[39m,
+      DATABASE_URL_READ_REPLICA: [32m'postgres://read-replica-url'[39m,
+      DATABASE_URL: [32m'postgres://main-database-url'[39m,
+      MMS_IMAGES_LAMBDA_HOST: [32m'http://mms-images-lambda'[39m,
+      ALG_FBT_INDEX_NAME: [32m'fbt-index'[39m,
+      EXECUTION_TIME_THRESHOLD_MS: [33m1500[39m,
+      BIGQUERY_SERVICE_ACCOUNT_KEY: [32m'base64-encoded-service-account-json'[39m
+    },
+    value: [90mundefined[39m,
+    property: [32m'MMS_INTERNAL_BASE_URL'[39m,
+    children: [],
+    constraints: {
+      isNotEmpty: [32m'MMS_INTERNAL_BASE_URL should not be empty'[39m
+    }
+  }
+]
+PASS src/unit-tests/populate-style-copurchases.command.unit-spec.ts (6.192 s)
+  PopulateStyleCopurchasesCommand
+    run
+      ✓ should fetch data, truncate, and insert (14 ms)
+      ✓ should skip truncate and insert when BigQuery returns empty result (2 ms)
+      ✓ should exit with code 1 when BigQuery fails (4 ms)
+      ✓ should return early when isShuttingDown is true (1 ms)
+      ✓ should not log success when shutdown occurs after upsert (1 ms)
+      ✓ should return early in catch block when shutting down during error (4 ms)
+    handleShutdown
+      ✓ should set isShuttingDown and exit with 0 when no current operation (1 ms)
+      ✓ should force exit when already shutting down (1 ms)
+      ✓ should wait for current operation and then exit
+      ✓ should exit with 1 when current operation rejects (204 ms)
+      ✓ should force exit on shutdown timeout (3 ms)
+    setupGracefulShutdown
+      ✓ should handle signal by calling handleShutdown (1 ms)
+      ✓ should handle uncaughtException by calling handleShutdown (2 ms)
+      ✓ should handle unhandledRejection by calling handleShutdown (28 ms)
+
+PASS src/unit-tests/color-match-worker.service.unit-spec.ts
+  ColorMatchWorkerService
+    onModuleInit
+      ✓ should use .ts worker path in development mode (4 ms)
+      ✓ should fallback to os.cpus().length when availableParallelism is unavailable (2 ms)
+    onModuleDestroy
+      ✓ should destroy the pool (1 ms)
+      ✓ should not throw when pool is not initialized (2 ms)
+    findClosestColorId
+      ✓ should return 0 when no color provided (3 ms)
+      ✓ should return 0 when palette has no RGB values
+      ✓ should return exact match ID without calling worker (1 ms)
+      ✓ should return 0 when no color RGB and no exact name match (1 ms)
+      ✓ should delegate to worker pool when no exact match (1 ms)
+      ✓ should handle palette with missing RGB values
+      ✓ should return 0 when empty palette and no exact name match (1 ms)
+
+[33m[Nest] 23934  - [39m03/19/2026, 3:55:24 PM [33m   WARN[39m [38;5;3m[RetryUtil] [39m[33mAttempt 2 failed: Error: fail 2[39m
+PASS src/unit-tests/style.model.unit-spec.ts (6.244 s)
+  StyleModel
+    upsertStyle
+      ✓ should update only single field when style exists (34 ms)
+      ✓ should update multiple fields when style exists (4 ms)
+      ✓ should insert new style when it does not exist (4 ms)
+      ✓ should insert new style with minimal data using defaults (4 ms)
+      ✓ should handle updating categories_with_parents_ids (4 ms)
+      ✓ should throw error when upsert fails to find result (32 ms)
+      ✓ should handle database errors gracefully (6 ms)
+      ✓ should not update fields that are undefined (3 ms)
+      ✓ should call refreshForStyle on styles_mv after successful upsert (2 ms)
+      ✓ should log warning but not throw when refreshForStyle fails (3 ms)
+
+[32m[Nest] 23937  - [39m03/19/2026, 3:55:24 PM [32m    LOG[39m [38;5;3m[TestClass.testMethod] [39m[32m[LogExecution]: Method invoked with parameters, {"params":["test",123],"className":"TestClass","methodName":"testMethod","timestamp":"2026-03-19T14:55:24.913Z"}[39m
+[32m[Nest] 23937  - [39m03/19/2026, 3:55:24 PM [32m    LOG[39m [38;5;3m[TestClass.testMethod] [39m[32m[LogExecution]:Method completed in 0.18ms. Result: {"className":"TestClass","methodName":"testMethod","timestamp":"2026-03-19T14:55:24.913Z","executionTimeMs":0.18016700000043784,"response":"test-123"}[39m
+[32m[Nest] 23937  - [39m03/19/2026, 3:55:24 PM [32m    LOG[39m [38;5;3m[TestClass.testMethod] [39m[32m[LogExecution]: Method invoked with parameters, {"params":[],"className":"TestClass","methodName":"testMethod","timestamp":"2026-03-19T14:55:24.913Z"}[39m
+[32m[Nest] 23937  - [39m03/19/2026, 3:55:24 PM [32m    LOG[39m [38;5;3m[TestClass.testMethod] [39m[32m[LogExecution]:Method completed in 0.04ms. Result: {"className":"TestClass","methodName":"testMethod","timestamp":"2026-03-19T14:55:24.913Z","executionTimeMs":0.038166000000273925,"response":"result"}[39m
+[32m[Nest] 23937  - [39m03/19/2026, 3:55:24 PM [32m    LOG[39m [38;5;3m[TestClass.syncMethod] [39m[32m[LogExecution]: Method invoked with parameters, {"params":[5],"className":"TestClass","methodName":"syncMethod","timestamp":"2026-03-19T14:55:24.914Z"}[39m
+[32m[Nest] 23937  - [39m03/19/2026, 3:55:24 PM [32m    LOG[39m [38;5;3m[TestClass.syncMethod] [39m[32m[LogExecution]:Method completed in 0.21ms. Result: {"className":"TestClass","methodName":"syncMethod","timestamp":"2026-03-19T14:55:24.914Z","executionTimeMs":0.20620899999994435,"response":10}[39m
+[32m[Nest] 23937  - [39m03/19/2026, 3:55:24 PM [32m    LOG[39m [38;5;3m[TestClass.testMethod] [39m[32m[LogExecution]:Method completed in 0.02ms. Result: {"className":"TestClass","methodName":"testMethod","timestamp":"2026-03-19T14:55:24.915Z","executionTimeMs":0.017958000000362517,"response":"test-value"}[39m
+[32m[Nest] 23937  - [39m03/19/2026, 3:55:24 PM [32m    LOG[39m [38;5;3m[TestClass.testMethod] [39m[32m[LogExecution]: Method invoked with parameters, {"params":[],"className":"TestClass","methodName":"testMethod","timestamp":"2026-03-19T14:55:24.915Z"}[39m
+[32m[Nest] 23937  - [39m03/19/2026, 3:55:24 PM [32m    LOG[39m [38;5;3m[TestClass.testMethod] [39m[32m[LogExecution]:Method completed in 0.06ms. Result: {"className":"TestClass","methodName":"testMethod","timestamp":"2026-03-19T14:55:24.915Z","executionTimeMs":0.06374999999934516}[39m
+[32m[Nest] 23937  - [39m03/19/2026, 3:55:24 PM [32m    LOG[39m [38;5;3m[TestClass.testMethod] [39m[32m[LogExecution]: Method invoked with parameters, {"params":[],"className":"TestClass","methodName":"testMethod","timestamp":"2026-03-19T14:55:24.915Z"}[39m
+[32m[Nest] 23937  - [39m03/19/2026, 3:55:24 PM [32m    LOG[39m [38;5;3m[TestClass.failingMethod] [39m[32m[LogExecution]: Method invoked with parameters, {"params":[],"className":"TestClass","methodName":"failingMethod","timestamp":"2026-03-19T14:55:24.916Z"}[39m
+[31m[Nest] 23937  - [39m03/19/2026, 3:55:24 PM [31m  ERROR[39m [38;5;3m[TestClass.failingMethod] [39m[31m[LogExecution]: Method failed after 0.10ms: Test error, errorLogContext: {"className":"TestClass","methodName":"failingMethod","timestamp":"2026-03-19T14:55:24.916Z","executionTimeMs":0.10366700000031415,"error":{"message":"Test error","stack":"Error: Test error\n    at TestClass.failingMethod (/Users/4thwithme/Documents/repo/recommendations-service/src/unit-tests/log-execution.decorator.unit-spec.ts:128:28)\n    at TestClass.apply (/Users/4thwithme/Documents/repo/recommendations-service/src/decorators/log-execution.decorator.ts:97:41)\n    at Object.<anonymous> (/Users/4thwithme/Documents/repo/recommendations-service/src/unit-tests/log-execution.decorator.unit-spec.ts:133:26)\n    at Promise.finally.completed (/Users/4thwithme/Documents/repo/recommendations-service/node_modules/jest-circus/build/jestAdapterInit.js:1557:28)\n    at new Promise (<anonymous>)\n    at callAsyncCircusFn (/Users/4thwithme/Documents/repo/recommendations-service/node_modules/jest-circus/build/jestAdapterInit.js:1497:10)\n    at _callCircusTest (/Users/4thwithme/Documents/repo/recommendations-service/node_modules/jest-circus/build/jestAdapterInit.js:1007:40)\n    at processTicksAndRejections (node:internal/process/task_queues:103:5)\n    at _runTest (/Users/4thwithme/Documents/repo/recommendations-service/node_modules/jest-circus/build/jestAdapterInit.js:947:3)\n    at /Users/4thwithme/Documents/repo/recommendations-service/node_modules/jest-circus/build/jestAdapterInit.js:849:7\n    at _runTestsForDescribeBlock (/Users/4thwithme/Documents/repo/recommendations-service/node_modules/jest-circus/build/jestAdapterInit.js:862:11)\n    at _runTestsForDescribeBlock (/Users/4thwithme/Documents/repo/recommendations-service/node_modules/jest-circus/build/jestAdapterInit.js:857:11)\n    at _runTestsForDescribeBlock (/Users/4thwithme/Documents/repo/recommendations-service/node_modules/jest-circus/build/jestAdapterInit.js:857:11)\n    at run (/Users/4thwithme/Documents/repo/recommendations-service/node_modules/jest-circus/build/jestAdapterInit.js:761:3)\n    at runAndTransformResultsToJestFormat (/Users/4thwithme/Documents/repo/recommendations-service/node_modules/jest-circus/build/jestAdapterInit.js:1918:21)\n    at jestAdapter (/Users/4thwithme/Documents/repo/recommendations-service/node_modules/jest-circus/build/runner.js:101:19)\n    at runTestInternal (/Users/4thwithme/Documents/repo/recommendations-service/node_modules/jest-runner/build/testWorker.js:275:16)\n    at runTest (/Users/4thwithme/Documents/repo/recommendations-service/node_modules/jest-runner/build/testWorker.js:343:7)\n    at Object.worker (/Users/4thwithme/Documents/repo/recommendations-service/node_modules/jest-runner/build/testWorker.js:497:12)","name":"Error"}}[39m
+[32m[Nest] 23937  - [39m03/19/2026, 3:55:24 PM [32m    LOG[39m [38;5;3m[TestClass.testMethod] [39m[32m[LogExecution]: Method invoked with parameters, {"params":[],"className":"TestClass","methodName":"testMethod","timestamp":"2026-03-19T14:55:24.938Z","userId":"123","operation":"test"}[39m
+[32m[Nest] 23937  - [39m03/19/2026, 3:55:24 PM [32m    LOG[39m [38;5;3m[TestClass.testMethod] [39m[32m[LogExecution]:Method completed in 0.05ms. Result: {"className":"TestClass","methodName":"testMethod","timestamp":"2026-03-19T14:55:24.938Z","userId":"123","operation":"test","executionTimeMs":0.054333000000042375,"response":"result"}[39m
+[32m[Nest] 23937  - [39m03/19/2026, 3:55:24 PM [32m    LOG[39m [38;5;3m[TestClass.login] [39m[32m[LogExecution]: Method invoked with parameters, {"params":["user","secret123"],"className":"TestClass","methodName":"login","timestamp":"2026-03-19T14:55:24.938Z"}[39m
+[32m[Nest] 23937  - [39m03/19/2026, 3:55:24 PM [32m    LOG[39m [38;5;3m[TestClass.login] [39m[32m[LogExecution]:Method completed in 0.03ms. Result: {"className":"TestClass","methodName":"login","timestamp":"2026-03-19T14:55:24.938Z","executionTimeMs":0.029416999999739346,"response":"logged-in"}[39m
+[32m[Nest] 23937  - [39m03/19/2026, 3:55:24 PM [32m    LOG[39m [38;5;3m[TestClass.authenticate] [39m[32m[LogExecution]: Method invoked with parameters, {"params":[{"token":"***MASKED***","user":"john"}],"className":"TestClass","methodName":"authenticate","timestamp":"2026-03-19T14:55:24.939Z"}[39m
+[32m[Nest] 23937  - [39m03/19/2026, 3:55:24 PM [32m    LOG[39m [38;5;3m[TestClass.authenticate] [39m[32m[LogExecution]:Method completed in 0.04ms. Result: {"className":"TestClass","methodName":"authenticate","timestamp":"2026-03-19T14:55:24.939Z","executionTimeMs":0.042415999999320775,"response":"authenticated"}[39m
+[32m[Nest] 23937  - [39m03/19/2026, 3:55:24 PM [32m    LOG[39m [38;5;3m[TestClass.makeRequest] [39m[32m[LogExecution]: Method invoked with parameters, {"params":[{"authorization":"***MASKED***","contentType":"application/json"}],"className":"TestClass","methodName":"makeRequest","timestamp":"2026-03-19T14:55:24.939Z"}[39m
+[32m[Nest] 23937  - [39m03/19/2026, 3:55:24 PM [32m    LOG[39m [38;5;3m[TestClass.makeRequest] [39m[32m[LogExecution]:Method completed in 0.03ms. Result: {"className":"TestClass","methodName":"makeRequest","timestamp":"2026-03-19T14:55:24.939Z","executionTimeMs":0.03258399999958783,"response":"done"}[39m
+[32m[Nest] 23937  - [39m03/19/2026, 3:55:24 PM [32m    LOG[39m [38;5;3m[TestClass.processData] [39m[32m[LogExecution]: Method invoked with parameters, {"params":[{"customSecret":"***MASKED***","publicData":"public"}],"className":"TestClass","methodName":"processData","timestamp":"2026-03-19T14:55:24.939Z"}[39m
+[32m[Nest] 23937  - [39m03/19/2026, 3:55:24 PM [32m    LOG[39m [38;5;3m[TestClass.processData] [39m[32m[LogExecution]:Method completed in 0.02ms. Result: {"className":"TestClass","methodName":"processData","timestamp":"2026-03-19T14:55:24.939Z","executionTimeMs":0.022249999999985448,"response":"processed"}[39m
+[32m[Nest] 23937  - [39m03/19/2026, 3:55:24 PM [32m    LOG[39m [38;5;3m[TestClass.processList] [39m[32m[LogExecution]: Method invoked with parameters, {"params":[[{"name":"user1","password":"***MASKED***"},{"name":"user2","password":"***MASKED***"}]],"className":"TestClass","methodName":"processList","timestamp":"2026-03-19T14:55:24.939Z"}[39m
+[32m[Nest] 23937  - [39m03/19/2026, 3:55:24 PM [32m    LOG[39m [38;5;3m[TestClass.processList] [39m[32m[LogExecution]:Method completed in 0.02ms. Result: {"className":"TestClass","methodName":"processList","timestamp":"2026-03-19T14:55:24.939Z","executionTimeMs":0.02200000000084401,"response":"processed"}[39m
+[32m[Nest] 23937  - [39m03/19/2026, 3:55:24 PM [32m    LOG[39m [38;5;3m[TestClass.testMethod] [39m[32m[LogExecution]: Method invoked with parameters, {"params":["secret123"],"className":"TestClass","methodName":"testMethod","timestamp":"2026-03-19T14:55:24.939Z"}[39m
+[32m[Nest] 23937  - [39m03/19/2026, 3:55:24 PM [32m    LOG[39m [38;5;3m[TestClass.testMethod] [39m[32m[LogExecution]:Method completed in 0.02ms. Result: {"className":"TestClass","methodName":"testMethod","timestamp":"2026-03-19T14:55:24.939Z","executionTimeMs":0.017291999999542895,"response":"done"}[39m
+[32m[Nest] 23937  - [39m03/19/2026, 3:55:24 PM [32m    LOG[39m [38;5;3m[TestClass.testAllKeys] [39m[32m[LogExecution]: Method invoked with parameters, {"params":[{"password":"***MASKED***","pass":"***MASKED***","token":"***MASKED***","secret":"***MASKED***","auth":"***MASKED***","authorization":"***MASKED***","cookie":"***MASKED***","session":"***MASKED***","credentials":"***MASKED***","apiKey":"***MASKED***","_cookie":"***MASKED***","csrf":"***MASKED***","_csrf":"***MASKED***"}],"className":"TestClass","methodName":"testAllKeys","timestamp":"2026-03-19T14:55:24.939Z"}[39m
+[32m[Nest] 23937  - [39m03/19/2026, 3:55:24 PM [32m    LOG[39m [38;5;3m[TestClass.testAllKeys] [39m[32m[LogExecution]:Method completed in 0.03ms. Result: {"className":"TestClass","methodName":"testAllKeys","timestamp":"2026-03-19T14:55:24.939Z","executionTimeMs":0.029499999999643478,"response":"done"}[39m
+[32m[Nest] 23937  - [39m03/19/2026, 3:55:24 PM [32m    LOG[39m [38;5;3m[TestClass.testMethod] [39m[32m[LogExecution]: Method invoked with parameters, {"params":{"count":2},"className":"TestClass","methodName":"testMethod","timestamp":"2026-03-19T14:55:24.940Z"}[39m
+[32m[Nest] 23937  - [39m03/19/2026, 3:55:24 PM [32m    LOG[39m [38;5;3m[TestClass.testMethod] [39m[32m[LogExecution]:Method completed in 0.03ms. Result: {"className":"TestClass","methodName":"testMethod","timestamp":"2026-03-19T14:55:24.940Z","executionTimeMs":0.026667000000088592,"response":"result"}[39m
+[32m[Nest] 23937  - [39m03/19/2026, 3:55:24 PM [32m    LOG[39m [38;5;3m[TestClass.testMethod] [39m[32m[LogExecution]: Method invoked with parameters, {"params":[],"className":"TestClass","methodName":"testMethod","timestamp":"2026-03-19T14:55:24.940Z"}[39m
+[32m[Nest] 23937  - [39m03/19/2026, 3:55:24 PM [32m    LOG[39m [38;5;3m[TestClass.testMethod] [39m[32m[LogExecution]:Method completed in 0.02ms. Result: {"className":"TestClass","methodName":"testMethod","timestamp":"2026-03-19T14:55:24.940Z","executionTimeMs":0.017208000000209722,"response":{"length":8}}[39m
+[32m[Nest] 23937  - [39m03/19/2026, 3:55:24 PM [32m    LOG[39m [38;5;3m[TestClass.failingMethod] [39m[32m[LogExecution]: Method invoked with parameters, {"params":[],"className":"TestClass","methodName":"failingMethod","timestamp":"2026-03-19T14:55:24.940Z"}[39m
+[31m[Nest] 23937  - [39m03/19/2026, 3:55:24 PM [31m  ERROR[39m [38;5;3m[TestClass.failingMethod] [39m[31m[LogExecution]: Method failed after 0.23ms: Test error, errorLogContext: {"className":"TestClass","methodName":"failingMethod","timestamp":"2026-03-19T14:55:24.941Z","executionTimeMs":0.2341660000001866,"error":{"message":"Test error","stack":"Error: Test error\n    at TestClass.failingMethod (/Users/4thwithme/Documents/repo/recommendations-service/src/unit-tests/log-execution.decorator.unit-spec.ts:317:28)\n    at TestClass.apply (/Users/4thwithme/Documents/repo/recommendations-service/src/decorators/log-execution.decorator.ts:97:41)\n    at Object.<anonymous> (/Users/4thwithme/Documents/repo/recommendations-service/src/unit-tests/log-execution.decorator.unit-spec.ts:322:26)\n    at Promise.finally.completed (/Users/4thwithme/Documents/repo/recommendations-service/node_modules/jest-circus/build/jestAdapterInit.js:1557:28)\n    at new Promise (<anonymous>)\n    at callAsyncCircusFn (/Users/4thwithme/Documents/repo/recommendations-service/node_modules/jest-circus/build/jestAdapterInit.js:1497:10)\n    at _callCircusTest (/Users/4thwithme/Documents/repo/recommendations-service/node_modules/jest-circus/build/jestAdapterInit.js:1007:40)\n    at processTicksAndRejections (node:internal/process/task_queues:103:5)\n    at _runTest (/Users/4thwithme/Documents/repo/recommendations-service/node_modules/jest-circus/build/jestAdapterInit.js:947:3)\n    at /Users/4thwithme/Documents/repo/recommendations-service/node_modules/jest-circus/build/jestAdapterInit.js:849:7\n    at _runTestsForDescribeBlock (/Users/4thwithme/Documents/repo/recommendations-service/node_modules/jest-circus/build/jestAdapterInit.js:862:11)\n    at _runTestsForDescribeBlock (/Users/4thwithme/Documents/repo/recommendations-service/node_modules/jest-circus/build/jestAdapterInit.js:857:11)\n    at _runTestsForDescribeBlock (/Users/4thwithme/Documents/repo/recommendations-service/node_modules/jest-circus/build/jestAdapterInit.js:857:11)\n    at run (/Users/4thwithme/Documents/repo/recommendations-service/node_modules/jest-circus/build/jestAdapterInit.js:761:3)\n    at runAndTransformResultsToJestFormat (/Users/4thwithme/Documents/repo/recommendations-service/node_modules/jest-circus/build/jestAdapterInit.js:1918:21)\n    at jestAdapter (/Users/4thwithme/Documents/repo/recommendations-service/node_modules/jest-circus/build/runner.js:101:19)\n    at runTestInternal (/Users/4thwithme/Documents/repo/recommendations-service/node_modules/jest-runner/build/testWorker.js:275:16)\n    at runTest (/Users/4thwithme/Documents/repo/recommendations-service/node_modules/jest-runner/build/testWorker.js:343:7)\n    at Object.worker (/Users/4thwithme/Documents/repo/recommendations-service/node_modules/jest-runner/build/testWorker.js:497:12)","name":"Error"}}[39m
+[32m[Nest] 23937  - [39m03/19/2026, 3:55:24 PM [32m    LOG[39m [38;5;3m[TestClass.failingMethod] [39m[32m[LogExecution]: Method invoked with parameters, {"params":[],"className":"TestClass","methodName":"failingMethod","timestamp":"2026-03-19T14:55:24.941Z","requestId":"456"}[39m
+[31m[Nest] 23937  - [39m03/19/2026, 3:55:24 PM [31m  ERROR[39m [38;5;3m[TestClass.failingMethod] [39m[31m[LogExecution]: Method failed after 0.07ms: Custom error, errorLogContext: {"className":"TestClass","methodName":"failingMethod","timestamp":"2026-03-19T14:55:24.941Z","executionTimeMs":0.07133400000020629,"error":{"message":"Custom error","stack":"Error: Custom error\n    at TestClass.failingMethod (/Users/4thwithme/Documents/repo/recommendations-service/src/unit-tests/log-execution.decorator.unit-spec.ts:329:28)\n    at TestClass.apply (/Users/4thwithme/Documents/repo/recommendations-service/src/decorators/log-execution.decorator.ts:97:41)\n    at Object.<anonymous> (/Users/4thwithme/Documents/repo/recommendations-service/src/unit-tests/log-execution.decorator.unit-spec.ts:334:26)\n    at Promise.finally.completed (/Users/4thwithme/Documents/repo/recommendations-service/node_modules/jest-circus/build/jestAdapterInit.js:1557:28)\n    at new Promise (<anonymous>)\n    at callAsyncCircusFn (/Users/4thwithme/Documents/repo/recommendations-service/node_modules/jest-circus/build/jestAdapterInit.js:1497:10)\n    at _callCircusTest (/Users/4thwithme/Documents/repo/recommendations-service/node_modules/jest-circus/build/jestAdapterInit.js:1007:40)\n    at processTicksAndRejections (node:internal/process/task_queues:103:5)\n    at _runTest (/Users/4thwithme/Documents/repo/recommendations-service/node_modules/jest-circus/build/jestAdapterInit.js:947:3)\n    at /Users/4thwithme/Documents/repo/recommendations-service/node_modules/jest-circus/build/jestAdapterInit.js:849:7\n    at _runTestsForDescribeBlock (/Users/4thwithme/Documents/repo/recommendations-service/node_modules/jest-circus/build/jestAdapterInit.js:862:11)\n    at _runTestsForDescribeBlock (/Users/4thwithme/Documents/repo/recommendations-service/node_modules/jest-circus/build/jestAdapterInit.js:857:11)\n    at _runTestsForDescribeBlock (/Users/4thwithme/Documents/repo/recommendations-service/node_modules/jest-circus/build/jestAdapterInit.js:857:11)\n    at run (/Users/4thwithme/Documents/repo/recommendations-service/node_modules/jest-circus/build/jestAdapterInit.js:761:3)\n    at runAndTransformResultsToJestFormat (/Users/4thwithme/Documents/repo/recommendations-service/node_modules/jest-circus/build/jestAdapterInit.js:1918:21)\n    at jestAdapter (/Users/4thwithme/Documents/repo/recommendations-service/node_modules/jest-circus/build/runner.js:101:19)\n    at runTestInternal (/Users/4thwithme/Documents/repo/recommendations-service/node_modules/jest-runner/build/testWorker.js:275:16)\n    at runTest (/Users/4thwithme/Documents/repo/recommendations-service/node_modules/jest-runner/build/testWorker.js:343:7)\n    at Object.worker (/Users/4thwithme/Documents/repo/recommendations-service/node_modules/jest-runner/build/testWorker.js:497:12)","name":"Error"},"requestId":"456"}[39m
+[32m[Nest] 23937  - [39m03/19/2026, 3:55:24 PM [32m    LOG[39m [38;5;3m[TestClass.failingMethod] [39m[32m[LogExecution]: Method invoked with parameters, {"params":[],"className":"TestClass","methodName":"failingMethod","timestamp":"2026-03-19T14:55:24.943Z"}[39m
+[31m[Nest] 23937  - [39m03/19/2026, 3:55:24 PM [31m  ERROR[39m [38;5;3m[TestClass.failingMethod] [39m[31m[LogExecution]: Method failed after 0.10ms: Rollbar error, errorLogContext: {"className":"TestClass","methodName":"failingMethod","timestamp":"2026-03-19T14:55:24.943Z","executionTimeMs":0.10379199999988487,"error":{"message":"Rollbar error","stack":"Error: Rollbar error\n    at TestClass.failingMethod (/Users/4thwithme/Documents/repo/recommendations-service/src/unit-tests/log-execution.decorator.unit-spec.ts:345:28)\n    at TestClass.apply (/Users/4thwithme/Documents/repo/recommendations-service/src/decorators/log-execution.decorator.ts:97:41)\n    at Object.<anonymous> (/Users/4thwithme/Documents/repo/recommendations-service/src/unit-tests/log-execution.decorator.unit-spec.ts:350:26)\n    at processTicksAndRejections (node:internal/process/task_queues:103:5)","name":"Error"}}[39m
+[31m[Nest] 23937  - [39m03/19/2026, 3:55:24 PM [31m  ERROR[39m [38;5;3m[TestClass.failingMethod] [39m[31m[LogExecution]: Method failed after 0.06ms: Original error, errorLogContext: {"className":"TestClass","methodName":"failingMethod","timestamp":"2026-03-19T14:55:24.943Z","executionTimeMs":0.06304199999976845,"error":{"message":"Original error","stack":"Error: Original error\n    at TestClass.failingMethod (/Users/4thwithme/Documents/repo/recommendations-service/src/unit-tests/log-execution.decorator.unit-spec.ts:366:28)\n    at TestClass.apply (/Users/4thwithme/Documents/repo/recommendations-service/src/decorators/log-execution.decorator.ts:97:41)\n    at Object.<anonymous> (/Users/4thwithme/Documents/repo/recommendations-service/src/unit-tests/log-execution.decorator.unit-spec.ts:371:26)\n    at processTicksAndRejections (node:internal/process/task_queues:103:5)","name":"Error"}}[39m
+[32m[Nest] 23937  - [39m03/19/2026, 3:55:24 PM [32m    LOG[39m [38;5;3m[TestClass.failingMethod] [39m[32m[LogExecution]: Method invoked with parameters, {"params":[],"className":"TestClass","methodName":"failingMethod","timestamp":"2026-03-19T14:55:24.943Z"}[39m
+[32m[Nest] 23937  - [39m03/19/2026, 3:55:24 PM [32m    LOG[39m [38;5;3m[TestClass.slowMethod] [39m[32m[LogExecution]: Method invoked with parameters, {"params":[],"className":"TestClass","methodName":"slowMethod","timestamp":"2026-03-19T14:55:24.944Z"}[39m
+[33m[Nest] 23934  - [39m03/19/2026, 3:55:24 PM [33m   WARN[39m [38;5;3m[RetryUtil] [39m[33mAttempt 1 failed: Error: always fail[39m
+[32m[Nest] 23937  - [39m03/19/2026, 3:55:25 PM [32m    LOG[39m [38;5;3m[TestClass.slowMethod] [39m[32m[LogExecution]:Method completed in 77.98ms. Result: {"className":"TestClass","methodName":"slowMethod","timestamp":"2026-03-19T14:55:24.944Z","executionTimeMs":77.976541,"response":"done"}[39m
+[32m[Nest] 23937  - [39m03/19/2026, 3:55:25 PM [32m    LOG[39m [38;5;3m[TestClass.slowMethod] [39m[32m[LogExecution]: Method invoked with parameters, {"params":[],"className":"TestClass","methodName":"slowMethod","timestamp":"2026-03-19T14:55:25.023Z"}[39m
+[32m[Nest] 23937  - [39m03/19/2026, 3:55:25 PM [32m    LOG[39m [38;5;3m[TestClass.slowMethod] [39m[32m[LogExecution]:Method completed in 21.45ms. Result: {"className":"TestClass","methodName":"slowMethod","timestamp":"2026-03-19T14:55:25.023Z","executionTimeMs":21.447166000000834,"response":"done"}[39m
+[32m[Nest] 23937  - [39m03/19/2026, 3:55:25 PM [32m    LOG[39m [38;5;3m[TestClass.slowMethod] [39m[32m[LogExecution]: Method invoked with parameters, {"params":[],"className":"TestClass","methodName":"slowMethod","timestamp":"2026-03-19T14:55:25.046Z"}[39m
+[32m[Nest] 23937  - [39m03/19/2026, 3:55:25 PM [32m    LOG[39m [38;5;3m[TestClass.slowMethod] [39m[32m[LogExecution]:Method completed in 21.78ms. Result: {"className":"TestClass","methodName":"slowMethod","timestamp":"2026-03-19T14:55:25.046Z","executionTimeMs":21.78216599999996,"response":"done"}[39m
+PASS src/unit-tests/env-config.service.unit-spec.ts
+  EnvConfigService
+    get
+      ✓ should retrieve environment variable from ConfigService (12 ms)
+      ✓ should throw error when environment variable is undefined (19 ms)
+      ✓ should apply converter function when provided (2 ms)
+      ✓ should handle converter with a named function (2 ms)
+
+[32m[Nest] 23937  - [39m03/19/2026, 3:55:25 PM [32m    LOG[39m [38;5;3m[TestClass.fastMethod] [39m[32m[LogExecution]: Method invoked with parameters, {"params":[],"className":"TestClass","methodName":"fastMethod","timestamp":"2026-03-19T14:55:25.070Z"}[39m
+[32m[Nest] 23937  - [39m03/19/2026, 3:55:25 PM [32m    LOG[39m [38;5;3m[TestClass.fastMethod] [39m[32m[LogExecution]:Method completed in 0.09ms. Result: {"className":"TestClass","methodName":"fastMethod","timestamp":"2026-03-19T14:55:25.070Z","executionTimeMs":0.08812499999930878,"response":"done"}[39m
+[32m[Nest] 23937  - [39m03/19/2026, 3:55:25 PM [32m    LOG[39m [38;5;3m[TestClass.testMethod] [39m[32m[LogExecution]: Method invoked with parameters, {"params":[],"className":"TestClass","methodName":"testMethod","timestamp":"2026-03-19T14:55:25.072Z"}[39m
+[32m[Nest] 23937  - [39m03/19/2026, 3:55:25 PM [32m    LOG[39m [38;5;3m[TestClass.testMethod] [39m[32m[LogExecution]:Method completed in 0.05ms. Result: {"className":"TestClass","methodName":"testMethod","timestamp":"2026-03-19T14:55:25.072Z","executionTimeMs":0.05445800000052259,"response":"done"}[39m
+[32m[Nest] 23937  - [39m03/19/2026, 3:55:25 PM [32m    LOG[39m [38;5;3m[TestClass.testMethod] [39m[32m[LogExecution]: Method invoked with parameters, {"params":[],"className":"TestClass","methodName":"testMethod","timestamp":"2026-03-19T14:55:25.076Z"}[39m
+[32m[Nest] 23937  - [39m03/19/2026, 3:55:25 PM [32m    LOG[39m [38;5;3m[TestClass.testMethod] [39m[32m[LogExecution]:Method completed in 0.07ms. Result: {"className":"TestClass","methodName":"testMethod","timestamp":"2026-03-19T14:55:25.076Z","executionTimeMs":0.06870900000012625,"response":"done"}[39m
+[32m[Nest] 23937  - [39m03/19/2026, 3:55:25 PM [32m    LOG[39m [38;5;3m[TestClass.testPrimitive] [39m[32m[LogExecution]: Method invoked with parameters, {"params":["simple-string"],"className":"TestClass","methodName":"testPrimitive","timestamp":"2026-03-19T14:55:25.077Z"}[39m
+[32m[Nest] 23937  - [39m03/19/2026, 3:55:25 PM [32m    LOG[39m [38;5;3m[TestClass.testPrimitive] [39m[32m[LogExecution]:Method completed in 0.04ms. Result: {"className":"TestClass","methodName":"testPrimitive","timestamp":"2026-03-19T14:55:25.077Z","executionTimeMs":0.041459000000031665,"response":"simple-string"}[39m
+[32m[Nest] 23937  - [39m03/19/2026, 3:55:25 PM [32m    LOG[39m [38;5;3m[TestClass.testNull] [39m[32m[LogExecution]: Method invoked with parameters, {"params":[null],"className":"TestClass","methodName":"testNull","timestamp":"2026-03-19T14:55:25.078Z"}[39m
+[32m[Nest] 23937  - [39m03/19/2026, 3:55:25 PM [32m    LOG[39m [38;5;3m[TestClass.testNull] [39m[32m[LogExecution]:Method completed in 0.05ms. Result: {"className":"TestClass","methodName":"testNull","timestamp":"2026-03-19T14:55:25.078Z","executionTimeMs":0.050166999999419204,"response":"done"}[39m
+[32m[Nest] 23937  - [39m03/19/2026, 3:55:25 PM [32m    LOG[39m [38;5;3m[TestClass.testUndefined] [39m[32m[LogExecution]: Method invoked with parameters, {"params":[null],"className":"TestClass","methodName":"testUndefined","timestamp":"2026-03-19T14:55:25.078Z"}[39m
+[32m[Nest] 23937  - [39m03/19/2026, 3:55:25 PM [32m    LOG[39m [38;5;3m[TestClass.testUndefined] [39m[32m[LogExecution]:Method completed in 0.02ms. Result: {"className":"TestClass","methodName":"testUndefined","timestamp":"2026-03-19T14:55:25.078Z","executionTimeMs":0.0226249999996071,"response":"done"}[39m
+[32m[Nest] 23937  - [39m03/19/2026, 3:55:25 PM [32m    LOG[39m [38;5;3m[TestClass.testNested] [39m[32m[LogExecution]: Method invoked with parameters, {"params":[{"level1":{"level2":{"level3":{"password":"***MASKED***"}}}}],"className":"TestClass","methodName":"testNested","timestamp":"2026-03-19T14:55:25.078Z"}[39m
+[32m[Nest] 23937  - [39m03/19/2026, 3:55:25 PM [32m    LOG[39m [38;5;3m[TestClass.testNested] [39m[32m[LogExecution]:Method completed in 0.05ms. Result: {"className":"TestClass","methodName":"testNested","timestamp":"2026-03-19T14:55:25.078Z","executionTimeMs":0.049667000000226835,"response":"done"}[39m
+[32m[Nest] 23937  - [39m03/19/2026, 3:55:25 PM [32m    LOG[39m [38;5;3m[TestClass.testNullProp] [39m[32m[LogExecution]: Method invoked with parameters, {"params":[{"key":null,"password":"***MASKED***"}],"className":"TestClass","methodName":"testNullProp","timestamp":"2026-03-19T14:55:25.079Z"}[39m
+[32m[Nest] 23937  - [39m03/19/2026, 3:55:25 PM [32m    LOG[39m [38;5;3m[TestClass.testNullProp] [39m[32m[LogExecution]:Method completed in 0.05ms. Result: {"className":"TestClass","methodName":"testNullProp","timestamp":"2026-03-19T14:55:25.079Z","executionTimeMs":0.050375000000713044,"response":"done"}[39m
+[32m[Nest] 23937  - [39m03/19/2026, 3:55:25 PM [32m    LOG[39m [38;5;3m[TestClass.testEmptyArray] [39m[32m[LogExecution]: Method invoked with parameters, {"params":[[]],"className":"TestClass","methodName":"testEmptyArray","timestamp":"2026-03-19T14:55:25.082Z"}[39m
+[32m[Nest] 23937  - [39m03/19/2026, 3:55:25 PM [32m    LOG[39m [38;5;3m[TestClass.testEmptyArray] [39m[32m[LogExecution]:Method completed in 0.11ms. Result: {"className":"TestClass","methodName":"testEmptyArray","timestamp":"2026-03-19T14:55:25.082Z","executionTimeMs":0.11204100000031758,"response":"done"}[39m
+[32m[Nest] 23937  - [39m03/19/2026, 3:55:25 PM [32m    LOG[39m [38;5;3m[TestClass.testPrimitiveArray] [39m[32m[LogExecution]: Method invoked with parameters, {"params":[[1,2,3]],"className":"TestClass","methodName":"testPrimitiveArray","timestamp":"2026-03-19T14:55:25.102Z"}[39m
+[32m[Nest] 23937  - [39m03/19/2026, 3:55:25 PM [32m    LOG[39m [38;5;3m[TestClass.testPrimitiveArray] [39m[32m[LogExecution]:Method completed in 0.21ms. Result: {"className":"TestClass","methodName":"testPrimitiveArray","timestamp":"2026-03-19T14:55:25.102Z","executionTimeMs":0.20516699999916455,"response":"done"}[39m
+[32m[Nest] 23937  - [39m03/19/2026, 3:55:25 PM [32m    LOG[39m [38;5;3m[TestClass.testMethod] [39m[32m[LogExecution]: Method invoked with parameters, {"params":["hello"],"className":"TestClass","methodName":"testMethod","timestamp":"2026-03-19T14:55:25.109Z"}[39m
+[32m[Nest] 23937  - [39m03/19/2026, 3:55:25 PM [32m    LOG[39m [38;5;3m[TestClass.testMethod] [39m[32m[LogExecution]:Method completed in 0.08ms. Result: {"className":"TestClass","methodName":"testMethod","timestamp":"2026-03-19T14:55:25.109Z","executionTimeMs":0.07625000000007276,"response":"HELLO"}[39m
+[32m[Nest] 23937  - [39m03/19/2026, 3:55:25 PM [32m    LOG[39m [38;5;3m[TestClass.testMethod] [39m[32m[LogExecution]:Method completed in 0.04ms. Result: {"className":"TestClass","methodName":"testMethod","timestamp":"2026-03-19T14:55:25.124Z","executionTimeMs":0.03800000000046566,"response":"result"}[39m
+[32m[Nest] 23937  - [39m03/19/2026, 3:55:25 PM [32m    LOG[39m [38;5;3m[TestClass.debugMethod] [39m[32m[LogExecution]: Method invoked with parameters, {"params":[],"className":"TestClass","methodName":"debugMethod","timestamp":"2026-03-19T14:55:25.125Z"}[39m
+[32m[Nest] 23937  - [39m03/19/2026, 3:55:25 PM [32m    LOG[39m [38;5;3m[TestClass.debugMethod] [39m[32m[LogExecution]:Method completed in 0.05ms. Result: {"className":"TestClass","methodName":"debugMethod","timestamp":"2026-03-19T14:55:25.125Z","executionTimeMs":0.049332999999933236,"response":"done"}[39m
+[32m[Nest] 23937  - [39m03/19/2026, 3:55:25 PM [32m    LOG[39m [38;5;3m[TestClass.infoMethod] [39m[32m[LogExecution]: Method invoked with parameters, {"params":[],"className":"TestClass","methodName":"infoMethod","timestamp":"2026-03-19T14:55:25.126Z"}[39m
+[32m[Nest] 23937  - [39m03/19/2026, 3:55:25 PM [32m    LOG[39m [38;5;3m[TestClass.infoMethod] [39m[32m[LogExecution]:Method completed in 0.12ms. Result: {"className":"TestClass","methodName":"infoMethod","timestamp":"2026-03-19T14:55:25.126Z","executionTimeMs":0.12191699999948469,"response":"done"}[39m
+[32m[Nest] 23937  - [39m03/19/2026, 3:55:25 PM [32m    LOG[39m [38;5;3m[TestClass.warningMethod] [39m[32m[LogExecution]: Method invoked with parameters, {"params":[],"className":"TestClass","methodName":"warningMethod","timestamp":"2026-03-19T14:55:25.127Z"}[39m
+[32m[Nest] 23937  - [39m03/19/2026, 3:55:25 PM [32m    LOG[39m [38;5;3m[TestClass.warningMethod] [39m[32m[LogExecution]:Method completed in 1.65ms. Result: {"className":"TestClass","methodName":"warningMethod","timestamp":"2026-03-19T14:55:25.127Z","executionTimeMs":1.6457500000005894,"response":"done"}[39m
+[32m[Nest] 23937  - [39m03/19/2026, 3:55:25 PM [32m    LOG[39m [38;5;3m[TestClass.errorMethod] [39m[32m[LogExecution]: Method invoked with parameters, {"params":[],"className":"TestClass","methodName":"errorMethod","timestamp":"2026-03-19T14:55:25.129Z"}[39m
+[32m[Nest] 23937  - [39m03/19/2026, 3:55:25 PM [32m    LOG[39m [38;5;3m[TestClass.errorMethod] [39m[32m[LogExecution]:Method completed in 0.03ms. Result: {"className":"TestClass","methodName":"errorMethod","timestamp":"2026-03-19T14:55:25.129Z","executionTimeMs":0.03499999999985448,"response":"done"}[39m
+[32m[Nest] 23937  - [39m03/19/2026, 3:55:25 PM [32m    LOG[39m [38;5;3m[TestClass.complexReturn] [39m[32m[LogExecution]: Method invoked with parameters, {"params":[],"className":"TestClass","methodName":"complexReturn","timestamp":"2026-03-19T14:55:25.130Z"}[39m
+[32m[Nest] 23937  - [39m03/19/2026, 3:55:25 PM [32m    LOG[39m [38;5;3m[TestClass.complexReturn] [39m[32m[LogExecution]:Method completed in 0.46ms. Result: {"className":"TestClass","methodName":"complexReturn","timestamp":"2026-03-19T14:55:25.130Z","executionTimeMs":0.45899999999983265,"response":{"data":["a","b","c"],"metadata":{"count":3}}}[39m
+[32m[Nest] 23937  - [39m03/19/2026, 3:55:25 PM [32m    LOG[39m [38;5;3m[TestClass.multiParam] [39m[32m[LogExecution]: Method invoked with parameters, {"params":["test",123,true,{"key":"value"},[1,2,3]],"className":"TestClass","methodName":"multiParam","timestamp":"2026-03-19T14:55:25.134Z"}[39m
+[32m[Nest] 23937  - [39m03/19/2026, 3:55:25 PM [32m    LOG[39m [38;5;3m[TestClass.multiParam] [39m[32m[LogExecution]:Method completed in 0.07ms. Result: {"className":"TestClass","methodName":"multiParam","timestamp":"2026-03-19T14:55:25.134Z","executionTimeMs":0.0733330000002752,"response":"done"}[39m
+[32m[Nest] 23937  - [39m03/19/2026, 3:55:25 PM [32m    LOG[39m [38;5;3m[TestClass.fullOptions] [39m[32m[LogExecution]: Method invoked with parameters, {"params":{"length":2},"className":"TestClass","methodName":"fullOptions","timestamp":"2026-03-19T14:55:25.135Z","feature":"test"}[39m
+[32m[Nest] 23937  - [39m03/19/2026, 3:55:25 PM [32m    LOG[39m [38;5;3m[TestClass.fullOptions] [39m[32m[LogExecution]:Method completed in 0.04ms. Result: {"className":"TestClass","methodName":"fullOptions","timestamp":"2026-03-19T14:55:25.135Z","feature":"test","executionTimeMs":0.044584000000213564,"response":{"uppercase":"RESULT"}}[39m
+PASS src/unit-tests/log-execution.decorator.unit-spec.ts
+  LogExecution Decorator
+    Basic Functionality
+      ✓ should log method invocation with parameters (1 ms)
+      ✓ should log execution time (1 ms)
+      ✓ should work with synchronous methods
+    Options Configuration
+      ✓ should respect logParams: false option
+      ✓ should respect logResponse: false option
+      ✓ should respect logExecutionTime: false option
+      ✓ should respect logErrToRollbar: false option (23 ms)
+      ✓ should use custom context in logs
+    Sensitive Data Masking
+      ✓ should mask password in parameters
+      ✓ should mask token in nested objects
+      ✓ should mask authorization headers
+      ✓ should mask custom sensitive keys
+      ✓ should mask sensitive data in arrays
+      ✓ should handle maskSensitiveData: false
+      ✓ should mask all default sensitive keys (1 ms)
+    Custom Formatters
+      ✓ should use custom paramFormatter
+      ✓ should use custom responseFormatter
+    Error Handling
+      ✓ should catch and log errors (1 ms)
+      ✓ should log error with context (1 ms)
+      ✓ should log error to Rollbar when enabled and Rollbar is available (1 ms)
+      ✓ should handle Rollbar error logging failure gracefully (1 ms)
+    Performance Monitoring
+      ✓ should warn when execution time exceeds threshold (78 ms)
+      ✓ should log long execution to Rollbar when enabled and Rollbar is available (22 ms)
+      ✓ should handle Rollbar warning logging failure gracefully (24 ms)
+      ✓ should not warn when execution is below threshold (2 ms)
+    getRollbarInstance Edge Cases
+      ✓ should handle Rollbar being null (1 ms)
+      ✓ should handle Rollbar being undefined (5 ms)
+    maskSensitiveData Function Edge Cases
+      ✓ should handle non-object data
+      ✓ should handle null data (1 ms)
+      ✓ should handle undefined data
+      ✓ should handle deeply nested objects (1 ms)
+      ✓ should handle objects with null properties
+      ✓ should handle empty arrays (3 ms)
+      ✓ should handle arrays with primitives (20 ms)
+    Default Options Behavior
+      ✓ should use default options when none provided (6 ms)
+      ✓ should merge provided options with defaults (15 ms)
+    Rollbar Level Option
+      ✓ should support different rollbar levels (1 ms)
+      ✓ should support info level (2 ms)
+      ✓ should support warning level (2 ms)
+      ✓ should support error level (1 ms)
+    Complex Scenarios
+      ✓ should handle methods returning complex objects (2 ms)
+      ✓ should handle methods with multiple parameters of different types (2 ms)
+      ✓ should handle all options together (1 ms)
+
+[33m[Nest] 23934  - [39m03/19/2026, 3:55:25 PM [33m   WARN[39m [38;5;3m[RetryUtil] [39m[33mAttempt 2 failed: Error: always fail[39m
+PASS src/unit-tests/common.util.unit-spec.ts
+  common.util
+    isDevEnv
+      ✓ should return true when NODE_ENV is DEVELOPMENT (1 ms)
+      ✓ should return false when NODE_ENV is not DEVELOPMENT (1 ms)
+      ✓ should return true if error occurs
+    isProdEnv
+      ✓ should return true when NODE_ENV is PRODUCTION
+      ✓ should return false when NODE_ENV is not PRODUCTION
+      ✓ should return true if error occurs (1 ms)
+    isTestEnv
+      ✓ should return true when NODE_ENV is TEST
+      ✓ should return false when NODE_ENV is not TEST
+      ✓ should return true if error occurs (1 ms)
+    isStagingEnv
+      ✓ should return true when NODE_ENV is STAGING
+      ✓ should return false when NODE_ENV is not STAGING
+      ✓ should return true if error occurs
+
+PASS src/unit-tests/formatting.util.unit-spec.ts
+  formatting.util
+    formatSizes
+      ✓ should format a single size correctly (3 ms)
+      ✓ should format multiple sizes as a range (3 ms)
+      ✓ should handle empty array
+      ✓ should handle array with empty strings
+    convertToNumberedXL
+      ✓ should convert XXL to 2XL
+      ✓ should convert XXXL to 3XL
+      ✓ should not convert XL
+      ✓ should not convert non-XL sizes
+      ✓ should handle undefined input
+      ✓ should handle empty string input
+
+PASS src/unit-tests/mathematical-functions.util.unit-spec.ts
+  MathematicalFunctions
+    roundToPrecision
+      ✓ should round to 2 decimal places (1 ms)
+      ✓ should round to 0 decimal places
+      ✓ should return the value unchanged when precision is null
+      ✓ should handle negative values correctly (2 ms)
+      ✓ should throw error if value is not a number (104 ms)
+      ✓ should throw error if precision is not a number or null (3 ms)
+      ✓ should round correctly with high precision
+      ✓ should round to negative precision (e.g., nearest 100) (1 ms)
+    mean
+      ✓ should calculate mean of positive numbers (1 ms)
+      ✓ should calculate mean of positive numbers without precision (2 ms)
+      ✓ should calculate mean of positive numbers with precision
+      ✓ should handle empty array
+      ✓ should handle single value array
+      ✓ should handle negative numbers (1 ms)
+      ✓ should handle array with zeros (1 ms)
+      ✓ should throw error for non-array input (2 ms)
+      ✓ should throw error for non-number elements in array (5 ms)
+    median
+      ✓ should calculate median of odd number of elements (3 ms)
+      ✓ should calculate median of even number of elements
+      ✓ should handle single value array
+      ✓ should handle negative numbers
+      ✓ should handle unsorted array
+      ✓ should handle duplicate values
+      ✓ should handle array with zeros
+      ✓ should handle large numbers
+      ✓ should handle decimal numbers
+      ✓ should throw error for empty array (4 ms)
+      ✓ should throw error for non-number elements in array (1 ms)
+    medianAbsoluteDeviation
+      ✓ should calculate MAD correctly for simple array
+      ✓ should calculate MAD for array with outliers
+      ✓ should handle negative numbers
+      ✓ should handle identical values
+      ✓ should handle decimal numbers (2 ms)
+      ✓ should return 0 for empty array
+      ✓ should return 0 for single value array (1 ms)
+      ✓ should handle two-element array
+      ✓ should handle large numbers (1 ms)
+      ✓ should handle unsorted array
+      ✓ should throw error for non-number elements in array (1 ms)
+    variance
+      ✓ should calculate variance correctly (1 ms)
+      ✓ should calculate variance without precision
+      ✓ should calculate variance with precision
+      ✓ should return 0 for empty array
+      ✓ should return 0 for single value (1 ms)
+      ✓ should handle identical values
+      ✓ should handle negative numbers
+      ✓ should throw error for non-array input (7 ms)
+      ✓ should throw error for non-number elements in array (2 ms)
+      ✓ should handle large numbers
+    standardDeviation
+      ✓ should calculate standard deviation correctly
+      ✓ should calculate standard deviation without precision
+      ✓ should calculate standard deviation with precision
+      ✓ should return 0 for empty array
+      ✓ should return 0 for single value (1 ms)
+      ✓ should handle identical values (2 ms)
+      ✓ should handle negative numbers (2 ms)
+      ✓ should throw error for non-array input
+      ✓ should throw error for non-number elements in array (1 ms)
+      ✓ should handle large numbers (1 ms)
+      ✓ should handle large numbers with precision
+    linearRegression
+      ✓ should calculate slope and intercept for positive correlation (2 ms)
+      ✓ should calculate slope and intercept for positive correlation 2 (1 ms)
+      ✓ should handle division by zero when all x-values are identical
+      ✓ should calculate slope and intercept for negative correlation (1 ms)
+      ✓ should calculate R-squared value correctly
+      ✓ should handle perfect linear relationship (1 ms)
+      ✓ should throw error for mismatched array lengths (3 ms)
+      ✓ should throw error for empty arrays
+      ✓ should handle horizontal line (zero slope)
+      ✓ should handle vertical data points (2 ms)
+    movingAverage
+      ✓ should calculate moving average with window size 3
+      ✓ should calculate moving average with window size 3 without precision
+      ✓ should calculate moving average with window size 3 with precision
+      ✓ should handle window size equal to array length
+      ✓ should handle window size equal to array length with precision
+      ✓ should throw error for invalid window size
+      ✓ should throw error for window size larger than array (1 ms)
+      ✓ should handle window size of 1 (1 ms)
+      ✓ should handle negative numbers in array
+      ✓ should handle non-numeric values (2 ms)
+      ✓ should handle non-number precision (1 ms)
+    fourierCoefficients
+      ✓ should calculate Fourier coefficients for simple sine wave
+      ✓ should calculate Fourier coefficients for cosine wave
+      ✓ should handle multiple harmonics
+      ✓ should return correct number of coefficients (1 ms)
+      ✓ should handle constant values (1 ms)
+      ✓ should handle complex periodic signal (1 ms)
+      ✓ should handle empty array (1 ms)
+      ✓ should handle single value array
+      ✓ should throw error for non-array input (1 ms)
+      ✓ should throw error for non-number elements in array
+    reconstructFourierSeries
+      ✓ should reconstruct simple sine wave (3 ms)
+      ✓ should reconstruct simple sine wave with a0 coefficient
+      ✓ should reconstruct cosine wave
+      ✓ should handle multiple harmonics reconstruction
+      ✓ should produce correct length output
+      ✓ should handle zero coefficients
+      ✓ should match original signal when enough harmonics
+      ✓ should handle empty coefficients (1 ms)
+      ✓ should throw error for negative length
+      ✓ should throw error for non-number elements in coefficients (3 ms)
+      ✓ should throw error for mismatched coefficient lengths (1 ms)
+      ✓ should throw error for non-number harmonics (1 ms)
+    changePointDetection
+      ✓ should detect change points in a simple array (2 ms)
+      ✓ should detect multiple change points (1 ms)
+      ✓ should handle no change points (2 ms)
+      ✓ should handle smooth data with no change points, peaks and seasons (5 ms)
+      ✓ should handle single value array (1 ms)
+      ✓ should handle empty array (1 ms)
+      ✓ should handle negative numbers (2 ms)
+      ✓ should handle non-numeric values
+    exponentialSmoothing
+      ✓ should apply exponential smoothing with alpha 0.5
+      ✓ should apply exponential smoothing with alpha 0.1
+      ✓ should handle empty array
+      ✓ should handle single value array
+      ✓ should handle negative numbers (1 ms)
+      ✓ should throw error for non-array input
+      ✓ should throw error for non-number elements in array (1 ms)
+      ✓ should throw error for invalid alpha (1 ms)
+      ✓ should handle alpha equal to 0
+      ✓ should handle alpha equal to 1
+      ✓ should handle large numbers
+    calculateTrend
+      ✓ should calculate trend for a simple linear increase (1 ms)
+      ✓ should calculate trend for a simple linear decrease (2 ms)
+      ✓ should calculate trend for a constant value
+      ✓ should handle empty values array (1 ms)
+      ✓ should handle non-simple trends
+      ✓ should handle non-simple trends 2
+      ✓ should handle non-numeric values in the array (2 ms)
+      ✓ should handle non-date strings in the dates array (1 ms)
+      ✓ should handle single value array
+    removeOutliers
+      ✓ should remove outliers from a simple array (1 ms)
+      ✓ should remove outliers from a simple array 2 (1 ms)
+      ✓ should handle empty array (1 ms)
+      ✓ should handle single value array
+      ✓ should handle negative numbers
+      ✓ should handle non-numeric values (1 ms)
+      ✓ should handle non-number precision
+    segmentCost
+      ✓ should calculate segment cost for mean method with variance > 0
+      ✓ should calculate segment cost for variance method
+      ✓ should calculate segment cost for meanvar method (1 ms)
+      ✓ should return 0 for segment with zero variance (mean method) (1 ms)
+      ✓ should return 0 for segment with zero variance (variance method)
+      ✓ should return 0 for single element segment
+      ✓ should return Infinity for empty segment
+      ✓ should handle negative numbers (2 ms)
+      ✓ should handle partial segment (1 ms)
+      ✓ should throw error for unknown method (2 ms)
+    validateChangePoints
+      ✓ should validate significant change points with large difference
+      ✓ should filter out non-significant change points (1 ms)
+      ✓ should handle multiple change points with significant differences (1 ms)
+      ✓ should handle empty change points array
+      ✓ should handle very different segments
+      ✓ should handle different significance levels
+      ✓ should handle variance method
+      ✓ should handle meanvar method
+      ✓ should filter change points with insufficient segment length
+    isSignificantChangePoint
+      ✓ should return true for significant change point with large difference
+      ✓ should return false for non-significant change point (1 ms)
+      ✓ should return false when left segment has insufficient length (1 ms)
+      ✓ should return false when right segment has insufficient length (1 ms)
+      ✓ should handle variance method (1 ms)
+      ✓ should handle meanvar method with different degrees of freedom
+      ✓ should be more lenient with higher significance level
+      ✓ should handle extreme differences
+      ✓ should handle negative values
+      ✓ should handle identical segments
+      ✓ should handle small variance differences (1 ms)
+      ✓ should handle partial segments correctly
+    buildSegments
+      ✓ should build segments with no change points
+      ✓ should build segments with single change point
+      ✓ should build segments with multiple change points (1 ms)
+      ✓ should handle empty values array
+      ✓ should handle single value array (1 ms)
+      ✓ should handle negative values (2 ms)
+      ✓ should handle segments with identical values (1 ms)
+      ✓ should handle segments with decimal values (1 ms)
+      ✓ should handle many change points (2 ms)
+      ✓ should handle large values
+      ✓ should handle mixed positive and negative values
+    normalInverse
+      ✓ should return 0 for p = 0.5 (1 ms)
+      ✓ should return negative values for p < 0.5
+      ✓ should return positive values for p > 0.5 (1 ms)
+      ✓ should handle common probability values (1 ms)
+      ✓ should handle very small probabilities (2 ms)
+      ✓ should handle very large probabilities
+      ✓ should be symmetric around 0.5 (1 ms)
+      ✓ should handle edge cases close to boundaries (1 ms)
+      ✓ should throw error for p <= 0 (2 ms)
+      ✓ should throw error for p >= 1 (5 ms)
+      ✓ should handle intermediate probability values (1 ms)
+      ✓ should handle decimal precision edge cases
+      ✓ should use different algorithm branches correctly (3 ms)
+    chiSquareInverse
+      ✓ should throw error for p <= 0 (2 ms)
+      ✓ should throw error for p >= 1 (1 ms)
+      ✓ should throw error for df <= 0 (3 ms)
+      ✓ should calculate chi-square inverse correctly
+    Additional coverage tests to get coverage threshold
+      ✓ should handle median edge case coverage (lines 64, 70 are defensive checks) (1 ms)
+      ✓ should handle linearRegression with non-array inputs (1 ms)
+      ✓ should handle linearRegression with non-number arrays (1 ms)
+      ✓ should handle fourierCoefficients with invalid period (1 ms)
+      ✓ should handle fourierCoefficients with invalid harmonics (2 ms)
+      ✓ should handle fourierCoefficients with invalid precision
+      ✓ should handle fourierCoefficients with precision rounding (1 ms)
+      ✓ should handle reconstructFourierSeries with non-finite period
+      ✓ should handle reconstructFourierSeries with too large period (1 ms)
+      ✓ should handle reconstructFourierSeries with non-array coefficients (1 ms)
+      ✓ should handle reconstructFourierSeries with non-finite a0 (2 ms)
+      ✓ should handle changePointDetection with non-integer minSegmentLength (17 ms)
+      ✓ should handle changePointDetection with negative penalty (2 ms)
+      ✓ should handle changePointDetection with unknown method (2 ms)
+      ✓ should handle changePointDetection with invalid significance (3 ms)
+      ✓ should handle calculateTrend with non-arrays (1 ms)
+      ✓ should handle calculateTrend with non-string dates (1 ms)
+      ✓ should handle calculateTrend with mismatched array lengths (1 ms)
+
+PASS src/unit-tests/trending-score-calculator.util.unit-spec.ts
+  TrendingScoreCalculator
+    calculateTrendingScore
+      ✓ should return zero score for empty data (3 ms)
+      ✓ should return zero score for single data points (1 ms)
+      ✓ should calculate trending score for significant upward trend (6 ms)
+      ✓ should return zero score for non-significant trend (1 ms)
+      ✓ should apply volatility penalty to high-volatility products
+      ✓ should calculate positive momentum for accelerating trend
+      ✓ should calculate negative momentum for decelerating trend
+      ✓ should return bounded score between 0 and 100 (1 ms)
+      ✓ should handle zero variance in historical data
+      ✓ should handle zero variance in forecasted data
+      ✓ should return zero momentum for insufficient trend component data
+      ✓ should calculate correct effect size for known data
+      ✓ should handle negative forecasted values gracefully
+      ✓ should maintain precision with decimal values
+    Edge Cases
+      ✓ should handle NaN values in input data (1 ms)
+      ✓ should handle very large numbers (1 ms)
+      ✓ should handle very small numbers close to zero (1 ms)
+    Statistical Validation
+      ✓ should correctly identify non-significant trends with high p-value (1 ms)
+      ✓ should correctly identify significant trends with low p-value
+    Performance and Stability
+      ✓ should handle large datasets efficiently (3 ms)
+      ✓ should produce consistent results for same input (1 ms)
+    Coverage Enhancement Tests
+      ✓ should handle empty historical orders array edge case (3 ms)
+      ✓ should handle empty forecasted orders array edge case (4 ms)
+      ✓ should handle zero degrees of freedom in t-test (2 ms)
+      ✓ should handle zero pooled variance case
+      ✓ should handle extreme t-statistic values (1 ms)
+      ✓ should handle single data point in slope calculation
+      ✓ should handle empty trend component in momentum calculation
+      ✓ should handle volatility calculation with zero mean (2 ms)
+      ✓ should handle infinite and edge beta distribution inputs (1 ms)
+      ✓ should handle maximum volatility penalty edge case (1 ms)
+      ✓ should handle gamma function edge cases (1 ms)
+      ✓ should handle negative effect size scenario (1 ms)
+      ✓ should handle trend component exactly 14 elements (1 ms)
+      ✓ should handle trend component with less than 14 elements (2 ms)
+      ✓ should handle edge case where recent or medium trend is empty (2 ms)
+      ✓ should handle zero t-statistic in p-value calculation
+      ✓ should handle zero degrees of freedom in p-value calculation
+      ✓ should handle beta distribution boundary x=0
+      ✓ should handle beta distribution boundary x=1
+      ✓ should handle beta distribution invalid input out of bounds
+      ✓ should handle beta continued fraction convergence (1 ms)
+      ✓ should handle very small denominatorD values in continued fraction
+      ✓ should handle gamma function with different coefficient patterns
+      ✓ should handle slope calculation edge case with identical y values
+      ✓ should handle trend component with extreme variance patterns
+      ✓ should handle beta distribution continued fraction with extreme values
+      ✓ should cover createEmptyResult branch when both arrays are empty (1 ms)
+      ✓ should handle beta distribution with alpha parameter edge cases (1 ms)
+      ✓ should handle beta continued fraction with different convergence paths (1 ms)
+      ✓ should handle coefficient type checking in gamma function
+      ✓ should handle very specific statistical conditions for all branches
+      ✓ should handle negative variance edge case
+      ✓ should handle median trend calculation edge case
+      ✓ should handle two-element slope calculation
+      ✓ should handle floating point precision in beta continued fraction (3 ms)
+      ✓ should handle all branches in beta distribution path selection
+      ✓ should cover conditional type checking in gamma coefficient loop (1 ms)
+      ✓ should handle calculateStatistics with empty array edge case by direct call (2 ms)
+      ✓ should handle p-value calculation with zero degrees of freedom directly (1 ms)
+      ✓ should handle p-value calculation with zero t-statistic directly
+      ✓ should handle incomplete beta with boundary x=0 directly
+      ✓ should handle incomplete beta with boundary x=1 directly
+      ✓ should handle beta continued fraction epsilon edge cases
+      ✓ should handle coefficient array bounds in gamma function
+      ✓ should handle momentum calculation with empty recent trend slice (1 ms)
+      ✓ should handle momentum calculation with empty medium trend slice (1 ms)
+      ✓ should handle slope calculation with less than 2 data points
+      ✓ should handle volatility with empty data array directly (2 ms)
+      ✓ should handle specific branch conditions for type checking
+      ✓ should handle beta continued fraction with very small denominatorD triggering epsilon (1 ms)
+      ✓ should handle gamma function coefficient non-number edge case
+      ✓ should handle momentum calculation with specific trend slicing edge cases
+      ✓ should handle slope calculation with non-number coordinates
+      ✓ should handle slope calculation with zero denominator (2 ms)
+      ✓ should trigger beta continued fraction epsilon conditions with extreme parameters (2 ms)
+      ✓ should handle momentum with recent trend length exactly 0 (1 ms)
+      ✓ should handle beta continued fraction with specific numerical conditions
+      ✓ should trigger denominatorD epsilon condition in beta continued fraction first loop
+      ✓ should trigger numeratorC epsilon condition in beta continued fraction first loop
+      ✓ should trigger denominatorD epsilon condition in beta continued fraction second loop (1 ms)
+      ✓ should trigger numeratorC epsilon condition in beta continued fraction second loop (1 ms)
+      ✓ should trigger initial denominatorD epsilon condition (line 177) with specific input (1 ms)
+      ✓ should trigger denominatorD epsilon in first loop iteration (line 191) (1 ms)
+      ✓ should trigger numeratorC epsilon in first loop iteration (line 195)
+      ✓ should trigger denominatorD epsilon in second loop iteration (line 205)
+      ✓ should trigger numeratorC epsilon in second loop iteration (line 209) (1 ms)
+      ✓ should cover gamma function coefficient non-number branch
+      ✓ should trigger momentum empty trend slice conditions
+      ✓ should trigger slope calculation non-number type checking branch
+      ✓ should trigger slope calculation zero denominator branch (96 ms)
+      ✓ should force all beta continued fraction epsilon conditions (1 ms)
+      ✓ should force gamma function coefficient type check
+      ✓ should check calculateMomentum with empty trendComponent array directly
+      ✓ should force momentum calculation empty trend slice conditions
+      ✓ should handle calculateSlope with slopeDenominator === 0 directly
+      ✓ should force slope calculation type checking and zero denominator
+      ✓ should handle missing coefficient type in gamma function to trigger line 226
+      ✓ should handle empty trend arrays in momentum calculation to trigger line 260 (1 ms)
+      ✓ should handle non-number coordinates in slope calculation to trigger lines 282-290
+      ✓ should hit all missing branch conditions directly (2 ms)
+      ✓ should cover lines 177 191 195 205 209 epsilon checks in betaContinuedFraction by calling directly (2 ms)
+      ✓ should calculate slope correctly
+
+PASS src/unit-tests/array.util.unit-spec.ts
+  Array Utils
+    shuffleArray
+      ✓ should return a new array with the same length
+      ✓ should contain all original elements (1 ms)
+      ✓ should handle empty array
+      ✓ should handle single element array
+    injectItemsRandomlyInFirstN
+      ✓ should inject items into the target array
+      ✓ should inject items within first N positions
+      ✓ should return copy of target array when items is empty (1 ms)
+      ✓ should handle empty target array
+      ✓ should inject all items even when firstN is smaller than items length (1 ms)
+      ✓ should handle firstN larger than result length
+      ✓ should not modify original arrays
+      ✓ should work with objects
+
+PASS src/unit-tests/rollbar-buffer.config.unit-spec.ts
+  RollbarBuffer
+    buffering
+      ✓ should buffer errors without immediately sending to rollbar (10 ms)
+      ✓ should buffer warnings without immediately sending to rollbar
+      ✓ should buffer info messages without immediately sending to rollbar
+    deduplication
+      ✓ should deduplicate identical errors within the dedupe window (1 ms)
+      ✓ should flush with occurrence count for duplicated errors
+      ✓ should send single occurrence without suffix (1 ms)
+      ✓ should treat different errors as separate entries
+      ✓ should deduplicate messages that differ only by numeric values
+      ✓ should treat different levels of same message as separate entries
+    dedupe window expiry
+      ✓ should create new entry after dedupe window expires (1 ms)
+      ✓ should flush existing entry via flushSingleEntry when dedupe window expires (1 ms)
+      ✓ should preserve context in flushSingleEntry when dedupe window expires (3 ms)
+    critical
+      ✓ should send critical errors immediately without buffering (3 ms)
+      ✓ should send critical errors with context (3 ms)
+    flush
+      ✓ should send all buffered errors to rollbar (2 ms)
+      ✓ should clear buffer after flush
+      ✓ should include fingerprint and firstOccurrence in context
+      ✓ should flush string errors correctly
+      ✓ should be triggered automatically by flush interval (1 ms)
+    wait
+      ✓ should flush buffer and call rollbar.wait
+      ✓ should stop intervals after shutdown (1 ms)
+    context preservation
+      ✓ should preserve context from first occurrence
+
+PASS src/unit-tests/check-internal-access.util.unit-spec.ts
+  checkInternalAccess
+    should return true for internal VPN hosts
+      ✓ should allow .in.customink.com domain
+      ✓ should allow subdomain with .in.customink.com (1 ms)
+      ✓ should allow .in.staging.customink.com domain
+      ✓ should allow subdomain with .in.staging.customink.com (1 ms)
+      ✓ should allow .k8s-dev.customink.com domain for test branches
+      ✓ should allow any test branch with .k8s-dev.customink.com pattern
+      ✓ should allow localhost
+      ✓ should allow localhost with port
+      ✓ should allow localhost with different ports
+    should return false for external hosts
+      ✓ should block external domain
+      ✓ should block production domain without .in
+      ✓ should block staging domain without .in
+      ✓ should block arbitrary external domain
+      ✓ should block empty string
+      ✓ should block undefined host (1 ms)
+      ✓ should block host starting with colon
+      ✓ should block host with only colon
+    edge cases
+      ✓ should handle uppercase domain (case-insensitive) (1 ms)
+      ✓ should handle mixed case domain (case-insensitive)
+      ✓ should block potential XSS injection in host (1 ms)
+      ✓ should block SQL injection attempt in host
+      ✓ should block null byte injection (1 ms)
+      ✓ should block very long host string
+      ✓ should block host with special characters
+      ✓ should block IPv4 address
+      ✓ should block IPv6 address (1 ms)
+      ✓ should block host with path-like structure
+      ✓ should block domains with ports (except localhost) (1 ms)
+      ✓ should handle whitespace in host (1 ms)
+
+PASS src/unit-tests/date-helpers.util.unit-spec.ts
+  DateHelpers
+    formatDate
+      ✓ should format a date to ISO string date part (1 ms)
+      ✓ should format January 1st correctly
+    parseDate
+      ✓ should parse a date string into a Date object (1 ms)
+      ✓ should handle invalid date strings
+    addDays
+      ✓ should add positive days to a date (1 ms)
+      ✓ should subtract days when negative value is provided (1 ms)
+      ✓ should not mutate the original date
+    daysBetween
+      ✓ should calculate days between two dates
+      ✓ should return negative value when end is before start (1 ms)
+      ✓ should return 0 for same date
+    generateDateSequence
+      ✓ should generate a sequence of dates between start and end (1 ms)
+      ✓ should return a single date when start equals end
+      ✓ should return empty array when start is after end (1 ms)
+    fillMissingDates
+      ✓ should fill missing dates with zero values (1 ms)
+      ✓ should return empty array for empty input
+      ✓ should handle single element array (1 ms)
+      ✓ should preserve existing values
+    getWeekday
+      ✓ should return the weekday number for a date
+      ✓ should return 1 for Monday (1 ms)
+    getWeekOfYear
+      ✓ should return week 1 for January 1st
+      ✓ should return a higher week number for later dates
+    getDayOfYear
+      ✓ should return 1 for January 1st (1 ms)
+      ✓ should return 32 for February 1st (1 ms)
+    isWeekend
+      ✓ should return true for Saturday (1 ms)
+      ✓ should return true for Sunday
+      ✓ should return false for weekdays
+    getQuarter
+      ✓ should return Q1 for January
+      ✓ should return Q2 for April
+      ✓ should return Q3 for July
+      ✓ should return Q4 for October
+    isHoliday
+      ✓ should return true when date is within holiday window
+      ✓ should return false when date is outside holiday window
+      ✓ should return false for empty holidays array
+    getHolidayEffect
+      ✓ should return 1.0 when no holidays are nearby
+      ✓ should return multiplied effect when date is on holiday (1 ms)
+      ✓ should return 1.0 for empty holidays array
+    getSeasonalIndex
+      ✓ should return weekday index for weekly period
+      ✓ should return day of month minus 1 for monthly period
+      ✓ should return day of year minus 1 for yearly period
+      ✓ should return 0 for default case
+    isSameWeek
+      ✓ should return true for dates in the same week
+      ✓ should return false for dates in different weeks
+      ✓ should return false for same week but different years
+    getMonthName
+      ✓ should return January for month 0
+      ✓ should return December for month 11
+      ✓ should return June for month 5
+    getNextWeekDates
+      ✓ should return exactly 7 dates (1 ms)
+      ✓ should start from the day after the provided date
+      ✓ should return dates in chronological order
+
+PASS src/unit-tests/decorators/log-execution.decorator.unit-spec.ts
+  LogExecution Decorator
+    Basic Functionality
+      ✓ should log method invocation and completion (3 ms)
+      ✓ should log method errors (13 ms)
+    Sensitive Data Masking
+      ✓ should handle non-object data in maskSensitiveData
+      ✓ should handle object without hasOwnProperty
+      ✓ should mask sensitive data in parameters
+      ✓ should mask sensitive data in response (1 ms)
+      ✓ should handle nested objects with sensitive data
+      ✓ should handle arrays with sensitive data (1 ms)
+    Rollbar Integration
+      ✓ should log error to rollbar when enabled and error occurs (1 ms)
+      ✓ should include custom context in rollbar error
+      ✓ should not log to rollbar when rollbar instance is null (1 ms)
+      ✓ should handle rollbar error gracefully (1 ms)
+      ✓ should re-throw original error even when rollbar succeeds (1 ms)
+      ✓ should handle error with no stack trace
+    Configuration Options
+      ✓ should handle null parameter formatter
+      ✓ should handle null response formatter
+      ✓ should skip parameter logging when disabled
+      ✓ should skip response logging when disabled (1 ms)
+      ✓ should include custom context (1 ms)
+      ✓ should work with synchronous methods (1 ms)
+      ✓ should use default formatters when not provided (1 ms)
+      ✓ should skip execution time logging when disabled
+      ✓ should handle null custom context
+      ✓ should not mask sensitive data when disabled (1 ms)
+      ✓ should handle formatters returning null
+      ✓ should not log to rollbar when disabled (1 ms)
+    Long Execution Time Warnings
+      ✓ should log warning when execution time exceeds threshold (1 ms)
+      ✓ should call rollbar.warning with correct parameters when rollbar exists
+      ✓ should not call rollbar.warning when rollbar instance is null (1 ms)
+      ✓ should not log warning when execution time is below threshold
+      ✓ should not log to rollbar when logLongExecution is false (1 ms)
+      ✓ should handle rollbar warning errors gracefully
+
+PASS src/unit-tests/color-match.util.unit-spec.ts
+  Color Match Utility
+    convertRGBToString
+      ✓ should convert RGB object to string format (1 ms)
+      ✓ should handle zero values
+    convertStringToRGB
+      ✓ should convert string to RGB object (1 ms)
+      ✓ should handle zero values
+    getColorRGBToIdHash
+      ✓ should create hash from palette colors (1 ms)
+      ✓ should skip colors without rbgs (1 ms)
+      ✓ should return empty hash for empty palette
+
+PASS src/unit-tests/request-store.util.unit-spec.ts
+  request-store.util
+    deepClone
+      ✓ should return primitives as is (1 ms)
+      ✓ should create a deep clone of an object
+    mergeObjectsDeeply
+      ✓ should return source if target is not an object (1 ms)
+      ✓ should return target if source is not an object
+      ✓ should merge objects deeply
+    requestStore
+      set
+        ✓ should set a value in existing store (1 ms)
+        ✓ should create a new store if none exists
+      get
+        ✓ should return value from store
+        ✓ should return undefined if store doesn't exist (1 ms)
+      getOrThrow
+        ✓ should return value if it exists
+        ✓ should throw if store exists but value is not set (8 ms)
+        ✓ should throw if store doesn't exist (1 ms)
+      getStoreOrThrow
+        ✓ should return store if it exists (1 ms)
+        ✓ should throw if store doesn't exist (1 ms)
+      update
+        ✓ should update rollbar options (1 ms)
+        ✓ should create rollbar options if none exist (1 ms)
+        ✓ should throw for unsupported keys
+      initializeStore
+        ✓ should initialize store with default values
+        ✓ should initialize store with provided values
+      run
+        ✓ should run callback with store
+
+PASS src/unit-tests/hash-from-object.unit-spec.ts
+  hashFromObject
+    ✓ should return a 64-character hex string for any object (1 ms)
+    ✓ should return the same hash for identical objects
+    ✓ should return different hashes for different objects (2 ms)
+    ✓ should return the same hash regardless of key order (1 ms)
+    ✓ should handle empty objects (1 ms)
+    ✓ should handle objects with different data types
+    ✓ should handle nested objects
+    ✓ should return different hashes for objects with different nested values
+    ✓ should handle arrays in objects
+    ✓ should return consistent hash for the same complex object
+    ✓ should handle methods in objects (1 ms)
+
+PASS src/unit-tests/get-env-file.util.unit-spec.ts
+  get-env-file.util
+    getEnvFile
+      ✓ should return .env.test when in test environment
+      ✓ should return .env when not in test environment
+    loadEnvVariables
+      ✓ should validate and return getEnvVariables for staging environment (1 ms)
+      ✓ should validate and return getEnvVariables for production environment (1 ms)
+      ✓ should load and validate from env file when it exists (2 ms)
+      ✓ should return empty object when env file does not exist (2 ms)
+
+[33m[Nest] 23934  - [39m03/19/2026, 3:55:25 PM [33m   WARN[39m [38;5;3m[RetryUtil] [39m[33mAttempt 3 failed: Error: always fail[39m
+[32m[Nest] 23943  - [39m03/19/2026, 3:55:25 PM [32m    LOG[39m [38;5;3m[EnvConfigService] [39m[32mFetching environment variable: NODE_ENV, converter: none[39m
+  console.log
+    [dotenv@17.2.3] injecting env (0) from .env.test -- tip: ✅ audit secrets and track compliance: https://dotenvx.com/ops
+
+      at _log (node_modules/dotenv/lib/main.js:142:11)
+
+PASS src/unit-tests/compare-hashes.unit-spec.ts
+  compareHashes
+    when hashes match
+      ✓ should return true for identical hash strings (2 ms)
+      ✓ should return true for identical long hashes
+      ✓ should return true for single character hashes
+    when hashes do not match
+      ✓ should return false for different hash strings
+      ✓ should return false for hashes with different lengths
+      ✓ should return false for case-sensitive differences
+      ✓ should return false for hashes with whitespace differences
+    when either hash is falsy
+      ✓ should return false when first hash is empty string
+      ✓ should return false when second hash is empty string
+      ✓ should return false when both hashes are empty strings
+      ✓ should return false when first hash is null
+      ✓ should return false when second hash is null
+      ✓ should return false when both hashes are null
+      ✓ should return false when first hash is undefined
+      ✓ should return false when second hash is undefined
+      ✓ should return false when both hashes are undefined
+
+PASS src/unit-tests/setup-swagger.util.unit-spec.ts
+  setupSwagger
+    ✓ should setup fastify preHandler hook (1 ms)
+    ✓ should configure Swagger with correct settings
+    ✓ should check internal access for swagger routes
+    ✓ should block external access to swagger with 403
+    ✓ should allow internal access to swagger
+    ✓ should not check internal access for non-swagger routes
+    ✓ should check internal access for swagger sub-routes
+    ✓ should allow k8s-dev test branch access to swagger (1 ms)
+
+PASS src/unit-tests/random-color-picker.util.unit-spec.ts
+  RandomColorPickerUtil
+    getRandomColorFromArray
+      ✓ should return undefined for empty array (1 ms)
+      ✓ should return undefined for null/undefined input
+      ✓ should return a color from the array (2 ms)
+      ✓ should return the single color when array has one element
+    assignRandomColorToProduct
+      ✓ should return product unchanged when no colors available (1 ms)
+      ✓ should return product unchanged when colors is undefined
+      ✓ should assign random color from available colors (1 ms)
+      ✓ should keep original image_src if color has no image_url
+    assignRandomColorsToProducts
+      ✓ should assign random colors to all products
+      ✓ should handle products with no available colors
+    mapHitToRelatedProductWithRandomColor
+      ✓ should map hit to product with random color
+      ✓ should handle hit with no colors
+      ✓ should use style_card_image_url when color has no image
+      ✓ should handle sizes formatting correctly
+      ✓ should handle hit with no_minimum set to 1
+      ✓ should handle hit with falsy minimum_quantity
+      ✓ should handle hit with missing link.path (1 ms)
+      ✓ should handle hit with null/undefined properties
+      ✓ should handle hit with zero rating_count
+      ✓ should handle hit with non-array broad_category_names
+      ✓ should handle hit with non-array default_unit_prices
+      ✓ should handle hit with undefined brand
+      ✓ should handle hit with null primary_category_id
+      ✓ should handle hit with undefined primary_category_id
+      ✓ should handle hit without style_card_image_url
+
+[32m[Nest] 23938  - [39m03/19/2026, 3:55:25 PM [32m    LOG[39m [38;5;3m[TestCommand] [39m[32mStarting test-job[39m
+[32m[Nest] 23938  - [39m03/19/2026, 3:55:25 PM [32m    LOG[39m [38;5;3m[TestCommand] [39m[32mtest-job completed. Duration: 0s[39m
+[32m[Nest] 23938  - [39m03/19/2026, 3:55:25 PM [32m    LOG[39m [38;5;3m[TestCommand] [39m[32mStarting test-job[39m
+[32m[Nest] 23938  - [39m03/19/2026, 3:55:25 PM [32m    LOG[39m [38;5;3m[TestCommand] [39m[32mtest-job completed. Duration: 0s[39m
+[32m[Nest] 23938  - [39m03/19/2026, 3:55:25 PM [32m    LOG[39m [38;5;3m[TestCommandWithContext] [39m[32mStarting context-job[39m
+[32m[Nest] 23938  - [39m03/19/2026, 3:55:25 PM [32m    LOG[39m [38;5;3m[TestCommandWithContext] [39m[32mcontext-job completed. Duration: 0s[39m
+[32m[Nest] 23939  - [39m03/19/2026, 3:55:25 PM [32m    LOG[39m [38;5;3m[EnvConfigService] [39m[32mFetching environment variable: NODE_ENV, converter: none[39m
+[32m[Nest] 23938  - [39m03/19/2026, 3:55:25 PM [32m    LOG[39m [38;5;3m[TestCommand] [39m[32mStarting test-job[39m
+[31m[Nest] 23938  - [39m03/19/2026, 3:55:25 PM [31m  ERROR[39m [38;5;3m[TestCommand] [39m[31mtest-job failed after 0s:[39m
+Error: test failure
+    at TestCommand.run (/Users/4thwithme/Documents/repo/recommendations-service/src/unit-tests/cron-job-execution.decorator.unit-spec.ts:32:10)
+    at TestCommand.apply (/Users/4thwithme/Documents/repo/recommendations-service/src/decorators/cron-job-execution.decorator.ts:50:26)
+    at Object.<anonymous> (/Users/4thwithme/Documents/repo/recommendations-service/src/unit-tests/cron-job-execution.decorator.unit-spec.ts:111:14)
+    at Promise.finally.completed (/Users/4thwithme/Documents/repo/recommendations-service/node_modules/jest-circus/build/jestAdapterInit.js:1557:28)
+    at new Promise (<anonymous>)
+    at callAsyncCircusFn (/Users/4thwithme/Documents/repo/recommendations-service/node_modules/jest-circus/build/jestAdapterInit.js:1497:10)
+    at _callCircusTest (/Users/4thwithme/Documents/repo/recommendations-service/node_modules/jest-circus/build/jestAdapterInit.js:1007:40)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at _runTest (/Users/4thwithme/Documents/repo/recommendations-service/node_modules/jest-circus/build/jestAdapterInit.js:947:3)
+    at /Users/4thwithme/Documents/repo/recommendations-service/node_modules/jest-circus/build/jestAdapterInit.js:849:7
+    at _runTestsForDescribeBlock (/Users/4thwithme/Documents/repo/recommendations-service/node_modules/jest-circus/build/jestAdapterInit.js:862:11)
+    at _runTestsForDescribeBlock (/Users/4thwithme/Documents/repo/recommendations-service/node_modules/jest-circus/build/jestAdapterInit.js:857:11)
+    at _runTestsForDescribeBlock (/Users/4thwithme/Documents/repo/recommendations-service/node_modules/jest-circus/build/jestAdapterInit.js:857:11)
+    at run (/Users/4thwithme/Documents/repo/recommendations-service/node_modules/jest-circus/build/jestAdapterInit.js:761:3)
+    at runAndTransformResultsToJestFormat (/Users/4thwithme/Documents/repo/recommendations-service/node_modules/jest-circus/build/jestAdapterInit.js:1918:21)
+    at jestAdapter (/Users/4thwithme/Documents/repo/recommendations-service/node_modules/jest-circus/build/runner.js:101:19)
+    at runTestInternal (/Users/4thwithme/Documents/repo/recommendations-service/node_modules/jest-runner/build/testWorker.js:275:16)
+    at runTest (/Users/4thwithme/Documents/repo/recommendations-service/node_modules/jest-runner/build/testWorker.js:343:7)
+    at Object.worker (/Users/4thwithme/Documents/repo/recommendations-service/node_modules/jest-runner/build/testWorker.js:497:12)
+[32m[Nest] 23938  - [39m03/19/2026, 3:55:25 PM [32m    LOG[39m [38;5;3m[TestCommand] [39m[32mStarting test-job[39m
+[31m[Nest] 23938  - [39m03/19/2026, 3:55:25 PM [31m  ERROR[39m [38;5;3m[TestCommand] [39m[31mtest-job failed after 0s:[39m
+[32m[Nest] 23938  - [39m03/19/2026, 3:55:25 PM [32m    LOG[39m [38;5;3m[TestCommand] [39m[32mStarting test-job[39m
+[32m[Nest] 23938  - [39m03/19/2026, 3:55:25 PM [32m    LOG[39m [38;5;3m[TestCommand] [39m[32mtest-job completed. Duration: 5s[39m
+[32m[Nest] 23938  - [39m03/19/2026, 3:55:25 PM [32m    LOG[39m [38;5;3m[TestCommand] [39m[32mStarting test-job[39m
+[32m[Nest] 23938  - [39m03/19/2026, 3:55:25 PM [32m    LOG[39m [38;5;3m[TestCommand] [39m[32mtest-job completed. Duration: 2m 5s[39m
+[32m[Nest] 23938  - [39m03/19/2026, 3:55:25 PM [32m    LOG[39m [38;5;3m[TestCommand] [39m[32mStarting test-job[39m
+[32m[Nest] 23938  - [39m03/19/2026, 3:55:25 PM [32m    LOG[39m [38;5;3m[TestCommand] [39m[32mtest-job completed. Duration: 1h 2m 5s[39m
+PASS src/unit-tests/metrics.service.unit-spec.ts
+  MetricsService
+    incrementDailyCounter
+      ✓ should call incrementByOne with correct namespace and key (10 ms)
+      ✓ should call incrementByOne with correct parameters for different metric types (4 ms)
+      ✓ should generate correct date-based key (2 ms)
+      ✓ should call incrementByOne exactly once (1 ms)
+
+PASS src/unit-tests/cron-job-execution.decorator.unit-spec.ts
+  CronJobExecution decorator
+    successful execution
+      ✓ should call original method and log start/completion (1 ms)
+      ✓ should call rollbar.wait and exit with 0 on success
+      ✓ should pass custom context to rollbar
+    failed execution
+      ✓ should log error and exit with 1 when method throws Error (7 ms)
+      ✓ should handle non-Error thrown values (1 ms)
+    formatDuration via log output
+      ✓ should format seconds only
+      ✓ should format minutes and seconds
+      ✓ should format hours, minutes and seconds (1 ms)
+
+PASS src/unit-tests/sort-styles.util.unit-spec.ts
+  Sort Styles Utility
+    sortStyles
+      ✓ should return the original array when sortBy is not provided (1 ms)
+      category sorting
+        ✓ should prioritize products with different categories than the current style
+        ✓ should not change order if currentStyleCategoryId is null (1 ms)
+        ✓ should not change order if currentStyleCategoryId is undefined
+        ✓ should handle empty product array
+      rating sorting
+        ✓ should sort products by rating score in descending order (1 ms)
+        ✓ should handle products with same rating score
+        ✓ should handle empty product array (1 ms)
+        ✓ should handle non-numeric rating scores (1 ms)
+        ✓ should handle both products with NaN rating scores
+        ✓ should put NaN rating products at the end (1 ms)
+      null/undefined primary_category_id handling
+        ✓ should handle null primary_category_id in category sorting
+        ✓ should handle missing primary_category_id in category sorting
+      edge cases
+        ✓ should handle undefined sortBy parameter (1 ms)
+        ✓ should handle invalid sortBy parameter
+
+  console.log
+    [dotenv@17.2.3] injecting env (0) from .env.test -- tip: 🔐 encrypt with Dotenvx: https://dotenvx.com
+
+      at _log (node_modules/dotenv/lib/main.js:142:11)
+
+[31m[Nest] 23939  - [39m03/19/2026, 3:55:25 PM [31m  ERROR[39m [38;5;3m[StylesMvService.refreshForStyle] [39m[31m[LogExecution]: Method failed after 0.14ms: Refresh failed, errorLogContext: {"className":"StylesMvService","methodName":"refreshForStyle","timestamp":"2026-03-19T14:55:25.705Z","executionTimeMs":0.13591699999960838,"error":{"message":"Refresh failed","stack":"Error: Refresh failed\n    at Object.<anonymous> (/Users/4thwithme/Documents/repo/recommendations-service/src/unit-tests/styles-mv.service.unit-spec.ts:97:18)\n    at Promise.finally.completed (/Users/4thwithme/Documents/repo/recommendations-service/node_modules/jest-circus/build/jestAdapterInit.js:1557:28)\n    at new Promise (<anonymous>)\n    at callAsyncCircusFn (/Users/4thwithme/Documents/repo/recommendations-service/node_modules/jest-circus/build/jestAdapterInit.js:1497:10)\n    at _callCircusTest (/Users/4thwithme/Documents/repo/recommendations-service/node_modules/jest-circus/build/jestAdapterInit.js:1007:40)\n    at processTicksAndRejections (node:internal/process/task_queues:103:5)\n    at _runTest (/Users/4thwithme/Documents/repo/recommendations-service/node_modules/jest-circus/build/jestAdapterInit.js:947:3)\n    at /Users/4thwithme/Documents/repo/recommendations-service/node_modules/jest-circus/build/jestAdapterInit.js:849:7\n    at _runTestsForDescribeBlock (/Users/4thwithme/Documents/repo/recommendations-service/node_modules/jest-circus/build/jestAdapterInit.js:862:11)\n    at _runTestsForDescribeBlock (/Users/4thwithme/Documents/repo/recommendations-service/node_modules/jest-circus/build/jestAdapterInit.js:857:11)\n    at _runTestsForDescribeBlock (/Users/4thwithme/Documents/repo/recommendations-service/node_modules/jest-circus/build/jestAdapterInit.js:857:11)\n    at run (/Users/4thwithme/Documents/repo/recommendations-service/node_modules/jest-circus/build/jestAdapterInit.js:761:3)\n    at runAndTransformResultsToJestFormat (/Users/4thwithme/Documents/repo/recommendations-service/node_modules/jest-circus/build/jestAdapterInit.js:1918:21)\n    at jestAdapter (/Users/4thwithme/Documents/repo/recommendations-service/node_modules/jest-circus/build/runner.js:101:19)\n    at runTestInternal (/Users/4thwithme/Documents/repo/recommendations-service/node_modules/jest-runner/build/testWorker.js:275:16)\n    at runTest (/Users/4thwithme/Documents/repo/recommendations-service/node_modules/jest-runner/build/testWorker.js:343:7)\n    at Object.worker (/Users/4thwithme/Documents/repo/recommendations-service/node_modules/jest-runner/build/testWorker.js:497:12)","name":"Error"}}[39m
+[32m[Nest] 23942  - [39m03/19/2026, 3:55:25 PM [32m    LOG[39m [38;5;3m[EnvConfigService] [39m[32mFetching environment variable: NODE_ENV, converter: none[39m
+[31m[Nest] 23939  - [39m03/19/2026, 3:55:25 PM [31m  ERROR[39m [38;5;3m[StylesMvService.getByStyleId] [39m[31m[LogExecution]: Method failed after 0.11ms: Query failed, errorLogContext: {"className":"StylesMvService","methodName":"getByStyleId","timestamp":"2026-03-19T14:55:25.712Z","executionTimeMs":0.10649999999986903,"error":{"message":"Query failed","stack":"Error: Query failed\n    at Object.<anonymous> (/Users/4thwithme/Documents/repo/recommendations-service/src/unit-tests/styles-mv.service.unit-spec.ts:128:18)\n    at Promise.finally.completed (/Users/4thwithme/Documents/repo/recommendations-service/node_modules/jest-circus/build/jestAdapterInit.js:1557:28)\n    at new Promise (<anonymous>)\n    at callAsyncCircusFn (/Users/4thwithme/Documents/repo/recommendations-service/node_modules/jest-circus/build/jestAdapterInit.js:1497:10)\n    at _callCircusTest (/Users/4thwithme/Documents/repo/recommendations-service/node_modules/jest-circus/build/jestAdapterInit.js:1007:40)\n    at processTicksAndRejections (node:internal/process/task_queues:103:5)\n    at _runTest (/Users/4thwithme/Documents/repo/recommendations-service/node_modules/jest-circus/build/jestAdapterInit.js:947:3)\n    at /Users/4thwithme/Documents/repo/recommendations-service/node_modules/jest-circus/build/jestAdapterInit.js:849:7\n    at _runTestsForDescribeBlock (/Users/4thwithme/Documents/repo/recommendations-service/node_modules/jest-circus/build/jestAdapterInit.js:862:11)\n    at _runTestsForDescribeBlock (/Users/4thwithme/Documents/repo/recommendations-service/node_modules/jest-circus/build/jestAdapterInit.js:857:11)\n    at _runTestsForDescribeBlock (/Users/4thwithme/Documents/repo/recommendations-service/node_modules/jest-circus/build/jestAdapterInit.js:857:11)\n    at run (/Users/4thwithme/Documents/repo/recommendations-service/node_modules/jest-circus/build/jestAdapterInit.js:761:3)\n    at runAndTransformResultsToJestFormat (/Users/4thwithme/Documents/repo/recommendations-service/node_modules/jest-circus/build/jestAdapterInit.js:1918:21)\n    at jestAdapter (/Users/4thwithme/Documents/repo/recommendations-service/node_modules/jest-circus/build/runner.js:101:19)\n    at runTestInternal (/Users/4thwithme/Documents/repo/recommendations-service/node_modules/jest-runner/build/testWorker.js:275:16)\n    at runTest (/Users/4thwithme/Documents/repo/recommendations-service/node_modules/jest-runner/build/testWorker.js:343:7)\n    at Object.worker (/Users/4thwithme/Documents/repo/recommendations-service/node_modules/jest-runner/build/testWorker.js:497:12)","name":"Error"}}[39m
+  console.log
+    [dotenv@17.2.3] injecting env (0) from .env.test -- tip: 🔑 add access controls to secrets: https://dotenvx.com/ops
+
+      at _log (node_modules/dotenv/lib/main.js:142:11)
+
+[31m[Nest] 23939  - [39m03/19/2026, 3:55:25 PM [31m  ERROR[39m [38;5;3m[StylesMvService.getByStyleIds] [39m[31m[LogExecution]: Method failed after 0.12ms: Batch query failed, errorLogContext: {"className":"StylesMvService","methodName":"getByStyleIds","timestamp":"2026-03-19T14:55:25.715Z","executionTimeMs":0.12420899999960966,"error":{"message":"Batch query failed","stack":"Error: Batch query failed\n    at Object.<anonymous> (/Users/4thwithme/Documents/repo/recommendations-service/src/unit-tests/styles-mv.service.unit-spec.ts:164:18)\n    at Promise.finally.completed (/Users/4thwithme/Documents/repo/recommendations-service/node_modules/jest-circus/build/jestAdapterInit.js:1557:28)\n    at new Promise (<anonymous>)\n    at callAsyncCircusFn (/Users/4thwithme/Documents/repo/recommendations-service/node_modules/jest-circus/build/jestAdapterInit.js:1497:10)\n    at _callCircusTest (/Users/4thwithme/Documents/repo/recommendations-service/node_modules/jest-circus/build/jestAdapterInit.js:1007:40)\n    at processTicksAndRejections (node:internal/process/task_queues:103:5)\n    at _runTest (/Users/4thwithme/Documents/repo/recommendations-service/node_modules/jest-circus/build/jestAdapterInit.js:947:3)\n    at /Users/4thwithme/Documents/repo/recommendations-service/node_modules/jest-circus/build/jestAdapterInit.js:849:7\n    at _runTestsForDescribeBlock (/Users/4thwithme/Documents/repo/recommendations-service/node_modules/jest-circus/build/jestAdapterInit.js:862:11)\n    at _runTestsForDescribeBlock (/Users/4thwithme/Documents/repo/recommendations-service/node_modules/jest-circus/build/jestAdapterInit.js:857:11)\n    at _runTestsForDescribeBlock (/Users/4thwithme/Documents/repo/recommendations-service/node_modules/jest-circus/build/jestAdapterInit.js:857:11)\n    at run (/Users/4thwithme/Documents/repo/recommendations-service/node_modules/jest-circus/build/jestAdapterInit.js:761:3)\n    at runAndTransformResultsToJestFormat (/Users/4thwithme/Documents/repo/recommendations-service/node_modules/jest-circus/build/jestAdapterInit.js:1918:21)\n    at jestAdapter (/Users/4thwithme/Documents/repo/recommendations-service/node_modules/jest-circus/build/runner.js:101:19)\n    at runTestInternal (/Users/4thwithme/Documents/repo/recommendations-service/node_modules/jest-runner/build/testWorker.js:275:16)\n    at runTest (/Users/4thwithme/Documents/repo/recommendations-service/node_modules/jest-runner/build/testWorker.js:343:7)\n    at Object.worker (/Users/4thwithme/Documents/repo/recommendations-service/node_modules/jest-runner/build/testWorker.js:497:12)","name":"Error"}}[39m
+[31m[Nest] 23939  - [39m03/19/2026, 3:55:25 PM [31m  ERROR[39m [38;5;3m[StylesMvService.getAll] [39m[31m[LogExecution]: Method failed after 0.24ms: FindAll failed, errorLogContext: {"className":"StylesMvService","methodName":"getAll","timestamp":"2026-03-19T14:55:25.719Z","executionTimeMs":0.24129100000027393,"error":{"message":"FindAll failed","stack":"Error: FindAll failed\n    at Object.<anonymous> (/Users/4thwithme/Documents/repo/recommendations-service/src/unit-tests/styles-mv.service.unit-spec.ts:200:18)\n    at Promise.finally.completed (/Users/4thwithme/Documents/repo/recommendations-service/node_modules/jest-circus/build/jestAdapterInit.js:1557:28)\n    at new Promise (<anonymous>)\n    at callAsyncCircusFn (/Users/4thwithme/Documents/repo/recommendations-service/node_modules/jest-circus/build/jestAdapterInit.js:1497:10)\n    at _callCircusTest (/Users/4thwithme/Documents/repo/recommendations-service/node_modules/jest-circus/build/jestAdapterInit.js:1007:40)\n    at processTicksAndRejections (node:internal/process/task_queues:103:5)\n    at _runTest (/Users/4thwithme/Documents/repo/recommendations-service/node_modules/jest-circus/build/jestAdapterInit.js:947:3)\n    at /Users/4thwithme/Documents/repo/recommendations-service/node_modules/jest-circus/build/jestAdapterInit.js:849:7\n    at _runTestsForDescribeBlock (/Users/4thwithme/Documents/repo/recommendations-service/node_modules/jest-circus/build/jestAdapterInit.js:862:11)\n    at _runTestsForDescribeBlock (/Users/4thwithme/Documents/repo/recommendations-service/node_modules/jest-circus/build/jestAdapterInit.js:857:11)\n    at _runTestsForDescribeBlock (/Users/4thwithme/Documents/repo/recommendations-service/node_modules/jest-circus/build/jestAdapterInit.js:857:11)\n    at run (/Users/4thwithme/Documents/repo/recommendations-service/node_modules/jest-circus/build/jestAdapterInit.js:761:3)\n    at runAndTransformResultsToJestFormat (/Users/4thwithme/Documents/repo/recommendations-service/node_modules/jest-circus/build/jestAdapterInit.js:1918:21)\n    at jestAdapter (/Users/4thwithme/Documents/repo/recommendations-service/node_modules/jest-circus/build/runner.js:101:19)\n    at runTestInternal (/Users/4thwithme/Documents/repo/recommendations-service/node_modules/jest-runner/build/testWorker.js:275:16)\n    at runTest (/Users/4thwithme/Documents/repo/recommendations-service/node_modules/jest-runner/build/testWorker.js:343:7)\n    at Object.worker (/Users/4thwithme/Documents/repo/recommendations-service/node_modules/jest-runner/build/testWorker.js:497:12)","name":"Error"}}[39m
+[31m[Nest] 23939  - [39m03/19/2026, 3:55:25 PM [31m  ERROR[39m [38;5;3m[StylesMvService.count] [39m[31m[LogExecution]: Method failed after 0.21ms: Count failed, errorLogContext: {"className":"StylesMvService","methodName":"count","timestamp":"2026-03-19T14:55:25.723Z","executionTimeMs":0.20762500000000728,"error":{"message":"Count failed","stack":"Error: Count failed\n    at Object.<anonymous> (/Users/4thwithme/Documents/repo/recommendations-service/src/unit-tests/styles-mv.service.unit-spec.ts:228:18)\n    at Promise.finally.completed (/Users/4thwithme/Documents/repo/recommendations-service/node_modules/jest-circus/build/jestAdapterInit.js:1557:28)\n    at new Promise (<anonymous>)\n    at callAsyncCircusFn (/Users/4thwithme/Documents/repo/recommendations-service/node_modules/jest-circus/build/jestAdapterInit.js:1497:10)\n    at _callCircusTest (/Users/4thwithme/Documents/repo/recommendations-service/node_modules/jest-circus/build/jestAdapterInit.js:1007:40)\n    at processTicksAndRejections (node:internal/process/task_queues:103:5)\n    at _runTest (/Users/4thwithme/Documents/repo/recommendations-service/node_modules/jest-circus/build/jestAdapterInit.js:947:3)\n    at /Users/4thwithme/Documents/repo/recommendations-service/node_modules/jest-circus/build/jestAdapterInit.js:849:7\n    at _runTestsForDescribeBlock (/Users/4thwithme/Documents/repo/recommendations-service/node_modules/jest-circus/build/jestAdapterInit.js:862:11)\n    at _runTestsForDescribeBlock (/Users/4thwithme/Documents/repo/recommendations-service/node_modules/jest-circus/build/jestAdapterInit.js:857:11)\n    at _runTestsForDescribeBlock (/Users/4thwithme/Documents/repo/recommendations-service/node_modules/jest-circus/build/jestAdapterInit.js:857:11)\n    at run (/Users/4thwithme/Documents/repo/recommendations-service/node_modules/jest-circus/build/jestAdapterInit.js:761:3)\n    at runAndTransformResultsToJestFormat (/Users/4thwithme/Documents/repo/recommendations-service/node_modules/jest-circus/build/jestAdapterInit.js:1918:21)\n    at jestAdapter (/Users/4thwithme/Documents/repo/recommendations-service/node_modules/jest-circus/build/runner.js:101:19)\n    at runTestInternal (/Users/4thwithme/Documents/repo/recommendations-service/node_modules/jest-runner/build/testWorker.js:275:16)\n    at runTest (/Users/4thwithme/Documents/repo/recommendations-service/node_modules/jest-runner/build/testWorker.js:343:7)\n    at Object.worker (/Users/4thwithme/Documents/repo/recommendations-service/node_modules/jest-runner/build/testWorker.js:497:12)","name":"Error"}}[39m
+PASS src/unit-tests/rollbar.config.unit-spec.ts
+  Rollbar Configuration
+    Transform Function
+      ✓ should not modify data when no rollbar options are present (1 ms)
+      ✓ should merge fields from rollbar options (1 ms)
+      ✓ should override issue title when provided (1 ms)
+      ✓ should not override issue title when data does not have trace chain (1 ms)
+      ✓ should not override issue title when first exception is invalid
+      ✓ should add fingerprint context when provided
+    mergeFieldsAndData Function
+      ✓ should initialize extraArgs as an object when it does not exist (1 ms)
+      ✓ should initialize extraArgs as an object when it is not an object
+      ✓ should merge data with existing extraArgs object (1 ms)
+    Type Guard Functions
+      ✓ should correctly identify objects with trace chain
+      ✓ should correctly identify objects with exception property (1 ms)
+
+PASS src/unit-tests/styles-mv.service.unit-spec.ts
+  StylesMvService
+    refreshForStyle
+      ✓ should call model refreshForStyle with correct styleId (2 ms)
+      ✓ should propagate errors from model (5 ms)
+    getByStyleId
+      ✓ should return style from model when found (1 ms)
+      ✓ should return null when style not found (1 ms)
+      ✓ should propagate errors from model (1 ms)
+    getByStyleIds
+      ✓ should return styles from model (1 ms)
+      ✓ should return empty array for empty input (1 ms)
+      ✓ should propagate errors from model (1 ms)
+    getAll
+      ✓ should return paginated styles from model (1 ms)
+      ✓ should return empty array when no records (2 ms)
+      ✓ should propagate errors from model (2 ms)
+    count
+      ✓ should return count from model (2 ms)
+      ✓ should return 0 when no records
+      ✓ should propagate errors from model (1 ms)
+
+PASS src/unit-tests/mms.service.unit-spec.ts (7.429 s)
+  MmsService
+    ✓ should be defined (65 ms)
+    getRelatedProducts
+      ✓ should return related products when MMS API call is successful (5 ms)
+      ✓ should transform MMS products into the expected format (1 ms)
+      ✓ should throw HttpException when MMS returns HTML instead of JSON (17 ms)
+      ✓ should handle MMS API errors properly (2 ms)
+      ✓ should handle general exceptions (2 ms)
+      ✓ should handle timeout errors with HttpException (1 ms)
+      ✓ should return cached data when available (1 ms)
+      ✓ should use the correct MMS URL with productId
+      ✓ should call cache.set with correct parameters after successful fetch (1 ms)
+      ✓ should handle empty alternatives array from MMS (1 ms)
+      ✓ should report errors to rollbar (1 ms)
+      ✓ should convert non-Error exceptions to Error objects (1 ms)
+      ✓ should use productId as PK param when colorId is not provided
+    mapMmsResponseToRelatedProducts
+      ✓ should map MMS product items to the expected format (1 ms)
+      ✓ should handle missing optional fields in MMS product items
+    fetchStyles
+      ✓ should fetch styles with default pagination (1 ms)
+      ✓ should fetch styles with custom perPage parameter (1 ms)
+      ✓ should handle fetch styles API error
+      ✓ should retry on fetch failure (268 ms)
+    fetchCategories
+      ✓ should fetch categories successfully (2 ms)
+      ✓ should handle fetch categories API error (3 ms)
+      ✓ should handle fetch categories network error (755 ms)
+      ✓ should handle non-Error exceptions in fetchCategories (796 ms)
+    fetchStyleColors
+      ✓ should fetch style colors successfully (5 ms)
+      ✓ should handle fetch style colors API error (3 ms)
+      ✓ should handle fetch style colors network error (1 ms)
+      ✓ should handle non-Error exceptions in fetchStyleColors (2 ms)
+    makeRequest
+      ✓ should make request with relative endpoint (3 ms)
+      ✓ should make request with absolute URL (1 ms)
+      ✓ should make request with custom options (28 ms)
+      ✓ should handle makeRequest API error (1 ms)
+      ✓ should handle makeRequest network error
+      ✓ should handle non-Error exceptions in makeRequest (1 ms)
+    fetchStyleComplements
+      ✓ should fetch style complements successfully (1 ms)
+      ✓ should return null when style complements not found (404)
+      ✓ should throw error on non-404 API error
+      ✓ should handle network error (1 ms)
+      ✓ should handle non-Error exceptions
+      ✓ should handle empty complements array (1 ms)
+    private methods
+      generateRelatedProductKey
+        ✓ should generate a properly formatted key for MMS related products with productId only (1 ms)
+        ✓ should generate a properly formatted key for MMS related products with productId and colorId (1 ms)
+      mapMmsResponseToRelatedProducts
+        ✓ should map MMS product items to related products format (1 ms)
+        ✓ should handle missing sizes field (1 ms)
+
+[33m[Nest] 23934  - [39m03/19/2026, 3:55:26 PM [33m   WARN[39m [38;5;3m[RetryUtil] [39m[33mAttempt 4 failed: Error: always fail[39m
+[33m[Nest] 23934  - [39m03/19/2026, 3:55:27 PM [33m   WARN[39m [38;5;3m[RetryUtil] [39m[33mAttempt 5 failed: Error: always fail[39m
+[33m[Nest] 23934  - [39m03/19/2026, 3:55:27 PM [33m   WARN[39m [38;5;3m[RetryUtil] [39m[33mAttempt 1 failed: Error: timeout test[39m
+[33m[Nest] 23934  - [39m03/19/2026, 3:55:27 PM [33m   WARN[39m [38;5;3m[RetryUtil] [39m[33mAttempt 2 failed: Error: timeout test[39m
+PASS src/unit-tests/holiday-helpers.util.unit-spec.ts (9.246 s)
+  Holiday Helpers
+    isUSHoliday (both static method and standalone function)
+      Fixed Date Holidays
+        New Year's Day (January 1)
+          ✓ should return true for New Year's Day in different years (18 ms)
+        Independence Day (July 4)
+          ✓ should return true for Independence Day in different years (3 ms)
+        Christmas Day (December 25)
+          ✓ should return true for Christmas Day in different years (5 ms)
+      Dynamic Date Holidays
+        Martin Luther King Jr. Day (Third Monday in January)
+          ✓ should return true for MLK Day in different years (3 ms)
+        Thanksgiving (Fourth Thursday in November)
+          ✓ should return true for Thanksgiving in different years (3 ms)
+      Non-Holiday Days
+        ✓ should return false for regular weekdays (2 ms)
+      Input validation
+        ✓ should handle invalid dates gracefully (21 ms)
+    getHolidayInfo
+      ✓ should return holiday info for valid holidays (1 ms)
+      ✓ should return null for non-holidays (1 ms)
+      ✓ should handle invalid dates gracefully
+      ✓ should handle edge case in date formatting (1 ms)
+      ✓ should handle various edge cases in date processing (21 ms)
+      ✓ should cover line 87 by forcing error in date processing with malformed dates
+      ✓ should cover line 87 by throwing error during getHolidayInfo execution (1 ms)
+      ✓ should trigger catch block for date processing errors
+    getHolidayEffectMultiplier
+      ✓ should return correct multipliers for major holidays (3 ms)
+      ✓ should return 1.2x multiplier for general holidays (1 ms)
+      ✓ should return 1.2x default multiplier for holidays not in HOLIDAY_EFFECT_MULTIPLIERS list (line 104) (2 ms)
+      ✓ should cover lines 104-107 default multiplier and catch block (4 ms)
+      ✓ should cover line 107 by throwing error during getHolidayEffectMultiplier execution
+      ✓ should return 1.0 for non-holidays (1 ms)
+      ✓ should trigger catch block in getHolidayEffectMultiplier
+    isWithinHolidayWindow
+      ✓ should detect holidays within default 3-day window (8 ms)
+      ✓ should respect custom window sizes (39 ms)
+      ✓ should return false for dates outside holiday windows (10 ms)
+      ✓ should prioritize the closest holiday (24 ms)
+      ✓ should trigger catch block in isWithinHolidayWindow
+      ✓ should throw an error inside isWithinHolidayWindow and be caught and check return value
+    getHolidaysForYear
+      ✓ should return all holidays for a given year (1170 ms)
+      ✓ should return holidays sorted by date (890 ms)
+      ✓ should not return duplicate holidays (293 ms)
+      ✓ should trigger catch block in getHolidaysForYear (495 ms)
+      ✓ should cover line 174 by triggering error during year processing
+      ✓ should skip duplicate holidays when getHolidayInfo returns same holiday for multiple dates (1 ms)
+    getHolidayEffect
+      ✓ should return multiplied effect for holidays (4 ms)
+      ✓ should return diminishing effect based on distance (16 ms)
+      ✓ should return 1.0 for non-holidays (6 ms)
+    isBlackFriday
+      ✓ should correctly identify Black Friday dates
+      ✓ should return false for other Fridays in November
+      ✓ should return false for non-Friday dates
+      ✓ should handle various years and edge cases for Black Friday calculation (1 ms)
+      ✓ should trigger catch block in isBlackFriday for invalid dates
+      ✓ should return false when safety counter reaches 7 (line 207)
+      ✓ should cover line 207 safety check when finding first Thursday fails
+    formatHolidayData
+      ✓ should format holiday data correctly (2 ms)
+      ✓ should handle empty holiday array (1 ms)
+      ✓ should handle invalid date formats gracefully
+      ✓ should handle completely malformed date strings (lines 230-231)
+    Catch block coverage tests
+      ✓ should trigger getHolidayInfo catch block (line 87) when internal error occurs
+      ✓ should trigger getHolidayEffectMultiplier catch block (line 107) when error occurs
+      ✓ should trigger getHolidaysForYear catch block (line 174) when error occurs
+    Integration tests
+      ✓ should work consistently across different methods (11 ms)
+      ✓ should work consistently for non-holidays (13 ms)
+      ✓ should handle all edge cases that trigger catch blocks (923 ms)
+
+[33m[Nest] 23934  - [39m03/19/2026, 3:55:27 PM [33m   WARN[39m [38;5;3m[RetryUtil] [39m[33mAttempt 1 failed: Error: fail[39m
+[33m[Nest] 23934  - [39m03/19/2026, 3:55:27 PM [33m   WARN[39m [38;5;3m[RetryUtil] [39m[33mAttempt 1 failed: Error: quick timeout[39m
+[33m[Nest] 23934  - [39m03/19/2026, 3:55:27 PM [33m   WARN[39m [38;5;3m[RetryUtil] [39m[33mAttempt 1 failed: Error: jitter test[39m
+[33m[Nest] 23934  - [39m03/19/2026, 3:55:27 PM [33m   WARN[39m [38;5;3m[RetryUtil] [39m[33mAttempt 2 failed: Error: jitter test[39m
+[33m[Nest] 23934  - [39m03/19/2026, 3:55:27 PM [33m   WARN[39m [38;5;3m[RetryUtil] [39m[33mAttempt 3 failed: Error: jitter test[39m
+[33m[Nest] 23934  - [39m03/19/2026, 3:55:27 PM [33m   WARN[39m [38;5;3m[RetryUtil] [39m[33mAttempt 1 failed: Error: no jitter test[39m
+[33m[Nest] 23934  - [39m03/19/2026, 3:55:27 PM [33m   WARN[39m [38;5;3m[RetryUtil] [39m[33mAttempt 2 failed: Error: no jitter test[39m
+[33m[Nest] 23934  - [39m03/19/2026, 3:55:27 PM [33m   WARN[39m [38;5;3m[RetryUtil] [39m[33mAttempt 1 failed: Error: custom jitter test[39m
+[33m[Nest] 23934  - [39m03/19/2026, 3:55:27 PM [33m   WARN[39m [38;5;3m[RetryUtil] [39m[33mAttempt 1 failed: Error: negative delay test[39m
+[33m[Nest] 23934  - [39m03/19/2026, 3:55:27 PM [33m   WARN[39m [38;5;3m[RetryUtil] [39m[33mAttempt 2 failed: Error: negative delay test[39m
+[33m[Nest] 23934  - [39m03/19/2026, 3:55:27 PM [33m   WARN[39m [38;5;3m[RetryUtil] [39m[33mAttempt 1 failed: Error: backoff test[39m
+[33m[Nest] 23934  - [39m03/19/2026, 3:55:27 PM [33m   WARN[39m [38;5;3m[RetryUtil] [39m[33mAttempt 2 failed: Error: backoff test[39m
+[33m[Nest] 23934  - [39m03/19/2026, 3:55:27 PM [33m   WARN[39m [38;5;3m[RetryUtil] [39m[33mAttempt 3 failed: Error: backoff test[39m
+[33m[Nest] 23934  - [39m03/19/2026, 3:55:27 PM [33m   WARN[39m [38;5;3m[RetryUtil] [39m[33mAttempt 1 failed: Error: custom backoff test[39m
+[33m[Nest] 23934  - [39m03/19/2026, 3:55:27 PM [33m   WARN[39m [38;5;3m[RetryUtil] [39m[33mAttempt 2 failed: Error: custom backoff test[39m
+[33m[Nest] 23934  - [39m03/19/2026, 3:55:27 PM [33m   WARN[39m [38;5;3m[RetryUtil] [39m[33mAttempt 3 failed: Error: custom backoff test[39m
+[33m[Nest] 23934  - [39m03/19/2026, 3:55:27 PM [33m   WARN[39m [38;5;3m[RetryUtil] [39m[33mAttempt 1 failed: Error: max delay test[39m
+[33m[Nest] 23934  - [39m03/19/2026, 3:55:27 PM [33m   WARN[39m [38;5;3m[RetryUtil] [39m[33mAttempt 2 failed: Error: max delay test[39m
+[33m[Nest] 23934  - [39m03/19/2026, 3:55:27 PM [33m   WARN[39m [38;5;3m[RetryUtil] [39m[33mAttempt 3 failed: Error: max delay test[39m
+[33m[Nest] 23934  - [39m03/19/2026, 3:55:27 PM [33m   WARN[39m [38;5;3m[RetryUtil] [39m[33mAttempt 4 failed: Error: max delay test[39m
+[33m[Nest] 23934  - [39m03/19/2026, 3:55:27 PM [33m   WARN[39m [38;5;3m[RetryUtil] [39m[33mAttempt 1 failed: Error: fractional backoff test[39m
+[33m[Nest] 23934  - [39m03/19/2026, 3:55:27 PM [33m   WARN[39m [38;5;3m[RetryUtil] [39m[33mAttempt 2 failed: Error: fractional backoff test[39m
+[33m[Nest] 23934  - [39m03/19/2026, 3:55:27 PM [33m   WARN[39m [38;5;3m[RetryUtil] [39m[33mAttempt 1 failed: CustomError: custom error[39m
+[33m[Nest] 23934  - [39m03/19/2026, 3:55:27 PM [33m   WARN[39m [38;5;3m[RetryUtil] [39m[33mAttempt 1 failed: string error[39m
+[33m[Nest] 23934  - [39m03/19/2026, 3:55:28 PM [33m   WARN[39m [38;5;3m[RetryUtil] [39m[33mAttempt 1 failed: null[39m
+[33m[Nest] 23934  - [39m03/19/2026, 3:55:28 PM [33m   WARN[39m [38;5;3m[RetryUtil] [39m[33mAttempt 1 failed: undefined[39m
+[33m[Nest] 23934  - [39m03/19/2026, 3:55:28 PM [33m   WARN[39m [38;5;3m[RetryUtil] [39m[33mAttempt 1 failed: Error: fail 2[39m
+[33m[Nest] 23934  - [39m03/19/2026, 3:55:28 PM [33m   WARN[39m [38;5;3m[RetryUtil] [39m[33mAttempt 1 failed: Error: fail 1[39m
+[33m[Nest] 23934  - [39m03/19/2026, 3:55:28 PM [33m   WARN[39m [38;5;3m[RetryUtil] [39m[33mAttempt 1 failed: Error: fail[39m
+[33m[Nest] 23934  - [39m03/19/2026, 3:55:28 PM [33m   WARN[39m [38;5;3m[RetryUtil] [39m[33mAttempt 1 failed: Error: zero delay test[39m
+[33m[Nest] 23934  - [39m03/19/2026, 3:55:28 PM [33m   WARN[39m [38;5;3m[RetryUtil] [39m[33mAttempt 2 failed: Error: zero delay test[39m
+[33m[Nest] 23934  - [39m03/19/2026, 3:55:28 PM [33m   WARN[39m [38;5;3m[RetryUtil] [39m[33mAttempt 1 failed: Error: partial options test[39m
+PASS src/unit-tests/retry.unit-spec.ts (10.133 s)
+  Retry Utility
+    withRetry
+      successful execution
+        ✓ should return result on successful first attempt (4 ms)
+        ✓ should work with different return types (1 ms)
+        ✓ should work with number return types
+        ✓ should work with null/undefined return values (1 ms)
+      retry behavior
+        ✓ should retry on failure and return result on success (114 ms)
+        ✓ should retry multiple times before succeeding (779 ms)
+        ✓ should throw last error after all retries fail (379 ms)
+        ✓ should respect custom retry count (2357 ms)
+        ✓ should work with zero retries
+      timeout behavior
+        ✓ should respect max retry time (347 ms)
+        ✓ should allow completion within timeout (106 ms)
+        ✓ should handle very short timeouts (81 ms)
+      jitter behavior
+        ✓ should apply jitter by default (5 ms)
+        ✓ should not apply jitter when disabled (3 ms)
+        ✓ should respect custom jitter percentage (5 ms)
+        ✓ should not produce negative delays with jitter (5 ms)
+      backoff behavior
+        ✓ should use exponential backoff by default (6 ms)
+        ✓ should respect custom backoff multiplier (7 ms)
+        ✓ should respect max delay cap (6 ms)
+        ✓ should work with fractional backoff multiplier (2 ms)
+      error handling
+        ✓ should preserve original error type (98 ms)
+        ✓ should handle non-Error objects (90 ms)
+        ✓ should handle null/undefined errors (196 ms)
+      function parameters
+        ✓ should pass through function parameters
+        ✓ should work with async functions that take parameters (1 ms)
+      concurrent execution
+        ✓ should handle multiple concurrent retry operations (106 ms)
+      edge cases
+        ✓ should handle extremely large retry counts (86 ms)
+        ✓ should handle zero max delay (2 ms)
+        ✓ should handle negative retry count (1 ms)
+      default options
+        ✓ should use default options when none provided
+        ✓ should merge partial options with defaults (105 ms)
+
+PASS src/unit-tests/bigquery.service.unit-spec.ts (11.02 s)
+  BigQueryService
+    onModuleInit
+      ✓ should initialize BigQuery client with decoded credentials (8 ms)
+      ✓ should throw and log error when base64 key is invalid (15 ms)
+      ✓ should throw and log error when JSON is malformed (1 ms)
+    fetchStyleCopurchases
+      ✓ should return mapped co-purchase rows (2 ms)
+      ✓ should return empty array when no rows (1 ms)
+      ✓ should propagate errors from BigQuery (2 ms)
+    fetchTrendingItemsOrderData
+      ✓ should return mapped trending item rows (2 ms)
+      ✓ should handle date_placed as string (2 ms)
+      ✓ should return empty array when no rows (2 ms)
+      ✓ should respect custom limit and offset (1 ms)
+      ✓ should propagate errors from BigQuery (9 ms)
+    fetchTrendingItemsByYearMonths
+      ✓ should fetch data for each month and aggregate results (16 ms)
+      ✓ should paginate within a single month when batch equals batchSize (3288 ms)
+      ✓ should handle empty results for all months (5 ms)
+    fetchTrendingItemsForDateRange
+      ✓ should paginate until no more results (2027 ms)
+      ✓ should return empty array when no data (1 ms)
+
+----------------------------------------|---------|----------|---------|---------|----------------------------------------------------
+File                                    | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s                                  
+----------------------------------------|---------|----------|---------|---------|----------------------------------------------------
+All files                               |   73.24 |    67.95 |    71.1 |   72.35 |                                                    
+ configs                                |   99.25 |    96.42 |     100 |   99.25 |                                                    
+  env-validations.config.ts             |     100 |      100 |     100 |     100 |                                                    
+  rollbar-buffer.config.ts              |     100 |    95.23 |     100 |     100 | 173                                                
+  rollbar.config.ts                     |   97.56 |    96.96 |     100 |   97.56 | 42                                                 
+ constants                              |     100 |      100 |     100 |     100 |                                                    
+  bigquery.constant.ts                  |     100 |      100 |     100 |     100 |                                                    
+  common.constant.ts                    |     100 |      100 |     100 |     100 |                                                    
+  db.constant.ts                        |     100 |      100 |     100 |     100 |                                                    
+  env-variables.constant.ts             |     100 |      100 |     100 |     100 |                                                    
+  recommendations.constants.ts          |     100 |      100 |     100 |     100 |                                                    
+  req.constants.ts                      |     100 |      100 |     100 |     100 |                                                    
+ decorators                             |     100 |    96.07 |     100 |     100 |                                                    
+  cron-job-execution.decorator.ts       |     100 |      100 |     100 |     100 |                                                    
+  log-execution.decorator.ts            |     100 |    95.45 |     100 |     100 | 188,200                                            
+ interfaces                             |     100 |      100 |     100 |     100 |                                                    
+  cache.interface.ts                    |     100 |      100 |     100 |     100 |                                                    
+  env-variables.interface.ts            |     100 |      100 |     100 |     100 |                                                    
+ modules/algolia                        |   97.39 |      100 |   85.71 |   97.32 |                                                    
+  algolia.service.ts                    |   97.39 |      100 |   85.71 |   97.32 | 170-173,180                                        
+ modules/bigquery                       |   97.64 |    86.95 |     100 |   97.56 |                                                    
+  bigquery.service.ts                   |   97.64 |    86.95 |     100 |   97.56 | 54,187                                             
+ modules/cache                          |     100 |      100 |     100 |     100 |                                                    
+  cache.service.ts                      |     100 |      100 |     100 |     100 |                                                    
+ modules/cli/commands                   |     100 |      100 |     100 |     100 |                                                    
+  populate-style-copurchases.command.ts |     100 |      100 |     100 |     100 |                                                    
+ modules/color-match-worker             |     100 |      100 |     100 |     100 |                                                    
+  color-match-worker.service.ts         |     100 |      100 |     100 |     100 |                                                    
+ modules/db/default-unit-prices/dto     |     100 |      100 |     100 |     100 |                                                    
+  default-unit-price.base.dto.ts        |     100 |      100 |     100 |     100 |                                                    
+  default-unit-price.create.dto.ts      |     100 |      100 |     100 |     100 |                                                    
+  default-unit-price.delete.dto.ts      |     100 |      100 |     100 |     100 |                                                    
+  default-unit-price.find.dto.ts        |     100 |      100 |     100 |     100 |                                                    
+  default-unit-price.update.dto.ts      |     100 |      100 |     100 |     100 |                                                    
+ modules/db/default-unit-prices/models  |    9.49 |        0 |       0 |    8.33 |                                                    
+  default-unit-price.model.ts           |    9.49 |        0 |       0 |    8.33 | 29-467                                             
+ modules/db/style-alternatives          |    38.7 |        0 |       0 |   34.48 |                                                    
+  style-alternatives.service.ts         |    38.7 |        0 |       0 |   34.48 | 11-18,25-36,45-53,60-65,68-75,84-89,92             
+ modules/db/style-alternatives/dto      |     100 |      100 |     100 |     100 |                                                    
+  style-alternative.base.dto.ts         |     100 |      100 |     100 |     100 |                                                    
+  style-alternative.create.dto.ts       |     100 |      100 |     100 |     100 |                                                    
+ modules/db/style-alternatives/models   |   10.81 |        0 |       0 |    9.43 |                                                    
+  style-alternative.model.ts            |   10.81 |        0 |       0 |    9.43 | 22-333                                             
+ modules/db/style-colors/dto            |     100 |      100 |     100 |     100 |                                                    
+  style-color.base.dto.ts               |     100 |      100 |     100 |     100 |                                                    
+  style-color.create.dto.ts             |     100 |      100 |     100 |     100 |                                                    
+  style-color.update.dto.ts             |     100 |      100 |     100 |     100 |                                                    
+ modules/db/style-colors/models         |    8.49 |        0 |       0 |    7.28 |                                                    
+  style-color.model.ts                  |    8.49 |        0 |       0 |    7.28 | 24-457                                             
+ modules/db/style-copurchases           |   40.74 |        0 |       0 |      36 |                                                    
+  style-copurchases.service.ts          |   40.74 |        0 |       0 |      36 | 9-25,38-71,97-113,122-127,130-135,138              
+ modules/db/style-copurchases/dto       |     100 |      100 |     100 |     100 |                                                    
+  find-top-copurchases.dto.ts           |     100 |      100 |     100 |     100 |                                                    
+ modules/db/style-copurchases/models    |   12.35 |        0 |       0 |   10.58 |                                                    
+  style-copurchase.model.ts             |   12.35 |        0 |       0 |   10.58 | 24-286                                             
+ modules/db/styles-mv                   |   90.32 |    33.33 |   84.21 |   89.65 |                                                    
+  styles-mv.service.ts                  |   90.32 |    33.33 |   84.21 |   89.65 | 57-63,74                                           
+ modules/db/styles-mv/dto               |     100 |      100 |     100 |     100 |                                                    
+  find-by-brands.dto.ts                 |     100 |      100 |     100 |     100 |                                                    
+  find-by-style-ids.dto.ts              |     100 |      100 |     100 |     100 |                                                    
+ modules/db/styles-mv/models            |   68.31 |    56.52 |    62.5 |   67.67 |                                                    
+  styles-mv.model.ts                    |   68.31 |    56.52 |    62.5 |   67.67 | 83-86,95,122-162,233-246                           
+ modules/db/styles/dto                  |   72.13 |     9.52 |      50 |   73.68 |                                                    
+  style.base.dto.ts                     |   70.68 |     9.52 |      50 |   72.22 | 39-46,55-62,108-110,161-162                        
+  style.find.dto.ts                     |     100 |      100 |     100 |     100 |                                                    
+ modules/db/styles/models               |   28.19 |    32.83 |      25 |    27.8 |                                                    
+  style.model.ts                        |   28.19 |    32.83 |      25 |    27.8 | 47-392,406-409,533-691                             
+ modules/db/trending-items              |   27.65 |    23.45 |      16 |   27.47 |                                                    
+  trending-items.service.ts             |   27.65 |    23.45 |      16 |   27.47 | 38-43,54-78,81-263,269-270,337-414,420-421,490-511 
+ modules/db/trending-items/dto          |   84.21 |    33.33 |     100 |   88.23 |                                                    
+  trending-item-order-data.dto.ts       |   84.21 |    33.33 |     100 |   88.23 | 9-10                                               
+ modules/env-config                     |     100 |      100 |     100 |     100 |                                                    
+  env-config.service.ts                 |     100 |      100 |     100 |     100 |                                                    
+ modules/metrics                        |     100 |      100 |     100 |     100 |                                                    
+  metrics.service.ts                    |     100 |      100 |     100 |     100 |                                                    
+ modules/mms                            |     100 |    95.74 |     100 |     100 |                                                    
+  mms.service.ts                        |     100 |    95.74 |     100 |     100 | 172,212                                            
+ modules/product-hydration              |     100 |    95.83 |     100 |     100 |                                                    
+  product-hydration.service.ts          |     100 |    95.83 |     100 |     100 | 106,205,217                                        
+ modules/rest/similar-to-favorites      |     100 |       90 |     100 |     100 |                                                    
+  similar-to-favorites.service.ts       |     100 |       90 |     100 |     100 | 71                                                 
+ utils                                  |   98.71 |    94.16 |   99.35 |   99.15 |                                                    
+  array.util.ts                         |     100 |    83.33 |     100 |     100 | 35                                                 
+  check-internal-access.util.ts         |     100 |      100 |     100 |     100 |                                                    
+  color-match.util.ts                   |     100 |      100 |     100 |     100 |                                                    
+  common.util.ts                        |     100 |      100 |     100 |     100 |                                                    
+  compare-hashes.util.ts                |     100 |      100 |     100 |     100 |                                                    
+  date-helpers.util.ts                  |   98.57 |    86.95 |     100 |     100 | 3,51,173                                           
+  formatting.util.ts                    |     100 |      100 |     100 |     100 |                                                    
+  get-env-file.util.ts                  |   96.15 |      100 |      80 |     100 |                                                    
+  get-env-variable.util.ts              |     100 |       50 |     100 |     100 | 13                                                 
+  hash-from-object.unit.ts              |     100 |      100 |     100 |     100 |                                                    
+  holiday-helpers.util.ts               |   98.91 |     92.1 |     100 |     100 | 74-80                                              
+  mathematical-functions.util.ts        |   98.84 |    93.97 |     100 |   99.31 | 64,70                                              
+  random-color-picker.util.ts           |   95.23 |    97.95 |     100 |   95.23 | 38                                                 
+  request-store.util.ts                 |     100 |    96.77 |     100 |     100 | 155                                                
+  retry.util.ts                         |     100 |    95.65 |     100 |     100 | 66                                                 
+  setup-swagger.util.ts                 |     100 |      100 |     100 |     100 |                                                    
+  sort-styles.utils.ts                  |     100 |    96.15 |     100 |     100 | 14                                                 
+  trending-score-calculator.util.ts     |   97.41 |     91.8 |     100 |   97.08 | 226,230,240,244                                    
+----------------------------------------|---------|----------|---------|---------|----------------------------------------------------
+Test Suites: 37 passed, 37 total
+Tests:       1029 passed, 1029 total
+Snapshots:   0 total
+Time:        11.665 s, estimated 13 s
+Ran all test suites.

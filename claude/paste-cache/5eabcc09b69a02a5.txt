@@ -1,0 +1,201 @@
+Jest: "global" coverage threshold for branches (95%) not met: 89.55%
+Summary of all failing tests
+ FAIL  test/opensearch/opensearch-neural.service.e2e-spec.ts (8.227 s)
+  ● OpensearchNeuralService (e2e) › searchProducts › should throw error when model ID is not available
+
+    expect(received).rejects.toThrow(expected)
+
+    Expected substring: "Neural search model not available. Run: npm run cli:dev -- bootstrap-neural-search"
+    Received message:   "index_not_found_exception: [index_not_found_exception] Reason: no such index [e2e_test_products_neural_search]"
+
+          at onBody (node_modules/@opensearch-project/opensearch/lib/Transport.js:426:23)
+          at IncomingMessage.onEnd (node_modules/@opensearch-project/opensearch/lib/Transport.js:341:11)
+
+      326 |             await freshService.onModuleInit();
+      327 |
+    > 328 |             await expect(freshService.searchProducts({ queryText: 'test' })).rejects.toThrow(
+          |                                                                                      ^
+      329 |                 'Neural search model not available. Run: npm run cli:dev -- bootstrap-neural-search',
+      330 |             );
+      331 |         });
+
+      at Object.toThrow (node_modules/expect/build/index.js:2155:20)
+      at Object.<anonymous> (test/opensearch/opensearch-neural.service.e2e-spec.ts:328:77)
+
+  ● OpensearchNeuralService (e2e) › searchProducts › should throw error with different query when model unavailable
+
+    expect(received).rejects.toThrow(expected)
+
+    Expected substring: "Neural search model not available"
+    Received message:   "index_not_found_exception: [index_not_found_exception] Reason: no such index [e2e_test_products_neural_search]"
+
+          at onBody (node_modules/@opensearch-project/opensearch/lib/Transport.js:426:23)
+          at IncomingMessage.onEnd (node_modules/@opensearch-project/opensearch/lib/Transport.js:341:11)
+
+      339 |             await expect(
+      340 |                 freshService.searchProducts({ queryText: 't shirt long sleeve' }),
+    > 341 |             ).rejects.toThrow('Neural search model not available');
+          |                       ^
+      342 |         });
+      343 |
+      344 |         it('should throw error with custom size when model unavailable', async () => {
+
+      at Object.toThrow (node_modules/expect/build/index.js:2155:20)
+      at Object.<anonymous> (test/opensearch/opensearch-neural.service.e2e-spec.ts:341:14)
+
+  ● OpensearchNeuralService (e2e) › searchProducts › should throw error with custom size when model unavailable
+
+    expect(received).rejects.toThrow(expected)
+
+    Expected substring: "Neural search model not available"
+    Received message:   "index_not_found_exception: [index_not_found_exception] Reason: no such index [e2e_test_products_neural_search]"
+
+          at onBody (node_modules/@opensearch-project/opensearch/lib/Transport.js:426:23)
+          at IncomingMessage.onEnd (node_modules/@opensearch-project/opensearch/lib/Transport.js:341:11)
+
+      350 |             await expect(
+      351 |                 freshService.searchProducts({ queryText: 'polo shirt', size: 50 }),
+    > 352 |             ).rejects.toThrow('Neural search model not available');
+          |                       ^
+      353 |         });
+      354 |
+      355 |         it('should search successfully when model is available (mocked)', async () => {
+
+      at Object.toThrow (node_modules/expect/build/index.js:2155:20)
+      at Object.<anonymous> (test/opensearch/opensearch-neural.service.e2e-spec.ts:352:14)
+
+  ● OpensearchNeuralService (e2e) › searchProducts › should search successfully when model is available (mocked)
+
+    expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 0
+    + Received  + 1
+
+    @@ -1,8 +1,9 @@
+      Array [
+        Object {
+          "_id": "test-id-1",
+    +     "confidenceScore": NaN,
+          "name": "Test Product",
+          "product_id": 67890,
+          "status": "active",
+          "style_id": 12345,
+        },
+
+      376 |             const result = await freshService.searchProducts({ queryText: 'test shirt' });
+      377 |
+    > 378 |             expect(result).toEqual([
+          |                            ^
+      379 |                 {
+      380 |                     _id: 'test-id-1',
+      381 |                     style_id: 12345,
+
+      at Object.<anonymous> (test/opensearch/opensearch-neural.service.e2e-spec.ts:378:19)
+
+  ● OpensearchNeuralService (e2e) › searchProducts › should limit results to requested size
+
+    expect(received).toHaveLength(expected)
+
+    Expected length: 10
+    Received length: 30
+    Received array:  [{"_id": "id-0", "confidenceScore": NaN, "name": "Product 0", "status": "active", "style_id": 0}, {"_id": "id-1", "confidenceScore": NaN, "name": "Product 1", "status": "active", "style_id": 1}, {"_id": "id-2", "confidenceScore": NaN, "name": "Product 2", "status": "active", "style_id": 2}, {"_id": "id-3", "confidenceScore": NaN, "name": "Product 3", "status": "active", "style_id": 3}, {"_id": "id-4", "confidenceScore": NaN, "name": "Product 4", "status": "active", "style_id": 4}, {"_id": "id-5", "confidenceScore": NaN, "name": "Product 5", "status": "active", "style_id": 5}, {"_id": "id-6", "confidenceScore": NaN, "name": "Product 6", "status": "active", "style_id": 6}, {"_id": "id-7", "confidenceScore": NaN, "name": "Product 7", "status": "active", "style_id": 7}, {"_id": "id-8", "confidenceScore": NaN, "name": "Product 8", "status": "active", "style_id": 8}, {"_id": "id-9", "confidenceScore": NaN, "name": "Product 9", "status": "active", "style_id": 9}, …]
+
+      511 |             const result = await freshService.searchProducts({ queryText: 'test', size: 10 });
+      512 |
+    > 513 |             expect(result).toHaveLength(10);
+          |                            ^
+      514 |         });
+      515 |
+      516 |         describe.skip('WITH MODEL DEPLOYMENT', () => {
+
+      at Object.<anonymous> (test/opensearch/opensearch-neural.service.e2e-spec.ts:513:19)
+
+ FAIL  test/rest/neural-search.service.e2e-spec.ts
+  ● NeuralSearchService (e2e) › getProductsByUseCase › should forward limit parameter as size
+
+    expect(jest.fn()).toHaveBeenCalledWith(...expected)
+
+    - Expected
+    + Received
+
+    @@ -2,11 +2,11 @@
+        "categories": Array [
+          Object {
+            "T-Shirts": "",
+          },
+          Object {
+    -       "Tote Bags": "",
+    +       "Tote Bags": "Midweight Cotton tote bag",
+          },
+          Object {
+            "Drinkware": "",
+          },
+          Object {,
+
+    Number of calls: 1
+
+      414 |             await service.getProductsByUseCase({ useCase: 'Events', limit: 10 });
+      415 |
+    > 416 |             expect(opensearchNeuralService.searchProductsByCategories).toHaveBeenCalledWith({
+          |                                                                        ^
+      417 |                 categories: [
+      418 |                     { 'T-Shirts': '' },
+      419 |                     { 'Tote Bags': '' },
+
+      at Object.<anonymous> (test/rest/neural-search.service.e2e-spec.ts:416:63)
+
+  ● NeuralSearchService (e2e) › getProductsByUseCase › should work with use-case names containing spaces
+
+    expect(jest.fn()).toHaveBeenCalledWith(...expected)
+
+    - Expected
+    + Received
+
+      Object {
+        "categories": Array [
+          Object {
+    -       "Promotional Products": "",
+    +       "Business Cards": "Horizontal business card",
+          },
+          Object {
+    -       "Tote Bags": "",
+    +       "Tote Bags": "Midweight Cotton tote bag",
+          },
+          Object {
+    -       "Sunglasses": "",
+    +       "Sunglasses": "Solid Promotional Sunglasses",
+          },
+          Object {
+    -       "Trade Show Signage": "",
+    +       "Lanyards & Badge Holders": "Lanyard with Lobster Clip",
+    +     },
+    +     Object {
+    +       "Signs": "color banner kit",
+    +     },
+    +     Object {
+    +       "Tablecloths": "Full color tablecloths",
+          },
+        ],
+      },
+
+    Number of calls: 1
+
+      473 |
+      474 |             expect(result.useCase).toBe('Trade Shows');
+    > 475 |             expect(opensearchNeuralService.searchProductsByCategories).toHaveBeenCalledWith({
+          |                                                                        ^
+      476 |                 categories: [
+      477 |                     { 'Promotional Products': '' },
+      478 |                     { 'Tote Bags': '' },
+
+      at Object.<anonymous> (test/rest/neural-search.service.e2e-spec.ts:475:63)
+
+ FAIL  test/app.module.e2e-spec.ts (6.06 s)
+  ● App module › Rate Limiting (e2e) › should allow requests again after TTL expires
+
+    read ECONNRESET
+
+
+
+Test Suites: 3 failed, 49 passed, 52 total
+Tests:       8 failed, 8 skipped, 1480 passed, 1496 total

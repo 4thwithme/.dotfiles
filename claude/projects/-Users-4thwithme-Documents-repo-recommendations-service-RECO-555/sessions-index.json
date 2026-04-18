@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "entries": [
+    {
+      "sessionId": "d20a7075-5376-4626-8ec1-ddb8dfef4543",
+      "fullPath": "/Users/4thwithme/.claude/projects/-Users-4thwithme-Documents-repo-recommendations-service-RECO-555/d20a7075-5376-4626-8ec1-ddb8dfef4543.jsonl",
+      "fileMtime": 1770214279018,
+      "firstPrompt": "bro in @src/modules/rest/addons/addons.service.ts we are caching result after shuffling, we need to cache response as it is, but shuffle right before return and in case of we get it from cache, or fro…",
+      "messageCount": 5,
+      "created": "2026-02-04T13:56:18.186Z",
+      "modified": "2026-02-04T14:11:18.900Z",
+      "gitBranch": "RECO-555-sorting-fix",
+      "projectPath": "/Users/4thwithme/Documents/repo/recommendations-service-RECO-555",
+      "isSidechain": false
+    }
+  ],
+  "originalPath": "/Users/4thwithme/Documents/repo/recommendations-service-RECO-555"
+}

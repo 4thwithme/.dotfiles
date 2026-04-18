@@ -1,0 +1,50 @@
+[
+  {
+    "content": "Set up project repository structure (inspired by NestJS)",
+    "status": "completed",
+    "priority": "high",
+    "id": "phase0-1"
+  },
+  {
+    "content": "Initialize Hono.js project with package.json and dependencies",
+    "status": "in_progress",
+    "priority": "high",
+    "id": "phase0-2"
+  },
+  {
+    "content": "Configure Docker for development and production",
+    "status": "pending",
+    "priority": "high",
+    "id": "phase0-3"
+  },
+  {
+    "content": "Set up MongoDB and Redis for local development",
+    "status": "pending",
+    "priority": "medium",
+    "id": "phase0-4"
+  },
+  {
+    "content": "Create initial documentation files (README, CONTRIBUTING, etc.)",
+    "status": "pending",
+    "priority": "medium",
+    "id": "phase0-5"
+  },
+  {
+    "content": "Set up CI/CD pipeline with GitHub Actions",
+    "status": "pending",
+    "priority": "medium",
+    "id": "phase0-6"
+  },
+  {
+    "content": "Create initial test cases with Jest",
+    "status": "pending",
+    "priority": "medium",
+    "id": "phase0-7"
+  },
+  {
+    "content": "Set up basic logging and error handling according to Hono best practices",
+    "status": "pending",
+    "priority": "low",
+    "id": "phase0-8"
+  }
+]

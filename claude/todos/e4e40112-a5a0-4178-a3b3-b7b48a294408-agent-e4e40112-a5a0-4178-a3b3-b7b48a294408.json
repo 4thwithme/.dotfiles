@@ -1,0 +1,12 @@
+[
+  {
+    "content": "Add tests for getProphetDashboard endpoint in trending-products-dashboard.controller.e2e-spec.ts",
+    "status": "completed",
+    "activeForm": "Adding tests for getProphetDashboard endpoint"
+  },
+  {
+    "content": "Analyze TrendingProductsService coverage and add missing tests",
+    "status": "in_progress",
+    "activeForm": "Analyzing TrendingProductsService coverage"
+  }
+]

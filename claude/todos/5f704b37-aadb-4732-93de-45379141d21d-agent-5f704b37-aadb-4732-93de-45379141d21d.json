@@ -1,0 +1,20 @@
+[
+  {
+    "content": "Create static visualization script for FBT model (4-visualize-data.script.py)",
+    "status": "completed",
+    "priority": "high",
+    "id": "1"
+  },
+  {
+    "content": "Create interactive dashboard for FBT model (5-interactive-visualize-data.script.py)",
+    "status": "pending",
+    "priority": "high",
+    "id": "2"
+  },
+  {
+    "content": "Create comparison radar chart script for FBT model (6-create-comparing-radar-chart.script.py)",
+    "status": "in_progress",
+    "priority": "medium",
+    "id": "3"
+  }
+]

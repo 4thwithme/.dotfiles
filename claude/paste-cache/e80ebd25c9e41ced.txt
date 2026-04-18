@@ -1,0 +1,101 @@
+Summary of all failing tests
+ FAIL  test/opensearch/opensearch-neural.service.e2e-spec.ts (6.18 s)
+  ● OpensearchNeuralService (e2e) › onModuleInit › should initialize and log model ID or warning
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: true
+    Received: false
+
+      118 |                     );
+      119 |
+    > 120 |                     expect(logCalled || warnCalled).toBe(true);
+          |                                                     ^
+      121 |             });
+      122 |     });
+      123 |
+
+      at Object.<anonymous> (test/opensearch/opensearch-neural.service.e2e-spec.ts:120:36)
+
+ FAIL  test/opensearch/opensearch.service.e2e-spec.ts
+  ● OpensearchService (e2e) › Model Group Search › should search for model group by name
+
+    ResponseError: index_not_found_exception: [index_not_found_exception] Reason: no such index [.plugins-ml-model-group]
+
+      at onBody (node_modules/@opensearch-project/opensearch/lib/Transport.js:426:23)
+      at IncomingMessage.onEnd (node_modules/@opensearch-project/opensearch/lib/Transport.js:341:11)
+
+  ● OpensearchService (e2e) › Model Group Search › should handle empty name when searching model group
+
+    ResponseError: index_not_found_exception: [index_not_found_exception] Reason: no such index [.plugins-ml-model-group]
+
+      at onBody (node_modules/@opensearch-project/opensearch/lib/Transport.js:426:23)
+      at IncomingMessage.onEnd (node_modules/@opensearch-project/opensearch/lib/Transport.js:341:11)
+
+  ● OpensearchService (e2e) › Model Group Management › should throw error when registering model group with empty name
+
+    expect(received).rejects.toThrow()
+
+    Received promise resolved instead of rejected
+    Resolved to value: "3XqQkp0BOMENpntE2Yok"
+
+      525 |
+      526 |             it('should throw error when registering model group with empty name', async () => {
+    > 527 |                     await expect(
+          |                           ^
+      528 |                             opensearchService.registerModelGroup({ name: '', description: 'test' }),
+      529 |                     ).rejects.toThrow();
+      530 |             });
+
+      at expect (node_modules/expect/build/index.js:2116:15)
+      at Object.<anonymous> (test/opensearch/opensearch.service.e2e-spec.ts:527:10)
+
+  ● OpensearchService (e2e) › Model Management › should search models by group
+
+    ResponseError: index_not_found_exception: [index_not_found_exception] Reason: no such index [.plugins-ml-model]
+
+      at onBody (node_modules/@opensearch-project/opensearch/lib/Transport.js:426:23)
+      at IncomingMessage.onEnd (node_modules/@opensearch-project/opensearch/lib/Transport.js:341:11)
+
+  ● OpensearchService (e2e) › Model Management › should return empty array when searching models by non-existent group
+
+    ResponseError: index_not_found_exception: [index_not_found_exception] Reason: no such index [.plugins-ml-model]
+
+      at onBody (node_modules/@opensearch-project/opensearch/lib/Transport.js:426:23)
+      at IncomingMessage.onEnd (node_modules/@opensearch-project/opensearch/lib/Transport.js:341:11)
+
+  ● OpensearchService (e2e) › Model Management › should return empty array when searching models with empty group ID
+
+    ResponseError: index_not_found_exception: [index_not_found_exception] Reason: no such index [.plugins-ml-model]
+
+      at onBody (node_modules/@opensearch-project/opensearch/lib/Transport.js:426:23)
+      at IncomingMessage.onEnd (node_modules/@opensearch-project/opensearch/lib/Transport.js:341:11)
+
+  ● OpensearchService (e2e) › findDeployedModelId › should return null when no deployed models exist
+
+    ResponseError: index_not_found_exception: [index_not_found_exception] Reason: no such index [.plugins-ml-model]
+
+      at onBody (node_modules/@opensearch-project/opensearch/lib/Transport.js:426:23)
+      at IncomingMessage.onEnd (node_modules/@opensearch-project/opensearch/lib/Transport.js:341:11)
+
+ FAIL  test/env-config.module.e2e-spec.ts
+  ● EnvConfigModule (e2e) › Configuration loading › should load OpenSearch environment variables correctly
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: "http://localhost:9201"
+    Received: "http://127.0.0.1:9200"
+
+      102 |
+      103 |             it('should load OpenSearch environment variables correctly', () => {
+    > 104 |                     expect(envConfigService.get<string>({ key: OPENSEARCH_HOST })).toBe(
+          |                                                                                    ^
+      105 |                             testEnvVariables['OPENSEARCH_HOST'],
+      106 |                     );
+      107 |                     expect(envConfigService.get<string>({ key: OPENSEARCH_USERNAME })).toBe(
+
+      at Object.<anonymous> (test/env-config.module.e2e-spec.ts:104:67)
+
+
+Test Suites: 3 failed, 49 passed, 52 total
+Tests:       9 failed, 8 skipped, 1498 passed, 1515 total

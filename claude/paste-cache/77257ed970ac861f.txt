@@ -1,0 +1,72 @@
+════════════════════════════════════════
+Seeding repo: no-name-proj-dev-test/app-core
+════════════════════════════════════════
+  Creating repo...
+✓ Created repository no-name-proj-dev-test/app-core on GitHub
+  https://github.com/no-name-proj-dev-test/app-core
+warning: You appear to have cloned an empty repository.
+  Creating 2-year commit history...
+  Pushing main branch...
+  Creating feature branch: feature/perf-improvements...
+remote: 
+remote: Create a pull request for 'feature/perf-improvements' on GitHub by visiting:
+remote:      https://github.com/no-name-proj-dev-test/app-core/pull/new/feature/perf-improvements
+remote: 
+  Created PR #1
+4123163992
+{
+  "message": "Unprocessable Entity",
+  "errors": [
+    "Review Can not approve your own pull request"
+  ],
+  "documentation_url": "https://docs.github.com/rest/pulls/reviews#create-a-review-for-a-pull-request",
+  "status": "422"
+}
+{
+  "message": "Validation Failed",
+  "errors": [
+    {
+      "resource": "PullRequestReviewComment",
+      "code": "invalid",
+      "field": "pull_request_review_thread.path",
+      "message": "could not be resolved"
+    }
+  ],
+  "documentation_url": "https://docs.github.com/rest/pulls/comments#create-a-review-comment-for-a-pull-request",
+  "status": "422"
+}
+  Merged PR #1
+remote: 
+remote: Create a pull request for 'feature/new-dashboard' on GitHub by visiting:
+remote:      https://github.com/no-name-proj-dev-test/app-core/pull/new/feature/new-dashboard
+remote: 
+  Created PR #2 (open)
+{
+  "message": "Unprocessable Entity",
+  "errors": [
+    "Review Can not request changes on your own pull request"
+  ],
+  "documentation_url": "https://docs.github.com/rest/pulls/reviews#create-a-review-for-a-pull-request",
+  "status": "422"
+}
+{
+  "message": "Validation Failed",
+  "errors": [
+    {
+      "resource": "PullRequestReviewComment",
+      "code": "invalid",
+      "field": "pull_request_review_thread.path",
+      "message": "could not be resolved"
+    }
+  ],
+  "documentation_url": "https://docs.github.com/rest/pulls/comments#create-a-review-comment-for-a-pull-request",
+  "status": "422"
+}
+remote: 
+remote: Create a pull request for 'feature/experimental-ml' on GitHub by visiting:
+remote:      https://github.com/no-name-proj-dev-test/app-core/pull/new/feature/experimental-ml
+remote: 
+  Created PR #3 (will close)
+4123166017
+  Closed PR #3 without merge
+  ✓ app-core done

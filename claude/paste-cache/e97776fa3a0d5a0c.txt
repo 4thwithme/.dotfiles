@@ -1,0 +1,75 @@
+About
+Owned by: @4thwithme
+
+App ID: 3392871
+
+Using your App ID to get installation tokens? You can now use your Client ID instead.
+
+Client ID: Iv23liP0ZjK2otDjhy9e
+
+GitHub Apps can use OAuth credentials to identify users. Learn more about identifying users by reading our integration developer documentation.
+
+Client secrets
+You need a client secret to authenticate as the application to the API.
+
+Basic information
+GitHub App name
+no-name-proj-dev
+The name of your GitHub App.
+
+ Markdown supported
+Write
+Preview
+no-name-proj-dev
+Homepage URL
+http://localhost:9069
+The full URL to your GitHub App’s website.
+
+Identifying and authorizing users
+The full URL to redirect to after a user authorizes an installation.
+Read our Callback URL documentation for more information.
+
+Callback URL
+https://no-name-proj-1488-dev.loca.lt/api/integrations/github/callback
+ Request user authorization (OAuth) during installation
+Requests that the installing user grants access to their identity during installation of your App
+
+Read our Identifying and authorizing users for GitHub Apps documentation for more information.
+
+ Enable Device Flow
+Allow this GitHub App to authorize users via the Device Flow.
+
+Read the Device Flow documentation for more information.
+
+Post installation
+Setup URL (optional)
+http://localhost:9069/github/install/callback 
+Users will be redirected to this URL after installing your GitHub App to complete additional setup.
+
+ Redirect on update
+Redirect users to the 'Setup URL' after installations are updated (E.g. repositories added/removed).
+
+Webhook
+
+Active
+We will deliver event details when this hook is triggered.
+Webhook URL
+https://no-name-proj-1488-dev.loca.lt/api/github/webhooks
+Events will POST to this URL. Read our webhook documentation for more information.
+
+
+There is currently a secret configured for this webhook. If you've lost or forgotten this secret, you can change it, but be aware that any integrations using this secret will need to be updated.
+
+Read our webhook secret documentation for more information.
+
+SSL verification
+ By default, we verify SSL certificates when delivering payloads.
+
+ Enable SSL verification  Disable (not recommended)
+ 
+Display information
+Drag & drop
+
+You can also drag and drop a picture from your computer.
+
+

@@ -1,0 +1,64 @@
+{
+  "session_id": "32c097a6-cad5-4d86-b4ba-17cb24d53a5d",
+  "project_path": "/Users/4thwithme/Documents/repo/recommendations-service",
+  "start_time": "2026-02-03T17:56:06.431Z",
+  "duration_minutes": 36,
+  "user_message_count": 8,
+  "assistant_message_count": 111,
+  "tool_counts": {
+    "Read": 11,
+    "Edit": 18,
+    "Write": 1,
+    "Bash": 11,
+    "TaskCreate": 5,
+    "TaskUpdate": 1,
+    "Grep": 1
+  },
+  "languages": {
+    "JavaScript": 5,
+    "TypeScript": 17
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 912,
+  "output_tokens": 222,
+  "first_prompt": "i need to allow only objects as function argument, this argument should be 1.  al args we should pass inside the object, how to set up it using eslint",
+  "user_interruptions": 1,
+  "user_response_times": [
+    54.815,
+    249.076,
+    1300.495,
+    8.019
+  ],
+  "tool_errors": 1,
+  "tool_error_categories": {
+    "User Rejected": 1
+  },
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 206,
+  "lines_removed": 47,
+  "files_modified": 5,
+  "message_hours": [
+    18,
+    18,
+    18,
+    18,
+    18,
+    19,
+    19,
+    19
+  ],
+  "user_message_timestamps": [
+    "2026-02-03T17:56:06.431Z",
+    "2026-02-03T17:56:06.419Z",
+    "2026-02-03T17:56:06.431Z",
+    "2026-02-03T17:56:57.769Z",
+    "2026-02-03T17:58:31.871Z",
+    "2026-02-03T18:04:51.794Z",
+    "2026-02-03T18:28:57.932Z",
+    "2026-02-03T18:31:56.124Z"
+  ]
+}

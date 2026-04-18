@@ -1,0 +1,22 @@
+[
+  {
+    "content": "Create trending products dashboard controller",
+    "status": "completed",
+    "id": "1"
+  },
+  {
+    "content": "Add static asset serving for HTML page",
+    "status": "completed",
+    "id": "2"
+  },
+  {
+    "content": "Update trending products module to include dashboard route",
+    "status": "completed",
+    "id": "3"
+  },
+  {
+    "content": "Test the dashboard route",
+    "status": "completed",
+    "id": "4"
+  }
+]

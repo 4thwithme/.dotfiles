@@ -1,0 +1,78 @@
+--------------------------------------------|---------|----------|---------|---------|----------------------
+File                                        | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s    
+--------------------------------------------|---------|----------|---------|---------|----------------------
+All files                                   |   99.52 |    94.98 |   99.13 |   99.57 |                      
+ algolia                                    |   97.39 |    94.28 |   85.71 |   97.32 |                      
+  algolia.service.ts                        |   97.39 |    94.28 |   85.71 |   97.32 | 170-173,180          
+ cache                                      |     100 |      100 |     100 |     100 |                      
+  cache.service.ts                          |     100 |      100 |     100 |     100 |                      
+ db/category-correlations                   |     100 |      100 |     100 |     100 |                      
+  category-correlations.service.ts          |     100 |      100 |     100 |     100 |                      
+ db/condensed-features                      |     100 |      100 |     100 |     100 |                      
+  condensed-features.service.ts             |     100 |      100 |     100 |     100 |                      
+ db/default-unit-prices                     |     100 |      100 |     100 |     100 |                      
+  default-unit-prices.service.ts            |     100 |      100 |     100 |     100 |                      
+ db/forecasted-trending-products            |     100 |      100 |     100 |     100 |                      
+  forecasted-trending-products.service.ts   |     100 |      100 |     100 |     100 |                      
+ db/product-annual-sales                    |     100 |      100 |     100 |     100 |                      
+  product-annual-sales.service.ts           |     100 |      100 |     100 |     100 |                      
+ db/promotional-products                    |     100 |      100 |     100 |     100 |                      
+  promotional-products.service.ts           |     100 |      100 |     100 |     100 |                      
+ db/root-categories-correlations            |     100 |      100 |     100 |     100 |                      
+  root-categories-correlations.service.ts   |     100 |      100 |     100 |     100 |                      
+ db/style-alternatives                      |     100 |      100 |     100 |     100 |                      
+  style-alternatives.service.ts             |     100 |      100 |     100 |     100 |                      
+ db/style-colors                            |    90.9 |      100 |   83.33 |   88.88 |                      
+  style-colors.service.ts                   |    90.9 |      100 |   83.33 |   88.88 | 45                   
+ db/styles                                  |     100 |      100 |     100 |     100 |                      
+  styles.service.ts                         |     100 |      100 |     100 |     100 |                      
+ db/styles-hash                             |     100 |      100 |     100 |     100 |                      
+  styles-hash.service.ts                    |     100 |      100 |     100 |     100 |                      
+ db/styles-mv                               |     100 |      100 |     100 |     100 |                      
+  styles-mv.service.ts                      |     100 |      100 |     100 |     100 |                      
+ env-config                                 |     100 |      100 |     100 |     100 |                      
+  env-config.service.ts                     |     100 |      100 |     100 |     100 |                      
+ health                                     |     100 |      100 |     100 |     100 |                      
+  health.controller.ts                      |     100 |      100 |     100 |     100 |                      
+  health.service.ts                         |     100 |      100 |     100 |     100 |                      
+ metrics                                    |     100 |      100 |     100 |     100 |                      
+  metrics.service.ts                        |     100 |      100 |     100 |     100 |                      
+ mms                                        |     100 |    95.74 |     100 |     100 |                      
+  mms.service.ts                            |     100 |    95.74 |     100 |     100 | 172,212              
+ mms-styles-sync                            |   97.93 |    96.77 |     100 |   97.88 |                      
+  mms-styles-sync.service.ts                |   97.93 |    96.77 |     100 |   97.88 | 350-352              
+ product-hydration                          |     100 |    98.61 |     100 |     100 |                      
+  product-hydration.service.ts              |     100 |    98.61 |     100 |     100 | 106                  
+ rest/addons                                |     100 |      100 |     100 |     100 |                      
+  addons.controller.ts                      |     100 |      100 |     100 |     100 |                      
+  addons.service.ts                         |     100 |      100 |     100 |     100 |                      
+ rest/email-recommendations                 |   99.17 |    90.62 |     100 |   99.14 |                      
+  email-recommendations.controller.ts       |     100 |      100 |     100 |     100 |                      
+  email-recommendations.service.ts          |   99.12 |    90.16 |     100 |   99.09 | 253,531              
+ rest/frequently-bought-together            |     100 |       90 |     100 |     100 |                      
+  frequently-bought-together.controller.ts  |     100 |     62.5 |     100 |     100 | 40-41,69-101         
+  frequently-bought-together.service.ts     |     100 |    96.87 |     100 |     100 | 419-420              
+ rest/open-ai                               |     100 |      100 |     100 |     100 |                      
+  open-ai.service.ts                        |     100 |      100 |     100 |     100 |                      
+ rest/process-style                         |   99.17 |     92.3 |   98.24 |   99.55 |                      
+  process-style.service.ts                  |   99.17 |     92.3 |   98.24 |   99.55 | 210                  
+ rest/promos                                |     100 |      100 |     100 |     100 |                      
+  promos.controller.ts                      |     100 |      100 |     100 |     100 |                      
+  promos.service.ts                         |     100 |      100 |     100 |     100 |                      
+ rest/promotional-products                  |     100 |      100 |     100 |     100 |                      
+  promotional-products.controller.ts        |     100 |      100 |     100 |     100 |                      
+  promotional-products.service.ts           |     100 |      100 |     100 |     100 |                      
+ rest/related-products                      |     100 |    91.46 |     100 |     100 |                      
+  related-products.controller.ts            |     100 |       50 |     100 |     100 | 42                   
+  related-products.service.ts               |     100 |     92.5 |     100 |     100 | 60-80,92,210,238,289 
+ rest/robots                                |     100 |      100 |     100 |     100 |                      
+  robots.controller.ts                      |     100 |      100 |     100 |     100 |                      
+ rest/similar-to-favorites                  |     100 |      100 |     100 |     100 |                      
+  similar-to-favorites.controller.ts        |     100 |      100 |     100 |     100 |                      
+  similar-to-favorites.service.ts           |     100 |      100 |     100 |     100 |                      
+ rest/trending-products                     |   99.73 |    97.58 |     100 |     100 |                      
+  render-trending-results.service.ts        |     100 |      100 |     100 |     100 |                      
+  trending-products-dashboard.controller.ts |     100 |      100 |     100 |     100 |                      
+  trending-products.service.ts              |   99.63 |    97.16 |     100 |     100 | 118,463,846          
+--------------------------------------------|---------|----------|---------|---------|----------------------
+Jest: "global" coverage threshold for branches (95%) not met: 94.98%

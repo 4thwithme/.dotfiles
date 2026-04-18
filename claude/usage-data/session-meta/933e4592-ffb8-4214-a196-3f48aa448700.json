@@ -1,0 +1,65 @@
+{
+  "session_id": "933e4592-ffb8-4214-a196-3f48aa448700",
+  "project_path": "/Users/4thwithme/Documents/repo/recommendations-service",
+  "start_time": "2026-02-21T20:11:43.288Z",
+  "duration_minutes": 32,
+  "user_message_count": 10,
+  "assistant_message_count": 12,
+  "tool_counts": {
+    "WebFetch": 1,
+    "Read": 1,
+    "Edit": 2
+  },
+  "languages": {
+    "TypeScript": 3
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 26,
+  "output_tokens": 306,
+  "first_prompt": "check https://huggingface.co/sentence-transformers/all-distilroberta-v1 specification and tell me how long ny text embeding in characters should be",
+  "user_interruptions": 2,
+  "user_response_times": [
+    749.961,
+    750.9,
+    755.014,
+    178.78,
+    208.422,
+    12.371
+  ],
+  "tool_errors": 1,
+  "tool_error_categories": {
+    "User Rejected": 1
+  },
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": true,
+  "lines_added": 2,
+  "lines_removed": 2,
+  "files_modified": 1,
+  "message_hours": [
+    21,
+    21,
+    21,
+    21,
+    21,
+    21,
+    21,
+    21,
+    21,
+    21
+  ],
+  "user_message_timestamps": [
+    "2026-02-21T20:11:43.288Z",
+    "2026-02-21T20:11:43.275Z",
+    "2026-02-21T20:11:43.288Z",
+    "2026-02-21T20:13:12.798Z",
+    "2026-02-21T20:25:52.957Z",
+    "2026-02-21T20:25:53.896Z",
+    "2026-02-21T20:25:58.010Z",
+    "2026-02-21T20:29:19.583Z",
+    "2026-02-21T20:29:49.225Z",
+    "2026-02-21T20:43:26.920Z"
+  ]
+}

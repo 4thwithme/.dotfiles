@@ -1,0 +1,59 @@
+{
+  "session_id": "a0fbb514-daf4-4b81-a613-6349c7cdc23f",
+  "project_path": "/Users/4thwithme/Documents/repo/recommendations-service",
+  "start_time": "2026-02-04T15:06:26.899Z",
+  "duration_minutes": 10,
+  "user_message_count": 7,
+  "assistant_message_count": 85,
+  "tool_counts": {
+    "Read": 6,
+    "Bash": 22,
+    "Edit": 7,
+    "TaskOutput": 1,
+    "TaskStop": 1
+  },
+  "languages": {
+    "JavaScript": 5,
+    "TypeScript": 6,
+    "JSON": 1
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 704,
+  "output_tokens": 4085,
+  "first_prompt": "hey bro, we have issue with hot reload fix  1. i dont see logs when i execute our service 2. seems like app start 2 times based on logs  npm run start:dev  > recommendations-service@0.0.1 start:dev >…",
+  "user_interruptions": 0,
+  "user_response_times": [
+    118.397
+  ],
+  "tool_errors": 3,
+  "tool_error_categories": {
+    "Edit Failed": 1,
+    "Other": 2
+  },
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 28,
+  "lines_removed": 36,
+  "files_modified": 2,
+  "message_hours": [
+    16,
+    16,
+    16,
+    16,
+    16,
+    16,
+    16
+  ],
+  "user_message_timestamps": [
+    "2026-02-04T15:06:26.899Z",
+    "2026-02-04T15:06:26.896Z",
+    "2026-02-04T15:06:26.899Z",
+    "2026-02-04T15:07:25.932Z",
+    "2026-02-04T15:13:55.446Z",
+    "2026-02-04T15:14:00.552Z",
+    "2026-02-04T15:16:02.558Z"
+  ]
+}

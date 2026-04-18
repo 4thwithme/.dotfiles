@@ -1,0 +1,27 @@
+[
+  {
+    "content": "Create DTO and interface for AnnualSalesData following the style model pattern",
+    "status": "completed",
+    "id": "1"
+  },
+  {
+    "content": "Create a model class for product_annual_sales following the style model pattern",
+    "status": "completed",
+    "id": "2"
+  },
+  {
+    "content": "Update forecast command to use the new model instead of direct Knex queries",
+    "status": "completed",
+    "id": "3"
+  },
+  {
+    "content": "Add proper data transformation and validation",
+    "status": "completed",
+    "id": "4"
+  },
+  {
+    "content": "Update CLI module to import the new ProductAnnualSalesModule",
+    "status": "completed",
+    "id": "5"
+  }
+]

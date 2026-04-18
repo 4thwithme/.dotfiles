@@ -1,0 +1,26 @@
+[
+  {
+    "content": "Move chevron button from repository meta line to repository name line",
+    "status": "completed",
+    "priority": "high",
+    "id": "1"
+  },
+  {
+    "content": "Update CSS styles for repositoryName line layout",
+    "status": "completed",
+    "priority": "high",
+    "id": "2"
+  },
+  {
+    "content": "Adjust repository item layout to reduce height",
+    "status": "completed",
+    "priority": "medium",
+    "id": "3"
+  },
+  {
+    "content": "Test the new compact repository layout",
+    "status": "completed",
+    "priority": "medium",
+    "id": "4"
+  }
+]

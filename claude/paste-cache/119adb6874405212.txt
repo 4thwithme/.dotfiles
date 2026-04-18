@@ -1,0 +1,18 @@
+@4thwithme ➜ /workspaces/catalog (RECO-508-remove-breakout) $ bin/rails db:migrate:status | grep position
+Source locally installed gems is ignoring #<Bundler::StubSpecification name=stringio version=3.1.3 platform=ruby> because it is missing extensions
+Source locally installed gems is ignoring #<Bundler::StubSpecification name=psych version=5.2.3 platform=ruby> because it is missing extensions
+Source locally installed gems is ignoring #<Bundler::StubSpecification name=io-console version=0.8.0 platform=ruby> because it is missing extensions
+Source locally installed gems is ignoring #<Bundler::StubSpecification name=debug version=1.10.0 platform=ruby> because it is missing extensions
+Source locally installed gems is ignoring #<Bundler::StubSpecification name=date version=3.4.1 platform=ruby> because it is missing extensions
+warning: parser/current is loading parser/ruby33, which recognizes 3.3.5-compliant syntax, but you are running 3.3.8.
+Please see https://github.com/whitequark/parser#compatibility-with-ruby-mri.
+   up     20260315150000  Add position to faqs
+@4thwithme ➜ /workspaces/catalog (RECO-508-remove-breakout) $ bin/rails runner "puts ActiveRecord::Base.connection.columns('faqs').map(&:name).inspect"
+Source locally installed gems is ignoring #<Bundler::StubSpecification name=stringio version=3.1.3 platform=ruby> because it is missing extensions
+Source locally installed gems is ignoring #<Bundler::StubSpecification name=psych version=5.2.3 platform=ruby> because it is missing extensions
+Source locally installed gems is ignoring #<Bundler::StubSpecification name=io-console version=0.8.0 platform=ruby> because it is missing extensions
+Source locally installed gems is ignoring #<Bundler::StubSpecification name=debug version=1.10.0 platform=ruby> because it is missing extensions
+Source locally installed gems is ignoring #<Bundler::StubSpecification name=date version=3.4.1 platform=ruby> because it is missing extensions
+warning: parser/current is loading parser/ruby33, which recognizes 3.3.5-compliant syntax, but you are running 3.3.8.
+Please see https://github.com/whitequark/parser#compatibility-with-ruby-mri.
+["id", "question", "answer", "category_id", "created_at", "updated_at", "position"]

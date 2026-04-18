@@ -1,0 +1,36 @@
+{
+  "session_id": "83f5e126-12c8-4025-afea-390ee890bc08",
+  "project_path": "/Users/4thwithme/Documents/repo/recommendations-service",
+  "start_time": "2026-02-06T13:36:33.137Z",
+  "duration_minutes": 88,
+  "user_message_count": 3,
+  "assistant_message_count": 2,
+  "tool_counts": {},
+  "languages": {},
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 20,
+  "output_tokens": 12,
+  "first_prompt": "template for jira task  🎯 Business Context / Goal  What is the user problem or opportunity? Why is this being built?  🔧 Technical Summary  What needs to be built/changed from a technical standpoint?…",
+  "user_interruptions": 1,
+  "user_response_times": [],
+  "tool_errors": 0,
+  "tool_error_categories": {},
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 0,
+  "lines_removed": 0,
+  "files_modified": 0,
+  "message_hours": [
+    14,
+    16,
+    16
+  ],
+  "user_message_timestamps": [
+    "2026-02-06T13:36:33.137Z",
+    "2026-02-06T15:04:10.938Z",
+    "2026-02-06T15:04:16.070Z"
+  ]
+}

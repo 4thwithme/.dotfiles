@@ -1,0 +1,20 @@
+[
+  {
+    "content": "Investigate ETag/caching headers conflict",
+    "status": "completed",
+    "priority": "high",
+    "id": "1"
+  },
+  {
+    "content": "Fix headers already sent error for cached requests",
+    "status": "completed",
+    "priority": "high",
+    "id": "2"
+  },
+  {
+    "content": "Test CSRF middleware reactivation",
+    "status": "pending",
+    "priority": "medium",
+    "id": "3"
+  }
+]

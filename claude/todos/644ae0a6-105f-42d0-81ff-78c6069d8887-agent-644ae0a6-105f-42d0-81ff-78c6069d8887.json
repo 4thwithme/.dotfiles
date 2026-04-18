@@ -1,0 +1,38 @@
+[
+  {
+    "content": "Fix TypeScript compilation errors in company settings implementation",
+    "status": "completed",
+    "priority": "high",
+    "id": "1"
+  },
+  {
+    "content": "Fix unused imports in company-settings.model.ts",
+    "status": "completed",
+    "priority": "medium",
+    "id": "2"
+  },
+  {
+    "content": "Fix MongoDB insertOne type compatibility",
+    "status": "completed",
+    "priority": "high",
+    "id": "3"
+  },
+  {
+    "content": "Fix crypto API usage (createCipher -> createCipheriv)",
+    "status": "completed",
+    "priority": "high",
+    "id": "4"
+  },
+  {
+    "content": "Fix optional property type issues with expiresAt",
+    "status": "completed",
+    "priority": "medium",
+    "id": "5"
+  },
+  {
+    "content": "Test migration and create documentation",
+    "status": "completed",
+    "priority": "medium",
+    "id": "6"
+  }
+]

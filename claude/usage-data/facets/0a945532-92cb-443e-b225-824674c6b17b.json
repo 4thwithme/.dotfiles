@@ -1,0 +1,20 @@
+{
+  "underlying_goal": "User had two quick questions: whether Claude Code subscription enables AI autosuggestions in VS Code, and how to properly add a boost parameter to an OpenSearch/Elasticsearch match query",
+  "goal_categories": {
+    "quick_question": 1,
+    "code_syntax_help": 1
+  },
+  "outcome": "partially_achieved",
+  "user_satisfaction_counts": {
+    "user_rejected_action": 1
+  },
+  "claude_helpfulness": "slightly_helpful",
+  "session_type": "quick_question",
+  "friction_counts": {
+    "user_rejected_action": 1
+  },
+  "friction_detail": "User interrupted Claude's edit attempt on the boost syntax fix, suggesting Claude was about to make an unwanted change.",
+  "primary_success": "good_explanations",
+  "brief_summary": "User asked about AI autocomplete in VS Code and how to add boost to an OpenSearch match query; got answers but interrupted the code edit before completion.",
+  "session_id": "0a945532-92cb-443e-b225-824674c6b17b"
+}

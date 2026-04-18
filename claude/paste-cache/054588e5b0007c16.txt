@@ -1,0 +1,62 @@
+ FAIL  test/related-products.e2e-spec.ts
+  ● RelatedProducts API Integration Tests › branch coverage for service and controller edge cases › should cover limit ?? alternatives.length when limit is undefined in fallback path
+
+    expect(received).toHaveProperty(path, value)
+
+    Expected path: "mms_fallback"
+    Received path: []
+
+    Expected value: true
+    Received value: {"color_id": null, "product_id": "12345", "related_products": [{"brand": ["Brand A"], "broad_category_names": [], "color": 885600, "complement_badge": null, "decoration_method": "", "default_quote_qty": 25, "default_unit_prices": [], "image_src": "https://example.com/1.jpg", "link": "https://example.com/1.jpg", "min_qty": 72, "name": "Product 1", "primary_category_id": 0, "primary_category_name": "", "rating_count": "(33 ratings)", "rating_score": "4.4", "rush_turn_time": 0, "sizes": ["One Size"], "sizing": "One Size", "style_id": 885600, "style_type": "", "sub_category_names": [], "turn_time": 0}, {"brand": ["Brand B"], "broad_category_names": [], "color": 885601, "complement_badge": null, "decoration_method": "", "default_quote_qty": 25, "default_unit_prices": [], "image_src": "https://example.com/2.jpg", "link": "https://example.com/2.jpg", "min_qty": 72, "name": "Product 2", "primary_category_id": 0, "primary_category_name": "", "rating_count": "(33 ratings)", "rating_score": "4.4", "rush_turn_time": 0, "sizing": "One Size", "style_id": 885601, "style_type": "", "sub_category_names": [], "turn_time": 0}, {"brand": ["Brand C"], "broad_category_names": [], "color": 885602, "complement_badge": null, "decoration_method": "", "default_quote_qty": 25, "default_unit_prices": [], "image_src": "https://example.com/3.jpg", "link": "https://example.com/3.jpg", "min_qty": 72, "name": "12 oz. Santos Ceramic Mug", "primary_category_id": 0, "primary_category_name": "", "rating_count": "(33 ratings)", "rating_score": "4.4", "rush_turn_time": 0, "sizing": "One Size", "style_id": 885602, "style_type": "", "sub_category_names": [], "turn_time": 0}, {"brand": ["Brand D"], "broad_category_names": [], "color": 885603, "complement_badge": null, "decoration_method": "", "default_quote_qty": 25, "default_unit_prices": [], "image_src": "https://example.com/4.jpg", "link": "https://example.com/4.jpg", "min_qty": 72, "name": "Product 3", "primary_category_id": 0, "primary_category_name": "", "rating_count": "(33 ratings)", "rating_score": "4.4", "rush_turn_time": 0, "sizing": "One Size", "style_id": 885603, "style_type": "", "sub_category_names": [], "turn_time": 0}]}
+
+      1824 |
+      1825 |             expect(result).toHaveProperty('product_id', '12345');
+    > 1826 |             expect(result).toHaveProperty('mms_fallback', true);
+           |                            ^
+      1827 |         });
+      1828 |
+      1829 |         it('should cover productLimit = limit ?? 30 when limit is undefined in getBrandProducts', async () => {
+
+      at Object.<anonymous> (test/related-products.e2e-spec.ts:1826:19)
+
+  ● RelatedProducts API Integration Tests › branch coverage for service and controller edge cases › should cover productLimit = limit ?? 30 when limit is undefined in getBrandProducts
+
+    expect(received).toHaveProperty(path, value)
+
+    Matcher error: received value must not be null nor undefined
+
+    Received has value: undefined
+
+      1837 |             } as unknown as BrandProductsQueryDto);
+      1838 |
+    > 1839 |             expect(result).toHaveProperty('brand', 'TestBrand');
+           |                            ^
+      1840 |             expect(result).toHaveProperty('brand_products');
+      1841 |         });
+      1842 |
+
+      at Object.<anonymous> (test/related-products.e2e-spec.ts:1839:19)
+
+  ● RelatedProducts API Integration Tests › branch coverage for service and controller edge cases › should cover closestColor.image_url ?? product.image_src when image_url is null in getBrandProducts
+
+    expect(received).toHaveProperty(path, value)
+
+    Expected path: "brand"
+    Received path: []
+
+    Expected value: "TestBrand"
+    Received value: {}
+
+      1891 |             const body = response.body as BrandProductsResponseDto;
+      1892 |
+    > 1893 |             expect(body).toHaveProperty('brand', 'TestBrand');
+           |                          ^
+      1894 |             expect(body).toHaveProperty('brand_products');
+      1895 |             expect(body.brand_products[0]?.image_src).toBe(mockBrandProducts[0]?.image_src);
+      1896 |         });
+
+      at Object.<anonymous> (test/related-products.e2e-spec.ts:1893:17)
+
+
+Test Suites: 1 failed, 45 passed, 46 total
+Tests:       3 failed, 1197 passed, 1200 total

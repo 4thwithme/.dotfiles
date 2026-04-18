@@ -1,0 +1,20 @@
+[
+  {
+    "content": "Debug why fieldErrors is empty object instead of containing organization errors",
+    "status": "completed",
+    "priority": "high",
+    "id": "1"
+  },
+  {
+    "content": "Fix organization error mapping in dashboard service",
+    "status": "completed",
+    "priority": "high",
+    "id": "2"
+  },
+  {
+    "content": "Test organization validation error display",
+    "status": "pending",
+    "priority": "medium",
+    "id": "3"
+  }
+]

@@ -1,0 +1,24 @@
+
+ERROR in ./src/modules/rest/process-style/process-style.service.ts:544:26
+TS2345: Argument of type '(string | null)[]' is not assignable to parameter of type '{ array: unknown[]; }'.
+  Property 'array' is missing in type '(string | null)[]' but required in type '{ array: unknown[]; }'.
+    542 |                 decoration_method: style.decoration_method,
+    543 |                 manufacturer: style.manufacturer,
+  > 544 |                 brand: this.getBrand([style.brand]),
+        |                                      ^^^^^^^^^^^^^
+    545 |                 condensed_features: condensedFeatures,
+    546 |                 sizes: (style.style_sizes ?? []).map((size) => size.name),
+    547 |             };
+
+ERROR in ./src/modules/rest/process-style/process-style.service.ts:550:58
+TS2322: Type '{ name: string; product_type: string; style_type: string; primary_category_name: string | null; sub_category_names: string[]; broad_category_names: string[]; features: string; general_comments: string; ... 4 more ...; sizes: string[]; }' is not assignable to type 'ProductEmbeddingInput'.
+  Types of property 'brand' are incompatible.
+    Type 'unknown[]' is not assignable to type 'string[]'.
+      Type 'unknown' is not assignable to type 'string'.
+    548 |
+    549 |             const result = await withRetry({
+  > 550 |                 fn: () => this.OpenAIService.generateEmbeddingText({ product }),
+        |                                                                      ^^^^^^^
+    551 |                 options: { retryCount: 2 },
+    552 |             });
+    553 |

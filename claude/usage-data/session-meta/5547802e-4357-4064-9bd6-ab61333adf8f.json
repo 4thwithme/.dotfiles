@@ -1,0 +1,66 @@
+{
+  "session_id": "5547802e-4357-4064-9bd6-ab61333adf8f",
+  "project_path": "/Users/4thwithme/Documents/repo/recommendations-service",
+  "start_time": "2026-02-13T20:45:00.527Z",
+  "duration_minutes": 110,
+  "user_message_count": 9,
+  "assistant_message_count": 84,
+  "tool_counts": {
+    "Read": 25,
+    "AskUserQuestion": 1,
+    "Grep": 6,
+    "Bash": 1,
+    "Edit": 19,
+    "Task": 2
+  },
+  "languages": {
+    "TypeScript": 33,
+    "YAML": 2
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 138,
+  "output_tokens": 4793,
+  "first_prompt": "hey bro our product changes every day ...and we would like to have cron job that runs 1ns a week that recreates and updates model, but we need to somehow after this script run pass new model id to the…",
+  "user_interruptions": 2,
+  "user_response_times": [
+    11.338,
+    27.111,
+    118.9,
+    791.276
+  ],
+  "tool_errors": 3,
+  "tool_error_categories": {
+    "User Rejected": 2,
+    "Other": 1
+  },
+  "uses_task_agent": true,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 124,
+  "lines_removed": 14,
+  "files_modified": 14,
+  "message_hours": [
+    21,
+    21,
+    21,
+    21,
+    21,
+    21,
+    21,
+    23,
+    23
+  ],
+  "user_message_timestamps": [
+    "2026-02-13T20:45:00.527Z",
+    "2026-02-13T20:45:00.522Z",
+    "2026-02-13T20:45:00.527Z",
+    "2026-02-13T20:52:47.354Z",
+    "2026-02-13T20:53:33.819Z",
+    "2026-02-13T20:53:49.592Z",
+    "2026-02-13T20:56:15.222Z",
+    "2026-02-13T22:19:10.798Z",
+    "2026-02-13T22:34:52.653Z"
+  ]
+}

@@ -1,0 +1,20 @@
+[
+  {
+    "content": "Add MongoDB service to docker-compose.yml",
+    "status": "completed",
+    "priority": "high",
+    "id": "1"
+  },
+  {
+    "content": "Add MongoDB volume for data persistence",
+    "status": "completed",
+    "priority": "high",
+    "id": "2"
+  },
+  {
+    "content": "Configure MongoDB environment variables",
+    "status": "completed",
+    "priority": "medium",
+    "id": "3"
+  }
+]

@@ -1,0 +1,65 @@
+{
+  "session_id": "b80d9025-da4f-4a6b-a09e-d1a1cfb46d83",
+  "project_path": "/Users/4thwithme/Documents/repo/recommendations-service",
+  "start_time": "2026-03-03T13:07:18.504Z",
+  "duration_minutes": 13,
+  "user_message_count": 6,
+  "assistant_message_count": 61,
+  "tool_counts": {
+    "Skill": 1,
+    "AskUserQuestion": 1,
+    "Glob": 2,
+    "Bash": 11,
+    "Read": 6,
+    "Write": 2,
+    "mcp__plugin_atlassian_atlassian__getJiraIssue": 2,
+    "mcp__plugin_atlassian_atlassian__getAccessibleAtlassianResources": 1,
+    "Edit": 4
+  },
+  "languages": {
+    "Markdown": 5,
+    "TypeScript": 6,
+    "JavaScript": 1
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 109,
+  "output_tokens": 11460,
+  "first_prompt": "1. check ticket https://customink.atlassian.net/browse/RECO-618 2. then do create new branch from current git branch 3. checkout to the new branch 4. run eslint checks in described file 5. fix them (w…",
+  "user_interruptions": 2,
+  "user_response_times": [
+    14.022,
+    27.39,
+    121.994,
+    197.12
+  ],
+  "tool_errors": 5,
+  "tool_error_categories": {
+    "Command Failed": 2,
+    "User Rejected": 2,
+    "Other": 1
+  },
+  "uses_task_agent": false,
+  "uses_mcp": true,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 332,
+  "lines_removed": 12,
+  "files_modified": 3,
+  "message_hours": [
+    14,
+    14,
+    14,
+    14,
+    14,
+    14
+  ],
+  "user_message_timestamps": [
+    "2026-03-03T13:07:18.504Z",
+    "2026-03-03T13:07:22.239Z",
+    "2026-03-03T13:12:20.180Z",
+    "2026-03-03T13:12:33.548Z",
+    "2026-03-03T13:16:53.192Z",
+    "2026-03-03T13:18:08.318Z"
+  ]
+}

@@ -1,0 +1,17 @@
+[
+  {
+    "content": "Expand ForecastResult interface to include all decomposition data",
+    "status": "completed",
+    "id": "1"
+  },
+  {
+    "content": "Update CLI command to pass complete data to render method",
+    "status": "completed",
+    "id": "2"
+  },
+  {
+    "content": "Create method to generate individual HTML files for each product",
+    "status": "completed",
+    "id": "3"
+  }
+]

@@ -1,0 +1,27 @@
+[
+  {
+    "content": "Examine existing dashboard controller and service",
+    "status": "completed",
+    "id": "1"
+  },
+  {
+    "content": "Check company API interfaces on frontend",
+    "status": "completed",
+    "id": "2"
+  },
+  {
+    "content": "Implement GET /company endpoint in dashboard controller",
+    "status": "completed",
+    "id": "3"
+  },
+  {
+    "content": "Implement company data service method with token masking",
+    "status": "completed",
+    "id": "4"
+  },
+  {
+    "content": "Test the endpoint",
+    "status": "completed",
+    "id": "5"
+  }
+]

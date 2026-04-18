@@ -1,0 +1,44 @@
+[
+  {
+    "content": "Create actions collection schema and migration",
+    "status": "completed",
+    "priority": "high",
+    "id": "1"
+  },
+  {
+    "content": "Create Action model/interface for verification tokens",
+    "status": "completed",
+    "priority": "high",
+    "id": "2"
+  },
+  {
+    "content": "Create Actions service for managing verification tokens",
+    "status": "completed",
+    "priority": "high",
+    "id": "3"
+  },
+  {
+    "content": "Integrate EmailModule into AuthModule",
+    "status": "completed",
+    "priority": "medium",
+    "id": "4"
+  },
+  {
+    "content": "Modify registration to send verification email with token",
+    "status": "completed",
+    "priority": "medium",
+    "id": "5"
+  },
+  {
+    "content": "Create email verification endpoint",
+    "status": "completed",
+    "priority": "medium",
+    "id": "6"
+  },
+  {
+    "content": "Create set password page endpoint/logic",
+    "status": "completed",
+    "priority": "low",
+    "id": "7"
+  }
+]

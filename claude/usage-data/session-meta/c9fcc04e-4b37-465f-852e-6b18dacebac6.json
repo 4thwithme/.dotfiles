@@ -1,0 +1,56 @@
+{
+  "session_id": "c9fcc04e-4b37-465f-852e-6b18dacebac6",
+  "project_path": "/Users/4thwithme/Documents/repo/recommendations-service",
+  "start_time": "2026-02-05T19:44:00.215Z",
+  "duration_minutes": 34,
+  "user_message_count": 7,
+  "assistant_message_count": 10,
+  "tool_counts": {
+    "Edit": 2,
+    "Write": 2
+  },
+  "languages": {
+    "YAML": 2,
+    "JSON": 2
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 90,
+  "output_tokens": 1048,
+  "first_prompt": "@.github/workflows/claude-code-review.yml  claude code should review our PRs, not only as code, alos need to cvheck code that task correspond to the JIRAtask requirements..ened to connect JIRA and FIg…",
+  "user_interruptions": 2,
+  "user_response_times": [
+    228.976,
+    314.235,
+    1253.587
+  ],
+  "tool_errors": 2,
+  "tool_error_categories": {
+    "User Rejected": 2
+  },
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 101,
+  "lines_removed": 10,
+  "files_modified": 2,
+  "message_hours": [
+    20,
+    20,
+    20,
+    20,
+    20,
+    20,
+    21
+  ],
+  "user_message_timestamps": [
+    "2026-02-05T19:44:00.215Z",
+    "2026-02-05T19:44:00.213Z",
+    "2026-02-05T19:44:00.215Z",
+    "2026-02-05T19:47:05.307Z",
+    "2026-02-05T19:55:01.180Z",
+    "2026-02-05T19:56:26.439Z",
+    "2026-02-05T20:17:57.761Z"
+  ]
+}

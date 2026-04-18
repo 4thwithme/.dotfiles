@@ -1,0 +1,32 @@
+[
+  {
+    "content": "Analyze MVP backup GitHub logic and identify key features",
+    "status": "completed",
+    "priority": "high",
+    "id": "analyze_mvp"
+  },
+  {
+    "content": "Create src/modules/github/github.service.ts with similar functionality",
+    "status": "completed",
+    "priority": "high",
+    "id": "create_github_service"
+  },
+  {
+    "content": "Fix ESLint and TypeScript issues in github.service.ts",
+    "status": "in_progress",
+    "priority": "high",
+    "id": "fix_eslint_issues"
+  },
+  {
+    "content": "Create src/modules/github/github.module.ts",
+    "status": "completed",
+    "priority": "medium",
+    "id": "create_github_module"
+  },
+  {
+    "content": "Create DTOs for GitHub data structures",
+    "status": "pending",
+    "priority": "medium",
+    "id": "create_github_dto"
+  }
+]

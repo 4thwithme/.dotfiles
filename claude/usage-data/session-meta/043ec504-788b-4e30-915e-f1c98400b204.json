@@ -1,0 +1,42 @@
+{
+  "session_id": "043ec504-788b-4e30-915e-f1c98400b204",
+  "project_path": "/Users/4thwithme/Documents/repo/rails-frontend",
+  "start_time": "2026-02-16T11:13:56.944Z",
+  "duration_minutes": 194,
+  "user_message_count": 2,
+  "assistant_message_count": 8,
+  "tool_counts": {
+    "Glob": 2,
+    "Read": 2,
+    "Edit": 1
+  },
+  "languages": {
+    "JavaScript": 3
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 14,
+  "output_tokens": 1038,
+  "first_prompt": "hey i see failed tests on master, they fails form time to time     ❯ app/frontend/__tests__/components/OrderProblems/PhotoSubmissionGuidelines.test.jsx > PhotoSubmissionGuidelines > Dialog Opening > o…",
+  "user_interruptions": 1,
+  "user_response_times": [],
+  "tool_errors": 1,
+  "tool_error_categories": {
+    "User Rejected": 1
+  },
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 9,
+  "lines_removed": 4,
+  "files_modified": 1,
+  "message_hours": [
+    12,
+    15
+  ],
+  "user_message_timestamps": [
+    "2026-02-16T11:13:56.944Z",
+    "2026-02-16T14:27:32.719Z"
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "session_id": "2c8b21f2-513f-463f-9436-28f6cba1d7e4",
+  "project_path": "/Users/4thwithme/Documents/repo/recommendations-service",
+  "start_time": "2026-02-11T15:37:22.839Z",
+  "duration_minutes": 1198,
+  "user_message_count": 10,
+  "assistant_message_count": 36,
+  "tool_counts": {
+    "EnterPlanMode": 1,
+    "Task": 4,
+    "Read": 4,
+    "Write": 2,
+    "ExitPlanMode": 1
+  },
+  "languages": {
+    "TypeScript": 3,
+    "Markdown": 3
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 330,
+  "output_tokens": 2073,
+  "first_prompt": "hello, I need to talk about new feature  We want to add `Ask AI` button, where will open input and customer can explain his needs, or ocassion or product he needs, using natural language and sentences…",
+  "user_interruptions": 1,
+  "user_response_times": [
+    173.05,
+    290.581,
+    64.733,
+    3190.712,
+    3243.005
+  ],
+  "tool_errors": 1,
+  "tool_error_categories": {
+    "User Rejected": 1
+  },
+  "uses_task_agent": true,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 1786,
+  "lines_removed": 0,
+  "files_modified": 2,
+  "message_hours": [
+    16,
+    16,
+    16,
+    16,
+    16,
+    11,
+    11,
+    11,
+    12,
+    12
+  ],
+  "user_message_timestamps": [
+    "2026-02-11T15:37:22.839Z",
+    "2026-02-11T15:37:22.837Z",
+    "2026-02-11T15:37:22.839Z",
+    "2026-02-11T15:39:40.115Z",
+    "2026-02-11T15:42:58.061Z",
+    "2026-02-12T10:18:13.270Z",
+    "2026-02-12T10:23:32.384Z",
+    "2026-02-12T10:24:41.441Z",
+    "2026-02-12T11:30:11.407Z",
+    "2026-02-12T11:31:03.700Z"
+  ]
+}

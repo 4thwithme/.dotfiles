@@ -1,0 +1,33 @@
+one (Phase 1 — complete):
+  - Auth (GitHub + Google OAuth, JWT, Redis sessions)
+  - Multi-tenant companies, members, roles
+  - Invitations, CSRF, health checks, rate limiting
+
+  ---
+  In progress (Phase 2 — Data Ingestion):
+
+  Based on recent commits you're mid-GitHub integration:
+  - GithubModule registered with AppModule + BullMQ wired
+  - GithubInstallService + GithubWebhookService created with controllers
+  - DB models for installations + repos added
+
+  Still missing from Phase 2:
+  GitHub:
+  - [ ] Webhook ingestion — actual push/PR/review event handling
+  - [ ] Polling fallback for historical data
+  - [ ] Store: commits, PRs, reviews, comments, diffs
+  - [ ] Contributor identity mapping (GitHub user → platform user)
+
+  Jira (all of it):
+  - [ ] OAuth 2.0 / API token setup
+  - [ ] Webhook ingestion
+  - [ ] Historical backfill
+  - [ ] Store: issues, sprints, worklogs, transitions, story points
+  - [ ] User mapping
+
+  Data Pipeline:
+  - [ ] Idempotent event processing
+  - [ ] Raw event storage (append-only log)
+  - [ ] Normalized data layer
+
+  Logical next step: finish GitHub webhook event handling — store actual commits/PRs/reviews into DB when events come in.

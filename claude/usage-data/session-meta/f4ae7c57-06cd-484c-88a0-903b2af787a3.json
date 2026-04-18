@@ -1,0 +1,59 @@
+{
+  "session_id": "f4ae7c57-06cd-484c-88a0-903b2af787a3",
+  "project_path": "/Users/4thwithme/Documents/repo/recommendations-service",
+  "start_time": "2026-02-14T09:00:26.094Z",
+  "duration_minutes": 12,
+  "user_message_count": 6,
+  "assistant_message_count": 26,
+  "tool_counts": {
+    "Read": 4,
+    "Glob": 3,
+    "Grep": 1,
+    "EnterPlanMode": 1,
+    "Task": 3,
+    "Write": 1,
+    "ExitPlanMode": 1
+  },
+  "languages": {
+    "YAML": 1,
+    "TypeScript": 3,
+    "Markdown": 1
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 222,
+  "output_tokens": 1809,
+  "first_prompt": "check @.env @.env.test @.devcontainer/local/docker-compose.yml @.customink/ktool.yaml seems like we need to have test index in opensearch  with prefix \"e2e_test_\" to run tests locally and test logic,…",
+  "user_interruptions": 1,
+  "user_response_times": [
+    5.497,
+    50.791
+  ],
+  "tool_errors": 1,
+  "tool_error_categories": {
+    "User Rejected": 1
+  },
+  "uses_task_agent": true,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 593,
+  "lines_removed": 0,
+  "files_modified": 1,
+  "message_hours": [
+    10,
+    10,
+    10,
+    10,
+    10,
+    10
+  ],
+  "user_message_timestamps": [
+    "2026-02-14T09:00:26.094Z",
+    "2026-02-14T09:00:26.088Z",
+    "2026-02-14T09:00:26.094Z",
+    "2026-02-14T09:02:53.868Z",
+    "2026-02-14T09:03:24.689Z",
+    "2026-02-14T09:04:09.983Z"
+  ]
+}

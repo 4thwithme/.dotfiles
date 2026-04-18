@@ -1,0 +1,36 @@
+{
+  "session_id": "e9296bdf-081e-4b6e-b57d-8c8b9bc186ef",
+  "project_path": "/Users/4thwithme/Documents/repo/recommendations-service",
+  "start_time": "2026-02-12T18:30:44.761Z",
+  "duration_minutes": 1,
+  "user_message_count": 2,
+  "assistant_message_count": 4,
+  "tool_counts": {},
+  "languages": {},
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 40,
+  "output_tokens": 16,
+  "first_prompt": "SELECT * FROM \"condenced_features\" WHERE 'condenced_features' LIKE '%[]%'; how to write it right",
+  "user_interruptions": 0,
+  "user_response_times": [
+    40.345
+  ],
+  "tool_errors": 0,
+  "tool_error_categories": {},
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 0,
+  "lines_removed": 0,
+  "files_modified": 0,
+  "message_hours": [
+    19,
+    19
+  ],
+  "user_message_timestamps": [
+    "2026-02-12T18:30:44.761Z",
+    "2026-02-12T18:31:36.662Z"
+  ]
+}

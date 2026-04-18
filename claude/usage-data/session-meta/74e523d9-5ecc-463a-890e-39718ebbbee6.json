@@ -1,0 +1,38 @@
+{
+  "session_id": "74e523d9-5ecc-463a-890e-39718ebbbee6",
+  "project_path": "/Users/4thwithme/Documents/repo/recommendations-service",
+  "start_time": "2026-02-24T14:51:31.465Z",
+  "duration_minutes": 3,
+  "user_message_count": 1,
+  "assistant_message_count": 9,
+  "tool_counts": {
+    "Read": 1,
+    "Edit": 1,
+    "Bash": 1
+  },
+  "languages": {
+    "JSON": 2
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 15,
+  "output_tokens": 3929,
+  "first_prompt": "after npm audit we got   npm audit # npm audit report  ajv  <6.14.0 || >=7.0.0-alpha.0 <8.18.0 Severity: moderate ajv has ReDoS when using `$data` option - https://github.com/advisories/GHSA-2g4f-4pwh…",
+  "user_interruptions": 0,
+  "user_response_times": [],
+  "tool_errors": 0,
+  "tool_error_categories": {},
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 3,
+  "lines_removed": 1,
+  "files_modified": 1,
+  "message_hours": [
+    15
+  ],
+  "user_message_timestamps": [
+    "2026-02-24T14:51:31.465Z"
+  ]
+}

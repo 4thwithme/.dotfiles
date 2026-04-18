@@ -1,0 +1,32 @@
+{
+  "session_id": "853949ba-e9e8-4acb-9286-d36b1f06b2bc",
+  "project_path": "/Users/4thwithme/Documents/repo/recommendations-service",
+  "start_time": "2026-02-24T18:29:42.116Z",
+  "duration_minutes": 0,
+  "user_message_count": 1,
+  "assistant_message_count": 2,
+  "tool_counts": {},
+  "languages": {},
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 6,
+  "output_tokens": 16,
+  "first_prompt": "in github action on pull request created claude code review we got error Run anthropics/claude-code-action@35a9e0292d36f1186f5d842b14eb575074e8b450   with:     anthropic_api_key: ***     settings: {…",
+  "user_interruptions": 0,
+  "user_response_times": [],
+  "tool_errors": 0,
+  "tool_error_categories": {},
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 0,
+  "lines_removed": 0,
+  "files_modified": 0,
+  "message_hours": [
+    19
+  ],
+  "user_message_timestamps": [
+    "2026-02-24T18:29:42.116Z"
+  ]
+}

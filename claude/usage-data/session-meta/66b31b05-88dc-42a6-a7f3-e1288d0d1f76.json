@@ -1,0 +1,54 @@
+{
+  "session_id": "66b31b05-88dc-42a6-a7f3-e1288d0d1f76",
+  "project_path": "/Users/4thwithme/Documents/repo/recommendations-service",
+  "start_time": "2026-02-06T23:24:22.794Z",
+  "duration_minutes": 64,
+  "user_message_count": 6,
+  "assistant_message_count": 133,
+  "tool_counts": {
+    "Skill": 1,
+    "Read": 16,
+    "Edit": 29,
+    "Bash": 17,
+    "Glob": 1
+  },
+  "languages": {
+    "TypeScript": 45
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 618,
+  "output_tokens": 10962,
+  "first_prompt": "using /test-skill fix test Jest: \"global\" coverage threshold for statements (95%) not met: 94.7% Jest: \"global\" coverage threshold for branches (95%) not met: 90.27% Jest: \"global\" coverage threshold…",
+  "user_interruptions": 0,
+  "user_response_times": [
+    1760.162
+  ],
+  "tool_errors": 1,
+  "tool_error_categories": {
+    "File Changed": 1
+  },
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 1777,
+  "lines_removed": 135,
+  "files_modified": 1,
+  "message_hours": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    1
+  ],
+  "user_message_timestamps": [
+    "2026-02-06T23:24:22.794Z",
+    "2026-02-06T23:24:22.791Z",
+    "2026-02-06T23:24:22.794Z",
+    "2026-02-06T23:30:48.780Z",
+    "2026-02-06T23:30:56.658Z",
+    "2026-02-07T00:11:36.451Z"
+  ]
+}

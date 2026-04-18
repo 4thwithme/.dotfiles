@@ -1,0 +1,22 @@
+[
+  {
+    "content": "Remove hover effect and shadow from widget background",
+    "status": "completed",
+    "id": "1"
+  },
+  {
+    "content": "Update buttons to match login page style (@include submit-button)",
+    "status": "completed",
+    "id": "2"
+  },
+  {
+    "content": "Center widget title and make sync button bigger",
+    "status": "completed",
+    "id": "3"
+  },
+  {
+    "content": "Standardize all widget states with consistent structure",
+    "status": "completed",
+    "id": "4"
+  }
+]

@@ -1,0 +1,14 @@
+[
+  {
+    "content": "Investigate header login/logout button update issue",
+    "status": "completed",
+    "priority": "high",
+    "id": "1"
+  },
+  {
+    "content": "Fix authentication state management in header",
+    "status": "completed",
+    "priority": "high",
+    "id": "2"
+  }
+]

@@ -1,0 +1,17 @@
+[
+  {
+    "content": "Fix is_latest boolean conversion issue in model",
+    "status": "completed",
+    "id": "1"
+  },
+  {
+    "content": "Ensure date fields remain as strings",
+    "status": "completed",
+    "id": "2"
+  },
+  {
+    "content": "Update DTO transformation for proper type handling",
+    "status": "completed",
+    "id": "3"
+  }
+]

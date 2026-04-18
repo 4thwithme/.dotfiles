@@ -1,0 +1,37 @@
+[
+  {
+    "content": "Analyze uncovered lines in trending-products.service.ts",
+    "status": "completed",
+    "id": "1"
+  },
+  {
+    "content": "Add tests to cover line 164 (moderate growth forecast condition)",
+    "status": "completed",
+    "id": "2"
+  },
+  {
+    "content": "Add tests to cover lines 406-411 (forecast component nullish coalescing)",
+    "status": "completed",
+    "id": "3"
+  },
+  {
+    "content": "Add tests to cover line 483 (seasonal component extension error handling)",
+    "status": "completed",
+    "id": "4"
+  },
+  {
+    "content": "Add tests to cover line 497 (trend extension edge case)",
+    "status": "completed",
+    "id": "5"
+  },
+  {
+    "content": "Add tests to cover line 553 (getDayOfYear method)",
+    "status": "completed",
+    "id": "6"
+  },
+  {
+    "content": "Run tests to verify 95% coverage is achieved",
+    "status": "completed",
+    "id": "7"
+  }
+]

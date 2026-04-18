@@ -1,0 +1,50 @@
+{
+  "session_id": "86e41899-eb2e-40c7-9d1b-ce4d2051644b",
+  "project_path": "/Users/4thwithme/Documents/repo/recommendations-service",
+  "start_time": "2026-02-14T23:21:13.461Z",
+  "duration_minutes": 16,
+  "user_message_count": 7,
+  "assistant_message_count": 6,
+  "tool_counts": {
+    "Write": 1
+  },
+  "languages": {
+    "Markdown": 1
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 56,
+  "output_tokens": 30,
+  "first_prompt": "we have @docs/features/neural-search.md @src/modules/rest/neural-search/ that uses opensearch as mix semantic and neural search   our goal is to have feature where customers can enter their GPT like s…",
+  "user_interruptions": 1,
+  "user_response_times": [
+    299.823
+  ],
+  "tool_errors": 0,
+  "tool_error_categories": {},
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 825,
+  "lines_removed": 0,
+  "files_modified": 1,
+  "message_hours": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "user_message_timestamps": [
+    "2026-02-14T23:21:13.461Z",
+    "2026-02-14T23:21:13.452Z",
+    "2026-02-14T23:21:13.461Z",
+    "2026-02-14T23:24:02.181Z",
+    "2026-02-14T23:24:10.353Z",
+    "2026-02-14T23:27:19.130Z",
+    "2026-02-14T23:33:08.836Z"
+  ]
+}

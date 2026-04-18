@@ -1,0 +1,44 @@
+{
+  "session_id": "63792286-9492-4dd9-b2ab-53ca0cdffe1b",
+  "project_path": "/Users/4thwithme/Documents/repo/recommendations-service",
+  "start_time": "2026-02-13T20:33:24.639Z",
+  "duration_minutes": 8,
+  "user_message_count": 3,
+  "assistant_message_count": 15,
+  "tool_counts": {
+    "Read": 3,
+    "Edit": 2
+  },
+  "languages": {
+    "TypeScript": 5
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 37,
+  "output_tokens": 1130,
+  "first_prompt": "i have vector search query                  query: {                     hybrid: {                         queries: [                             {                                 bool: {…",
+  "user_interruptions": 0,
+  "user_response_times": [
+    108.658,
+    334.304
+  ],
+  "tool_errors": 0,
+  "tool_error_categories": {},
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 12,
+  "lines_removed": 20,
+  "files_modified": 2,
+  "message_hours": [
+    21,
+    21,
+    21
+  ],
+  "user_message_timestamps": [
+    "2026-02-13T20:33:24.639Z",
+    "2026-02-13T20:35:35.080Z",
+    "2026-02-13T20:41:44.857Z"
+  ]
+}

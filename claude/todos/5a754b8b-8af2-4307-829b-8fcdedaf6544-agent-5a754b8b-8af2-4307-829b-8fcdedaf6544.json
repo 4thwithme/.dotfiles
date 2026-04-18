@@ -1,0 +1,27 @@
+[
+  {
+    "content": "Check git status and git diff for staged files",
+    "status": "completed",
+    "activeForm": "Checking git status and staged changes"
+  },
+  {
+    "content": "Analyze failing test patterns",
+    "status": "completed",
+    "activeForm": "Analyzing failing test patterns"
+  },
+  {
+    "content": "Fix useTrendingProducts test - isEnabled parameter missing",
+    "status": "completed",
+    "activeForm": "Fixing useTrendingProducts test parameters"
+  },
+  {
+    "content": "Fix useTrendingProductsWrapper test - isEnabled parameter expectations",
+    "status": "completed",
+    "activeForm": "Fixing useTrendingProductsWrapper test expectations"
+  },
+  {
+    "content": "Run tests to verify fixes",
+    "status": "in_progress",
+    "activeForm": "Running tests to verify fixes"
+  }
+]

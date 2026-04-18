@@ -1,0 +1,14 @@
+[
+  {
+    "content": "Fix MongoDB error by initializing GitHub integration structure",
+    "status": "completed",
+    "priority": "high",
+    "id": "1"
+  },
+  {
+    "content": "Update the model method to handle null github integration",
+    "status": "completed",
+    "priority": "high",
+    "id": "2"
+  }
+]

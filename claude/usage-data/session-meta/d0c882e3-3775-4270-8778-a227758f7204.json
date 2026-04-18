@@ -1,0 +1,45 @@
+{
+  "session_id": "d0c882e3-3775-4270-8778-a227758f7204",
+  "project_path": "/Users/4thwithme/Documents/repo/recommendations-service",
+  "start_time": "2026-02-09T12:12:07.821Z",
+  "duration_minutes": 37,
+  "user_message_count": 4,
+  "assistant_message_count": 16,
+  "tool_counts": {
+    "Bash": 2,
+    "WebFetch": 1
+  },
+  "languages": {},
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 146,
+  "output_tokens": 54,
+  "first_prompt": "hello bro we need to do code review of RFC> colegue created proposal document  https://github.com/customink/recommendations-service/pull/395/changes#r2782288955  you need to find flaws, then estimate…",
+  "user_interruptions": 0,
+  "user_response_times": [
+    312.238,
+    134.421,
+    1590.967
+  ],
+  "tool_errors": 0,
+  "tool_error_categories": {},
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": true,
+  "lines_added": 0,
+  "lines_removed": 0,
+  "files_modified": 0,
+  "message_hours": [
+    13,
+    13,
+    13,
+    13
+  ],
+  "user_message_timestamps": [
+    "2026-02-09T12:12:07.821Z",
+    "2026-02-09T12:18:49.995Z",
+    "2026-02-09T12:21:47.830Z",
+    "2026-02-09T12:48:49.524Z"
+  ]
+}

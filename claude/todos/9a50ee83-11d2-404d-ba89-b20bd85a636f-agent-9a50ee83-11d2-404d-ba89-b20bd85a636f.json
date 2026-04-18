@@ -1,0 +1,32 @@
+[
+  {
+    "content": "Fix no-unnecessary-type-conversion errors in algolia.service.ts (13 errors)",
+    "status": "completed",
+    "id": "1"
+  },
+  {
+    "content": "Fix no-unnecessary-type-conversion error in forecasted-trending-products.model.ts (1 error)",
+    "status": "completed",
+    "id": "2"
+  },
+  {
+    "content": "Fix no-unnecessary-type-conversion errors in process-style.service.ts (9 errors)",
+    "status": "completed",
+    "id": "3"
+  },
+  {
+    "content": "Fix no-unnecessary-type-conversion errors in algolia script files (4 errors)",
+    "status": "completed",
+    "id": "4"
+  },
+  {
+    "content": "Fix no-unnecessary-type-conversion errors in evaluator script (2 errors)",
+    "status": "completed",
+    "id": "5"
+  },
+  {
+    "content": "Fix no-unnecessary-type-conversion errors in e2e test files (20 errors)",
+    "status": "completed",
+    "id": "6"
+  }
+]

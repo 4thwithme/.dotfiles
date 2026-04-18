@@ -1,0 +1,135 @@
+Summary of all failing tests
+ FAIL  test/frequently-bought-together.e2e-spec.ts
+  ● FrequentlyBoughtTogether API Integration Tests › responseFormatter null-coalescing branches › should handle null frequently_bought_together in v1 responseFormatter
+
+    expected 200 "OK", got 500 "Internal Server Error"
+
+      1163 |                    const response = await request(getHttpServer)
+      1164 |                            .get('/frequently-bought-together?styleIds=123456')
+    > 1165 |                            .expect(200);
+           |                             ^
+      1166 |
+      1167 |                    expect(response.body).toHaveProperty('frequently_bought_together', null);
+      1168 |            });
+
+      at Object.<anonymous> (test/frequently-bought-together.e2e-spec.ts:1165:6)
+      ----
+      at Test._assertStatus (node_modules/supertest/lib/test.js:309:14)
+      at node_modules/supertest/lib/test.js:365:13
+      at Test._assertFunction (node_modules/supertest/lib/test.js:342:13)
+      at Test.assert (node_modules/supertest/lib/test.js:195:23)
+      at localAssert (node_modules/supertest/lib/test.js:138:14)
+      at Server.<anonymous> (node_modules/supertest/lib/test.js:152:11)
+
+  ● FrequentlyBoughtTogether API Integration Tests › responseFormatter null-coalescing branches › should handle null frequently_bought_together in root-categories responseFormatter
+
+    expected 200 "OK", got 500 "Internal Server Error"
+
+      1182 |                    const response = await request(getHttpServer)
+      1183 |                            .get('/frequently-bought-together/root-categories?styleIds=123456')
+    > 1184 |                            .expect(200);
+           |                             ^
+      1185 |
+      1186 |                    expect(response.body).toHaveProperty('frequently_bought_together', null);
+      1187 |            });
+
+      at Object.<anonymous> (test/frequently-bought-together.e2e-spec.ts:1184:6)
+      ----
+      at Test._assertStatus (node_modules/supertest/lib/test.js:309:14)
+      at node_modules/supertest/lib/test.js:365:13
+      at Test._assertFunction (node_modules/supertest/lib/test.js:342:13)
+      at Test.assert (node_modules/supertest/lib/test.js:195:23)
+      at localAssert (node_modules/supertest/lib/test.js:138:14)
+      at Server.<anonymous> (node_modules/supertest/lib/test.js:152:11)
+
+  ● FrequentlyBoughtTogether API Integration Tests › responseFormatter null-coalescing branches › should handle null frequently_bought_together in v2 responseFormatter
+
+    expected 200 "OK", got 500 "Internal Server Error"
+
+      1198 |                    const response = await request(getHttpServer)
+      1199 |                            .get('/frequently-bought-together/v2?styleId=123456')
+    > 1200 |                            .expect(200);
+           |                             ^
+      1201 |
+      1202 |                    expect(response.body).toHaveProperty('frequently_bought_together', null);
+      1203 |            });
+
+      at Object.<anonymous> (test/frequently-bought-together.e2e-spec.ts:1200:6)
+      ----
+      at Test._assertStatus (node_modules/supertest/lib/test.js:309:14)
+      at node_modules/supertest/lib/test.js:365:13
+      at Test._assertFunction (node_modules/supertest/lib/test.js:342:13)
+      at Test.assert (node_modules/supertest/lib/test.js:195:23)
+      at localAssert (node_modules/supertest/lib/test.js:138:14)
+      at Server.<anonymous> (node_modules/supertest/lib/test.js:152:11)
+
+  ● FrequentlyBoughtTogetherController responseFormatter branches › should handle responseFormatter when frequently_bought_together is null
+
+    TypeError: Cannot read properties of null (reading 'length')
+
+      39 |
+      40 |              responseFormatter: (res: FrequentlyBoughtTogetherResponseDto) => ({
+    > 41 |                      count: res.frequently_bought_together.length,
+         |                                                            ^
+      42 |                      fallbackUsed: res.fallback_used,
+      43 |              }),
+      44 |      })
+
+      at Object.responseFormatter (src/modules/rest/frequently-bought-together/frequently-bought-together.controller.ts:41:42)
+      at FrequentlyBoughtTogetherController.descriptor.value (src/decorators/log-execution.decorator.ts:102:15)
+      at async Object.<anonymous> (test/frequently-bought-together.e2e-spec.ts:1244:18)
+
+  ● FrequentlyBoughtTogetherController responseFormatter branches › should handle responseFormatter when frequently_bought_together is undefined
+
+    TypeError: Cannot read properties of undefined (reading 'length')
+
+      39 |
+      40 |              responseFormatter: (res: FrequentlyBoughtTogetherResponseDto) => ({
+    > 41 |                      count: res.frequently_bought_together.length,
+         |                                                            ^
+      42 |                      fallbackUsed: res.fallback_used,
+      43 |              }),
+      44 |      })
+
+      at Object.responseFormatter (src/modules/rest/frequently-bought-together/frequently-bought-together.controller.ts:41:42)
+      at FrequentlyBoughtTogetherController.descriptor.value (src/decorators/log-execution.decorator.ts:102:15)
+      at async Object.<anonymous> (test/frequently-bought-together.e2e-spec.ts:1258:18)
+
+  ● FrequentlyBoughtTogetherController responseFormatter branches › should handle root categories responseFormatter when frequently_bought_together is null
+
+    TypeError: Cannot read properties of null (reading 'length')
+
+      69 |
+      70 |              responseFormatter: (res: FrequentlyBoughtTogetherRootCategoriesResponseDto) => ({
+    > 71 |                      count: res.frequently_bought_together.length,
+         |                                                            ^
+      72 |                      fallbackUsed: res.fallback_used,
+      73 |              }),
+      74 |      })
+
+      at Object.responseFormatter (src/modules/rest/frequently-bought-together/frequently-bought-together.controller.ts:71:42)
+      at FrequentlyBoughtTogetherController.descriptor.value (src/decorators/log-execution.decorator.ts:102:15)
+      at async Object.<anonymous> (test/frequently-bought-together.e2e-spec.ts:1272:18)
+
+  ● FrequentlyBoughtTogetherController responseFormatter branches › should handle v2 responseFormatter when frequently_bought_together is null
+
+    TypeError: Cannot read properties of null (reading 'length')
+
+      101 |
+      102 |             responseFormatter: (res: FrequentlyBoughtTogetherV2ResponseDto) => ({
+    > 103 |                     count: res.frequently_bought_together.length,
+          |                                                           ^
+      104 |                     fallbackUsed: res.fallback_used,
+      105 |             }),
+      106 |     })
+
+      at Object.responseFormatter (src/modules/rest/frequently-bought-together/frequently-bought-together.controller.ts:103:42)
+      at FrequentlyBoughtTogetherController.descriptor.value (src/decorators/log-execution.decorator.ts:102:15)
+      at async Object.<anonymous> (test/frequently-bought-together.e2e-spec.ts:1286:18)
+
+
+Test Suites: 1 failed, 45 passed, 46 total
+Tests:       7 failed, 1231 passed, 1238 total
+Snapshots:   0 total
+Time:        97.07 s
+Ran all test suites.

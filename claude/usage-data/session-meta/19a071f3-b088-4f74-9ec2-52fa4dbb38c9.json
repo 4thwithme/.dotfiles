@@ -1,0 +1,43 @@
+{
+  "session_id": "19a071f3-b088-4f74-9ec2-52fa4dbb38c9",
+  "project_path": "/Users/4thwithme/Documents/repo/rails-frontend",
+  "start_time": "2026-02-17T16:09:43.935Z",
+  "duration_minutes": 15,
+  "user_message_count": 2,
+  "assistant_message_count": 15,
+  "tool_counts": {
+    "Task": 1,
+    "Read": 1,
+    "Grep": 1,
+    "Edit": 2
+  },
+  "languages": {
+    "Ruby": 2
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 26,
+  "output_tokens": 414,
+  "first_prompt": "hey bro how do we add new ab_test_group in this repo?",
+  "user_interruptions": 0,
+  "user_response_times": [
+    714.438
+  ],
+  "tool_errors": 0,
+  "tool_error_categories": {},
+  "uses_task_agent": true,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 14,
+  "lines_removed": 1,
+  "files_modified": 2,
+  "message_hours": [
+    17,
+    17
+  ],
+  "user_message_timestamps": [
+    "2026-02-17T16:09:43.935Z",
+    "2026-02-17T16:23:44.004Z"
+  ]
+}

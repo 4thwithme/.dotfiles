@@ -1,0 +1,21 @@
+{
+  "underlying_goal": "Run tests for changed files and achieve 95%+ coverage across all check types, then fix lint warnings and resolve test failures",
+  "goal_categories": {
+    "run_tests_with_coverage_target": 1,
+    "fix_lint_warnings": 1
+  },
+  "outcome": "mostly_achieved",
+  "user_satisfaction_counts": {
+    "likely_satisfied": 1,
+    "frustrated": 1
+  },
+  "claude_helpfulness": "very_helpful",
+  "session_type": "iterative_refinement",
+  "friction_counts": {
+    "buggy_code": 2
+  },
+  "friction_detail": "Tests had failures related to mock timing and process.exit issues that required multiple rounds of fixing, and the user interrupted twice at the end due to persistent test errors.",
+  "primary_success": "good_debugging",
+  "brief_summary": "User wanted tests run with 95%+ coverage and lint fixes for changed files; coverage targets were met and lint was fixed, but residual test errors around graceful shutdown led to user frustration at the end.",
+  "session_id": "ac33c588-fc58-4e14-a68e-a2c3cd89334f"
+}

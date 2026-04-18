@@ -1,0 +1,51 @@
+{
+  "session_id": "ef16cd8f-79a2-4b90-98b1-41119484acfb",
+  "project_path": "/Users/4thwithme/Documents/repo/recommendations-service",
+  "start_time": "2026-02-17T15:43:39.243Z",
+  "duration_minutes": 11,
+  "user_message_count": 4,
+  "assistant_message_count": 34,
+  "tool_counts": {
+    "EnterPlanMode": 1,
+    "Task": 1,
+    "Grep": 4,
+    "Read": 10,
+    "Glob": 6,
+    "Write": 1,
+    "ExitPlanMode": 1
+  },
+  "languages": {
+    "TypeScript": 10,
+    "Markdown": 1
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 40,
+  "output_tokens": 1265,
+  "first_prompt": "during @src/modules/cli/commands/sync-source-styles.command.ts we are syncing styles(prodcuts) from mms to our service, and we make requests via http, then we put fields, to the DB, we need to save on…",
+  "user_interruptions": 0,
+  "user_response_times": [],
+  "tool_errors": 1,
+  "tool_error_categories": {
+    "User Rejected": 1
+  },
+  "uses_task_agent": true,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 44,
+  "lines_removed": 0,
+  "files_modified": 1,
+  "message_hours": [
+    16,
+    16,
+    16,
+    16
+  ],
+  "user_message_timestamps": [
+    "2026-02-17T15:43:39.243Z",
+    "2026-02-17T15:43:39.237Z",
+    "2026-02-17T15:43:39.243Z",
+    "2026-02-17T15:50:55.326Z"
+  ]
+}

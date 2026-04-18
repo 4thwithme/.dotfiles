@@ -1,0 +1,61 @@
+{
+  "session_id": "64c7f0d5-f364-4a20-8c6b-f6455f4b00a9",
+  "project_path": "/Users/4thwithme/Documents/repo/recommendations-service",
+  "start_time": "2026-02-12T11:35:18.250Z",
+  "duration_minutes": 22,
+  "user_message_count": 8,
+  "assistant_message_count": 18,
+  "tool_counts": {
+    "Task": 1,
+    "Read": 2,
+    "Write": 1,
+    "AskUserQuestion": 2
+  },
+  "languages": {
+    "TypeScript": 2,
+    "Markdown": 1
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 160,
+  "output_tokens": 3046,
+  "first_prompt": "@.claude/semantic-search-implementation-plan.md read plan you created and we need to tweak it a bit..  we would like to have model binary loading and search inside this binary not in a main tread..coz…",
+  "user_interruptions": 2,
+  "user_response_times": [
+    75.749,
+    192.207,
+    311.806,
+    41.945
+  ],
+  "tool_errors": 2,
+  "tool_error_categories": {
+    "User Rejected": 2
+  },
+  "uses_task_agent": true,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 796,
+  "lines_removed": 0,
+  "files_modified": 1,
+  "message_hours": [
+    12,
+    12,
+    12,
+    12,
+    12,
+    12,
+    12,
+    12
+  ],
+  "user_message_timestamps": [
+    "2026-02-12T11:35:18.250Z",
+    "2026-02-12T11:35:18.247Z",
+    "2026-02-12T11:35:18.250Z",
+    "2026-02-12T11:43:36.914Z",
+    "2026-02-12T11:48:12.218Z",
+    "2026-02-12T11:50:08.676Z",
+    "2026-02-12T11:55:52.495Z",
+    "2026-02-12T11:57:15.995Z"
+  ]
+}

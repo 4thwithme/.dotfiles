@@ -1,0 +1,32 @@
+[
+  {
+    "content": "Add Mailtrap support to email configuration",
+    "status": "completed",
+    "priority": "high",
+    "id": "1"
+  },
+  {
+    "content": "Update environment variables for email service providers",
+    "status": "completed",
+    "priority": "high",
+    "id": "2"
+  },
+  {
+    "content": "Add email service provider selection logic",
+    "status": "completed",
+    "priority": "medium",
+    "id": "3"
+  },
+  {
+    "content": "Update email service to support multiple providers",
+    "status": "in_progress",
+    "priority": "medium",
+    "id": "4"
+  },
+  {
+    "content": "Test email functionality with Mailtrap",
+    "status": "pending",
+    "priority": "low",
+    "id": "5"
+  }
+]

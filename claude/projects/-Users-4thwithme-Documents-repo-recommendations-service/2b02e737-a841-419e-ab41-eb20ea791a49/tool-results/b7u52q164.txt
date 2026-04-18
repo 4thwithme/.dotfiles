@@ -1,0 +1,916 @@
+diff --git a/apps/storybook/stories/extensions/reco/Molecules/MiniProductCard.stories.tsx b/apps/storybook/stories/extensions/reco/Molecules/MiniProductCard.stories.tsx
+new file mode 100644
+index 000000000..648776663
+--- /dev/null
++++ b/apps/storybook/stories/extensions/reco/Molecules/MiniProductCard.stories.tsx
+@@ -0,0 +1,75 @@
++import React from 'react';
++import type { Meta, StoryObj } from '@storybook/react';
++import { MOCK_PRODUCTS } from '@customink/pigment-extensions/reco/api/mocks/trendingProducts';
++import { MiniProductCard } from '@customink/pigment-extensions/reco/Molecules/MiniProductCard';
++import type { MiniProductCardProps } from '@customink/pigment-extensions/reco/Molecules/MiniProductCard';
++
++const MOCK = MOCK_PRODUCTS[2];
++
++const BASE_ARGS: MiniProductCardProps = {
++  name: MOCK.name,
++  linkHref: MOCK.link,
++  imageSrc: MOCK.imageSrc,
++};
++
++const meta: Meta<MiniProductCardProps> = {
++  title: 'Extensions/Reco/Molecules/MiniProductCard',
++  component: MiniProductCard,
++  parameters: {
++    layout: 'centered',
++  },
++  decorators: [
++    (Story) => (
++      <div style={{ width: 188 }}>
++        <Story />
++      </div>
++    ),
++  ],
++  argTypes: {
++    name: { control: 'text' },
++    linkHref: { control: 'text' },
++    imageSrc: { control: 'text' },
++    imageAlt: { control: 'text' },
++  },
++};
++
++export default meta;
++type Story = StoryObj<MiniProductCardProps>;
++
++export const Default: Story = {
++  args: BASE_ARGS,
++};
++
++export const LongProductName: Story = {
++  name: 'Long Product Name',
++  args: { ...BASE_ARGS, name: MOCK_PRODUCTS[8].name },
++};
++
++export const CustomImageAlt: Story = {
++  name: 'Custom Image Alt',
++  args: { ...BASE_ARGS, imageAlt: 'A pigment dyed hat in navy' },
++};
++
++export const Row: Story = {
++  name: 'Row (Carousel Preview)',
++  decorators: [
++    (Story) => (
++      <div style={{ display: 'flex', gap: 12, width: 680 }}>
++        <Story />
++      </div>
++    ),
++  ],
++  render: () => (
++    <>
++      {MOCK_PRODUCTS.slice(0, 4).map((p) => (
++        <div key={p.styleId} style={{ width: 188, flexShrink: 0 }}>
++          <MiniProductCard name={p.name} linkHref={p.link} imageSrc={p.imageSrc} />
++        </div>
++      ))}
++    </>
++  ),
++};
++
++export const API: Story = {
++  args: BASE_ARGS,
++};
+diff --git a/apps/storybook/stories/extensions/reco/RecentlyViewedCarousel.stories.tsx b/apps/storybook/stories/extensions/reco/RecentlyViewedCarousel.stories.tsx
+new file mode 100644
+index 000000000..bbc36ba16
+--- /dev/null
++++ b/apps/storybook/stories/extensions/reco/RecentlyViewedCarousel.stories.tsx
+@@ -0,0 +1,97 @@
++import React from 'react';
++import type { Meta, StoryObj } from '@storybook/react';
++import { MOCK_PRODUCTS } from '@customink/pigment-extensions/reco/api/mocks/trendingProducts';
++import { RecentlyViewedCarousel } from '@customink/pigment-extensions/reco/RecentlyViewedWidget';
++import type {
++  RecentlyViewedCarouselProps,
++  RecentlyViewedProduct,
++} from '@customink/pigment-extensions/reco/RecentlyViewedWidget';
++
++const MOCK_RV_PRODUCTS: RecentlyViewedProduct[] = MOCK_PRODUCTS.slice(0, 8).map((p) => ({
++  id: p.styleId,
++  name: p.name,
++  linkHref: p.link,
++  imageSrc: p.imageSrc,
++  imageSrcSet: p.imageSrcSet,
++  imageAlt: p.imageAlt,
++}));
++
++const meta: Meta<RecentlyViewedCarouselProps> = {
++  title: 'Extensions/Reco/RecentlyViewedCarousel',
++  component: RecentlyViewedCarousel,
++  parameters: {
++    layout: 'fullscreen',
++  },
++  decorators: [
++    (Story) => (
++      <div style={{ maxWidth: 1248, margin: '0 auto' }}>
++        <Story />
++      </div>
++    ),
++  ],
++  argTypes: {
++    title: { control: 'text' },
++    variant: { control: 'radio', options: ['large', 'compact'] },
++  },
++};
++
++export default meta;
++type Story = StoryObj<RecentlyViewedCarouselProps>;
++
++export const Large: Story = {
++  args: {
++    products: MOCK_RV_PRODUCTS,
++    title: 'Pick Up Where You Left Off',
++    variant: 'large',
++  },
++};
++
++export const Compact: Story = {
++  args: {
++    products: MOCK_RV_PRODUCTS,
++    title: 'Recently viewed items',
++    variant: 'compact',
++  },
++};
++
++export const LargeWithArrows: Story = {
++  name: 'Large With Arrows',
++  args: {
++    products: MOCK_RV_PRODUCTS,
++    title: 'Pick Up Where You Left Off',
++    variant: 'large',
++    arrows: true,
++  },
++};
++
++export const CompactWithArrows: Story = {
++  name: 'Compact With Arrows',
++  args: {
++    products: MOCK_RV_PRODUCTS,
++    title: 'Recently viewed items',
++    variant: 'compact',
++    arrows: true,
++  },
++};
++
++export const FewProducts: Story = {
++  name: 'Few Products (No Scroll)',
++  args: {
++    products: MOCK_RV_PRODUCTS.slice(0, 3),
++    title: 'Pick Up Where You Left Off',
++    variant: 'large',
++  },
++};
++
++export const Empty: Story = {
++  name: 'Empty (Renders Nothing)',
++  args: {
++    products: [],
++  },
++};
++
++export const API: Story = {
++  args: {
++    products: MOCK_RV_PRODUCTS,
++  },
++};
+diff --git a/packages/extensions/reco/Atoms/Carousel/Carousel.tsx b/packages/extensions/reco/Atoms/Carousel/Carousel.tsx
+index 0908e107c..9e3553469 100644
+--- a/packages/extensions/reco/Atoms/Carousel/Carousel.tsx
++++ b/packages/extensions/reco/Atoms/Carousel/Carousel.tsx
+@@ -4,8 +4,12 @@ import { useKeenSlider } from 'keen-slider/react';
+ import useResizeObserver from '@react-hook/resize-observer';
+ import styles from './Carousel.module.css';
+ 
+-const ARROW_PATH =
+-  'M8.29289 5.70711C7.90237 5.31658 7.90237 4.68342 8.29289 4.29289C8.68342 3.90237 9.31658 3.90237 9.70711 4.29289L16.7071 11.2929C17.0976 11.6834 17.0976 12.3166 16.7071 12.7071L9.70711 19.7071C9.31658 20.0976 8.68342 20.0976 8.29289 19.7071C7.90237 19.3166 7.90237 18.6834 8.29289 18.2929L14.5858 12L8.29289 5.70711Z';
++import { ARROW_PATH } from './constants';
++
++export type CarouselHandle = {
++  prev: () => void;
++  next: () => void;
++};
+ 
+ export type CarouselProps = {
+   children: React.ReactNode;
+@@ -13,13 +17,15 @@ export type CarouselProps = {
+   spacing?: number;
+   loop?: boolean;
+   arrows?: boolean;
++  /** Imperative handle for external prev/next control (e.g. header arrows). */
++  sliderRef?: React.Ref<CarouselHandle>;
+   className?: string;
+   style?: React.CSSProperties;
+ };
+ 
+ /** Thin keen-slider wrapper. NOT exported from the reco public API. */
+ export const Carousel = React.forwardRef<HTMLDivElement, CarouselProps>(function Carousel(
+-  { children, slidesPerView = 1, spacing = 0, loop = true, arrows = true, className, style },
++  { children, slidesPerView = 1, spacing = 0, loop = true, arrows = true, sliderRef, className, style },
+   ref,
+ ) {
+   const [keenRef, instanceRef] = useKeenSlider<HTMLDivElement>({
+@@ -40,6 +46,11 @@ export const Carousel = React.forwardRef<HTMLDivElement, CarouselProps>(function
+ 
+   useResizeObserver(boundingBoxRef, () => instanceRef.current?.update());
+ 
++  React.useImperativeHandle(sliderRef, () => ({
++    prev: () => instanceRef.current?.prev(),
++    next: () => instanceRef.current?.next(),
++  }));
++
+   useEffect(() => {
+     instanceRef.current?.update({ loop, mode: 'snap', slides: { perView: slidesPerView, spacing } });
+   }, [slidesPerView, spacing, loop]);
+diff --git a/packages/extensions/reco/Atoms/Carousel/constants.ts b/packages/extensions/reco/Atoms/Carousel/constants.ts
+new file mode 100644
+index 000000000..5b5c1e0b5
+--- /dev/null
++++ b/packages/extensions/reco/Atoms/Carousel/constants.ts
+@@ -0,0 +1,2 @@
++export const ARROW_PATH =
++  'M8.29289 5.70711C7.90237 5.31658 7.90237 4.68342 8.29289 4.29289C8.68342 3.90237 9.31658 3.90237 9.70711 4.29289L16.7071 11.2929C17.0976 11.6834 17.0976 12.3166 16.7071 12.7071L9.70711 19.7071C9.31658 20.0976 8.68342 20.0976 8.29289 19.7071C7.90237 19.3166 7.90237 18.6834 8.29289 18.2929L14.5858 12L8.29289 5.70711Z';
+diff --git a/packages/extensions/reco/Atoms/Carousel/index.ts b/packages/extensions/reco/Atoms/Carousel/index.ts
+index d844cd32b..066b93af1 100644
+--- a/packages/extensions/reco/Atoms/Carousel/index.ts
++++ b/packages/extensions/reco/Atoms/Carousel/index.ts
+@@ -1,2 +1,2 @@
+ export { Carousel } from './Carousel';
+-export type { CarouselProps } from './Carousel';
++export type { CarouselProps, CarouselHandle } from './Carousel';
+diff --git a/packages/extensions/reco/Molecules/MiniProductCard/MiniProductCard.module.css b/packages/extensions/reco/Molecules/MiniProductCard/MiniProductCard.module.css
+new file mode 100644
+index 000000000..426fd1179
+--- /dev/null
++++ b/packages/extensions/reco/Molecules/MiniProductCard/MiniProductCard.module.css
+@@ -0,0 +1,54 @@
++.card {
++  box-sizing: border-box;
++  display: flex;
++  flex-direction: column;
++  height: 100%;
++  background-color: var(--neutral-background-primary);
++  border: 1px solid var(--neutral-border-default);
++  border-radius: var(--radius-card);
++  overflow: hidden;
++  text-decoration: none;
++  color: inherit;
++  cursor: pointer;
++  transition: box-shadow 0.2s ease-in-out, border-color 0.2s ease-in-out;
++}
++
++.card:hover {
++  border-color: var(--neutral-border-strong);
++  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.15);
++}
++
++.card:active {
++  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.15);
++}
++
++.card:focus-visible {
++  outline: 2px solid var(--activity-focus-border);
++  outline-offset: 2px;
++}
++
++.imageContainer {
++  position: relative;
++  aspect-ratio: 152 / 137;
++  overflow: hidden;
++  background-color: var(--neutral-background-subtle);
++  flex-shrink: 0;
++}
++
++.image {
++  width: 100%;
++  height: 100%;
++  object-fit: contain;
++}
++
++.content {
++  padding: 0.75rem var(--space-componentLayout-xs);
++}
++
++.name {
++  display: -webkit-box;
++  -webkit-line-clamp: 3;
++  -webkit-box-orient: vertical;
++  overflow: hidden;
++  min-height: 3.75em; /* 3 lines × 1.25 line-height — reserves consistent height */
++}
+diff --git a/packages/extensions/reco/Molecules/MiniProductCard/MiniProductCard.test.tsx b/packages/extensions/reco/Molecules/MiniProductCard/MiniProductCard.test.tsx
+new file mode 100644
+index 000000000..11d439987
+--- /dev/null
++++ b/packages/extensions/reco/Molecules/MiniProductCard/MiniProductCard.test.tsx
+@@ -0,0 +1,75 @@
++import { render, screen, fireEvent } from '@testing-library/react';
++import { createRef } from 'react';
++import { MiniProductCard } from './MiniProductCard';
++import type { MiniProductCardProps } from './MiniProductCard';
++
++const BASE_PROPS: MiniProductCardProps = {
++  name: 'Sport-Tek Competitor Lightweight Performance Polo',
++  linkHref: '/products/sport-tek-competitor-polo',
++  imageSrc:
++    'https://mms-images.out.customink.com/mms/images/catalog/e109d2348e5a6328e3c11430602c69f7/colors/577204/views/alt/front_medium_extended.png?autoNegate=1&ixbg=%23ffffff&ixfm=jpeg&ixq=60&ixw=270&placeMax=1&placeMaxPct=0.8&placeUseProduct=1&placeUseView=front',
++};
++
++describe('MiniProductCard', () => {
++  it('renders the product name', () => {
++    render(<MiniProductCard {...BASE_PROPS} />);
++    expect(screen.getByText(BASE_PROPS.name)).toBeInTheDocument();
++  });
++
++  it('renders a link to the product page', () => {
++    render(<MiniProductCard {...BASE_PROPS} />);
++    const link = screen.getByRole('link');
++    expect(link).toHaveAttribute('href', BASE_PROPS.linkHref);
++  });
++
++  it('renders the product image with correct src', () => {
++    render(<MiniProductCard {...BASE_PROPS} />);
++    expect(screen.getByAltText(BASE_PROPS.name)).toHaveAttribute('src', BASE_PROPS.imageSrc);
++  });
++
++  it('uses imageAlt when provided', () => {
++    render(<MiniProductCard {...BASE_PROPS} imageAlt="Custom alt" />);
++    expect(screen.getByAltText('Custom alt')).toBeInTheDocument();
++  });
++
++  it('defaults imageAlt to name', () => {
++    render(<MiniProductCard {...BASE_PROPS} />);
++    expect(screen.getByAltText(BASE_PROPS.name)).toBeInTheDocument();
++  });
++
++  it('passes imageSrcSet to the img element', () => {
++    render(<MiniProductCard {...BASE_PROPS} imageSrcSet="polo-2x.jpg 2x" />);
++    expect(screen.getByAltText(BASE_PROPS.name)).toHaveAttribute('srcset', 'polo-2x.jpg 2x');
++  });
++
++  it('calls onClick when the card is clicked', () => {
++    const onClick = jest.fn();
++    render(<MiniProductCard {...BASE_PROPS} onClick={onClick} />);
++    fireEvent.click(screen.getByRole('link'));
++    expect(onClick).toHaveBeenCalledTimes(1);
++  });
++
++  it('forwards ref to the root element', () => {
++    const ref = createRef<HTMLAnchorElement>();
++    render(<MiniProductCard {...BASE_PROPS} ref={ref} />);
++    expect(ref.current).toBeInstanceOf(HTMLAnchorElement);
++  });
++
++  it('applies custom className', () => {
++    const ref = createRef<HTMLAnchorElement>();
++    render(<MiniProductCard {...BASE_PROPS} className="custom" ref={ref} />);
++    expect(ref.current?.className).toContain('custom');
++  });
++
++  it('renders data-testid attributes', () => {
++    render(<MiniProductCard {...BASE_PROPS} />);
++    expect(screen.getByTestId('mini-product-card')).toBeInTheDocument();
++    expect(screen.getByTestId('mini-product-card-image')).toBeInTheDocument();
++    expect(screen.getByTestId('mini-product-card-name')).toBeInTheDocument();
++  });
++
++  it('sets title attribute on the name for tooltip on truncated text', () => {
++    render(<MiniProductCard {...BASE_PROPS} />);
++    expect(screen.getByTestId('mini-product-card-name')).toHaveAttribute('title', BASE_PROPS.name);
++  });
++});
+diff --git a/packages/extensions/reco/Molecules/MiniProductCard/MiniProductCard.tsx b/packages/extensions/reco/Molecules/MiniProductCard/MiniProductCard.tsx
+new file mode 100644
+index 000000000..af43a85ca
+--- /dev/null
++++ b/packages/extensions/reco/Molecules/MiniProductCard/MiniProductCard.tsx
+@@ -0,0 +1,52 @@
++import React from 'react';
++import { Typography } from '@customink/pigment-react';
++import styles from './MiniProductCard.module.css';
++
++export type MiniProductCardProps = {
++  name: string;
++  linkHref: string;
++  imageSrc: string;
++  imageSrcSet?: string;
++  /** @default name */
++  imageAlt?: string;
++  onClick?: (e: React.MouseEvent<HTMLAnchorElement>) => void;
++  className?: string;
++  style?: React.CSSProperties;
++};
++
++export const MiniProductCard = React.forwardRef<HTMLAnchorElement, MiniProductCardProps>(function MiniProductCard(
++  { name, linkHref, imageSrc, imageSrcSet, imageAlt, onClick, className, style },
++  ref,
++) {
++  const cardClass = [styles.card, className].filter(Boolean).join(' ');
++
++  return (
++    <a ref={ref} href={linkHref} className={cardClass} style={style} onClick={onClick} data-testid="mini-product-card">
++      <div className={styles.imageContainer}>
++        <img
++          src={imageSrc}
++          srcSet={imageSrcSet}
++          alt={imageAlt ?? name}
++          className={styles.image}
++          draggable={false}
++          loading="lazy"
++          data-testid="mini-product-card-image"
++        />
++      </div>
++      <div className={styles.content}>
++        <Typography
++          variant="heading6"
++          component="span"
++          color="primary"
++          className={styles.name}
++          title={name}
++          data-testid="mini-product-card-name"
++        >
++          {name}
++        </Typography>
++      </div>
++    </a>
++  );
++});
++
++MiniProductCard.displayName = 'MiniProductCard';
+diff --git a/packages/extensions/reco/Molecules/MiniProductCard/index.ts b/packages/extensions/reco/Molecules/MiniProductCard/index.ts
+new file mode 100644
+index 000000000..eebe8ca60
+--- /dev/null
++++ b/packages/extensions/reco/Molecules/MiniProductCard/index.ts
+@@ -0,0 +1,2 @@
++export { MiniProductCard } from './MiniProductCard';
++export type { MiniProductCardProps } from './MiniProductCard';
+diff --git a/packages/extensions/reco/Molecules/ProductsCarousel/utils.ts b/packages/extensions/reco/Molecules/ProductsCarousel/utils.ts
+index a32e8cfdc..aeb136c86 100644
+--- a/packages/extensions/reco/Molecules/ProductsCarousel/utils.ts
++++ b/packages/extensions/reco/Molecules/ProductsCarousel/utils.ts
+@@ -1,17 +1,6 @@
+-import { useEffect, useState } from 'react';
+-import units from '@customink/design-tokens/semantics/units';
+ import type { Breakpoint, UnitPrice } from './types';
+ 
+-const BREAKPOINTS = {
+-  mobile: parseInt(units.size.breakpoint.tablet, 10),
+-  desktop: parseInt(units.size.breakpoint.desktop, 10),
+-};
+-
+-function getBreakpoint(width: number): Breakpoint {
+-  if (width < BREAKPOINTS.mobile) return 'mobile';
+-  if (width < BREAKPOINTS.desktop) return 'tablet';
+-  return 'desktop';
+-}
++export { useBreakpoint } from '../../hooks/useBreakpoint';
+ 
+ export const DEFAULT_SLIDES_CONFIG: Record<Breakpoint, { perView: number; spacing: number }> = {
+   mobile: { perView: 2.25, spacing: 8 },
+@@ -26,26 +15,6 @@ export function getSlidesConfig(
+   return { ...DEFAULT_SLIDES_CONFIG[breakpoint], ...overrides?.[breakpoint] };
+ }
+ 
+-export function useBreakpoint(): Breakpoint {
+-  const [breakpoint, setBreakpoint] = useState<Breakpoint>(() =>
+-    typeof window !== 'undefined' ? getBreakpoint(window.innerWidth) : 'desktop',
+-  );
+-
+-  useEffect(() => {
+-    const mqMobile = window.matchMedia(`(max-width: ${BREAKPOINTS.mobile - 1}px)`);
+-    const mqTablet = window.matchMedia(`(min-width: ${BREAKPOINTS.mobile}px) and (max-width: ${BREAKPOINTS.desktop - 1}px)`);
+-    const handler = () => setBreakpoint(getBreakpoint(window.innerWidth));
+-    mqMobile.addEventListener('change', handler);
+-    mqTablet.addEventListener('change', handler);
+-    return () => {
+-      mqMobile.removeEventListener('change', handler);
+-      mqTablet.removeEventListener('change', handler);
+-    };
+-  }, []);
+-
+-  return breakpoint;
+-}
+-
+ export function formatRatingScore(score: number): string {
+   const adjusted = score < 1 ? 1 : score;
+   return adjusted.toFixed(1);
+diff --git a/packages/extensions/reco/RecentlyViewedWidget/RecentlyViewedCarousel.module.css b/packages/extensions/reco/RecentlyViewedWidget/RecentlyViewedCarousel.module.css
+new file mode 100644
+index 000000000..cc508e61a
+--- /dev/null
++++ b/packages/extensions/reco/RecentlyViewedWidget/RecentlyViewedCarousel.module.css
+@@ -0,0 +1,81 @@
++.root {
++  width: 100%;
++}
++
++.large {
++  padding-top: 1rem;
++}
++
++.compact {
++  padding-top: 1.5rem;
++}
++
++.header {
++  display: flex;
++  align-items: center;
++  gap: 0.75rem;
++}
++
++.large .header {
++  margin-bottom: 1.5rem;
++}
++
++.compact .header {
++  margin-bottom: 1rem;
++}
++
++.headerArrows {
++  display: flex;
++  gap: 0.75rem;
++  margin-left: auto;
++  flex-shrink: 0;
++}
++
++.headerArrow {
++  display: flex;
++  align-items: center;
++  justify-content: center;
++  border: 1.5px solid var(--neutral-border-default);
++  border-radius: 50%;
++  background: transparent;
++  color: var(--neutral-icon-default);
++  cursor: pointer;
++  padding: 0;
++  flex-shrink: 0;
++  transition: background-color 0.15s ease;
++}
++
++.large .headerArrow {
++  width: 2.5rem;
++  height: 2.5rem;
++}
++
++.compact .headerArrow {
++  width: 2rem;
++  height: 2rem;
++}
++
++.headerArrow:hover {
++  background-color: var(--neutral-background-subtleOpaque);
++}
++
++.headerArrow:active {
++  background-color: var(--neutral-background-subtle);
++}
++
++.headerArrow:focus-visible {
++  outline: 2px solid var(--activity-focus-border);
++  outline-offset: 2px;
++}
++
++@media (max-width: 699px) {
++  .root {
++    padding-left: 1rem;
++    padding-right: 1rem;
++  }
++
++  .large .header,
++  .compact .header {
++    margin-bottom: 1rem;
++  }
++}
+diff --git a/packages/extensions/reco/RecentlyViewedWidget/RecentlyViewedCarousel.test.tsx b/packages/extensions/reco/RecentlyViewedWidget/RecentlyViewedCarousel.test.tsx
+new file mode 100644
+index 000000000..258665e45
+--- /dev/null
++++ b/packages/extensions/reco/RecentlyViewedWidget/RecentlyViewedCarousel.test.tsx
+@@ -0,0 +1,90 @@
++import { render, screen } from '@testing-library/react';
++import { createRef } from 'react';
++import { RecentlyViewedCarousel } from './RecentlyViewedCarousel';
++import type { RecentlyViewedProduct } from './RecentlyViewedCarousel';
++
++jest.mock('../Atoms/Carousel', () => ({
++  Carousel: ({ children }: { children: React.ReactNode }) => <div data-testid="carousel">{children}</div>,
++}));
++
++beforeAll(() => {
++  Object.defineProperty(window, 'matchMedia', {
++    writable: true,
++    value: jest.fn((query: string) => ({
++      matches: false,
++      media: query,
++      addEventListener: jest.fn(),
++      removeEventListener: jest.fn(),
++    })),
++  });
++});
++
++const MOCK_PRODUCTS: RecentlyViewedProduct[] = [
++  { id: 1, name: 'Sport-Tek Competitor Polo', linkHref: '/products/polo', imageSrc: 'https://example.com/polo.jpg' },
++  { id: 2, name: 'Bella Canvas V-Neck', linkHref: '/products/vneck', imageSrc: 'https://example.com/vneck.jpg' },
++  { id: 3, name: 'Comfort Colors Tee', linkHref: '/products/tee', imageSrc: 'https://example.com/tee.jpg' },
++];
++
++describe('RecentlyViewedCarousel', () => {
++  it('renders the title', () => {
++    render(<RecentlyViewedCarousel products={MOCK_PRODUCTS} />);
++    expect(screen.getByText('Pick Up Where You Left Off')).toBeInTheDocument();
++  });
++
++  it('renders a custom title', () => {
++    render(<RecentlyViewedCarousel products={MOCK_PRODUCTS} title="Recently viewed items" />);
++    expect(screen.getByText('Recently viewed items')).toBeInTheDocument();
++  });
++
++  it('renders all product cards', () => {
++    render(<RecentlyViewedCarousel products={MOCK_PRODUCTS} />);
++    MOCK_PRODUCTS.forEach((p) => {
++      expect(screen.getByText(p.name)).toBeInTheDocument();
++    });
++  });
++
++  it('renders nothing when products is empty', () => {
++    const { container } = render(<RecentlyViewedCarousel products={[]} />);
++    expect(container.firstChild).toBeNull();
++  });
++
++  it('forwards ref to the root element', () => {
++    const ref = createRef<HTMLDivElement>();
++    render(<RecentlyViewedCarousel products={MOCK_PRODUCTS} ref={ref} />);
++    expect(ref.current).toBeInstanceOf(HTMLDivElement);
++  });
++
++  it('applies custom className', () => {
++    const ref = createRef<HTMLDivElement>();
++    render(<RecentlyViewedCarousel products={MOCK_PRODUCTS} className="custom" ref={ref} />);
++    expect(ref.current?.className).toContain('custom');
++  });
++
++  it('renders data-testid on root', () => {
++    render(<RecentlyViewedCarousel products={MOCK_PRODUCTS} />);
++    expect(screen.getByTestId('recently-viewed-carousel')).toBeInTheDocument();
++  });
++
++  it('renders children below the carousel', () => {
++    render(
++      <RecentlyViewedCarousel products={MOCK_PRODUCTS}>
++        <a href="/all" data-testid="view-all">
++          View All
++        </a>
++      </RecentlyViewedCarousel>,
++    );
++    expect(screen.getByTestId('view-all')).toBeInTheDocument();
++  });
++
++  it('applies large variant class by default', () => {
++    const ref = createRef<HTMLDivElement>();
++    render(<RecentlyViewedCarousel products={MOCK_PRODUCTS} ref={ref} />);
++    expect(ref.current?.className).toContain('large');
++  });
++
++  it('applies compact variant class', () => {
++    const ref = createRef<HTMLDivElement>();
++    render(<RecentlyViewedCarousel products={MOCK_PRODUCTS} variant="compact" ref={ref} />);
++    expect(ref.current?.className).toContain('compact');
++  });
++});
+diff --git a/packages/extensions/reco/RecentlyViewedWidget/RecentlyViewedCarousel.tsx b/packages/extensions/reco/RecentlyViewedWidget/RecentlyViewedCarousel.tsx
+new file mode 100644
+index 000000000..468b64623
+--- /dev/null
++++ b/packages/extensions/reco/RecentlyViewedWidget/RecentlyViewedCarousel.tsx
+@@ -0,0 +1,155 @@
++import React, { useCallback, useRef } from 'react';
++import { Typography } from '@customink/pigment-react';
++import type { Breakpoint } from '../Molecules/ProductsCarousel/types';
++import { Carousel } from '../Atoms/Carousel';
++import type { CarouselHandle } from '../Atoms/Carousel';
++import { MiniProductCard } from '../Molecules/MiniProductCard';
++import { useBreakpoint } from '../hooks/useBreakpoint';
++import styles from './RecentlyViewedCarousel.module.css';
++
++import { ARROW_PATH } from '../Atoms/Carousel/constants';
++
++export type RecentlyViewedProduct = {
++  id: string | number;
++  name: string;
++  linkHref: string;
++  imageSrc: string;
++  imageSrcSet?: string;
++  imageAlt?: string;
++};
++
++export type RecentlyViewedCarouselProps = {
++  products: RecentlyViewedProduct[];
++  /** @default 'Pick Up Where You Left Off' */
++  title?: string;
++  /**
++   * `"large"` — h2 heading (homepage placement).
++   * `"compact"` — h4 heading (PDP placement).
++   * @default 'large'
++   */
++  variant?: 'large' | 'compact';
++  /**
++   * Show prev/next arrow buttons alongside the header on desktop and tablet.
++   * Hidden on mobile regardless of this setting.
++   * @default false
++   */
++  arrows?: boolean;
++  slidesConfig?: Partial<Record<Breakpoint, { perView: number; spacing: number }>>;
++  onCardClicked?: (product: RecentlyViewedProduct, index: number) => void;
++  children?: React.ReactNode;
++  className?: string;
++  style?: React.CSSProperties;
++};
++
++const DEFAULT_SLIDES_CONFIG: Record<Breakpoint, { perView: number; spacing: number }> = {
++  mobile: { perView: 2.3, spacing: 10 },
++  tablet: { perView: 3.4, spacing: 16 },
++  desktop: { perView: 6, spacing: 16 },
++};
++
++const TITLE_VARIANT = {
++  large: 'heading2',
++  compact: 'heading4',
++} as const;
++
++const ARROW_SIZE = {
++  large: 18,
++  compact: 14,
++} as const;
++
++type CardSlideProps = {
++  product: RecentlyViewedProduct;
++  index: number;
++  onCardClick: (product: RecentlyViewedProduct, index: number) => void;
++};
++
++function CardSlide({ product, index, onCardClick }: CardSlideProps) {
++  const handleClick = useCallback(() => onCardClick(product, index), [onCardClick, product, index]);
++
++  return (
++    <MiniProductCard
++      name={product.name}
++      linkHref={product.linkHref}
++      imageSrc={product.imageSrc}
++      imageSrcSet={product.imageSrcSet}
++      imageAlt={product.imageAlt}
++      onClick={handleClick}
++    />
++  );
++}
++
++export const RecentlyViewedCarousel = React.forwardRef<HTMLDivElement, RecentlyViewedCarouselProps>(
++  function RecentlyViewedCarousel(
++    {
++      products,
++      title = 'Pick Up Where You Left Off',
++      variant = 'large',
++      arrows = false,
++      slidesConfig,
++      onCardClicked,
++      children,
++      className,
++      style,
++    },
++    ref,
++  ) {
++    const breakpoint = useBreakpoint();
++    const { perView, spacing } = { ...DEFAULT_SLIDES_CONFIG[breakpoint], ...slidesConfig?.[breakpoint] };
++    const sliderRef = useRef<CarouselHandle>(null);
++    const canScroll = products.length > perView;
++    const showHeaderArrows = arrows && canScroll && breakpoint !== 'mobile';
++    const loop = showHeaderArrows;
++    const arrowSize = ARROW_SIZE[variant];
++
++    const handlePrev = useCallback(() => sliderRef.current?.prev(), []);
++    const handleNext = useCallback(() => sliderRef.current?.next(), []);
++    const handleCardClick = useCallback(
++      (product: RecentlyViewedProduct, index: number) => onCardClicked?.(product, index),
++      [onCardClicked],
++    );
++
++    if (products.length === 0) return null;
++
++    const rootClass = [styles.root, styles[variant], className].filter(Boolean).join(' ');
++
++    return (
++      <div ref={ref} className={rootClass} style={style} data-testid="recently-viewed-carousel">
++        <div className={styles.header}>
++          <Typography variant={TITLE_VARIANT[variant]} color="primary">
++            {title}
++          </Typography>
++          {showHeaderArrows ? (
++            <div className={styles.headerArrows} data-testid="header-arrows">
++              <button type="button" className={styles.headerArrow} onClick={handlePrev} aria-label="Previous">
++                <svg width={arrowSize} height={arrowSize} viewBox="0 0 24 24" fill="none" aria-hidden="true">
++                  <path
++                    fillRule="evenodd"
++                    clipRule="evenodd"
++                    d={ARROW_PATH}
++                    fill="currentColor"
++                    transform="scale(-1,1) translate(-24,0)"
++                  />
++                </svg>
++              </button>
++              <button type="button" className={styles.headerArrow} onClick={handleNext} aria-label="Next">
++                <svg width={arrowSize} height={arrowSize} viewBox="0 0 24 24" fill="none" aria-hidden="true">
++                  <path fillRule="evenodd" clipRule="evenodd" d={ARROW_PATH} fill="currentColor" />
++                </svg>
++              </button>
++            </div>
++          ) : null}
++        </div>
++
++        <Carousel slidesPerView={perView} spacing={spacing} loop={loop} arrows={false} sliderRef={sliderRef}>
++          {products.map((product, index) => (
++            <CardSlide key={product.id} product={product} index={index} onCardClick={handleCardClick} />
++          ))}
++        </Carousel>
++
++        {children}
++      </div>
++    );
++  },
++);
++
++RecentlyViewedCarousel.displayName = 'RecentlyViewedCarousel';
+diff --git a/packages/extensions/reco/RecentlyViewedWidget/index.ts b/packages/extensions/reco/RecentlyViewedWidget/index.ts
+new file mode 100644
+index 000000000..c94b0b92a
+--- /dev/null
++++ b/packages/extensions/reco/RecentlyViewedWidget/index.ts
+@@ -0,0 +1,2 @@
++export { RecentlyViewedCarousel } from './RecentlyViewedCarousel';
++export type { RecentlyViewedCarouselProps, RecentlyViewedProduct } from './RecentlyViewedCarousel';
+diff --git a/packages/extensions/reco/hooks/useBreakpoint/index.ts b/packages/extensions/reco/hooks/useBreakpoint/index.ts
+new file mode 100644
+index 000000000..fc763e2bb
+--- /dev/null
++++ b/packages/extensions/reco/hooks/useBreakpoint/index.ts
+@@ -0,0 +1 @@
++export { useBreakpoint } from './useBreakpoint';
+diff --git a/packages/extensions/reco/hooks/useBreakpoint/useBreakpoint.ts b/packages/extensions/reco/hooks/useBreakpoint/useBreakpoint.ts
+new file mode 100644
+index 000000000..849dfe1c3
+--- /dev/null
++++ b/packages/extensions/reco/hooks/useBreakpoint/useBreakpoint.ts
+@@ -0,0 +1,34 @@
++import { useEffect, useState } from 'react';
++import units from '@customink/design-tokens/semantics/units';
++import type { Breakpoint } from '../../Molecules/ProductsCarousel/types';
++
++const BREAKPOINTS = {
++  mobile: parseInt(units.size.breakpoint.tablet, 10),
++  desktop: parseInt(units.size.breakpoint.desktop, 10),
++};
++
++function getBreakpoint(width: number): Breakpoint {
++  if (width < BREAKPOINTS.mobile) return 'mobile';
++  if (width < BREAKPOINTS.desktop) return 'tablet';
++  return 'desktop';
++}
++
++export function useBreakpoint(): Breakpoint {
++  const [breakpoint, setBreakpoint] = useState<Breakpoint>(() =>
++    typeof window !== 'undefined' ? getBreakpoint(window.innerWidth) : 'desktop',
++  );
++
++  useEffect(() => {
++    const mqMobile = window.matchMedia(`(max-width: ${BREAKPOINTS.mobile - 1}px)`);
++    const mqTablet = window.matchMedia(`(min-width: ${BREAKPOINTS.mobile}px) and (max-width: ${BREAKPOINTS.desktop - 1}px)`);
++    const handler = () => setBreakpoint(getBreakpoint(window.innerWidth));
++    mqMobile.addEventListener('change', handler);
++    mqTablet.addEventListener('change', handler);
++    return () => {
++      mqMobile.removeEventListener('change', handler);
++      mqTablet.removeEventListener('change', handler);
++    };
++  }, []);
++
++  return breakpoint;
++}
+diff --git a/packages/extensions/reco/index.ts b/packages/extensions/reco/index.ts
+index 28fee8daf..0202fffc4 100644
+--- a/packages/extensions/reco/index.ts
++++ b/packages/extensions/reco/index.ts
+@@ -1,3 +1,7 @@
++export { MiniProductCard } from './Molecules/MiniProductCard';
++export type { MiniProductCardProps } from './Molecules/MiniProductCard';
++export { RecentlyViewedCarousel } from './RecentlyViewedWidget';
++export type { RecentlyViewedCarouselProps, RecentlyViewedProduct } from './RecentlyViewedWidget';
+ export { ProductsCarouselWidget } from './Molecules/ProductsCarousel';
+ export { TrendingProductsCarousel } from './TrendingWidget';
+ export type { TrendingProductsCarouselProps } from './TrendingWidget';

@@ -1,0 +1,23 @@
+{
+  "underlying_goal": "Fix a production foreign key constraint error during queue event consumption and cover the fix with tests",
+  "goal_categories": {
+    "debugging": 1,
+    "code_fix": 1,
+    "testing": 2
+  },
+  "outcome": "mostly_achieved",
+  "user_satisfaction_counts": {
+    "dissatisfied": 1,
+    "likely_satisfied": 2
+  },
+  "claude_helpfulness": "very_helpful",
+  "session_type": "iterative_refinement",
+  "friction_counts": {
+    "wrong_approach": 1,
+    "misunderstood_request": 1
+  },
+  "friction_detail": "Claude created a separate unit test file instead of adding tests to the existing e2e spec file, and initially cited line numbers without clearly identifying the source file.",
+  "primary_success": "good_debugging",
+  "brief_summary": "User needed a production FK constraint error fixed and covered by tests; Claude correctly diagnosed and fixed the bug but placed tests in the wrong file, requiring user correction.",
+  "session_id": "26fe6ee9-3e33-40bb-9d26-641e0cf7eced"
+}

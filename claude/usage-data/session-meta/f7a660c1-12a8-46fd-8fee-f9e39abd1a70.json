@@ -1,0 +1,60 @@
+{
+  "session_id": "f7a660c1-12a8-46fd-8fee-f9e39abd1a70",
+  "project_path": "/Users/4thwithme/Documents/repo/recommendations-service",
+  "start_time": "2026-02-04T13:03:35.726Z",
+  "duration_minutes": 11,
+  "user_message_count": 7,
+  "assistant_message_count": 59,
+  "tool_counts": {
+    "Glob": 1,
+    "Read": 4,
+    "Write": 2,
+    "Edit": 8,
+    "Bash": 9
+  },
+  "languages": {
+    "TypeScript": 10,
+    "JSON": 2
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 580,
+  "output_tokens": 7124,
+  "first_prompt": "@eslint-rules/require-object-params.js  1. Missing Type Annotations (eslint-rules/require-object-params.js) Custom ESLint rule written in JavaScript without types. Should use TypeScript with proper ty…",
+  "user_interruptions": 0,
+  "user_response_times": [
+    33.876,
+    245.453,
+    70.531
+  ],
+  "tool_errors": 2,
+  "tool_error_categories": {
+    "Command Failed": 1,
+    "File Changed": 1
+  },
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 474,
+  "lines_removed": 34,
+  "files_modified": 3,
+  "message_hours": [
+    14,
+    14,
+    14,
+    14,
+    14,
+    14,
+    14
+  ],
+  "user_message_timestamps": [
+    "2026-02-04T13:03:35.726Z",
+    "2026-02-04T13:03:35.722Z",
+    "2026-02-04T13:03:35.726Z",
+    "2026-02-04T13:03:55.754Z",
+    "2026-02-04T13:05:20.544Z",
+    "2026-02-04T13:11:03.918Z",
+    "2026-02-04T13:14:11.243Z"
+  ]
+}

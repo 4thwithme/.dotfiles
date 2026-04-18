@@ -1,0 +1,26 @@
+[
+  {
+    "content": "Analyze related-products service implementation",
+    "status": "completed",
+    "priority": "high",
+    "id": "1"
+  },
+  {
+    "content": "Check cache implementation and TTL configuration",
+    "status": "completed",
+    "priority": "high",
+    "id": "2"
+  },
+  {
+    "content": "Examine Algolia service usage patterns",
+    "status": "completed",
+    "priority": "high",
+    "id": "3"
+  },
+  {
+    "content": "Identify potential causes for excessive Algolia requests",
+    "status": "completed",
+    "priority": "high",
+    "id": "4"
+  }
+]

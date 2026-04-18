@@ -1,0 +1,42 @@
+[
+  {
+    "content": "Check PR eligibility (closed/draft/automated/already reviewed)",
+    "status": "in_progress",
+    "activeForm": "Checking PR eligibility"
+  },
+  {
+    "content": "Find relevant CLAUDE.md files",
+    "status": "pending",
+    "activeForm": "Finding CLAUDE.md files"
+  },
+  {
+    "content": "Get PR summary",
+    "status": "pending",
+    "activeForm": "Getting PR summary"
+  },
+  {
+    "content": "Run 5 parallel code review agents",
+    "status": "pending",
+    "activeForm": "Running parallel code review agents"
+  },
+  {
+    "content": "Score issues with parallel Haiku agents",
+    "status": "pending",
+    "activeForm": "Scoring issues"
+  },
+  {
+    "content": "Filter issues (score >= 80)",
+    "status": "pending",
+    "activeForm": "Filtering issues"
+  },
+  {
+    "content": "Recheck PR eligibility",
+    "status": "pending",
+    "activeForm": "Rechecking PR eligibility"
+  },
+  {
+    "content": "Post review comment",
+    "status": "pending",
+    "activeForm": "Posting review comment"
+  }
+]

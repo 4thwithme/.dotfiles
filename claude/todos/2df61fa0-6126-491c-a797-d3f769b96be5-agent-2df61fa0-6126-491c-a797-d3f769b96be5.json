@@ -1,0 +1,26 @@
+[
+  {
+    "content": "Setup Docker and build process",
+    "status": "completed",
+    "priority": "high",
+    "id": "setup-docker"
+  },
+  {
+    "content": "Configure MongoDB and Redis in Docker files",
+    "status": "completed",
+    "priority": "high",
+    "id": "configure-databases"
+  },
+  {
+    "content": "Create initial documentation (README, CONTRIBUTING, etc.)",
+    "status": "pending",
+    "priority": "medium",
+    "id": "create-docs"
+  },
+  {
+    "content": "Set up CI/CD pipeline with GitHub Actions",
+    "status": "pending",
+    "priority": "medium",
+    "id": "setup-cicd"
+  }
+]

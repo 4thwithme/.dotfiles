@@ -1,0 +1,14 @@
+[+] Running 0/13
+ ⠴ pg-read [⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀] Pulling                                                                                                                                                                                 30.5s
+   ⠸ d8ad8cd72600 Pulling fs layer                                                                                                                                                                               29.3s
+   ⠸ 79adb56125dd Pulling fs layer                                                                                                                                                                               29.3s
+   ⠸ 916f1ad40c12 Pulling fs layer                                                                                                                                                                               29.3s
+   ⠸ 3d85c14803ff Waiting                                                                                                                                                                                        29.3s
+   ⠸ 58563aacf9ee Waiting                                                                                                                                                                                        29.3s
+   ⠸ 3d8f3437ce1b Waiting                                                                                                                                                                                        29.3s
+   ⠸ 7419a9c52e02 Waiting                                                                                                                                                                                        29.3s
+   ⠸ 49b582240ca8 Waiting                                                                                                                                                                                        29.3s
+   ⠸ 4328d592a54b Waiting                                                                                                                                                                                        29.3s
+   ⠸ 08bb20b6ce3e Waiting                                                                                                                                                                                        29.3s
+   ⠸ b06d9135182e Waiting                                                                                                                                                                                        29.3s
+ ⠴ pg-write Pulling                                                                                                                                                                                              30.5s

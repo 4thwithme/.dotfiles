@@ -1,0 +1,8 @@
+{
+  "id": "21",
+  "subject": "Task 15: Auth Service",
+  "description": "Core auth orchestration: OAuth flow, token exchange, linking, theft detection",
+  "status": "completed",
+  "blocks": [],
+  "blockedBy": []
+}

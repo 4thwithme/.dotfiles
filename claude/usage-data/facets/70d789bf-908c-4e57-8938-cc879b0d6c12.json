@@ -1,0 +1,24 @@
+{
+  "underlying_goal": "Enhance a neural search endpoint to accept tags as 'should' term boosts, add a confidence score percentage to results, and update the UI to support these changes",
+  "goal_categories": {
+    "feature_addition": 3,
+    "ui_update": 1,
+    "bug_fix": 1,
+    "code_simplification": 1
+  },
+  "outcome": "fully_achieved",
+  "user_satisfaction_counts": {
+    "likely_satisfied": 3,
+    "dissatisfied": 2
+  },
+  "claude_helpfulness": "very_helpful",
+  "session_type": "iterative_refinement",
+  "friction_counts": {
+    "buggy_code": 1,
+    "wrong_approach": 1
+  },
+  "friction_detail": "Claude used incorrect OpenSearch terms query syntax causing a 400 error, then over-complicated the fix with constant_score wrapping when a simple should/terms clause was what the user wanted.",
+  "primary_success": "multi_file_changes",
+  "brief_summary": "User wanted to add tags support as 'should' boosts to a neural search endpoint plus a confidence score percentage; achieved after fixing an OpenSearch query syntax error and simplifying the approach per user feedback.",
+  "session_id": "70d789bf-908c-4e57-8938-cc879b0d6c12"
+}

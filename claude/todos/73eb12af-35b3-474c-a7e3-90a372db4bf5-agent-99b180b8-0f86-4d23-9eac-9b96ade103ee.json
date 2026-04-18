@@ -1,0 +1,47 @@
+[
+  {
+    "content": "Fix critical null handling bug in algolia.service.ts",
+    "status": "completed",
+    "activeForm": "Fixing critical null handling bug in algolia.service.ts"
+  },
+  {
+    "content": "Remove inconsistent validation in forecasted-trending-products.model.ts",
+    "status": "completed",
+    "activeForm": "Removing inconsistent validation in forecasted-trending-products.model.ts"
+  },
+  {
+    "content": "Add @LogExecution decorators to algolia.service.ts methods",
+    "status": "completed",
+    "activeForm": "Adding @LogExecution decorators to algolia.service.ts methods"
+  },
+  {
+    "content": "Remove empty array bypass in style.model.ts",
+    "status": "in_progress",
+    "activeForm": "Removing empty array bypass in style.model.ts"
+  },
+  {
+    "content": "Fix validation in loops performance issue",
+    "status": "pending",
+    "activeForm": "Fixing validation in loops performance issue"
+  },
+  {
+    "content": "Remove redundant casts in algolia.service.ts",
+    "status": "pending",
+    "activeForm": "Removing redundant casts in algolia.service.ts"
+  },
+  {
+    "content": "Add missing float test for @IsInt() validation",
+    "status": "pending",
+    "activeForm": "Adding missing float test for @IsInt() validation"
+  },
+  {
+    "content": "Replace magic UUIDs with constants/factories",
+    "status": "pending",
+    "activeForm": "Replacing magic UUIDs with constants/factories"
+  },
+  {
+    "content": "Create migration for primary_category_id nullable change",
+    "status": "pending",
+    "activeForm": "Creating migration for primary_category_id nullable change"
+  }
+]

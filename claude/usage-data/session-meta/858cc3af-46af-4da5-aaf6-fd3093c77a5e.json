@@ -1,0 +1,49 @@
+{
+  "session_id": "858cc3af-46af-4da5-aaf6-fd3093c77a5e",
+  "project_path": "/Users/4thwithme/Documents/repo/recommendations-service",
+  "start_time": "2026-02-14T03:29:43.281Z",
+  "duration_minutes": 14,
+  "user_message_count": 3,
+  "assistant_message_count": 113,
+  "tool_counts": {
+    "Bash": 24,
+    "Read": 17,
+    "Edit": 23,
+    "Grep": 6
+  },
+  "languages": {
+    "TypeScript": 40
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 3016,
+  "output_tokens": 10718,
+  "first_prompt": "test/open-ai/open-ai.service.e2e-spec.ts run this e2e file and fix all tests, then check coverage and we need to have 95%+ coverage for all types of checks  fix tests until you achive these metrics",
+  "user_interruptions": 0,
+  "user_response_times": [
+    57.367,
+    12.744
+  ],
+  "tool_errors": 2,
+  "tool_error_categories": {
+    "Other": 1,
+    "Edit Failed": 1
+  },
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 667,
+  "lines_removed": 11,
+  "files_modified": 3,
+  "message_hours": [
+    4,
+    4,
+    4
+  ],
+  "user_message_timestamps": [
+    "2026-02-14T03:29:43.281Z",
+    "2026-02-14T03:33:41.051Z",
+    "2026-02-14T03:38:02.889Z"
+  ]
+}

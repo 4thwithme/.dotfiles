@@ -1,0 +1,20 @@
+[
+  {
+    "content": "Remove shadow from hover effect",
+    "status": "completed",
+    "priority": "medium",
+    "id": "1"
+  },
+  {
+    "content": "Change hover color to different variable",
+    "status": "completed",
+    "priority": "medium",
+    "id": "2"
+  },
+  {
+    "content": "Fix Monday.com image with valid link",
+    "status": "completed",
+    "priority": "high",
+    "id": "3"
+  }
+]

@@ -1,0 +1,27 @@
+[
+  {
+    "content": "Examine current Vite configuration",
+    "status": "completed",
+    "activeForm": "Examining current Vite configuration"
+  },
+  {
+    "content": "Add server middleware for SSR injection",
+    "status": "in_progress",
+    "activeForm": "Adding server middleware for SSR injection"
+  },
+  {
+    "content": "Update index.html for SSR placeholder",
+    "status": "pending",
+    "activeForm": "Updating index.html for SSR placeholder"
+  },
+  {
+    "content": "Configure header prerender fetching",
+    "status": "pending",
+    "activeForm": "Configuring header prerender fetching"
+  },
+  {
+    "content": "Test SSR + hydration flow",
+    "status": "pending",
+    "activeForm": "Testing SSR + hydration flow"
+  }
+]

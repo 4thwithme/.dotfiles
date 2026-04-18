@@ -1,0 +1,143 @@
+> webapp-backend@0.0.1 code-quality-check
+> npm run lint && npm run format && npm run type-check
+
+
+> webapp-backend@0.0.1 lint
+> eslint "{src,apps,libs,test}/**/*.ts"
+
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/migrations/20260322120000_create_users_table.ts
+   9:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+  42:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/migrations/20260322120001_create_companies_table.ts
+   9:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+  37:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/migrations/20260322120002_create_company_members_table.ts
+  13:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+  64:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/migrations/20260322120003_create_oauth_accounts_table.ts
+   9:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+  55:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/migrations/20260322120004_create_invitations_table.ts
+  13:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+  68:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/migrations/20260414120000_create_github_installations_table.ts
+   9:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+  48:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/migrations/20260414120001_create_github_repos_table.ts
+  12:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+  51:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/migrations/20260416000000_create_github_contributors_table.ts
+  12:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+  52:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/migrations/20260416000001_create_github_commits_table.ts
+  13:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+  64:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/migrations/20260416000002_create_github_pull_requests_table.ts
+  13:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+  69:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/migrations/20260416000003_create_github_reviews_table.ts
+  13:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+  60:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/migrations/20260416000004_create_github_review_comments_table.ts
+  13:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+  60:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/migrations/20260416100000_create_jira_installations_table.ts
+   9:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+  47:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/migrations/20260416100001_create_jira_projects_table.ts
+  12:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+  52:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/migrations/20260416100002_create_jira_issues_table.ts
+  13:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+  62:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/migrations/20260416100003_create_jira_changelog_table.ts
+  13:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+  55:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/migrations/20260416100004_create_jira_worklogs_table.ts
+  13:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+  57:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/migrations/20260416100005_create_jira_sprints_table.ts
+  12:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+  53:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/modules/auth/guards/fastify-throttler.guard.ts
+  15:29  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/modules/github/github-event.processor.ts
+   61:15  warning  Custom functions must use a single object destructuring parameter                                   custom-rules/require-object-params
+  332:8   warning  Unnecessary conditional, expected left-hand side of `??` operator to be possibly null or undefined  @typescript-eslint/no-unnecessary-condition
+  332:34  warning  Unnecessary optional chain on a non-nullish value                                                   @typescript-eslint/no-unnecessary-condition
+  339:8   warning  Unnecessary conditional, expected left-hand side of `??` operator to be possibly null or undefined  @typescript-eslint/no-unnecessary-condition
+  339:36  warning  Unnecessary optional chain on a non-nullish value                                                   @typescript-eslint/no-unnecessary-condition
+  390:10  warning  Unnecessary conditional, value is always truthy                                                     @typescript-eslint/no-unnecessary-condition
+  441:10  warning  Unnecessary conditional, value is always truthy                                                     @typescript-eslint/no-unnecessary-condition
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/modules/jira/jira-api.service.ts
+  113:10  warning  Unnecessary conditional, value is always truthy  @typescript-eslint/no-unnecessary-condition
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/modules/jira/jira-sync.service.ts
+  161:10  warning  Unnecessary conditional, value is always truthy  @typescript-eslint/no-unnecessary-condition
+  314:12  warning  Unnecessary conditional, value is always truthy  @typescript-eslint/no-unnecessary-condition
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/modules/oauth-account/oauth-account.model.ts
+  137:35  warning  Unnecessary conditional, the types have no overlap  @typescript-eslint/no-unnecessary-condition
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/unit-tests/jira-sync.service.unit-spec.ts
+  491:39  warning  Unnecessary optional chain on a non-nullish value  @typescript-eslint/no-unnecessary-condition
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/test/jira.module.e2e-spec.ts
+   226:41  error  Replace `⏎↹↹↹↹.post('/api/integrations/jira/connect')⏎↹↹↹↹` with `.post('/api/integrations/jira/connect')`                                                                                                                        prettier/prettier
+   283:8   error  Replace `⏎↹↹↹↹.spyOn(httpService.axiosRef,·'post')⏎↹↹↹↹` with `.spyOn(httpService.axiosRef,·'post')`                                                                                                                              prettier/prettier
+   333:8   error  Replace `⏎↹↹↹↹.spyOn(httpService.axiosRef,·'post')⏎↹↹↹↹` with `.spyOn(httpService.axiosRef,·'post')`                                                                                                                              prettier/prettier
+   369:52  error  Replace `.where({·_id:·installation._id·})` with `⏎↹↹↹↹.where({·_id:·installation._id·})⏎↹↹↹↹`                                                                                                                                    prettier/prettier
+   388:46  error  Replace `·knex,·name:·`Other·Co·${randomUUID()}`·` with `⏎↹↹↹↹knex,⏎↹↹↹↹name:·`Other·Co·${randomUUID()}`,⏎↹↹↹`                                                                                                                    prettier/prettier
+   436:9   error  Replace `.spyOn(httpService.axiosRef,·'post')` with `⏎↹↹↹↹↹.spyOn(httpService.axiosRef,·'post')⏎↹↹↹↹↹`                                                                                                                            prettier/prettier
+   437:1   error  Insert `↹`                                                                                                                                                                                                                        prettier/prettier
+   438:1   error  Insert `↹`                                                                                                                                                                                                                        prettier/prettier
+   476:9   error  Replace `.spyOn(httpService.axiosRef,·'post').mockResolvedValueOnce(⏎↹↹↹↹↹makeTokenResponse(),⏎↹↹↹↹` with `⏎↹↹↹↹↹.spyOn(httpService.axiosRef,·'post')⏎↹↹↹↹↹.mockResolvedValueOnce(makeTokenResponse()`                            prettier/prettier
+   497:9   error  Replace `.spyOn(httpService.axiosRef,·'get').mockResolvedValueOnce(⏎↹↹↹↹↹makeResourcesResponse(),⏎↹↹↹↹` with `⏎↹↹↹↹↹.spyOn(httpService.axiosRef,·'get')⏎↹↹↹↹↹.mockResolvedValueOnce(makeResourcesResponse()`                      prettier/prettier
+   522:9   error  Replace `·id:·'proj-1',·key:·'PROJ',·name:·'Project·1',·projectTypeKey:·'software'·` with `⏎↹↹↹↹↹↹↹↹id:·'proj-1',⏎↹↹↹↹↹↹↹↹key:·'PROJ',⏎↹↹↹↹↹↹↹↹name:·'Project·1',⏎↹↹↹↹↹↹↹↹projectTypeKey:·'software',⏎↹↹↹↹↹↹↹`                    prettier/prettier
+   547:9   error  Replace `·id:·'proj-1',·key:·'PROJ1',·name:·'Project·1',·projectTypeKey:·'software'·` with `⏎↹↹↹↹↹↹↹↹id:·'proj-1',⏎↹↹↹↹↹↹↹↹key:·'PROJ1',⏎↹↹↹↹↹↹↹↹name:·'Project·1',⏎↹↹↹↹↹↹↹↹projectTypeKey:·'software',⏎↹↹↹↹↹↹↹`                  prettier/prettier
+   560:9   error  Replace `·id:·'proj-2',·key:·'PROJ2',·name:·'Project·2',·projectTypeKey:·'software'·` with `⏎↹↹↹↹↹↹↹↹id:·'proj-2',⏎↹↹↹↹↹↹↹↹key:·'PROJ2',⏎↹↹↹↹↹↹↹↹name:·'Project·2',⏎↹↹↹↹↹↹↹↹projectTypeKey:·'software',⏎↹↹↹↹↹↹↹`                  prettier/prettier
+   602:56  error  Replace `·installationModel,·companyId·` with `⏎↹↹↹↹↹installationModel,⏎↹↹↹↹↹companyId,⏎↹↹↹↹`                                                                                                                                     prettier/prettier
+   604:9   error  Replace `⏎↹↹↹↹↹.spyOn(jiraApiService,·'getValidToken')⏎↹↹↹↹↹` with `.spyOn(jiraApiService,·'getValidToken')`                                                                                                                      prettier/prettier
+   608:9   error  Replace `.spyOn(jiraApiService,·'listProjects')` with `⏎↹↹↹↹↹.spyOn(jiraApiService,·'listProjects')⏎↹↹↹↹↹`                                                                                                                        prettier/prettier
+   609:6   error  Replace `{·id:·'proj-1',·key:·'PROJ',·name:·'Test·Project',·projectTypeKey:·'software'·` with `↹{⏎↹↹↹↹↹↹↹id:·'proj-1',⏎↹↹↹↹↹↹↹key:·'PROJ',⏎↹↹↹↹↹↹↹name:·'Test·Project',⏎↹↹↹↹↹↹↹projectTypeKey:·'software',⏎↹↹↹↹↹↹`                prettier/prettier
+   610:1   error  Insert `↹`                                                                                                                                                                                                                        prettier/prettier
+   635:56  error  Replace `·installationModel,·companyId·` with `⏎↹↹↹↹↹installationModel,⏎↹↹↹↹↹companyId,⏎↹↹↹↹`                                                                                                                                     prettier/prettier
+   637:9   error  Replace `.spyOn(jiraApiService,·'listProjects')` with `⏎↹↹↹↹↹.spyOn(jiraApiService,·'listProjects')⏎↹↹↹↹↹`                                                                                                                        prettier/prettier
+   638:6   error  Replace `{·id:·'proj-1',·key:·'PROJ',·name:·'Test·Project',·projectTypeKey:·'software'·` with `↹{⏎↹↹↹↹↹↹↹id:·'proj-1',⏎↹↹↹↹↹↹↹key:·'PROJ',⏎↹↹↹↹↹↹↹name:·'Test·Project',⏎↹↹↹↹↹↹↹projectTypeKey:·'software',⏎↹↹↹↹↹↹`                prettier/prettier
+   639:1   error  Insert `↹`                                                                                                                                                                                                                        prettier/prettier
+   640:9   error  Replace `⏎↹↹↹↹↹.spyOn(jiraApiService,·'getValidToken')⏎↹↹↹↹↹` with `.spyOn(jiraApiService,·'getValidToken')`                                                                                                                      prettier/prettier
+   647:8   error  Replace `·id:·'proj-1',·key:·'PROJ',·name:·'Test·Project',·projectTypeKey:·'software'·` with `⏎↹↹↹↹↹↹↹id:·'proj-1',⏎↹↹↹↹↹↹↹key:·'PROJ',⏎↹↹↹↹↹↹↹name:·'Test·Project',⏎↹↹↹↹↹↹↹projectTypeKey:·'software',⏎↹↹↹↹↹↹`                   prettier/prettier
+   761:56  error  Replace `·installationModel,·companyId·` with `⏎↹↹↹↹↹installationModel,⏎↹↹↹↹↹companyId,⏎↹↹↹↹`                                                                                                                                     prettier/prettier
+   763:9   error  Replace `⏎↹↹↹↹↹.spyOn(jiraApiService,·'getValidToken')⏎↹↹↹↹↹` with `.spyOn(jiraApiService,·'getValidToken')`                                                                                                                      prettier/prettier
+   778:56  error  Replace `·installationModel,·companyId·` with `⏎↹↹↹↹↹installationModel,⏎↹↹↹↹↹companyId,⏎↹↹↹↹`                                                                                                                                     prettier/prettier
+  1052:7   error  Replace `·id:·'proj-null',·key:·'PNULL',·name:·'Null·Fields·Project',·projectTypeKey:·'software'·` with `⏎↹↹↹↹↹↹id:·'proj-null',⏎↹↹↹↹↹↹key:·'PNULL',⏎↹↹↹↹↹↹name:·'Null·Fields·Project',⏎↹↹↹↹↹↹projectTypeKey:·'software',⏎↹↹↹↹↹`  prettier/prettier
+  1115:44  error  Replace `.where({·project_id:·project._id·})` with `⏎↹↹↹↹.where({·project_id:·project._id·})⏎↹↹↹↹`                                                                                                                                prettier/prettier
+  1131:7   error  Replace `·id:·'proj-miss',·key:·'PMISS',·name:·'Miss·Project',·projectTypeKey:·'software'·` with `⏎↹↹↹↹↹↹id:·'proj-miss',⏎↹↹↹↹↹↹key:·'PMISS',⏎↹↹↹↹↹↹name:·'Miss·Project',⏎↹↹↹↹↹↹projectTypeKey:·'software',⏎↹↹↹↹↹`                prettier/prettier
+  1164:18  error  Replace `{·field:·'status',·fromString:·'Open',·toString:·'In·Progress'·}` with `⏎↹↹↹↹↹↹↹↹↹↹{·field:·'status',·fromString:·'Open',·toString:·'In·Progress'·},⏎↹↹↹↹↹↹↹↹↹`                                                          prettier/prettier
+  1213:7   error  Replace `·id:·'proj-pag',·key:·'PPAG',·name:·'Pagination·Project',·projectTypeKey:·'software'·` with `⏎↹↹↹↹↹↹id:·'proj-pag',⏎↹↹↹↹↹↹key:·'PPAG',⏎↹↹↹↹↹↹name:·'Pagination·Project',⏎↹↹↹↹↹↹projectTypeKey:·'software',⏎↹↹↹↹↹`        prettier/prettier
+  1263:7   error  Replace `·id:·'proj-ipag',·key:·'PIPAG',·name:·'Issue·Pag·Project',·projectTypeKey:·'software'·` with `⏎↹↹↹↹↹↹id:·'proj-ipag',⏎↹↹↹↹↹↹key:·'PIPAG',⏎↹↹↹↹↹↹name:·'Issue·Pag·Project',⏎↹↹↹↹↹↹projectTypeKey:·'software',⏎↹↹↹↹↹`      prettier/prettier
+  1330:7   error  Replace `·id:·'proj-espag',·key:·'PESPAG',·name:·'Empty·Sprint·Pag',·projectTypeKey:·'software'·` with `⏎↹↹↹↹↹↹id:·'proj-espag',⏎↹↹↹↹↹↹key:·'PESPAG',⏎↹↹↹↹↹↹name:·'Empty·Sprint·Pag',⏎↹↹↹↹↹↹projectTypeKey:·'software',⏎↹↹↹↹↹`    prettier/prettier
+
+✖ 83 problems (34 errors, 49 warnings)
+  34 errors and 0 warnings potentially fixable with the `--fix` option.

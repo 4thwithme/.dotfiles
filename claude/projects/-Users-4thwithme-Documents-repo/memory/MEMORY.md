@@ -1,0 +1,1 @@
+- [clui project](project_clui.md) — TUI wrapper around Claude Code, design complete, implementation next

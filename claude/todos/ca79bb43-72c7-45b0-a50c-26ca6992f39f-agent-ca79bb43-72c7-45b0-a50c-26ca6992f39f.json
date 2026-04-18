@@ -1,0 +1,22 @@
+[
+  {
+    "content": "Check if xlsx package is available in project dependencies",
+    "status": "completed",
+    "activeForm": "Checking xlsx package availability"
+  },
+  {
+    "content": "Install xlsx package",
+    "status": "completed",
+    "activeForm": "Installing xlsx package"
+  },
+  {
+    "content": "Create script to convert CSV files to XLSX with separate tabs",
+    "status": "completed",
+    "activeForm": "Creating CSV to XLSX conversion script"
+  },
+  {
+    "content": "Run the conversion script",
+    "status": "in_progress",
+    "activeForm": "Running the conversion script"
+  }
+]

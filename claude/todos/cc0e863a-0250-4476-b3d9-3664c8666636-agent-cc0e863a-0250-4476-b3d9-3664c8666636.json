@@ -1,0 +1,32 @@
+[
+  {
+    "content": "Update INote interface to use parentId instead of folderId",
+    "status": "completed",
+    "activeForm": "Updating INote interface"
+  },
+  {
+    "content": "Update NoteModel to use parentId",
+    "status": "completed",
+    "activeForm": "Updating NoteModel"
+  },
+  {
+    "content": "Update notes migration to use parentId",
+    "status": "completed",
+    "activeForm": "Updating notes migration"
+  },
+  {
+    "content": "Update note service to use parentId",
+    "status": "completed",
+    "activeForm": "Updating note service"
+  },
+  {
+    "content": "Update note handler to use parentId",
+    "status": "completed",
+    "activeForm": "Updating note handler"
+  },
+  {
+    "content": "Run and test migrations",
+    "status": "in_progress",
+    "activeForm": "Testing migrations"
+  }
+]

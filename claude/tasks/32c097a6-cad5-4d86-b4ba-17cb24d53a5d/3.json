@@ -1,0 +1,9 @@
+{
+  "id": "3",
+  "subject": "Fix primitive params in CLI commands and workers",
+  "description": "Refactor CLI command files and worker files to use object parameters",
+  "activeForm": "Fixing primitive params in CLI",
+  "status": "pending",
+  "blocks": [],
+  "blockedBy": []
+}

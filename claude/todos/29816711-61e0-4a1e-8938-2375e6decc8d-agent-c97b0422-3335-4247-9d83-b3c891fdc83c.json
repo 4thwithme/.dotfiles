@@ -1,0 +1,50 @@
+[
+  {
+    "content": "Process core files (main.ts, cli.ts, knexfile.ts)",
+    "status": "completed",
+    "priority": "high",
+    "id": "1"
+  },
+  {
+    "content": "Process algolia, app, cache, env-config, health modules",
+    "status": "completed",
+    "priority": "high",
+    "id": "2"
+  },
+  {
+    "content": "Process remaining modules (newrelic, cli, db, rest)",
+    "status": "completed",
+    "priority": "high",
+    "id": "3"
+  },
+  {
+    "content": "Process utils, constants, configs directories",
+    "status": "completed",
+    "priority": "medium",
+    "id": "4"
+  },
+  {
+    "content": "Clean up script files with execution instructions",
+    "status": "completed",
+    "priority": "high",
+    "id": "5"
+  },
+  {
+    "content": "Process dto and interfaces directories",
+    "status": "completed",
+    "priority": "medium",
+    "id": "6"
+  },
+  {
+    "content": "Process unit tests and e2e tests",
+    "status": "completed",
+    "priority": "low",
+    "id": "7"
+  },
+  {
+    "content": "Provide summary of files processed and comments removed",
+    "status": "completed",
+    "priority": "low",
+    "id": "8"
+  }
+]

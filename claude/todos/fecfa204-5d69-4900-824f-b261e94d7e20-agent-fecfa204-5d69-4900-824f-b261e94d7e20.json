@@ -1,0 +1,12 @@
+[
+  {
+    "content": "Fix hanging test issues in holiday-helpers.util.unit-spec.ts",
+    "status": "completed",
+    "id": "1"
+  },
+  {
+    "content": "Fix ESLint warning about unbound methods",
+    "status": "completed",
+    "id": "2"
+  }
+]

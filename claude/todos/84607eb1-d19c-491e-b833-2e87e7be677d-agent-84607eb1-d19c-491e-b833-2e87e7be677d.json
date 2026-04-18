@@ -1,0 +1,27 @@
+[
+  {
+    "content": "Create ProductDailySales model in db/styles/models",
+    "status": "completed",
+    "id": "1"
+  },
+  {
+    "content": "Create reusable service for data aggregation in trending module",
+    "status": "completed",
+    "id": "2"
+  },
+  {
+    "content": "Create CLI command for Redshift data import",
+    "status": "completed",
+    "id": "3"
+  },
+  {
+    "content": "Integrate holiday helpers for holiday detection",
+    "status": "completed",
+    "id": "4"
+  },
+  {
+    "content": "Add batch processing logic for large datasets",
+    "status": "completed",
+    "id": "5"
+  }
+]

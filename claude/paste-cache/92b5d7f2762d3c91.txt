@@ -1,0 +1,24 @@
+  What you need to provide                                                                                                       
+                                                                                                                                                                               
+  Code — nothing, I can build all of this.                                                                                       
+                                               
+  Infrastructure — you need:                                                                                                                                                   
+                                               
+  1. A GitHub App (if not already created):                                                                                                                                    
+    - Go to github.com/settings/apps → New GitHub App                                                                            
+    - Set webhook URL (needs to be a public URL)                                                                                                                               
+    - Generate a private key (RSA .pem file)                                                                                                                                   
+    - Note: App ID, Client ID, webhook secret                                                                                                                                  
+    - Permissions needed: Contents: read, Pull requests: read, Checks: read, Metadata: read                                                                                    
+    - Subscribe to events: push, pull_request, pull_request_review, pull_request_review_comment                                                                                
+  2. Public webhook URL for local dev:                                                                                                                                         
+    - Use ngrok http 3000 (or whatever port your backend runs on)                                                                                                              
+    - Set that as webhook URL in GitHub App settings                                                                                                                           
+  3. Env vars (already partially wired, just need real values):                                                                                                                
+  GITHUB_APP_ID=...                                                                                                                                                            
+  GITHUB_APP_NAME=...                                                                                                                                                          
+  GITHUB_APP_PRIVATE_KEY=...  (paste the .pem contents, \n-escaped)                                                                                                            
+  GITHUB_APP_WEBHOOK_SECRET=...                                                                                                                                                
+                                                                                                                                 
+  ---                                                                                                                                                                          
+  Do you already have a GitHub App created, or should I start building the processor + DB layer now?  

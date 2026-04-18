@@ -1,0 +1,32 @@
+[
+  {
+    "content": "Check backend users controller to see if registration endpoint exists",
+    "status": "completed",
+    "priority": "high",
+    "id": "1"
+  },
+  {
+    "content": "Fix fetch URL issue in signup.ts (relative URL not working)",
+    "status": "completed",
+    "priority": "high",
+    "id": "2"
+  },
+  {
+    "content": "Test the signup flow after fixes",
+    "status": "completed",
+    "priority": "medium",
+    "id": "3"
+  },
+  {
+    "content": "Check signin.ts to understand login flow",
+    "status": "completed",
+    "priority": "high",
+    "id": "4"
+  },
+  {
+    "content": "Modify signup.ts to auto-login user after successful registration",
+    "status": "in_progress",
+    "priority": "high",
+    "id": "5"
+  }
+]

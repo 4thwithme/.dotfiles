@@ -1,0 +1,8 @@
+{
+  "id": "14",
+  "subject": "Plan 3 Task 1: Spatial Encoder",
+  "description": "Custom CNN spatial_encoder.py + tests",
+  "status": "in_progress",
+  "blocks": [],
+  "blockedBy": []
+}

@@ -1,0 +1,21 @@
+{
+  "underlying_goal": "Set up the project environment (install dependencies) and get Storybook running locally",
+  "goal_categories": {
+    "setup_environment": 1,
+    "run_dev_server": 1,
+    "open_editor": 1
+  },
+  "outcome": "partially_achieved",
+  "user_satisfaction_counts": {
+    "likely_satisfied": 1
+  },
+  "claude_helpfulness": "moderately_helpful",
+  "session_type": "multi_task",
+  "friction_counts": {
+    "user_rejected_action": 3
+  },
+  "friction_detail": "User interrupted Claude's tool use three times, suggesting Claude was either too slow, taking wrong actions, or the user wanted to change direction.",
+  "primary_success": "good_debugging",
+  "brief_summary": "User wanted to set up the project and run Storybook; Claude fixed npm install hash issues and built workspace packages, but the session ended with multiple interruptions before Storybook was confirmed running.",
+  "session_id": "3d7bd1de-3192-4c04-9d76-258e6916992e"
+}

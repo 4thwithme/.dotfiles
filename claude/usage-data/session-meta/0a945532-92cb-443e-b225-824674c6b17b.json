@@ -1,0 +1,56 @@
+{
+  "session_id": "0a945532-92cb-443e-b225-824674c6b17b",
+  "project_path": "/Users/4thwithme/Documents/repo/recommendations-service",
+  "start_time": "2026-03-01T01:00:12.996Z",
+  "duration_minutes": 2364,
+  "user_message_count": 8,
+  "assistant_message_count": 6,
+  "tool_counts": {
+    "Read": 2,
+    "Edit": 1
+  },
+  "languages": {
+    "TypeScript": 3
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 14,
+  "output_tokens": 625,
+  "first_prompt": "if i have vscode can i add autosuggestions from AI if i have claude code subscription?",
+  "user_interruptions": 2,
+  "user_response_times": [
+    504.998,
+    12.663
+  ],
+  "tool_errors": 1,
+  "tool_error_categories": {
+    "User Rejected": 1
+  },
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 1,
+  "lines_removed": 1,
+  "files_modified": 1,
+  "message_hours": [
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    17,
+    17
+  ],
+  "user_message_timestamps": [
+    "2026-03-01T01:00:12.996Z",
+    "2026-03-01T01:00:12.993Z",
+    "2026-03-01T01:00:12.996Z",
+    "2026-03-01T01:00:48.372Z",
+    "2026-03-01T01:09:19.568Z",
+    "2026-03-01T01:09:44.152Z",
+    "2026-03-02T16:24:34.657Z",
+    "2026-03-02T16:24:36.069Z"
+  ]
+}

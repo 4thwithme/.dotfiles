@@ -1,0 +1,22 @@
+[
+  {
+    "content": "Create ci-header-prerender directory and copy files",
+    "status": "in_progress",
+    "activeForm": "Creating ci-header-prerender directory and copying files"
+  },
+  {
+    "content": "Update ci-header-prerender component tag and class name",
+    "status": "pending",
+    "activeForm": "Updating ci-header-prerender component tag and class name"
+  },
+  {
+    "content": "Revert ci-header to pre-SSR implementation",
+    "status": "pending",
+    "activeForm": "Reverting ci-header to pre-SSR implementation"
+  },
+  {
+    "content": "Verify both components work correctly",
+    "status": "pending",
+    "activeForm": "Verifying both components work correctly"
+  }
+]

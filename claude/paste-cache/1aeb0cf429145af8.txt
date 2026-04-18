@@ -1,0 +1,139 @@
+Request
+
+Response 500
+ Completed in 0.3 seconds.
+Headers
+Request method: POST
+Accept: */*
+Content-Type: application/json
+User-Agent: GitHub-Hookshot/1439734
+X-Github-Delivery: c3e74120-39c1-11f1-8d91-140f41308c7e
+X-Github-Event: installation
+X-Github-Hook-Id: 606468600
+X-Github-Hook-Installation-Target-Id: 3392871
+X-Github-Hook-Installation-Target-Type: integration
+X-Hub-Signature: sha1=9fe9501c2f16380b0475c554514f7e25e2def08b
+X-Hub-Signature-256: sha256=8b941de830ffd1a82e70e593481a8b01de6b290ae5de6f5cedf302079e5eac08
+Payload
+{
+  "action": "created",
+  "installation": {
+    "id": 124520760,
+    "client_id": "Iv23liP0ZjK2otDjhy9e",
+    "account": {
+      "login": "no-name-proj-dev-test",
+      "id": 276684894,
+      "node_id": "O_kgDOEH3gXg",
+      "avatar_url": "https://avatars.githubusercontent.com/u/276684894?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/no-name-proj-dev-test",
+      "html_url": "https://github.com/no-name-proj-dev-test",
+      "followers_url": "https://api.github.com/users/no-name-proj-dev-test/followers",
+      "following_url": "https://api.github.com/users/no-name-proj-dev-test/following{/other_user}",
+      "gists_url": "https://api.github.com/users/no-name-proj-dev-test/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/no-name-proj-dev-test/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/no-name-proj-dev-test/subscriptions",
+      "organizations_url": "https://api.github.com/users/no-name-proj-dev-test/orgs",
+      "repos_url": "https://api.github.com/users/no-name-proj-dev-test/repos",
+      "events_url": "https://api.github.com/users/no-name-proj-dev-test/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/no-name-proj-dev-test/received_events",
+      "type": "Organization",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "repository_selection": "all",
+    "access_tokens_url": "https://api.github.com/app/installations/124520760/access_tokens",
+    "repositories_url": "https://api.github.com/installation/repositories",
+    "html_url": "https://github.com/organizations/no-name-proj-dev-test/settings/installations/124520760",
+    "app_id": 3392871,
+    "app_slug": "no-name-proj-dev",
+    "target_id": 276684894,
+    "target_type": "Organization",
+    "permissions": {
+      "members": "read",
+      "actions": "read",
+      "checks": "read",
+      "contents": "read",
+      "dependabot_secrets": "read",
+      "deployments": "read",
+      "metadata": "read",
+      "pull_requests": "read",
+      "secret_scanning_alerts": "read",
+      "security_events": "read",
+      "statuses": "read"
+    },
+    "events": [
+      "check_run",
+      "check_suite",
+      "code_scanning_alert",
+      "deployment",
+      "deployment_status",
+      "member",
+      "membership",
+      "organization",
+      "pull_request",
+      "pull_request_review",
+      "pull_request_review_comment",
+      "pull_request_review_thread",
+      "push",
+      "secret_scanning_alert",
+      "status",
+      "workflow_job",
+      "workflow_run"
+    ],
+    "created_at": "2026-04-16T20:26:20.000+02:00",
+    "updated_at": "2026-04-16T20:26:20.000+02:00",
+    "single_file_name": null,
+    "has_multiple_single_files": false,
+    "single_file_paths": [
+
+    ],
+    "suspended_by": null,
+    "suspended_at": null
+  },
+  "repositories": [
+    {
+      "id": 1212752202,
+      "node_id": "R_kgDOSEkhSg",
+      "name": "app-core",
+      "full_name": "no-name-proj-dev-test/app-core",
+      "private": false
+    },
+    {
+      "id": 1212752661,
+      "node_id": "R_kgDOSEkjFQ",
+      "name": "api-service",
+      "full_name": "no-name-proj-dev-test/api-service",
+      "private": false
+    },
+    {
+      "id": 1212753093,
+      "node_id": "R_kgDOSEkkxQ",
+      "name": "frontend-app",
+      "full_name": "no-name-proj-dev-test/frontend-app",
+      "private": false
+    }
+  ],
+  "requester": null,
+  "sender": {
+    "login": "4thwithme",
+    "id": 42321105,
+    "node_id": "MDQ6VXNlcjQyMzIxMTA1",
+    "avatar_url": "https://avatars.githubusercontent.com/u/42321105?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/4thwithme",
+    "html_url": "https://github.com/4thwithme",
+    "followers_url": "https://api.github.com/users/4thwithme/followers",
+    "following_url": "https://api.github.com/users/4thwithme/following{/other_user}",
+    "gists_url": "https://api.github.com/users/4thwithme/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/4thwithme/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/4thwithme/subscriptions",
+    "organizations_url": "https://api.github.com/users/4thwithme/orgs",
+    "repos_url": "https://api.github.com/users/4thwithme/repos",
+    "events_url": "https://api.github.com/users/4thwithme/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/4thwithme/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  }
+}

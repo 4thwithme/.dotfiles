@@ -1,0 +1,9 @@
+{
+  "id": "12",
+  "subject": "Phase 1: Update plan-2 HDF5 spec with faction/phase metadata fields",
+  "description": "Update plans/plan-2-replay-parser.md to add faction, opponent_faction, map_name as per-replay HDF5 attributes, and game_phase as per-step dataset. Spec the fields, types, and how they're derived at parse time.",
+  "activeForm": "Updating plan-2 spec",
+  "status": "completed",
+  "blocks": [],
+  "blockedBy": []
+}

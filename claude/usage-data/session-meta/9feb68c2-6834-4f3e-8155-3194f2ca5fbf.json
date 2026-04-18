@@ -1,0 +1,75 @@
+{
+  "session_id": "9feb68c2-6834-4f3e-8155-3194f2ca5fbf",
+  "project_path": "/Users/4thwithme/Documents/repo/recommendations-service",
+  "start_time": "2026-02-03T18:34:06.295Z",
+  "duration_minutes": 1109,
+  "user_message_count": 12,
+  "assistant_message_count": 133,
+  "tool_counts": {
+    "Bash": 30,
+    "Read": 9,
+    "Grep": 2,
+    "Write": 5,
+    "Edit": 8
+  },
+  "languages": {
+    "JavaScript": 8,
+    "TypeScript": 6
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 1970,
+  "output_tokens": 8213,
+  "first_prompt": "i acidentally deleted ./eslint-rules/require-object-params.js  check last vaersion of file in the cache",
+  "user_interruptions": 2,
+  "user_response_times": [
+    2.625,
+    14.873,
+    27.277,
+    1144.88,
+    1210.212,
+    399.731,
+    33.947,
+    367.993
+  ],
+  "tool_errors": 3,
+  "tool_error_categories": {
+    "User Rejected": 1,
+    "Command Failed": 2
+  },
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 632,
+  "lines_removed": 4,
+  "files_modified": 3,
+  "message_hours": [
+    19,
+    19,
+    19,
+    19,
+    19,
+    19,
+    19,
+    20,
+    20,
+    20,
+    22,
+    14
+  ],
+  "user_message_timestamps": [
+    "2026-02-03T18:34:06.295Z",
+    "2026-02-03T18:35:19.034Z",
+    "2026-02-03T18:35:31.282Z",
+    "2026-02-03T18:36:16.909Z",
+    "2026-02-03T18:36:28.071Z",
+    "2026-02-03T18:55:52.802Z",
+    "2026-02-03T18:56:58.134Z",
+    "2026-02-03T19:07:17.345Z",
+    "2026-02-03T19:09:12.666Z",
+    "2026-02-03T19:16:18.508Z",
+    "2026-02-03T21:23:30.290Z",
+    "2026-02-04T13:02:18.701Z"
+  ]
+}

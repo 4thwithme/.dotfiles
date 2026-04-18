@@ -1,0 +1,8 @@
+{
+  "id": "23",
+  "subject": "Task 17: Auth Module Assembly",
+  "description": "Wire auth module, update app module with global guards and throttler",
+  "status": "completed",
+  "blocks": [],
+  "blockedBy": []
+}

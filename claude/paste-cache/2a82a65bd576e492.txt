@@ -1,0 +1,41 @@
+Jest: "global" coverage threshold for branches (95%) not met: 88.49%
+Summary of all failing tests
+ FAIL  test/opensearch/opensearch-neural.service.e2e-spec.ts
+  ● OpensearchNeuralService (e2e) › onModuleInit › should initialize and log model ID or warning
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: true
+    Received: false
+
+      118 |                     );
+      119 |
+    > 120 |                     expect(logCalled || warnCalled).toBe(true);
+          |                                                     ^
+      121 |             });
+      122 |     });
+      123 |
+
+      at Object.<anonymous> (test/opensearch/opensearch-neural.service.e2e-spec.ts:120:36)
+
+  ● OpensearchNeuralService (e2e) › createProductsIndex › should create index with correct settings and mappings
+
+    ConnectionError: connect ECONNREFUSED 127.0.0.1:9201
+
+      at ClientRequest.onError (node_modules/@opensearch-project/opensearch/lib/Connection.js:129:16)
+
+  ● OpensearchNeuralService (e2e) › createProductsIndex › should create index successfully
+
+    ConnectionError: connect ECONNREFUSED 127.0.0.1:9201
+
+      at ClientRequest.onError (node_modules/@opensearch-project/opensearch/lib/Connection.js:129:16)
+
+  ● OpensearchNeuralService (e2e) › bulkIndexProducts › should return zeros for empty styles array
+
+    ConnectionError: connect ECONNREFUSED 127.0.0.1:9201
+
+      at ClientRequest.onError (node_modules/@opensearch-project/opensearch/lib/Connection.js:129:16)
+
+  ● OpensearchNeuralService (e2e) › bulkIndexProducts › should bulk index products successfully
+
+    ConnectionError: connect ECONNREFUSED 127.0.0.1:9201

@@ -1,0 +1,571 @@
+src/modules/rest/trending-products/render-trending-results.service.ts:65:				this.logger.log('Created assets directory', { path: assetsDir });
+src/modules/rest/trending-products/render-trending-results.service.ts:68:			this.logger.log('Generating consolidated report', {
+src/modules/rest/trending-products/render-trending-results.service.ts:77:			this.logger.log('Generated consolidated trending products report', {
+src/modules/rest/trending-products/render-trending-results.service.ts:82:			this.logger.error(
+src/modules/health/health.controller.ts:62:		this.logger.log('Checking application readiness');
+src/modules/rest/trending-products/trending-products.service.ts:62:		this.logger.log('[getTrendingProductsByCategory] Starting trending products fetch', {
+src/modules/rest/trending-products/trending-products.service.ts:86:			this.logger.log('[getTrendingProductsByCategory] DB query complete', {
+src/modules/rest/trending-products/trending-products.service.ts:97:			this.logger.debug('MV returned products', {
+src/modules/rest/trending-products/trending-products.service.ts:113:			this.logger.error(
+src/modules/rest/trending-products/trending-products.service.ts:173:			this.logger.error(
+src/modules/rest/trending-products/trending-products.service.ts:210:		this.logger.log('Fetching style IDs from year range', { startYear, endYear });
+src/modules/rest/trending-products/trending-products.service.ts:363:			this.logger.error(
+src/modules/rest/trending-products/trending-products.service.ts:432:			this.logger.error(
+src/modules/rest/trending-products/trending-products.service.ts:471:			this.logger.error(
+src/modules/rest/trending-products/trending-products.service.ts:705:			this.logger.error(
+src/modules/rest/email-recommendations/email-recommendations.service.ts:57:			this.logger.log('[resolveProductIds] No products to resolve', { products });
+src/modules/rest/email-recommendations/email-recommendations.service.ts:61:		this.logger.log('[resolveProductIds] Starting resolution', {
+src/modules/rest/email-recommendations/email-recommendations.service.ts:82:						this.logger.warn('Could not find style for colorId', {
+src/modules/rest/email-recommendations/email-recommendations.service.ts:90:						this.logger.warn('Invalid style_id for colorId', {
+src/modules/rest/email-recommendations/email-recommendations.service.ts:102:					this.logger.warn(
+src/modules/rest/email-recommendations/email-recommendations.service.ts:150:		this.logger.log('Getting email recommendations', {
+src/modules/rest/email-recommendations/email-recommendations.service.ts:164:					this.logger.warn('Unsupported recommendation type', { type });
+src/modules/rest/email-recommendations/email-recommendations.service.ts:210:			this.logger.error(
+src/modules/rest/email-recommendations/email-recommendations.service.ts:234:		this.logger.log('[getRecommendationsByType] Processing recommendation type', {
+src/modules/rest/email-recommendations/email-recommendations.service.ts:256:		this.logger.log('[getRecommendationsByType] Blending recommendations', {
+src/modules/rest/email-recommendations/email-recommendations.service.ts:264:		this.logger.log('[getRecommendationsByType] Blending complete', {
+src/modules/rest/email-recommendations/email-recommendations.service.ts:270:			this.logger.log(
+src/modules/rest/email-recommendations/email-recommendations.service.ts:296:		this.logger.log('[getRecommendationsByType] Final recommendations ready', {
+src/modules/rest/email-recommendations/email-recommendations.service.ts:332:		this.logger.log('[getFBTRecommendations] Starting FBT fetch', {
+src/modules/rest/email-recommendations/email-recommendations.service.ts:360:			this.logger.warn(`FBT failed: ${error}`, {
+src/modules/rest/email-recommendations/email-recommendations.service.ts:386:		this.logger.log('[getSimilarRecommendations] Starting similar fetch', {
+src/modules/rest/email-recommendations/email-recommendations.service.ts:408:				this.logger.warn(`Similar recommendations failed: ${error}`, {
+src/modules/rest/email-recommendations/email-recommendations.service.ts:434:		this.logger.log('[getTrendingRecommendations] Starting trending fetch', {
+src/modules/rest/email-recommendations/email-recommendations.service.ts:451:		this.logger.log('[getTrendingRecommendations] Resolved categories from styles', {
+src/modules/rest/email-recommendations/email-recommendations.service.ts:465:				this.logger.warn(`Trending recommendations failed: ${error}`, {
+src/modules/rest/email-recommendations/email-recommendations.service.ts:486:		this.logger.log('[getFallbackProducts] Fetching fallback products', { limit });
+src/modules/rest/email-recommendations/email-recommendations.service.ts:499:				this.logger.error('Failed to fetch fallback products from Algolia', '', {
+src/modules/rest/email-recommendations/email-recommendations.service.ts:513:			this.logger.error(
+src/modules/health/health.service.ts:37:			this.logger.log(`Checking health of ${key}`);
+src/modules/health/health.service.ts:46:			this.logger.error(`Health check failed for ${key}`, JSON.stringify(error));
+src/modules/health/health.service.ts:60:			this.logger.log('Checking Redis health');
+src/modules/health/health.service.ts:89:			this.logger.error('Redis health check failed', JSON.stringify(error));
+src/modules/health/health.service.ts:103:			this.logger.log('Checking database health');
+src/modules/health/health.service.ts:115:			this.logger.error('Database health check failed', JSON.stringify(error));
+src/modules/rest/frequently-bought-together/frequently-bought-together.service.ts:48:			this.logger.warn('No style found', { styleId });
+src/modules/rest/frequently-bought-together/frequently-bought-together.service.ts:73:		this.logger.log('[getFrequentlyBoughtTogether] Starting FBT fetch', {
+src/modules/rest/frequently-bought-together/frequently-bought-together.service.ts:90:			this.logger.log('[getFrequentlyBoughtTogether] Valid styles found', {
+src/modules/rest/frequently-bought-together/frequently-bought-together.service.ts:114:			this.logger.debug('Found correlated categories', {
+src/modules/rest/frequently-bought-together/frequently-bought-together.service.ts:120:				this.logger.warn('No correlations found, using fallback', { styleIds });
+src/modules/rest/frequently-bought-together/frequently-bought-together.service.ts:127:			this.logger.log(
+src/modules/rest/frequently-bought-together/frequently-bought-together.service.ts:139:			this.logger.log('[getFrequentlyBoughtTogether] Popular styles fetched', {
+src/modules/rest/frequently-bought-together/frequently-bought-together.service.ts:148:			this.logger.log('[getFrequentlyBoughtTogether] Products hydrated', {
+src/modules/rest/frequently-bought-together/frequently-bought-together.service.ts:181:				this.logger.debug('Using fallback for additional recommendations', {
+src/modules/rest/frequently-bought-together/frequently-bought-together.service.ts:197:				this.logger.debug('Added additional recommendations', {
+src/modules/rest/frequently-bought-together/frequently-bought-together.service.ts:202:			this.logger.debug('Selected styles for recommendations', {
+src/modules/rest/frequently-bought-together/frequently-bought-together.service.ts:212:			this.logger.error(
+src/modules/rest/frequently-bought-together/frequently-bought-together.service.ts:266:			this.logger.debug(`${categoryLabel} has styles`, {
+src/modules/rest/frequently-bought-together/frequently-bought-together.service.ts:275:					this.logger.debug(`Selected style from ${categoryLabel.toLowerCase()}`, {
+src/modules/rest/frequently-bought-together/frequently-bought-together.service.ts:281:				this.logger.warn(`No styles found for ${categoryLabel.toLowerCase()}`, {
+src/modules/rest/frequently-bought-together/frequently-bought-together.service.ts:309:		this.logger.log(
+src/modules/rest/frequently-bought-together/frequently-bought-together.service.ts:348:			this.logger.debug('Found correlated root categories', {
+src/modules/rest/frequently-bought-together/frequently-bought-together.service.ts:354:				this.logger.warn('No root category correlations found, using fallback', {
+src/modules/rest/frequently-bought-together/frequently-bought-together.service.ts:398:				this.logger.warn('No style IDs selected for root category recommendations', {
+src/modules/rest/frequently-bought-together/frequently-bought-together.service.ts:408:			this.logger.debug('Selected styles for root category recommendations', {
+src/modules/rest/frequently-bought-together/frequently-bought-together.service.ts:422:			this.logger.error(
+src/modules/rest/frequently-bought-together/frequently-bought-together.service.ts:485:					this.logger.debug('No diversified copurchases found, falling back to v1', {
+src/modules/rest/frequently-bought-together/frequently-bought-together.service.ts:512:					this.logger.debug('No copurchases found, falling back to v1', { styleId });
+src/modules/rest/frequently-bought-together/frequently-bought-together.service.ts:545:			this.logger.debug('FBT v2 results', {
+src/modules/rest/frequently-bought-together/frequently-bought-together.service.ts:556:			this.logger.error(
+src/modules/rest/similar-to-favorites/similar-to-favorites.service.ts:138:			this.logger.warn('[getSimilarToFavorites] No Algolia results, using fallback', {
+src/modules/rest/similar-to-favorites/similar-to-favorites.service.ts:149:			this.logger.warn('[getSimilarToFavorites] No results found', { styleIds });
+src/modules/rest/similar-to-favorites/similar-to-favorites.service.ts:158:		this.logger.log('[getSimilarToFavorites] Hydration complete', {
+src/modules/cache/cache.service.ts:88:				this.logger.log('Cache miss', { namespace, key, consistency, source });
+src/modules/cache/cache.service.ts:92:			this.logger.log('Cache hit', { namespace, key });
+src/modules/cache/cache.service.ts:97:			this.logger.error(`Error retrieving from cache: ${e.message}`, e.stack, { source });
+src/modules/cache/cache.service.ts:100:				this.logger.warn('Read replica failed, falling back to master', {
+src/modules/cache/cache.service.ts:142:			this.logger.log('Cached value', { namespace, key, ttl });
+src/modules/cache/cache.service.ts:145:			this.logger.error(`Error setting cache: ${e.message}`, e.stack);
+src/modules/cache/cache.service.ts:161:		this.logger.log('Checking cache key existence', { namespace, key });
+src/modules/cache/cache.service.ts:180:			this.logger.log('Deleted cache key', { namespace, key });
+src/modules/cache/cache.service.ts:184:			this.logger.error(`Error deleting from cache: ${e.message}`, e.stack);
+src/modules/cache/cache.service.ts:201:			this.logger.error(`Error incrementing cache key: ${e.message}`, e.stack, {
+src/modules/cache/cache.service.ts:217:			this.logger.log('Cleared all cache');
+src/modules/cache/cache.service.ts:221:			this.logger.error(`Error clearing cache: ${e.message}`, e.stack);
+src/modules/cache/cache.service.ts:235:		this.logger.log('Acquiring lock', { lockKey, ttlMs: ttl });
+src/modules/cache/cache.service.ts:241:			this.logger.log('Releasing lock', { lockKey });
+src/modules/cache/cache.service.ts:248:			this.logger.log('Acquiring lock', { lockKey, ttlMs: ttl });
+src/modules/cache/cache.service.ts:251:			this.logger.error(`Failed to acquire lock: ${error}`);
+src/modules/cache/cache.service.ts:258:			this.logger.log('Releasing lock', { lockKey: lock.resources.join(',') });
+src/modules/cache/cache.service.ts:261:			this.logger.error(`Failed to release lock: ${error}`);
+src/modules/cache/cache.service.ts:317:			this.logger.error('Read replica connection error:', error);
+src/modules/cache/cache.service.ts:322:			this.logger.log('Read replica connection restored');
+src/modules/cache/cache.service.ts:327:			this.logger.error('Write client connection error:', error);
+src/modules/rest/process-style/process-style.service.ts:71:				this.logger.debug(`Style ${style.id} is not allowed to process.`);
+src/modules/rest/process-style/process-style.service.ts:80:				this.logger.debug(`Style ${style.id} has no colors, skipping processing.`);
+src/modules/rest/process-style/process-style.service.ts:112:					this.logger.debug(
+src/modules/rest/process-style/process-style.service.ts:127:					this.logger.debug(
+src/modules/rest/process-style/process-style.service.ts:140:				this.logger.debug(`Style ${style.id}: hash changed, updating features and index`);
+src/modules/rest/process-style/process-style.service.ts:154:				this.logger.debug(
+src/modules/rest/process-style/process-style.service.ts:174:			this.logger.debug(`Style ${style.id}: hash is the same, no changes needed`);
+src/modules/rest/process-style/process-style.service.ts:177:			this.logger.error(`Error processing style ${style.id}:`, error);
+src/modules/rest/process-style/process-style.service.ts:233:			this.logger.debug(`No stored hash found for style ${styleId}`);
+src/modules/rest/process-style/process-style.service.ts:254:		this.logger.debug(`Created new hash for style ${styleId}: ${hash}`);
+src/modules/rest/process-style/process-style.service.ts:269:		this.logger.debug(`Updated hash for style ${styleId} to ${hash}`);
+src/modules/rest/process-style/process-style.service.ts:336:				this.logger.debug(`Style ${style.id} has no colors to save`);
+src/modules/rest/process-style/process-style.service.ts:370:			this.logger.debug(`Successfully saved style ${style.id} to database`);
+src/modules/rest/process-style/process-style.service.ts:373:			this.logger.error(`Failed to save style ${style.id} to database: ${err.message}`);
+src/modules/rest/process-style/process-style.service.ts:392:				this.logger.error(
+src/modules/rest/process-style/process-style.service.ts:404:				this.logger.warn(
+src/modules/rest/process-style/process-style.service.ts:420:				this.logger.log(
+src/modules/rest/process-style/process-style.service.ts:426:			this.logger.error(`Failed to generate features for style ${style.id}:`, error);
+src/modules/rest/process-style/process-style.service.ts:442:		this.logger.debug(
+src/modules/rest/process-style/process-style.service.ts:459:		this.logger.debug(
+src/modules/rest/process-style/process-style.service.ts:470:		this.logger.debug(`Deleted condensed features for style ${styleId}`);
+src/modules/rest/process-style/process-style.service.ts:514:		this.logger.debug(`Deleted style ${styleId} from Algolia index (all suffixes)`);
+src/modules/env-config/env-config.service.ts:17:		this.logger.log(
+src/modules/rest/load-test/load-test.service.ts:24:			this.logger.error('Intentional error via throwError');
+src/modules/rest/load-test/load-test.service.ts:41:			this.logger.log(`realLifeTest succeeded in ${elapsedMs.toFixed(2)}ms`);
+src/modules/rest/load-test/load-test.service.ts:55:			this.logger.error(
+src/modules/rest/load-test/load-test.service.ts:69:			this.logger.error('Intentional error via throwError');
+src/modules/rest/load-test/load-test.service.ts:93:			this.logger.log(`calculatePi done in ${executionTimeMs.toFixed(2)}ms: ${piString}`);
+src/modules/rest/load-test/load-test.service.ts:107:			this.logger.error(
+src/modules/rest/load-test/load-test.service.ts:121:			this.logger.error('Intentional error via throwError in third-party simulation');
+src/modules/rest/load-test/load-test.service.ts:141:			this.logger.log(`simulateThirdPartyCall done in ${executionTimeMs.toFixed(2)}ms`);
+src/modules/rest/load-test/load-test.service.ts:158:			this.logger.error(
+src/modules/rest/load-test/load-test.controller.ts:53:		this.logger.log(`Real-life test triggered with parameters: ${JSON.stringify(query)}`);
+src/modules/rest/load-test/load-test.controller.ts:87:		this.logger.log(`Hard task test triggered with parameters: ${JSON.stringify(query)}`);
+src/modules/rest/load-test/load-test.controller.ts:121:		this.logger.log(
+src/modules/color-match-worker/color-match-worker.service.ts:59:		this.logger.log(
+src/modules/color-match-worker/color-match-worker.service.ts:67:			this.logger.log('Color match worker pool destroyed');
+src/modules/color-match-worker/color-match-worker.service.ts:87:			this.logger.warn(
+src/modules/color-match-worker/color-match-worker.service.ts:96:			this.logger.log(
+src/modules/color-match-worker/color-match-worker.service.ts:105:			this.logger.warn(
+src/modules/color-match-worker/color-match-worker.service.ts:129:		this.logger.log(
+src/modules/rest/promos/promos.service.ts:114:			this.logger.debug(
+src/modules/rest/promos/promos.service.ts:149:			this.logger.error(`Error fetching hat promo products: ${(error as Error).message}`);
+src/modules/rest/promos/promos.service.ts:217:			this.logger.error(
+src/modules/rest/promotional-products/promotional-products.service.ts:45:		this.logger.log('[getPromotionalProducts] Starting promotional products fetch', {
+src/modules/rest/promotional-products/promotional-products.service.ts:59:			this.logger.log('[getPromotionalProducts] DB promotional products fetched', {
+src/modules/rest/promotional-products/promotional-products.service.ts:86:					this.logger.debug('Hydrated promotional products from MV', {
+src/modules/rest/promotional-products/promotional-products.service.ts:91:					this.logger.error(
+src/modules/rest/promotional-products/promotional-products.service.ts:102:				this.logger.log(
+src/modules/rest/promotional-products/promotional-products.service.ts:116:				this.logger.log('[getPromotionalProducts] Trending products fetched', {
+src/modules/rest/promotional-products/promotional-products.service.ts:132:			this.logger.error(
+src/modules/mms/mms.service.ts:81:				this.logger.log('Returning cached MMS data', {
+src/modules/mms/mms.service.ts:93:			this.logger.log('Fetching related products from MMS', { productId, colorId });
+src/modules/mms/mms.service.ts:100:				this.logger.error('Error fetching related products from MMS', {
+src/modules/mms/mms.service.ts:139:				this.logger.warn('Request timeout for MMS', {
+src/modules/mms/mms.service.ts:150:			this.logger.error(
+src/modules/mms/mms.service.ts:183:			this.logger.error('Failed to fetch styles from MMS', {
+src/modules/mms/mms.service.ts:207:			this.logger.debug('Fetching categories from MMS');
+src/modules/mms/mms.service.ts:223:				this.logger.error('Failed to fetch categories from MMS', {
+src/modules/mms/mms.service.ts:231:			this.logger.debug('Fetched categories from MMS', { count: categories.length });
+src/modules/mms/mms.service.ts:235:			this.logger.error(`Error fetching categories from MMS: ${err.message}`, err.stack);
+src/modules/mms/mms.service.ts:243:			this.logger.debug('Fetching colors for style from MMS', { styleId });
+src/modules/mms/mms.service.ts:249:				this.logger.error('Failed to fetch colors for style from MMS', {
+src/modules/mms/mms.service.ts:260:			this.logger.debug('Fetched colors for style from MMS', {
+src/modules/mms/mms.service.ts:267:			this.logger.error(
+src/modules/mms/mms.service.ts:287:			this.logger.debug('Making MMS request', { endpoint: url });
+src/modules/mms/mms.service.ts:292:				this.logger.error('MMS request failed', {
+src/modules/mms/mms.service.ts:301:			this.logger.debug('MMS request successful', { endpoint: url });
+src/modules/mms/mms.service.ts:305:			this.logger.error(
+src/modules/mms/mms.service.ts:320:			this.logger.debug(`Fetching complements for style ${styleId} from MMS`);
+src/modules/mms/mms.service.ts:326:				this.logger.debug(`No complements found for style ${styleId}`);
+src/modules/mms/mms.service.ts:331:				this.logger.error(
+src/modules/mms/mms.service.ts:340:			this.logger.debug(
+src/modules/mms/mms.service.ts:346:			this.logger.error(
+src/modules/db/trending-items/trending-items.service.ts:55:			this.logger.log('Starting to fetch and process order data', {
+src/modules/db/trending-items/trending-items.service.ts:62:					this.logger.warn('Processing cancelled', { year });
+src/modules/db/trending-items/trending-items.service.ts:68:			this.logger.error(
+src/modules/db/trending-items/trending-items.service.ts:82:			this.logger.log('Starting to fetch and process last week order data');
+src/modules/db/trending-items/trending-items.service.ts:96:			this.logger.log('Processing data from date range', {
+src/modules/db/trending-items/trending-items.service.ts:107:				this.logger.warn('No order data found for last week');
+src/modules/db/trending-items/trending-items.service.ts:115:					this.logger.warn('Last week processing cancelled', { year });
+src/modules/db/trending-items/trending-items.service.ts:126:			this.logger.error(
+src/modules/db/trending-items/trending-items.service.ts:142:			this.logger.log('Processing data for year', { year });
+src/modules/db/trending-items/trending-items.service.ts:151:				this.logger.warn('No order data found for year', { year });
+src/modules/db/trending-items/trending-items.service.ts:158:			this.logger.error(
+src/modules/db/trending-items/trending-items.service.ts:269:				this.logger.warn('Save operation cancelled');
+src/modules/db/trending-items/trending-items.service.ts:279:				this.logger.warn('Skipping record with invalid style_id', {
+src/modules/db/trending-items/trending-items.service.ts:290:				this.logger.warn('Skipping record - style_id does not exist in styles table', {
+src/modules/db/trending-items/trending-items.service.ts:314:					this.logger.debug('Updated record', {
+src/modules/db/trending-items/trending-items.service.ts:331:					this.logger.debug('Inserted new record', {
+src/modules/db/trending-items/trending-items.service.ts:338:					this.logger.warn('Skipping style_id due to foreign key constraint', {
+src/modules/db/trending-items/trending-items.service.ts:343:				this.logger.error(
+src/modules/db/trending-items/trending-items.service.ts:420:				this.logger.warn('Update operation cancelled');
+src/modules/db/trending-items/trending-items.service.ts:429:				this.logger.warn('Skipping record - style_id does not exist in styles table', {
+src/modules/db/trending-items/trending-items.service.ts:467:					this.logger.debug('Updated existing record', {
+src/modules/db/trending-items/trending-items.service.ts:484:					this.logger.debug('Inserted new record', {
+src/modules/db/trending-items/trending-items.service.ts:491:					this.logger.warn('Skipping style_id due to foreign key constraint', {
+src/modules/db/trending-items/trending-items.service.ts:496:				this.logger.error(
+src/modules/db/trending-items/trending-items.service.ts:506:		this.logger.warn('Cancelling current operation...');
+src/modules/rest/open-ai/open-ai.service.ts:43:			this.logger.log(`Processing product features for id: ${productInfo.id}`);
+src/modules/rest/open-ai/open-ai.service.ts:49:			this.logger.error(`Error processing product ${productInfo.id}:`, error);
+src/modules/rest/open-ai/open-ai.service.ts:114:			this.logger.error('Failed to parse OpenAI response:', parseError);
+src/modules/cli/commands/prepare-promo-seed.command.ts:42:		this.logger.log('Preparing promo seed...');
+src/modules/cli/commands/prepare-promo-seed.command.ts:46:			this.logger.log(`Fetched ${categories.length} categories from MMS`);
+src/modules/cli/commands/prepare-promo-seed.command.ts:54:				this.logger.debug(
+src/modules/cli/commands/prepare-promo-seed.command.ts:65:						this.logger.warn(`Product not found in Algolia: ${item.product_name}`);
+src/modules/cli/commands/prepare-promo-seed.command.ts:72:						this.logger.warn(`Product not found in Algolia: ${item.product_name}`);
+src/modules/cli/commands/prepare-promo-seed.command.ts:83:						this.logger.warn(
+src/modules/cli/commands/prepare-promo-seed.command.ts:101:					this.logger.debug(
+src/modules/cli/commands/prepare-promo-seed.command.ts:105:					this.logger.error(`Error processing ${item.product_name}: ${error}`);
+src/modules/cli/commands/prepare-promo-seed.command.ts:111:			this.logger.log(
+src/modules/cli/commands/prepare-promo-seed.command.ts:115:			this.logger.error('Error during promo seed preparation:', error);
+src/modules/cli/commands/prepare-promo-seed.command.ts:128:			this.logger.error('Failed to fetch MMS categories:', error);
+src/modules/cli/commands/prepare-promo-seed.command.ts:189:			this.logger.log(`Promo seed data written to: ${outputPath}`);
+src/modules/cli/commands/prepare-promo-seed.command.ts:191:			this.logger.error(`Failed to write promo seed data to file: ${error}`);
+src/modules/cli/commands/migrate.command.ts:37:			this.logger.log('Migration completed successfully');
+src/modules/cli/commands/migrate.command.ts:39:			this.logger.error('Migration failed', error);
+src/modules/rest/addons/addons.service.ts:76:				this.logger.log('Cache hit for curated addons', {
+src/modules/rest/addons/addons.service.ts:83:			this.logger.log('Cache miss for curated addons', {
+src/modules/rest/addons/addons.service.ts:94:				this.logger.warn('No curated addons products found in stock', {
+src/modules/rest/addons/addons.service.ts:106:			this.logger.log('[getCuratedAddons] Hydration complete', {
+src/modules/rest/addons/addons.service.ts:134:			this.logger.error(`Error fetching curated addons: ${err.message}`, err.stack);
+src/modules/cli/commands/sync-source-styles.command.ts:55:		this.logger.log(`Total styles: ${totalStyles}, Total pages: ${totalPages}`);
+src/modules/cli/commands/sync-source-styles.command.ts:76:					this.logger.log(
+src/modules/cli/commands/sync-source-styles.command.ts:83:				this.logger.error(`Failed to process page ${page}:`, error);
+src/modules/cli/commands/sync-source-styles.command.ts:89:		this.logger.log(
+src/modules/cli/commands/sync-source-styles.command.ts:147:			this.logger.error(`Error processing style ${style.id}:`, error);
+src/modules/cli/commands/sync-source-styles.command.ts:175:			this.logger.debug(
+src/modules/cli/commands/sync-source-styles.command.ts:179:			this.logger.warn(
+src/modules/rest/robots/robots.controller.ts:33:			this.logger.log(`Robots.txt content loaded from ${robotsPath}`);
+src/modules/rest/robots/robots.controller.ts:35:			this.logger.error('Error loading robots.txt file during initialization', error);
+src/modules/rest/robots/robots.controller.ts:50:			this.logger.warn('Robots.txt file not available');
+src/modules/cli/commands/populate-trending-items.command.ts:35:			this.logger.warn('Command cancelled due to shutdown signal');
+src/modules/cli/commands/populate-trending-items.command.ts:43:				this.logger.log('Processing last week data for cron job');
+src/modules/cli/commands/populate-trending-items.command.ts:46:				this.logger.log('Successfully updated trending items with last week data');
+src/modules/cli/commands/populate-trending-items.command.ts:64:				this.logger.warn('Command cancelled due to shutdown signal');
+src/modules/cli/commands/populate-trending-items.command.ts:68:			this.logger.log(
+src/modules/cli/commands/populate-trending-items.command.ts:73:				this.logger.log(`Processing only months: ${monthsToProcess.join(', ')}`);
+src/modules/cli/commands/populate-trending-items.command.ts:86:				this.logger.log('Successfully populated trending items data');
+src/modules/cli/commands/populate-trending-items.command.ts:92:				this.logger.warn('Command interrupted during shutdown');
+src/modules/cli/commands/populate-trending-items.command.ts:95:			this.logger.error(`Failed to populate trending items: ${(error as Error).message}`);
+src/modules/cli/commands/populate-trending-items.command.ts:153:			this.logger.error(`Uncaught exception: ${error.message}`);
+src/modules/cli/commands/populate-trending-items.command.ts:158:			this.logger.error(`Unhandled rejection: ${String(reason)}`);
+src/modules/cli/commands/populate-trending-items.command.ts:165:			this.logger.warn('Force shutdown requested, exiting immediately');
+src/modules/cli/commands/populate-trending-items.command.ts:169:		this.logger.warn(`Received ${signal} signal, initiating graceful shutdown...`);
+src/modules/cli/commands/populate-trending-items.command.ts:176:				this.logger.log('Waiting for current operation to complete...');
+src/modules/cli/commands/populate-trending-items.command.ts:179:					this.logger.error('Graceful shutdown timeout, forcing exit');
+src/modules/cli/commands/populate-trending-items.command.ts:187:			this.logger.log('Graceful shutdown completed');
+src/modules/cli/commands/populate-trending-items.command.ts:190:			this.logger.error(`Error during shutdown: ${(error as Error).message}`);
+src/modules/cli/commands/populate-style-copurchases.command.ts:29:			this.logger.warn('Command cancelled due to shutdown signal');
+src/modules/cli/commands/populate-style-copurchases.command.ts:39:			this.logger.log('Fetching co-purchase data from BigQuery...');
+src/modules/cli/commands/populate-style-copurchases.command.ts:41:			this.logger.log(`Fetched ${rows.length} co-purchase pairs from BigQuery`);
+src/modules/cli/commands/populate-style-copurchases.command.ts:44:				this.logger.warn(
+src/modules/cli/commands/populate-style-copurchases.command.ts:56:			this.logger.log('Truncating existing co-purchase data...');
+src/modules/cli/commands/populate-style-copurchases.command.ts:59:			this.logger.log('Inserting co-purchase data...');
+src/modules/cli/commands/populate-style-copurchases.command.ts:63:				this.logger.log(`Successfully populated ${mapped.length} style copurchase pairs`);
+src/modules/cli/commands/populate-style-copurchases.command.ts:68:				this.logger.warn('Command interrupted during shutdown');
+src/modules/cli/commands/populate-style-copurchases.command.ts:71:			this.logger.error(
+src/modules/cli/commands/populate-style-copurchases.command.ts:90:			this.logger.error(`Uncaught exception: ${error.message}`);
+src/modules/cli/commands/populate-style-copurchases.command.ts:95:			this.logger.error(`Unhandled rejection: ${String(reason)}`);
+src/modules/cli/commands/populate-style-copurchases.command.ts:102:			this.logger.warn('Force shutdown requested, exiting immediately');
+src/modules/cli/commands/populate-style-copurchases.command.ts:106:		this.logger.warn(`Received ${signal} signal, initiating graceful shutdown...`);
+src/modules/cli/commands/populate-style-copurchases.command.ts:111:				this.logger.log('Waiting for current operation to complete...');
+src/modules/cli/commands/populate-style-copurchases.command.ts:114:					this.logger.error('Graceful shutdown timeout, forcing exit');
+src/modules/cli/commands/populate-style-copurchases.command.ts:122:			this.logger.log('Graceful shutdown completed');
+src/modules/cli/commands/populate-style-copurchases.command.ts:125:			this.logger.error(`Error during shutdown: ${(error as Error).message}`);
+src/modules/db/condensed-features/models/condensed-feature.model.ts:40:			this.logger.error(`Invalid style_id: ${data.style_id}`);
+src/modules/db/condensed-features/models/condensed-feature.model.ts:45:			this.logger.error(
+src/modules/db/condensed-features/models/condensed-feature.model.ts:60:			this.logger.error(
+src/modules/db/condensed-features/models/condensed-feature.model.ts:77:				this.logger.error(`Failed to insert style condensed_features with ID ${_id}`);
+src/modules/db/condensed-features/models/condensed-feature.model.ts:81:			this.logger.debug(`Inserted style condensed_features with ID ${_id}`);
+src/modules/db/condensed-features/models/condensed-feature.model.ts:88:				this.logger.error(
+src/modules/db/condensed-features/models/condensed-feature.model.ts:108:			this.logger.error(`Invalid style_id: ${data.style_id}`);
+src/modules/db/condensed-features/models/condensed-feature.model.ts:113:			this.logger.error(
+src/modules/db/condensed-features/models/condensed-feature.model.ts:128:			this.logger.error(
+src/modules/db/condensed-features/models/condensed-feature.model.ts:150:				this.logger.error(
+src/modules/db/condensed-features/models/condensed-feature.model.ts:158:			this.logger.debug(`Upserted style condensed_features for styleId ${data.style_id}`);
+src/modules/db/condensed-features/models/condensed-feature.model.ts:164:				this.logger.error(
+src/modules/db/condensed-features/models/condensed-feature.model.ts:190:				this.logger.warn(`No styles condensed_features found for styleId ${styleId}`);
+src/modules/db/condensed-features/models/condensed-feature.model.ts:194:			this.logger.debug(`Found styles condensed_features for styleId ${styleId}`);
+src/modules/db/condensed-features/models/condensed-feature.model.ts:197:			this.logger.error(
+src/modules/db/condensed-features/models/condensed-feature.model.ts:216:				this.logger.warn(`No styles condensed_features found for ID ${_id}`);
+src/modules/db/condensed-features/models/condensed-feature.model.ts:220:			this.logger.debug(`Found styles condensed_features for ID ${_id}`);
+src/modules/db/condensed-features/models/condensed-feature.model.ts:224:			this.logger.error(
+src/modules/db/condensed-features/models/condensed-feature.model.ts:239:			this.logger.error(
+src/modules/db/condensed-features/models/condensed-feature.model.ts:253:			this.logger.error(
+src/modules/db/condensed-features/models/condensed-feature.model.ts:273:				this.logger.warn(`No styles condensed_features found for styleId ${styleId}`);
+src/modules/db/condensed-features/models/condensed-feature.model.ts:277:			this.logger.debug(`Updated styles condensed_features for styleId ${styleId}`);
+src/modules/db/condensed-features/models/condensed-feature.model.ts:284:				this.logger.error(
+src/modules/db/condensed-features/models/condensed-feature.model.ts:292:			this.logger.error(
+src/modules/db/condensed-features/models/condensed-feature.model.ts:313:			this.logger.debug(`Soft deleted styles condensed_features for styleId ${styleId}`);
+src/modules/db/condensed-features/models/condensed-feature.model.ts:315:			this.logger.error(
+src/modules/cli/commands/migrate-up.command.ts:33:		this.logger.log('Apply 1 up database migration');
+src/modules/cli/commands/migrate-up.command.ts:39:			this.logger.log('Migration completed successfully');
+src/modules/cli/commands/migrate-up.command.ts:41:			this.logger.error('Migration failed', error);
+src/modules/rest/related-products/related-products.service.ts:61:			this.logger.warn('No style found', { styleId });
+src/modules/rest/related-products/related-products.service.ts:121:			this.logger.error('Product ID is required to fetch related products');
+src/modules/rest/related-products/related-products.service.ts:127:			this.logger.error(`Invalid Product ID format: ${productId}`);
+src/modules/rest/related-products/related-products.service.ts:139:			this.logger.log('[getRelatedProducts] Algolia returned related IDs', {
+src/modules/rest/related-products/related-products.service.ts:159:			this.logger.log('[getRelatedProducts] Hydration complete', {
+src/modules/rest/related-products/related-products.service.ts:176:			this.logger.error(
+src/modules/rest/related-products/related-products.service.ts:191:			this.logger.log('[getRelatedProducts] DB alternatives fetched', {
+src/modules/rest/related-products/related-products.service.ts:196:				this.logger.warn(`No DB alternatives found for product ID: ${productId}`);
+src/modules/rest/related-products/related-products.service.ts:211:			this.logger.log('[getRelatedProducts] Fallback completed', {
+src/modules/rest/related-products/related-products.service.ts:242:		this.logger.log('[getBrandProducts] Starting brand products fetch', {
+src/modules/rest/related-products/related-products.service.ts:267:			this.logger.log('[getBrandProducts] Brand products fetched', {
+src/modules/rest/related-products/related-products.service.ts:317:				this.logger.log('[getBrandProducts] Applying sort', { sortBy });
+src/modules/rest/related-products/related-products.service.ts:341:			this.logger.error(
+src/modules/cli/commands/migrate-rollback.command.ts:33:		this.logger.log('Starting database migration');
+src/modules/cli/commands/migrate-rollback.command.ts:39:			this.logger.log('Migration rollback completed successfully');
+src/modules/cli/commands/migrate-rollback.command.ts:41:			this.logger.error('Migration rollback failed', error);
+src/modules/cli/commands/forecast-trending-products.command.ts:95:		this.logger.log(`Forecasting trends from ${startDate} to ${endDate}`);
+src/modules/cli/commands/forecast-trending-products.command.ts:111:		this.logger.log(`Found ${productIds.length} products with historical data`);
+src/modules/cli/commands/forecast-trending-products.command.ts:114:			this.logger.warn(
+src/modules/cli/commands/forecast-trending-products.command.ts:133:		this.logger.log(
+src/modules/cli/commands/forecast-trending-products.command.ts:143:		this.logger.log(
+src/modules/cli/commands/forecast-trending-products.command.ts:150:		this.logger.log('Activating latest predictions...');
+src/modules/cli/commands/forecast-trending-products.command.ts:153:		this.logger.log('Forecast and report generation completed successfully');
+src/modules/cli/commands/forecast-trending-products.command.ts:189:		this.logger.log(
+src/modules/cli/commands/forecast-trending-products.command.ts:229:								this.logger.log(
+src/modules/cli/commands/forecast-trending-products.command.ts:234:								this.logger.error(`Failed to save batch results: ${err.message}`);
+src/modules/cli/commands/forecast-trending-products.command.ts:246:					this.logger.error(`Worker batch failed: ${result.reason}`);
+src/modules/cli/commands/forecast-trending-products.command.ts:258:				this.logger.log(
+src/modules/cli/commands/populate-category-correlations.command.ts:46:			this.logger.warn('Command cancelled due to shutdown signal');
+src/modules/cli/commands/populate-category-correlations.command.ts:51:			this.logger.log('Starting to populate category correlations data');
+src/modules/cli/commands/populate-category-correlations.command.ts:53:			this.logger.log('Fetching categories from MMS...');
+src/modules/cli/commands/populate-category-correlations.command.ts:55:			this.logger.log(`Fetched ${categories.length} categories from MMS`);
+src/modules/cli/commands/populate-category-correlations.command.ts:57:			this.logger.log(`Loaded ${correlationData.length} correlation records`);
+src/modules/cli/commands/populate-category-correlations.command.ts:64:			this.logger.log('Clearing existing category correlations...');
+src/modules/cli/commands/populate-category-correlations.command.ts:67:			this.logger.log('Processing and populating category correlations...');
+src/modules/cli/commands/populate-category-correlations.command.ts:72:				this.logger.log(
+src/modules/cli/commands/populate-category-correlations.command.ts:76:				this.logger.warn(
+src/modules/cli/commands/populate-category-correlations.command.ts:82:				this.logger.log('Successfully populated category correlations data');
+src/modules/cli/commands/populate-category-correlations.command.ts:87:				this.logger.warn('Command interrupted during shutdown');
+src/modules/cli/commands/populate-category-correlations.command.ts:90:			this.logger.error(
+src/modules/cli/commands/populate-category-correlations.command.ts:166:				this.logger.debug(
+src/modules/cli/commands/populate-category-correlations.command.ts:172:		this.logger.debug(
+src/modules/cli/commands/populate-category-correlations.command.ts:176:		this.logger.log(
+src/modules/cli/commands/populate-category-correlations.command.ts:186:			this.logger.debug(`Fetching categories from: ${categoriesUrl}`);
+src/modules/cli/commands/populate-category-correlations.command.ts:204:			this.logger.error(
+src/modules/cli/commands/populate-category-correlations.command.ts:221:			this.logger.error(`Uncaught exception: ${error.message}`);
+src/modules/cli/commands/populate-category-correlations.command.ts:226:			this.logger.error(`Unhandled rejection: ${String(reason)}`);
+src/modules/cli/commands/populate-category-correlations.command.ts:233:			this.logger.warn('Force shutdown requested, exiting immediately');
+src/modules/cli/commands/populate-category-correlations.command.ts:237:		this.logger.warn(`Received ${signal} signal, initiating graceful shutdown...`);
+src/modules/cli/commands/populate-category-correlations.command.ts:242:				this.logger.log('Waiting for current operation to complete...');
+src/modules/cli/commands/populate-category-correlations.command.ts:245:					this.logger.error('Graceful shutdown timeout, forcing exit');
+src/modules/cli/commands/populate-category-correlations.command.ts:253:			this.logger.log('Graceful shutdown completed');
+src/modules/cli/commands/populate-category-correlations.command.ts:256:			this.logger.error(`Error during shutdown: ${(error as Error).message}`);
+src/modules/cli/commands/migrate-down.command.ts:33:		this.logger.log('Apply 1 down database migration');
+src/modules/cli/commands/migrate-down.command.ts:39:			this.logger.log('Migration rollback completed successfully');
+src/modules/cli/commands/migrate-down.command.ts:41:			this.logger.error('Migration rollback failed', error);
+src/modules/bigquery/bigquery.service.ts:30:		this.logger.log('Initializing BigQuery client...');
+src/modules/bigquery/bigquery.service.ts:49:			this.logger.log('BigQuery client initialized successfully');
+src/modules/bigquery/bigquery.service.ts:52:			this.logger.error(`Failed to initialize BigQuery client: ${err.message}`);
+src/modules/bigquery/bigquery.service.ts:187:				this.logger.warn(`Invalid BigQuery row skipped: ${JSON.stringify(errors)}`);
+src/modules/bigquery/bigquery.service.ts:246:				this.logger.debug(
+src/modules/bigquery/bigquery.service.ts:252:		this.logger.debug(
+src/modules/bigquery/bigquery.service.ts:303:			this.logger.debug(
+src/modules/bigquery/bigquery.service.ts:308:		this.logger.debug(
+src/modules/db/promotional-products/promotional-products.service.ts:62:			this.logger.error(
+src/modules/db/promotional-products/promotional-products.service.ts:87:			this.logger.error(
+src/modules/db/promotional-products/promotional-products.service.ts:117:			this.logger.error(
+src/modules/algolia/algolia.service.ts:49:		this.logger.log('Initializing Algolia client...');
+src/modules/algolia/algolia.service.ts:59:		this.logger.error(`${context}: ${err.message}`, err.stack);
+src/modules/algolia/algolia.service.ts:78:			this.logger.log('Algolia client initialized successfully');
+src/modules/algolia/algolia.service.ts:93:			this.logger.log('Successfully upserted object to Algolia', {
+src/modules/algolia/algolia.service.ts:112:			this.logger.log('Successfully deleted object from Algolia', {
+src/modules/algolia/algolia.service.ts:137:			this.logger.log('Successfully saved objects to Algolia', {
+src/modules/algolia/algolia.service.ts:156:			this.logger.log('Successfully deleted objects from Algolia', {
+src/modules/algolia/algolia.service.ts:275:				this.logger.log('Cache hit for related product IDs', { productId, objectIdKey });
+src/modules/algolia/algolia.service.ts:282:			this.logger.log('Cache miss for related product IDs', { productId, objectIdKey });
+src/modules/algolia/algolia.service.ts:308:			this.logger.log('Fetched related product IDs from Algolia', {
+src/modules/db/styles-hash/models/styles-hash.model.ts:34:			this.logger.error(`Invalid style_id: ${data.style_id}`);
+src/modules/db/styles-hash/models/styles-hash.model.ts:49:			this.logger.error(
+src/modules/db/styles-hash/models/styles-hash.model.ts:67:				this.logger.error(`Failed to insert style hash with ID ${_id}`);
+src/modules/db/styles-hash/models/styles-hash.model.ts:71:			this.logger.debug(`Inserted style hash with ID ${_id}`);
+src/modules/db/styles-hash/models/styles-hash.model.ts:75:			this.logger.error(`Failed to create style hash: ${(error as Error).message}`);
+src/modules/db/styles-hash/models/styles-hash.model.ts:92:				this.logger.warn(`No styles hash found for styleId ${styleId}`);
+src/modules/db/styles-hash/models/styles-hash.model.ts:96:			this.logger.debug(`Found styles hash for styleId ${styleId}`);
+src/modules/db/styles-hash/models/styles-hash.model.ts:99:			this.logger.error(
+src/modules/db/styles-hash/models/styles-hash.model.ts:118:				this.logger.warn(`No styles hash found for ID ${_id}`);
+src/modules/db/styles-hash/models/styles-hash.model.ts:122:			this.logger.debug(`Found styles hash for ID ${_id}`);
+src/modules/db/styles-hash/models/styles-hash.model.ts:126:			this.logger.error(
+src/modules/db/styles-hash/models/styles-hash.model.ts:144:			this.logger.error(
+src/modules/db/styles-hash/models/styles-hash.model.ts:164:				this.logger.warn(`No styles hash found for styleId ${styleId}`);
+src/modules/db/styles-hash/models/styles-hash.model.ts:168:			this.logger.debug(`Updated styles hash for styleId ${styleId}`);
+src/modules/db/styles-hash/models/styles-hash.model.ts:171:			this.logger.error(
+src/modules/db/styles-hash/models/styles-hash.model.ts:188:			this.logger.debug(`Soft deleted styles hash for styleId ${styleId}`);
+src/modules/db/styles-hash/models/styles-hash.model.ts:190:			this.logger.error(
+src/modules/mms-styles-sync/mms-styles-sync.service.ts:60:			this.logger.log('Skipping SQS consumer, development mode');
+src/modules/mms-styles-sync/mms-styles-sync.service.ts:63:		this.logger.log('Starting SQS consumer after application bootstrap');
+src/modules/mms-styles-sync/mms-styles-sync.service.ts:69:			this.logger.log('Skipping SQS consumer shutdown, development mode');
+src/modules/mms-styles-sync/mms-styles-sync.service.ts:72:		this.logger.log('Stopping SQS consumer before application shutdown');
+src/modules/mms-styles-sync/mms-styles-sync.service.ts:88:				this.logger.error('SQS Consumer error:', {
+src/modules/mms-styles-sync/mms-styles-sync.service.ts:94:			this.logger.log('SQS consumer started successfully');
+src/modules/mms-styles-sync/mms-styles-sync.service.ts:97:			this.logger.error(`Failed to start SQS consumer: ${e.message}`, e.stack);
+src/modules/mms-styles-sync/mms-styles-sync.service.ts:106:				this.logger.log('SQS consumer stopped successfully');
+src/modules/mms-styles-sync/mms-styles-sync.service.ts:109:				this.logger.error(`Error stopping SQS consumer: ${e.message}`, e.stack);
+src/modules/mms-styles-sync/mms-styles-sync.service.ts:122:		this.logger.log('Processing SQS message', { messageId });
+src/modules/mms-styles-sync/mms-styles-sync.service.ts:133:				this.logger.log('Skipping message: old format', { messageId });
+src/modules/mms-styles-sync/mms-styles-sync.service.ts:140:				this.logger.warn(`Message ${messageId} failed validation, skipping processing`, {
+src/modules/mms-styles-sync/mms-styles-sync.service.ts:149:				this.logger.warn(
+src/modules/mms-styles-sync/mms-styles-sync.service.ts:158:			this.logger.debug('Fetched categories for processing', {
+src/modules/mms-styles-sync/mms-styles-sync.service.ts:171:			this.logger.error(`Error processing message ${messageId}: ${e.message}`, e.stack);
+src/modules/mms-styles-sync/mms-styles-sync.service.ts:196:				this.logger.debug(
+src/modules/mms-styles-sync/mms-styles-sync.service.ts:216:			this.logger.error(`Validation service error: ${e.message}`, e.stack);
+src/modules/mms-styles-sync/mms-styles-sync.service.ts:351:			this.logger.error(`Error filtering valid fields: ${e.message}`, e.stack);
+src/modules/product-hydration/product-hydration.service.ts:56:		this.logger.debug('Hydrated products from MV', {
+src/modules/product-hydration/product-hydration.service.ts:109:		this.logger.debug('Found products for brands', {
+src/modules/product-hydration/product-hydration.service.ts:149:		this.logger.debug('Hydrated products with colors from MV', {
+src/modules/db/styles-mv/models/styles-mv.model.ts:32:			this.logger.debug(`Refreshed styles_mv for style ${styleId}`);
+src/modules/db/styles-mv/models/styles-mv.model.ts:35:			this.logger.error(
+src/modules/db/styles-mv/models/styles-mv.model.ts:54:				this.logger.warn(`No styles_mv record found for styleId ${styleId}`);
+src/modules/db/styles-mv/models/styles-mv.model.ts:58:			this.logger.debug(`Found styles_mv record for styleId ${styleId}`);
+src/modules/db/styles-mv/models/styles-mv.model.ts:62:			this.logger.error(
+src/modules/db/styles-mv/models/styles-mv.model.ts:83:			this.logger.error(
+src/modules/db/styles-mv/models/styles-mv.model.ts:100:			this.logger.debug(
+src/modules/db/styles-mv/models/styles-mv.model.ts:108:			this.logger.error(`Failed to find styles_mv by IDs: ${err.message}`);
+src/modules/db/styles-mv/models/styles-mv.model.ts:128:			this.logger.warn('All brand names were filtered out during sanitization');
+src/modules/db/styles-mv/models/styles-mv.model.ts:135:			this.logger.error(
+src/modules/db/styles-mv/models/styles-mv.model.ts:153:			this.logger.debug(
+src/modules/db/styles-mv/models/styles-mv.model.ts:161:			this.logger.error(`Failed to find styles_mv by brands: ${err.message}`);
+src/modules/db/styles-mv/models/styles-mv.model.ts:179:			this.logger.debug(`Found ${results.length} styles_mv records`);
+src/modules/db/styles-mv/models/styles-mv.model.ts:185:			this.logger.error(`Failed to find all styles_mv: ${err.message}`);
+src/modules/db/styles-mv/models/styles-mv.model.ts:200:			this.logger.error(`Failed to count styles_mv: ${err.message}`);
+src/modules/db/forecasted-trending-products/models/forecasted-trending-products.model.ts:111:			this.logger.debug(`First query returned ${allResults.length} products`);
+src/modules/db/forecasted-trending-products/models/forecasted-trending-products.model.ts:145:				this.logger.debug(
+src/modules/db/forecasted-trending-products/models/forecasted-trending-products.model.ts:150:			this.logger.debug(`Total products returned: ${allResults.length}`);
+src/modules/db/forecasted-trending-products/models/forecasted-trending-products.model.ts:196:				this.logger.log('Updated all existing records to set is_latest = false');
+src/modules/db/forecasted-trending-products/models/forecasted-trending-products.model.ts:235:							this.logger.warn(
+src/modules/db/forecasted-trending-products/models/forecasted-trending-products.model.ts:241:							this.logger.warn(
+src/modules/db/forecasted-trending-products/models/forecasted-trending-products.model.ts:253:					this.logger.warn(
+src/modules/db/forecasted-trending-products/models/forecasted-trending-products.model.ts:262:					this.logger.warn(
+src/modules/db/forecasted-trending-products/models/forecasted-trending-products.model.ts:299:							this.logger.error(
+src/modules/db/forecasted-trending-products/models/forecasted-trending-products.model.ts:310:				this.logger.log(
+src/modules/db/forecasted-trending-products/models/forecasted-trending-products.model.ts:315:				this.logger.error(
+src/modules/db/forecasted-trending-products/models/forecasted-trending-products.model.ts:347:				this.logger.debug('No latest predictions found');
+src/modules/db/forecasted-trending-products/models/forecasted-trending-products.model.ts:356:						this.logger.error(
+src/modules/db/forecasted-trending-products/models/forecasted-trending-products.model.ts:365:			this.logger.debug(`Found ${validatedResults.length} latest predictions`);
+src/modules/db/forecasted-trending-products/models/forecasted-trending-products.model.ts:368:			this.logger.error(`Failed to get latest predictions: ${(error as Error).message}`);
+src/modules/db/forecasted-trending-products/models/forecasted-trending-products.model.ts:388:				this.logger.debug(`No predictions found for style_id ${styleId}`);
+src/modules/db/forecasted-trending-products/models/forecasted-trending-products.model.ts:397:						this.logger.error(
+src/modules/db/forecasted-trending-products/models/forecasted-trending-products.model.ts:406:			this.logger.debug(
+src/modules/db/forecasted-trending-products/models/forecasted-trending-products.model.ts:411:			this.logger.error(
+src/modules/db/forecasted-trending-products/models/forecasted-trending-products.model.ts:428:					this.logger.error(
+src/modules/db/style-copurchases/models/style-copurchase.model.ts:68:			this.logger.debug(`Found ${results.length} copurchases for style ${styleId}`);
+src/modules/db/style-copurchases/models/style-copurchase.model.ts:81:			this.logger.error(
+src/modules/db/style-copurchases/models/style-copurchase.model.ts:193:			this.logger.debug(
+src/modules/db/style-copurchases/models/style-copurchase.model.ts:205:			this.logger.error(
+src/modules/db/style-copurchases/models/style-copurchase.model.ts:241:				this.logger.debug(
+src/modules/db/style-copurchases/models/style-copurchase.model.ts:246:			this.logger.log(`Successfully inserted ${pairs.length} style copurchases`);
+src/modules/db/style-copurchases/models/style-copurchase.model.ts:249:			this.logger.error(`Failed to bulk insert style copurchases: ${err.message}`);
+src/modules/db/style-copurchases/models/style-copurchase.model.ts:257:			this.logger.log('Truncated style_copurchases table');
+src/modules/db/style-copurchases/models/style-copurchase.model.ts:260:			this.logger.error(`Failed to truncate style copurchases: ${err.message}`);
+src/modules/db/style-copurchases/models/style-copurchase.model.ts:275:			this.logger.error(
+src/modules/db/style-colors/models/style-color.model.ts:44:			this.logger.error(
+src/modules/db/style-colors/models/style-color.model.ts:65:				this.logger.error(`Failed to insert style with ID ${_id}`);
+src/modules/db/style-colors/models/style-color.model.ts:69:			this.logger.debug(`Inserted style with ID ${_id}`);
+src/modules/db/style-colors/models/style-color.model.ts:76:			this.logger.error(`Failed to create style: ${err.message}`);
+src/modules/db/style-colors/models/style-color.model.ts:93:				this.logger.warn(`No style found for styleId ${styleId}.`);
+src/modules/db/style-colors/models/style-color.model.ts:97:			this.logger.debug(`Found style for styleId ${styleId}.`);
+src/modules/db/style-colors/models/style-color.model.ts:103:			this.logger.error(`Failed to find style for styleId ${styleId}: ${err.message}`);
+src/modules/db/style-colors/models/style-color.model.ts:122:				this.logger.warn(`No style found for styleId ${styleId} and colorId ${colorId}`);
+src/modules/db/style-colors/models/style-color.model.ts:126:			this.logger.debug(`Found style for styleId ${styleId} and colorId ${colorId}`);
+src/modules/db/style-colors/models/style-color.model.ts:132:			this.logger.error(
+src/modules/db/style-colors/models/style-color.model.ts:151:				this.logger.warn(`No style found for colorId ${colorId}`);
+src/modules/db/style-colors/models/style-color.model.ts:155:			this.logger.debug(`Found style for colorId ${colorId}`);
+src/modules/db/style-colors/models/style-color.model.ts:161:			this.logger.error(`Failed to find style for colorId ${colorId}: ${err.message}`);
+src/modules/db/style-colors/models/style-color.model.ts:179:			this.logger.error(
+src/modules/db/style-colors/models/style-color.model.ts:205:				this.logger.warn(`No style found for styleId ${styleId} and colorId ${colorId}`);
+src/modules/db/style-colors/models/style-color.model.ts:209:			this.logger.debug(`Updated style for styleId ${styleId} and colorId ${colorId}`);
+src/modules/db/style-colors/models/style-color.model.ts:215:			this.logger.error(
+src/modules/db/style-colors/models/style-color.model.ts:276:							this.logger.error(
+src/modules/db/style-colors/models/style-color.model.ts:305:			this.logger.debug(
+src/modules/db/style-colors/models/style-color.model.ts:316:			this.logger.error(
+src/modules/db/style-colors/models/style-color.model.ts:342:			this.logger.debug(
+src/modules/db/style-colors/models/style-color.model.ts:347:			this.logger.error(
+src/modules/db/style-colors/models/style-color.model.ts:386:				this.logger.error(
+src/modules/db/style-colors/models/style-color.model.ts:437:			this.logger.debug(
+src/modules/db/style-colors/models/style-color.model.ts:446:			this.logger.error(
+src/modules/db/root-categories-correlations/models/root-category-correlation.model.ts:39:			this.logger.debug(
+src/modules/db/root-categories-correlations/models/root-category-correlation.model.ts:48:						this.logger.error(
+src/modules/db/root-categories-correlations/models/root-category-correlation.model.ts:61:			this.logger.error(
+src/modules/db/product-annual-sales/models/product-annual-sales.model.ts:30:				this.logger.debug(`No annual sales data found for styleId ${styleId}`);
+src/modules/db/product-annual-sales/models/product-annual-sales.model.ts:39:						this.logger.error(
+src/modules/db/product-annual-sales/models/product-annual-sales.model.ts:52:			this.logger.debug(
+src/modules/db/product-annual-sales/models/product-annual-sales.model.ts:57:			this.logger.error(
+src/modules/db/product-annual-sales/models/product-annual-sales.model.ts:80:				this.logger.debug(
+src/modules/db/product-annual-sales/models/product-annual-sales.model.ts:91:						this.logger.error(
+src/modules/db/product-annual-sales/models/product-annual-sales.model.ts:104:			this.logger.debug(
+src/modules/db/product-annual-sales/models/product-annual-sales.model.ts:109:			this.logger.error(
+src/modules/db/product-annual-sales/models/product-annual-sales.model.ts:129:				this.logger.debug(
+src/modules/db/product-annual-sales/models/product-annual-sales.model.ts:140:						this.logger.error(
+src/modules/db/product-annual-sales/models/product-annual-sales.model.ts:153:			this.logger.debug(
+src/modules/db/product-annual-sales/models/product-annual-sales.model.ts:158:			this.logger.error(
+src/modules/db/product-annual-sales/models/product-annual-sales.model.ts:179:			this.logger.debug(
+src/modules/db/product-annual-sales/models/product-annual-sales.model.ts:184:			this.logger.error(
+src/modules/db/default-unit-prices/models/default-unit-price.model.ts:53:			this.logger.error(
+src/modules/db/default-unit-prices/models/default-unit-price.model.ts:74:				this.logger.error(`Failed to insert unit price with ID ${_id}`);
+src/modules/db/default-unit-prices/models/default-unit-price.model.ts:78:			this.logger.debug(`Inserted unit price with ID ${_id}`);
+src/modules/db/default-unit-prices/models/default-unit-price.model.ts:83:			this.logger.error(`Failed to create unit price: ${err.message}`);
+src/modules/db/default-unit-prices/models/default-unit-price.model.ts:97:			this.logger.error(
+src/modules/db/default-unit-prices/models/default-unit-price.model.ts:109:			this.logger.debug(`Found ${results.length} unit prices for styleId ${styleId}`);
+src/modules/db/default-unit-prices/models/default-unit-price.model.ts:115:			this.logger.error(
+src/modules/db/default-unit-prices/models/default-unit-price.model.ts:136:			this.logger.error(
+src/modules/db/default-unit-prices/models/default-unit-price.model.ts:149:				this.logger.warn(
+src/modules/db/default-unit-prices/models/default-unit-price.model.ts:155:			this.logger.debug(
+src/modules/db/default-unit-prices/models/default-unit-price.model.ts:161:			this.logger.error(
+src/modules/db/default-unit-prices/models/default-unit-price.model.ts:181:			this.logger.error(
+src/modules/db/default-unit-prices/models/default-unit-price.model.ts:208:				this.logger.warn(
+src/modules/db/default-unit-prices/models/default-unit-price.model.ts:214:			this.logger.debug(
+src/modules/db/default-unit-prices/models/default-unit-price.model.ts:220:			this.logger.error(
+src/modules/db/default-unit-prices/models/default-unit-price.model.ts:260:							this.logger.error(
+src/modules/db/default-unit-prices/models/default-unit-price.model.ts:288:							this.logger.error(
+src/modules/db/default-unit-prices/models/default-unit-price.model.ts:317:			this.logger.debug(
+src/modules/db/default-unit-prices/models/default-unit-price.model.ts:326:			this.logger.error(
+src/modules/db/default-unit-prices/models/default-unit-price.model.ts:347:			this.logger.error(
+src/modules/db/default-unit-prices/models/default-unit-price.model.ts:365:			this.logger.debug(
+src/modules/db/default-unit-prices/models/default-unit-price.model.ts:370:			this.logger.error(
+src/modules/db/default-unit-prices/models/default-unit-price.model.ts:403:				this.logger.error(
+src/modules/db/default-unit-prices/models/default-unit-price.model.ts:451:			this.logger.debug(
+src/modules/db/default-unit-prices/models/default-unit-price.model.ts:458:			this.logger.error(
+src/modules/db/category-correlations/models/category-correlation.model.ts:48:			this.logger.debug(
+src/modules/db/category-correlations/models/category-correlation.model.ts:57:						this.logger.error(
+src/modules/db/category-correlations/models/category-correlation.model.ts:72:			this.logger.error(
+src/modules/db/category-correlations/models/category-correlation.model.ts:108:				this.logger.debug(
+src/modules/db/category-correlations/models/category-correlation.model.ts:113:			this.logger.log(
+src/modules/db/category-correlations/models/category-correlation.model.ts:117:			this.logger.error(
+src/modules/db/category-correlations/models/category-correlation.model.ts:134:			this.logger.log(
+src/modules/db/category-correlations/models/category-correlation.model.ts:138:			this.logger.error(
+src/modules/db/category-correlations/models/category-correlation.model.ts:154:			this.logger.error(
+src/modules/db/styles/models/style.model.ts:72:				this.logger.warn(`No style found for styleId ${styleId}`);
+src/modules/db/styles/models/style.model.ts:76:			this.logger.debug(`Found style for styleId ${styleId}`);
+src/modules/db/styles/models/style.model.ts:84:				this.logger.error(
+src/modules/db/styles/models/style.model.ts:92:			this.logger.error(
+src/modules/db/styles/models/style.model.ts:152:							this.logger.error(
+src/modules/db/styles/models/style.model.ts:165:			this.logger.debug(
+src/modules/db/styles/models/style.model.ts:170:			this.logger.error(
+src/modules/db/styles/models/style.model.ts:223:			this.logger.debug(
+src/modules/db/styles/models/style.model.ts:228:			this.logger.error(
+src/modules/db/styles/models/style.model.ts:257:			this.logger.debug(`Found ${categoryIds.length} most popular categories`);
+src/modules/db/styles/models/style.model.ts:260:			this.logger.error(
+src/modules/db/styles/models/style.model.ts:293:			this.logger.debug(`Found ${categoryIds.length} most popular root categories`);
+src/modules/db/styles/models/style.model.ts:296:			this.logger.error(
+src/modules/db/styles/models/style.model.ts:323:						this.logger.error(
+src/modules/db/styles/models/style.model.ts:334:			this.logger.debug(
+src/modules/db/styles/models/style.model.ts:339:			this.logger.error(
+src/modules/db/styles/models/style.model.ts:355:			this.logger.error(
+src/modules/db/styles/models/style.model.ts:373:						this.logger.error(
+src/modules/db/styles/models/style.model.ts:384:			this.logger.debug(
+src/modules/db/styles/models/style.model.ts:389:			this.logger.error(
+src/modules/db/styles/models/style.model.ts:406:				this.logger.error(
+src/modules/db/styles/models/style.model.ts:490:			this.logger.debug(`Upserted style with style ID ${data.style_id}`);
+src/modules/db/styles/models/style.model.ts:497:				this.logger.warn(
+src/modules/db/styles/models/style.model.ts:512:			this.logger.error(
+src/modules/db/styles/models/style.model.ts:538:				this.logger.error(
+src/modules/db/styles/models/style.model.ts:613:			this.logger.debug(`Upserted style with style ID ${data.style_id}`);
+src/modules/db/styles/models/style.model.ts:618:			this.logger.error(
+src/modules/db/styles/models/style.model.ts:659:			this.logger.debug(
+src/modules/db/styles/models/style.model.ts:664:			this.logger.error(
+src/modules/db/styles/models/style.model.ts:674:			this.logger.warn(
+src/modules/db/style-alternatives/models/style-alternative.model.ts:46:			this.logger.error(
+src/modules/db/style-alternatives/models/style-alternative.model.ts:67:				this.logger.error(`Failed to insert style alternative with ID ${_id}`);
+src/modules/db/style-alternatives/models/style-alternative.model.ts:71:			this.logger.debug(`Inserted style alternative with ID ${_id}`);
+src/modules/db/style-alternatives/models/style-alternative.model.ts:76:			this.logger.error(`Failed to create style alternative: ${err.message}`);
+src/modules/db/style-alternatives/models/style-alternative.model.ts:91:			this.logger.debug(`Found ${results.length} alternatives for styleId ${styleId}`);
+src/modules/db/style-alternatives/models/style-alternative.model.ts:98:			this.logger.error(
+src/modules/db/style-alternatives/models/style-alternative.model.ts:117:			this.logger.debug(
+src/modules/db/style-alternatives/models/style-alternative.model.ts:123:			this.logger.error(
+src/modules/db/style-alternatives/models/style-alternative.model.ts:167:							this.logger.error(
+src/modules/db/style-alternatives/models/style-alternative.model.ts:196:			this.logger.debug(
+src/modules/db/style-alternatives/models/style-alternative.model.ts:205:			this.logger.error(
+src/modules/db/style-alternatives/models/style-alternative.model.ts:262:			this.logger.debug(
+src/modules/db/style-alternatives/models/style-alternative.model.ts:267:			this.logger.error(
+src/modules/db/style-alternatives/models/style-alternative.model.ts:293:			this.logger.debug(
+src/modules/db/style-alternatives/models/style-alternative.model.ts:298:			this.logger.error(
+src/modules/db/style-alternatives/models/style-alternative.model.ts:319:			this.logger.debug(`Soft deleted all alternatives for styleId ${styleId}`);
+src/modules/db/style-alternatives/models/style-alternative.model.ts:322:			this.logger.error(

@@ -1,0 +1,107 @@
+> webapp-backend@0.0.1 code-quality-check
+> npm run lint && npm run format && npm run type-check
+
+
+> webapp-backend@0.0.1 lint
+> eslint "{src,apps,libs,test}/**/*.ts"
+
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/decorators/log-execution.decorator.ts
+  167:17  error  Replace ``Completed·in·${executionTime.toFixed(2)}ms·|·${JSON.stringify(successContext)}`` with `⏎↹↹↹↹↹↹`Completed·in·${executionTime.toFixed(2)}ms·|·${JSON.stringify(successContext)}`,⏎↹↹↹↹↹`  prettier/prettier
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/migrations/20260322120000_create_users_table.ts
+   9:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+  42:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/migrations/20260322120001_create_companies_table.ts
+   9:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+  37:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/migrations/20260322120002_create_company_members_table.ts
+  13:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+  64:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/migrations/20260322120003_create_oauth_accounts_table.ts
+   9:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+  55:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/migrations/20260322120004_create_invitations_table.ts
+  13:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+  68:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/modules/auth/guards/fastify-throttler.guard.ts
+  8:29  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/modules/company/company.controller.ts
+  11:1  error  There should be at least one empty line between import groups                                                               import/order
+  11:1  error  `@decorators/log-execution.decorator` import should occur after import of `@modules/company-member/company-member.service`  import/order
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/modules/health/health.controller.ts
+  10:1  error  There should be at least one empty line between import groups                                                import/order
+  11:1  error  `@modules/health/health.service` import should occur before import of `@decorators/log-execution.decorator`  import/order
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/modules/invitation/invitation.controller.ts
+  16:1  error    There should be at least one empty line between import groups                                           import/order
+  16:1  error    `@decorators/log-execution.decorator` import should occur after import of `@modules/user/user.service`  import/order
+  97:7  warning  Unnecessary conditional, value is always falsy                                                          @typescript-eslint/no-unnecessary-condition
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/modules/oauth-account/oauth-account.model.ts
+  137:35  warning  Unnecessary conditional, the types have no overlap  @typescript-eslint/no-unnecessary-condition
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/modules/user/user.controller.ts
+  11:1  error  There should be at least one empty line between import groups                                           import/order
+  11:1  error  `@decorators/log-execution.decorator` import should occur after import of `@modules/user/user.service`  import/order
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/unit-tests/company-member.model.unit-spec.ts
+  123:8  error  Replace `.spyOn(classValidator,·'validate')` with `⏎↹↹↹↹.spyOn(classValidator,·'validate')⏎↹↹↹↹`  prettier/prettier
+  124:1  error  Insert `↹`                                                                                        prettier/prettier
+  125:1  error  Insert `↹`                                                                                        prettier/prettier
+  236:8  error  Replace `.spyOn(classValidator,·'validate')` with `⏎↹↹↹↹.spyOn(classValidator,·'validate')⏎↹↹↹↹`  prettier/prettier
+  237:1  error  Insert `↹`                                                                                        prettier/prettier
+  238:1  error  Insert `↹`                                                                                        prettier/prettier
+  271:8  error  Replace `.spyOn(classValidator,·'validate')` with `⏎↹↹↹↹.spyOn(classValidator,·'validate')⏎↹↹↹↹`  prettier/prettier
+  272:1  error  Insert `↹`                                                                                        prettier/prettier
+  273:1  error  Insert `↹`                                                                                        prettier/prettier
+  351:8  error  Replace `.spyOn(classValidator,·'validate')` with `⏎↹↹↹↹.spyOn(classValidator,·'validate')⏎↹↹↹↹`  prettier/prettier
+  352:1  error  Insert `↹`                                                                                        prettier/prettier
+  353:1  error  Insert `↹`                                                                                        prettier/prettier
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/unit-tests/company.model.unit-spec.ts
+  103:8  error  Replace `.spyOn(classValidator,·'validate')` with `⏎↹↹↹↹.spyOn(classValidator,·'validate')⏎↹↹↹↹`  prettier/prettier
+  104:1  error  Insert `↹`                                                                                        prettier/prettier
+  105:1  error  Insert `↹`                                                                                        prettier/prettier
+  136:8  error  Replace `.spyOn(classValidator,·'validate')` with `⏎↹↹↹↹.spyOn(classValidator,·'validate')⏎↹↹↹↹`  prettier/prettier
+  137:1  error  Insert `↹`                                                                                        prettier/prettier
+  138:1  error  Insert `↹`                                                                                        prettier/prettier
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/unit-tests/github.strategy.unit-spec.ts
+  194:16  error  Replace `.fn()` with `⏎↹↹↹↹↹↹.fn()⏎↹↹↹↹↹↹`  prettier/prettier
+  195:1   error  Insert `↹`                                  prettier/prettier
+  196:1   error  Insert `↹`                                  prettier/prettier
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/unit-tests/invitation.model.unit-spec.ts
+  113:8  error  Replace `.spyOn(classValidator,·'validate')` with `⏎↹↹↹↹.spyOn(classValidator,·'validate')⏎↹↹↹↹`  prettier/prettier
+  114:1  error  Insert `↹`                                                                                        prettier/prettier
+  115:1  error  Insert `↹`                                                                                        prettier/prettier
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/unit-tests/oauth-account.model.unit-spec.ts
+  142:8  error  Replace `.spyOn(classValidator,·'validate')` with `⏎↹↹↹↹.spyOn(classValidator,·'validate')⏎↹↹↹↹`  prettier/prettier
+  143:1  error  Insert `↹`                                                                                        prettier/prettier
+  144:1  error  Insert `↹`                                                                                        prettier/prettier
+  267:8  error  Replace `.spyOn(classValidator,·'validate')` with `⏎↹↹↹↹.spyOn(classValidator,·'validate')⏎↹↹↹↹`  prettier/prettier
+  268:1  error  Insert `↹`                                                                                        prettier/prettier
+  269:1  error  Insert `↹`                                                                                        prettier/prettier
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/unit-tests/user.model.unit-spec.ts
+  106:8  error  Replace `.spyOn(classValidator,·'validate')` with `⏎↹↹↹↹.spyOn(classValidator,·'validate')⏎↹↹↹↹`  prettier/prettier
+  107:1  error  Insert `↹`                                                                                        prettier/prettier
+  108:1  error  Insert `↹`                                                                                        prettier/prettier
+  150:8  error  Replace `.spyOn(classValidator,·'validate')` with `⏎↹↹↹↹.spyOn(classValidator,·'validate')⏎↹↹↹↹`  prettier/prettier
+  151:1  error  Insert `↹`                                                                                        prettier/prettier
+  152:1  error  Insert `↹`                                                                                        prettier/prettier
+  185:8  error  Replace `.spyOn(classValidator,·'validate')` with `⏎↹↹↹↹.spyOn(classValidator,·'validate')⏎↹↹↹↹`  prettier/prettier
+  186:1  error  Insert `↹`                                                                                        prettier/prettier
+  187:1  error  Insert `↹`                                                                                        prettier/prettier
+
+✖ 61 problems (48 errors, 13 warnings)
+  48 errors and 0 warnings potentially fixable with the `--fix` option.

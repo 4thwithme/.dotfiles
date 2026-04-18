@@ -1,0 +1,42 @@
+{
+  "session_id": "657d85e0-10d7-4dfa-abb0-e3de68476159",
+  "project_path": "/Users/4thwithme/Documents/repo/recommendations-service",
+  "start_time": "2026-02-09T14:16:37.983Z",
+  "duration_minutes": 6,
+  "user_message_count": 5,
+  "assistant_message_count": 4,
+  "tool_counts": {},
+  "languages": {},
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 40,
+  "output_tokens": 18,
+  "first_prompt": "what is clowdstrike firewall? wwhat is it and what it does",
+  "user_interruptions": 0,
+  "user_response_times": [
+    21.131
+  ],
+  "tool_errors": 0,
+  "tool_error_categories": {},
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 0,
+  "lines_removed": 0,
+  "files_modified": 0,
+  "message_hours": [
+    15,
+    15,
+    15,
+    15,
+    15
+  ],
+  "user_message_timestamps": [
+    "2026-02-09T14:16:37.983Z",
+    "2026-02-09T14:16:37.979Z",
+    "2026-02-09T14:16:37.983Z",
+    "2026-02-09T14:22:26.217Z",
+    "2026-02-09T14:22:57.011Z"
+  ]
+}

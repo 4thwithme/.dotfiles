@@ -1,0 +1,15 @@
+{
+  "underlying_goal": "User ran a local plugin command with no arguments; no substantive request was made",
+  "goal_categories": {
+    "warmup_minimal": 1
+  },
+  "outcome": "unclear_from_transcript",
+  "user_satisfaction_counts": {},
+  "claude_helpfulness": "unhelpful",
+  "session_type": "single_task",
+  "friction_counts": {},
+  "friction_detail": "",
+  "primary_success": "none",
+  "brief_summary": "User invoked a /plugin command with no arguments and no output; no meaningful interaction occurred.",
+  "session_id": "ba9488a6-2112-463f-9e75-a4514c8ef244"
+}

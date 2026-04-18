@@ -1,0 +1,44 @@
+[
+  {
+    "content": "Examine current reset password frontend implementation",
+    "status": "completed",
+    "priority": "high",
+    "id": "1"
+  },
+  {
+    "content": "Review existing auth backend endpoints",
+    "status": "completed",
+    "priority": "high",
+    "id": "2"
+  },
+  {
+    "content": "Create forgot password endpoint to send reset email",
+    "status": "completed",
+    "priority": "high",
+    "id": "3"
+  },
+  {
+    "content": "Create reset password endpoint with token validation",
+    "status": "completed",
+    "priority": "high",
+    "id": "4"
+  },
+  {
+    "content": "Add reset password API endpoints to frontend",
+    "status": "completed",
+    "priority": "medium",
+    "id": "5"
+  },
+  {
+    "content": "Update reset password component to handle token flow",
+    "status": "completed",
+    "priority": "medium",
+    "id": "6"
+  },
+  {
+    "content": "Test complete reset password flow",
+    "status": "completed",
+    "priority": "low",
+    "id": "7"
+  }
+]

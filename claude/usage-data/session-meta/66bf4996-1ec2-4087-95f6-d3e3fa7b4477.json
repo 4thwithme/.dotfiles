@@ -1,0 +1,70 @@
+{
+  "session_id": "66bf4996-1ec2-4087-95f6-d3e3fa7b4477",
+  "project_path": "/Users/4thwithme/Documents/repo/recommendations-service",
+  "start_time": "2026-02-14T01:45:20.796Z",
+  "duration_minutes": 5,
+  "user_message_count": 9,
+  "assistant_message_count": 39,
+  "tool_counts": {
+    "Read": 5,
+    "Edit": 2,
+    "Task": 1,
+    "TaskOutput": 1,
+    "Bash": 2,
+    "Grep": 2,
+    "Glob": 3
+  },
+  "languages": {
+    "TypeScript": 7
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 79,
+  "output_tokens": 713,
+  "first_prompt": "{ level: 'error', pid: 34765, timestamp: 1771033583890, correlationId: '3cfa489c-871b-4fc7-b8d9-1594756c9cb6', message: \"Failed to refresh styles_mv for style 4100: CALL refresh_styles_mv(4100) - Ille…",
+  "user_interruptions": 4,
+  "user_response_times": [
+    5.388,
+    2.123,
+    92.175,
+    5.406,
+    6.345,
+    21.72,
+    65.458,
+    6.156
+  ],
+  "tool_errors": 3,
+  "tool_error_categories": {
+    "User Rejected": 2,
+    "File Not Found": 1
+  },
+  "uses_task_agent": true,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 4,
+  "lines_removed": 5,
+  "files_modified": 2,
+  "message_hours": [
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2
+  ],
+  "user_message_timestamps": [
+    "2026-02-14T01:45:20.796Z",
+    "2026-02-14T01:45:43.200Z",
+    "2026-02-14T01:45:49.029Z",
+    "2026-02-14T01:47:19.081Z",
+    "2026-02-14T01:47:27.914Z",
+    "2026-02-14T01:47:39.540Z",
+    "2026-02-14T01:49:15.611Z",
+    "2026-02-14T01:49:59.349Z",
+    "2026-02-14T01:50:29.655Z"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "id": "13",
+  "subject": "Phase 1: Add StratifiedBatchSampler task to plan-4",
+  "description": "Update plans/plan-4-imitation-learning.md to insert a new Task (after Task 1 ILDataset) for StratifiedBatchSampler in il_dataset.py. Include full spec: groups by (faction, strategy_label, game_phase), max_same_group cap, tests, and update ILTrainer to use it.",
+  "activeForm": "Updating plan-4 spec",
+  "status": "completed",
+  "blocks": [],
+  "blockedBy": []
+}

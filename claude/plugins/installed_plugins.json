@@ -1,0 +1,174 @@
+{
+  "version": 2,
+  "plugins": {
+    "code-review@claude-plugins-official": [
+      {
+        "scope": "project",
+        "projectPath": "/Users/4thwithme/Documents/repo/no-name-proj",
+        "installPath": "/Users/4thwithme/.claude/plugins/cache/claude-plugins-official/code-review/unknown",
+        "version": "unknown",
+        "installedAt": "2026-01-16T15:38:23.304Z",
+        "lastUpdated": "2026-04-18T07:59:02.403Z",
+        "gitCommitSha": "96276205880a60fd66bbae981f5ab568e70c4cbf"
+      }
+    ],
+    "atlassian@claude-plugins-official": [
+      {
+        "scope": "project",
+        "projectPath": "/Users/4thwithme/Documents/repo/recommendations-service",
+        "installPath": "/Users/4thwithme/.claude/plugins/cache/claude-plugins-official/atlassian/9b52fb18e184",
+        "version": "9b52fb18e184",
+        "installedAt": "2026-01-16T15:39:42.998Z",
+        "lastUpdated": "2026-04-15T12:52:33.636Z",
+        "gitCommitSha": "f8fbe921ce2ec6f13e0633290a34e373c78c66fe"
+      }
+    ],
+    "typescript-lsp@claude-plugins-official": [
+      {
+        "scope": "project",
+        "projectPath": "/Users/4thwithme/Documents/repo/no-name-proj",
+        "installPath": "/Users/4thwithme/.claude/plugins/cache/claude-plugins-official/typescript-lsp/1.0.0",
+        "version": "1.0.0",
+        "installedAt": "2026-01-16T15:42:33.227Z",
+        "lastUpdated": "2026-04-18T07:59:02.403Z",
+        "gitCommitSha": "96276205880a60fd66bbae981f5ab568e70c4cbf"
+      },
+      {
+        "scope": "user",
+        "installPath": "/Users/4thwithme/.claude/plugins/cache/claude-plugins-official/typescript-lsp/1.0.0",
+        "version": "1.0.0",
+        "installedAt": "2026-03-26T08:25:42.534Z",
+        "lastUpdated": "2026-03-26T08:25:42.534Z"
+      }
+    ],
+    "pyright-lsp@claude-plugins-official": [
+      {
+        "scope": "project",
+        "projectPath": "/Users/4thwithme/Documents/repo/recommendations-service",
+        "installPath": "/Users/4thwithme/.claude/plugins/cache/claude-plugins-official/pyright-lsp/1.0.0",
+        "version": "1.0.0",
+        "installedAt": "2026-01-16T15:42:47.755Z",
+        "lastUpdated": "2026-01-16T15:42:47.755Z",
+        "gitCommitSha": "96276205880a60fd66bbae981f5ab568e70c4cbf"
+      }
+    ],
+    "example-skills@anthropic-agent-skills": [
+      {
+        "scope": "user",
+        "installPath": "/Users/4thwithme/.claude/plugins/cache/anthropic-agent-skills/example-skills/2c7ec5e78b8e",
+        "version": "2c7ec5e78b8e",
+        "installedAt": "2026-01-18T14:50:37.720Z",
+        "lastUpdated": "2026-04-17T23:49:43.620Z",
+        "gitCommitSha": "69c0b1a0674149f27b61b2635f935524b6add202"
+      }
+    ],
+    "ruby-lsp@claude-plugins-official": [
+      {
+        "scope": "user",
+        "installPath": "/Users/4thwithme/.claude/plugins/cache/claude-plugins-official/ruby-lsp/1.0.0",
+        "version": "1.0.0",
+        "installedAt": "2026-03-12T11:51:29.483Z",
+        "lastUpdated": "2026-03-12T11:51:29.483Z",
+        "gitCommitSha": "b36fd4b753018b0b340803579399992a32e43502"
+      }
+    ],
+    "frontend-design@claude-plugins-official": [
+      {
+        "scope": "local",
+        "projectPath": "/Users/4thwithme/Documents/repo/recommendations-service",
+        "installPath": "/Users/4thwithme/.claude/plugins/cache/claude-plugins-official/frontend-design/unknown",
+        "version": "unknown",
+        "installedAt": "2026-03-24T12:21:29.170Z",
+        "lastUpdated": "2026-03-25T08:09:30.398Z",
+        "gitCommitSha": "79caa0d824acb760fd9c023acb39c6c7da5ee7fc"
+      }
+    ],
+    "claude-code-setup@claude-plugins-official": [
+      {
+        "scope": "local",
+        "projectPath": "/Users/4thwithme/Documents/repo/recommendations-service",
+        "installPath": "/Users/4thwithme/.claude/plugins/cache/claude-plugins-official/claude-code-setup/1.0.0",
+        "version": "1.0.0",
+        "installedAt": "2026-03-24T17:42:42.621Z",
+        "lastUpdated": "2026-03-24T17:42:42.621Z",
+        "gitCommitSha": "79caa0d824acb760fd9c023acb39c6c7da5ee7fc"
+      }
+    ],
+    "superpowers@claude-plugins-official": [
+      {
+        "scope": "project",
+        "projectPath": "/Users/4thwithme/Documents/repo/no-name-proj",
+        "installPath": "/Users/4thwithme/.claude/plugins/cache/claude-plugins-official/superpowers/5.0.7",
+        "version": "5.0.7",
+        "installedAt": "2026-03-25T23:59:13.183Z",
+        "lastUpdated": "2026-04-18T07:59:06.613Z",
+        "gitCommitSha": "eafe962b18f6c5dc70fb7c8cc7e83e61f4cdde06"
+      },
+      {
+        "scope": "project",
+        "projectPath": "/Users/4thwithme/.config",
+        "installPath": "/Users/4thwithme/.claude/plugins/cache/claude-plugins-official/superpowers/5.0.6",
+        "version": "5.0.6",
+        "installedAt": "2026-03-25T23:59:46.013Z",
+        "lastUpdated": "2026-03-25T23:59:46.013Z",
+        "gitCommitSha": "eafe962b18f6c5dc70fb7c8cc7e83e61f4cdde06"
+      },
+      {
+        "scope": "user",
+        "installPath": "/Users/4thwithme/.claude/plugins/cache/claude-plugins-official/superpowers/5.0.7",
+        "version": "5.0.7",
+        "installedAt": "2026-03-25T23:59:52.433Z",
+        "lastUpdated": "2026-04-01T09:51:27.087Z",
+        "gitCommitSha": "eafe962b18f6c5dc70fb7c8cc7e83e61f4cdde06"
+      }
+    ],
+    "warp@claude-code-warp": [
+      {
+        "scope": "user",
+        "installPath": "/Users/4thwithme/.claude/plugins/cache/claude-code-warp/warp/2.0.0",
+        "version": "2.0.0",
+        "installedAt": "2026-04-11T22:23:54.398Z",
+        "lastUpdated": "2026-04-11T22:23:54.398Z",
+        "gitCommitSha": "c2fa0dde50076570c7db5e72d8663558a96a6502"
+      }
+    ],
+    "context7@claude-plugins-official": [
+      {
+        "scope": "project",
+        "projectPath": "/Users/4thwithme/Documents/repo/no-name-proj",
+        "installPath": "/Users/4thwithme/.claude/plugins/cache/claude-plugins-official/context7/unknown",
+        "version": "unknown",
+        "installedAt": "2026-04-13T22:37:57.396Z",
+        "lastUpdated": "2026-04-13T22:37:57.396Z"
+      },
+      {
+        "scope": "user",
+        "installPath": "/Users/4thwithme/.claude/plugins/cache/claude-plugins-official/context7/unknown",
+        "version": "unknown",
+        "installedAt": "2026-04-14T00:00:00.000Z",
+        "lastUpdated": "2026-04-14T00:00:00.000Z"
+      }
+    ],
+    "claude-api@anthropic-agent-skills": [
+      {
+        "scope": "user",
+        "installPath": "/Users/4thwithme/.claude/plugins/cache/anthropic-agent-skills/claude-api/2c7ec5e78b8e",
+        "version": "2c7ec5e78b8e",
+        "installedAt": "2026-04-17T23:51:03.286Z",
+        "lastUpdated": "2026-04-17T23:51:03.286Z",
+        "gitCommitSha": "2c7ec5e78b8e5d43ea02e90bb8826f6b9f147b0c"
+      }
+    ],
+    "vercel@claude-plugins-official": [
+      {
+        "scope": "project",
+        "projectPath": "/Users/4thwithme/Documents/repo/no-name-proj",
+        "installPath": "/Users/4thwithme/.claude/plugins/cache/claude-plugins-official/vercel/0.40.0",
+        "version": "0.40.0",
+        "installedAt": "2026-04-17T23:57:05.551Z",
+        "lastUpdated": "2026-04-17T23:57:05.551Z",
+        "gitCommitSha": "8db97f0ce51120ac056a4e557f627a9428db4d74"
+      }
+    ]
+  }
+}

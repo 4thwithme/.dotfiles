@@ -1,0 +1,8 @@
+{
+  "id": "11",
+  "subject": "Task 5: Database Migrations",
+  "description": "Create 5 migration files for users, companies, company_members, oauth_accounts, invitations",
+  "status": "completed",
+  "blocks": [],
+  "blockedBy": []
+}

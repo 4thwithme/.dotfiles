@@ -1,0 +1,32 @@
+[
+  {
+    "content": "Create Login component structure",
+    "status": "completed",
+    "priority": "high",
+    "id": "1"
+  },
+  {
+    "content": "Add email and password validation",
+    "status": "completed",
+    "priority": "high",
+    "id": "2"
+  },
+  {
+    "content": "Style Login component with auth layout",
+    "status": "completed",
+    "priority": "medium",
+    "id": "3"
+  },
+  {
+    "content": "Add Login component to App.tsx imports",
+    "status": "completed",
+    "priority": "high",
+    "id": "4"
+  },
+  {
+    "content": "Add remember me and forgot password features",
+    "status": "completed",
+    "priority": "medium",
+    "id": "5"
+  }
+]

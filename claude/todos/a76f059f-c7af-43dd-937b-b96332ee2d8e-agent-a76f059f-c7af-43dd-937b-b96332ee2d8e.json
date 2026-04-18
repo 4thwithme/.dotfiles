@@ -1,0 +1,20 @@
+[
+  {
+    "content": "Add Google/GitHub signup options to join page",
+    "status": "completed",
+    "priority": "high",
+    "id": "1"
+  },
+  {
+    "content": "Create OAuth registration handler",
+    "status": "completed",
+    "priority": "high",
+    "id": "2"
+  },
+  {
+    "content": "Update join page UI to include social login",
+    "status": "completed",
+    "priority": "medium",
+    "id": "3"
+  }
+]

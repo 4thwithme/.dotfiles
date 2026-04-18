@@ -1,0 +1,95 @@
+> webapp-backend@0.0.1 code-quality-check
+> npm run lint && npm run format && npm run type-check
+
+
+> webapp-backend@0.0.1 lint
+> eslint "{src,apps,libs,test}/**/*.ts"
+
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/migrations/20260322120000_create_users_table.ts
+   9:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+  42:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/migrations/20260322120001_create_companies_table.ts
+   9:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+  37:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/migrations/20260322120002_create_company_members_table.ts
+  13:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+  64:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/migrations/20260322120003_create_oauth_accounts_table.ts
+   9:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+  55:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/migrations/20260322120004_create_invitations_table.ts
+  13:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+  68:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/modules/auth/guards/fastify-throttler.guard.ts
+  8:29  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/modules/oauth-account/oauth-account.model.ts
+  137:35  warning  Unnecessary conditional, the types have no overlap  @typescript-eslint/no-unnecessary-condition
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/unit-tests/cache.service.unit-spec.ts
+  336:11  error  Replace `⏎↹↹↹↹jest.spyOn(Logger.prototype,·'error'),⏎↹↹↹` with `jest.spyOn(Logger.prototype,·'error')`  prettier/prettier
+  348:11  error  Replace `⏎↹↹↹↹jest.spyOn(Logger.prototype,·'log'),⏎↹↹↹` with `jest.spyOn(Logger.prototype,·'log')`      prettier/prettier
+  360:11  error  Replace `⏎↹↹↹↹jest.spyOn(Logger.prototype,·'error'),⏎↹↹↹` with `jest.spyOn(Logger.prototype,·'error')`  prettier/prettier
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/unit-tests/correlation-id.middleware.unit-spec.ts
+   15:1   error  There should be at least one empty line between import groups                                                       import/order
+   15:1   error  `correlation-id-ts` import should occur before import of `@middlewares/correlation-id.middleware`                   import/order
+   16:1   error  `node:crypto` import should occur before import of `@nestjs/testing`                                                import/order
+   21:64  error  Replace `·headers:·Record<string,·string>·` with `⏎↹headers:·Record<string,·string>;⏎`                              prettier/prettier
+   29:76  error  Returning a void expression from an arrow function shorthand is forbidden. Please add braces to the arrow function  @typescript-eslint/no-confusing-void-expression
+  101:51  error  Unexpected empty arrow function                                                                                     @typescript-eslint/no-empty-function
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/unit-tests/log-execution.decorator.unit-spec.ts
+    1:1   error  There should be at least one empty line between import groups                                                                 import/order
+    2:1   error  `perf_hooks` import should occur before import of `@nestjs/common`                                                            import/order
+   31:38  error  Replace `·password:·'secret123',·name:·'Alice'·` with `⏎↹↹↹↹password:·'secret123',⏎↹↹↹↹name:·'Alice',⏎↹↹↹`                    prettier/prettier
+   52:80  error  Replace `string,·unknown` with `⏎↹↹↹↹string,⏎↹↹↹↹unknown⏎↹↹↹`                                                                 prettier/prettier
+   57:74  error  Replace `string,·unknown` with `⏎↹↹↹↹string,⏎↹↹↹↹unknown⏎↹↹↹`                                                                 prettier/prettier
+   67:75  error  Replace `string,·unknown` with `⏎↹↹↹↹string,⏎↹↹↹↹unknown⏎↹↹↹`                                                                 prettier/prettier
+   72:74  error  Replace `string,·unknown` with `⏎↹↹↹↹string,⏎↹↹↹↹unknown⏎↹↹↹`                                                                 prettier/prettier
+   77:38  error  Replace `·UserPassword:·'hunter2',·PublicKey:·'ok'·` with `⏎↹↹↹↹UserPassword:·'hunter2',⏎↹↹↹↹PublicKey:·'ok',⏎↹↹↹`            prettier/prettier
+   83:38  error  Replace `·username:·'alice',·email:·'alice@example.com'·` with `⏎↹↹↹↹username:·'alice',⏎↹↹↹↹email:·'alice@example.com',⏎↹↹↹`  prettier/prettier
+   97:47  error  Replace `·user:·{·profile:·Record<string,·unknown>·}·` with `⏎↹↹↹↹user:·{·profile:·Record<string,·unknown>·};⏎↹↹↹`            prettier/prettier
+  115:46  error  Array type using 'Array<T>' is forbidden. Use 'T[]' instead                                                                   @typescript-eslint/array-type
+  130:37  error  Replace `⏎↹↹↹↹{·myField:·'hidden',·password:·'still-here'·},` with `{·myField:·'hidden',·password:·'still-here'·},·[`         prettier/prettier
+  132:5   error  Replace `['myField']` with `'myField'`                                                                                        prettier/prettier
+  133:4   error  Insert `]`                                                                                                                    prettier/prettier
+  169:5   error  Async method 'doWork' has no 'await' expression                                                                               @typescript-eslint/require-await
+  169:27  error  Replace `·password:·string;·name:·string·` with `⏎↹↹↹↹↹password:·string;⏎↹↹↹↹↹name:·string;⏎↹↹↹↹`                             prettier/prettier
+  196:5   error  Async method 'doWork' has no 'await' expression                                                                               @typescript-eslint/require-await
+  214:5   error  Async method 'doWork' has no 'await' expression                                                                               @typescript-eslint/require-await
+  235:5   error  Async method 'doWork' has no 'await' expression                                                                               @typescript-eslint/require-await
+  252:5   error  Async method 'doWork' has no 'await' expression                                                                               @typescript-eslint/require-await
+  272:5   error  Async method 'doWork' has no 'await' expression                                                                               @typescript-eslint/require-await
+  290:5   error  Async method 'doWork' has no 'await' expression                                                                               @typescript-eslint/require-await
+  312:5   error  Async method 'doWork' has no 'await' expression                                                                               @typescript-eslint/require-await
+  332:5   error  Async method 'doWork' has no 'await' expression                                                                               @typescript-eslint/require-await
+  332:26  error  Replace `·mySecret:·string;·safe:·string·` with `⏎↹↹↹↹↹mySecret:·string;⏎↹↹↹↹↹safe:·string;⏎↹↹↹↹`                             prettier/prettier
+  360:5   error  Async method 'doWork' has no 'await' expression                                                                               @typescript-eslint/require-await
+  379:5   error  Async method 'doWork' has no 'await' expression                                                                               @typescript-eslint/require-await
+  397:5   error  Async method 'doWork' has no 'await' expression                                                                               @typescript-eslint/require-await
+  430:5   error  Async method 'doWork' has no 'await' expression                                                                               @typescript-eslint/require-await
+  451:5   error  Async method 'doWork' has no 'await' expression                                                                               @typescript-eslint/require-await
+  467:5   error  Async method 'doWork' has no 'await' expression                                                                               @typescript-eslint/require-await
+  489:5   error  Async method 'doWork' has no 'await' expression                                                                               @typescript-eslint/require-await
+  504:5   error  Async method 'doWork' has no 'await' expression                                                                               @typescript-eslint/require-await
+  520:5   error  Async method 'doWork' has no 'await' expression                                                                               @typescript-eslint/require-await
+  538:5   error  Async method 'processItem' has no 'await' expression                                                                          @typescript-eslint/require-await
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/unit-tests/logger.middleware.unit-spec.ts
+   11:1   error  `@utils/common.util` import should occur before import of `@middlewares/logger.middleware`         import/order
+   37:6   error  Expected a non-Promise value to be spread in an object                                             @typescript-eslint/no-misused-promises
+  581:72  error  Unexpected empty arrow function                                                                    @typescript-eslint/no-empty-function
+  593:54  error  Replace `⏎↹↹↹↹↹'onError',⏎↹↹↹↹↹expect.any(Function),⏎↹↹↹↹` with `'onError',·expect.any(Function)`  prettier/prettier
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/test/auth.module.e2e-spec.ts
+  13:10  error  'FastifyThrottlerGuard' is defined but never used. Allowed unused vars must match /^_/u  @typescript-eslint/no-unused-vars
+
+✖ 61 problems (49 errors, 12 warnings)
+  23 errors and 0 warnings potentially fixable with the `--fix` option.

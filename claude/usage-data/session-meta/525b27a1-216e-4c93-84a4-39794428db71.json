@@ -1,0 +1,50 @@
+{
+  "session_id": "525b27a1-216e-4c93-84a4-39794428db71",
+  "project_path": "/Users/4thwithme/Documents/repo/recommendations-service",
+  "start_time": "2026-02-22T22:30:22.653Z",
+  "duration_minutes": 6,
+  "user_message_count": 5,
+  "assistant_message_count": 28,
+  "tool_counts": {
+    "Read": 5,
+    "Edit": 5,
+    "Bash": 2
+  },
+  "languages": {
+    "TypeScript": 10
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 40,
+  "output_tokens": 491,
+  "first_prompt": "during test run tests interups with[Nest] 60416  - 02/22/2026, 11:25:37 PM   ERROR [BootstrapNeuralSearchCommand] Graceful shutdown timeout, forcing exit   ●  process.exit called with \"1\"        280 |…",
+  "user_interruptions": 0,
+  "user_response_times": [
+    162.974
+  ],
+  "tool_errors": 1,
+  "tool_error_categories": {
+    "Edit Failed": 1
+  },
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 17,
+  "lines_removed": 9,
+  "files_modified": 2,
+  "message_hours": [
+    23,
+    23,
+    23,
+    23,
+    23
+  ],
+  "user_message_timestamps": [
+    "2026-02-22T22:30:22.653Z",
+    "2026-02-22T22:30:22.645Z",
+    "2026-02-22T22:30:22.653Z",
+    "2026-02-22T22:31:04.171Z",
+    "2026-02-22T22:35:02.829Z"
+  ]
+}

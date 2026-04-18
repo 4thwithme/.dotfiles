@@ -1,0 +1,8 @@
+{
+  "id": "22",
+  "subject": "Task 16: Auth Controller",
+  "description": "All /auth/* endpoints, fastify-cookie registration, CORS config",
+  "status": "completed",
+  "blocks": [],
+  "blockedBy": []
+}

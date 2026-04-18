@@ -1,0 +1,8 @@
+{
+  "id": "12",
+  "subject": "Task 10: Company Member Module",
+  "description": "Company member model, service with session invalidation on membership changes",
+  "status": "completed",
+  "blocks": [],
+  "blockedBy": []
+}

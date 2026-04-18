@@ -1,0 +1,27 @@
+[
+  {
+    "content": "Read the holiday-helpers utility to understand the implementation",
+    "status": "completed",
+    "id": "1"
+  },
+  {
+    "content": "Identify timezone-related issues in the test file",
+    "status": "completed",
+    "id": "2"
+  },
+  {
+    "content": "Fix date creation to use UTC consistently in tests",
+    "status": "completed",
+    "id": "3"
+  },
+  {
+    "content": "Run tests to verify fixes work",
+    "status": "completed",
+    "id": "4"
+  },
+  {
+    "content": "Fix timezone issues in e2e test for trending-products",
+    "status": "completed",
+    "id": "5"
+  }
+]

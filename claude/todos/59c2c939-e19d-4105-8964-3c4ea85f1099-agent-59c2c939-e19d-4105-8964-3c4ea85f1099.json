@@ -1,0 +1,27 @@
+[
+  {
+    "content": "Understand concrete examples and use cases",
+    "status": "completed",
+    "activeForm": "Understanding use cases"
+  },
+  {
+    "content": "Plan reusable skill contents (scripts/references/assets)",
+    "status": "completed",
+    "activeForm": "Planning skill contents"
+  },
+  {
+    "content": "Initialize skill with init_skill.py",
+    "status": "completed",
+    "activeForm": "Initializing skill"
+  },
+  {
+    "content": "Create and edit SKILL.md",
+    "status": "completed",
+    "activeForm": "Creating SKILL.md"
+  },
+  {
+    "content": "Package skill with package_skill.py",
+    "status": "in_progress",
+    "activeForm": "Packaging skill"
+  }
+]

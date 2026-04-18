@@ -1,0 +1,27 @@
+1. SECURITY: XSS in renderSearchPageHtml (neural-search.service.ts)
+User-controlled and DB-sourced data interpolated directly into HTML without escaping:
+
+value="[queryValue]" — URL ?q= param injected into attribute. Input "><script>alert(1)</script> executes.
+<strong>[result.query]</strong> — same user input reflected unescaped.
+[p.name] and brand fields — DB values from OpenSearch. A product name containing </div><script> executes.
+Add an escapeHtml helper (&, <, >, ", ') before any interpolation.
+2. Missing @LogExecution on view endpoint (neural-search.controller.ts:73)
+Per CLAUDE.md: required on all public route handlers.
+
+3. Raw status codes in @ApiResponse (neural-search.controller.ts)
+Uses status: 200, status: 400. CLAUDE.md requires HttpStatus enum from @nestjs/common.
+
+4. Missing @ApiResponse for 500 on all three controller routes
+CLAUDE.md: one @ApiResponse per possible HTTP status. All routes missing the 500 response.
+
+5. Missing @ApiParam for useCase route param (neural-search.controller.ts)
+@Param() params: NeuralSearchUseCaseParamDto present but no @ApiParam decorator.
+
+6. Unvalidated limit in view endpoint (neural-search.controller.ts:77)
+@Query('limit') limit?: string passed as Number(limit) with no validation. Number('abc') = NaN silently propagates. Use DTO validation or an isNaN guard.
+
+7. Price level fallback bug (opensearch-neural.service.ts — buildCombinedTextForEmbedding)
+Products with price_level = null and unmapped levels both fall through to 'Mid-range' as the default. All products without a price level are incorrectly labeled mid-range in embedding text, degrading vector search quality for price-sensitive queries. Fallback for missing/unknown level should be null.
+
+8. @CronJobExecution on manual CLI commands
+CLAUDE.md: use @CronJobExecution for scheduled cron jobs, @LogExecution for manual commands. bootstrap-neural-search, redeploy-neural-search, setup-neural-search are manual provisioning commands not listed as cron_job in ktool.yaml. Should use @LogExecution.

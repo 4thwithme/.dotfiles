@@ -1,0 +1,49 @@
+Client secrets
+You need a client secret to authenticate as the application to the API.
+
+Basic information
+GitHub App name
+no-name-proj-dev
+The name of your GitHub App.
+
+ Markdown supported
+Write
+Preview
+no-name-proj-dev
+Homepage URL
+http://localhost:9069
+The full URL to your GitHub App’s website.
+
+Identifying and authorizing users
+The full URL to redirect to after a user authorizes an installation.
+Read our Callback URL documentation for more information.
+
+Callback URL
+https://no-name-proj-1488-dev.loca.lt/api/integrations/github/callback
+ Request user authorization (OAuth) during installation
+Requests that the installing user grants access to their identity during installation of your App
+
+Read our Identifying and authorizing users for GitHub Apps documentation for more information.
+
+ Enable Device Flow
+Allow this GitHub App to authorize users via the Device Flow.
+
+Read the Device Flow documentation for more information.
+
+Post installation
+Setup URL (optional)
+https://dawn-slogan-morphine.ngrok-free.dev/api/integrations/github/callback 
+Users will be redirected to this URL after installing your GitHub App to complete additional setup.
+
+ Redirect on update
+Redirect users to the 'Setup URL' after installations are updated (E.g. repositories added/removed).
+
+Webhook
+
+Active
+We will deliver event details when this hook is triggered.
+Webhook URL
+https://dawn-slogan-morphine.ngrok-free.dev/api/github/webhooks
+Events will POST to this URL. Read our webhook documentation for more information.
+
+

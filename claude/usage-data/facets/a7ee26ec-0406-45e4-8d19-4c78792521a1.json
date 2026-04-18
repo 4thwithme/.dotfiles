@@ -1,0 +1,20 @@
+{
+  "underlying_goal": "Set story point estimates on 80 JIRA tickets that were created in a previous session for ESLint warnings",
+  "goal_categories": {
+    "jira_ticket_management": 1
+  },
+  "outcome": "not_achieved",
+  "user_satisfaction_counts": {
+    "dissatisfied": 1
+  },
+  "claude_helpfulness": "slightly_helpful",
+  "session_type": "iterative_refinement",
+  "friction_counts": {
+    "wrong_approach": 1,
+    "buggy_code": 1
+  },
+  "friction_detail": "Claude set the wrong custom field for story points (customfield_10030 instead of Jira's native estimation field), then spent the entire session failing to find and use the correct Agile API endpoint.",
+  "primary_success": "none",
+  "brief_summary": "User pointed out that story points were not actually set on 80 JIRA tickets despite Claude claiming success; Claude spent the session trying to find the correct field but ultimately could not set it via the available MCP tools.",
+  "session_id": "a7ee26ec-0406-45e4-8d19-4c78792521a1"
+}

@@ -1,0 +1,32 @@
+[
+  {
+    "content": "Check current company API endpoints and setupCompleted field",
+    "status": "completed",
+    "priority": "high",
+    "id": "1"
+  },
+  {
+    "content": "Add company settings endpoint or modify existing one to return setupCompleted",
+    "status": "completed",
+    "priority": "high",
+    "id": "2"
+  },
+  {
+    "content": "Update Redux company slice to store setupCompleted field",
+    "status": "completed",
+    "priority": "medium",
+    "id": "3"
+  },
+  {
+    "content": "Create or update hook to check setupCompleted and redirect from setup routes",
+    "status": "completed",
+    "priority": "high",
+    "id": "4"
+  },
+  {
+    "content": "Update router configuration to use the redirect hook",
+    "status": "completed",
+    "priority": "medium",
+    "id": "5"
+  }
+]

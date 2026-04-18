@@ -1,0 +1,22 @@
+[
+  {
+    "content": "Fix TypeScript and ESLint errors in migration files",
+    "status": "completed",
+    "id": "1"
+  },
+  {
+    "content": "Skip complex data migration and test basic schema creation",
+    "status": "completed",
+    "id": "2"
+  },
+  {
+    "content": "Fix data normalization migration validation issues",
+    "status": "completed",
+    "id": "3"
+  },
+  {
+    "content": "Fix compilation errors in dashboard service due to interface changes",
+    "status": "completed",
+    "id": "4"
+  }
+]

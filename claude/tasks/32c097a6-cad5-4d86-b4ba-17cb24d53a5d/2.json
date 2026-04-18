@@ -1,0 +1,9 @@
+{
+  "id": "2",
+  "subject": "Fix primitive params in service files",
+  "description": "Refactor all service files (algolia, health, mms, newrelic, rest modules, db modules) to use object parameters",
+  "activeForm": "Fixing primitive params in services",
+  "status": "pending",
+  "blocks": [],
+  "blockedBy": []
+}

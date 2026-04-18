@@ -1,0 +1,46 @@
+{
+  "session_id": "a5348aba-8069-4dc3-9cbd-ed38ea28f2a8",
+  "project_path": "/Users/4thwithme/Documents/repo/ci-header-footer",
+  "start_time": "2026-02-26T15:41:19.293Z",
+  "duration_minutes": 5,
+  "user_message_count": 2,
+  "assistant_message_count": 20,
+  "tool_counts": {
+    "Glob": 1,
+    "Grep": 5,
+    "Read": 6,
+    "Bash": 1
+  },
+  "languages": {
+    "HTML": 3,
+    "TypeScript": 2
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 32,
+  "output_tokens": 4200,
+  "first_prompt": "do you see ci-header-prerender? how to run it locallY&",
+  "user_interruptions": 0,
+  "user_response_times": [
+    202.896
+  ],
+  "tool_errors": 1,
+  "tool_error_categories": {
+    "File Too Large": 1
+  },
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 0,
+  "lines_removed": 0,
+  "files_modified": 0,
+  "message_hours": [
+    16,
+    16
+  ],
+  "user_message_timestamps": [
+    "2026-02-26T15:41:19.293Z",
+    "2026-02-26T15:44:52.002Z"
+  ]
+}

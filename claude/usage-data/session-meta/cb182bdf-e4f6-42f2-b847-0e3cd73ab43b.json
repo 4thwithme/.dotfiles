@@ -1,0 +1,42 @@
+{
+  "session_id": "cb182bdf-e4f6-42f2-b847-0e3cd73ab43b",
+  "project_path": "/Users/4thwithme/Documents/repo/recommendations-service",
+  "start_time": "2026-03-04T22:47:56.379Z",
+  "duration_minutes": 1,
+  "user_message_count": 3,
+  "assistant_message_count": 3,
+  "tool_counts": {
+    "Read": 1
+  },
+  "languages": {
+    "Markdown": 1
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 7,
+  "output_tokens": 393,
+  "first_prompt": "i have claude desctop and i want to add short instruction there to the \"What personal preferences should Claude consider in responses? Your preferences will apply to all conversations, within Anthropi…",
+  "user_interruptions": 0,
+  "user_response_times": [],
+  "tool_errors": 1,
+  "tool_error_categories": {
+    "File Not Found": 1
+  },
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 0,
+  "lines_removed": 0,
+  "files_modified": 0,
+  "message_hours": [
+    23,
+    23,
+    23
+  ],
+  "user_message_timestamps": [
+    "2026-03-04T22:47:56.379Z",
+    "2026-03-04T22:47:56.369Z",
+    "2026-03-04T22:49:04.140Z"
+  ]
+}

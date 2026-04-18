@@ -1,0 +1,209 @@
+/Users/4thwithme/Documents/repo/catalog/app/javascript/product_details_page/RelatedProducts/ComplementProducts.test.jsx-49-}));
+/Users/4thwithme/Documents/repo/catalog/app/javascript/product_details_page/RelatedProducts/ComplementProducts.test.jsx-50-
+/Users/4thwithme/Documents/repo/catalog/app/javascript/product_details_page/RelatedProducts/ComplementProducts.test.jsx-51-jest.mock('features/TabbedView/components', () => ({
+app/javascript/product_details_page/RelatedProducts/ComplementProducts.test.jsx:52:  CarouselCardsView: ({children}) => (
+/Users/4thwithme/Documents/repo/catalog/app/javascript/product_details_page/RelatedProducts/ComplementProducts.test.jsx-53-    <div data-testid="carousel">{children}</div>
+/Users/4thwithme/Documents/repo/catalog/app/javascript/product_details_page/RelatedProducts/ComplementProducts.test.jsx-54-  )
+/Users/4thwithme/Documents/repo/catalog/app/javascript/product_details_page/RelatedProducts/ComplementProducts.test.jsx-55-}));
+--
+/Users/4thwithme/Documents/repo/catalog/app/javascript/product_details_page/RelatedProducts/AlternativeProducts.jsx-1-import {Box} from '@customink/pigment-react';
+/Users/4thwithme/Documents/repo/catalog/app/javascript/product_details_page/RelatedProducts/AlternativeProducts.jsx-2-import React, {useContext} from 'react';
+app/javascript/product_details_page/RelatedProducts/AlternativeProducts.jsx:3:import {CarouselCardsView} from 'features/TabbedView/components';
+/Users/4thwithme/Documents/repo/catalog/app/javascript/product_details_page/RelatedProducts/AlternativeProducts.jsx-4-import handleRightClick from 'utils/rightClickForCard';
+/Users/4thwithme/Documents/repo/catalog/app/javascript/product_details_page/RelatedProducts/AlternativeProducts.jsx-5-import useIntersectionObserverOnce from '../../hooks/useIntersectionObserverOnce';
+/Users/4thwithme/Documents/repo/catalog/app/javascript/product_details_page/RelatedProducts/AlternativeProducts.jsx-6-import createRecoCardLinkHref from 'utils/createRecoCardLinkHref';
+--
+/Users/4thwithme/Documents/repo/catalog/app/javascript/product_details_page/RelatedProducts/AlternativeProducts.jsx-79-      }}
+/Users/4thwithme/Documents/repo/catalog/app/javascript/product_details_page/RelatedProducts/AlternativeProducts.jsx-80-      title="Similar Styles">
+app/javascript/product_details_page/RelatedProducts/AlternativeProducts.jsx-81-      <Box sx={{mt: 2}}>
+app/javascript/product_details_page/RelatedProducts/AlternativeProducts.jsx:82:        <CarouselCardsView
+/Users/4thwithme/Documents/repo/catalog/app/javascript/product_details_page/RelatedProducts/AlternativeProducts.jsx-83-          key={alternativeProducts[0]?.style_id}
+/Users/4thwithme/Documents/repo/catalog/app/javascript/product_details_page/RelatedProducts/AlternativeProducts.jsx-84-          separatedView={true}>
+/Users/4thwithme/Documents/repo/catalog/app/javascript/product_details_page/RelatedProducts/AlternativeProducts.jsx-85-          {cards}
+app/javascript/product_details_page/RelatedProducts/AlternativeProducts.jsx:86:        </CarouselCardsView>
+/Users/4thwithme/Documents/repo/catalog/app/javascript/product_details_page/RelatedProducts/AlternativeProducts.jsx-87-      </Box>
+/Users/4thwithme/Documents/repo/catalog/app/javascript/product_details_page/RelatedProducts/AlternativeProducts.jsx-88-    </ProductDetailsRow>
+/Users/4thwithme/Documents/repo/catalog/app/javascript/product_details_page/RelatedProducts/AlternativeProducts.jsx-89-  );
+--
+/Users/4thwithme/Documents/repo/catalog/app/javascript/product_details_page/RelatedProducts/ComplementProducts.jsx-1-import {Box} from '@customink/pigment-react';
+/Users/4thwithme/Documents/repo/catalog/app/javascript/product_details_page/RelatedProducts/ComplementProducts.jsx-2-import React, {useCallback, useContext, useEffect, useRef} from 'react';
+app/javascript/product_details_page/RelatedProducts/ComplementProducts.jsx:3:import {CarouselCardsView} from 'features/TabbedView/components';
+/Users/4thwithme/Documents/repo/catalog/app/javascript/product_details_page/RelatedProducts/ComplementProducts.jsx-4-import handleRightClick from 'utils/rightClickForCard';
+/Users/4thwithme/Documents/repo/catalog/app/javascript/product_details_page/RelatedProducts/ComplementProducts.jsx-5-import {PDP_RELATED_PRODUCTS_ENTITY_TYPE} from '../../constants/pdpRelatedProducts';
+/Users/4thwithme/Documents/repo/catalog/app/javascript/product_details_page/RelatedProducts/ComplementProducts.jsx-6-import useIntersectionObserverOnce from '../../hooks/useIntersectionObserverOnce';
+--
+/Users/4thwithme/Documents/repo/catalog/app/javascript/product_details_page/RelatedProducts/ComplementProducts.jsx-131-      childrenRef={containerRef}
+/Users/4thwithme/Documents/repo/catalog/app/javascript/product_details_page/RelatedProducts/ComplementProducts.jsx-132-      mobileAccordionOverride>
+app/javascript/product_details_page/RelatedProducts/ComplementProducts.jsx-133-      <Box sx={{mt: 2}}>
+app/javascript/product_details_page/RelatedProducts/ComplementProducts.jsx:134:        <CarouselCardsView key={products[0]?.style_id} separatedView={true}>
+/Users/4thwithme/Documents/repo/catalog/app/javascript/product_details_page/RelatedProducts/ComplementProducts.jsx-135-          {cards}
+app/javascript/product_details_page/RelatedProducts/ComplementProducts.jsx:136:        </CarouselCardsView>
+/Users/4thwithme/Documents/repo/catalog/app/javascript/product_details_page/RelatedProducts/ComplementProducts.jsx-137-      </Box>
+/Users/4thwithme/Documents/repo/catalog/app/javascript/product_details_page/RelatedProducts/ComplementProducts.jsx-138-    </ProductDetailsRow>
+/Users/4thwithme/Documents/repo/catalog/app/javascript/product_details_page/RelatedProducts/ComplementProducts.jsx-139-  );
+--
+/Users/4thwithme/Documents/repo/catalog/app/javascript/features/TabbedView/RelatedProductsTabbedView.jsx-18-} from 'utils/metrics/pdpRelatedStylesTabbedView';
+/Users/4thwithme/Documents/repo/catalog/app/javascript/features/TabbedView/RelatedProductsTabbedView.jsx-19-import handleRightClick from 'utils/rightClickForCard';
+/Users/4thwithme/Documents/repo/catalog/app/javascript/features/TabbedView/RelatedProductsTabbedView.jsx-20-import {
+app/javascript/features/TabbedView/RelatedProductsTabbedView.jsx:21:  CarouselCardsView,
+/Users/4thwithme/Documents/repo/catalog/app/javascript/features/TabbedView/RelatedProductsTabbedView.jsx-22-  EmptyStateCardsView,
+/Users/4thwithme/Documents/repo/catalog/app/javascript/features/TabbedView/RelatedProductsTabbedView.jsx-23-  Loader,
+/Users/4thwithme/Documents/repo/catalog/app/javascript/features/TabbedView/RelatedProductsTabbedView.jsx-24-  StyledRecoBox,
+--
+/Users/4thwithme/Documents/repo/catalog/app/javascript/features/TabbedView/RelatedProductsTabbedView.jsx-37-  }
+/Users/4thwithme/Documents/repo/catalog/app/javascript/features/TabbedView/RelatedProductsTabbedView.jsx-38-
+/Users/4thwithme/Documents/repo/catalog/app/javascript/features/TabbedView/RelatedProductsTabbedView.jsx-39-  return (
+app/javascript/features/TabbedView/RelatedProductsTabbedView.jsx:40:    <CarouselCardsView separatedView={separatedView}>
+/Users/4thwithme/Documents/repo/catalog/app/javascript/features/TabbedView/RelatedProductsTabbedView.jsx-41-      {children}
+app/javascript/features/TabbedView/RelatedProductsTabbedView.jsx:42:    </CarouselCardsView>
+/Users/4thwithme/Documents/repo/catalog/app/javascript/features/TabbedView/RelatedProductsTabbedView.jsx-43-  );
+/Users/4thwithme/Documents/repo/catalog/app/javascript/features/TabbedView/RelatedProductsTabbedView.jsx-44-};
+/Users/4thwithme/Documents/repo/catalog/app/javascript/features/TabbedView/RelatedProductsTabbedView.jsx-45-
+--
+/Users/4thwithme/Documents/repo/catalog/app/javascript/features/TabbedView/RelatedProductsTabbedView.test.jsx-37-  };
+/Users/4thwithme/Documents/repo/catalog/app/javascript/features/TabbedView/RelatedProductsTabbedView.test.jsx-38-});
+/Users/4thwithme/Documents/repo/catalog/app/javascript/features/TabbedView/RelatedProductsTabbedView.test.jsx-39-jest.mock('./components', () => ({
+app/javascript/features/TabbedView/RelatedProductsTabbedView.test.jsx:40:  CarouselCardsView: ({children}) => (
+/Users/4thwithme/Documents/repo/catalog/app/javascript/features/TabbedView/RelatedProductsTabbedView.test.jsx-41-    <div data-testid="carousel-cards-view">{children}</div>
+/Users/4thwithme/Documents/repo/catalog/app/javascript/features/TabbedView/RelatedProductsTabbedView.test.jsx-42-  ),
+app/javascript/features/TabbedView/RelatedProductsTabbedView.test.jsx-43-  EmptyStateCardsView: () => (
+--
+/Users/4thwithme/Documents/repo/catalog/app/javascript/features/TabbedView/components/CarouselCardsView.jsx-109-  return 4;
+/Users/4thwithme/Documents/repo/catalog/app/javascript/features/TabbedView/components/CarouselCardsView.jsx-110-};
+/Users/4thwithme/Documents/repo/catalog/app/javascript/features/TabbedView/components/CarouselCardsView.jsx-111-
+app/javascript/features/TabbedView/components/CarouselCardsView.jsx:112:const CarouselCardsView = ({
+/Users/4thwithme/Documents/repo/catalog/app/javascript/features/TabbedView/components/CarouselCardsView.jsx-113-  children,
+/Users/4thwithme/Documents/repo/catalog/app/javascript/features/TabbedView/components/CarouselCardsView.jsx-114-  separatedView,
+/Users/4thwithme/Documents/repo/catalog/app/javascript/features/TabbedView/components/CarouselCardsView.jsx-115-  onLeftClick,
+--
+/Users/4thwithme/Documents/repo/catalog/app/javascript/features/TabbedView/components/CarouselCardsView.jsx-246-  );
+/Users/4thwithme/Documents/repo/catalog/app/javascript/features/TabbedView/components/CarouselCardsView.jsx-247-};
+/Users/4thwithme/Documents/repo/catalog/app/javascript/features/TabbedView/components/CarouselCardsView.jsx-248-
+app/javascript/features/TabbedView/components/CarouselCardsView.jsx:249:CarouselCardsView.propTypes = {
+app/javascript/features/TabbedView/components/CarouselCardsView.jsx-250-  children: PropTypes.node.isRequired,
+app/javascript/features/TabbedView/components/CarouselCardsView.jsx-251-  separatedView: PropTypes.bool.isRequired
+/Users/4thwithme/Documents/repo/catalog/app/javascript/features/TabbedView/components/CarouselCardsView.jsx-252-};
+/Users/4thwithme/Documents/repo/catalog/app/javascript/features/TabbedView/components/CarouselCardsView.jsx-253-
+app/javascript/features/TabbedView/components/CarouselCardsView.jsx:254:export default CarouselCardsView;
+--
+app/javascript/features/TabbedView/components/index.js:1:export {default as CarouselCardsView} from './CarouselCardsView';
+/Users/4thwithme/Documents/repo/catalog/app/javascript/features/TabbedView/components/index.js-2-export {default as EmptyStateCardsView} from './EmptyStateCardsView';
+/Users/4thwithme/Documents/repo/catalog/app/javascript/features/TabbedView/components/index.js-3-export {default as Loader} from './Loader';
+/Users/4thwithme/Documents/repo/catalog/app/javascript/features/TabbedView/components/index.js-4-export {default as StyledRecoBox} from './StyledRecoBox';
+--
+/Users/4thwithme/Documents/repo/catalog/app/javascript/features/TabbedView/components/CarouselCardsView.test.jsx-2-import {render, screen} from '@testing-library/react';
+/Users/4thwithme/Documents/repo/catalog/app/javascript/features/TabbedView/components/CarouselCardsView.test.jsx-3-import React from 'react';
+/Users/4thwithme/Documents/repo/catalog/app/javascript/features/TabbedView/components/CarouselCardsView.test.jsx-4-import useBreakpoint from 'hooks/useBreakpoint';
+app/javascript/features/TabbedView/components/CarouselCardsView.test.jsx:5:import CarouselCardsView from './CarouselCardsView';
+/Users/4thwithme/Documents/repo/catalog/app/javascript/features/TabbedView/components/CarouselCardsView.test.jsx-6-
+/Users/4thwithme/Documents/repo/catalog/app/javascript/features/TabbedView/components/CarouselCardsView.test.jsx-7-jest.mock('hooks/useBreakpoint');
+/Users/4thwithme/Documents/repo/catalog/app/javascript/features/TabbedView/components/CarouselCardsView.test.jsx-8-jest.mock('@react-hook/resize-observer');
+--
+/Users/4thwithme/Documents/repo/catalog/app/javascript/features/TabbedView/components/CarouselCardsView.test.jsx-33-  </div>
+/Users/4thwithme/Documents/repo/catalog/app/javascript/features/TabbedView/components/CarouselCardsView.test.jsx-34-];
+/Users/4thwithme/Documents/repo/catalog/app/javascript/features/TabbedView/components/CarouselCardsView.test.jsx-35-
+app/javascript/features/TabbedView/components/CarouselCardsView.test.jsx:36:describe('CarouselCardsView', () => {
+/Users/4thwithme/Documents/repo/catalog/app/javascript/features/TabbedView/components/CarouselCardsView.test.jsx-37-  beforeEach(() => {
+/Users/4thwithme/Documents/repo/catalog/app/javascript/features/TabbedView/components/CarouselCardsView.test.jsx-38-    useBreakpoint.mockReturnValue('lg');
+/Users/4thwithme/Documents/repo/catalog/app/javascript/features/TabbedView/components/CarouselCardsView.test.jsx-39-
+--
+/Users/4thwithme/Documents/repo/catalog/app/javascript/features/TabbedView/components/CarouselCardsView.test.jsx-55-  });
+/Users/4thwithme/Documents/repo/catalog/app/javascript/features/TabbedView/components/CarouselCardsView.test.jsx-56-
+/Users/4thwithme/Documents/repo/catalog/app/javascript/features/TabbedView/components/CarouselCardsView.test.jsx-57-  it('renders all slides', () => {
+app/javascript/features/TabbedView/components/CarouselCardsView.test.jsx:58:    render(<CarouselCardsView>{mockChildren}</CarouselCardsView>);
+/Users/4thwithme/Documents/repo/catalog/app/javascript/features/TabbedView/components/CarouselCardsView.test.jsx-59-
+/Users/4thwithme/Documents/repo/catalog/app/javascript/features/TabbedView/components/CarouselCardsView.test.jsx-60-    expect(screen.getByTestId('slide-1')).toBeInTheDocument();
+/Users/4thwithme/Documents/repo/catalog/app/javascript/features/TabbedView/components/CarouselCardsView.test.jsx-61-    expect(screen.getByTestId('slide-2')).toBeInTheDocument();
+--
+/Users/4thwithme/Documents/repo/catalog/app/javascript/features/TabbedView/components/CarouselCardsView.test.jsx-65-  });
+/Users/4thwithme/Documents/repo/catalog/app/javascript/features/TabbedView/components/CarouselCardsView.test.jsx-66-
+/Users/4thwithme/Documents/repo/catalog/app/javascript/features/TabbedView/components/CarouselCardsView.test.jsx-67-  it('renders carousel container', () => {
+app/javascript/features/TabbedView/components/CarouselCardsView.test.jsx:68:    render(<CarouselCardsView>{mockChildren}</CarouselCardsView>);
+/Users/4thwithme/Documents/repo/catalog/app/javascript/features/TabbedView/components/CarouselCardsView.test.jsx-69-
+/Users/4thwithme/Documents/repo/catalog/app/javascript/features/TabbedView/components/CarouselCardsView.test.jsx-70-    const slider = screen.getByTestId('slide-1').closest('.keen-slider');
+/Users/4thwithme/Documents/repo/catalog/app/javascript/features/TabbedView/components/CarouselCardsView.test.jsx-71-    expect(slider).toBeInTheDocument();
+--
+/Users/4thwithme/Documents/repo/catalog/app/javascript/features/TabbedView/components/CarouselCardsView.test.jsx-74-  it('shows arrows when there are 2 or more slides', () => {
+/Users/4thwithme/Documents/repo/catalog/app/javascript/features/TabbedView/components/CarouselCardsView.test.jsx-75-    expect(mockChildren.length).toBeGreaterThanOrEqual(2);
+/Users/4thwithme/Documents/repo/catalog/app/javascript/features/TabbedView/components/CarouselCardsView.test.jsx-76-
+app/javascript/features/TabbedView/components/CarouselCardsView.test.jsx:77:    render(<CarouselCardsView>{mockChildren}</CarouselCardsView>);
+/Users/4thwithme/Documents/repo/catalog/app/javascript/features/TabbedView/components/CarouselCardsView.test.jsx-78-
+/Users/4thwithme/Documents/repo/catalog/app/javascript/features/TabbedView/components/CarouselCardsView.test.jsx-79-    const slider = screen.getByTestId('slide-1').closest('.keen-slider');
+/Users/4thwithme/Documents/repo/catalog/app/javascript/features/TabbedView/components/CarouselCardsView.test.jsx-80-    expect(slider).toBeInTheDocument();
+--
+/Users/4thwithme/Documents/repo/catalog/app/javascript/features/TabbedView/components/CarouselCardsView.test.jsx-95-
+/Users/4thwithme/Documents/repo/catalog/app/javascript/features/TabbedView/components/CarouselCardsView.test.jsx-96-    expect(mockPrev).toBeDefined();
+/Users/4thwithme/Documents/repo/catalog/app/javascript/features/TabbedView/components/CarouselCardsView.test.jsx-97-
+app/javascript/features/TabbedView/components/CarouselCardsView.test.jsx:98:    render(<CarouselCardsView>{mockChildren}</CarouselCardsView>);
+/Users/4thwithme/Documents/repo/catalog/app/javascript/features/TabbedView/components/CarouselCardsView.test.jsx-99-
+/Users/4thwithme/Documents/repo/catalog/app/javascript/features/TabbedView/components/CarouselCardsView.test.jsx-100-    expect(screen.getByTestId('slide-1')).toBeInTheDocument();
+/Users/4thwithme/Documents/repo/catalog/app/javascript/features/TabbedView/components/CarouselCardsView.test.jsx-101-  });
+--
+/Users/4thwithme/Documents/repo/catalog/app/javascript/features/TabbedView/components/CarouselCardsView.test.jsx-115-
+/Users/4thwithme/Documents/repo/catalog/app/javascript/features/TabbedView/components/CarouselCardsView.test.jsx-116-    expect(mockNext).toBeDefined();
+/Users/4thwithme/Documents/repo/catalog/app/javascript/features/TabbedView/components/CarouselCardsView.test.jsx-117-
+app/javascript/features/TabbedView/components/CarouselCardsView.test.jsx:118:    render(<CarouselCardsView>{mockChildren}</CarouselCardsView>);
+/Users/4thwithme/Documents/repo/catalog/app/javascript/features/TabbedView/components/CarouselCardsView.test.jsx-119-
+/Users/4thwithme/Documents/repo/catalog/app/javascript/features/TabbedView/components/CarouselCardsView.test.jsx-120-    expect(screen.getByTestId('slide-1')).toBeInTheDocument();
+/Users/4thwithme/Documents/repo/catalog/app/javascript/features/TabbedView/components/CarouselCardsView.test.jsx-121-  });
+--
+/Users/4thwithme/Documents/repo/catalog/app/javascript/features/TabbedView/components/CarouselCardsView.test.jsx-138-
+/Users/4thwithme/Documents/repo/catalog/app/javascript/features/TabbedView/components/CarouselCardsView.test.jsx-139-    render(
+/Users/4thwithme/Documents/repo/catalog/app/javascript/features/TabbedView/components/CarouselCardsView.test.jsx-140-      <div onClick={containerClickHandler}>
+app/javascript/features/TabbedView/components/CarouselCardsView.test.jsx:141:        <CarouselCardsView>{mockChildren}</CarouselCardsView>
+/Users/4thwithme/Documents/repo/catalog/app/javascript/features/TabbedView/components/CarouselCardsView.test.jsx-142-      </div>
+/Users/4thwithme/Documents/repo/catalog/app/javascript/features/TabbedView/components/CarouselCardsView.test.jsx-143-    );
+/Users/4thwithme/Documents/repo/catalog/app/javascript/features/TabbedView/components/CarouselCardsView.test.jsx-144-
+--
+/Users/4thwithme/Documents/repo/catalog/app/javascript/features/TabbedView/components/CarouselCardsView.test.jsx-149-  it('uses correct gap for small breakpoint', () => {
+/Users/4thwithme/Documents/repo/catalog/app/javascript/features/TabbedView/components/CarouselCardsView.test.jsx-150-    useBreakpoint.mockReturnValue('sm');
+/Users/4thwithme/Documents/repo/catalog/app/javascript/features/TabbedView/components/CarouselCardsView.test.jsx-151-
+app/javascript/features/TabbedView/components/CarouselCardsView.test.jsx:152:    render(<CarouselCardsView>{mockChildren}</CarouselCardsView>);
+/Users/4thwithme/Documents/repo/catalog/app/javascript/features/TabbedView/components/CarouselCardsView.test.jsx-153-
+/Users/4thwithme/Documents/repo/catalog/app/javascript/features/TabbedView/components/CarouselCardsView.test.jsx-154-    expect(mockUseKeenSlider).toHaveBeenCalledWith(
+/Users/4thwithme/Documents/repo/catalog/app/javascript/features/TabbedView/components/CarouselCardsView.test.jsx-155-      expect.objectContaining({
+--
+/Users/4thwithme/Documents/repo/catalog/app/javascript/features/TabbedView/components/CarouselCardsView.test.jsx-162-  it('uses correct gap for large breakpoint', () => {
+/Users/4thwithme/Documents/repo/catalog/app/javascript/features/TabbedView/components/CarouselCardsView.test.jsx-163-    useBreakpoint.mockReturnValue('lg');
+/Users/4thwithme/Documents/repo/catalog/app/javascript/features/TabbedView/components/CarouselCardsView.test.jsx-164-
+app/javascript/features/TabbedView/components/CarouselCardsView.test.jsx:165:    render(<CarouselCardsView>{mockChildren}</CarouselCardsView>);
+/Users/4thwithme/Documents/repo/catalog/app/javascript/features/TabbedView/components/CarouselCardsView.test.jsx-166-
+/Users/4thwithme/Documents/repo/catalog/app/javascript/features/TabbedView/components/CarouselCardsView.test.jsx-167-    expect(mockUseKeenSlider).toHaveBeenCalledWith(
+/Users/4thwithme/Documents/repo/catalog/app/javascript/features/TabbedView/components/CarouselCardsView.test.jsx-168-      expect.objectContaining({
+--
+/Users/4thwithme/Documents/repo/catalog/app/javascript/features/TabbedView/components/CarouselCardsView.test.jsx-179-      </div>
+/Users/4thwithme/Documents/repo/catalog/app/javascript/features/TabbedView/components/CarouselCardsView.test.jsx-180-    ];
+/Users/4thwithme/Documents/repo/catalog/app/javascript/features/TabbedView/components/CarouselCardsView.test.jsx-181-
+app/javascript/features/TabbedView/components/CarouselCardsView.test.jsx:182:    render(<CarouselCardsView>{singleSlide}</CarouselCardsView>);
+/Users/4thwithme/Documents/repo/catalog/app/javascript/features/TabbedView/components/CarouselCardsView.test.jsx-183-
+/Users/4thwithme/Documents/repo/catalog/app/javascript/features/TabbedView/components/CarouselCardsView.test.jsx-184-    expect(screen.getByTestId('single-slide')).toBeInTheDocument();
+/Users/4thwithme/Documents/repo/catalog/app/javascript/features/TabbedView/components/CarouselCardsView.test.jsx-185-  });
+/Users/4thwithme/Documents/repo/catalog/app/javascript/features/TabbedView/components/CarouselCardsView.test.jsx-186-
+/Users/4thwithme/Documents/repo/catalog/app/javascript/features/TabbedView/components/CarouselCardsView.test.jsx-187-  it('applies cursor grab style to slides', () => {
+app/javascript/features/TabbedView/components/CarouselCardsView.test.jsx:188:    render(<CarouselCardsView>{mockChildren}</CarouselCardsView>);
+/Users/4thwithme/Documents/repo/catalog/app/javascript/features/TabbedView/components/CarouselCardsView.test.jsx-189-
+/Users/4thwithme/Documents/repo/catalog/app/javascript/features/TabbedView/components/CarouselCardsView.test.jsx-190-    const slideContainer = screen.getByTestId('slide-1').parentElement;
+app/javascript/features/TabbedView/components/CarouselCardsView.test.jsx-191-    expect(slideContainer).toHaveStyle('cursor: grab');
+/Users/4thwithme/Documents/repo/catalog/app/javascript/features/TabbedView/components/CarouselCardsView.test.jsx-192-  });
+/Users/4thwithme/Documents/repo/catalog/app/javascript/features/TabbedView/components/CarouselCardsView.test.jsx-193-
+/Users/4thwithme/Documents/repo/catalog/app/javascript/features/TabbedView/components/CarouselCardsView.test.jsx-194-  it('initializes keen slider with correct options', () => {
+app/javascript/features/TabbedView/components/CarouselCardsView.test.jsx:195:    render(<CarouselCardsView>{mockChildren}</CarouselCardsView>);
+/Users/4thwithme/Documents/repo/catalog/app/javascript/features/TabbedView/components/CarouselCardsView.test.jsx-196-
+/Users/4thwithme/Documents/repo/catalog/app/javascript/features/TabbedView/components/CarouselCardsView.test.jsx-197-    expect(mockUseKeenSlider).toHaveBeenCalledWith(
+/Users/4thwithme/Documents/repo/catalog/app/javascript/features/TabbedView/components/CarouselCardsView.test.jsx-198-      expect.objectContaining({
+--
+/Users/4thwithme/Documents/repo/catalog/app/javascript/features/TabbedView/components/CarouselCardsView.test.jsx-208-  });
+/Users/4thwithme/Documents/repo/catalog/app/javascript/features/TabbedView/components/CarouselCardsView.test.jsx-209-
+/Users/4thwithme/Documents/repo/catalog/app/javascript/features/TabbedView/components/CarouselCardsView.test.jsx-210-  it('generates unique slide keys', () => {
+app/javascript/features/TabbedView/components/CarouselCardsView.test.jsx:211:    render(<CarouselCardsView>{mockChildren}</CarouselCardsView>);
+/Users/4thwithme/Documents/repo/catalog/app/javascript/features/TabbedView/components/CarouselCardsView.test.jsx-212-
+/Users/4thwithme/Documents/repo/catalog/app/javascript/features/TabbedView/components/CarouselCardsView.test.jsx-213-    const slides = screen.getAllByTestId(/slide-\d/);
+/Users/4thwithme/Documents/repo/catalog/app/javascript/features/TabbedView/components/CarouselCardsView.test.jsx-214-    expect(slides).toHaveLength(5);
+--
+/Users/4thwithme/Documents/repo/catalog/app/javascript/features/TabbedView/components/CarouselCardsView.test.jsx-219-  });
+/Users/4thwithme/Documents/repo/catalog/app/javascript/features/TabbedView/components/CarouselCardsView.test.jsx-220-
+/Users/4thwithme/Documents/repo/catalog/app/javascript/features/TabbedView/components/CarouselCardsView.test.jsx-221-  it('handles empty children array', () => {
+app/javascript/features/TabbedView/components/CarouselCardsView.test.jsx:222:    render(<CarouselCardsView>{[]}</CarouselCardsView>);
+/Users/4thwithme/Documents/repo/catalog/app/javascript/features/TabbedView/components/CarouselCardsView.test.jsx-223-
+/Users/4thwithme/Documents/repo/catalog/app/javascript/features/TabbedView/components/CarouselCardsView.test.jsx-224-    const slider = document.querySelector('.keen-slider');
+/Users/4thwithme/Documents/repo/catalog/app/javascript/features/TabbedView/components/CarouselCardsView.test.jsx-225-    expect(slider).toBeInTheDocument();

@@ -1,0 +1,17 @@
+[
+  {
+    "content": "Achieve >90% branch coverage for holiday helpers unit tests",
+    "status": "in_progress",
+    "id": "1"
+  },
+  {
+    "content": "Create tests that trigger actual JavaScript errors to hit catch blocks at lines 87, 104-107, 140, 174",
+    "status": "completed",
+    "id": "2"
+  },
+  {
+    "content": "Add tests to cover specific conditional branches (lines 74, 76, 80, 160) to improve branch coverage from 77.77% to >90%",
+    "status": "in_progress",
+    "id": "3"
+  }
+]

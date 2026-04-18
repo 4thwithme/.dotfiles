@@ -1,0 +1,43 @@
+{
+  "session_id": "0dd38c9b-d047-49df-a956-a350d9e04323",
+  "project_path": "/Users/4thwithme/Documents/repo/recommendations-service",
+  "start_time": "2026-02-06T11:27:55.426Z",
+  "duration_minutes": 1,
+  "user_message_count": 3,
+  "assistant_message_count": 5,
+  "tool_counts": {
+    "Skill": 1,
+    "Bash": 1
+  },
+  "languages": {},
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 36,
+  "output_tokens": 24,
+  "first_prompt": "hey bro check current test coverage using /test-skill and make it 96%+",
+  "user_interruptions": 1,
+  "user_response_times": [
+    27.943
+  ],
+  "tool_errors": 1,
+  "tool_error_categories": {
+    "User Rejected": 1
+  },
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 0,
+  "lines_removed": 0,
+  "files_modified": 0,
+  "message_hours": [
+    12,
+    12,
+    12
+  ],
+  "user_message_timestamps": [
+    "2026-02-06T11:27:55.426Z",
+    "2026-02-06T11:27:59.558Z",
+    "2026-02-06T11:28:30.326Z"
+  ]
+}

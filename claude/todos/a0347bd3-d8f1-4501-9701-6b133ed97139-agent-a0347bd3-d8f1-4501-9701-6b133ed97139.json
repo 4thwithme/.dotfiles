@@ -1,0 +1,22 @@
+[
+  {
+    "content": "Create migration for trending_products_predictions table",
+    "status": "pending",
+    "id": "1"
+  },
+  {
+    "content": "Create model for trending products predictions",
+    "status": "pending",
+    "id": "2"
+  },
+  {
+    "content": "Implement batch saving with transaction in service",
+    "status": "pending",
+    "id": "3"
+  },
+  {
+    "content": "Add method to mark previous predictions as not latest",
+    "status": "pending",
+    "id": "4"
+  }
+]

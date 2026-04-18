@@ -1,0 +1,65 @@
+{
+  "session_id": "3d7bd1de-3192-4c04-9d76-258e6916992e",
+  "project_path": "/Users/4thwithme/Documents/repo/pigment",
+  "start_time": "2026-03-02T18:48:33.881Z",
+  "duration_minutes": 1087,
+  "user_message_count": 9,
+  "assistant_message_count": 22,
+  "tool_counts": {
+    "Grep": 2,
+    "Edit": 2,
+    "Read": 1,
+    "Bash": 6,
+    "Skill": 1
+  },
+  "languages": {
+    "JSON": 3
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 42,
+  "output_tokens": 1556,
+  "first_prompt": "setup  npm i npm warn tarball tarball data for @figma/litmus-cli@https://www.figma.com/api/litmus/cli/babdd5878c0b.tgz (sha512-AayWgJ50amOOO01bwvM8j9h2yDaHsMRGFVr+GxkRw8C0CaMd/sA0kw45+wD8Fj1Us9SjrLa7D…",
+  "user_interruptions": 4,
+  "user_response_times": [
+    29.337,
+    227.457,
+    23.682,
+    148.227,
+    8.228
+  ],
+  "tool_errors": 4,
+  "tool_error_categories": {
+    "Other": 1,
+    "User Rejected": 3
+  },
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 2,
+  "lines_removed": 2,
+  "files_modified": 1,
+  "message_hours": [
+    19,
+    19,
+    19,
+    19,
+    19,
+    19,
+    13,
+    13,
+    13
+  ],
+  "user_message_timestamps": [
+    "2026-03-02T18:48:33.881Z",
+    "2026-03-02T18:49:39.283Z",
+    "2026-03-02T18:52:57.403Z",
+    "2026-03-02T18:53:03.537Z",
+    "2026-03-02T18:53:27.210Z",
+    "2026-03-02T18:55:31.755Z",
+    "2026-03-03T12:55:03.190Z",
+    "2026-03-03T12:55:12.828Z",
+    "2026-03-03T12:55:24.711Z"
+  ]
+}

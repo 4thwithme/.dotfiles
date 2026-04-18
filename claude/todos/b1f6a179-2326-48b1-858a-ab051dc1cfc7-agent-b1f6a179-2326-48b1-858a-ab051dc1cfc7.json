@@ -1,0 +1,27 @@
+[
+  {
+    "content": "Get cloud ID for customink.atlassian.net",
+    "status": "in_progress",
+    "activeForm": "Getting cloud ID"
+  },
+  {
+    "content": "Search for all RECO-20 sprint tickets",
+    "status": "pending",
+    "activeForm": "Searching sprint tickets"
+  },
+  {
+    "content": "Fetch detailed information for each ticket",
+    "status": "pending",
+    "activeForm": "Fetching ticket details"
+  },
+  {
+    "content": "Analyze and group tickets by features",
+    "status": "pending",
+    "activeForm": "Analyzing tickets"
+  },
+  {
+    "content": "Format sprint report",
+    "status": "pending",
+    "activeForm": "Formatting report"
+  }
+]

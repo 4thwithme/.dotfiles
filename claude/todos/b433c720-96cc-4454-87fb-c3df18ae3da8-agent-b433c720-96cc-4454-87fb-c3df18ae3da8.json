@@ -1,0 +1,62 @@
+[
+  {
+    "content": "Create database migration for trending_products table",
+    "status": "completed",
+    "priority": "high",
+    "id": "1"
+  },
+  {
+    "content": "Set up trending module structure with interfaces and DTOs",
+    "status": "in_progress",
+    "priority": "high",
+    "id": "2"
+  },
+  {
+    "content": "Implement GA4 data processor service for stream processing JSONL files",
+    "status": "pending",
+    "priority": "high",
+    "id": "3"
+  },
+  {
+    "content": "Create mathematical utilities for statistical functions",
+    "status": "pending",
+    "priority": "medium",
+    "id": "4"
+  },
+  {
+    "content": "Implement time-series decomposition service",
+    "status": "pending",
+    "priority": "medium",
+    "id": "5"
+  },
+  {
+    "content": "Build forecasting engine with trending score calculation",
+    "status": "pending",
+    "priority": "medium",
+    "id": "6"
+  },
+  {
+    "content": "Create new products handler for items without history",
+    "status": "pending",
+    "priority": "medium",
+    "id": "7"
+  },
+  {
+    "content": "Implement trending storage service",
+    "status": "pending",
+    "priority": "medium",
+    "id": "8"
+  },
+  {
+    "content": "Create CLI command following existing patterns",
+    "status": "pending",
+    "priority": "high",
+    "id": "9"
+  },
+  {
+    "content": "Add unit tests for mathematical functions and services",
+    "status": "pending",
+    "priority": "low",
+    "id": "10"
+  }
+]

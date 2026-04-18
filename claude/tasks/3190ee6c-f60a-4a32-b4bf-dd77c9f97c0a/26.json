@@ -1,0 +1,8 @@
+{
+  "id": "26",
+  "subject": "Task 20: Invitation Module",
+  "description": "Full invitation module: model, service, controller with accept/revoke/list",
+  "status": "completed",
+  "blocks": [],
+  "blockedBy": []
+}

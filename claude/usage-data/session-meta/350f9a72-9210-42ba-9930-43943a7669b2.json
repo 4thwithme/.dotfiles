@@ -1,0 +1,50 @@
+{
+  "session_id": "350f9a72-9210-42ba-9930-43943a7669b2",
+  "project_path": "/Users/4thwithme/Documents/repo/recommendations-service",
+  "start_time": "2026-02-07T02:05:46.380Z",
+  "duration_minutes": 497,
+  "user_message_count": 5,
+  "assistant_message_count": 117,
+  "tool_counts": {
+    "Read": 5,
+    "Bash": 29,
+    "Edit": 13
+  },
+  "languages": {
+    "TypeScript": 18
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 944,
+  "output_tokens": 4462,
+  "first_prompt": "bro...we have low coverage for   trending-products.service.ts      |   96.42 |    64.94 |     100 |   96.56 | 395,553,669,746-751  we need to have 95%+ coverage for  all test MUST BE 95 %+ re do your…",
+  "user_interruptions": 1,
+  "user_response_times": [
+    12.054
+  ],
+  "tool_errors": 1,
+  "tool_error_categories": {
+    "Command Failed": 1
+  },
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 1284,
+  "lines_removed": 56,
+  "files_modified": 1,
+  "message_hours": [
+    3,
+    3,
+    3,
+    3,
+    11
+  ],
+  "user_message_timestamps": [
+    "2026-02-07T02:05:46.380Z",
+    "2026-02-07T02:05:46.376Z",
+    "2026-02-07T02:05:46.380Z",
+    "2026-02-07T02:06:25.800Z",
+    "2026-02-07T10:22:24.523Z"
+  ]
+}

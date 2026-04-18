@@ -1,0 +1,26 @@
+[
+  {
+    "content": "Check existing linting/formatting configuration in client",
+    "status": "completed",
+    "priority": "high",
+    "id": "1"
+  },
+  {
+    "content": "Install ESLint and Prettier for Astro",
+    "status": "completed",
+    "priority": "high",
+    "id": "2"
+  },
+  {
+    "content": "Configure VS Code settings for Astro",
+    "status": "completed",
+    "priority": "medium",
+    "id": "3"
+  },
+  {
+    "content": "Add npm scripts for linting/formatting",
+    "status": "completed",
+    "priority": "medium",
+    "id": "4"
+  }
+]

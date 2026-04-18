@@ -1,0 +1,82 @@
+{
+  "session_id": "9f220a3a-bdef-4b59-ad47-dff953770e57",
+  "project_path": "/Users/4thwithme/Documents/repo/recommendations-service",
+  "start_time": "2026-02-23T22:01:22.864Z",
+  "duration_minutes": 2857,
+  "user_message_count": 13,
+  "assistant_message_count": 59,
+  "tool_counts": {
+    "Task": 1,
+    "Read": 10,
+    "Glob": 4,
+    "Bash": 6,
+    "TaskOutput": 1,
+    "AskUserQuestion": 2,
+    "EnterPlanMode": 1,
+    "Write": 2,
+    "ExitPlanMode": 2,
+    "Edit": 2
+  },
+  "languages": {
+    "Markdown": 3,
+    "TypeScript": 6,
+    "YAML": 4
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 1021,
+  "output_tokens": 2454,
+  "first_prompt": "we have implemented vector search for products...and we call it neural search check @docs/features/neural-search/ and @src/modules/opensearch/opensearch-neural.service.ts and supporting fles..check .e…",
+  "user_interruptions": 2,
+  "user_response_times": [
+    2.624,
+    2.645,
+    6.573,
+    86.969,
+    542.162,
+    542.162,
+    542.162
+  ],
+  "tool_errors": 3,
+  "tool_error_categories": {
+    "User Rejected": 2,
+    "Other": 1
+  },
+  "uses_task_agent": true,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 951,
+  "lines_removed": 10,
+  "files_modified": 3,
+  "message_hours": [
+    23,
+    23,
+    23,
+    23,
+    23,
+    23,
+    23,
+    23,
+    17,
+    19,
+    19,
+    19,
+    19
+  ],
+  "user_message_timestamps": [
+    "2026-02-23T22:01:22.864Z",
+    "2026-02-23T22:01:22.856Z",
+    "2026-02-23T22:01:22.864Z",
+    "2026-02-23T22:20:34.178Z",
+    "2026-02-23T22:38:11.752Z",
+    "2026-02-23T22:38:11.773Z",
+    "2026-02-23T22:38:15.701Z",
+    "2026-02-23T22:39:36.097Z",
+    "2026-02-24T16:51:44.826Z",
+    "2026-02-24T18:07:56.540Z",
+    "2026-02-24T18:17:24.541Z",
+    "2026-02-24T18:17:24.541Z",
+    "2026-02-24T18:17:24.541Z"
+  ]
+}

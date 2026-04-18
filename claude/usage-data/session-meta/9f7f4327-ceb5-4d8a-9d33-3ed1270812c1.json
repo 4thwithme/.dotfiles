@@ -1,0 +1,60 @@
+{
+  "session_id": "9f7f4327-ceb5-4d8a-9d33-3ed1270812c1",
+  "project_path": "/Users/4thwithme/Documents/repo/recommendations-service",
+  "start_time": "2026-02-07T19:37:18.946Z",
+  "duration_minutes": 42,
+  "user_message_count": 8,
+  "assistant_message_count": 68,
+  "tool_counts": {
+    "Bash": 11,
+    "Read": 12,
+    "Edit": 10,
+    "Skill": 1,
+    "TaskOutput": 1
+  },
+  "languages": {
+    "TypeScript": 21
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 499,
+  "output_tokens": 3589,
+  "first_prompt": "check last commit...i got core review   Code Review: ISSUES FOUND CRITICAL ISSUE: Missing @LogExecution decorator  CLAUDE.md mandates: \"ALWAYS wrap important methods and 3rd party requests with @LogEx…",
+  "user_interruptions": 0,
+  "user_response_times": [
+    1661.31,
+    251.903
+  ],
+  "tool_errors": 4,
+  "tool_error_categories": {
+    "Command Failed": 2,
+    "Edit Failed": 2
+  },
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 212,
+  "lines_removed": 1,
+  "files_modified": 4,
+  "message_hours": [
+    20,
+    20,
+    20,
+    20,
+    21,
+    21,
+    21,
+    21
+  ],
+  "user_message_timestamps": [
+    "2026-02-07T19:37:18.946Z",
+    "2026-02-07T19:37:18.942Z",
+    "2026-02-07T19:37:18.946Z",
+    "2026-02-07T19:37:40.806Z",
+    "2026-02-07T20:06:41.942Z",
+    "2026-02-07T20:11:40.181Z",
+    "2026-02-07T20:11:59.488Z",
+    "2026-02-07T20:19:36.067Z"
+  ]
+}

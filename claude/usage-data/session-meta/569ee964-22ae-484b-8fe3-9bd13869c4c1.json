@@ -1,0 +1,42 @@
+{
+  "session_id": "569ee964-22ae-484b-8fe3-9bd13869c4c1",
+  "project_path": "/Users/4thwithme/Documents/repo/recommendations-service",
+  "start_time": "2026-02-28T12:30:20.528Z",
+  "duration_minutes": 1,
+  "user_message_count": 5,
+  "assistant_message_count": 3,
+  "tool_counts": {},
+  "languages": {},
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 9,
+  "output_tokens": 464,
+  "first_prompt": "how many tokens it wil ltake for vector search embeding?  \"District Tri-Blend Raglan T-shirt. Unisex. Price lvl: Mid-range. Brand: District. tear away neck label, comfort, contrast color sleeves, neck…",
+  "user_interruptions": 0,
+  "user_response_times": [
+    16.906
+  ],
+  "tool_errors": 0,
+  "tool_error_categories": {},
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 0,
+  "lines_removed": 0,
+  "files_modified": 0,
+  "message_hours": [
+    13,
+    13,
+    13,
+    13,
+    13
+  ],
+  "user_message_timestamps": [
+    "2026-02-28T12:30:20.528Z",
+    "2026-02-28T12:30:20.525Z",
+    "2026-02-28T12:30:20.528Z",
+    "2026-02-28T12:30:37.130Z",
+    "2026-02-28T12:31:06.410Z"
+  ]
+}

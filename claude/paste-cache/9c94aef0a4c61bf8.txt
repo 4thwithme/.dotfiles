@@ -1,0 +1,35 @@
+rails-server           |   Rendered shared/_shop_by_nav.html.erb (Duration: 1656.8ms | GC: 157.1ms)
+rails-server           |   Rendered categories/_say_it_with_ink_wrapper.html.erb (Duration: 0.4ms | GC: 0.0ms)
+rails-server           |   Faq Load (0.9ms)  SELECT `faqs`.* FROM `faqs` WHERE `faqs`.`category_id` = 1 ORDER BY `position` ASC
+rails-server           |   ↳ app/views/categories/index.html.erb:82
+rails-server           |   Rendered categories/index.html.erb within layouts/categories (Duration: 3096.1ms | GC: 575.5ms)
+rails-server           |   Rendered layout layouts/categories.html.erb (Duration: 3096.4ms | GC: 575.5ms)
+rails-server           | Completed 500 Internal Server Error in 5100ms (ActiveRecord: 1102.2ms (2413 queries, 0 cached) | Octobelt ID: {"email":false,"internal":false,"trusted":false} | GC: 659.5ms)
+rails-server           | 
+rails-server           | 
+rails-server           |   
+rails-server           | ActionView::Template::Error (Mysql2::Error: Unknown column 'position' in 'order clause')
+rails-server           | Caused by: ActiveRecord::StatementInvalid (Mysql2::Error: Unknown column 'position' in 'order clause')
+rails-server           | Caused by: Mysql2::Error (Unknown column 'position' in 'order clause')
+rails-server           | 
+rails-server           | Information for: ActionView::Template::Error (Mysql2::Error: Unknown column 'position' in 'order clause'):
+rails-server           |     79:       } %>
+rails-server           |     80: </div>
+rails-server           |     81: 
+rails-server           |     82: <% if @faqs.present? %>
+rails-server           |     83:   <%= render partial: 'categories/faqs', locals: {faqs: @faqs} %>
+rails-server           |     84: <% end %>
+rails-server           |     85: 
+rails-server           |   
+rails-server           | 
+rails-server           | Information for cause: ActiveRecord::StatementInvalid (Mysql2::Error: Unknown column 'position' in 'order clause'):
+rails-server           |   
+rails-server           | 
+rails-server           | Information for cause: Mysql2::Error (Unknown column 'position' in 'order clause'):
+rails-server           |   
+rails-server           | app/views/categories/index.html.erb:82
+rails-server           | app/controllers/concerns/catalog_caching.rb:185:in `block in pc_cache_fetch_unflagged'
+rails-server           | app/controllers/concerns/catalog_caching.rb:171:in `block in pc_cache_fetch'
+rails-server           | app/controllers/concerns/catalog_caching.rb:170:in `pc_cache_fetch'
+rails-server           | app/controllers/concerns/catalog_caching.rb:185:in `pc_cache_fetch_unflagged'
+rails-server           | lib/middleware/catch_bad_query_params.rb:7:in `call'

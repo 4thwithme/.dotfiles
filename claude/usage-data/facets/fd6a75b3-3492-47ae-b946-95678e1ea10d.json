@@ -1,0 +1,19 @@
+{
+  "underlying_goal": "Address code review comments about a duplicate-key handling bug in a PR, specifically a silent no-op on soft-deleted record collision",
+  "goal_categories": {
+    "code_review_fix": 1
+  },
+  "outcome": "not_achieved",
+  "user_satisfaction_counts": {
+    "frustrated": 2
+  },
+  "claude_helpfulness": "slightly_helpful",
+  "session_type": "single_task",
+  "friction_counts": {
+    "wrong_approach": 1
+  },
+  "friction_detail": "Claude spent too long searching the codebase and couldn't locate the relevant code, leading the user to interrupt twice.",
+  "primary_success": "none",
+  "brief_summary": "User wanted help fixing a code review issue about silent no-op on soft-deleted record collision with duplicate key handling, but Claude couldn't locate the relevant code before the user interrupted twice and abandoned the session.",
+  "session_id": "fd6a75b3-3492-47ae-b946-95678e1ea10d"
+}

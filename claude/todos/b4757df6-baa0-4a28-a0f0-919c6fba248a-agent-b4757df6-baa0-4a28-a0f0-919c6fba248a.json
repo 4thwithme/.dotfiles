@@ -1,0 +1,47 @@
+[
+  {
+    "content": "Create SARIMAX command file structure and imports",
+    "status": "completed",
+    "id": "1"
+  },
+  {
+    "content": "Install arima npm package if not already installed",
+    "status": "completed",
+    "id": "2"
+  },
+  {
+    "content": "Implement SARIMAX model integration for trend forecasting",
+    "status": "completed",
+    "id": "3"
+  },
+  {
+    "content": "Add historical data preprocessing for SARIMAX input",
+    "status": "completed",
+    "id": "4"
+  },
+  {
+    "content": "Implement chart/plotting functionality similar to original command",
+    "status": "completed",
+    "id": "5"
+  },
+  {
+    "content": "Test the new SARIMAX command",
+    "status": "completed",
+    "id": "6"
+  },
+  {
+    "content": "Fix trend score filtering that was preventing forecasts from displaying",
+    "status": "completed",
+    "id": "7"
+  },
+  {
+    "content": "Verify forecasts are visible in generated HTML charts and JSON data",
+    "status": "completed",
+    "id": "8"
+  },
+  {
+    "content": "Resolve SARIMAX collinearity issues with exogenous variables",
+    "status": "in_progress",
+    "id": "9"
+  }
+]

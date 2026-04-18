@@ -1,0 +1,36 @@
+ ↳ app/helpers/app_urls_helper.rb:179:in `cat_slug'
+  Rendered shared/_shop_by_nav.html.erb (Duration: 1640.9ms | GC: 143.9ms)
+  Rendered categories/_say_it_with_ink_wrapper.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Faq Load (0.5ms)  SELECT `faqs`.* FROM `faqs` WHERE `faqs`.`category_id` = 1 ORDER BY `position` ASC
+  ↳ app/views/categories/index.html.erb:82
+  Rendered categories/index.html.erb within layouts/categories (Duration: 9963.3ms | GC: 711.2ms)
+  Rendered layout layouts/categories.html.erb (Duration: 9963.6ms | GC: 711.2ms)
+Completed 500 Internal Server Error in 11472ms (ActiveRecord: 1101.7ms (2413 queries, 0 cached) | Octobelt ID: {"email":false,"internal":false,"trusted":false} | GC: 817.1ms)
+
+
+  
+ActionView::Template::Error (Mysql2::Error: Unknown column 'position' in 'order clause')
+Caused by: ActiveRecord::StatementInvalid (Mysql2::Error: Unknown column 'position' in 'order clause')
+Caused by: Mysql2::Error (Unknown column 'position' in 'order clause')
+
+Information for: ActionView::Template::Error (Mysql2::Error: Unknown column 'position' in 'order clause'):
+    79:       } %>
+    80: </div>
+    81: 
+    82: <% if @faqs.present? %>
+    83:   <%= render partial: 'categories/faqs', locals: {faqs: @faqs} %>
+    84: <% end %>
+    85: 
+  
+
+Information for cause: ActiveRecord::StatementInvalid (Mysql2::Error: Unknown column 'position' in 'order clause'):
+  
+
+Information for cause: Mysql2::Error (Unknown column 'position' in 'order clause'):
+  
+app/views/categories/index.html.erb:82
+app/controllers/concerns/catalog_caching.rb:185:in `block in pc_cache_fetch_unflagged'
+app/controllers/concerns/catalog_caching.rb:171:in `block in pc_cache_fetch'
+app/controllers/concerns/catalog_caching.rb:170:in `pc_cache_fetch'
+app/controllers/concerns/catalog_caching.rb:185:in `pc_cache_fetch_unflagged'
+lib/middleware/catch_bad_query_params.rb:7:in `call'

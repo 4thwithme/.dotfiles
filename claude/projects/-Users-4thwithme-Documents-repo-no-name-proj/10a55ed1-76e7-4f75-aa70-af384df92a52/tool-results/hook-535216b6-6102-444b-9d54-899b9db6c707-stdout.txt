@@ -1,0 +1,359 @@
+> webapp-backend@0.0.1 code-quality-check
+> npm run lint && npm run format && npm run type-check
+
+
+> webapp-backend@0.0.1 lint
+> eslint "{src,apps,libs,test}/**/*.ts"
+
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/migrations/20260322120000_create_users_table.ts
+   9:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+  42:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/migrations/20260322120001_create_companies_table.ts
+   9:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+  37:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/migrations/20260322120002_create_company_members_table.ts
+  13:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+  64:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/migrations/20260322120003_create_oauth_accounts_table.ts
+   9:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+  55:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/migrations/20260322120004_create_invitations_table.ts
+  13:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+  68:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/migrations/20260414120000_create_github_installations_table.ts
+   9:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+  48:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/migrations/20260414120001_create_github_repos_table.ts
+  12:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+  51:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/migrations/20260416000000_create_github_contributors_table.ts
+  12:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+  52:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/migrations/20260416000001_create_github_commits_table.ts
+  13:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+  64:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/migrations/20260416000002_create_github_pull_requests_table.ts
+  13:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+  69:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/migrations/20260416000003_create_github_reviews_table.ts
+  13:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+  60:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/migrations/20260416000004_create_github_review_comments_table.ts
+  13:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+  60:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/migrations/20260416100000_create_jira_installations_table.ts
+   9:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+  47:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/migrations/20260416100001_create_jira_projects_table.ts
+  12:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+  52:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/migrations/20260416100002_create_jira_issues_table.ts
+  13:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+  62:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/migrations/20260416100003_create_jira_changelog_table.ts
+  13:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+  55:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/migrations/20260416100004_create_jira_worklogs_table.ts
+  13:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+  57:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/migrations/20260416100005_create_jira_sprints_table.ts
+  12:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+  53:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/migrations/20260417000000_create_jira_identity_mappings_table.ts
+  13:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+  53:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/modules/auth/guards/fastify-throttler.guard.ts
+  15:29  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/modules/github/github-event.processor.ts
+   61:15  warning  Custom functions must use a single object destructuring parameter                                   custom-rules/require-object-params
+  332:8   warning  Unnecessary conditional, expected left-hand side of `??` operator to be possibly null or undefined  @typescript-eslint/no-unnecessary-condition
+  332:34  warning  Unnecessary optional chain on a non-nullish value                                                   @typescript-eslint/no-unnecessary-condition
+  339:8   warning  Unnecessary conditional, expected left-hand side of `??` operator to be possibly null or undefined  @typescript-eslint/no-unnecessary-condition
+  339:36  warning  Unnecessary optional chain on a non-nullish value                                                   @typescript-eslint/no-unnecessary-condition
+  390:10  warning  Unnecessary conditional, value is always truthy                                                     @typescript-eslint/no-unnecessary-condition
+  441:10  warning  Unnecessary conditional, value is always truthy                                                     @typescript-eslint/no-unnecessary-condition
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/modules/github/github-webhook.controller.ts
+  50:33  warning  Unnecessary optional chain on a non-nullish value  @typescript-eslint/no-unnecessary-condition
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/modules/jira/jira-api.service.ts
+  113:10  warning  Unnecessary conditional, value is always truthy  @typescript-eslint/no-unnecessary-condition
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/modules/jira/jira-sync.service.ts
+  230:10  warning  Unnecessary conditional, value is always truthy  @typescript-eslint/no-unnecessary-condition
+  383:12  warning  Unnecessary conditional, value is always truthy  @typescript-eslint/no-unnecessary-condition
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/modules/oauth-account/oauth-account.model.ts
+  137:35  warning  Unnecessary conditional, the types have no overlap  @typescript-eslint/no-unnecessary-condition
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/unit-tests/jira-sync.service.unit-spec.ts
+  493:39  warning  Unnecessary optional chain on a non-nullish value  @typescript-eslint/no-unnecessary-condition
+
+✖ 52 problems (0 errors, 52 warnings)
+
+
+> webapp-backend@0.0.1 format
+> prettier --write "src/**/*.ts" "test/**/*.ts"
+
+src/configs/custom-logger.config.ts 46ms (unchanged)
+src/configs/env-validations.config.ts 5ms (unchanged)
+src/constants/db.constant.ts 1ms (unchanged)
+src/constants/env-variables.constant.ts 1ms (unchanged)
+src/constants/req.constants.ts 0ms (unchanged)
+src/decorators/log-execution.decorator.ts 7ms (unchanged)
+src/interfaces/env-variables.interface.ts 1ms (unchanged)
+src/knexfile.ts 1ms (unchanged)
+src/main.ts 5ms (unchanged)
+src/middlewares/correlation-id.middleware.ts 1ms (unchanged)
+src/middlewares/logger.middleware.ts 3ms (unchanged)
+src/migrations/20260322120000_create_users_table.ts 2ms (unchanged)
+src/migrations/20260322120001_create_companies_table.ts 2ms (unchanged)
+src/migrations/20260322120002_create_company_members_table.ts 2ms (unchanged)
+src/migrations/20260322120003_create_oauth_accounts_table.ts 2ms (unchanged)
+src/migrations/20260322120004_create_invitations_table.ts 2ms (unchanged)
+src/migrations/20260414120000_create_github_installations_table.ts 1ms (unchanged)
+src/migrations/20260414120001_create_github_repos_table.ts 2ms (unchanged)
+src/migrations/20260416000000_create_github_contributors_table.ts 2ms (unchanged)
+src/migrations/20260416000001_create_github_commits_table.ts 2ms (unchanged)
+src/migrations/20260416000002_create_github_pull_requests_table.ts 2ms (unchanged)
+src/migrations/20260416000003_create_github_reviews_table.ts 2ms (unchanged)
+src/migrations/20260416000004_create_github_review_comments_table.ts 2ms (unchanged)
+src/migrations/20260416100000_create_jira_installations_table.ts 1ms (unchanged)
+src/migrations/20260416100001_create_jira_projects_table.ts 2ms (unchanged)
+src/migrations/20260416100002_create_jira_issues_table.ts 2ms (unchanged)
+src/migrations/20260416100003_create_jira_changelog_table.ts 1ms (unchanged)
+src/migrations/20260416100004_create_jira_worklogs_table.ts 2ms (unchanged)
+src/migrations/20260416100005_create_jira_sprints_table.ts 1ms (unchanged)
+src/migrations/20260417000000_create_jira_identity_mappings_table.ts 1ms (unchanged)
+src/modules/app/app.module.ts 2ms (unchanged)
+src/modules/auth/auth.controller.ts 7ms (unchanged)
+src/modules/auth/auth.module.ts 1ms (unchanged)
+src/modules/auth/auth.service.ts 7ms (unchanged)
+src/modules/auth/constants/auth.constant.ts 0ms (unchanged)
+src/modules/auth/decorators/current-user.decorator.ts 1ms (unchanged)
+src/modules/auth/decorators/public.decorator.ts 0ms (unchanged)
+src/modules/auth/decorators/roles.decorator.ts 1ms (unchanged)
+src/modules/auth/dto/create-company.dto.ts 0ms (unchanged)
+src/modules/auth/dto/link-account.dto.ts 0ms (unchanged)
+src/modules/auth/dto/token-exchange.dto.ts 0ms (unchanged)
+src/modules/auth/guards/auth.guard.ts 2ms (unchanged)
+src/modules/auth/guards/csrf.guard.ts 1ms (unchanged)
+src/modules/auth/guards/fastify-throttler.guard.ts 1ms (unchanged)
+src/modules/auth/guards/roles.guard.ts 1ms (unchanged)
+src/modules/auth/strategies/github.strategy.ts 2ms (unchanged)
+src/modules/auth/strategies/google.strategy.ts 2ms (unchanged)
+src/modules/auth/types/auth.interface.ts 1ms (unchanged)
+src/modules/cache/cache.constant.ts 0ms (unchanged)
+src/modules/cache/cache.module.ts 2ms (unchanged)
+src/modules/cache/cache.service.ts 6ms (unchanged)
+src/modules/cache/types/cache.interface.ts 1ms (unchanged)
+src/modules/company-member/company-member.model.ts 5ms (unchanged)
+src/modules/company-member/company-member.module.ts 0ms (unchanged)
+src/modules/company-member/company-member.service.ts 1ms (unchanged)
+src/modules/company-member/dto/company-member.base.dto.ts 1ms (unchanged)
+src/modules/company-member/dto/company-member.create.dto.ts 1ms (unchanged)
+src/modules/company-member/types/company-member.base.interface.ts 0ms (unchanged)
+src/modules/company-member/types/company-member.create.interface.ts 0ms (unchanged)
+src/modules/company/company.controller.ts 1ms (unchanged)
+src/modules/company/company.model.ts 3ms (unchanged)
+src/modules/company/company.module.ts 0ms (unchanged)
+src/modules/company/company.service.ts 1ms (unchanged)
+src/modules/company/dto/company.base.dto.ts 1ms (unchanged)
+src/modules/company/dto/company.create.dto.ts 0ms (unchanged)
+src/modules/company/types/company.base.interface.ts 0ms (unchanged)
+src/modules/company/types/company.create.interface.ts 0ms (unchanged)
+src/modules/db/db.constant.ts 0ms (unchanged)
+src/modules/db/db.module.ts 1ms (unchanged)
+src/modules/env-config/env-config.module.ts 0ms (unchanged)
+src/modules/env-config/env-config.service.ts 1ms (unchanged)
+src/modules/github/db/github-commit.model.ts 1ms (unchanged)
+src/modules/github/db/github-contributor.model.ts 2ms (unchanged)
+src/modules/github/db/github-installations.model.ts 3ms (unchanged)
+src/modules/github/db/github-pull-request.model.ts 2ms (unchanged)
+src/modules/github/db/github-repos.model.ts 2ms (unchanged)
+src/modules/github/db/github-review-comment.model.ts 1ms (unchanged)
+src/modules/github/db/github-review.model.ts 1ms (unchanged)
+src/modules/github/github-app.service.ts 3ms (unchanged)
+src/modules/github/github-backfill.service.ts 1ms (unchanged)
+src/modules/github/github-event.processor.ts 9ms (unchanged)
+src/modules/github/github-identity.service.ts 1ms (unchanged)
+src/modules/github/github-install.controller.ts 2ms (unchanged)
+src/modules/github/github-install.service.ts 2ms (unchanged)
+src/modules/github/github-webhook.controller.ts 1ms (unchanged)
+src/modules/github/github-webhook.service.ts 2ms (unchanged)
+src/modules/github/github.module.ts 1ms (unchanged)
+src/modules/github/types/github-api.interface.ts 2ms (unchanged)
+src/modules/github/types/github-commit.interface.ts 0ms (unchanged)
+src/modules/github/types/github-contributor.interface.ts 0ms (unchanged)
+src/modules/github/types/github-installation.interface.ts 0ms (unchanged)
+src/modules/github/types/github-pull-request.interface.ts 1ms (unchanged)
+src/modules/github/types/github-repo.interface.ts 0ms (unchanged)
+src/modules/github/types/github-review-comment.interface.ts 0ms (unchanged)
+src/modules/github/types/github-review.interface.ts 0ms (unchanged)
+src/modules/health/health.controller.ts 1ms (unchanged)
+src/modules/health/health.module.ts 0ms (unchanged)
+src/modules/health/health.service.ts 1ms (unchanged)
+src/modules/invitation/dto/accept-invitation.dto.ts 0ms (unchanged)
+src/modules/invitation/dto/invitation.base.dto.ts 1ms (unchanged)
+src/modules/invitation/dto/invitation.create.dto.ts 0ms (unchanged)
+src/modules/invitation/invitation.controller.ts 2ms (unchanged)
+src/modules/invitation/invitation.model.ts 3ms (unchanged)
+src/modules/invitation/invitation.module.ts 0ms (unchanged)
+src/modules/invitation/invitation.service.ts 1ms (unchanged)
+src/modules/invitation/types/invitation.base.interface.ts 0ms (unchanged)
+src/modules/invitation/types/invitation.create.interface.ts 0ms (unchanged)
+src/modules/jira/db/jira-changelog.model.ts 1ms (unchanged)
+src/modules/jira/db/jira-identity.model.ts 3ms (unchanged)
+src/modules/jira/db/jira-installations.model.ts 3ms (unchanged)
+src/modules/jira/db/jira-issues.model.ts 1ms (unchanged)
+src/modules/jira/db/jira-projects.model.ts 2ms (unchanged)
+src/modules/jira/db/jira-sprints.model.ts 1ms (unchanged)
+src/modules/jira/db/jira-worklogs.model.ts 1ms (unchanged)
+src/modules/jira/jira-api.service.ts 4ms (unchanged)
+src/modules/jira/jira-identity.service.ts 1ms (unchanged)
+src/modules/jira/jira-install.service.ts 3ms (unchanged)
+src/modules/jira/jira-processor.service.ts 1ms (unchanged)
+src/modules/jira/jira-sync.service.ts 6ms (unchanged)
+src/modules/jira/jira-webhook.controller.ts 1ms (unchanged)
+src/modules/jira/jira-webhook.service.ts 1ms (unchanged)
+src/modules/jira/jira.controller.ts 2ms (unchanged)
+src/modules/jira/jira.module.ts 1ms (unchanged)
+src/modules/jira/types/jira-api.interface.ts 1ms (unchanged)
+src/modules/jira/types/jira-installation.interface.ts 1ms (unchanged)
+src/modules/jira/types/jira-sync.interface.ts 0ms (unchanged)
+src/modules/oauth-account/dto/oauth-account.base.dto.ts 1ms (unchanged)
+src/modules/oauth-account/dto/oauth-account.create.dto.ts 0ms (unchanged)
+src/modules/oauth-account/oauth-account.model.ts 4ms (unchanged)
+src/modules/oauth-account/oauth-account.module.ts 1ms (unchanged)
+src/modules/oauth-account/oauth-account.service.ts 1ms (unchanged)
+src/modules/oauth-account/types/oauth-account.base.interface.ts 0ms (unchanged)
+src/modules/oauth-account/types/oauth-account.create.interface.ts 0ms (unchanged)
+src/modules/session/session.module.ts 0ms (unchanged)
+src/modules/session/session.service.ts 4ms (unchanged)
+src/modules/session/types/session.interface.ts 1ms (unchanged)
+src/modules/user/dto/switch-company.dto.ts 0ms (unchanged)
+src/modules/user/dto/user.base.dto.ts 1ms (unchanged)
+src/modules/user/dto/user.create.dto.ts 0ms (unchanged)
+src/modules/user/types/user.base.interface.ts 0ms (unchanged)
+src/modules/user/types/user.create.interface.ts 0ms (unchanged)
+src/modules/user/user.controller.ts 1ms (unchanged)
+src/modules/user/user.model.ts 3ms (unchanged)
+src/modules/user/user.module.ts 0ms (unchanged)
+src/modules/user/user.service.ts 1ms (unchanged)
+src/unit-tests/auth.controller.unit-spec.ts 5ms (unchanged)
+src/unit-tests/auth.guard.unit-spec.ts 3ms (unchanged)
+src/unit-tests/auth.service.unit-spec.ts 8ms (unchanged)
+src/unit-tests/cache.service.unit-spec.ts 7ms (unchanged)
+src/unit-tests/common.util.unit-spec.ts 1ms (unchanged)
+src/unit-tests/company-member.model.unit-spec.ts 7ms (unchanged)
+src/unit-tests/company-member.service.unit-spec.ts 4ms (unchanged)
+src/unit-tests/company.controller.unit-spec.ts 2ms (unchanged)
+src/unit-tests/company.model.unit-spec.ts 3ms (unchanged)
+src/unit-tests/company.service.unit-spec.ts 2ms (unchanged)
+src/unit-tests/correlation-id.middleware.unit-spec.ts 2ms (unchanged)
+src/unit-tests/csrf.guard.unit-spec.ts 1ms (unchanged)
+src/unit-tests/custom-logger.config.unit-spec.ts 23ms (unchanged)
+src/unit-tests/encryption.util.unit-spec.ts 1ms (unchanged)
+src/unit-tests/env-config.service.unit-spec.ts 1ms (unchanged)
+src/unit-tests/env-validations.config.unit-spec.ts 2ms (unchanged)
+src/unit-tests/fastify-throttler.guard.unit-spec.ts 2ms (unchanged)
+src/unit-tests/get-env-file.util.unit-spec.ts 2ms (unchanged)
+src/unit-tests/get-env-variable.util.unit-spec.ts 1ms (unchanged)
+src/unit-tests/github-app.service.unit-spec.ts 3ms (unchanged)
+src/unit-tests/github-backfill.service.unit-spec.ts 2ms (unchanged)
+src/unit-tests/github-commit.model.unit-spec.ts 3ms (unchanged)
+src/unit-tests/github-contributor.model.unit-spec.ts 4ms (unchanged)
+src/unit-tests/github-event.processor.unit-spec.ts 14ms (unchanged)
+src/unit-tests/github-identity.service.unit-spec.ts 2ms (unchanged)
+src/unit-tests/github-install.controller.unit-spec.ts 2ms (unchanged)
+src/unit-tests/github-install.service.unit-spec.ts 3ms (unchanged)
+src/unit-tests/github-installations.model.unit-spec.ts 5ms (unchanged)
+src/unit-tests/github-pull-request.model.unit-spec.ts 4ms (unchanged)
+src/unit-tests/github-repos.model.unit-spec.ts 4ms (unchanged)
+src/unit-tests/github-review-comment.model.unit-spec.ts 2ms (unchanged)
+src/unit-tests/github-review.model.unit-spec.ts 2ms (unchanged)
+src/unit-tests/github-webhook.controller.unit-spec.ts 2ms (unchanged)
+src/unit-tests/github-webhook.service.unit-spec.ts 3ms (unchanged)
+src/unit-tests/github.strategy.unit-spec.ts 3ms (unchanged)
+src/unit-tests/google.strategy.unit-spec.ts 2ms (unchanged)
+src/unit-tests/health.controller.unit-spec.ts 2ms (unchanged)
+src/unit-tests/health.service.unit-spec.ts 1ms (unchanged)
+src/unit-tests/invitation.controller.unit-spec.ts 3ms (unchanged)
+src/unit-tests/invitation.model.unit-spec.ts 4ms (unchanged)
+src/unit-tests/invitation.service.unit-spec.ts 3ms (unchanged)
+src/unit-tests/jira-api.service.unit-spec.ts 4ms (unchanged)
+src/unit-tests/jira-changelog.model.unit-spec.ts 2ms (unchanged)
+src/unit-tests/jira-identity.model.unit-spec.ts 2ms (unchanged)
+src/unit-tests/jira-identity.service.unit-spec.ts 1ms (unchanged)
+src/unit-tests/jira-install.service.unit-spec.ts 3ms (unchanged)
+src/unit-tests/jira-installations.model.unit-spec.ts 4ms (unchanged)
+src/unit-tests/jira-issues.model.unit-spec.ts 2ms (unchanged)
+src/unit-tests/jira-processor.service.unit-spec.ts 2ms (unchanged)
+src/unit-tests/jira-projects.model.unit-spec.ts 3ms (unchanged)
+src/unit-tests/jira-sprints.model.unit-spec.ts 2ms (unchanged)
+src/unit-tests/jira-sync.service.unit-spec.ts 10ms (unchanged)
+src/unit-tests/jira-webhook.controller.unit-spec.ts 1ms (unchanged)
+src/unit-tests/jira-webhook.service.unit-spec.ts 1ms (unchanged)
+src/unit-tests/jira-worklogs.model.unit-spec.ts 1ms (unchanged)
+src/unit-tests/jira.controller.unit-spec.ts 2ms (unchanged)
+src/unit-tests/log-execution.decorator.unit-spec.ts 10ms (unchanged)
+src/unit-tests/logger.middleware.unit-spec.ts 9ms (unchanged)
+src/unit-tests/oauth-account.model.unit-spec.ts 5ms (unchanged)
+src/unit-tests/oauth-account.service.unit-spec.ts 2ms (unchanged)
+src/unit-tests/roles.guard.unit-spec.ts 2ms (unchanged)
+src/unit-tests/session.service.unit-spec.ts 5ms (unchanged)
+src/unit-tests/setup-swagger.util.unit-spec.ts 1ms (unchanged)
+src/unit-tests/user.controller.unit-spec.ts 2ms (unchanged)
+src/unit-tests/user.model.unit-spec.ts 4ms (unchanged)
+src/unit-tests/user.service.unit-spec.ts 2ms (unchanged)
+src/utils/common.util.ts 0ms (unchanged)
+src/utils/encryption.util.ts 1ms (unchanged)
+src/utils/get-env-file.util.ts 1ms (unchanged)
+src/utils/get-env-variable.util.ts 1ms (unchanged)
+src/utils/setup-swagger.util.ts 1ms (unchanged)
+test/__mocks__/arctic.ts 1ms (unchanged)
+test/auth.module.e2e-spec.ts 13ms (unchanged)
+test/cache.module.e2e-spec.ts 4ms (unchanged)
+test/company.module.e2e-spec.ts 5ms (unchanged)
+test/db.module.e2e-spec.ts 2ms (unchanged)
+test/env-config.module.e2e-spec.ts 5ms (unchanged)
+test/github-install.e2e-spec.ts 4ms (unchanged)
+test/github-webhook.e2e-spec.ts 3ms (unchanged)
+test/github.module.e2e-spec.ts 11ms (unchanged)
+test/health.module.e2e-spec.ts 2ms (unchanged)
+test/helpers/auth.helper.ts 2ms (unchanged)
+test/invitation.module.e2e-spec.ts 8ms (unchanged)
+test/jest-e2e.config.ts 1ms (unchanged)
+test/jest-e2e.coverage.config.ts 1ms (unchanged)
+test/jest-unit.config.ts 1ms (unchanged)
+test/jest-unit.coverage.config.ts 1ms (unchanged)
+test/jest.config.ts 1ms (unchanged)
+test/jest.coverage.config.ts 1ms (unchanged)
+test/jira-webhook.e2e-spec.ts 2ms (unchanged)
+test/jira.controller.e2e-spec.ts 3ms (unchanged)
+test/jira.module.e2e-spec.ts 24ms (unchanged)
+test/user.module.e2e-spec.ts 5ms (unchanged)
+
+> webapp-backend@0.0.1 type-check
+> tsc --noEmit

@@ -1,0 +1,252 @@
+/Users/4thwithme/Documents/repo/recommendations-service/.claude/skills/database-skill/SKILL.md-236-      this.logger.error(
+.claude/skills/database-skill/SKILL.md:237:        `Validation failed: ${this.formatValidationErrors({ errors })}`
+/Users/4thwithme/Documents/repo/recommendations-service/.claude/skills/database-skill/SKILL.md-238-      );
+.claude/skills/database-skill/SKILL.md:239:      throw new Error(`Validation failed: ${this.formatValidationErrors({ errors })}`);
+/Users/4thwithme/Documents/repo/recommendations-service/.claude/skills/database-skill/SKILL.md-240-    }
+--
+/Users/4thwithme/Documents/repo/recommendations-service/.claude/skills/database-skill/SKILL.md-317-      this.logger.error(
+.claude/skills/database-skill/SKILL.md:318:        `Validation failed: ${this.formatValidationErrors({ errors })}`
+/Users/4thwithme/Documents/repo/recommendations-service/.claude/skills/database-skill/SKILL.md-319-      );
+.claude/skills/database-skill/SKILL.md:320:      throw new Error(`Validation failed: ${this.formatValidationErrors({ errors })}`);
+/Users/4thwithme/Documents/repo/recommendations-service/.claude/skills/database-skill/SKILL.md-321-    }
+--
+/Users/4thwithme/Documents/repo/recommendations-service/.claude/skills/database-skill/SKILL.md-365-
+.claude/skills/database-skill/SKILL.md:366:  private formatValidationErrors({ errors }: { errors: ValidationError[] }): string {
+/Users/4thwithme/Documents/repo/recommendations-service/.claude/skills/database-skill/SKILL.md-367-    return errors
+--
+/Users/4thwithme/Documents/repo/recommendations-service/src/modules/db/CLAUDE.md-144-- Use `this.logger.debug` for success paths and `this.logger.warn` for not-found cases.
+src/modules/db/CLAUDE.md:145:- Format validation errors using a private `formatValidationErrors(errors: ValidationError[]): string` helper.
+/Users/4thwithme/Documents/repo/recommendations-service/src/modules/db/CLAUDE.md-146-
+/Users/4thwithme/Documents/repo/recommendations-service/src/modules/db/CLAUDE.md-147-```typescript
+src/modules/db/CLAUDE.md:148:private formatValidationErrors(errors: ValidationError[]): string {
+/Users/4thwithme/Documents/repo/recommendations-service/src/modules/db/CLAUDE.md-149-  return errors
+--
+/Users/4thwithme/Documents/repo/recommendations-service/src/modules/db/styles/models/style.model.ts-66-				this.logger.error(
+src/modules/db/styles/models/style.model.ts:67:					`Validation failed for style data: ${this.formatValidationErrors({ errors })}`,
+/Users/4thwithme/Documents/repo/recommendations-service/src/modules/db/styles/models/style.model.ts-68-				);
+src/modules/db/styles/models/style.model.ts:69:				throw new Error(`Validation failed: ${this.formatValidationErrors({ errors })}`);
+/Users/4thwithme/Documents/repo/recommendations-service/src/modules/db/styles/models/style.model.ts-70-			}
+--
+/Users/4thwithme/Documents/repo/recommendations-service/src/modules/db/styles/models/style.model.ts-121-							this.logger.error(
+src/modules/db/styles/models/style.model.ts:122:								`Validation failed for style data: ${this.formatValidationErrors({ errors })}`,
+/Users/4thwithme/Documents/repo/recommendations-service/src/modules/db/styles/models/style.model.ts-123-							);
+/Users/4thwithme/Documents/repo/recommendations-service/src/modules/db/styles/models/style.model.ts-124-							throw new Error(
+src/modules/db/styles/models/style.model.ts:125:								`Validation failed: ${this.formatValidationErrors({ errors })}`,
+/Users/4thwithme/Documents/repo/recommendations-service/src/modules/db/styles/models/style.model.ts-126-							);
+--
+/Users/4thwithme/Documents/repo/recommendations-service/src/modules/db/styles/models/style.model.ts-292-						this.logger.error(
+src/modules/db/styles/models/style.model.ts:293:							`Validation failed for style data: ${this.formatValidationErrors({ errors })}`,
+/Users/4thwithme/Documents/repo/recommendations-service/src/modules/db/styles/models/style.model.ts-294-						);
+/Users/4thwithme/Documents/repo/recommendations-service/src/modules/db/styles/models/style.model.ts-295-						throw new Error(
+src/modules/db/styles/models/style.model.ts:296:							`Validation failed: ${this.formatValidationErrors({ errors })}`,
+/Users/4thwithme/Documents/repo/recommendations-service/src/modules/db/styles/models/style.model.ts-297-						);
+--
+/Users/4thwithme/Documents/repo/recommendations-service/src/modules/db/styles/models/style.model.ts-324-			this.logger.error(
+src/modules/db/styles/models/style.model.ts:325:				`Validation failed for style IDs: ${this.formatValidationErrors({ errors })}`,
+/Users/4thwithme/Documents/repo/recommendations-service/src/modules/db/styles/models/style.model.ts-326-			);
+src/modules/db/styles/models/style.model.ts:327:			throw new Error(`Validation failed: ${this.formatValidationErrors({ errors })}`);
+/Users/4thwithme/Documents/repo/recommendations-service/src/modules/db/styles/models/style.model.ts-328-		}
+--
+/Users/4thwithme/Documents/repo/recommendations-service/src/modules/db/styles/models/style.model.ts-342-						this.logger.error(
+src/modules/db/styles/models/style.model.ts:343:							`Validation failed for style data: ${this.formatValidationErrors({ errors })}`,
+/Users/4thwithme/Documents/repo/recommendations-service/src/modules/db/styles/models/style.model.ts-344-						);
+/Users/4thwithme/Documents/repo/recommendations-service/src/modules/db/styles/models/style.model.ts-345-						throw new Error(
+src/modules/db/styles/models/style.model.ts:346:							`Validation failed: ${this.formatValidationErrors({ errors })}`,
+/Users/4thwithme/Documents/repo/recommendations-service/src/modules/db/styles/models/style.model.ts-347-						);
+--
+/Users/4thwithme/Documents/repo/recommendations-service/src/modules/db/styles/models/style.model.ts-379-				this.logger.error(
+src/modules/db/styles/models/style.model.ts:380:					`Validation failed for style data: ${this.formatValidationErrors({ errors })}`,
+/Users/4thwithme/Documents/repo/recommendations-service/src/modules/db/styles/models/style.model.ts-381-				);
+src/modules/db/styles/models/style.model.ts:382:				throw new Error(`Validation failed: ${this.formatValidationErrors({ errors })}`);
+/Users/4thwithme/Documents/repo/recommendations-service/src/modules/db/styles/models/style.model.ts-383-			}
+--
+/Users/4thwithme/Documents/repo/recommendations-service/src/modules/db/styles/models/style.model.ts-509-				this.logger.error(
+src/modules/db/styles/models/style.model.ts:510:					`Validation failed for style data: ${this.formatValidationErrors({ errors })}`,
+/Users/4thwithme/Documents/repo/recommendations-service/src/modules/db/styles/models/style.model.ts-511-				);
+src/modules/db/styles/models/style.model.ts:512:				throw new Error(`Validation failed: ${this.formatValidationErrors({ errors })}`);
+/Users/4thwithme/Documents/repo/recommendations-service/src/modules/db/styles/models/style.model.ts-513-			}
+--
+/Users/4thwithme/Documents/repo/recommendations-service/src/modules/db/styles/models/style.model.ts-660-
+src/modules/db/styles/models/style.model.ts:661:	private formatValidationErrors({ errors }: { errors: ValidationError[] }): string {
+/Users/4thwithme/Documents/repo/recommendations-service/src/modules/db/styles/models/style.model.ts-662-		return errors
+--
+/Users/4thwithme/Documents/repo/recommendations-service/src/modules/db/condensed-features/models/condensed-feature.model.ts-60-			this.logger.error(
+src/modules/db/condensed-features/models/condensed-feature.model.ts:61:				`Validation failed for condensed features data: ${this.formatValidationErrors({ errors })}`,
+/Users/4thwithme/Documents/repo/recommendations-service/src/modules/db/condensed-features/models/condensed-feature.model.ts-62-			);
+src/modules/db/condensed-features/models/condensed-feature.model.ts:63:			throw new Error(`Validation failed: ${this.formatValidationErrors({ errors })}`);
+/Users/4thwithme/Documents/repo/recommendations-service/src/modules/db/condensed-features/models/condensed-feature.model.ts-64-		}
+--
+/Users/4thwithme/Documents/repo/recommendations-service/src/modules/db/condensed-features/models/condensed-feature.model.ts-88-				this.logger.error(
+src/modules/db/condensed-features/models/condensed-feature.model.ts:89:					`Validation failed for condensed features data: ${this.formatValidationErrors({ errors })}`,
+/Users/4thwithme/Documents/repo/recommendations-service/src/modules/db/condensed-features/models/condensed-feature.model.ts-90-				);
+src/modules/db/condensed-features/models/condensed-feature.model.ts:91:				throw new Error(`Validation failed: ${this.formatValidationErrors({ errors })}`);
+/Users/4thwithme/Documents/repo/recommendations-service/src/modules/db/condensed-features/models/condensed-feature.model.ts-92-			}
+--
+/Users/4thwithme/Documents/repo/recommendations-service/src/modules/db/condensed-features/models/condensed-feature.model.ts-128-			this.logger.error(
+src/modules/db/condensed-features/models/condensed-feature.model.ts:129:				`Validation failed for condensed features data: ${this.formatValidationErrors({ errors })}`,
+/Users/4thwithme/Documents/repo/recommendations-service/src/modules/db/condensed-features/models/condensed-feature.model.ts-130-			);
+src/modules/db/condensed-features/models/condensed-feature.model.ts:131:			throw new Error(`Validation failed: ${this.formatValidationErrors({ errors })}`);
+/Users/4thwithme/Documents/repo/recommendations-service/src/modules/db/condensed-features/models/condensed-feature.model.ts-132-		}
+--
+/Users/4thwithme/Documents/repo/recommendations-service/src/modules/db/condensed-features/models/condensed-feature.model.ts-164-				this.logger.error(
+src/modules/db/condensed-features/models/condensed-feature.model.ts:165:					`Validation failed for condensed features data: ${this.formatValidationErrors({ errors: responseErrors })}`,
+/Users/4thwithme/Documents/repo/recommendations-service/src/modules/db/condensed-features/models/condensed-feature.model.ts-166-				);
+/Users/4thwithme/Documents/repo/recommendations-service/src/modules/db/condensed-features/models/condensed-feature.model.ts-167-				throw new Error(
+src/modules/db/condensed-features/models/condensed-feature.model.ts:168:					`Validation failed: ${this.formatValidationErrors({ errors: responseErrors })}`,
+/Users/4thwithme/Documents/repo/recommendations-service/src/modules/db/condensed-features/models/condensed-feature.model.ts-169-				);
+--
+/Users/4thwithme/Documents/repo/recommendations-service/src/modules/db/condensed-features/models/condensed-feature.model.ts-253-			this.logger.error(
+src/modules/db/condensed-features/models/condensed-feature.model.ts:254:				`Validation failed for style condensed_features update data: ${this.formatValidationErrors({ errors })}`,
+/Users/4thwithme/Documents/repo/recommendations-service/src/modules/db/condensed-features/models/condensed-feature.model.ts-255-			);
+src/modules/db/condensed-features/models/condensed-feature.model.ts:256:			throw new Error(`Validation failed: ${this.formatValidationErrors({ errors })}`);
+/Users/4thwithme/Documents/repo/recommendations-service/src/modules/db/condensed-features/models/condensed-feature.model.ts-257-		}
+--
+/Users/4thwithme/Documents/repo/recommendations-service/src/modules/db/condensed-features/models/condensed-feature.model.ts-284-				this.logger.error(
+src/modules/db/condensed-features/models/condensed-feature.model.ts:285:					`Validation failed for condensed features data: ${this.formatValidationErrors({ errors })}`,
+/Users/4thwithme/Documents/repo/recommendations-service/src/modules/db/condensed-features/models/condensed-feature.model.ts-286-				);
+src/modules/db/condensed-features/models/condensed-feature.model.ts:287:				throw new Error(`Validation failed: ${this.formatValidationErrors({ errors })}`);
+/Users/4thwithme/Documents/repo/recommendations-service/src/modules/db/condensed-features/models/condensed-feature.model.ts-288-			}
+--
+/Users/4thwithme/Documents/repo/recommendations-service/src/modules/db/condensed-features/models/condensed-feature.model.ts-321-
+src/modules/db/condensed-features/models/condensed-feature.model.ts:322:	private formatValidationErrors({ errors }: { errors: ValidationError[] }): string {
+/Users/4thwithme/Documents/repo/recommendations-service/src/modules/db/condensed-features/models/condensed-feature.model.ts-323-		return errors
+--
+/Users/4thwithme/Documents/repo/recommendations-service/src/modules/db/style-copurchases/models/style-copurchase.model.ts-43-		if (errors.length > 0) {
+src/modules/db/style-copurchases/models/style-copurchase.model.ts:44:			throw new Error(`Validation failed: ${this.formatValidationErrors(errors)}`);
+/Users/4thwithme/Documents/repo/recommendations-service/src/modules/db/style-copurchases/models/style-copurchase.model.ts-45-		}
+--
+/Users/4thwithme/Documents/repo/recommendations-service/src/modules/db/style-copurchases/models/style-copurchase.model.ts-119-		if (errors.length > 0) {
+src/modules/db/style-copurchases/models/style-copurchase.model.ts:120:			throw new Error(`Validation failed: ${this.formatValidationErrors(errors)}`);
+/Users/4thwithme/Documents/repo/recommendations-service/src/modules/db/style-copurchases/models/style-copurchase.model.ts-121-		}
+--
+/Users/4thwithme/Documents/repo/recommendations-service/src/modules/db/style-copurchases/models/style-copurchase.model.ts-281-
+src/modules/db/style-copurchases/models/style-copurchase.model.ts:282:	private formatValidationErrors(errors: ValidationError[]): string {
+/Users/4thwithme/Documents/repo/recommendations-service/src/modules/db/style-copurchases/models/style-copurchase.model.ts-283-		return errors
+--
+/Users/4thwithme/Documents/repo/recommendations-service/src/modules/db/style-colors/models/style-color.model.ts-44-			this.logger.error(
+src/modules/db/style-colors/models/style-color.model.ts:45:				`Validation failed for style data: ${this.formatValidationErrors({ errors })}`,
+/Users/4thwithme/Documents/repo/recommendations-service/src/modules/db/style-colors/models/style-color.model.ts-46-			);
+src/modules/db/style-colors/models/style-color.model.ts:47:			throw new Error(`Validation failed: ${this.formatValidationErrors({ errors })}`);
+/Users/4thwithme/Documents/repo/recommendations-service/src/modules/db/style-colors/models/style-color.model.ts-48-		}
+--
+/Users/4thwithme/Documents/repo/recommendations-service/src/modules/db/style-colors/models/style-color.model.ts-179-			this.logger.error(
+src/modules/db/style-colors/models/style-color.model.ts:180:				`Validation failed for style update data: ${this.formatValidationErrors({ errors })}`,
+/Users/4thwithme/Documents/repo/recommendations-service/src/modules/db/style-colors/models/style-color.model.ts-181-			);
+src/modules/db/style-colors/models/style-color.model.ts:182:			throw new Error(`Validation failed: ${this.formatValidationErrors({ errors })}`);
+/Users/4thwithme/Documents/repo/recommendations-service/src/modules/db/style-colors/models/style-color.model.ts-183-		}
+--
+/Users/4thwithme/Documents/repo/recommendations-service/src/modules/db/style-colors/models/style-color.model.ts-276-							this.logger.error(
+src/modules/db/style-colors/models/style-color.model.ts:277:								`Validation failed for style color data: ${this.formatValidationErrors({ errors })}`,
+/Users/4thwithme/Documents/repo/recommendations-service/src/modules/db/style-colors/models/style-color.model.ts-278-							);
+/Users/4thwithme/Documents/repo/recommendations-service/src/modules/db/style-colors/models/style-color.model.ts-279-							throw new Error(
+src/modules/db/style-colors/models/style-color.model.ts:280:								`Validation failed: ${this.formatValidationErrors({ errors })}`,
+/Users/4thwithme/Documents/repo/recommendations-service/src/modules/db/style-colors/models/style-color.model.ts-281-							);
+--
+/Users/4thwithme/Documents/repo/recommendations-service/src/modules/db/style-colors/models/style-color.model.ts-386-				this.logger.error(
+src/modules/db/style-colors/models/style-color.model.ts:387:					`Validation failed for style color data: ${this.formatValidationErrors({ errors })}`,
+/Users/4thwithme/Documents/repo/recommendations-service/src/modules/db/style-colors/models/style-color.model.ts-388-				);
+src/modules/db/style-colors/models/style-color.model.ts:389:				throw new Error(`Validation failed: ${this.formatValidationErrors({ errors })}`);
+/Users/4thwithme/Documents/repo/recommendations-service/src/modules/db/style-colors/models/style-color.model.ts-390-			}
+--
+/Users/4thwithme/Documents/repo/recommendations-service/src/modules/db/style-colors/models/style-color.model.ts-452-
+src/modules/db/style-colors/models/style-color.model.ts:453:	private formatValidationErrors({ errors }: { errors: ValidationError[] }): string {
+/Users/4thwithme/Documents/repo/recommendations-service/src/modules/db/style-colors/models/style-color.model.ts-454-		return errors
+--
+/Users/4thwithme/Documents/repo/recommendations-service/src/modules/db/default-unit-prices/models/default-unit-price.model.ts-53-			this.logger.error(
+src/modules/db/default-unit-prices/models/default-unit-price.model.ts:54:				`Validation failed for unit price data: ${this.formatValidationErrors({ errors })}`,
+/Users/4thwithme/Documents/repo/recommendations-service/src/modules/db/default-unit-prices/models/default-unit-price.model.ts-55-			);
+src/modules/db/default-unit-prices/models/default-unit-price.model.ts:56:			throw new Error(`Validation failed: ${this.formatValidationErrors({ errors })}`);
+/Users/4thwithme/Documents/repo/recommendations-service/src/modules/db/default-unit-prices/models/default-unit-price.model.ts-57-		}
+--
+/Users/4thwithme/Documents/repo/recommendations-service/src/modules/db/default-unit-prices/models/default-unit-price.model.ts-97-			this.logger.error(
+src/modules/db/default-unit-prices/models/default-unit-price.model.ts:98:				`Validation failed for find by style ID parameters: ${this.formatValidationErrors({ errors })}`,
+/Users/4thwithme/Documents/repo/recommendations-service/src/modules/db/default-unit-prices/models/default-unit-price.model.ts-99-			);
+src/modules/db/default-unit-prices/models/default-unit-price.model.ts:100:			throw new Error(`Validation failed: ${this.formatValidationErrors({ errors })}`);
+/Users/4thwithme/Documents/repo/recommendations-service/src/modules/db/default-unit-prices/models/default-unit-price.model.ts-101-		}
+--
+/Users/4thwithme/Documents/repo/recommendations-service/src/modules/db/default-unit-prices/models/default-unit-price.model.ts-136-			this.logger.error(
+src/modules/db/default-unit-prices/models/default-unit-price.model.ts:137:				`Validation failed for find by style ID and quantity parameters: ${this.formatValidationErrors({ errors })}`,
+/Users/4thwithme/Documents/repo/recommendations-service/src/modules/db/default-unit-prices/models/default-unit-price.model.ts-138-			);
+src/modules/db/default-unit-prices/models/default-unit-price.model.ts:139:			throw new Error(`Validation failed: ${this.formatValidationErrors({ errors })}`);
+/Users/4thwithme/Documents/repo/recommendations-service/src/modules/db/default-unit-prices/models/default-unit-price.model.ts-140-		}
+--
+/Users/4thwithme/Documents/repo/recommendations-service/src/modules/db/default-unit-prices/models/default-unit-price.model.ts-181-			this.logger.error(
+src/modules/db/default-unit-prices/models/default-unit-price.model.ts:182:				`Validation failed for unit price update data: ${this.formatValidationErrors({ errors })}`,
+/Users/4thwithme/Documents/repo/recommendations-service/src/modules/db/default-unit-prices/models/default-unit-price.model.ts-183-			);
+src/modules/db/default-unit-prices/models/default-unit-price.model.ts:184:			throw new Error(`Validation failed: ${this.formatValidationErrors({ errors })}`);
+/Users/4thwithme/Documents/repo/recommendations-service/src/modules/db/default-unit-prices/models/default-unit-price.model.ts-185-		}
+--
+/Users/4thwithme/Documents/repo/recommendations-service/src/modules/db/default-unit-prices/models/default-unit-price.model.ts-260-							this.logger.error(
+src/modules/db/default-unit-prices/models/default-unit-price.model.ts:261:								`Validation failed for unit price update data: ${this.formatValidationErrors({ errors })}`,
+/Users/4thwithme/Documents/repo/recommendations-service/src/modules/db/default-unit-prices/models/default-unit-price.model.ts-262-							);
+/Users/4thwithme/Documents/repo/recommendations-service/src/modules/db/default-unit-prices/models/default-unit-price.model.ts-263-							throw new Error(
+src/modules/db/default-unit-prices/models/default-unit-price.model.ts:264:								`Validation failed: ${this.formatValidationErrors({ errors })}`,
+/Users/4thwithme/Documents/repo/recommendations-service/src/modules/db/default-unit-prices/models/default-unit-price.model.ts-265-							);
+--
+/Users/4thwithme/Documents/repo/recommendations-service/src/modules/db/default-unit-prices/models/default-unit-price.model.ts-288-							this.logger.error(
+src/modules/db/default-unit-prices/models/default-unit-price.model.ts:289:								`Validation failed for unit price data: ${this.formatValidationErrors({ errors })}`,
+/Users/4thwithme/Documents/repo/recommendations-service/src/modules/db/default-unit-prices/models/default-unit-price.model.ts-290-							);
+/Users/4thwithme/Documents/repo/recommendations-service/src/modules/db/default-unit-prices/models/default-unit-price.model.ts-291-							throw new Error(
+src/modules/db/default-unit-prices/models/default-unit-price.model.ts:292:								`Validation failed: ${this.formatValidationErrors({ errors })}`,
+/Users/4thwithme/Documents/repo/recommendations-service/src/modules/db/default-unit-prices/models/default-unit-price.model.ts-293-							);
+--
+/Users/4thwithme/Documents/repo/recommendations-service/src/modules/db/default-unit-prices/models/default-unit-price.model.ts-347-			this.logger.error(
+src/modules/db/default-unit-prices/models/default-unit-price.model.ts:348:				`Validation failed for soft delete parameters: ${this.formatValidationErrors({ errors })}`,
+/Users/4thwithme/Documents/repo/recommendations-service/src/modules/db/default-unit-prices/models/default-unit-price.model.ts-349-			);
+src/modules/db/default-unit-prices/models/default-unit-price.model.ts:350:			throw new Error(`Validation failed: ${this.formatValidationErrors({ errors })}`);
+/Users/4thwithme/Documents/repo/recommendations-service/src/modules/db/default-unit-prices/models/default-unit-price.model.ts-351-		}
+--
+/Users/4thwithme/Documents/repo/recommendations-service/src/modules/db/default-unit-prices/models/default-unit-price.model.ts-403-				this.logger.error(
+src/modules/db/default-unit-prices/models/default-unit-price.model.ts:404:					`Validation failed for unit price data: ${this.formatValidationErrors({ errors })}`,
+/Users/4thwithme/Documents/repo/recommendations-service/src/modules/db/default-unit-prices/models/default-unit-price.model.ts-405-				);
+src/modules/db/default-unit-prices/models/default-unit-price.model.ts:406:				throw new Error(`Validation failed: ${this.formatValidationErrors({ errors })}`);
+/Users/4thwithme/Documents/repo/recommendations-service/src/modules/db/default-unit-prices/models/default-unit-price.model.ts-407-			}
+--
+/Users/4thwithme/Documents/repo/recommendations-service/src/modules/db/default-unit-prices/models/default-unit-price.model.ts-464-
+src/modules/db/default-unit-prices/models/default-unit-price.model.ts:465:	private formatValidationErrors({ errors }: { errors: ValidationError[] }): string {
+/Users/4thwithme/Documents/repo/recommendations-service/src/modules/db/default-unit-prices/models/default-unit-price.model.ts-466-		return errors
+--
+/Users/4thwithme/Documents/repo/recommendations-service/src/modules/mms-styles-sync/mms-styles-sync.service.ts-189-			if (errors.length > 0) {
+src/modules/mms-styles-sync/mms-styles-sync.service.ts:190:				const errorMessages = this.formatValidationErrors({ errors });
+/Users/4thwithme/Documents/repo/recommendations-service/src/modules/mms-styles-sync/mms-styles-sync.service.ts-191-				const filteredData = this.filterValidFields({
+--
+/Users/4thwithme/Documents/repo/recommendations-service/src/modules/mms-styles-sync/mms-styles-sync.service.ts-226-
+src/modules/mms-styles-sync/mms-styles-sync.service.ts:227:	private formatValidationErrors({ errors }: { errors: ValidationError[] }): string[] {
+src/modules/mms-styles-sync/mms-styles-sync.service.ts-228-		const errorMessages: string[] = [];
+--
+/Users/4thwithme/Documents/repo/recommendations-service/src/modules/db/category-correlations/models/category-correlation.model.ts-57-						this.logger.error(
+src/modules/db/category-correlations/models/category-correlation.model.ts:58:							`Validation failed for category correlation data: ${this.formatValidationErrors({ errors })}`,
+/Users/4thwithme/Documents/repo/recommendations-service/src/modules/db/category-correlations/models/category-correlation.model.ts-59-						);
+/Users/4thwithme/Documents/repo/recommendations-service/src/modules/db/category-correlations/models/category-correlation.model.ts-60-						throw new Error(
+src/modules/db/category-correlations/models/category-correlation.model.ts:61:							`Validation failed: ${this.formatValidationErrors({ errors })}`,
+/Users/4thwithme/Documents/repo/recommendations-service/src/modules/db/category-correlations/models/category-correlation.model.ts-62-						);
+--
+/Users/4thwithme/Documents/repo/recommendations-service/src/modules/db/category-correlations/models/category-correlation.model.ts-160-
+src/modules/db/category-correlations/models/category-correlation.model.ts:161:	private formatValidationErrors({ errors }: { errors: ValidationError[] }): string {
+/Users/4thwithme/Documents/repo/recommendations-service/src/modules/db/category-correlations/models/category-correlation.model.ts-162-		return errors
+--
+/Users/4thwithme/Documents/repo/recommendations-service/src/modules/db/styles-hash/models/styles-hash.model.ts-49-			this.logger.error(
+src/modules/db/styles-hash/models/styles-hash.model.ts:50:				`Validation failed for style hash data: ${this.formatValidationErrors({ errors })}`,
+/Users/4thwithme/Documents/repo/recommendations-service/src/modules/db/styles-hash/models/styles-hash.model.ts-51-			);
+src/modules/db/styles-hash/models/styles-hash.model.ts:52:			throw new Error(`Validation failed: ${this.formatValidationErrors({ errors })}`);
+/Users/4thwithme/Documents/repo/recommendations-service/src/modules/db/styles-hash/models/styles-hash.model.ts-53-		}
+--
+/Users/4thwithme/Documents/repo/recommendations-service/src/modules/db/styles-hash/models/styles-hash.model.ts-144-			this.logger.error(
+src/modules/db/styles-hash/models/styles-hash.model.ts:145:				`Validation failed for style hash update data: ${this.formatValidationErrors({ errors })}`,
+/Users/4thwithme/Documents/repo/recommendations-service/src/modules/db/styles-hash/models/styles-hash.model.ts-146-			);
+src/modules/db/styles-hash/models/styles-hash.model.ts:147:			throw new Error(`Validation failed: ${this.formatValidationErrors({ errors })}`);
+/Users/4thwithme/Documents/repo/recommendations-service/src/modules/db/styles-hash/models/styles-hash.model.ts-148-		}
+--
+/Users/4thwithme/Documents/repo/recommendations-service/src/modules/db/styles-hash/models/styles-hash.model.ts-196-
+src/modules/db/styles-hash/models/styles-hash.model.ts:197:	private formatValidationErrors({ errors }: { errors: ValidationError[] }): string {
+/Users/4thwithme/Documents/repo/recommendations-service/src/modules/db/styles-hash/models/styles-hash.model.ts-198-		return errors
+--
+/Users/4thwithme/Documents/repo/recommendations-service/src/modules/db/styles-mv/models/styles-mv.model.ts-83-			this.logger.error(
+src/modules/db/styles-mv/models/styles-mv.model.ts:84:				`Validation failed for findByStyleIds: ${this.formatValidationErrors({ errors })}`,
+/Users/4thwithme/Documents/repo/recommendations-service/src/modules/db/styles-mv/models/styles-mv.model.ts-85-			);
+src/modules/db/styles-mv/models/styles-mv.model.ts:86:			throw new Error(`Validation failed: ${this.formatValidationErrors({ errors })}`);
+/Users/4thwithme/Documents/repo/recommendations-service/src/modules/db/styles-mv/models/styles-mv.model.ts-87-		}
+--
+/Users/4thwithme/Documents/repo/recommendations-service/src/modules/db/styles-mv/models/styles-mv.model.ts-135-			this.logger.error(
+
+[Showing results with pagination = limit: 250]

@@ -1,0 +1,44 @@
+[
+  {
+    "content": "Analyze uncovered lines in rollbar.config.ts (lines 35-37)",
+    "status": "completed",
+    "priority": "high",
+    "id": "1"
+  },
+  {
+    "content": "Improve branch coverage in log-execution.decorator.ts (lines 43-44)",
+    "status": "completed",
+    "priority": "high",
+    "id": "2"
+  },
+  {
+    "content": "Add tests for algolia.service.ts uncovered lines (352-404)",
+    "status": "pending",
+    "priority": "medium",
+    "id": "3"
+  },
+  {
+    "content": "Improve cache.service.ts branch coverage (line 191)",
+    "status": "pending",
+    "priority": "medium",
+    "id": "4"
+  },
+  {
+    "content": "Add tests for sort-styles.utils.ts uncovered lines (41, 45)",
+    "status": "completed",
+    "priority": "medium",
+    "id": "5"
+  },
+  {
+    "content": "Run tests to verify coverage improvement",
+    "status": "completed",
+    "priority": "high",
+    "id": "6"
+  },
+  {
+    "content": "Add test for overrideIssueTitle edge case in rollbar.config.ts",
+    "status": "completed",
+    "priority": "high",
+    "id": "7"
+  }
+]

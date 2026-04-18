@@ -1,0 +1,26 @@
+[
+  {
+    "content": "Check backend API for token validation endpoints",
+    "status": "completed",
+    "priority": "high",
+    "id": "1"
+  },
+  {
+    "content": "Add token validation on page load",
+    "status": "completed",
+    "priority": "high",
+    "id": "2"
+  },
+  {
+    "content": "Prevent multiple uses of the same token",
+    "status": "completed",
+    "priority": "high",
+    "id": "3"
+  },
+  {
+    "content": "Add proper error handling for invalid/expired tokens",
+    "status": "completed",
+    "priority": "medium",
+    "id": "4"
+  }
+]

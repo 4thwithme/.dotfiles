@@ -1,0 +1,93 @@
+Subscribe to events
+Based on the permissions you’ve selected, what events would you like to subscribe to?
+
+Installation target 
+A GitHub App installation target is renamed.
+Meta 
+When this App is deleted and the associated hook is removed.
+Security advisory 
+Security advisory published, updated, or withdrawn.
+Code scanning alert 
+Code Scanning alert updated. This event is triggered when the assignees or state of the alert changes. The state can be created, fixed in branch, or closed.
+Check run 
+Check run is created, requested, rerequested, or completed.
+Check suite 
+Check suite is requested, rerequested, or completed.
+Commit comment 
+Commit or diff commented on.
+Create 
+Branch or tag created.
+Delete 
+Branch or tag deleted.
+Deploy key 
+A deploy key is created or deleted from a repository.
+Deployment 
+Repository was deployed or a deployment was deleted.
+Deployment protection rule 
+Deployment protection rule requested for an environment.
+Deployment review 
+Deployment review requested, approved or rejected
+Deployment status 
+Deployment status updated from the API.
+Dismissal request code scanning 
+Code scanning alert dismissal request was created, or received a response (approved or rejected).
+Dismissal request secret scanning 
+Secret scanning alert dismissal request was created, cancelled, or received a response.
+Exemption request secret scanning 
+Secret scanning push protection bypass request was created, cancelled, completed, received a response, or a response was dismissed.
+Fork 
+Repository forked.
+Gollum 
+Wiki page updated.
+Label 
+Label created, edited or deleted.
+Milestone 
+Milestone created, closed, opened, edited, or deleted.
+Member 
+Collaborator added to, removed from, or has changed permissions for a repository.
+Membership 
+Team membership added or removed.
+Merge queue entry 
+Merge Queue entry added
+Organization 
+Organization deleted, renamed, member invited, member added, or member removed.
+Public 
+Repository changes from private to public.
+Pull request 
+Pull request assigned, auto merge disabled, auto merge enabled, closed, converted to draft, demilestoned, dequeued, edited, enqueued, labeled, locked, milestoned, opened, ready for review, reopened, review request removed, review requested, synchronized, unassigned, unlabeled, or unlocked.
+Pull request review 
+Pull request review submitted, edited, or dismissed.
+Pull request review comment 
+Pull request diff comment created, edited, or deleted.
+Pull request review thread 
+A pull request review thread was resolved or unresolved.
+Push 
+Git push to a repository.
+Release 
+Release created, edited, published, unpublished, or deleted.
+Repository 
+Repository created, deleted, archived, unarchived, publicized, privatized, edited, renamed, or transferred.
+Repository dispatch 
+When a message is dispatched from a repository.
+Secret scanning alert 
+Secret scanning alert created, resolved, reopened, validated, publicly leaked, assigned, or unassigned.
+Secret scanning alert location 
+Secrets scanning alert location created.
+Secret scanning scan 
+Secrets scanning scan completed.
+Star 
+A star is created or deleted from a repository.
+Status 
+Commit status updated from the API.
+Team 
+Team is created, deleted, edited, or added to/removed from a repository.
+Team add 
+Team added or modified on a repository.
+Watch 
+User stars a repository.
+Workflow dispatch 
+A manual workflow run is requested.
+Workflow job 
+Workflow job queued, waiting, in progress, or completed on a repository.
+Workflow run 
+Workflow run requested or completed on a repository.

@@ -1,0 +1,8 @@
+{
+  "id": "29",
+  "subject": "Task 23: Code Quality & Final Verification",
+  "description": "Lint, format, type-check, coverage >= 95%",
+  "status": "completed",
+  "blocks": [],
+  "blockedBy": []
+}

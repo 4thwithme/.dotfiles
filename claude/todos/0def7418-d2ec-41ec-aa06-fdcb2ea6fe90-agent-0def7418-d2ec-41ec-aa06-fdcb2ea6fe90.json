@@ -1,0 +1,20 @@
+[
+  {
+    "content": "Check and fix initial currentSetupStep value when creating companySettings",
+    "status": "completed",
+    "priority": "high",
+    "id": "1"
+  },
+  {
+    "content": "Ensure step 1 completion sets currentSetupStep to 2",
+    "status": "completed",
+    "priority": "high",
+    "id": "2"
+  },
+  {
+    "content": "Test the complete flow with correct step progression",
+    "status": "completed",
+    "priority": "medium",
+    "id": "3"
+  }
+]

@@ -1,0 +1,22 @@
+[
+  {
+    "content": "Analyze current plan and database requirements",
+    "status": "completed",
+    "id": "1"
+  },
+  {
+    "content": "Create cold data migration for historical data (monthly aggregation)",
+    "status": "completed",
+    "id": "2"
+  },
+  {
+    "content": "Create hot data migration for recent data (weekly aggregation)",
+    "status": "completed",
+    "id": "3"
+  },
+  {
+    "content": "Add developerId field and connection to companySettings",
+    "status": "completed",
+    "id": "4"
+  }
+]

@@ -1,0 +1,20 @@
+[
+  {
+    "content": "Update developer data to show multiple organizations per developer",
+    "status": "pending",
+    "priority": "high",
+    "id": "1"
+  },
+  {
+    "content": "Modify UI to display multiple organizations for each developer",
+    "status": "pending",
+    "priority": "high",
+    "id": "2"
+  },
+  {
+    "content": "Update mock data to include developers with multiple org memberships",
+    "status": "pending",
+    "priority": "medium",
+    "id": "3"
+  }
+]

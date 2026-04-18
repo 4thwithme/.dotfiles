@@ -1,0 +1,62 @@
+[
+  {
+    "content": "Create database migration for trending_products table",
+    "status": "completed",
+    "priority": "high",
+    "id": "1"
+  },
+  {
+    "content": "Create trending module structure with interfaces and DTOs",
+    "status": "completed",
+    "priority": "high",
+    "id": "2"
+  },
+  {
+    "content": "Implement GA4 data processor service for stream processing JSONL files",
+    "status": "completed",
+    "priority": "high",
+    "id": "3"
+  },
+  {
+    "content": "Implement time-series decomposition service with mathematical functions",
+    "status": "completed",
+    "priority": "high",
+    "id": "4"
+  },
+  {
+    "content": "Implement forecasting service for 7-day predictions",
+    "status": "completed",
+    "priority": "high",
+    "id": "5"
+  },
+  {
+    "content": "Implement new products handler for items without history",
+    "status": "completed",
+    "priority": "medium",
+    "id": "6"
+  },
+  {
+    "content": "Implement trending storage service for database operations",
+    "status": "completed",
+    "priority": "high",
+    "id": "7"
+  },
+  {
+    "content": "Create CLI command for weekly trending generation",
+    "status": "completed",
+    "priority": "high",
+    "id": "8"
+  },
+  {
+    "content": "Run migration and test basic compilation",
+    "status": "in_progress",
+    "priority": "high",
+    "id": "9"
+  },
+  {
+    "content": "Test end-to-end with real GA4 data files",
+    "status": "pending",
+    "priority": "medium",
+    "id": "10"
+  }
+]

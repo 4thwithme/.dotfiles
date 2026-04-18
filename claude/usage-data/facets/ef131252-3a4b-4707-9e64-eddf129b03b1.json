@@ -1,0 +1,15 @@
+{
+  "underlying_goal": "Understand the difference between match_phrase and match in Elasticsearch",
+  "goal_categories": {
+    "knowledge_question": 1
+  },
+  "outcome": "fully_achieved",
+  "user_satisfaction_counts": {},
+  "claude_helpfulness": "very_helpful",
+  "session_type": "quick_question",
+  "friction_counts": {},
+  "friction_detail": "",
+  "primary_success": "good_explanations",
+  "brief_summary": "User asked about the difference between Elasticsearch match and match_phrase queries and received a clear, concise explanation.",
+  "session_id": "ef131252-3a4b-4707-9e64-eddf129b03b1"
+}

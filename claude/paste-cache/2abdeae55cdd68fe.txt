@@ -1,0 +1,24 @@
+  ERROR Maximum update depth exceeded. This can happen when a component repeatedly calls setState inside componentWillUpdate or componentDidUpdate. React limits the number of nested updates to prevent infinite
+       loops.
+
+ node_modules/react-reconciler/cjs/react-reconciler.development.js:4793:11
+
+ 4790:         throw (
+ 4791:           ((nestedPassiveUpdateCount = nestedUpdateCount = 0),
+ 4792:           (rootWithPassiveNestedUpdates = rootWithNestedUpdates = null),
+ 4793:           Error(
+ 4794:             "Maximum update depth exceeded. This can happen when a component repeatedly calls setState inside componentWillUpdate or componentDidUpdate. React limits the number of nested updates to prevent
+      infinite loops."
+ 4795:           ))
+ 4796:         );
+
+ - getRootForUpdatedFiber (node_modules/react-reconciler/cjs/react-reconciler.development.js:4793:11)
+ - enqueueConcurrentRenderForLane (node_modules/react-reconciler/cjs/react-reconciler.development.js:4757:14)
+ - forceStoreRerender (node_modules/react-reconciler/cjs/react-reconciler.development.js:5934:18)
+ - updateStoreInstance (node_modules/react-reconciler/cjs/react-reconciler.development.js:5914:39)
+ - Object.react_stack_bottom_frame (node_modules/react-reconciler/cjs/react-reconciler.development.js:17681:20)
+ - runWithFiberInDEV (node_modules/react-reconciler/cjs/react-reconciler.development.js:2505:30)
+ - commitHookEffectListMount (node_modules/react-reconciler/cjs/react-reconciler.development.js:10861:29)
+ - commitHookPassiveMountEffects (node_modules/react-reconciler/cjs/react-reconciler.development.js:10948:11)
+ - commitPassiveMountOnFiber (node_modules/react-reconciler/cjs/react-reconciler.development.js:12979:13)
+ - recursivelyTraversePassiveMountEffects (node_modules/react-reconciler/cjs/react-reconciler.development.js:12934:11)

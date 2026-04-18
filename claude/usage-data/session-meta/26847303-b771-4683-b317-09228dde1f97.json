@@ -1,0 +1,58 @@
+{
+  "session_id": "26847303-b771-4683-b317-09228dde1f97",
+  "project_path": "/Users/4thwithme/Documents/repo/recommendations-service",
+  "start_time": "2026-02-14T10:40:38.649Z",
+  "duration_minutes": 15,
+  "user_message_count": 7,
+  "assistant_message_count": 101,
+  "tool_counts": {
+    "Skill": 1,
+    "Read": 9,
+    "Glob": 5,
+    "Write": 3,
+    "Bash": 14,
+    "Edit": 11
+  },
+  "languages": {
+    "TypeScript": 23
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 828,
+  "output_tokens": 7168,
+  "first_prompt": "using /test-skill cover these files by tests   rest/neural-search                         |       0 |        0 |       0 |       0 |…",
+  "user_interruptions": 0,
+  "user_response_times": [
+    430.485,
+    430.485
+  ],
+  "tool_errors": 4,
+  "tool_error_categories": {
+    "Command Failed": 4
+  },
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 1078,
+  "lines_removed": 24,
+  "files_modified": 3,
+  "message_hours": [
+    11,
+    11,
+    11,
+    11,
+    11,
+    11,
+    11
+  ],
+  "user_message_timestamps": [
+    "2026-02-14T10:40:38.649Z",
+    "2026-02-14T10:40:38.645Z",
+    "2026-02-14T10:40:38.649Z",
+    "2026-02-14T10:40:58.909Z",
+    "2026-02-14T10:41:04.409Z",
+    "2026-02-14T10:53:32.166Z",
+    "2026-02-14T10:53:32.166Z"
+  ]
+}

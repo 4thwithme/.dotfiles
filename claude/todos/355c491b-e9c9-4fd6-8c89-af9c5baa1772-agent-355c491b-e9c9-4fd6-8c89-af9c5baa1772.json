@@ -1,0 +1,27 @@
+[
+  {
+    "content": "Implement parallel processing for all products (10 at a time)",
+    "status": "completed",
+    "id": "parallel-processing"
+  },
+  {
+    "content": "Calculate combined trending scores (70% confidence + 30% order count)",
+    "status": "completed",
+    "id": "trending-scores"
+  },
+  {
+    "content": "Find top 50 most trending products",
+    "status": "completed",
+    "id": "find-top-50"
+  },
+  {
+    "content": "Generate individual plots for top 50 products",
+    "status": "completed",
+    "id": "generate-plots"
+  },
+  {
+    "content": "Create final HTML page with all top 50 product links",
+    "status": "completed",
+    "id": "create-index-page"
+  }
+]

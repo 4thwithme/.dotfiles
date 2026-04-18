@@ -1,0 +1,155 @@
+> webapp-backend@0.0.1 code-quality-check
+> npm run lint && npm run format && npm run type-check
+
+
+> webapp-backend@0.0.1 lint
+> eslint "{src,apps,libs,test}/**/*.ts"
+
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/migrations/20260322120000_create_users_table.ts
+   9:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+  42:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/migrations/20260322120001_create_companies_table.ts
+   9:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+  37:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/migrations/20260322120002_create_company_members_table.ts
+  13:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+  64:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/migrations/20260322120003_create_oauth_accounts_table.ts
+   9:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+  55:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/migrations/20260322120004_create_invitations_table.ts
+  13:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+  68:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/migrations/20260414120000_create_github_installations_table.ts
+   9:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+  48:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/migrations/20260414120001_create_github_repos_table.ts
+  12:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+  51:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/migrations/20260416000000_create_github_contributors_table.ts
+  12:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+  52:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/migrations/20260416000001_create_github_commits_table.ts
+  13:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+  64:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/migrations/20260416000002_create_github_pull_requests_table.ts
+  13:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+  69:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/migrations/20260416000003_create_github_reviews_table.ts
+  13:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+  60:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/migrations/20260416000004_create_github_review_comments_table.ts
+  13:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+  60:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/migrations/20260416100000_create_jira_installations_table.ts
+   9:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+  47:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/migrations/20260416100001_create_jira_projects_table.ts
+  12:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+  52:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/migrations/20260416100002_create_jira_issues_table.ts
+  13:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+  62:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/migrations/20260416100003_create_jira_changelog_table.ts
+  13:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+  55:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/migrations/20260416100004_create_jira_worklogs_table.ts
+  13:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+  57:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/migrations/20260416100005_create_jira_sprints_table.ts
+  12:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+  53:8  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/modules/auth/guards/fastify-throttler.guard.ts
+  15:29  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/modules/github/github-event.processor.ts
+   61:15  warning  Custom functions must use a single object destructuring parameter                                   custom-rules/require-object-params
+  332:8   warning  Unnecessary conditional, expected left-hand side of `??` operator to be possibly null or undefined  @typescript-eslint/no-unnecessary-condition
+  332:34  warning  Unnecessary optional chain on a non-nullish value                                                   @typescript-eslint/no-unnecessary-condition
+  339:8   warning  Unnecessary conditional, expected left-hand side of `??` operator to be possibly null or undefined  @typescript-eslint/no-unnecessary-condition
+  339:36  warning  Unnecessary optional chain on a non-nullish value                                                   @typescript-eslint/no-unnecessary-condition
+  390:10  warning  Unnecessary conditional, value is always truthy                                                     @typescript-eslint/no-unnecessary-condition
+  441:10  warning  Unnecessary conditional, value is always truthy                                                     @typescript-eslint/no-unnecessary-condition
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/modules/jira/jira-api.service.ts
+   17:9   error    Replace `·JIRA_CLIENT_ID,·JIRA_CLIENT_SECRET,·JIRA_CALLBACK_URL·` with `⏎↹JIRA_CLIENT_ID,⏎↹JIRA_CLIENT_SECRET,⏎↹JIRA_CALLBACK_URL,⏎`  prettier/prettier
+   21:32  error    Replace `·` with `⏎↹`                                                                                                                 prettier/prettier
+   33:22  error    Replace `⏎↹↹code,⏎↹}:·{⏎↹↹code:·string;⏎↹` with `·code·}:·{·code:·string·`                                                            prettier/prettier
+  112:10  warning  Unnecessary conditional, value is always truthy                                                                                       @typescript-eslint/no-unnecessary-condition
+  149:16  error    Replace `·'issuetype',·'status',·` with `⏎↹↹↹↹↹'issuetype',⏎↹↹↹↹↹'status',⏎↹↹↹↹↹`                                                     prettier/prettier
+  150:17  error    Replace `·'reporter',·` with `⏎↹↹↹↹↹'reporter',⏎↹↹↹↹↹`                                                                                prettier/prettier
+  151:23  error    Replace `·'created',·` with `⏎↹↹↹↹↹'created',⏎↹↹↹↹↹`                                                                                  prettier/prettier
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/modules/jira/jira-install.service.ts
+    4:1   error  `@nestjs/bullmq` import should occur before import of `@nestjs/common`                                                                                                                          import/order
+  119:21  error  Replace ``Created·jira·installation·${installation._id}·for·company·${stateData.companyId}`` with `⏎↹↹↹`Created·jira·installation·${installation._id}·for·company·${stateData.companyId}`,⏎↹↹`  prettier/prettier
+  135:21  error  Replace ``Disconnected·jira·installation·${installationDbId}·for·company·${companyId}`` with `⏎↹↹↹`Disconnected·jira·installation·${installationDbId}·for·company·${companyId}`,⏎↹↹`            prettier/prettier
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/modules/jira/jira-processor.service.ts
+  20:15  warning  Custom functions must use a single object destructuring parameter  custom-rules/require-object-params
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/modules/jira/jira-sync.service.ts
+   32:26  error    Replace `·installationDbId·}:·{·installationDbId:·string·` with `⏎↹↹installationDbId,⏎↹}:·{⏎↹↹installationDbId:·string;⏎↹`                                                              prettier/prettier
+   98:17  error    Prefer using nullish coalescing operator (`??`) instead of a ternary expression, as it is simpler to read                                                                               @typescript-eslint/prefer-nullish-coalescing
+  122:21  error    Replace ``Sync·complete·for·project·${projectKey}·in·installation·${installationDbId}`` with `⏎↹↹↹`Sync·complete·for·project·${projectKey}·in·installation·${installationDbId}`,⏎↹↹`    prettier/prettier
+  136:21  error    Replace ``Triggered·discover_projects·for·${installations.length}·active·installations`` with `⏎↹↹↹`Triggered·discover_projects·for·${installations.length}·active·installations`,⏎↹↹`  prettier/prettier
+  155:10  warning  Unnecessary conditional, value is always truthy                                                                                                                                         @typescript-eslint/no-unnecessary-condition
+  213:18  error    Array type using 'Array<T>' is forbidden. Use 'T[]' instead                                                                                                                             @typescript-eslint/array-type
+  308:12  warning  Unnecessary conditional, value is always truthy                                                                                                                                         @typescript-eslint/no-unnecessary-condition
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/modules/jira/jira.controller.ts
+  84:16  error  Replace `·status:·HttpStatus.NO_CONTENT,·description:·'Installation·disconnected'·` with `⏎↹↹status:·HttpStatus.NO_CONTENT,⏎↹↹description:·'Installation·disconnected',⏎↹`  prettier/prettier
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/modules/oauth-account/oauth-account.model.ts
+  137:35  warning  Unnecessary conditional, the types have no overlap  @typescript-eslint/no-unnecessary-condition
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/unit-tests/jira-api.service.unit-spec.ts
+   89:30  error  Replace `·id:·expiredInstallation._id,·accessToken:·'new-token'·` with `⏎↹↹↹↹↹id:·expiredInstallation._id,⏎↹↹↹↹↹accessToken:·'new-token',⏎↹↹↹↹`                                                                                                             prettier/prettier
+  117:13  error  Replace `·values:·[{·id:·'1',·key:·'ENG',·name:·'Engineering',·projectTypeKey:·'software'·}],·isLast:·false·` with `⏎↹↹↹↹↹↹values:·[⏎↹↹↹↹↹↹↹{·id:·'1',·key:·'ENG',·name:·'Engineering',·projectTypeKey:·'software'·},⏎↹↹↹↹↹↹],⏎↹↹↹↹↹↹isLast:·false,⏎↹↹↹↹↹`  prettier/prettier
+  120:13  error  Replace `·values:·[{·id:·'2',·key:·'OPS',·name:·'Ops',·projectTypeKey:·'software'·}],·isLast:·true·` with `⏎↹↹↹↹↹↹values:·[{·id:·'2',·key:·'OPS',·name:·'Ops',·projectTypeKey:·'software'·}],⏎↹↹↹↹↹↹isLast:·true,⏎↹↹↹↹↹`                                    prettier/prettier
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/unit-tests/jira-install.service.unit-spec.ts
+    2:1   error  `@nestjs/bullmq` import should occur before import of `@nestjs/common`                                              import/order
+  108:44  error  Replace `·companyId:·'company-1',·userId:·'user-1'·` with `⏎↹↹↹↹companyId:·'company-1',⏎↹↹↹↹userId:·'user-1',⏎↹↹↹`  prettier/prettier
+  123:44  error  Replace `·companyId:·'company-1',·userId:·'user-1'·` with `⏎↹↹↹↹companyId:·'company-1',⏎↹↹↹↹userId:·'user-1',⏎↹↹↹`  prettier/prettier
+  136:49  error  Replace `·code:·'auth-code',·state:·'valid-state'·` with `⏎↹↹↹↹code:·'auth-code',⏎↹↹↹↹state:·'valid-state',⏎↹↹↹`    prettier/prettier
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/unit-tests/jira-processor.service.unit-spec.ts
+  15:30  error  Replace `·as·unknown·as·Job)` with `)·as·unknown·as·Job`                                                                                                                                                prettier/prettier
+  24:16  error  Replace `⏎↹↹↹↹JiraProcessor,⏎↹↹↹↹{·provide:·JiraSyncService,·useValue:·mockSyncService·},⏎↹↹↹` with `JiraProcessor,·{·provide:·JiraSyncService,·useValue:·mockSyncService·}`                            prettier/prettier
+  85:16  error  Replace `⏎↹↹↹processor.process(makeJob('poll_installations',·{})),⏎↹↹).rejects.toThrow('sync·error'` with `processor.process(makeJob('poll_installations',·{}))).rejects.toThrow(⏎↹↹↹'sync·error',⏎↹↹`  prettier/prettier
+
+/Users/4thwithme/Documents/repo/no-name-proj/backend/src/unit-tests/jira-sync.service.unit-spec.ts
+  254:59  error    Replace `·issues:·[mockIssue],·total:·1·` with `⏎↹↹↹↹issues:·[mockIssue],⏎↹↹↹↹total:·1,⏎↹↹↹`                                                                                                                                                                                                                                        prettier/prettier
+  342:59  error    Replace `·issues:·[mockIssue],·total:·1·` with `⏎↹↹↹↹issues:·[mockIssue],⏎↹↹↹↹total:·1,⏎↹↹↹`                                                                                                                                                                                                                                        prettier/prettier
+  379:16  error    Replace `⏎↹↹↹↹↹↹↹↹{·field:·'status',·fromString:·'To·Do',·toString:·'In·Progress'·},⏎↹↹↹↹↹↹↹` with `{·field:·'status',·fromString:·'To·Do',·toString:·'In·Progress'·}`                                                                                                                                                              prettier/prettier
+  390:59  error    Replace `·issues:·[mockIssue],·total:·1·` with `⏎↹↹↹↹issues:·[mockIssue],⏎↹↹↹↹total:·1,⏎↹↹↹`                                                                                                                                                                                                                                        prettier/prettier
+  406:32  error    Replace `·field:·'status',·from_value:·'To·Do',·to_value:·'In·Progress'·` with `⏎↹↹↹↹↹↹↹field:·'status',⏎↹↹↹↹↹↹↹from_value:·'To·Do',⏎↹↹↹↹↹↹↹to_value:·'In·Progress',⏎↹↹↹↹↹↹`                                                                                                                                                        prettier/prettier
+  459:55  error    Replace `·issues:·[],·total:·0,·startAt:·0,·maxResults:·100·` with `⏎↹↹↹↹issues:·[],⏎↹↹↹↹total:·0,⏎↹↹↹↹startAt:·0,⏎↹↹↹↹maxResults:·100,⏎↹↹↹`                                                                                                                                                                                        prettier/prettier
+  463:31  error    Replace `·installationDbId:·mockInstallation._id,·projectDbId:·mockProject._id,·projectKey:·mockProject.project_key,·projectId:·mockProject.project_id·` with `⏎↹↹↹↹installationDbId:·mockInstallation._id,⏎↹↹↹↹projectDbId:·mockProject._id,⏎↹↹↹↹projectKey:·mockProject.project_key,⏎↹↹↹↹projectId:·mockProject.project_id,⏎↹↹↹`  prettier/prettier
+  465:76  error    Replace `·{·jql:·string·}·` with `⏎↹↹↹↹|·{·jql:·string·}⏎↹↹↹↹`                                                                                                                                                                                                                                                                      prettier/prettier
+  469:39  warning  Unnecessary optional chain on a non-nullish value                                                                                                                                                                                                                                                                                   @typescript-eslint/no-unnecessary-condition
+  469:47  error    Replace `/updated\s*>=\s*"(\d{4}-\d{2}-\d{2})"/` with `⏎↹↹↹↹/updated\s*>=\s*"(\d{4}-\d{2}-\d{2})"/,⏎↹↹↹`                                                                                                                                                                                                                            prettier/prettier
+  487:15  error    Replace `{·id:·10,·name:·'Sprint·1',·state:·'active',·startDate:·null,·endDate:·null,·completeDate:·null·}` with `⏎↹↹↹↹↹↹{⏎↹↹↹↹↹↹↹id:·10,⏎↹↹↹↹↹↹↹name:·'Sprint·1',⏎↹↹↹↹↹↹↹state:·'active',⏎↹↹↹↹↹↹↹startDate:·null,⏎↹↹↹↹↹↹↹endDate:·null,⏎↹↹↹↹↹↹↹completeDate:·null,⏎↹↹↹↹↹↹},⏎↹↹↹↹↹`                                                 prettier/prettier
+
+✖ 85 problems (35 errors, 50 warnings)
+  34 errors and 0 warnings potentially fixable with the `--fix` option.

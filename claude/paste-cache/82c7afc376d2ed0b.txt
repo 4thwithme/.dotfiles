@@ -1,0 +1,142 @@
+Summary of all failing tests
+ FAIL  test/opensearch/opensearch-neural.service.e2e-spec.ts (16.655 s)
+  ● OpensearchNeuralService (e2e) › bulkIndexProducts › should bulk index products successfully
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 2
+    Received: 0
+
+      226 |             });
+      227 |
+    > 228 |             expect(result.indexed).toBe(2);
+          |                                    ^
+      229 |             expect(result.errors).toBe(0);
+      230 |         });
+      231 |
+
+      at Object.<anonymous> (test/opensearch/opensearch-neural.service.e2e-spec.ts:228:27)
+
+  ● OpensearchNeuralService (e2e) › bulkIndexProducts › should transform style with null values correctly
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 1
+    Received: 0
+
+      245 |             });
+      246 |
+    > 247 |             expect(result.indexed).toBe(1);
+          |                                    ^
+      248 |             expect(result.errors).toBe(0);
+      249 |         });
+      250 |
+
+      at Object.<anonymous> (test/opensearch/opensearch-neural.service.e2e-spec.ts:247:27)
+
+  ● OpensearchNeuralService (e2e) › bulkIndexProducts › should transform no_minimum boolean to byte
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 1
+    Received: 0
+
+      257 |             });
+      258 |
+    > 259 |             expect(result.indexed).toBe(1);
+          |                                    ^
+      260 |             expect(result.errors).toBe(0);
+      261 |         });
+      262 |
+
+      at Object.<anonymous> (test/opensearch/opensearch-neural.service.e2e-spec.ts:259:27)
+
+  ● OpensearchNeuralService (e2e) › bulkIndexProducts › should handle condensed_features as string
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 1
+    Received: 0
+
+      271 |             });
+      272 |
+    > 273 |             expect(result.indexed).toBe(1);
+          |                                    ^
+      274 |             expect(result.errors).toBe(0);
+      275 |         });
+      276 |
+
+      at Object.<anonymous> (test/opensearch/opensearch-neural.service.e2e-spec.ts:273:27)
+
+  ● OpensearchNeuralService (e2e) › bulkIndexProducts › should handle condensed_features as object
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 1
+    Received: 0
+
+      288 |             });
+      289 |
+    > 290 |             expect(result.indexed).toBe(1);
+          |                                    ^
+      291 |             expect(result.errors).toBe(0);
+      292 |         });
+      293 |
+
+      at Object.<anonymous> (test/opensearch/opensearch-neural.service.e2e-spec.ts:290:27)
+
+  ● OpensearchNeuralService (e2e) › bulkIndexProducts › should use embedding_text when provided
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 1
+    Received: 0
+
+      302 |             });
+      303 |
+    > 304 |             expect(result.indexed).toBe(1);
+          |                                    ^
+      305 |             expect(result.errors).toBe(0);
+      306 |         });
+      307 |
+
+      at Object.<anonymous> (test/opensearch/opensearch-neural.service.e2e-spec.ts:304:27)
+
+  ● OpensearchNeuralService (e2e) › bulkIndexProducts › should build combined text when embedding_text is null
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 1
+    Received: 0
+
+      314 |             });
+      315 |
+    > 316 |             expect(result.indexed).toBe(1);
+          |                                    ^
+      317 |             expect(result.errors).toBe(0);
+      318 |         });
+      319 |     });
+
+      at Object.<anonymous> (test/opensearch/opensearch-neural.service.e2e-spec.ts:316:27)
+
+ FAIL  test/opensearch/opensearch.service.e2e-spec.ts
+  ● OpensearchService (e2e) › Bulk Indexing › should bulk index products
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 2
+    Received: 0
+
+      114 |             });
+      115 |
+    > 116 |             expect(result.indexed).toBe(2);
+          |                                    ^
+      117 |             expect(result.errors).toBe(0);
+      118 |         });
+      119 |
+
+      at Object.<anonymous> (test/opensearch/opensearch.service.e2e-spec.ts:116:27)
+
+
+Test Suites: 2 failed, 50 passed, 52 total
+Tests:       8 failed, 8 skipped, 1499 passed, 1515 total

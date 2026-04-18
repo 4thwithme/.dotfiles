@@ -1,0 +1,20 @@
+[
+  {
+    "content": "Rename directory from 'evaluate-model' to 'evaluator-related-products'",
+    "status": "completed",
+    "priority": "high",
+    "id": "1"
+  },
+  {
+    "content": "Search for all references to 'evaluate-model' directory across the repo",
+    "status": "completed",
+    "priority": "high",
+    "id": "2"
+  },
+  {
+    "content": "Update all references to use new directory name 'evaluator-related-products'",
+    "status": "completed",
+    "priority": "high",
+    "id": "3"
+  }
+]

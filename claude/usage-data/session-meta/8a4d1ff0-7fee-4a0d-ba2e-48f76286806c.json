@@ -1,0 +1,53 @@
+{
+  "session_id": "8a4d1ff0-7fee-4a0d-ba2e-48f76286806c",
+  "project_path": "/Users/4thwithme/Documents/repo/recommendations-service",
+  "start_time": "2026-02-17T21:46:22.975Z",
+  "duration_minutes": 26,
+  "user_message_count": 7,
+  "assistant_message_count": 35,
+  "tool_counts": {
+    "Glob": 5,
+    "Read": 8,
+    "Bash": 6
+  },
+  "languages": {
+    "TypeScript": 8
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 317,
+  "output_tokens": 3685,
+  "first_prompt": "bro we have problems on production .... GC is going to stack, also apdex score is decreasing  avg resp tie is increasing  this is our photos from new relic. Throughput is 1100.. and almost all request…",
+  "user_interruptions": 0,
+  "user_response_times": [
+    312.219,
+    239.067
+  ],
+  "tool_errors": 0,
+  "tool_error_categories": {},
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 0,
+  "lines_removed": 0,
+  "files_modified": 0,
+  "message_hours": [
+    22,
+    22,
+    22,
+    22,
+    22,
+    22,
+    23
+  ],
+  "user_message_timestamps": [
+    "2026-02-17T21:46:22.975Z",
+    "2026-02-17T21:46:22.974Z",
+    "2026-02-17T21:46:22.975Z",
+    "2026-02-17T21:46:36.934Z",
+    "2026-02-17T21:46:36.934Z",
+    "2026-02-17T21:54:16.638Z",
+    "2026-02-17T22:00:34.112Z"
+  ]
+}

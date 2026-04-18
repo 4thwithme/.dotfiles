@@ -1,0 +1,7 @@
+[
+  {
+    "content": "Fix failing trending reason test and achieve 95% branch coverage for trending-products.service.ts",
+    "status": "in_progress",
+    "id": "1"
+  }
+]

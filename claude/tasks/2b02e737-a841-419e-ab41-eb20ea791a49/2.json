@@ -1,0 +1,9 @@
+{
+  "id": "2",
+  "subject": "Get CLAUDE.md files",
+  "description": "Find relevant CLAUDE.md files for the changed directories",
+  "activeForm": "Finding CLAUDE.md files",
+  "status": "pending",
+  "blocks": [],
+  "blockedBy": []
+}

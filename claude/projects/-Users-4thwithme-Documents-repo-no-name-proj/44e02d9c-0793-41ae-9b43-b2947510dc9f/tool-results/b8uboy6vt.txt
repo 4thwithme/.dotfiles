@@ -1,0 +1,588 @@
+[31m[Nest] 25836  - [39m04/14/2026, 1:57:35 AM [31m  ERROR[39m [38;5;3m[AuthController.githubCallback] [39m[31mFailed after 0.54ms: Invalid or expired OAuth state[39m
+[31m[Nest] 25836  - [39m04/14/2026, 1:57:35 AM [31m  ERROR[39m [38;5;3m[AuthController.githubCallback] [39m[31mFailed after 0.54ms: Invalid or expired OAuth state[39m
+UnauthorizedException: Invalid or expired OAuth state
+    at AuthService.handleCallback (/Users/4thwithme/Documents/repo/no-name-proj/backend/src/modules/auth/auth.service.ts:111:10)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at AuthController.githubCallback (/Users/4thwithme/Documents/repo/no-name-proj/backend/src/modules/auth/auth.controller.ts:86:18)
+    at AuthController.descriptor.value (/Users/4thwithme/Documents/repo/no-name-proj/backend/src/decorators/log-execution.decorator.ts:149:20)
+    at /Users/4thwithme/Documents/repo/no-name-proj/backend/node_modules/@nestjs/core/router/router-execution-context.js:46:28
+    at Object.<anonymous> (/Users/4thwithme/Documents/repo/no-name-proj/backend/node_modules/@nestjs/core/router/router-proxy.js:9:17)
+UnauthorizedException: Invalid or expired OAuth state
+    at AuthService.handleCallback (/Users/4thwithme/Documents/repo/no-name-proj/backend/src/modules/auth/auth.service.ts:111:10)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at AuthController.githubCallback (/Users/4thwithme/Documents/repo/no-name-proj/backend/src/modules/auth/auth.controller.ts:86:18)
+    at AuthController.descriptor.value (/Users/4thwithme/Documents/repo/no-name-proj/backend/src/decorators/log-execution.decorator.ts:149:20)
+    at /Users/4thwithme/Documents/repo/no-name-proj/backend/node_modules/@nestjs/core/router/router-execution-context.js:46:28
+    at Object.<anonymous> (/Users/4thwithme/Documents/repo/no-name-proj/backend/node_modules/@nestjs/core/router/router-proxy.js:9:17)
+[31m[Nest] 25836  - [39m04/14/2026, 1:57:35 AM [31m  ERROR[39m [38;5;3m[UserModel] [39m[31mFailed to create user: insert into "users" ("_id", "avatar_url", "created_at", "email", "name", "updated_at") values ($1, $2, CURRENT_TIMESTAMP, $3, $4, CURRENT_TIMESTAMP) returning * - duplicate key value violates unique constraint "users_email_unique"[39m
+[31m[Nest] 25836  - [39m04/14/2026, 1:57:35 AM [31m  ERROR[39m [38;5;3m[UserModel] [39m[31mFailed to create user: insert into "users" ("_id", "avatar_url", "created_at", "email", "name", "updated_at") values ($1, $2, CURRENT_TIMESTAMP, $3, $4, CURRENT_TIMESTAMP) returning * - duplicate key value violates unique constraint "users_email_unique"[39m
+[31m[Nest] 25836  - [39m04/14/2026, 1:57:35 AM [31m  ERROR[39m [38;5;3m[AuthController.githubCallback] [39m[31mFailed after 2.72ms: insert into "users" ("_id", "avatar_url", "created_at", "email", "name", "updated_at") values ($1, $2, CURRENT_TIMESTAMP, $3, $4, CURRENT_TIMESTAMP) returning * - duplicate key value violates unique constraint "users_email_unique"[39m
+error: insert into "users" ("_id", "avatar_url", "created_at", "email", "name", "updated_at") values ($1, $2, CURRENT_TIMESTAMP, $3, $4, CURRENT_TIMESTAMP) returning * - duplicate key value violates unique constraint "users_email_unique"
+    at parseErrorMessage (/Users/4thwithme/Documents/repo/no-name-proj/backend/node_modules/pg-protocol/src/parser.ts:394:9)
+    at Parser.handlePacket (/Users/4thwithme/Documents/repo/no-name-proj/backend/node_modules/pg-protocol/src/parser.ts:212:19)
+    at Parser.parse (/Users/4thwithme/Documents/repo/no-name-proj/backend/node_modules/pg-protocol/src/parser.ts:105:30)
+    at Socket.<anonymous> (/Users/4thwithme/Documents/repo/no-name-proj/backend/node_modules/pg-protocol/src/index.ts:7:48)
+    at Socket.emit (node:events:508:28)
+    at addChunk (node:internal/streams/readable:559:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+    at Socket.Readable.push (node:internal/streams/readable:390:5)
+    at TCP.onStreamRead (node:internal/stream_base_commons:189:23)
+[31m[Nest] 25836  - [39m04/14/2026, 1:57:35 AM [31m  ERROR[39m [38;5;3m[AuthController.githubCallback] [39m[31mFailed after 2.72ms: insert into "users" ("_id", "avatar_url", "created_at", "email", "name", "updated_at") values ($1, $2, CURRENT_TIMESTAMP, $3, $4, CURRENT_TIMESTAMP) returning * - duplicate key value violates unique constraint "users_email_unique"[39m
+error: insert into "users" ("_id", "avatar_url", "created_at", "email", "name", "updated_at") values ($1, $2, CURRENT_TIMESTAMP, $3, $4, CURRENT_TIMESTAMP) returning * - duplicate key value violates unique constraint "users_email_unique"
+    at parseErrorMessage (/Users/4thwithme/Documents/repo/no-name-proj/backend/node_modules/pg-protocol/src/parser.ts:394:9)
+    at Parser.handlePacket (/Users/4thwithme/Documents/repo/no-name-proj/backend/node_modules/pg-protocol/src/parser.ts:212:19)
+    at Parser.parse (/Users/4thwithme/Documents/repo/no-name-proj/backend/node_modules/pg-protocol/src/parser.ts:105:30)
+    at Socket.<anonymous> (/Users/4thwithme/Documents/repo/no-name-proj/backend/node_modules/pg-protocol/src/index.ts:7:48)
+    at Socket.emit (node:events:508:28)
+    at addChunk (node:internal/streams/readable:559:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+    at Socket.Readable.push (node:internal/streams/readable:390:5)
+    at TCP.onStreamRead (node:internal/stream_base_commons:189:23)
+[31m[Nest] 25836  - [39m04/14/2026, 1:57:35 AM [31m  ERROR[39m [38;5;3m[ExceptionsHandler] [39merror: insert into "users" ("_id", "avatar_url", "created_at", "email", "name", "updated_at") values ($1, $2, CURRENT_TIMESTAMP, $3, $4, CURRENT_TIMESTAMP) returning * - duplicate key value violates unique constraint "users_email_unique"
+    at parseErrorMessage [90m(/Users/4thwithme/Documents/repo/no-name-proj/backend/[39mnode_modules/[4mpg-protocol[24m/src/parser.ts:394:9[90m)[39m
+    at Parser.handlePacket [90m(/Users/4thwithme/Documents/repo/no-name-proj/backend/[39mnode_modules/[4mpg-protocol[24m/src/parser.ts:212:19[90m)[39m
+    at Parser.parse [90m(/Users/4thwithme/Documents/repo/no-name-proj/backend/[39mnode_modules/[4mpg-protocol[24m/src/parser.ts:105:30[90m)[39m
+    at Socket.<anonymous> [90m(/Users/4thwithme/Documents/repo/no-name-proj/backend/[39mnode_modules/[4mpg-protocol[24m/src/index.ts:7:48[90m)[39m
+[90m    at Socket.emit (node:events:508:28)[39m
+[90m    at addChunk (node:internal/streams/readable:559:12)[39m
+[90m    at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)[39m
+[90m    at Socket.Readable.push (node:internal/streams/readable:390:5)[39m
+[90m    at TCP.onStreamRead (node:internal/stream_base_commons:189:23)[39m {
+  length: [33m255[39m,
+  severity: [32m'ERROR'[39m,
+  code: [32m'23505'[39m,
+  detail: [32m'Key (email)=(existing-17cce430-9966-421d-a74b-c71b7c7dab32@example.com) already exists.'[39m,
+  hint: [90mundefined[39m,
+  position: [90mundefined[39m,
+  internalPosition: [90mundefined[39m,
+  internalQuery: [90mundefined[39m,
+  where: [90mundefined[39m,
+  schema: [32m'public'[39m,
+  table: [32m'users'[39m,
+  column: [90mundefined[39m,
+  dataType: [90mundefined[39m,
+  constraint: [32m'users_email_unique'[39m,
+  file: [32m'nbtinsert.c'[39m,
+  line: [32m'666'[39m,
+  routine: [32m'_bt_check_unique'[39m
+}
+[31m[Nest] 25836  - [39m04/14/2026, 1:57:35 AM [31m  ERROR[39m [38;5;3m[ExceptionsHandler] [39merror: insert into "users" ("_id", "avatar_url", "created_at", "email", "name", "updated_at") values ($1, $2, CURRENT_TIMESTAMP, $3, $4, CURRENT_TIMESTAMP) returning * - duplicate key value violates unique constraint "users_email_unique"
+    at parseErrorMessage [90m(/Users/4thwithme/Documents/repo/no-name-proj/backend/[39mnode_modules/[4mpg-protocol[24m/src/parser.ts:394:9[90m)[39m
+    at Parser.handlePacket [90m(/Users/4thwithme/Documents/repo/no-name-proj/backend/[39mnode_modules/[4mpg-protocol[24m/src/parser.ts:212:19[90m)[39m
+    at Parser.parse [90m(/Users/4thwithme/Documents/repo/no-name-proj/backend/[39mnode_modules/[4mpg-protocol[24m/src/parser.ts:105:30[90m)[39m
+    at Socket.<anonymous> [90m(/Users/4thwithme/Documents/repo/no-name-proj/backend/[39mnode_modules/[4mpg-protocol[24m/src/index.ts:7:48[90m)[39m
+[90m    at Socket.emit (node:events:508:28)[39m
+[90m    at addChunk (node:internal/streams/readable:559:12)[39m
+[90m    at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)[39m
+[90m    at Socket.Readable.push (node:internal/streams/readable:390:5)[39m
+[90m    at TCP.onStreamRead (node:internal/stream_base_commons:189:23)[39m {
+  length: [33m255[39m,
+  severity: [32m'ERROR'[39m,
+  code: [32m'23505'[39m,
+  detail: [32m'Key (email)=(existing-17cce430-9966-421d-a74b-c71b7c7dab32@example.com) already exists.'[39m,
+  hint: [90mundefined[39m,
+  position: [90mundefined[39m,
+  internalPosition: [90mundefined[39m,
+  internalQuery: [90mundefined[39m,
+  where: [90mundefined[39m,
+  schema: [32m'public'[39m,
+  table: [32m'users'[39m,
+  column: [90mundefined[39m,
+  dataType: [90mundefined[39m,
+  constraint: [32m'users_email_unique'[39m,
+  file: [32m'nbtinsert.c'[39m,
+  line: [32m'666'[39m,
+  routine: [32m'_bt_check_unique'[39m
+}
+[31m[Nest] 25836  - [39m04/14/2026, 1:57:35 AM [31m  ERROR[39m [38;5;3m[AuthController.googleCallback] [39m[31mFailed after 0.34ms: Invalid or expired OAuth state[39m
+[31m[Nest] 25836  - [39m04/14/2026, 1:57:35 AM [31m  ERROR[39m [38;5;3m[AuthController.googleCallback] [39m[31mFailed after 0.34ms: Invalid or expired OAuth state[39m
+UnauthorizedException: Invalid or expired OAuth state
+    at AuthService.handleCallback (/Users/4thwithme/Documents/repo/no-name-proj/backend/src/modules/auth/auth.service.ts:111:10)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at AuthController.googleCallback (/Users/4thwithme/Documents/repo/no-name-proj/backend/src/modules/auth/auth.controller.ts:123:18)
+    at AuthController.descriptor.value (/Users/4thwithme/Documents/repo/no-name-proj/backend/src/decorators/log-execution.decorator.ts:149:20)
+    at /Users/4thwithme/Documents/repo/no-name-proj/backend/node_modules/@nestjs/core/router/router-execution-context.js:46:28
+    at Object.<anonymous> (/Users/4thwithme/Documents/repo/no-name-proj/backend/node_modules/@nestjs/core/router/router-proxy.js:9:17)
+UnauthorizedException: Invalid or expired OAuth state
+    at AuthService.handleCallback (/Users/4thwithme/Documents/repo/no-name-proj/backend/src/modules/auth/auth.service.ts:111:10)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at AuthController.googleCallback (/Users/4thwithme/Documents/repo/no-name-proj/backend/src/modules/auth/auth.controller.ts:123:18)
+    at AuthController.descriptor.value (/Users/4thwithme/Documents/repo/no-name-proj/backend/src/decorators/log-execution.decorator.ts:149:20)
+    at /Users/4thwithme/Documents/repo/no-name-proj/backend/node_modules/@nestjs/core/router/router-execution-context.js:46:28
+    at Object.<anonymous> (/Users/4thwithme/Documents/repo/no-name-proj/backend/node_modules/@nestjs/core/router/router-proxy.js:9:17)
+[31m[Nest] 25836  - [39m04/14/2026, 1:57:35 AM [31m  ERROR[39m [38;5;3m[AuthController.exchangeToken] [39m[31mFailed after 0.56ms: Invalid or expired auth code[39m
+UnauthorizedException: Invalid or expired auth code
+    at AuthService.exchangeCode (/Users/4thwithme/Documents/repo/no-name-proj/backend/src/modules/auth/auth.service.ts:223:10)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at AuthController.exchangeToken (/Users/4thwithme/Documents/repo/no-name-proj/backend/src/modules/auth/auth.controller.ts:153:18)
+    at AuthController.descriptor.value (/Users/4thwithme/Documents/repo/no-name-proj/backend/src/decorators/log-execution.decorator.ts:149:20)
+    at /Users/4thwithme/Documents/repo/no-name-proj/backend/node_modules/@nestjs/core/router/router-execution-context.js:46:28
+    at Object.<anonymous> (/Users/4thwithme/Documents/repo/no-name-proj/backend/node_modules/@nestjs/core/router/router-proxy.js:9:17)
+[31m[Nest] 25836  - [39m04/14/2026, 1:57:35 AM [31m  ERROR[39m [38;5;3m[AuthController.exchangeToken] [39m[31mFailed after 0.56ms: Invalid or expired auth code[39m
+UnauthorizedException: Invalid or expired auth code
+    at AuthService.exchangeCode (/Users/4thwithme/Documents/repo/no-name-proj/backend/src/modules/auth/auth.service.ts:223:10)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at AuthController.exchangeToken (/Users/4thwithme/Documents/repo/no-name-proj/backend/src/modules/auth/auth.controller.ts:153:18)
+    at AuthController.descriptor.value (/Users/4thwithme/Documents/repo/no-name-proj/backend/src/decorators/log-execution.decorator.ts:149:20)
+    at /Users/4thwithme/Documents/repo/no-name-proj/backend/node_modules/@nestjs/core/router/router-execution-context.js:46:28
+    at Object.<anonymous> (/Users/4thwithme/Documents/repo/no-name-proj/backend/node_modules/@nestjs/core/router/router-proxy.js:9:17)
+[31m[Nest] 25836  - [39m04/14/2026, 1:57:35 AM [31m  ERROR[39m [38;5;3m[AuthController.refresh] [39m[31mFailed after 0.05ms: No refresh token[39m
+[31m[Nest] 25836  - [39m04/14/2026, 1:57:35 AM [31m  ERROR[39m [38;5;3m[AuthController.refresh] [39m[31mFailed after 0.05ms: No refresh token[39m
+UnauthorizedException: No refresh token
+    at AuthController.refresh (/Users/4thwithme/Documents/repo/no-name-proj/backend/src/modules/auth/auth.controller.ts:196:28)
+    at AuthController.descriptor.value (/Users/4thwithme/Documents/repo/no-name-proj/backend/src/decorators/log-execution.decorator.ts:149:41)
+    at /Users/4thwithme/Documents/repo/no-name-proj/backend/node_modules/@nestjs/core/router/router-execution-context.js:38:29
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at /Users/4thwithme/Documents/repo/no-name-proj/backend/node_modules/@nestjs/core/router/router-execution-context.js:46:28
+    at Object.<anonymous> (/Users/4thwithme/Documents/repo/no-name-proj/backend/node_modules/@nestjs/core/router/router-proxy.js:9:17)
+UnauthorizedException: No refresh token
+    at AuthController.refresh (/Users/4thwithme/Documents/repo/no-name-proj/backend/src/modules/auth/auth.controller.ts:196:28)
+    at AuthController.descriptor.value (/Users/4thwithme/Documents/repo/no-name-proj/backend/src/decorators/log-execution.decorator.ts:149:41)
+    at /Users/4thwithme/Documents/repo/no-name-proj/backend/node_modules/@nestjs/core/router/router-execution-context.js:38:29
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at /Users/4thwithme/Documents/repo/no-name-proj/backend/node_modules/@nestjs/core/router/router-execution-context.js:46:28
+    at Object.<anonymous> (/Users/4thwithme/Documents/repo/no-name-proj/backend/node_modules/@nestjs/core/router/router-proxy.js:9:17)
+[31m[Nest] 25836  - [39m04/14/2026, 1:57:35 AM [31m  ERROR[39m [38;5;3m[AuthController.refresh] [39m[31mFailed after 0.47ms: Invalid or expired refresh token[39m
+[31m[Nest] 25836  - [39m04/14/2026, 1:57:35 AM [31m  ERROR[39m [38;5;3m[AuthController.refresh] [39m[31mFailed after 0.47ms: Invalid or expired refresh token[39m
+UnauthorizedException: Invalid or expired refresh token
+    at AuthService.refreshTokens (/Users/4thwithme/Documents/repo/no-name-proj/backend/src/modules/auth/auth.service.ts:289:10)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at AuthController.refresh (/Users/4thwithme/Documents/repo/no-name-proj/backend/src/modules/auth/auth.controller.ts:198:18)
+    at AuthController.descriptor.value (/Users/4thwithme/Documents/repo/no-name-proj/backend/src/decorators/log-execution.decorator.ts:149:20)
+    at /Users/4thwithme/Documents/repo/no-name-proj/backend/node_modules/@nestjs/core/router/router-execution-context.js:46:28
+    at Object.<anonymous> (/Users/4thwithme/Documents/repo/no-name-proj/backend/node_modules/@nestjs/core/router/router-proxy.js:9:17)
+UnauthorizedException: Invalid or expired refresh token
+    at AuthService.refreshTokens (/Users/4thwithme/Documents/repo/no-name-proj/backend/src/modules/auth/auth.service.ts:289:10)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at AuthController.refresh (/Users/4thwithme/Documents/repo/no-name-proj/backend/src/modules/auth/auth.controller.ts:198:18)
+    at AuthController.descriptor.value (/Users/4thwithme/Documents/repo/no-name-proj/backend/src/decorators/log-execution.decorator.ts:149:20)
+    at /Users/4thwithme/Documents/repo/no-name-proj/backend/node_modules/@nestjs/core/router/router-execution-context.js:46:28
+    at Object.<anonymous> (/Users/4thwithme/Documents/repo/no-name-proj/backend/node_modules/@nestjs/core/router/router-proxy.js:9:17)
+[31m[Nest] 25836  - [39m04/14/2026, 1:57:35 AM [31m  ERROR[39m [38;5;3m[AuthController.refresh] [39m[31mFailed after 0.94ms: Invalid or expired refresh token[39m
+UnauthorizedException: Invalid or expired refresh token
+    at AuthService.refreshTokens (/Users/4thwithme/Documents/repo/no-name-proj/backend/src/modules/auth/auth.service.ts:289:10)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at AuthController.refresh (/Users/4thwithme/Documents/repo/no-name-proj/backend/src/modules/auth/auth.controller.ts:198:18)
+    at AuthController.descriptor.value (/Users/4thwithme/Documents/repo/no-name-proj/backend/src/decorators/log-execution.decorator.ts:149:20)
+    at /Users/4thwithme/Documents/repo/no-name-proj/backend/node_modules/@nestjs/core/router/router-execution-context.js:46:28
+    at Object.<anonymous> (/Users/4thwithme/Documents/repo/no-name-proj/backend/node_modules/@nestjs/core/router/router-proxy.js:9:17)
+[31m[Nest] 25836  - [39m04/14/2026, 1:57:35 AM [31m  ERROR[39m [38;5;3m[AuthController.refresh] [39m[31mFailed after 0.94ms: Invalid or expired refresh token[39m
+UnauthorizedException: Invalid or expired refresh token
+    at AuthService.refreshTokens (/Users/4thwithme/Documents/repo/no-name-proj/backend/src/modules/auth/auth.service.ts:289:10)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at AuthController.refresh (/Users/4thwithme/Documents/repo/no-name-proj/backend/src/modules/auth/auth.controller.ts:198:18)
+    at AuthController.descriptor.value (/Users/4thwithme/Documents/repo/no-name-proj/backend/src/decorators/log-execution.decorator.ts:149:20)
+    at /Users/4thwithme/Documents/repo/no-name-proj/backend/node_modules/@nestjs/core/router/router-execution-context.js:46:28
+    at Object.<anonymous> (/Users/4thwithme/Documents/repo/no-name-proj/backend/node_modules/@nestjs/core/router/router-proxy.js:9:17)
+[31m[Nest] 25836  - [39m04/14/2026, 1:57:35 AM [31m  ERROR[39m [38;5;3m[AuthController.linkAccount] [39m[31mFailed after 0.30ms: Invalid or expired linking token[39m
+UnauthorizedException: Invalid or expired linking token
+    at AuthService.linkAccount (/Users/4thwithme/Documents/repo/no-name-proj/backend/src/modules/auth/auth.service.ts:344:10)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at AuthController.linkAccount (/Users/4thwithme/Documents/repo/no-name-proj/backend/src/modules/auth/auth.controller.ts:252:3)
+    at AuthController.descriptor.value (/Users/4thwithme/Documents/repo/no-name-proj/backend/src/decorators/log-execution.decorator.ts:149:20)
+    at /Users/4thwithme/Documents/repo/no-name-proj/backend/node_modules/@nestjs/core/router/router-execution-context.js:46:28
+    at Object.<anonymous> (/Users/4thwithme/Documents/repo/no-name-proj/backend/node_modules/@nestjs/core/router/router-proxy.js:9:17)
+[31m[Nest] 25836  - [39m04/14/2026, 1:57:35 AM [31m  ERROR[39m [38;5;3m[AuthController.linkAccount] [39m[31mFailed after 0.30ms: Invalid or expired linking token[39m
+UnauthorizedException: Invalid or expired linking token
+    at AuthService.linkAccount (/Users/4thwithme/Documents/repo/no-name-proj/backend/src/modules/auth/auth.service.ts:344:10)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at AuthController.linkAccount (/Users/4thwithme/Documents/repo/no-name-proj/backend/src/modules/auth/auth.controller.ts:252:3)
+    at AuthController.descriptor.value (/Users/4thwithme/Documents/repo/no-name-proj/backend/src/decorators/log-execution.decorator.ts:149:20)
+    at /Users/4thwithme/Documents/repo/no-name-proj/backend/node_modules/@nestjs/core/router/router-execution-context.js:46:28
+    at Object.<anonymous> (/Users/4thwithme/Documents/repo/no-name-proj/backend/node_modules/@nestjs/core/router/router-proxy.js:9:17)
+[31m[Nest] 25836  - [39m04/14/2026, 1:57:35 AM [31m  ERROR[39m [38;5;3m[AuthController.linkAccount] [39m[31mFailed after 0.55ms: Linking token does not match user[39m
+[31m[Nest] 25836  - [39m04/14/2026, 1:57:35 AM [31m  ERROR[39m [38;5;3m[AuthController.linkAccount] [39m[31mFailed after 0.55ms: Linking token does not match user[39m
+UnauthorizedException: Linking token does not match user
+    at AuthService.linkAccount (/Users/4thwithme/Documents/repo/no-name-proj/backend/src/modules/auth/auth.service.ts:350:10)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at AuthController.linkAccount (/Users/4thwithme/Documents/repo/no-name-proj/backend/src/modules/auth/auth.controller.ts:252:3)
+    at AuthController.descriptor.value (/Users/4thwithme/Documents/repo/no-name-proj/backend/src/decorators/log-execution.decorator.ts:149:20)
+    at /Users/4thwithme/Documents/repo/no-name-proj/backend/node_modules/@nestjs/core/router/router-execution-context.js:46:28
+    at Object.<anonymous> (/Users/4thwithme/Documents/repo/no-name-proj/backend/node_modules/@nestjs/core/router/router-proxy.js:9:17)
+UnauthorizedException: Linking token does not match user
+    at AuthService.linkAccount (/Users/4thwithme/Documents/repo/no-name-proj/backend/src/modules/auth/auth.service.ts:350:10)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at AuthController.linkAccount (/Users/4thwithme/Documents/repo/no-name-proj/backend/src/modules/auth/auth.controller.ts:252:3)
+    at AuthController.descriptor.value (/Users/4thwithme/Documents/repo/no-name-proj/backend/src/decorators/log-execution.decorator.ts:149:20)
+    at /Users/4thwithme/Documents/repo/no-name-proj/backend/node_modules/@nestjs/core/router/router-execution-context.js:46:28
+    at Object.<anonymous> (/Users/4thwithme/Documents/repo/no-name-proj/backend/node_modules/@nestjs/core/router/router-proxy.js:9:17)
+FAIL test/auth.module.e2e-spec.ts
+FAIL test/auth.module.e2e-spec.ts
+  ● AuthModule (e2e) › GET /api/auth/github/callback › should redirect with linking token when email already exists
+
+    expected 302 "Found", got 500 "Internal Server Error"
+
+      220 | 				.get(`/api/auth/github/callback?code=testcode&state=${state}`)
+      221 | 				.redirects(0)
+    > 222 | 				.expect(302);
+          | 				 ^
+      223 |
+      224 | 			expect(response.headers['location']).toContain('/auth/link?linking_token=');
+      225 | 		});
+
+      at Object.<anonymous> (test/auth.module.e2e-spec.ts:222:6)
+      ----
+      at Test._assertStatus (node_modules/supertest/lib/test.js:309:14)
+      at node_modules/supertest/lib/test.js:365:13
+      at Test._assertFunction (node_modules/supertest/lib/test.js:342:13)
+      at Test.assert (node_modules/supertest/lib/test.js:195:23)
+      at localAssert (node_modules/supertest/lib/test.js:138:14)
+      at Server.<anonymous> (node_modules/supertest/lib/test.js:152:11)
+
+  ● AuthModule (e2e) › GET /api/auth/github/callback › should redirect with linking token when email already exists
+
+    expected 302 "Found", got 500 "Internal Server Error"
+
+      220 | 				.get(`/api/auth/github/callback?code=testcode&state=${state}`)
+      221 | 				.redirects(0)
+    > 222 | 				.expect(302);
+          | 				 ^
+      223 |
+      224 | 			expect(response.headers['location']).toContain('/auth/link?linking_token=');
+      225 | 		});
+
+      at Object.<anonymous> (test/auth.module.e2e-spec.ts:222:6)
+      ----
+      at Test._assertStatus (node_modules/supertest/lib/test.js:309:14)
+      at node_modules/supertest/lib/test.js:365:13
+      at Test._assertFunction (node_modules/supertest/lib/test.js:342:13)
+      at Test.assert (node_modules/supertest/lib/test.js:195:23)
+      at localAssert (node_modules/supertest/lib/test.js:138:14)
+      at Server.<anonymous> (node_modules/supertest/lib/test.js:152:11)
+
+[31m[Nest] 25836  - [39m04/14/2026, 1:57:36 AM [31m  ERROR[39m [38;5;3m[GithubRepoModel] [39m[31mFailed to upsert repos for installation 3464497c-ed1f-4382-9029-18b8f43dfef3: insert into "github_repos" ("_id", "created_at", "default_branch", "full_name", "github_repo_id", "installation_id", "name", "private", "updated_at") values ($1, CURRENT_TIMESTAMP, $2, $3, $4, $5, $6, $7, CURRENT_TIMESTAMP) on conflict ("github_repo_id") do update set "installation_id" = excluded."installation_id", "name" = excluded."name", "full_name" = excluded."full_name", "private" = excluded."private", "default_branch" = excluded."default_branch", "updated_at" = excluded."updated_at" - insert or update on table "github_repos" violates foreign key constraint "github_repos_installation_id_foreign"[39m
+[31m[Nest] 25836  - [39m04/14/2026, 1:57:36 AM [31m  ERROR[39m [38;5;3m[GithubRepoModel] [39m[31mFailed to upsert repos for installation 3464497c-ed1f-4382-9029-18b8f43dfef3: insert into "github_repos" ("_id", "created_at", "default_branch", "full_name", "github_repo_id", "installation_id", "name", "private", "updated_at") values ($1, CURRENT_TIMESTAMP, $2, $3, $4, $5, $6, $7, CURRENT_TIMESTAMP) on conflict ("github_repo_id") do update set "installation_id" = excluded."installation_id", "name" = excluded."name", "full_name" = excluded."full_name", "private" = excluded."private", "default_branch" = excluded."default_branch", "updated_at" = excluded."updated_at" - insert or update on table "github_repos" violates foreign key constraint "github_repos_installation_id_foreign"[39m
+[31m[Nest] 25836  - [39m04/14/2026, 1:57:36 AM [31m  ERROR[39m [38;5;3m[GithubInstallService] [39m[31mFailed to sync repos for installation 3464497c-ed1f-4382-9029-18b8f43dfef3: insert into "github_repos" ("_id", "created_at", "default_branch", "full_name", "github_repo_id", "installation_id", "name", "private", "updated_at") values ($1, CURRENT_TIMESTAMP, $2, $3, $4, $5, $6, $7, CURRENT_TIMESTAMP) on conflict ("github_repo_id") do update set "installation_id" = excluded."installation_id", "name" = excluded."name", "full_name" = excluded."full_name", "private" = excluded."private", "default_branch" = excluded."default_branch", "updated_at" = excluded."updated_at" - insert or update on table "github_repos" violates foreign key constraint "github_repos_installation_id_foreign"[39m
+[31m[Nest] 25836  - [39m04/14/2026, 1:57:36 AM [31m  ERROR[39m [38;5;3m[GithubInstallService] [39m[31mFailed to sync repos for installation 3464497c-ed1f-4382-9029-18b8f43dfef3: insert into "github_repos" ("_id", "created_at", "default_branch", "full_name", "github_repo_id", "installation_id", "name", "private", "updated_at") values ($1, CURRENT_TIMESTAMP, $2, $3, $4, $5, $6, $7, CURRENT_TIMESTAMP) on conflict ("github_repo_id") do update set "installation_id" = excluded."installation_id", "name" = excluded."name", "full_name" = excluded."full_name", "private" = excluded."private", "default_branch" = excluded."default_branch", "updated_at" = excluded."updated_at" - insert or update on table "github_repos" violates foreign key constraint "github_repos_installation_id_foreign"[39m
+[31m[Nest] 25836  - [39m04/14/2026, 1:57:36 AM [31m  ERROR[39m [38;5;3m[GithubWebhookController.handleWebhook] [39m[31mFailed after 0.24ms: Invalid webhook signature[39m
+[31m[Nest] 25836  - [39m04/14/2026, 1:57:36 AM [31m  ERROR[39m [38;5;3m[GithubWebhookController.handleWebhook] [39m[31mFailed after 0.24ms: Invalid webhook signature[39m
+UnauthorizedException: Invalid webhook signature
+    at GithubWebhookController.handleWebhook (/Users/4thwithme/Documents/repo/no-name-proj/backend/src/modules/github/github-webhook.controller.ts:43:10)
+    at GithubWebhookController.descriptor.value (/Users/4thwithme/Documents/repo/no-name-proj/backend/src/decorators/log-execution.decorator.ts:149:41)
+    at /Users/4thwithme/Documents/repo/no-name-proj/backend/node_modules/@nestjs/core/router/router-execution-context.js:38:29
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at /Users/4thwithme/Documents/repo/no-name-proj/backend/node_modules/@nestjs/core/router/router-execution-context.js:46:28
+    at Object.<anonymous> (/Users/4thwithme/Documents/repo/no-name-proj/backend/node_modules/@nestjs/core/router/router-proxy.js:9:17)
+UnauthorizedException: Invalid webhook signature
+    at GithubWebhookController.handleWebhook (/Users/4thwithme/Documents/repo/no-name-proj/backend/src/modules/github/github-webhook.controller.ts:43:10)
+    at GithubWebhookController.descriptor.value (/Users/4thwithme/Documents/repo/no-name-proj/backend/src/decorators/log-execution.decorator.ts:149:41)
+    at /Users/4thwithme/Documents/repo/no-name-proj/backend/node_modules/@nestjs/core/router/router-execution-context.js:38:29
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at /Users/4thwithme/Documents/repo/no-name-proj/backend/node_modules/@nestjs/core/router/router-execution-context.js:46:28
+    at Object.<anonymous> (/Users/4thwithme/Documents/repo/no-name-proj/backend/node_modules/@nestjs/core/router/router-proxy.js:9:17)
+[31m[Nest] 25836  - [39m04/14/2026, 1:57:37 AM [31m  ERROR[39m [38;5;3m[CompanyController.getById] [39m[31mFailed after 0.63ms: User is not a member of this company[39m
+[31m[Nest] 25836  - [39m04/14/2026, 1:57:37 AM [31m  ERROR[39m [38;5;3m[CompanyController.getById] [39m[31mFailed after 0.63ms: User is not a member of this company[39m
+ForbiddenException: User is not a member of this company
+    at CompanyController.getById (/Users/4thwithme/Documents/repo/no-name-proj/backend/src/modules/company/company.controller.ts:42:26)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at CompanyController.descriptor.value (/Users/4thwithme/Documents/repo/no-name-proj/backend/src/decorators/log-execution.decorator.ts:149:20)
+    at /Users/4thwithme/Documents/repo/no-name-proj/backend/node_modules/@nestjs/core/router/router-execution-context.js:46:28
+    at Object.<anonymous> (/Users/4thwithme/Documents/repo/no-name-proj/backend/node_modules/@nestjs/core/router/router-proxy.js:9:17)
+ForbiddenException: User is not a member of this company
+    at CompanyController.getById (/Users/4thwithme/Documents/repo/no-name-proj/backend/src/modules/company/company.controller.ts:42:26)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at CompanyController.descriptor.value (/Users/4thwithme/Documents/repo/no-name-proj/backend/src/decorators/log-execution.decorator.ts:149:20)
+    at /Users/4thwithme/Documents/repo/no-name-proj/backend/node_modules/@nestjs/core/router/router-execution-context.js:46:28
+    at Object.<anonymous> (/Users/4thwithme/Documents/repo/no-name-proj/backend/node_modules/@nestjs/core/router/router-proxy.js:9:17)
+[31m[Nest] 25836  - [39m04/14/2026, 1:57:37 AM [31m  ERROR[39m [38;5;3m[CompanyController.getById] [39m[31mFailed after 0.67ms: User is not a member of this company[39m
+[31m[Nest] 25836  - [39m04/14/2026, 1:57:37 AM [31m  ERROR[39m [38;5;3m[CompanyController.getById] [39m[31mFailed after 0.67ms: User is not a member of this company[39m
+ForbiddenException: User is not a member of this company
+    at CompanyController.getById (/Users/4thwithme/Documents/repo/no-name-proj/backend/src/modules/company/company.controller.ts:42:26)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at CompanyController.descriptor.value (/Users/4thwithme/Documents/repo/no-name-proj/backend/src/decorators/log-execution.decorator.ts:149:20)
+    at /Users/4thwithme/Documents/repo/no-name-proj/backend/node_modules/@nestjs/core/router/router-execution-context.js:46:28
+    at Object.<anonymous> (/Users/4thwithme/Documents/repo/no-name-proj/backend/node_modules/@nestjs/core/router/router-proxy.js:9:17)
+ForbiddenException: User is not a member of this company
+    at CompanyController.getById (/Users/4thwithme/Documents/repo/no-name-proj/backend/src/modules/company/company.controller.ts:42:26)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at CompanyController.descriptor.value (/Users/4thwithme/Documents/repo/no-name-proj/backend/src/decorators/log-execution.decorator.ts:149:20)
+    at /Users/4thwithme/Documents/repo/no-name-proj/backend/node_modules/@nestjs/core/router/router-execution-context.js:46:28
+    at Object.<anonymous> (/Users/4thwithme/Documents/repo/no-name-proj/backend/node_modules/@nestjs/core/router/router-proxy.js:9:17)
+[31m[Nest] 25836  - [39m04/14/2026, 1:57:37 AM [31m  ERROR[39m [38;5;3m[CompanyController.getById] [39m[31mFailed after 1.52ms: Company not found[39m
+[31m[Nest] 25836  - [39m04/14/2026, 1:57:37 AM [31m  ERROR[39m [38;5;3m[CompanyController.getById] [39m[31mFailed after 1.52ms: Company not found[39m
+NotFoundException: Company not found
+    at CompanyController.getById (/Users/4thwithme/Documents/repo/no-name-proj/backend/src/modules/company/company.controller.ts:46:23)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at CompanyController.descriptor.value (/Users/4thwithme/Documents/repo/no-name-proj/backend/src/decorators/log-execution.decorator.ts:149:20)
+    at /Users/4thwithme/Documents/repo/no-name-proj/backend/node_modules/@nestjs/core/router/router-execution-context.js:46:28
+    at Object.<anonymous> (/Users/4thwithme/Documents/repo/no-name-proj/backend/node_modules/@nestjs/core/router/router-proxy.js:9:17)
+NotFoundException: Company not found
+    at CompanyController.getById (/Users/4thwithme/Documents/repo/no-name-proj/backend/src/modules/company/company.controller.ts:46:23)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at CompanyController.descriptor.value (/Users/4thwithme/Documents/repo/no-name-proj/backend/src/decorators/log-execution.decorator.ts:149:20)
+    at /Users/4thwithme/Documents/repo/no-name-proj/backend/node_modules/@nestjs/core/router/router-execution-context.js:46:28
+    at Object.<anonymous> (/Users/4thwithme/Documents/repo/no-name-proj/backend/node_modules/@nestjs/core/router/router-proxy.js:9:17)
+[31m[Nest] 25836  - [39m04/14/2026, 1:57:38 AM [31m  ERROR[39m [38;5;3m[InvitationController.createInvitation] [39m[31mFailed after 0.63ms: A pending invitation already exists for dup-target-2eb8eb7b-09a0-4c40-95c8-e8a627c56c23@example.com in this company[39m
+[31m[Nest] 25836  - [39m04/14/2026, 1:57:38 AM [31m  ERROR[39m [38;5;3m[InvitationController.createInvitation] [39m[31mFailed after 0.63ms: A pending invitation already exists for dup-target-2eb8eb7b-09a0-4c40-95c8-e8a627c56c23@example.com in this company[39m
+BadRequestException: A pending invitation already exists for dup-target-2eb8eb7b-09a0-4c40-95c8-e8a627c56c23@example.com in this company
+    at InvitationService.createInvitation (/Users/4thwithme/Documents/repo/no-name-proj/backend/src/modules/invitation/invitation.service.ts:26:10)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at InvitationController.descriptor.value (/Users/4thwithme/Documents/repo/no-name-proj/backend/src/decorators/log-execution.decorator.ts:149:20)
+    at /Users/4thwithme/Documents/repo/no-name-proj/backend/node_modules/@nestjs/core/router/router-execution-context.js:46:28
+    at Object.<anonymous> (/Users/4thwithme/Documents/repo/no-name-proj/backend/node_modules/@nestjs/core/router/router-proxy.js:9:17)
+BadRequestException: A pending invitation already exists for dup-target-2eb8eb7b-09a0-4c40-95c8-e8a627c56c23@example.com in this company
+    at InvitationService.createInvitation (/Users/4thwithme/Documents/repo/no-name-proj/backend/src/modules/invitation/invitation.service.ts:26:10)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at InvitationController.descriptor.value (/Users/4thwithme/Documents/repo/no-name-proj/backend/src/decorators/log-execution.decorator.ts:149:20)
+    at /Users/4thwithme/Documents/repo/no-name-proj/backend/node_modules/@nestjs/core/router/router-execution-context.js:46:28
+    at Object.<anonymous> (/Users/4thwithme/Documents/repo/no-name-proj/backend/node_modules/@nestjs/core/router/router-proxy.js:9:17)
+[31m[Nest] 25836  - [39m04/14/2026, 1:57:39 AM [31m  ERROR[39m [38;5;3m[InvitationController.acceptInvitation] [39m[31mFailed after 2.59ms: Invitation not found or has expired[39m
+NotFoundException: Invitation not found or has expired
+    at InvitationService.acceptInvitation (/Users/4thwithme/Documents/repo/no-name-proj/backend/src/modules/invitation/invitation.service.ts:52:10)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at InvitationController.acceptInvitation (/Users/4thwithme/Documents/repo/no-name-proj/backend/src/modules/invitation/invitation.controller.ts:108:3)
+    at InvitationController.descriptor.value (/Users/4thwithme/Documents/repo/no-name-proj/backend/src/decorators/log-execution.decorator.ts:149:20)
+    at /Users/4thwithme/Documents/repo/no-name-proj/backend/node_modules/@nestjs/core/router/router-execution-context.js:46:28
+    at Object.<anonymous> (/Users/4thwithme/Documents/repo/no-name-proj/backend/node_modules/@nestjs/core/router/router-proxy.js:9:17)
+[31m[Nest] 25836  - [39m04/14/2026, 1:57:39 AM [31m  ERROR[39m [38;5;3m[InvitationController.acceptInvitation] [39m[31mFailed after 2.59ms: Invitation not found or has expired[39m
+NotFoundException: Invitation not found or has expired
+    at InvitationService.acceptInvitation (/Users/4thwithme/Documents/repo/no-name-proj/backend/src/modules/invitation/invitation.service.ts:52:10)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at InvitationController.acceptInvitation (/Users/4thwithme/Documents/repo/no-name-proj/backend/src/modules/invitation/invitation.controller.ts:108:3)
+    at InvitationController.descriptor.value (/Users/4thwithme/Documents/repo/no-name-proj/backend/src/decorators/log-execution.decorator.ts:149:20)
+    at /Users/4thwithme/Documents/repo/no-name-proj/backend/node_modules/@nestjs/core/router/router-execution-context.js:46:28
+    at Object.<anonymous> (/Users/4thwithme/Documents/repo/no-name-proj/backend/node_modules/@nestjs/core/router/router-proxy.js:9:17)
+[31m[Nest] 25836  - [39m04/14/2026, 1:57:39 AM [31m  ERROR[39m [38;5;3m[InvitationController.acceptInvitation] [39m[31mFailed after 2.07ms: This invitation was sent to a different email address[39m
+BadRequestException: This invitation was sent to a different email address
+    at InvitationService.acceptInvitation (/Users/4thwithme/Documents/repo/no-name-proj/backend/src/modules/invitation/invitation.service.ts:56:10)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at InvitationController.acceptInvitation (/Users/4thwithme/Documents/repo/no-name-proj/backend/src/modules/invitation/invitation.controller.ts:108:3)
+    at InvitationController.descriptor.value (/Users/4thwithme/Documents/repo/no-name-proj/backend/src/decorators/log-execution.decorator.ts:149:20)
+    at /Users/4thwithme/Documents/repo/no-name-proj/backend/node_modules/@nestjs/core/router/router-execution-context.js:46:28
+    at Object.<anonymous> (/Users/4thwithme/Documents/repo/no-name-proj/backend/node_modules/@nestjs/core/router/router-proxy.js:9:17)
+[31m[Nest] 25836  - [39m04/14/2026, 1:57:39 AM [31m  ERROR[39m [38;5;3m[InvitationController.acceptInvitation] [39m[31mFailed after 2.07ms: This invitation was sent to a different email address[39m
+BadRequestException: This invitation was sent to a different email address
+    at InvitationService.acceptInvitation (/Users/4thwithme/Documents/repo/no-name-proj/backend/src/modules/invitation/invitation.service.ts:56:10)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at InvitationController.acceptInvitation (/Users/4thwithme/Documents/repo/no-name-proj/backend/src/modules/invitation/invitation.controller.ts:108:3)
+    at InvitationController.descriptor.value (/Users/4thwithme/Documents/repo/no-name-proj/backend/src/decorators/log-execution.decorator.ts:149:20)
+    at /Users/4thwithme/Documents/repo/no-name-proj/backend/node_modules/@nestjs/core/router/router-execution-context.js:46:28
+    at Object.<anonymous> (/Users/4thwithme/Documents/repo/no-name-proj/backend/node_modules/@nestjs/core/router/router-proxy.js:9:17)
+[31m[Nest] 25836  - [39m04/14/2026, 1:57:39 AM [31m  ERROR[39m [38;5;3m[InvitationController.acceptInvitation] [39m[31mFailed after 0.07ms: User not found[39m
+[31m[Nest] 25836  - [39m04/14/2026, 1:57:39 AM [31m  ERROR[39m [38;5;3m[InvitationController.acceptInvitation] [39m[31mFailed after 0.07ms: User not found[39m
+NotFoundException: User not found
+    at InvitationController.acceptInvitation (/Users/4thwithme/Documents/repo/no-name-proj/backend/src/modules/invitation/invitation.controller.ts:100:10)
+    at InvitationController.descriptor.value (/Users/4thwithme/Documents/repo/no-name-proj/backend/src/decorators/log-execution.decorator.ts:149:41)
+    at /Users/4thwithme/Documents/repo/no-name-proj/backend/node_modules/@nestjs/core/router/router-execution-context.js:38:29
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at /Users/4thwithme/Documents/repo/no-name-proj/backend/node_modules/@nestjs/core/router/router-execution-context.js:46:28
+    at Object.<anonymous> (/Users/4thwithme/Documents/repo/no-name-proj/backend/node_modules/@nestjs/core/router/router-proxy.js:9:17)
+NotFoundException: User not found
+    at InvitationController.acceptInvitation (/Users/4thwithme/Documents/repo/no-name-proj/backend/src/modules/invitation/invitation.controller.ts:100:10)
+    at InvitationController.descriptor.value (/Users/4thwithme/Documents/repo/no-name-proj/backend/src/decorators/log-execution.decorator.ts:149:41)
+    at /Users/4thwithme/Documents/repo/no-name-proj/backend/node_modules/@nestjs/core/router/router-execution-context.js:38:29
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at /Users/4thwithme/Documents/repo/no-name-proj/backend/node_modules/@nestjs/core/router/router-execution-context.js:46:28
+    at Object.<anonymous> (/Users/4thwithme/Documents/repo/no-name-proj/backend/node_modules/@nestjs/core/router/router-proxy.js:9:17)
+[31m[Nest] 25836  - [39m04/14/2026, 1:57:39 AM [31m  ERROR[39m [38;5;3m[InvitationController.acceptInvitation] [39m[31mFailed after 1.30ms: User not found[39m
+NotFoundException: User not found
+    at InvitationController.acceptInvitation (/Users/4thwithme/Documents/repo/no-name-proj/backend/src/modules/invitation/invitation.controller.ts:105:10)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at InvitationController.descriptor.value (/Users/4thwithme/Documents/repo/no-name-proj/backend/src/decorators/log-execution.decorator.ts:149:20)
+    at /Users/4thwithme/Documents/repo/no-name-proj/backend/node_modules/@nestjs/core/router/router-execution-context.js:46:28
+    at Object.<anonymous> (/Users/4thwithme/Documents/repo/no-name-proj/backend/node_modules/@nestjs/core/router/router-proxy.js:9:17)
+[31m[Nest] 25836  - [39m04/14/2026, 1:57:39 AM [31m  ERROR[39m [38;5;3m[InvitationController.acceptInvitation] [39m[31mFailed after 1.30ms: User not found[39m
+NotFoundException: User not found
+    at InvitationController.acceptInvitation (/Users/4thwithme/Documents/repo/no-name-proj/backend/src/modules/invitation/invitation.controller.ts:105:10)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at InvitationController.descriptor.value (/Users/4thwithme/Documents/repo/no-name-proj/backend/src/decorators/log-execution.decorator.ts:149:20)
+    at /Users/4thwithme/Documents/repo/no-name-proj/backend/node_modules/@nestjs/core/router/router-execution-context.js:46:28
+    at Object.<anonymous> (/Users/4thwithme/Documents/repo/no-name-proj/backend/node_modules/@nestjs/core/router/router-proxy.js:9:17)
+[31m[Nest] 25836  - [39m04/14/2026, 1:57:39 AM [31m  ERROR[39m [38;5;3m[UserController.switchCompany] [39m[31mFailed after 0.72ms: Not a member of this company[39m
+[31m[Nest] 25836  - [39m04/14/2026, 1:57:39 AM [31m  ERROR[39m [38;5;3m[UserController.switchCompany] [39m[31mFailed after 0.72ms: Not a member of this company[39m
+ForbiddenException: Not a member of this company
+    at UserController.switchCompany (/Users/4thwithme/Documents/repo/no-name-proj/backend/src/modules/user/user.controller.ts:72:10)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at UserController.descriptor.value (/Users/4thwithme/Documents/repo/no-name-proj/backend/src/decorators/log-execution.decorator.ts:149:20)
+    at /Users/4thwithme/Documents/repo/no-name-proj/backend/node_modules/@nestjs/core/router/router-execution-context.js:46:28
+    at Object.<anonymous> (/Users/4thwithme/Documents/repo/no-name-proj/backend/node_modules/@nestjs/core/router/router-proxy.js:9:17)
+ForbiddenException: Not a member of this company
+    at UserController.switchCompany (/Users/4thwithme/Documents/repo/no-name-proj/backend/src/modules/user/user.controller.ts:72:10)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at UserController.descriptor.value (/Users/4thwithme/Documents/repo/no-name-proj/backend/src/decorators/log-execution.decorator.ts:149:20)
+    at /Users/4thwithme/Documents/repo/no-name-proj/backend/node_modules/@nestjs/core/router/router-execution-context.js:46:28
+    at Object.<anonymous> (/Users/4thwithme/Documents/repo/no-name-proj/backend/node_modules/@nestjs/core/router/router-proxy.js:9:17)
+[31m[Nest] 25836  - [39m04/14/2026, 1:57:40 AM [31m  ERROR[39m [38;5;3m[GithubWebhookController.handleWebhook] [39m[31mFailed after 0.09ms: Invalid webhook signature[39m
+UnauthorizedException: Invalid webhook signature
+    at GithubWebhookController.handleWebhook (/Users/4thwithme/Documents/repo/no-name-proj/backend/src/modules/github/github-webhook.controller.ts:43:10)
+    at GithubWebhookController.descriptor.value (/Users/4thwithme/Documents/repo/no-name-proj/backend/src/decorators/log-execution.decorator.ts:149:41)
+    at /Users/4thwithme/Documents/repo/no-name-proj/backend/node_modules/@nestjs/core/router/router-execution-context.js:38:29
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at /Users/4thwithme/Documents/repo/no-name-proj/backend/node_modules/@nestjs/core/router/router-execution-context.js:46:28
+    at Object.<anonymous> (/Users/4thwithme/Documents/repo/no-name-proj/backend/node_modules/@nestjs/core/router/router-proxy.js:9:17)
+[31m[Nest] 25836  - [39m04/14/2026, 1:57:40 AM [31m  ERROR[39m [38;5;3m[GithubWebhookController.handleWebhook] [39m[31mFailed after 0.09ms: Invalid webhook signature[39m
+UnauthorizedException: Invalid webhook signature
+    at GithubWebhookController.handleWebhook (/Users/4thwithme/Documents/repo/no-name-proj/backend/src/modules/github/github-webhook.controller.ts:43:10)
+    at GithubWebhookController.descriptor.value (/Users/4thwithme/Documents/repo/no-name-proj/backend/src/decorators/log-execution.decorator.ts:149:41)
+    at /Users/4thwithme/Documents/repo/no-name-proj/backend/node_modules/@nestjs/core/router/router-execution-context.js:38:29
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at /Users/4thwithme/Documents/repo/no-name-proj/backend/node_modules/@nestjs/core/router/router-execution-context.js:46:28
+    at Object.<anonymous> (/Users/4thwithme/Documents/repo/no-name-proj/backend/node_modules/@nestjs/core/router/router-proxy.js:9:17)
+[31m[Nest] 25836  - [39m04/14/2026, 1:57:40 AM [31m  ERROR[39m [38;5;3m[GithubWebhookController.handleWebhook] [39m[31mFailed after 0.03ms: Invalid webhook signature[39m
+UnauthorizedException: Invalid webhook signature
+    at GithubWebhookController.handleWebhook (/Users/4thwithme/Documents/repo/no-name-proj/backend/src/modules/github/github-webhook.controller.ts:43:10)
+    at GithubWebhookController.descriptor.value (/Users/4thwithme/Documents/repo/no-name-proj/backend/src/decorators/log-execution.decorator.ts:149:41)
+    at /Users/4thwithme/Documents/repo/no-name-proj/backend/node_modules/@nestjs/core/router/router-execution-context.js:38:29
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at /Users/4thwithme/Documents/repo/no-name-proj/backend/node_modules/@nestjs/core/router/router-execution-context.js:46:28
+    at Object.<anonymous> (/Users/4thwithme/Documents/repo/no-name-proj/backend/node_modules/@nestjs/core/router/router-proxy.js:9:17)
+[31m[Nest] 25836  - [39m04/14/2026, 1:57:40 AM [31m  ERROR[39m [38;5;3m[GithubWebhookController.handleWebhook] [39m[31mFailed after 0.03ms: Invalid webhook signature[39m
+UnauthorizedException: Invalid webhook signature
+    at GithubWebhookController.handleWebhook (/Users/4thwithme/Documents/repo/no-name-proj/backend/src/modules/github/github-webhook.controller.ts:43:10)
+    at GithubWebhookController.descriptor.value (/Users/4thwithme/Documents/repo/no-name-proj/backend/src/decorators/log-execution.decorator.ts:149:41)
+    at /Users/4thwithme/Documents/repo/no-name-proj/backend/node_modules/@nestjs/core/router/router-execution-context.js:38:29
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at /Users/4thwithme/Documents/repo/no-name-proj/backend/node_modules/@nestjs/core/router/router-execution-context.js:46:28
+    at Object.<anonymous> (/Users/4thwithme/Documents/repo/no-name-proj/backend/node_modules/@nestjs/core/router/router-proxy.js:9:17)
+[31m[Nest] 25836  - [39m04/14/2026, 1:57:40 AM [31m  ERROR[39m [38;5;3m[GithubInstallController.connect] [39m[31mFailed after 0.03ms: Cache failure[39m
+Error: Cache failure
+    at Object.<anonymous> (/Users/4thwithme/Documents/repo/no-name-proj/backend/test/github-install.e2e-spec.ts:103:57)
+    at Promise.finally.completed (/Users/4thwithme/Documents/repo/no-name-proj/backend/node_modules/jest-circus/build/jestAdapterInit.js:1557:28)
+    at new Promise (<anonymous>)
+    at callAsyncCircusFn (/Users/4thwithme/Documents/repo/no-name-proj/backend/node_modules/jest-circus/build/jestAdapterInit.js:1497:10)
+    at _callCircusTest (/Users/4thwithme/Documents/repo/no-name-proj/backend/node_modules/jest-circus/build/jestAdapterInit.js:1007:40)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at _runTest (/Users/4thwithme/Documents/repo/no-name-proj/backend/node_modules/jest-circus/build/jestAdapterInit.js:947:3)
+    at /Users/4thwithme/Documents/repo/no-name-proj/backend/node_modules/jest-circus/build/jestAdapterInit.js:849:7
+    at _runTestsForDescribeBlock (/Users/4thwithme/Documents/repo/no-name-proj/backend/node_modules/jest-circus/build/jestAdapterInit.js:862:11)
+    at _runTestsForDescribeBlock (/Users/4thwithme/Documents/repo/no-name-proj/backend/node_modules/jest-circus/build/jestAdapterInit.js:857:11)
+    at _runTestsForDescribeBlock (/Users/4thwithme/Documents/repo/no-name-proj/backend/node_modules/jest-circus/build/jestAdapterInit.js:857:11)
+    at run (/Users/4thwithme/Documents/repo/no-name-proj/backend/node_modules/jest-circus/build/jestAdapterInit.js:761:3)
+    at runAndTransformResultsToJestFormat (/Users/4thwithme/Documents/repo/no-name-proj/backend/node_modules/jest-circus/build/jestAdapterInit.js:1918:21)
+    at jestAdapter (/Users/4thwithme/Documents/repo/no-name-proj/backend/node_modules/jest-circus/build/runner.js:101:19)
+    at runTestInternal (/Users/4thwithme/Documents/repo/no-name-proj/backend/node_modules/jest-runner/build/index.js:275:16)
+    at runTest (/Users/4thwithme/Documents/repo/no-name-proj/backend/node_modules/jest-runner/build/index.js:343:7)
+[31m[Nest] 25836  - [39m04/14/2026, 1:57:40 AM [31m  ERROR[39m [38;5;3m[GithubInstallController.connect] [39m[31mFailed after 0.03ms: Cache failure[39m
+Error: Cache failure
+    at Object.<anonymous> (/Users/4thwithme/Documents/repo/no-name-proj/backend/test/github-install.e2e-spec.ts:103:57)
+    at Promise.finally.completed (/Users/4thwithme/Documents/repo/no-name-proj/backend/node_modules/jest-circus/build/jestAdapterInit.js:1557:28)
+    at new Promise (<anonymous>)
+    at callAsyncCircusFn (/Users/4thwithme/Documents/repo/no-name-proj/backend/node_modules/jest-circus/build/jestAdapterInit.js:1497:10)
+    at _callCircusTest (/Users/4thwithme/Documents/repo/no-name-proj/backend/node_modules/jest-circus/build/jestAdapterInit.js:1007:40)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at _runTest (/Users/4thwithme/Documents/repo/no-name-proj/backend/node_modules/jest-circus/build/jestAdapterInit.js:947:3)
+    at /Users/4thwithme/Documents/repo/no-name-proj/backend/node_modules/jest-circus/build/jestAdapterInit.js:849:7
+    at _runTestsForDescribeBlock (/Users/4thwithme/Documents/repo/no-name-proj/backend/node_modules/jest-circus/build/jestAdapterInit.js:862:11)
+    at _runTestsForDescribeBlock (/Users/4thwithme/Documents/repo/no-name-proj/backend/node_modules/jest-circus/build/jestAdapterInit.js:857:11)
+    at _runTestsForDescribeBlock (/Users/4thwithme/Documents/repo/no-name-proj/backend/node_modules/jest-circus/build/jestAdapterInit.js:857:11)
+    at run (/Users/4thwithme/Documents/repo/no-name-proj/backend/node_modules/jest-circus/build/jestAdapterInit.js:761:3)
+    at runAndTransformResultsToJestFormat (/Users/4thwithme/Documents/repo/no-name-proj/backend/node_modules/jest-circus/build/jestAdapterInit.js:1918:21)
+    at jestAdapter (/Users/4thwithme/Documents/repo/no-name-proj/backend/node_modules/jest-circus/build/runner.js:101:19)
+    at runTestInternal (/Users/4thwithme/Documents/repo/no-name-proj/backend/node_modules/jest-runner/build/index.js:275:16)
+    at runTest (/Users/4thwithme/Documents/repo/no-name-proj/backend/node_modules/jest-runner/build/index.js:343:7)
+[31m[Nest] 25836  - [39m04/14/2026, 1:57:40 AM [31m  ERROR[39m [38;5;3m[ExceptionsHandler] [39mError: Cache failure
+    at Object.<anonymous> [90m(/Users/4thwithme/Documents/repo/no-name-proj/backend/[39mtest/github-install.e2e-spec.ts:103:57[90m)[39m
+    at Promise.finally.completed [90m(/Users/4thwithme/Documents/repo/no-name-proj/backend/[39mnode_modules/[4mjest-circus[24m/build/jestAdapterInit.js:1557:28[90m)[39m
+    at new Promise (<anonymous>)
+    at callAsyncCircusFn [90m(/Users/4thwithme/Documents/repo/no-name-proj/backend/[39mnode_modules/[4mjest-circus[24m/build/jestAdapterInit.js:1497:10[90m)[39m
+    at _callCircusTest [90m(/Users/4thwithme/Documents/repo/no-name-proj/backend/[39mnode_modules/[4mjest-circus[24m/build/jestAdapterInit.js:1007:40[90m)[39m
+[90m    at processTicksAndRejections (node:internal/process/task_queues:103:5)[39m
+    at _runTest [90m(/Users/4thwithme/Documents/repo/no-name-proj/backend/[39mnode_modules/[4mjest-circus[24m/build/jestAdapterInit.js:947:3[90m)[39m
+    at [90m/Users/4thwithme/Documents/repo/no-name-proj/backend/[39mnode_modules/[4mjest-circus[24m/build/jestAdapterInit.js:849:7
+    at _runTestsForDescribeBlock [90m(/Users/4thwithme/Documents/repo/no-name-proj/backend/[39mnode_modules/[4mjest-circus[24m/build/jestAdapterInit.js:862:11[90m)[39m
+    at _runTestsForDescribeBlock [90m(/Users/4thwithme/Documents/repo/no-name-proj/backend/[39mnode_modules/[4mjest-circus[24m/build/jestAdapterInit.js:857:11[90m)[39m
+    at _runTestsForDescribeBlock [90m(/Users/4thwithme/Documents/repo/no-name-proj/backend/[39mnode_modules/[4mjest-circus[24m/build/jestAdapterInit.js:857:11[90m)[39m
+    at run [90m(/Users/4thwithme/Documents/repo/no-name-proj/backend/[39mnode_modules/[4mjest-circus[24m/build/jestAdapterInit.js:761:3[90m)[39m
+    at runAndTransformResultsToJestFormat [90m(/Users/4thwithme/Documents/repo/no-name-proj/backend/[39mnode_modules/[4mjest-circus[24m/build/jestAdapterInit.js:1918:21[90m)[39m
+    at jestAdapter [90m(/Users/4thwithme/Documents/repo/no-name-proj/backend/[39mnode_modules/[4mjest-circus[24m/build/runner.js:101:19[90m)[39m
+    at runTestInternal [90m(/Users/4thwithme/Documents/repo/no-name-proj/backend/[39mnode_modules/[4mjest-runner[24m/build/index.js:275:16[90m)[39m
+    at runTest [90m(/Users/4thwithme/Documents/repo/no-name-proj/backend/[39mnode_modules/[4mjest-runner[24m/build/index.js:343:7[90m)[39m
+[31m[Nest] 25836  - [39m04/14/2026, 1:57:40 AM [31m  ERROR[39m [38;5;3m[ExceptionsHandler] [39mError: Cache failure
+    at Object.<anonymous> [90m(/Users/4thwithme/Documents/repo/no-name-proj/backend/[39mtest/github-install.e2e-spec.ts:103:57[90m)[39m
+    at Promise.finally.completed [90m(/Users/4thwithme/Documents/repo/no-name-proj/backend/[39mnode_modules/[4mjest-circus[24m/build/jestAdapterInit.js:1557:28[90m)[39m
+    at new Promise (<anonymous>)
+    at callAsyncCircusFn [90m(/Users/4thwithme/Documents/repo/no-name-proj/backend/[39mnode_modules/[4mjest-circus[24m/build/jestAdapterInit.js:1497:10[90m)[39m
+    at _callCircusTest [90m(/Users/4thwithme/Documents/repo/no-name-proj/backend/[39mnode_modules/[4mjest-circus[24m/build/jestAdapterInit.js:1007:40[90m)[39m
+[90m    at processTicksAndRejections (node:internal/process/task_queues:103:5)[39m
+    at _runTest [90m(/Users/4thwithme/Documents/repo/no-name-proj/backend/[39mnode_modules/[4mjest-circus[24m/build/jestAdapterInit.js:947:3[90m)[39m
+    at [90m/Users/4thwithme/Documents/repo/no-name-proj/backend/[39mnode_modules/[4mjest-circus[24m/build/jestAdapterInit.js:849:7
+    at _runTestsForDescribeBlock [90m(/Users/4thwithme/Documents/repo/no-name-proj/backend/[39mnode_modules/[4mjest-circus[24m/build/jestAdapterInit.js:862:11[90m)[39m
+    at _runTestsForDescribeBlock [90m(/Users/4thwithme/Documents/repo/no-name-proj/backend/[39mnode_modules/[4mjest-circus[24m/build/jestAdapterInit.js:857:11[90m)[39m
+    at _runTestsForDescribeBlock [90m(/Users/4thwithme/Documents/repo/no-name-proj/backend/[39mnode_modules/[4mjest-circus[24m/build/jestAdapterInit.js:857:11[90m)[39m
+    at run [90m(/Users/4thwithme/Documents/repo/no-name-proj/backend/[39mnode_modules/[4mjest-circus[24m/build/jestAdapterInit.js:761:3[90m)[39m
+    at runAndTransformResultsToJestFormat [90m(/Users/4thwithme/Documents/repo/no-name-proj/backend/[39mnode_modules/[4mjest-circus[24m/build/jestAdapterInit.js:1918:21[90m)[39m
+    at jestAdapter [90m(/Users/4thwithme/Documents/repo/no-name-proj/backend/[39mnode_modules/[4mjest-circus[24m/build/runner.js:101:19[90m)[39m
+    at runTestInternal [90m(/Users/4thwithme/Documents/repo/no-name-proj/backend/[39mnode_modules/[4mjest-runner[24m/build/index.js:275:16[90m)[39m
+    at runTest [90m(/Users/4thwithme/Documents/repo/no-name-proj/backend/[39mnode_modules/[4mjest-runner[24m/build/index.js:343:7[90m)[39m
+[31m[Nest] 25836  - [39m04/14/2026, 1:57:40 AM [31m  ERROR[39m [38;5;3m[GithubInstallController.disconnect] [39m[31mFailed after 0.01ms: Not found[39m
+Error: Not found
+    at Object.<anonymous> (/Users/4thwithme/Documents/repo/no-name-proj/backend/test/github-install.e2e-spec.ts:154:52)
+    at Promise.finally.completed (/Users/4thwithme/Documents/repo/no-name-proj/backend/node_modules/jest-circus/build/jestAdapterInit.js:1557:28)
+    at new Promise (<anonymous>)
+    at callAsyncCircusFn (/Users/4thwithme/Documents/repo/no-name-proj/backend/node_modules/jest-circus/build/jestAdapterInit.js:1497:10)
+    at _callCircusTest (/Users/4thwithme/Documents/repo/no-name-proj/backend/node_modules/jest-circus/build/jestAdapterInit.js:1007:40)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at _runTest (/Users/4thwithme/Documents/repo/no-name-proj/backend/node_modules/jest-circus/build/jestAdapterInit.js:947:3)
+    at /Users/4thwithme/Documents/repo/no-name-proj/backend/node_modules/jest-circus/build/jestAdapterInit.js:849:7
+    at _runTestsForDescribeBlock (/Users/4thwithme/Documents/repo/no-name-proj/backend/node_modules/jest-circus/build/jestAdapterInit.js:862:11)
+    at _runTestsForDescribeBlock (/Users/4thwithme/Documents/repo/no-name-proj/backend/node_modules/jest-circus/build/jestAdapterInit.js:857:11)
+    at _runTestsForDescribeBlock (/Users/4thwithme/Documents/repo/no-name-proj/backend/node_modules/jest-circus/build/jestAdapterInit.js:857:11)
+    at run (/Users/4thwithme/Documents/repo/no-name-proj/backend/node_modules/jest-circus/build/jestAdapterInit.js:761:3)
+    at runAndTransformResultsToJestFormat (/Users/4thwithme/Documents/repo/no-name-proj/backend/node_modules/jest-circus/build/jestAdapterInit.js:1918:21)
+    at jestAdapter (/Users/4thwithme/Documents/repo/no-name-proj/backend/node_modules/jest-circus/build/runner.js:101:19)
+    at runTestInternal (/Users/4thwithme/Documents/repo/no-name-proj/backend/node_modules/jest-runner/build/index.js:275:16)
+    at runTest (/Users/4thwithme/Documents/repo/no-name-proj/backend/node_modules/jest-runner/build/index.js:343:7)
+[31m[Nest] 25836  - [39m04/14/2026, 1:57:40 AM [31m  ERROR[39m [38;5;3m[GithubInstallController.disconnect] [39m[31mFailed after 0.01ms: Not found[39m
+Error: Not found
+    at Object.<anonymous> (/Users/4thwithme/Documents/repo/no-name-proj/backend/test/github-install.e2e-spec.ts:154:52)
+    at Promise.finally.completed (/Users/4thwithme/Documents/repo/no-name-proj/backend/node_modules/jest-circus/build/jestAdapterInit.js:1557:28)
+    at new Promise (<anonymous>)
+    at callAsyncCircusFn (/Users/4thwithme/Documents/repo/no-name-proj/backend/node_modules/jest-circus/build/jestAdapterInit.js:1497:10)
+    at _callCircusTest (/Users/4thwithme/Documents/repo/no-name-proj/backend/node_modules/jest-circus/build/jestAdapterInit.js:1007:40)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at _runTest (/Users/4thwithme/Documents/repo/no-name-proj/backend/node_modules/jest-circus/build/jestAdapterInit.js:947:3)
+    at /Users/4thwithme/Documents/repo/no-name-proj/backend/node_modules/jest-circus/build/jestAdapterInit.js:849:7
+    at _runTestsForDescribeBlock (/Users/4thwithme/Documents/repo/no-name-proj/backend/node_modules/jest-circus/build/jestAdapterInit.js:862:11)
+    at _runTestsForDescribeBlock (/Users/4thwithme/Documents/repo/no-name-proj/backend/node_modules/jest-circus/build/jestAdapterInit.js:857:11)
+    at _runTestsForDescribeBlock (/Users/4thwithme/Documents/repo/no-name-proj/backend/node_modules/jest-circus/build/jestAdapterInit.js:857:11)
+    at run (/Users/4thwithme/Documents/repo/no-name-proj/backend/node_modules/jest-circus/build/jestAdapterInit.js:761:3)
+    at runAndTransformResultsToJestFormat (/Users/4thwithme/Documents/repo/no-name-proj/backend/node_modules/jest-circus/build/jestAdapterInit.js:1918:21)
+    at jestAdapter (/Users/4thwithme/Documents/repo/no-name-proj/backend/node_modules/jest-circus/build/runner.js:101:19)
+    at runTestInternal (/Users/4thwithme/Documents/repo/no-name-proj/backend/node_modules/jest-runner/build/index.js:275:16)
+    at runTest (/Users/4thwithme/Documents/repo/no-name-proj/backend/node_modules/jest-runner/build/index.js:343:7)
+[31m[Nest] 25836  - [39m04/14/2026, 1:57:40 AM [31m  ERROR[39m [38;5;3m[ExceptionsHandler] [39mError: Not found
+    at Object.<anonymous> [90m(/Users/4thwithme/Documents/repo/no-name-proj/backend/[39mtest/github-install.e2e-spec.ts:154:52[90m)[39m
+    at Promise.finally.completed [90m(/Users/4thwithme/Documents/repo/no-name-proj/backend/[39mnode_modules/[4mjest-circus[24m/build/jestAdapterInit.js:1557:28[90m)[39m
+    at new Promise (<anonymous>)
+    at callAsyncCircusFn [90m(/Users/4thwithme/Documents/repo/no-name-proj/backend/[39mnode_modules/[4mjest-circus[24m/build/jestAdapterInit.js:1497:10[90m)[39m
+    at _callCircusTest [90m(/Users/4thwithme/Documents/repo/no-name-proj/backend/[39mnode_modules/[4mjest-circus[24m/build/jestAdapterInit.js:1007:40[90m)[39m
+[90m    at processTicksAndRejections (node:internal/process/task_queues:103:5)[39m
+    at _runTest [90m(/Users/4thwithme/Documents/repo/no-name-proj/backend/[39mnode_modules/[4mjest-circus[24m/build/jestAdapterInit.js:947:3[90m)[39m
+    at [90m/Users/4thwithme/Documents/repo/no-name-proj/backend/[39mnode_modules/[4mjest-circus[24m/build/jestAdapterInit.js:849:7
+    at _runTestsForDescribeBlock [90m(/Users/4thwithme/Documents/repo/no-name-proj/backend/[39mnode_modules/[4mjest-circus[24m/build/jestAdapterInit.js:862:11[90m)[39m
+    at _runTestsForDescribeBlock [90m(/Users/4thwithme/Documents/repo/no-name-proj/backend/[39mnode_modules/[4mjest-circus[24m/build/jestAdapterInit.js:857:11[90m)[39m
+    at _runTestsForDescribeBlock [90m(/Users/4thwithme/Documents/repo/no-name-proj/backend/[39mnode_modules/[4mjest-circus[24m/build/jestAdapterInit.js:857:11[90m)[39m
+    at run [90m(/Users/4thwithme/Documents/repo/no-name-proj/backend/[39mnode_modules/[4mjest-circus[24m/build/jestAdapterInit.js:761:3[90m)[39m
+    at runAndTransformResultsToJestFormat [90m(/Users/4thwithme/Documents/repo/no-name-proj/backend/[39mnode_modules/[4mjest-circus[24m/build/jestAdapterInit.js:1918:21[90m)[39m
+    at jestAdapter [90m(/Users/4thwithme/Documents/repo/no-name-proj/backend/[39mnode_modules/[4mjest-circus[24m/build/runner.js:101:19[90m)[39m
+    at runTestInternal [90m(/Users/4thwithme/Documents/repo/no-name-proj/backend/[39mnode_modules/[4mjest-runner[24m/build/index.js:275:16[90m)[39m
+    at runTest [90m(/Users/4thwithme/Documents/repo/no-name-proj/backend/[39mnode_modules/[4mjest-runner[24m/build/index.js:343:7[90m)[39m
+[31m[Nest] 25836  - [39m04/14/2026, 1:57:40 AM [31m  ERROR[39m [38;5;3m[ExceptionsHandler] [39mError: Not found
+    at Object.<anonymous> [90m(/Users/4thwithme/Documents/repo/no-name-proj/backend/[39mtest/github-install.e2e-spec.ts:154:52[90m)[39m
+    at Promise.finally.completed [90m(/Users/4thwithme/Documents/repo/no-name-proj/backend/[39mnode_modules/[4mjest-circus[24m/build/jestAdapterInit.js:1557:28[90m)[39m
+    at new Promise (<anonymous>)
+    at callAsyncCircusFn [90m(/Users/4thwithme/Documents/repo/no-name-proj/backend/[39mnode_modules/[4mjest-circus[24m/build/jestAdapterInit.js:1497:10[90m)[39m
+    at _callCircusTest [90m(/Users/4thwithme/Documents/repo/no-name-proj/backend/[39mnode_modules/[4mjest-circus[24m/build/jestAdapterInit.js:1007:40[90m)[39m
+[90m    at processTicksAndRejections (node:internal/process/task_queues:103:5)[39m
+    at _runTest [90m(/Users/4thwithme/Documents/repo/no-name-proj/backend/[39mnode_modules/[4mjest-circus[24m/build/jestAdapterInit.js:947:3[90m)[39m
+    at [90m/Users/4thwithme/Documents/repo/no-name-proj/backend/[39mnode_modules/[4mjest-circus[24m/build/jestAdapterInit.js:849:7
+    at _runTestsForDescribeBlock [90m(/Users/4thwithme/Documents/repo/no-name-proj/backend/[39mnode_modules/[4mjest-circus[24m/build/jestAdapterInit.js:862:11[90m)[39m
+    at _runTestsForDescribeBlock [90m(/Users/4thwithme/Documents/repo/no-name-proj/backend/[39mnode_modules/[4mjest-circus[24m/build/jestAdapterInit.js:857:11[90m)[39m
+    at _runTestsForDescribeBlock [90m(/Users/4thwithme/Documents/repo/no-name-proj/backend/[39mnode_modules/[4mjest-circus[24m/build/jestAdapterInit.js:857:11[90m)[39m
+    at run [90m(/Users/4thwithme/Documents/repo/no-name-proj/backend/[39mnode_modules/[4mjest-circus[24m/build/jestAdapterInit.js:761:3[90m)[39m
+    at runAndTransformResultsToJestFormat [90m(/Users/4thwithme/Documents/repo/no-name-proj/backend/[39mnode_modules/[4mjest-circus[24m/build/jestAdapterInit.js:1918:21[90m)[39m
+    at jestAdapter [90m(/Users/4thwithme/Documents/repo/no-name-proj/backend/[39mnode_modules/[4mjest-circus[24m/build/runner.js:101:19[90m)[39m
+    at runTestInternal [90m(/Users/4thwithme/Documents/repo/no-name-proj/backend/[39mnode_modules/[4mjest-runner[24m/build/index.js:275:16[90m)[39m
+    at runTest [90m(/Users/4thwithme/Documents/repo/no-name-proj/backend/[39mnode_modules/[4mjest-runner[24m/build/index.js:343:7[90m)[39m
+Test Suites: 1 failed, 10 passed, 11 total
+Tests:       1 failed, 149 passed, 150 total
+Snapshots:   0 total
+Time:        6.358 s, estimated 7 s
+Ran all test suites.
+Test Suites: 1 failed, 10 passed, 11 total
+Tests:       1 failed, 149 passed, 150 total
+Snapshots:   0 total
+Time:        6.358 s, estimated 7 s
+Ran all test suites.
+Force exiting Jest: Have you considered using `--detectOpenHandles` to detect async operations that kept running after all tests finished?
+Force exiting Jest: Have you considered using `--detectOpenHandles` to detect async operations that kept running after all tests finished?

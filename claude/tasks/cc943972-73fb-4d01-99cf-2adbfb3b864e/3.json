@@ -1,0 +1,9 @@
+{
+  "id": "3",
+  "subject": "Create rollbar-client.ts",
+  "description": "src/scripts/rollbar-monitor/rollbar-client.ts",
+  "activeForm": "Creating Rollbar client",
+  "status": "completed",
+  "blocks": [],
+  "blockedBy": []
+}

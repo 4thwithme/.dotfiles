@@ -1,0 +1,51 @@
+{
+  "session_id": "aa32d606-d8e1-472a-b368-74ab665522a3",
+  "project_path": "/Users/4thwithme/Documents/repo/recommendations-service",
+  "start_time": "2026-02-17T15:43:42.348Z",
+  "duration_minutes": 55,
+  "user_message_count": 6,
+  "assistant_message_count": 19,
+  "tool_counts": {
+    "Read": 8,
+    "Bash": 2,
+    "Glob": 1
+  },
+  "languages": {
+    "TypeScript": 8
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 164,
+  "output_tokens": 45,
+  "first_prompt": "Unknown skill: check",
+  "user_interruptions": 0,
+  "user_response_times": [],
+  "tool_errors": 2,
+  "tool_error_categories": {
+    "Command Failed": 1,
+    "Other": 1
+  },
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 0,
+  "lines_removed": 0,
+  "files_modified": 0,
+  "message_hours": [
+    16,
+    16,
+    16,
+    17,
+    17,
+    17
+  ],
+  "user_message_timestamps": [
+    "2026-02-17T15:43:42.348Z",
+    "2026-02-17T15:43:42.342Z",
+    "2026-02-17T15:43:42.348Z",
+    "2026-02-17T16:37:48.164Z",
+    "2026-02-17T16:37:48.164Z",
+    "2026-02-17T16:37:55.179Z"
+  ]
+}

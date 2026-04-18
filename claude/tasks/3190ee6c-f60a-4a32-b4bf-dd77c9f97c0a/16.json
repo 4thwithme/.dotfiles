@@ -1,0 +1,8 @@
+{
+  "id": "16",
+  "subject": "Task 8: OAuth Account Module",
+  "description": "OAuth account model, service, DTOs with encrypted token storage",
+  "status": "completed",
+  "blocks": [],
+  "blockedBy": []
+}

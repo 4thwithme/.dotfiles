@@ -1,0 +1,13 @@
+        responseTimeP95Monthly: nrql(query: ${q({ nrql: `SELECT percentile(duration, 95) as p95Sec FROM Transaction WHERE ${APP_FILTER} SINCE 30 DAYS AGO` })}) { results }
+        errorRate: nrql(query: ${q({ nrql: `SELECT percentage(count(*), WHERE error IS true) as errorRate FROM Transaction WHERE ${APP_FILTER} SINCE 24 HOURS AGO TIMESERIES 1 hour` })}) { results }
+<<<<<<< HEAD
+        errorRateMonthly: nrql(query: ${q({ nrql: `SELECT percentage(count(*), WHERE error IS true) as errorRate FROM Transaction WHERE ${APP_FILTER} SINCE 30 DAYS AGO TIMESERIES 1 day` })}) { results }
+        apdex: nrql(query: ${q({ nrql: `SELECT ${apdexFormula} FROM Transaction WHERE ${APP_FILTER} SINCE 24 HOURS AGO TIMESERIES 1 hour` })}) { results }
+        apdexMonthly: nrql(query: ${q({ nrql: `SELECT ${apdexFormula} FROM Transaction WHERE ${APP_FILTER} SINCE 30 DAYS AGO TIMESERIES 1 day` })}) { results }
+=======
+        errorRateMonthly: nrql(query: ${q({ nrql: `SELECT percentage(count(*), WHERE error IS true) as errorRate FROM Transaction WHERE ${APP_FILTER} SINCE 30 DAYS AGO` })}) { results }
+        apdex: nrql(query: ${q({ nrql: `SELECT ${apdexFormula} FROM Transaction WHERE ${APP_FILTER} SINCE 24 HOURS AGO TIMESERIES 1 hour` })}) { results }
+        apdexMonthly: nrql(query: ${q({ nrql: `SELECT ${apdexFormula} FROM Transaction WHERE ${APP_FILTER} SINCE 30 DAYS AGO` })}) { results }
+>>>>>>> origin/main
+        slowQueries: nrql(query: ${q({ nrql: `SELECT max(databaseDuration) * 1000 as maxMs, average(databaseDuration) * 1000 as avgMs, count(*) as count FROM Transaction WHERE ${APP_FILTER} AND databaseDuration > 1 SINCE 24 HOURS AGO FACET name LIMIT 10` })}) { results }
+      }

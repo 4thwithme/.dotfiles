@@ -1,0 +1,9 @@
+{
+  "id": "15",
+  "subject": "Phase 2: Implement StratifiedBatchSampler in codebase",
+  "description": "Execute Plan 4 using subagent-driven development. Includes: fixture helper, ILDataset, StratifiedBatchSampler, losses, ILTrainer, strategy_cluster, CLI script, all tests passing on M4 Mac.",
+  "activeForm": "Implementing Plan 4 code",
+  "status": "in_progress",
+  "blocks": [],
+  "blockedBy": []
+}

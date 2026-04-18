@@ -1,0 +1,22 @@
+[
+  {
+    "content": "Analyze the current generateDetailedProductHTML method structure",
+    "status": "completed",
+    "id": "1"
+  },
+  {
+    "content": "Refactor generateDetailedProductHTML to return only widget components",
+    "status": "in_progress",
+    "id": "2"
+  },
+  {
+    "content": "Update method to return structured widget data instead of full HTML",
+    "status": "pending",
+    "id": "3"
+  },
+  {
+    "content": "Test the refactored method integration",
+    "status": "pending",
+    "id": "4"
+  }
+]

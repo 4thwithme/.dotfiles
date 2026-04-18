@@ -1,0 +1,40 @@
+{
+  "session_id": "a4a6252b-37bd-47d8-8abc-63ac3e1e9325",
+  "project_path": "/Users/4thwithme/Documents/repo/recommendations-service",
+  "start_time": "2026-02-12T17:22:49.171Z",
+  "duration_minutes": 16,
+  "user_message_count": 1,
+  "assistant_message_count": 21,
+  "tool_counts": {
+    "Read": 3,
+    "Edit": 5,
+    "Bash": 1
+  },
+  "languages": {
+    "TypeScript": 8
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 174,
+  "output_tokens": 1109,
+  "first_prompt": "in @src/modules/rest/promotional-products/promotional-products.service.ts in this.getPromotionalProductsWithBoost({ products that was from the curated list we need to add new field isBoosted: true, it…",
+  "user_interruptions": 0,
+  "user_response_times": [],
+  "tool_errors": 3,
+  "tool_error_categories": {
+    "Edit Failed": 3
+  },
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 5,
+  "lines_removed": 4,
+  "files_modified": 2,
+  "message_hours": [
+    18
+  ],
+  "user_message_timestamps": [
+    "2026-02-12T17:22:49.171Z"
+  ]
+}

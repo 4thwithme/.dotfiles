@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "newrelic": {
+      "httpUrl": "https://mcp.newrelic.com/mcp/",
+      "oauth": {
+        "enabled": true,
+        "clientId": "pUWGgnjsQ0bydqCbavTPpw==",
+        "authorizationUrl": "https://login.newrelic.com/login",
+        "tokenUrl": "https://mcp.newrelic.com/oauth2/token",
+        "scopes": ["openid"]
+      }
+    }
+  }
+}

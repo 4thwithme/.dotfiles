@@ -1,0 +1,15 @@
+{
+  "underlying_goal": "Get a SQL query to retrieve all distinct values of a specific column from a table",
+  "goal_categories": {
+    "sql_query_writing": 1
+  },
+  "outcome": "fully_achieved",
+  "user_satisfaction_counts": {},
+  "claude_helpfulness": "very_helpful",
+  "session_type": "quick_question",
+  "friction_counts": {},
+  "friction_detail": "",
+  "primary_success": "fast_accurate_search",
+  "brief_summary": "User asked for a SQL query to get all distinct values of a column, and Claude provided a correct SELECT DISTINCT query immediately.",
+  "session_id": "d91dac3c-dedc-49a7-b835-25b81d4c6e85"
+}

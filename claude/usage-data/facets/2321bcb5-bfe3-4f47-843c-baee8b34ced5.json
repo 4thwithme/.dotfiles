@@ -1,0 +1,27 @@
+{
+  "underlying_goal": "Improve a neural search service by adding query sanitization, gender/price/brand filtering, and making the bootstrap CLI non-destructive by default",
+  "goal_categories": {
+    "feature_addition": 6,
+    "refactoring": 2,
+    "bug_fix": 0
+  },
+  "outcome": "mostly_achieved",
+  "user_satisfaction_counts": {
+    "satisfied": 2,
+    "likely_satisfied": 4,
+    "dissatisfied": 1,
+    "frustrated": 1
+  },
+  "claude_helpfulness": "very_helpful",
+  "session_type": "iterative_refinement",
+  "friction_counts": {
+    "wrong_approach": 2,
+    "excessive_changes": 1,
+    "user_rejected_action": 1,
+    "buggy_code": 1
+  },
+  "friction_detail": "Claude over-engineered the brand detection by injecting a DB model and loading brands at runtime, when user wanted a simple hardcoded list; also initially used filter instead of should for brand/price, requiring correction.",
+  "primary_success": "correct_code_edits",
+  "brief_summary": "User iteratively improved a neural search service with gender/price/brand filtering and query sanitization; most features were delivered but Claude over-complicated the brand feature requiring a redo and the session ended with an unresolved lint/import issue.",
+  "session_id": "2321bcb5-bfe3-4f47-843c-baee8b34ced5"
+}

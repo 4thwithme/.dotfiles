@@ -1,0 +1,8 @@
+{
+  "id": "9",
+  "subject": "Task 3: Database Module (Knex + PostgreSQL)",
+  "description": "Create db.module.ts with Knex read/write connections, constants, knexfile, migrations scripts",
+  "status": "completed",
+  "blocks": [],
+  "blockedBy": []
+}

@@ -1,0 +1,26 @@
+[
+  {
+    "content": "Examine current application structure (.customink, .circleci, main.ts, cli module)",
+    "status": "completed",
+    "priority": "high",
+    "id": "1"
+  },
+  {
+    "content": "Check existing database connection and health check setup",
+    "status": "completed",
+    "priority": "high",
+    "id": "2"
+  },
+  {
+    "content": "Implement automatic migration logic in application startup",
+    "status": "completed",
+    "priority": "high",
+    "id": "3"
+  },
+  {
+    "content": "Test the migration functionality",
+    "status": "in_progress",
+    "priority": "medium",
+    "id": "4"
+  }
+]

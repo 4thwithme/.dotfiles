@@ -1,0 +1,127 @@
+  ~/.config/ghostty   master !4 ?4 ❯ zellij attach --index 0                                                                                                                                                                                                       14:44:19
+
+  × Failed to parse Zellij configuration
+     ╭─[/Users/4thwithme/.config/zellij/themes/rose-pine-moon.kdl:1:1]
+   1 │     themes {
+   2 │ ╭─▶   rose-pine-moon {
+   3 │ │       text_unselected {
+   4 │ │         base 224 222 244
+   5 │ │         background 42 40 62
+   6 │ │         emphasis_0 234 154 151
+   7 │ │         emphasis_1 156 207 216
+   8 │ │         emphasis_2 62 143 176
+   9 │ │         emphasis_3 196 167 231
+  10 │ │       }
+  11 │ │       text_selected {
+  12 │ │         base 224 222 244
+  13 │ │         background 68 65 90
+  14 │ │         emphasis_0 234 154 151
+  15 │ │         emphasis_1 156 207 216
+  16 │ │         emphasis_2 62 143 176
+  17 │ │         emphasis_3 196 167 231
+  18 │ │       }
+  19 │ │       ribbon_selected {
+  20 │ │         base 42 40 62
+  21 │ │         background 62 143 176
+  22 │ │         emphasis_0 246 193 119
+  23 │ │         emphasis_1 234 154 151
+  24 │ │         emphasis_2 196 167 231
+  25 │ │         emphasis_3 156 207 216
+  26 │ │       }
+  27 │ │       ribbon_unselected {
+  28 │ │         base 35 33 54
+  29 │ │         background 224 222 244
+  30 │ │         emphasis_0 246 193 119
+  31 │ │         emphasis_1 234 154 151
+  32 │ │         emphasis_2 196 167 231
+  33 │ │         emphasis_3 156 207 216
+  34 │ │       }
+  35 │ │       table_title {
+  36 │ │         base 62 143 176
+  37 │ │         background 0 0 0
+  38 │ │         emphasis_0 234 154 151
+  39 │ │         emphasis_1 156 207 216
+  40 │ │         emphasis_2 62 143 176
+  41 │ │         emphasis_3 196 167 231
+  42 │ │       }
+  43 │ │       table_cell_selected {
+  44 │ │         base 224 222 244
+  45 │ │         background 68 65 90
+  46 │ │         emphasis_0 234 154 151
+  47 │ │         emphasis_1 156 207 216
+  48 │ │         emphasis_2 62 143 176
+  49 │ │         emphasis_3 196 167 231
+  50 │ │       }
+  51 │ │       table_cell_unselected {
+  52 │ │         base 224 222 244
+  53 │ │         background 42 40 62
+  54 │ │         emphasis_0 234 154 151
+  55 │ │         emphasis_1 156 207 216
+  56 │ │         emphasis_2 62 143 176
+  57 │ │         emphasis_3 196 167 231
+  58 │ │       }
+  59 │ │       list_selected {
+  60 │ │         base 224 222 244
+  61 │ │         background 68 65 90
+  62 │ │         emphasis_0 234 154 151
+  63 │ │         emphasis_1 156 207 216
+  64 │ │         emphasis_2 62 143 176
+  65 │ │         emphasis_3 196 167 231
+  66 │ │       }
+  67 │ │       list_unselected {
+  68 │ │         base 224 222 244
+  69 │ │         background 42 40 62
+  70 │ │         emphasis_0 234 154 151
+  71 │ │         emphasis_1 156 207 216
+  72 │ │         emphasis_2 62 143 176
+  73 │ │         emphasis_3 196 167 231
+  74 │ │       }
+  75 │ │       frame_selected {
+  76 │ │         base 62 143 176
+  77 │ │         background 0 0 0
+  78 │ │         emphasis_0 234 154 151
+  79 │ │         emphasis_1 156 207 216
+  80 │ │         emphasis_2 196 167 231
+  81 │ │         emphasis_3 0 0 0
+  82 │ │       }
+  83 │ │       frame_highlight {
+  84 │ │         base 234 154 151
+  85 │ │         background 0 0 0
+  86 │ │         emphasis_0 234 154 151
+  87 │ │         emphasis_1 234 154 151
+  88 │ │         emphasis_2 234 154 151
+  89 │ │         emphasis_3 234 154 151
+  90 │ │       }
+  91 │ │       exit_code_success {
+  92 │ │         base 62 143 176
+  93 │ │         background 0 0 0
+  94 │ │         emphasis_0 156 207 216
+  95 │ │         emphasis_1 42 40 62
+  96 │ │         emphasis_2 196 167 231
+  97 │ │         emphasis_3 62 143 176
+  98 │ │       }
+  99 │ │       exit_code_error {
+ 100 │ │         base 235 111 146
+ 101 │ │         background 0 0 0
+ 102 │ │         emphasis_0 246 193 119
+ 103 │ │         emphasis_1 0 0 0
+ 104 │ │         emphasis_2 0 0 0
+ 105 │ │         emphasis_3 0 0 0
+ 106 │ │       }
+ 107 │ │       multiplayer_user_colors {
+ 108 │ │         player_1 196 167 231
+ 109 │ │         player_2 62 143 176
+ 110 │ │         player_3 234 154 151
+ 111 │ │         player_4 246 193 119
+ 112 │ │         player_5 156 207 216
+ 113 │ │         player_6 235 111 146
+ 114 │ │         player_7 0 0 0
+ 115 │ │         player_8 0 0 0
+ 116 │ │         player_9 0 0 0
+ 117 │ │         player_10 0 0 0
+ 118 │ ├─▶     }
+     · ╰──── Missing theme color: fg
+ 119 │       }
+ 120 │     }
+     ╰────
+  help: For more information, please see our configuration guide: https://zellij.dev/documentation/configuration.html

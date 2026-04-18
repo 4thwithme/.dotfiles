@@ -1,0 +1,26 @@
+[
+  {
+    "content": "Find existing theme toggler component",
+    "status": "completed",
+    "priority": "high",
+    "id": "1"
+  },
+  {
+    "content": "Verify theme persistence works correctly",
+    "status": "completed",
+    "priority": "high",
+    "id": "2"
+  },
+  {
+    "content": "Add theme toggle to main application index route",
+    "status": "completed",
+    "priority": "high",
+    "id": "3"
+  },
+  {
+    "content": "Test theme functionality",
+    "status": "in_progress",
+    "priority": "medium",
+    "id": "4"
+  }
+]

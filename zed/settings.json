@@ -24,8 +24,9 @@
         "default_profile": "ask",
         "always_allow_tool_actions": false,
         "default_model": {
-            "provider": "zed.dev",
-            "model": "claude-sonnet-4-thinking"
+            "enable_thinking": true,
+            "provider": "copilot_chat",
+            "model": "claude-haiku-4.5"
         },
         "version": "2"
     },

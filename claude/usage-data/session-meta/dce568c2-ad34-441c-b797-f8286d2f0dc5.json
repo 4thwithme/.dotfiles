@@ -1,0 +1,57 @@
+{
+  "session_id": "dce568c2-ad34-441c-b797-f8286d2f0dc5",
+  "project_path": "/Users/4thwithme/Documents/repo/recommendations-service",
+  "start_time": "2026-02-14T09:12:34.395Z",
+  "duration_minutes": 26,
+  "user_message_count": 5,
+  "assistant_message_count": 207,
+  "tool_counts": {
+    "TaskCreate": 6,
+    "TaskUpdate": 12,
+    "Read": 18,
+    "Edit": 43,
+    "Write": 4,
+    "Bash": 35,
+    "Glob": 1
+  },
+  "languages": {
+    "YAML": 7,
+    "TypeScript": 52
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 1692,
+  "output_tokens": 16561,
+  "first_prompt": "Implement the following plan:  # Plan: OpenSearch Real E2E Test Integration  ## Context  The current OpenSearch test suite (`test/opensearch/opensearch-neural.service.e2e-spec.ts`) uses fully mocked s…",
+  "user_interruptions": 1,
+  "user_response_times": [
+    41.966,
+    391.455,
+    391.455
+  ],
+  "tool_errors": 4,
+  "tool_error_categories": {
+    "Command Failed": 4
+  },
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 2093,
+  "lines_removed": 82,
+  "files_modified": 8,
+  "message_hours": [
+    10,
+    10,
+    10,
+    10,
+    10
+  ],
+  "user_message_timestamps": [
+    "2026-02-14T09:12:34.395Z",
+    "2026-02-14T09:13:38.433Z",
+    "2026-02-14T09:14:20.234Z",
+    "2026-02-14T09:30:56.246Z",
+    "2026-02-14T09:30:56.246Z"
+  ]
+}

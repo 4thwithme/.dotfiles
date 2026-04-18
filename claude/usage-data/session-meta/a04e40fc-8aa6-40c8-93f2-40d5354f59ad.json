@@ -1,0 +1,58 @@
+{
+  "session_id": "a04e40fc-8aa6-40c8-93f2-40d5354f59ad",
+  "project_path": "/Users/4thwithme/Documents/repo/recommendations-service",
+  "start_time": "2026-02-26T12:49:55.770Z",
+  "duration_minutes": 159,
+  "user_message_count": 8,
+  "assistant_message_count": 28,
+  "tool_counts": {
+    "Task": 4,
+    "AskUserQuestion": 2,
+    "Write": 3,
+    "ExitPlanMode": 3,
+    "Read": 2
+  },
+  "languages": {
+    "Markdown": 5
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 42,
+  "output_tokens": 12302,
+  "first_prompt": "we have opensearch and neural search in it check @src/modules/opensearch/ @src/modules/rest/neural-search/ @src/modules/cli/commands/bootstrap-neural-search.command.ts   we would like to add LLM betwe…",
+  "user_interruptions": 1,
+  "user_response_times": [
+    173.042
+  ],
+  "tool_errors": 3,
+  "tool_error_categories": {
+    "User Rejected": 3
+  },
+  "uses_task_agent": true,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 509,
+  "lines_removed": 0,
+  "files_modified": 2,
+  "message_hours": [
+    13,
+    13,
+    13,
+    13,
+    13,
+    13,
+    13,
+    16
+  ],
+  "user_message_timestamps": [
+    "2026-02-26T12:49:55.770Z",
+    "2026-02-26T12:49:55.767Z",
+    "2026-02-26T12:49:55.770Z",
+    "2026-02-26T12:50:00.591Z",
+    "2026-02-26T12:50:00.591Z",
+    "2026-02-26T12:50:00.591Z",
+    "2026-02-26T12:53:48.712Z",
+    "2026-02-26T15:28:31.588Z"
+  ]
+}

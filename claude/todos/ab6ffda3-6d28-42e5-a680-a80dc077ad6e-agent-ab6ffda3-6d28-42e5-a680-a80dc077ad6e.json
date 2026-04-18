@@ -1,0 +1,20 @@
+[
+  {
+    "content": "Find all page files in client directory",
+    "status": "completed",
+    "priority": "high",
+    "id": "1"
+  },
+  {
+    "content": "Remove shadows and button movements from all pages",
+    "status": "completed",
+    "priority": "high",
+    "id": "2"
+  },
+  {
+    "content": "Ensure only color changes remain on hover",
+    "status": "completed",
+    "priority": "medium",
+    "id": "3"
+  }
+]

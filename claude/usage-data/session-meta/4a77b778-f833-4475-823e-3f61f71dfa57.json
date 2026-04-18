@@ -1,0 +1,58 @@
+{
+  "session_id": "4a77b778-f833-4475-823e-3f61f71dfa57",
+  "project_path": "/Users/4thwithme/Documents/repo/recommendations-service",
+  "start_time": "2026-03-03T11:28:24.545Z",
+  "duration_minutes": 22,
+  "user_message_count": 7,
+  "assistant_message_count": 79,
+  "tool_counts": {
+    "Read": 6,
+    "Grep": 4,
+    "Write": 1,
+    "Edit": 34,
+    "Bash": 9
+  },
+  "languages": {
+    "TypeScript": 41
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 83,
+  "output_tokens": 33082,
+  "first_prompt": "when we run npm run lint we got a lot of warnings, we want t ofix them  for example lets start with /Users/4thwithme/Documents/repo/recommendations-service/src/utils/trending-score-calculator.util.ts…",
+  "user_interruptions": 1,
+  "user_response_times": [
+    743.896,
+    743.896,
+    745.53
+  ],
+  "tool_errors": 1,
+  "tool_error_categories": {
+    "Command Failed": 1
+  },
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 492,
+  "lines_removed": 107,
+  "files_modified": 2,
+  "message_hours": [
+    12,
+    12,
+    12,
+    12,
+    12,
+    12,
+    12
+  ],
+  "user_message_timestamps": [
+    "2026-03-03T11:28:24.545Z",
+    "2026-03-03T11:28:24.543Z",
+    "2026-03-03T11:28:24.545Z",
+    "2026-03-03T11:31:05.562Z",
+    "2026-03-03T11:50:49.859Z",
+    "2026-03-03T11:50:49.859Z",
+    "2026-03-03T11:50:51.493Z"
+  ]
+}

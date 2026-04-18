@@ -1,0 +1,26 @@
+[
+  {
+    "content": "Fix docker-compose.yml issues",
+    "status": "completed",
+    "priority": "high",
+    "id": "1"
+  },
+  {
+    "content": "Create production Dockerfile",
+    "status": "completed",
+    "priority": "high",
+    "id": "2"
+  },
+  {
+    "content": "Create devcontainer Dockerfile",
+    "status": "completed",
+    "priority": "medium",
+    "id": "3"
+  },
+  {
+    "content": "Update docker-compose.yml to reference the app service",
+    "status": "completed",
+    "priority": "medium",
+    "id": "4"
+  }
+]

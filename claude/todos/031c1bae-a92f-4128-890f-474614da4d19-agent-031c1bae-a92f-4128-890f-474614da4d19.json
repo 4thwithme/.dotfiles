@@ -1,0 +1,26 @@
+[
+  {
+    "content": "Create auth service to handle registration",
+    "status": "completed",
+    "priority": "high",
+    "id": "1"
+  },
+  {
+    "content": "Create register DTO for company registration",
+    "status": "completed",
+    "priority": "high",
+    "id": "2"
+  },
+  {
+    "content": "Fix auth controller to handle registration endpoint",
+    "status": "completed",
+    "priority": "high",
+    "id": "3"
+  },
+  {
+    "content": "Import AuthModule in AppModule",
+    "status": "completed",
+    "priority": "medium",
+    "id": "4"
+  }
+]

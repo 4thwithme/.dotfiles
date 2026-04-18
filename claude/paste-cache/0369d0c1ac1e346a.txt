@@ -1,0 +1,18 @@
+  ~/Documents/repo/zh-copilot   main !5 ?1 ❯ python3 -c "                                                                                                                                   zh-copilot  13:07:34
+  import sys; sys.path.insert(0, 'src')
+  from playwright.sync_api import sync_playwright
+  with sync_playwright() as pw:
+      browser = pw.chromium.launch(headless=False, channel='chrome', args=['--disable-blink-features=AutomationControlled'])
+      context = browser.new_context()
+      page = context.new_page()
+      page.goto('https://www.gamereplays.org', wait_until='networkidle')
+      input('Log in then press Enter > ')
+      print('Cookies:', [c[\"name\"] for c in context.cookies()])
+      r = page.request.get('https://www.gamereplays.org/cnczerohour/replays.php?s=0&game=2&show=download&&id=369445')
+      print('Status:', r.status)
+      print('Body:', r.text()[:500])
+      browser.close()
+  "
+  File "<string>", line 2
+    import sys; sys.path.insert(0, 'src')
+IndentationError: unexpected indent

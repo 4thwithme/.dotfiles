@@ -1,0 +1,3 @@
+- [Diagrams & docs preference](feedback_diagrams_docs.md) — use diagram-skill + documentation-skill, store in docs/ and plans/ as .md
+- [User ML profile](user_profile.md) — intermediate ML, CNNs/boosting experience, rusty, no RL background
+- [ZH Copilot vision](project_vision.md) — AI bot for ZH, copilot/autopilot modes, screen capture deployment

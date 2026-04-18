@@ -1,0 +1,61 @@
+Summary of all failing tests
+ FAIL  app/javascript/features/TabbedView/components/CarouselCardsView.test.jsx
+  ● CarouselCardsView › arrow accessibility › renders arrow buttons with aria-labels
+
+    Too many re-renders. React limits the number of renders to prevent an infinite loop.
+
+      254 |
+      255 |     it('renders arrow buttons with aria-labels', () => {
+    > 256 |       render(<CarouselCardsView>{mockChildren}</CarouselCardsView>);
+          |             ^
+      257 |
+      258 |       expect(screen.getByLabelText('Previous products')).toBeInTheDocument();
+      259 |       expect(screen.getByLabelText('Next products')).toBeInTheDocument();
+
+      at renderWithHooks (node_modules/react-dom/cjs/react-dom.development.js:15498:15)
+      at mountIndeterminateComponent (node_modules/react-dom/cjs/react-dom.development.js:20103:13)
+      at beginWork (node_modules/react-dom/cjs/react-dom.development.js:21626:16)
+      at beginWork$1 (node_modules/react-dom/cjs/react-dom.development.js:27465:14)
+      at performUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:26599:12)
+      at workLoopSync (node_modules/react-dom/cjs/react-dom.development.js:26505:5)
+      at renderRootSync (node_modules/react-dom/cjs/react-dom.development.js:26473:7)
+      at recoverFromConcurrentError (node_modules/react-dom/cjs/react-dom.development.js:25889:20)
+      at performConcurrentWorkOnRoot (node_modules/react-dom/cjs/react-dom.development.js:25789:22)
+      at flushActQueue (node_modules/react/cjs/react.development.js:2667:24)
+      at act (node_modules/react/cjs/react.development.js:2582:11)
+      at node_modules/@testing-library/react/dist/act-compat.js:47:25
+      at renderRoot (node_modules/@testing-library/react/dist/pure.js:180:26)
+      at render (node_modules/@testing-library/react/dist/pure.js:271:10)
+      at Object.<anonymous> (app/javascript/features/TabbedView/components/CarouselCardsView.test.jsx:256:13)
+
+  ● CarouselCardsView › arrow accessibility › renders arrow buttons with data-testid attributes
+
+    Too many re-renders. React limits the number of renders to prevent an infinite loop.
+
+      261 |
+      262 |     it('renders arrow buttons with data-testid attributes', () => {
+    > 263 |       render(<CarouselCardsView>{mockChildren}</CarouselCardsView>);
+          |             ^
+      264 |
+      265 |       expect(screen.getByTestId('pdp-rfy-previous-arrow')).toBeInTheDocument();
+      266 |       expect(screen.getByTestId('pdp-rfy-next-arrow')).toBeInTheDocument();
+
+      at renderWithHooks (node_modules/react-dom/cjs/react-dom.development.js:15498:15)
+      at mountIndeterminateComponent (node_modules/react-dom/cjs/react-dom.development.js:20103:13)
+      at beginWork (node_modules/react-dom/cjs/react-dom.development.js:21626:16)
+      at beginWork$1 (node_modules/react-dom/cjs/react-dom.development.js:27465:14)
+      at performUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:26599:12)
+      at workLoopSync (node_modules/react-dom/cjs/react-dom.development.js:26505:5)
+      at renderRootSync (node_modules/react-dom/cjs/react-dom.development.js:26473:7)
+      at recoverFromConcurrentError (node_modules/react-dom/cjs/react-dom.development.js:25889:20)
+      at performConcurrentWorkOnRoot (node_modules/react-dom/cjs/react-dom.development.js:25789:22)
+      at flushActQueue (node_modules/react/cjs/react.development.js:2667:24)
+      at act (node_modules/react/cjs/react.development.js:2582:11)
+      at node_modules/@testing-library/react/dist/act-compat.js:47:25
+      at renderRoot (node_modules/@testing-library/react/dist/pure.js:180:26)
+      at render (node_modules/@testing-library/react/dist/pure.js:271:10)
+      at Object.<anonymous> (app/javascript/features/TabbedView/components/CarouselCardsView.test.jsx:263:13)
+
+
+Test Suites: 1 failed, 218 passed, 219 total
+Tests:       2 failed, 2161 passed, 2163 total

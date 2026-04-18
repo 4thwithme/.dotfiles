@@ -1,0 +1,32 @@
+[
+  {
+    "content": "Examine current Fastify configuration in main.ts",
+    "status": "completed",
+    "priority": "high",
+    "id": "1"
+  },
+  {
+    "content": "Update package.json dependencies (remove Fastify, add Express)",
+    "status": "completed",
+    "priority": "high",
+    "id": "2"
+  },
+  {
+    "content": "Update main.ts to use Express adapter",
+    "status": "completed",
+    "priority": "high",
+    "id": "3"
+  },
+  {
+    "content": "Update any Fastify-specific configurations",
+    "status": "completed",
+    "priority": "medium",
+    "id": "4"
+  },
+  {
+    "content": "Test the application after migration",
+    "status": "in_progress",
+    "priority": "high",
+    "id": "5"
+  }
+]

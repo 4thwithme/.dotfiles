@@ -1,0 +1,20 @@
+[
+  {
+    "content": "Handle GitHub API rate limit gracefully in getRepositories",
+    "status": "completed",
+    "priority": "high",
+    "id": "1"
+  },
+  {
+    "content": "Add rate limit error handling to GitHubService",
+    "status": "pending",
+    "priority": "high",
+    "id": "2"
+  },
+  {
+    "content": "Consider caching repositories to reduce API calls",
+    "status": "completed",
+    "priority": "medium",
+    "id": "3"
+  }
+]

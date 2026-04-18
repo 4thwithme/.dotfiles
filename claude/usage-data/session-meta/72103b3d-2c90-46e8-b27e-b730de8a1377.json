@@ -1,0 +1,65 @@
+{
+  "session_id": "72103b3d-2c90-46e8-b27e-b730de8a1377",
+  "project_path": "/Users/4thwithme/Documents/repo/recommendations-service",
+  "start_time": "2026-02-13T22:34:56.818Z",
+  "duration_minutes": 77,
+  "user_message_count": 10,
+  "assistant_message_count": 33,
+  "tool_counts": {
+    "Read": 5,
+    "Edit": 4,
+    "Bash": 5
+  },
+  "languages": {
+    "TypeScript": 7,
+    "YAML": 2
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 61,
+  "output_tokens": 989,
+  "first_prompt": "FAIL  src/unit-tests/get-env-file.util.unit-spec.ts   ● get-env-file.util › loadEnvVariables › should validate and return getEnvVariables for staging environment      expect(jest.fn()).toHaveBeenCalle…",
+  "user_interruptions": 1,
+  "user_response_times": [
+    19.677,
+    143.163,
+    345.478,
+    347.65,
+    58.211
+  ],
+  "tool_errors": 1,
+  "tool_error_categories": {
+    "User Rejected": 1
+  },
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 6,
+  "lines_removed": 6,
+  "files_modified": 3,
+  "message_hours": [
+    23,
+    23,
+    23,
+    23,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "user_message_timestamps": [
+    "2026-02-13T22:34:56.818Z",
+    "2026-02-13T22:34:56.816Z",
+    "2026-02-13T22:34:56.818Z",
+    "2026-02-13T22:36:47.300Z",
+    "2026-02-13T23:41:07.749Z",
+    "2026-02-13T23:42:03.442Z",
+    "2026-02-13T23:44:32.497Z",
+    "2026-02-13T23:50:21.343Z",
+    "2026-02-13T23:50:23.515Z",
+    "2026-02-13T23:51:24.581Z"
+  ]
+}

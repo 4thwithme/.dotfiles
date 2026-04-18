@@ -1,0 +1,98 @@
+  ~/Documents/repo/recommendations-service   main *18 !4 ❯ npm run test:coverage                                                                                                                         17:26:22
+
+> recommendations-service@0.0.1 test:coverage
+> npm run code-quality-check && npm run test:unit:coverage && npm run test:e2e:coverage
+
+
+> recommendations-service@0.0.1 code-quality-check
+> npm run lint && npm run format && npm run type-check
+
+
+> recommendations-service@0.0.1 lint
+> eslint "{src,apps,libs,test}/**/*.ts"
+
+
+/Users/4thwithme/Documents/repo/recommendations-service/src/modules/cli/commands/forecast-trending-products.command.ts
+  332:5  error  Expected the Promise rejection reason to be an Error  @typescript-eslint/prefer-promise-reject-errors
+
+/Users/4thwithme/Documents/repo/recommendations-service/src/modules/db/category-correlations/models/category-correlation.model.ts
+  64:29  error  This value can be trivially inferred for this type parameter, so it can be omitted  @typescript-eslint/no-unnecessary-type-arguments
+
+/Users/4thwithme/Documents/repo/recommendations-service/src/modules/db/condensed-features/models/condensed-feature.model.ts
+   94:27  error  This value can be trivially inferred for this type parameter, so it can be omitted  @typescript-eslint/no-unnecessary-type-arguments
+  172:27  error  This value can be trivially inferred for this type parameter, so it can be omitted  @typescript-eslint/no-unnecessary-type-arguments
+  195:27  error  This value can be trivially inferred for this type parameter, so it can be omitted  @typescript-eslint/no-unnecessary-type-arguments
+  222:27  error  This value can be trivially inferred for this type parameter, so it can be omitted  @typescript-eslint/no-unnecessary-type-arguments
+  290:27  error  This value can be trivially inferred for this type parameter, so it can be omitted  @typescript-eslint/no-unnecessary-type-arguments
+
+/Users/4thwithme/Documents/repo/recommendations-service/src/modules/db/default-unit-prices/models/default-unit-price.model.ts
+   80:27  error  This value can be trivially inferred for this type parameter, so it can be omitted  @typescript-eslint/no-unnecessary-type-arguments
+  111:21  error  This value can be trivially inferred for this type parameter, so it can be omitted  @typescript-eslint/no-unnecessary-type-arguments
+  158:27  error  This value can be trivially inferred for this type parameter, so it can be omitted  @typescript-eslint/no-unnecessary-type-arguments
+  217:27  error  This value can be trivially inferred for this type parameter, so it can be omitted  @typescript-eslint/no-unnecessary-type-arguments
+  323:27  error  This value can be trivially inferred for this type parameter, so it can be omitted  @typescript-eslint/no-unnecessary-type-arguments
+  455:27  error  This value can be trivially inferred for this type parameter, so it can be omitted  @typescript-eslint/no-unnecessary-type-arguments
+
+/Users/4thwithme/Documents/repo/recommendations-service/src/modules/db/forecasted-trending-products/models/forecasted-trending-products.model.ts
+  345:30  error  This value can be trivially inferred for this type parameter, so it can be omitted  @typescript-eslint/no-unnecessary-type-arguments
+  402:29  error  This value can be trivially inferred for this type parameter, so it can be omitted  @typescript-eslint/no-unnecessary-type-arguments
+  445:29  error  This value can be trivially inferred for this type parameter, so it can be omitted  @typescript-eslint/no-unnecessary-type-arguments
+  482:28  error  This value can be trivially inferred for this type parameter, so it can be omitted  @typescript-eslint/no-unnecessary-type-arguments
+
+/Users/4thwithme/Documents/repo/recommendations-service/src/modules/db/product-annual-sales/models/product-annual-sales.model.ts
+   46:29  error  This value can be trivially inferred for this type parameter, so it can be omitted  @typescript-eslint/no-unnecessary-type-arguments
+   98:29  error  This value can be trivially inferred for this type parameter, so it can be omitted  @typescript-eslint/no-unnecessary-type-arguments
+  147:29  error  This value can be trivially inferred for this type parameter, so it can be omitted  @typescript-eslint/no-unnecessary-type-arguments
+
+/Users/4thwithme/Documents/repo/recommendations-service/src/modules/db/root-categories-correlations/models/root-category-correlation.model.ts
+  55:29  error  This value can be trivially inferred for this type parameter, so it can be omitted  @typescript-eslint/no-unnecessary-type-arguments
+
+/Users/4thwithme/Documents/repo/recommendations-service/src/modules/db/style-alternatives/models/style-alternative.model.ts
+   73:27  error  This value can be trivially inferred for this type parameter, so it can be omitted  @typescript-eslint/no-unnecessary-type-arguments
+   94:22  error  This value can be trivially inferred for this type parameter, so it can be omitted  @typescript-eslint/no-unnecessary-type-arguments
+  202:27  error  This value can be trivially inferred for this type parameter, so it can be omitted  @typescript-eslint/no-unnecessary-type-arguments
+
+/Users/4thwithme/Documents/repo/recommendations-service/src/modules/db/style-colors/models/style-color.model.ts
+   72:27  error  This value can be trivially inferred for this type parameter, so it can be omitted  @typescript-eslint/no-unnecessary-type-arguments
+   99:27  error  This value can be trivially inferred for this type parameter, so it can be omitted  @typescript-eslint/no-unnecessary-type-arguments
+  128:27  error  This value can be trivially inferred for this type parameter, so it can be omitted  @typescript-eslint/no-unnecessary-type-arguments
+  157:27  error  This value can be trivially inferred for this type parameter, so it can be omitted  @typescript-eslint/no-unnecessary-type-arguments
+  211:27  error  This value can be trivially inferred for this type parameter, so it can be omitted  @typescript-eslint/no-unnecessary-type-arguments
+  312:27  error  This value can be trivially inferred for this type parameter, so it can be omitted  @typescript-eslint/no-unnecessary-type-arguments
+  442:27  error  This value can be trivially inferred for this type parameter, so it can be omitted  @typescript-eslint/no-unnecessary-type-arguments
+
+/Users/4thwithme/Documents/repo/recommendations-service/src/modules/db/styles-hash/models/styles-hash.model.ts
+   73:27  error  This value can be trivially inferred for this type parameter, so it can be omitted  @typescript-eslint/no-unnecessary-type-arguments
+   97:27  error  This value can be trivially inferred for this type parameter, so it can be omitted  @typescript-eslint/no-unnecessary-type-arguments
+  124:27  error  This value can be trivially inferred for this type parameter, so it can be omitted  @typescript-eslint/no-unnecessary-type-arguments
+  169:27  error  This value can be trivially inferred for this type parameter, so it can be omitted  @typescript-eslint/no-unnecessary-type-arguments
+
+/Users/4thwithme/Documents/repo/recommendations-service/src/modules/db/styles/models/style.model.ts
+  458:38  error  This value can be trivially inferred for this type parameter, so it can be omitted  @typescript-eslint/no-unnecessary-type-arguments
+  579:38  error  This value can be trivially inferred for this type parameter, so it can be omitted  @typescript-eslint/no-unnecessary-type-arguments
+
+/Users/4thwithme/Documents/repo/recommendations-service/src/modules/rest/frequently-bought-together/frequently-bought-together.controller.ts
+   39:3   warning  Unused eslint-disable directive (no problems were reported from '@typescript-eslint/no-unnecessary-condition')
+   41:11  warning  Unnecessary conditional, expected left-hand side of `??` operator to be possibly null or undefined              @typescript-eslint/no-unnecessary-condition
+   41:14  warning  Unnecessary optional chain on a non-nullish value                                                               @typescript-eslint/no-unnecessary-condition
+   41:42  warning  Unnecessary optional chain on a non-nullish value                                                               @typescript-eslint/no-unnecessary-condition
+   42:18  warning  Unnecessary conditional, expected left-hand side of `??` operator to be possibly null or undefined              @typescript-eslint/no-unnecessary-condition
+   42:21  warning  Unnecessary optional chain on a non-nullish value                                                               @typescript-eslint/no-unnecessary-condition
+   69:3   warning  Unused eslint-disable directive (no problems were reported from '@typescript-eslint/no-unnecessary-condition')
+   71:11  warning  Unnecessary conditional, expected left-hand side of `??` operator to be possibly null or undefined              @typescript-eslint/no-unnecessary-condition
+   71:14  warning  Unnecessary optional chain on a non-nullish value                                                               @typescript-eslint/no-unnecessary-condition
+   71:42  warning  Unnecessary optional chain on a non-nullish value                                                               @typescript-eslint/no-unnecessary-condition
+   72:18  warning  Unnecessary conditional, expected left-hand side of `??` operator to be possibly null or undefined              @typescript-eslint/no-unnecessary-condition
+   72:21  warning  Unnecessary optional chain on a non-nullish value                                                               @typescript-eslint/no-unnecessary-condition
+  101:3   warning  Unused eslint-disable directive (no problems were reported from '@typescript-eslint/no-unnecessary-condition')
+  103:11  warning  Unnecessary conditional, expected left-hand side of `??` operator to be possibly null or undefined              @typescript-eslint/no-unnecessary-condition
+  103:14  warning  Unnecessary optional chain on a non-nullish value                                                               @typescript-eslint/no-unnecessary-condition
+  103:42  warning  Unnecessary optional chain on a non-nullish value                                                               @typescript-eslint/no-unnecessary-condition
+  104:18  warning  Unnecessary conditional, expected left-hand side of `??` operator to be possibly null or undefined              @typescript-eslint/no-unnecessary-condition
+  104:21  warning  Unnecessary optional chain on a non-nullish value                                                               @typescript-eslint/no-unnecessary-condition
+
+/Users/4thwithme/Documents/repo/recommendations-service/src/unit-tests/bigquery.service.unit-spec.ts
+  115:27  error  This value can be trivially inferred for this type parameter, so it can be omitted  @typescript-eslint/no-unnecessary-type-arguments
+
+✖ 56 problems (38 errors, 18 warnings)
+  37 errors and 3 warnings potentially fixable with the `--fix` option.

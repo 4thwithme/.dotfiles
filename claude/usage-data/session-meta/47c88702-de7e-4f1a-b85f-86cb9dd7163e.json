@@ -1,0 +1,49 @@
+{
+  "session_id": "47c88702-de7e-4f1a-b85f-86cb9dd7163e",
+  "project_path": "/Users/4thwithme/Documents/repo/recommendations-service",
+  "start_time": "2026-02-20T12:55:25.580Z",
+  "duration_minutes": 143,
+  "user_message_count": 5,
+  "assistant_message_count": 16,
+  "tool_counts": {
+    "Edit": 3,
+    "Read": 1
+  },
+  "languages": {
+    "TypeScript": 4
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 38,
+  "output_tokens": 400,
+  "first_prompt": "in @src/modules/opensearch/opensearch-neural.service.ts  product_embedding: {                     type: 'knn_vector',                     dimension: 768,                     method: {…",
+  "user_interruptions": 0,
+  "user_response_times": [
+    251.828,
+    1200.82,
+    705.673
+  ],
+  "tool_errors": 0,
+  "tool_error_categories": {},
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 19,
+  "lines_removed": 15,
+  "files_modified": 1,
+  "message_hours": [
+    13,
+    13,
+    14,
+    14,
+    16
+  ],
+  "user_message_timestamps": [
+    "2026-02-20T12:55:25.580Z",
+    "2026-02-20T12:59:48.136Z",
+    "2026-02-20T13:20:10.455Z",
+    "2026-02-20T13:36:42.553Z",
+    "2026-02-20T15:18:00.947Z"
+  ]
+}

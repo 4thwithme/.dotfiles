@@ -1,0 +1,75 @@
+{
+  "session_id": "af6647c8-e566-4d36-944a-5c8f684fbc20",
+  "project_path": "/Users/4thwithme/Documents/repo/recommendations-service",
+  "start_time": "2026-02-04T15:55:24.618Z",
+  "duration_minutes": 36,
+  "user_message_count": 12,
+  "assistant_message_count": 50,
+  "tool_counts": {
+    "Skill": 2,
+    "TaskOutput": 1,
+    "Bash": 2,
+    "Write": 1,
+    "Edit": 12,
+    "Read": 2,
+    "Grep": 1
+  },
+  "languages": {
+    "Markdown": 15
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 365,
+  "output_tokens": 4779,
+  "first_prompt": "hello bro  we have created RFC @rfc/10-widget-distribution-strategy.md  but after discussion we decided to chane our approach.  in Pigemnt we will move all our react UI components and we will kepp the…",
+  "user_interruptions": 0,
+  "user_response_times": [
+    374.347,
+    456.703,
+    106.256,
+    73.742,
+    473.928,
+    103.407
+  ],
+  "tool_errors": 3,
+  "tool_error_categories": {
+    "Other": 1,
+    "Command Failed": 1,
+    "Edit Failed": 1
+  },
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 843,
+  "lines_removed": 286,
+  "files_modified": 2,
+  "message_hours": [
+    16,
+    16,
+    16,
+    16,
+    16,
+    16,
+    17,
+    17,
+    17,
+    17,
+    17,
+    17
+  ],
+  "user_message_timestamps": [
+    "2026-02-04T15:55:24.618Z",
+    "2026-02-04T15:55:24.617Z",
+    "2026-02-04T15:55:24.618Z",
+    "2026-02-04T15:59:31.111Z",
+    "2026-02-04T15:59:43.664Z",
+    "2026-02-04T15:59:47.477Z",
+    "2026-02-04T16:08:25.145Z",
+    "2026-02-04T16:17:06.768Z",
+    "2026-02-04T16:19:16.387Z",
+    "2026-02-04T16:20:59.581Z",
+    "2026-02-04T16:29:26.970Z",
+    "2026-02-04T16:31:11.046Z"
+  ]
+}

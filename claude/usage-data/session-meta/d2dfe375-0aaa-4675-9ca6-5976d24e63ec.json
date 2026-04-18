@@ -1,0 +1,78 @@
+{
+  "session_id": "d2dfe375-0aaa-4675-9ca6-5976d24e63ec",
+  "project_path": "/Users/4thwithme/Documents/repo/recommendations-service",
+  "start_time": "2026-03-05T08:45:41.425Z",
+  "duration_minutes": 93,
+  "user_message_count": 12,
+  "assistant_message_count": 157,
+  "tool_counts": {
+    "Skill": 1,
+    "Bash": 35,
+    "mcp__plugin_atlassian_atlassian__getAccessibleAtlassianResources": 1,
+    "mcp__plugin_atlassian_atlassian__getJiraIssue": 1,
+    "Read": 39,
+    "Write": 2,
+    "Edit": 25,
+    "Agent": 7
+  },
+  "languages": {
+    "TypeScript": 66
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 1171,
+  "output_tokens": 29491,
+  "first_prompt": "using /fix-eslint-workflow need to fix https://customink.atlassian.net/browse/RECO-620 and usages who imports",
+  "user_interruptions": 3,
+  "user_response_times": [
+    18.941,
+    82.484,
+    2.982,
+    10.338,
+    8.152,
+    229.053,
+    2526.315,
+    1793.795
+  ],
+  "tool_errors": 20,
+  "tool_error_categories": {
+    "Edit Failed": 16,
+    "User Rejected": 3,
+    "Command Failed": 1
+  },
+  "uses_task_agent": true,
+  "uses_mcp": true,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 312,
+  "lines_removed": 79,
+  "files_modified": 14,
+  "message_hours": [
+    9,
+    9,
+    9,
+    9,
+    9,
+    9,
+    9,
+    9,
+    9,
+    9,
+    10,
+    11
+  ],
+  "user_message_timestamps": [
+    "2026-03-05T08:45:41.425Z",
+    "2026-03-05T08:45:41.420Z",
+    "2026-03-05T08:46:09.878Z",
+    "2026-03-05T08:46:13.803Z",
+    "2026-03-05T08:50:25.267Z",
+    "2026-03-05T08:51:28.810Z",
+    "2026-03-05T08:52:07.209Z",
+    "2026-03-05T08:52:14.565Z",
+    "2026-03-05T08:53:07.801Z",
+    "2026-03-05T08:56:48.702Z",
+    "2026-03-05T09:47:08.508Z",
+    "2026-03-05T10:18:22.400Z"
+  ]
+}

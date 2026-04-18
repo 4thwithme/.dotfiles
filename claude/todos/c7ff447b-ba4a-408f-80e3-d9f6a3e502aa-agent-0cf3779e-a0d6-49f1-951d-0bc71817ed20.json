@@ -1,0 +1,27 @@
+[
+  {
+    "content": "Gather detailed information about current RECO project tickets",
+    "status": "completed",
+    "activeForm": "Gathering detailed information about current RECO project tickets"
+  },
+  {
+    "content": "Analyze sprint metrics and team velocity data",
+    "status": "completed",
+    "activeForm": "Analyzing sprint metrics and team velocity data"
+  },
+  {
+    "content": "Extract business context from ticket descriptions",
+    "status": "completed",
+    "activeForm": "Extracting business context from ticket descriptions"
+  },
+  {
+    "content": "Create comprehensive sprint report structure",
+    "status": "in_progress",
+    "activeForm": "Creating comprehensive sprint report structure"
+  },
+  {
+    "content": "Generate executive summary and insights",
+    "status": "pending",
+    "activeForm": "Generating executive summary and insights"
+  }
+]

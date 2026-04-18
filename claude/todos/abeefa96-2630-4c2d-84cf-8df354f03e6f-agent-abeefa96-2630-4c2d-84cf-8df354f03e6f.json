@@ -1,0 +1,14 @@
+[
+  {
+    "content": "Add missing getStyleByStyleId method to StylesService mock in main e2e test",
+    "status": "completed",
+    "priority": "high",
+    "id": "1"
+  },
+  {
+    "content": "Fix MetricsService mock to return void instead of numbers in main e2e test",
+    "status": "completed",
+    "priority": "high",
+    "id": "2"
+  }
+]

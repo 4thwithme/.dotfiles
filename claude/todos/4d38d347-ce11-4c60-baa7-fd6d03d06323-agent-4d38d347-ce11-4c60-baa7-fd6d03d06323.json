@@ -1,0 +1,17 @@
+[
+  {
+    "content": "Update date range from [2022-2025] to [2020-2025] with end date 2025-08-08",
+    "status": "completed",
+    "id": "1"
+  },
+  {
+    "content": "Ensure the script handles partial year 2025 correctly",
+    "status": "completed",
+    "id": "2"
+  },
+  {
+    "content": "Test and fix any potential issues with the generation logic",
+    "status": "in_progress",
+    "id": "3"
+  }
+]

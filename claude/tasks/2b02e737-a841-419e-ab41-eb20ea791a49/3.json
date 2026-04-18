@@ -1,0 +1,9 @@
+{
+  "id": "3",
+  "subject": "Get PR summary",
+  "description": "View and summarize the PR changes",
+  "activeForm": "Summarizing PR",
+  "status": "pending",
+  "blocks": [],
+  "blockedBy": []
+}

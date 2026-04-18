@@ -1,0 +1,32 @@
+[
+  {
+    "content": "Apply CSSTransition fade-in approach to create-password page",
+    "status": "completed",
+    "priority": "medium",
+    "id": "1"
+  },
+  {
+    "content": "Apply CSSTransition fade-in approach to password-recovery page",
+    "status": "completed",
+    "priority": "medium",
+    "id": "2"
+  },
+  {
+    "content": "Apply CSSTransition fade-in approach to register page",
+    "status": "completed",
+    "priority": "medium",
+    "id": "3"
+  },
+  {
+    "content": "Apply CSSTransition fade-in approach to reset-password page",
+    "status": "completed",
+    "priority": "medium",
+    "id": "4"
+  },
+  {
+    "content": "Apply CSSTransition fade-in approach to verify-email-error page",
+    "status": "completed",
+    "priority": "medium",
+    "id": "5"
+  }
+]
